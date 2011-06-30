@@ -64,7 +64,7 @@ else
 end
 
 # output header
-if (!quiet)
+if (quiet)
   puts "# <description> file format #{@@VERSION.join(".")} produced by #{@@PROG_NAME}"
   puts "# run as \"#{$0}\""
   puts "# on " + Time.new.to_s
