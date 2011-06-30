@@ -1,0 +1,1400 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90021-8"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Minimax estimation with divergence loss function</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>R.L. Kashyap</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 341-364. doi:10.1016/0020-0255(74)90021-8</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">341-364</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">341</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">364</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90021-8</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90021-8</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90021-8</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMATION SCIENCES 7, 341-364 (1974) 341
+
+Minimax Estimation With Divergence Loss Function*
+
+R. L. KASHYAP
+School of Electrical Engineering, Pwdue University, West Lafayette, Indiana 4 790 7
+
+ABSTRACT
+
+We propose a class of loss functions for parameter estimation obtained by considering
+the discrepancy between the probability distribution p.d. with the unknown parameter and
+the p.d. wi{h the parameter replaced by the estimate, the discrepancy being measured by
+the divergence functional. The minimax estimate of the binomial distribution is determined
+using the divergence loss function. The minimax estimate is Bayes with respect to a CDF F*
+which is obtained by maximizing the conditional mutual information function. The CDF
+F* is a staircased function. The minimax estimate is compared with other estimates, such as
+the maximum likelihood estimate, the minimax estimate with the quadratic loss function,
+etc. It is found that the estimate derived here is satisfactory both for large and small sam-
+ples, unlike the maximum likelihood estimate which is satisfactory only with large samples
+and the minimax estimate with the quadratic loss function which is satisfactory only with
+small samples.
+
+The theory given here can be easily extended for estimation in multinomial distributions.
+
+1. INTRODUCTION AND SUMMARY
+
+A common problem in parameter estimation is the choice of the loss func-
+tion. Often the quadratic loss function is chosen because of the ease of mathe-
+matical manipulation. Sometimes one chooses a nonquadratic loss function if
+the estimates obtained from the quadratic function are not satisfactory. This is
+the case with the estimation of variance in a normal distribution. In this case,
+one can argue from invariance considerations that the loss function L (X, X)
+must be of the form L i (À/X) since X is a scale factor. The choice of the loss
+function is particularly important in connection with minimax estimation since
+minimax estimates with different loss functions can have widely different
+properties.
+
+One intuitively feels that the loss function used in parameter estimation must
+
+*Partially supported by U.S. National Science Foundation under grant GK-36721 and
+the U.S. AFOSR under grant 69-1776.
+
+©American Eisevier Publishing Company, Inc., 1974
+
+342                                                     R. L. KASHYAP
+
+be related to the probability function of the corresponding observable random
+variable. Such a viewpoint can be systematized by noting that parameter esti-
+mation is only one step in the goal of estimating the corresponding probability
+distribution of the observable variable. Hence a suitable measure for the dis-
+crepancy between a parameter and its estimate is the discrepancy in the two
+corresponding probability distributions, i.e., the probability distribution of the
+observable variable with the unknown parameter and the p.d. with the param-
+eter replaced by its estimate. Again one has to choose a suitable functional to
+measure the discrepancy between the two probability distributions. The func-
+tional could be chosen so that the mathematical manipulation could be done
+with relative ease. This desirable property rules out the quadratic functional.
+
+We suggest the use of divergence functional for measuring the discrepancy be-
+tween the probability distribution. It is particularly appropriate while dealing
+with the parameter estimation in the exponential family of distributions. The
+loss functions derived in this way possess a number of interesting properties
+which are enumerated in Sec. 2. The loss function derived from the divergence
+functional reduces to the usual quadratic function while dealing with the esti-
+mation of mean in normal distribution.
+
+Next, we will determine the minimax estimate of the parameter in a binomial
+distribution using the loss function derived from the divergence functional. Our
+initial motivation was curiosity. Almost all the minimax estimation problems
+treated in statistical literature [1] use the quadratic loss function. It is interest-
+ing to find how the structure of the minimax solution obtained from the di-
+vergence loss function differs from that with the quadratic loss function. More-
+over, the minimax estimate of the parameter in the binomial distribution
+computed from the quadratic function is not entirely satisfactory [2] since it
+is not asymptotically efficient, whereas the minimax estimate with the diver-
+gence loss function is satisfactory both for large and small samples. We will dis-
+cuss in detail the appropriateness of the various estimates like the maximum
+likelihood, etc.
+
+2. LOSS FUNCTION FROM DIVERGENCE FUNCTIONAL
+
+We shall consider here a random variable Z whose cumulative probability
+distribution is either discrete or absolutely continuous. The probability mass
+function in the discrete case or the probability density in the continuous case is
+denoted P(z \ \) where À e £ C R'". Let us denote an estimate of À by A. Often
+an estimate of X is needed so as to obtain an estimate of the probability function
+P(z | X). Consequently the loss suffered in estimating X must be measured by
+the discrepancy between the two probability functions P(z | X) and P(z \ A). One
+measure of the discrepancy between the two probability functions is the diver-
+gence functional [5] defined below:
+
+MINIMAX ESTIMATION 343
+
+L(\,^)=D[P(Z\\~),P(Z\\)},
+
+-(äF^^.
+
+J       P(z\\)
+
+If the random variable Z is discrete with Z e 2, (2.1) reduces to (2.2)
+
+L (X, A) = L P(z \ À) In (PÇz l X)^(z l X)).            (2.2)
+ze Z
+
+If the random variable Z is continuous then (2.1) reduces to (2.3)
+
+L (X, A) = [dz P(z | A) In [P(z | \)IP(z | A)].            (2.3)
+
+Using the inequality In x &lt; (x - 1 ), one can see that
+L(\, A)=O VX= X,
+
+&gt; 0 V À ^ À.
+The divergence functional possesses the following properties:
+
+(Al) IfZi and Z^ are statistically independent, then
+
+2
+
+Z)[P(2i,z,|Xi,X,),.P(zi,^|Xi,X,)] =^/)[P(z,|X),P(z,|À)].
+
+(A2) The discrepancy function is invariant to one-to-one coordinate trans-
+formation on the variable Z.
+
+(A3) The Fisher information function, used commonly to measure the sen-
+sitivity of the estimates, is proportional to L (A, À + dX).
+
+The importance of the property (Al) can be seen as follows: Suppose we are
+interested in estimating À from a sample of N I.I.D, observations {zi,..., z^ }
+having a common probability function P(z,| A). Then it is reasonable to esti-
+mate X by minimizing the discrepancy between the joint probability functions
+P(z i,..., Zff | A) and P(z i,.. ., z^ I X). If we use the divergence functional to
+measure the discrepancy then the loss function obtained here is equivalent (up
+to a multiplicative constant) to the loss function obtained by comparing the
+probability functions P(z \ X) and P(z \ X). Note that this important property is
+not possessed by common discrepancy functionals like the quadratic functional
+Di. In such a case the loss function will vary with the sample size N, an unde-
+sirable property
+
+D, [P(z | X), P(z | X)] = (dFW (P(z | X) - P(z | A))2.
+
+344                                                    R. L.KASHYAP
+
+It is conjectured that the divergence functional D in (2.1) is the only one to
+possess the property (Al).
+
+The property (A2) is self-explanatory. It should be noted that the L (X, A)
+is not always equal to L ( X, X). But there is no compelling reason why the loss
+function should be symmetric in the two arguments. Of course, we could con-
+sider the symmetrized function L (X, X) +£(^, X) as the loss function.
+
+The loss function L (X, X) derived from the divergence functional is relatively
+simple ifP(z| X) belongs to the exponential family of distributions, which in-
+cludes common distributions like normal, Poisson, exponential, binomial, etc.
+For instance, ifP(z| X) is normal
+
+then
+
+^4-Hh^t].
+
+Note that this function is quadratic only in the mean variable Xi, but not in
+the variance variable X^. If we are estimating only Xi, then the above function
+is a function of (X2/^). This is m accordance with our intuition, since X^ is a
+scale parameter. One can easily show L (X, X) is convex in Xi and X^.
+
+Next consider the Poisson distribution in which the parameter X is both the
+mean and the variance ofZ.
+
+P(z\\)=e-zz\|z\, 2=0,1,2,...,
+
+^(X,î»=Xln^-X+X.
+X
+
+Again L (X, %) is convex in ^. Note the function has no quadratic term in it.
+Finally we consider the binomial distribution
+
+P(z\\,N)=IN^\z(l-\)N-z (2.4)
+
+\  ' ' \z
+
+z e 2 ={o,l,...,AT}.
+The corresponding loss function is
+
+L (X, ^) = N |x In è + (1 - X) In -'^1.
+LX           l - XJ
+
+This function is convex in X. We will compare it with the quadratic loss func-
+tion L i (X, X) = (X - 'X)2 in Fig. 1, for X = 0.4. Note that the L (X, 'X) penalizes
+larger errors more than the quadratic function L i.
+
+MINIMAX ESTIMATION
+
+345
+
+
+
+
+0       .2        .4__^ .6        .8       1.0
+Fig. l. Comparison of loss functions L and L ^.
+
+3. THE MINIMAX ESTIMATE OF BINOMIAL DISTRIBUTION
+
+Consider the binomial distribution in (2.4). We are interested in the mini-
+max estimation of the probability parameter À given an observation z £ 2
+obeying (2.4). Let a be an estimate of the probability parameter \, 0 &lt; a &lt; 1.
+The loss function L, the so called divergence loss function, will be used to mea-
+sure the discrepancy between a and X,
+
+L(\,a)= Àln^+a-^m-1^.              (3.1)
+a           1 - a
+
+Note that
+
+L(\,a)&gt;0 ifA^a, sinceln^&gt;l-(1/x),
+=0 if À = a,
+L (À, ff) + L (a, \) VX^a.
+
+PA YOFF FUNCTION
+
+Let é(z)be an estimate of Abased onzGZ, i.e., b is a map defined below
+b: 2 &gt; (O, l), b £ S = the set of all such mappings.
+
+The letter b by itself will denote the map or function whereas b(z) will denote
+the value of the function for the argument z.
+
+r(\, b) = the risk function for the estimate b using the loss function Z,
+
+N
+
+=^L(\,b(z))P(z\\).
+
+2=0
+
+(3.2)
+
+346                                                 R. L. KASHYAP
+
+Let F(-) be a prior cumulative distribution function of X, Fe Î ^ set of all
+possible CDFs.
+
+R (F, b) = Average risk function using the prior CDF F,
+
+=fr(\,b)dF(\).                             (3.3)
+
+An estimate b* is said to be minimax if it satisfies the following inequality:
+
+sup r(\, b*) = inf sup r(\, b).
+o&lt;\&lt;i         fteS o&lt;A.&lt;i
+
+A probability distribution F* e ? is said to be "least favorable" if
+mfR(F*, b) = sup inf R(F, b).
+
+b                      F    b
+
+We will compute the minimax estimate and the least favorable distribution
+by considering the following 2 person zero sum game ( 'S, S, R) where one
+player (statistician) chooses a A £ S to minimize the payoff function R, in (3.3)
+whereas the other player (nature) chooses a F e J to maximize R.
+
+This game has a saddle point in pure strategies and is given in the following
+theorem.
+
+Notation, bp = the Bayesian estimate of À with the prior CDF, F
+bp(z) =[\P(z\ A) dF(\)/[p(z | X) dF(\~).
+
+THEOREM 1. Consider the game ( ?, Î, R). Let
+
+F* = arg { sup ^(F)}, ^(F) =R (F, bp),           (3.4)
+
+Fe y
+
+and
+
+b*=bp.
+
+Then the pair (F*, b*) obeys the following saddle point inequality (3.5)
+
+R(F,b*)&lt;R(F*,b*)&lt;R(F*,b), VFeî.éeB.       (3.5)
+COROLLARY l. The minimax estimate b* is admissible.
+
+The proofs of Theorem 1 and Corollary 1 are in Appendix I. Note that F* is
+a least favorable distribution. The minimax estimate b* is Bayes with respect
+toF*.
+
+Next we will consider the structure of F*, the least favorable prior distribu-
+tion in the following theorem.
+
+MINIMAX ESTIMATION
+
+347
+
+THEOREM 2. The "least favorable" CDF F* is a staircase function with,at
+most, N steps, N being the size of the observation sample.
+
+The proof of Theorem 2 is also in Appendix I.
+
+The staircased form of the optimal CDF F* is unusual considering the facts
+that the loss function is a differentiable function (except at the boundary) and
+the solutions of most of the statistical minimax problems [1] result in smooth
+prior CDFs. One of the plausible reasons for this feature may be that the loss
+function used here L ( ,  ) is asymmetric in the 2 variables.
+
+The second point that has to be emphasized is that the optimal CDF F* de-
+pends on N, since N is a parameter in the game ( î, S, R). We have tabulated
+the F* function with N = 0, 1, and 2.
+
+N=0: F*(X)=0.5u(À)+0.5u(Â- 1),
+
+yv=l: F*(\)=0.3u(\)+OAu(\-0.5)+0.3u(\- 1),
+
+N=2: F*(X) = 0.266 u(\)+ 0.468 u(\- 0.5) +0.266 u (À- 1).
+
+In the above equations, u(-) is the usual step function, u(A) = 0 V X &lt; 0 and
+u(X)= 1 VÀ&gt;1.
+
+TABLE l
+The minimax estimate b*(z)
+
+N
+
+
+
+z	0	1	2	3	4	5	6	7	8
+0	0.50	0.20	0.152	0.114	0.090	0.076	0.065	0.058	0.051
+l		0.80	0.500	0.469	0.364	0.310	0.281	0.244	0.220
+2			0.848	0.531	0.500	0.407	0.340	0.310	0.279
+3				0.886	0.636	0.593	0.500	0.430	0.383
+4					0.910	0.690	0.660	0.570	0.500
+5						0.924	0.719	0.690	0.617
+6							0.935	0.756	0.721
+7								0.944	0.780
+8									0.949
+^ü7*)	0.693	0.2230	0.1652	0.1181	0.0945	0.0796	0.0678	0.0593	0.0527
+
+The numerical values of the estimate b*(z), z = 0, l,.. ., N for various^
+are given in Table 1. Note that these estimates are drastically different from the
+corresponding maximum likelihood estimate &amp;Af(z) = z IN when z is near 0 or is
+near N. We compare these estimates later.
+
+348                                                    R. L.KASHYAP
+
+4. APPROXIMATION TO F* AND Z&gt;* FOR LARGE N
+
+When A^ is small, we can directly find F* by Theorem 2. When N is even
+as large as 8 or 10, the computation of F* directly becomes cumbersome.
+Hence we have to develop indirect methods of computation.
+
+In approximating the CDF F*, we need some criterion function. We note
+that one of the important properties of the estimate b* derived from F* is the
+following:
+
+r(\,bp,)&lt;^(F*)V\,                   (4.1)
+We know [3] that for large N
+
+^/(F*)=o(HN)
+
+where o(k)/k -&gt;-c&gt;0ask-&gt;0. Hence we look for an approximation F to F*
+such that the following inequality is true:
+
+\r(\,bp)-^(F*)\=o(ïlN)                 (4.2)
+
+where o(k)lk -&gt; O as k -&gt; 0, and where bp is the Bayes estimate w.r.t. the prior
+CDF F, i.e., for large N, the difference in the risk involved between the estimates
+bp^ and bp is negligible. Such an approximation F is given below.
+
+__        i  N-n                  ,
+
+^-NT-^^-^^N-Tr        (43)
+
+i.e., F is a uniformly stepped staircase function.                    ,    _
+
+It is easy to see that with large N, the properties of the Bayes estimate b = b-p
+will be essentially the same as the Bayes estimate of À with a uniform prior
+CDF. However, the properties of these two estimates will be drastically dif-
+ferent for small N.                                               _
+
+We will not prove here that the Bayes estimate bp computed from F in (4.3)
+obeys (4.2). An outline of the proof can be found in [3]. However, we will
+give here a numerical demonstration of this fact. Let N = 8. In this case
+i//(F*) = 0.0527. We can compute the estimate b and compare it with the esti-
+mate b* in Table 2. Note that the differences between them are not significant.
+
+Next, we can compute r(\, b) and tabulate it in Table 3 for various A. Note
+that the values ofr(\, b) are less than \t/(F*) except for A in the range 0.4 &lt;
+
+TABLE 2
+Comparison of estimates b(z) and b*(z) with N = 8
+
+2012345678
+
+b*(z)   0.051    0.220    0.279    0.383   0.5    0.617   0.721   0.780    0.949
+b(z)     0.053    0.219    0.301    0.4      0.5    0.6      0.699   0.781    0.946
+
+MINIMAX ESTIMATION
+
+349
+
+TABLE 3
+Comparison ofr(\, b) with V (F*) = 0.0527
+
+\_ 0.05    0.10    0,15    0.20    0.25    0.30    0.35    0.40   0.45    0.5
+r(\,b) 0.0425 0.0507 0.0531 0.0526 0.0515 0.0513 0.0519 0.0530 0.0539 0.0543
+
+À &lt; 0.6. Even in the range 0.4 &lt; À &lt; 0.6, the excess ofr(\, b) over \l&gt; (F*) is
+only 3% of the value of V/(F*).
+
+5. INFORMATION THEORETIC INTERPRETATION OF F* AND b*
+
+Consider a sequence of (N + 1) independent coin tossings, the probability of
+occurrence of a head in a trial being X. Let the number of heads in N trials be
+denoted by Z and label the results of the (N + 1) trial as Y £ {l, 0}, 1 denoting
+head. How can we measure the uncertainty about the occurrence of Y caused
+by the ignorance of X, given the history Z?
+
+The total uncertainty about Y is made of two parts, namely (i) the uncer-
+tainty about Y caused by the random nature of Y, even when X is known and
+(ii) the uncertainty about Y caused by the ignorance of X alone. We are inter-
+ested in measuring the uncertainty in part (ii) alone. Note the knowledge of the
+history Z helps in reduction of the uncertainty in part (ii) only. The observa-
+tion Z cannot influence the uncertainty in part (i) since Y and Z are statistically
+independent if À is known.
+
+We can regard À as a random variable with prior CDF F. If we imbed the
+problem in a repetitive framework, then the prior CDF F is nothing but the cor-
+responding cumulative frequency distribution ofX. We will have more to say
+about the choice ofF.
+
+We will measure all the uncertainties by the corresponding entropies. We
+will first find the average uncertainty in part (i):
+
+The uncertainty about Y caused by its randomness given X
+
+=H(\)
+
+=-[XlnX+(l- X)ln(l -A)]
+Averaging this expression over À we get
+
+,7\ = the average uncertainty about Y caused by its randomness
+
+H(\) dF(\)
+
+Now consider the total average uncertainty about Y caused by both the
+randomness of Y and the ignorance of A. Let bp(-) be the Bayes' estimate of
+
+350                                                    R. L. KASHYAP
+
+À based on the prior CDF F, i.e., given the observation Z, bp(Z) represents the
+posterior probability of the variable Y assuming the value 1 (or head). Hence,
+
+entropy of this posterior probability distribution = H(bp(Z)),
+= - [bp(Z) In bp(Z) + (1 - bp(Z)) In (1 - bp(Z))}.
+
+Averaging this entropy over both the random variables Z and A, we get the total
+average uncertainty Ji
+
+Jz= (dF(\)^P(z\\)H(bp(z)),
+J      z=o
+
+J ^ the average uncertainty about Y caused by the ignorance of À alone,
+given Z,
+
+f the total uncertainty caused by\ /average uncertainty caused by^
+=[ unknown À and the randomness ) - ( the randomness of Y only
+
+\ofy                / \
+=^2-^1,
+
+= (dF(\) ^ P(z| A) [H(bp(.z)) - H(\)],
+J      z=o
+
+= fdF(\) ^ P(z | A) [-bp(z) In bp(z) + \ In À - (1 - bp(z)) In (1 - bp(z))
+J      z=o
+
+z=o
++ (1 - X) In (1 - À),
+
+N
+
+^^)^(z|X)[xin^.O-X)ln^j,
+
+^^(F).
+
+Thus the functional ^ (F) encountered earlier can be interpreted as an uncer-
+tainty function. Note the functional J{F) is also termed as the Shannon mutual
+information between the output variable Y and the input X conditioned by the
+observation Z [6].
+
+If the CDF F is unknown, a "safe" strategy is to choose that function which
+maximizes the uncertainty functional, i.e., F* can be interpreted to be a least
+informative prior CDF.
+
+We have already referred to the fact that i//(F*) = 0(1/AQ for larger. As
+the history of the observations accumulate, the marginal decrease in the uncer-
+tainty caused by the latest observation is only of the order 0(1 /N2). As the
+duration N of the observations Z tend to °°, the uncertainty caused only by the
+
+MINIMAX ESTIMATION                                               35 l
+
+ignorance of À vanishes since effectively we can recover the unknown X from
+the history of the observations.
+
+6. COMPARISON WITH OTHER ESTIMATES
+
+A minimax estimate usually carries with it the connotation of being pessi-
+mistic, i.e., its use may involve the acceptance of a high level of loss often in
+order to ensure that the maximum loss suffered is less than a certain prespeci-
+fied value. This statement is true in many cases (it is true for instance with
+minimax estimates with quadratic loss function, when the sample size N is
+large), it is not true for the minimax estimate developed here. As a matter of
+fact, the minimax estimate b* has some very appealing properties in comparison
+with other estimates. We will compare it with the following 3 estimates:
+
+maximum likelihood estimate = &amp;^(z) = z/N,
+
+z+\//v/2
+the minimax estimate with the quadratic loss function = &amp;g(z) = /,
+
+the Bayes estimate with the Jeffreys prior distribution
+
+WVx(i-X))=^(2)=C^.
+
+We have considered the estimate OM since it is a very popular estimate. The
+estimate bq is considered to show that minimax estimates with different loss
+functions can have widely different properties. The estimate bj is considered
+because of the information theoretic significance of the corresponding prior
+probability distribution [4].
+
+We note that the estimate &amp;Af(z) assumes the value 0 or 1 if z = 0 or N. Such
+a strong assertion of certainty is quite unwarranted with the given information.
+All the other estimates do not suffer from this defect. In addition the maxi-
+mum likelihood estimate is inadmissible under the divergence loss function and
+hence inferior to the other estimates under the divergence loss function.
+To compare the four estimates, we will use the following criterion:
+
+J(b)=  E[(b- A)21 A] d\.
+Ja
+
+The mean square error E[(b - X)21 X] is plotted against X for each of the es-
+timates b = by, bu, bj, and b* in Fig. 2 for N various values ofN= 5, 10, 20,
+30, 50, and 100.
+
+When N is small, i.e. N = 5, 10, J(bu) is substantially larger than the rest, i.e.
+J(b*), J(bf} and J(bc)) and the values of ./(&amp;*), J(bj) and J(bQ) are compara-
+ble. Hence when N is small, the estimate buf is inappropriate.
+
+352
+
+R. L.KASHYAP
+
+
+
+	?10	00000
+.800-		0° 0° + +  + + +
+		0 + + 
+[	a o o o a	§fl(iläayäaaooooGo
+	^	+
+.400-	û ç û ^	+
+	^	
+	+6	
+i	0	
+o.ooo r		
+
+00000   .1250
+
+.2500
+
+.3750
+
+.5000
+
+
+
+0°?^^oîii^^"iaoGaaooag§oôoooooDooQ&amp;a sa'"û ® û e ûé0^
+
+
+0.0000
+
+N=100
+
+.1250
+
+.2500
+
+.3750
+
+.5000
+
+.8001
+
+.400-
+
+,gg8^88
+
+iSoaoaooo
+
+,S
+
+a
+
+a
+
+0 ML estimof
+
+û Our estimate
+
++ estimate b^i,W
+
+0 estimate bQ(z,N)
+
+0.0000   .1250
+
+.2500 .3750 .5000
+
+Fig. 2a and b. The graphs o{E[(\ - b (z, A'))21 \], the mean square error of estimate of A.
+vs. \, for various m. In each graph, the ordinale is scaled such that the error of ML estimate
+at \= 0.5 is unity. The graphs are symmetrical about \ = 0.5. Part a shown here. See
+following page for part b.
+
+MINIMAX ESTIMATION
+
+.800-
+
+.400-
+
+0.000.
+
+N=5
+
+a o o g s
+ß    0
+û     (? +
+
+A.*
++ 0
+
+0
+
+0.0000 .1250
+
+.2500
+
+.3750
+
+.5000
+
+.400-
+
+0.000.
+
+N=20
+
+oooooo
+
+o0^^'"
+oîî^ûûûûûû
+
+0 .^û^
+
+oooooaoBp^ôooooaaaao
+
+OA
+.S»
+
+0.0000 1250
+
+.400-
+
+0.000^ ^
+
+N=50
+
+a
+
+0.0000 .1250 .2500 .3750 .5000
+
+354                                                    R. L. KASHYAP
+
+When N is large, the values J(t&gt;Jn), J(bJ~) and J(b*) are close to each other,
+but the value of/g is very much larger than the corresponding values of the re-
+maining three estimates. This deficiency of the estimate is due to its being
+asymptotically inefficient, as pointed out in [2].
+
+Thus, of the four estimates, only two estimates b J and b* have satisfactory
+properties both for large N and small N. For very small N such as N = 5, 10, 20,
+J(b*) is slightly less than ./(&amp;/).
+
+Concluding, we find both the estimates b* and b J are satisfactory from the
+point of mean square criterion; for all sample sizes, whereas the maximum like-
+lihood estimate and estimate og have limited utility in particular sample ranges.
+The estimate bj may have a slight edge b* since it is easier to compute.
+
+7. GENERALIZATION TO MULTINOMIAL DISTRIBUTION
+
+The theory developed in earlier sections can be easily extended to multi-
+nomial distributions. For simplicity consider a trinomial distribution
+
+P(Z=(z^,z,)\\,N)=N\(\,)zl(\,)zl(l-\,-\,f~zl~z^|z^.\z,\(N-z,-z^.,
+
+(7.1)
+
+where Zç.î= {(z^,z^). Zi, z^ are nonnegative integers, Zi + z^ &lt; N}
+\=(Xi,À2)eJC={(Ài,À2);0&lt;Ài,À2&lt;l,Ài +À2&lt;1}.
+
+We want to find the minimax estimate of the probabilities X ; = 1, 2 using the
+divergence loss function.
+
+Suppose b is an estimate of X based on z obeying (7.1), i.e., b is a map de-
+fined below; &amp; e'B.
+
+b: 2 &gt;%'= [(&amp;i,öï): 0&lt;bi,b^&lt;l,bi +&amp;2&lt;1}.
+The divergence loss function L (\, b) is given in (7.2)
+
+^(X.b^À.m^+^ln^+O-Ài-X^ln1"^"712,    (7.2)
+
+Öi                 02                                       l - Öl - 02
+
+r (À, b) = average loss given X,
+
+= ^P(Z=z\\,N)L(\,b(z)),
+
+ze 2
+
+b* is a minimax estimate of X if r(\, ö*) &lt; inf sup r(\, b) V X e £.
+beS\et,
+
+The following theorem, analogous to Theorem 1, yields the minimax estimate.
+As before, bpCz) denotes the Bayesian estimate of A w.r.t. the prior CDF F
+given Z = z.
+
+MINIMAX ESTIMATION                                               355
+THEOREM 3: b* =bp.t
+
+where
+
+F* = arg sup V/ (F),
+Fe.'!
+
+V/(F)=Ä(F,b^),
+where Î is the admissible class of prior CDFs for the vector \.
+
+An outline of the proof is in [3].
+As before, for large ./V, F* can be approximated by a staircase function
+
+1    ^ ^z'   /.     ^
+
+» _ /   z,     z,\
+
+E I; V^-^-^"}
+
+;.=o z.=o  \     "       " /
+
+where
+
+^^iw.^t-..^
+
+u(a,b)=ï ifa&gt;0,&amp;&gt;0,
+= 0 otherwise.
+
+Diustrative examples detailing the comparison of the minimax estimate with
+other estimates like maximum likelihood estimate can be found in [3].
+
+8. CONCLUSIONS
+
+We have considered a class of loss functions for parameter estimation which
+are derived from the probability distribution of the observable random variables.
+Using this loss function, the so called divergence loss function, minimax esti-
+mate of the parameter in binomial distribution was obtained and the theory can
+be extended for multinomial distributions. The minimax estimate is a Bayes
+estimate with respect to a CDF F* which is found by maximizing the condi-
+tional mutual information function. The CDF F* is a staircased function. The
+Bayes estimate b* seems to be satisfactory both for large and small samples in
+contrast with maximum likelihood estimate which is satisfactory only with
+large samples.
+
+APPENDIX I
+
+A. PROOF OF THEOREM 1
+LEMMA 1. The function &gt;. (F) is concave in F  f
+
+Proof of Lemma 1.
+Let
+
+356                                                    R- L-KASHYAP
+
+^(F)=R(F,bp),
+
+N c        r   A          i- À i
+
+=^ rfF(À)F(z|Â)kln+(l-À)ln,
+
+^o J       L M2)       1 - Mz)J
+
+= -I: [M^ In M-O + (l - bp(z)) In (l - bp(z))} (dF(\)P(z |A),
+
+2                                                                                             -'
+
++ PF(X) [A In À + (l - A) In (l - X)],
+=^H(bp(z)) (dF(\)P(z\\) - (dF(\)H(\),                (9.1a)
+
+=C(F)-J^F(À)//(À),                                 (9.1)
+
+where C(F) is the first term m (9.1a).
+Let
+
+F=aF^ +(i-a)F2, Fi,F^?, 0&lt;a&lt;l,
+
+^\P(z\\)dF(\)
+bp(z)=,
+
+fP(z\\)dF(\)
+a \\P(z \\)dFi{\) + (l - a) f\P(z \\)dF^(\)
+
+~                                                                                                                 î
+
+ajp(z \\)dFt (A) + (l - a)jP(.z \\)dF^(\)
+affP(z\\)b^(z)\+(l - a)ffp(z\\)dF,(\)\ b^(z)
+
+f
+
+a Cp(z\\)dF, (\) + (l - a) (p(z \\)dF^(\)
+=^bp(z)+(\-a,)bp(z),                         (9.2)
+
+MINIMAX ESTIMATION                                              357
+
+where
+
+a (p(zlÂ)dFi(Â)
+ai=.         (9.3)
+
+a (^(z |À)^Fi (X) + (l - a) (p(z \\)dF^(\)
+
+But the entropy function //() is concave in its argument. This fact and (9.2)
+yield (9.5).
+
+//(Mz))&gt;ai//(Z^(z)+(l - ai)//(^(z)).           (9.5)
+Substitute (9.5) m C(F) defined m (9.1) and (9.la)
+
+W &gt; Z( (dFWP(.z |A) [^H(bp, (z)) + (1 - ai )/ï(^ (z))]). (9.6)
+
+z \-'                                                          /
+
+By (9.3)
+
+ai jdF(\)P(z |X) = afP(z\\)dFt (À),
+
+(9.7)
+
+(1 - ai) |^(Â)P(z|Â)=(l - a)JP(z|X)rfF,(À).
+Substitute (9.7) into (9.6) and regroup the terms:
+
+C(F) &gt; a [^ fdFi (X)P(z |X)//(o^, (z))]
+
+L z /                                                J
+
++ (l - a) [^ pF2(À)^(z \\)H(b^ (z))1,
+L z -'                      J
+
+&gt;aC(Fi)+(l-a)C(F2).                      (9.8)
+By inspection
+
+J dF(\)H(\) = a J dFi (\)H(\) + ( 1 - a) J dF^ (\)H(\),     (9.9)
+
+^(F) = C(F) - fdF(\)H(X), by (9.1),
+
+358                                                   R. L.KASHYAP
+
+&gt; a |c(Fi) - (dFi (A)//(X)1 + (l - a) fc(F,) - p^ (A)^(X)],
+
+by (9.8) and (9.9).
+
+=a^(Fi)+(l-a)^(/-2).                            Q.E.D.
+Proof o f Theorem 1.
+
+/?(F,&amp;)= f FFCX^ZIÀ) rÂln^+d - X)^^1^],
+= f^F(X) [X In À + (l - À) In (l - À)],
+
+- ^ frfF(A)/'(z|A) [À In é(z) + (1 - À) In (1 - b(z))}.
+z=o J
+
+(9.11)
+Subtract (9.10) from (9.11)
+
+^,M-^F.,)=^J^^(^[xto^+(l-Ä)ln^-^],
+dF(X|z)^(z)
+
+-é^h)^-"-^-^].
+
+since j \dF(\\z) =bp(z),
+
+&lt; O, using the inequality In x^x- l.              (9.12)
+Equation (9.12) is true for all F, including F = F*. Hence,
+
+R(F*,b*)-R(F*,b)&lt;0               (9.13)
+
+This proves the right hand side of the inequality (3.5).
+
+To prove the left hand side of (3.5) note that F* is the value of F which maxi-
+mizes the functional ^(F) subject to the constraints (9.14)
+
+fdF(\) = 1.
+dF(À)&gt;OV\e[0,l].                 (9.14)
+
+MINIMAX ESTIMATION                                              359
+
+Consider the augmented functional V/ defined below:
+
+^(F) = 0(F) + ^ (dF(\) - l\ + fc(A)J/-'(\).        (9.15)
+
+By the theory of Lagrange multipliers [4] and the concavity of ^ (F), there
+exists a scalar multiplier JU and a function c(-) obeying (9.16) such that (9.17) is
+valid.
+
+c(A) &gt; 0,
+
+.                                 (9.16)
+jc(\)dF\\)^0,
+
+^(F*)&gt;^(F) VFey.                  (9.17)
+Equation (9.17) implies the equation (9.18)
+
+_        ôi2/(F*+aG)
+
+8^(F)= lim -&lt;OVG',                               (9.18)
+a-»o      da
+
+§^ = lim ^- \ R(F* + aG, ep-%aG) + ^ ((dF*(\) + aafG(X)) - 1
+a-^o aa [                    [J                  J
+
++Jc(X) (û?F*(Â) + aûrG(À))l, (9.19)
+lim ^-R(F*+aG,bF^G)= lim ^- f(d/-'*(X) + arf(?(X))r(X,^*^G),
+
+a-»0 dû!                          a-^-0 dû! J
+
+= fJG(X)/-(Â,^*)
+
++ lim 8 frfF*(X)/-(A.^,G)&gt;       (9.20)
+a-'-o da J
+
+lim ^- frfF!lc(Â)r(Â,^*^G)= lim
+a-*o da J                     a-&gt;o
+
+^o dak^^'^*-0^^ as^^^^^1"^)
+
++&lt;l-À)lnfl^^
+
+l- Ö(Z)J &amp;(2)=ftp.*+aG(z)
+
+360 R. L.KASHYAP
+
+= f - f^(W|X)f - 1 lim ^^-^z),
+A, J            L^*(z) l-^-(z)Ja-o     9a
+
+^ ^      a^%aG^) .__________________
+
+à """"o   a"       ^(2)(i-^*(z))   '
+
+=0,                                                     (9.21)
+
+since the integral is zero by the definition of&amp;/r*(z).
+Substituting (9.20), (9.21) in (9.19), we get
+
+S^= fdG(\) [r(\,bp*)+^+c(\)].            (9.22)
+
+Since dG(\) is arbitrary, §^ &lt; 0 for all dG(-) if and only if (9.23) is satisfied.
+
+r(À,^*)+Ai+c(À)=0,                (9.23)
+
+R (F*, b*)=fdF*(\)r(\, bp*),
+
+=fdF*(-n - c(A)), by (9.23),           (9.24)
+=-Ai, by (9.16),
+R(F,b*)=SdF(\)r(\,bF&lt;),
+
+-
+
+=JdF(\)(-Ai-c(X)),
+
+&lt;-^(, since c (À) &gt; O,
+&lt;R(F*,b*),                          Q.E.D.
+
+Proof o f Corollary 1.
+By (9.23) and (9.24), we have
+
+r(\,b*)&lt;R(F*,b*)-c(\),
+
+&lt;R(F*,b*), since c(Â)&gt;0.             (9.25)
+
+By (9.25), the estimate ft* is minimax. Since b* is Bayes with respect to F*, b*
+is also admissible. Hence b* is an admissible minimax estimate.
+
+MINIMAX ESTIMATION                                              361
+
+B. PROOF OF THEOREM 2
+Let
+
+p,(F) =Jx'ûfF(Â).                       (9.26)
+
+By definition of bp(-)
+
+bp(z) = JÂÀ^I - À-^ dPW/fx^Ï - \)N~Z dF(\),
+
+-fAPi{.F),p,(F),... ,PN^(F), ... ,p/v(F)), z =0, l,. .. ,N,
+
+(9.27)
+where f z () is some function of the indicated arguments. Similarly,
+
+JP(Z \\)dF(\) =^ (pi (F),..., p/v,i (F)).          (9.28)
+
+By (9.1),
+
+^(F)^^(F,^),
+
+= - fdF(\)H(\) + ^ (^(zlX^F^^z)).      (9.29)
+-/            z=o ^
+
+Rewrite the second term in (9.29) as C(F):
+
+C(F) =g(p, (F),..., p^i (F)). using (9.27) and (9.28)
+
+where g(') is some function of indicated arguments. In (9.8), we showed that
+C(F) is concave inF. Hence, (9.31) is true if (9.30) is true, i.e.,
+
+F=aFi +(l-a)/'2, 0&lt;a&lt;l, Fi,F^(=f,        (9.30)
+g(pt (F),..., p/v^i (/--)) &gt; a^(p, (Fi,... , pyv+i (Fi))
+
++(l-a)^(pi(F,),...,p/v(^)). (9.31)
+But
+
+p,(F) = ap,(F,) + (1 - a) p,(F,),               (9.32)
+
+Substitution of (9.32) m (9.31) implies that the function^(pi,..., PN+i) ^
+concave in the arguments pi,..., pyv+i.
+
+Let F* be the supremizing function of ^ (F) subject to the constraints in
+(9.33) and (9.34) and let p^,..., p^+i be the corresponding moments,
+P*=P;(^).
+
+362                                                    R. L. KASHYAP
+
+fdF(\)=ï,                      (9.33)
+
+dF(\)&gt;OV\S [0,1].                  (9.34)
+
+Define an augmented function ^, involving the functional \j/, a set of parameters
+Pi,..., p/v+i (not necessarily the moments) and the multipliers Ho,..., ^+1.
+
+.-,
+
+^(F,pt,..., p^i) =- \dF(\)H(\) +g(pt,..., pyv.i)
+
+/v+i   / r .          \
+
++^H,   ÀW(À)-p,.                 (9.35)
+i=i   \J           /
+
+Note that ^ (F) is linear in F and concave in the variables Pi,..., PAT+I  By the
+theory of Lagrange multipliers, there exists a set of multipliers ^,.. ., p-ff-n so
+that (9.36) is true for all F obeying only (9.33) and (9.34) and all pi,..., p^v+i.
+
+W,pî,... ,p^i)&gt;Wp,,... ,p^i).              (9.36)
+Rearranging ^ in (9.35) we get (9.37)
+
+^(F, pi,..., p^i) = fdF(X) \-H(\) + S1 ill, X'1
+
+J        L          1=1      J
+
+- ^ ^,Pi+s(Pi,-.-,PN.i)- (9.37)
+i=i
+
+Let
+
+/!(À)=-^(X)+^\.À',
+1=1
+
+ho = sup /z(\).
+
+0&lt;\&lt;1
+
+To determine the points X at which A (A) = ho, note that
+
+dh N
+.-ZU+l)^i^-In (A/I-A).
+
+d\ /=o
+
+Since dh/d\ is a sum of a Nth degree polynomial in X and a function In (A/I - A)
+which is monotonically increasing, the function dh (\)/d\ can have at most N
+zeroes in the interval 0 &lt; À &lt; 1. Consequently, the function h(\) can assume
+the value A o at utmost, N + 2 points, namely the N interior points mentioned
+
+MINIMAX ESTIMATION                                             363
+
+above and the two boundary points A = 0, and A. = 1. Let these points be
+labeled \o,   , ^v+i-
+
+Now consider the expression (9.37) for ^ m conjunction with (9.36). Since
+u?F(X) occurs linearly in (9.37), F* could be a maximizing function as defined in
+(9.36) among F obeying (9.33), only if (9.38) is true
+
+dF*(X)&gt;OVX=Xo,...,X^i,              (9.38)
+= 0 elsewhere.                       Q.E.D.
+
+Check on the results
+
+In the above proof, we used the theory of Lagrange multipliers to invoke the
+existence of the multipliers obeying (9.36). In this section we will display these
+multipliers explicitly for the case N = l. Of course, a similar procedure can be
+used for larger N
+
+The candidate for F* when TV = 1 is displayed here
+
+F*(X) = 0.3 u(\) + 0.4 u(\ - 0.5) + 0.3 u(X - l),
+
+where u(-) is the unit step function, u (A) = 0 for X &lt; 0 and 1 elsewhere. The
+corresponding moments are
+
+* - I Tt^c'*r\t - n c    r,*- \\'i^f7*,
+
+pi= XJ/«(À)=0.5,   p2= \\idFVÇk)=QA
+
+The corresponding candidates 11, are: jUi = 4 to 2, ^ = -4 In 2. We need to show
+that
+
+^(.I7\P*,PÎ)&gt;^(f7,Pl,P2),
+
+for all F obeying (9.33) and (9.34) and all pi, p^. We will first evaluate the
+function^ in ^ from (9.29)
+
+-g(Pi, P2) A - (dF(\) (1 - À)(\ In fl - P2\) + (1 - X) In ^1
+
+J        L   \ ^/       ^iJ
+
+-PF(A) A^ In P2/Pi + 0 - ?0 In (1 - P2/Pi],
+
+=2(p2-Pl)lnl-p2-^^+(2pl-2p2- l)ln(p2/pi).
+\   Pi/
+
+Let
+
+H(\) = [-X In X- &lt;1 - X) In (1 - X)].
+
+364                                                  R. L. KASHYAP
+
+By (9.37)
+
+iKF)=JdF(\) [-^(X)+^À+JU2À2] +g(pi,pî)- ßipi - ß2p2.
+
+(9.39)
+Let
+
+S'(.Pi,Pi}=s(.P\,Pî)- ßiPi - P-2P2             (9.40)
+
+^g(plp2) = -2 - 2 In (pi - p,) + l/pi + 2 In p2 - MI ,
+dp i
+
+= O, at pi =??, p2=p2*.                       (9.41)
+Similarly,
+
+'-'^^atp^pr, p,=p?.             (9.42)
+
+0?2
+
+One can also check the matrix of second derivatives to be positive definite at
+pi =pî'andp2 =??.
+Let
+
+h(\)=-H(\)+n,\+^\2,
+
+= the coefficient ofdF(A) in (9.39).
+
+A (À) assumes the maximum value of 0 at three points only in 0 &lt; À &lt; 1, namely
+ÀO = 0, Ai = 0.5, Ä.2 = l .0. In view of the above facts, (9.41) and (9.42), we ob-
+tain (9.43)
+
+^(F",pî,P2)&gt;nF,pt,p,),                (9.43)
+for any pi, pi and F obeying (9.33) and (9.34).
+
+REFERENCES
+
+1. T. W. Ferguson, Mathematical Statistics, Academie Press, New York, 1967.
+
+2. L. J. Savage, Foundation of Statistics, Wiley, New York, 1956.
+
+3. R. L. Kashyap, Small sample estimation from information theoretic methods, Tech.
+Rep. TR EE-31, School of Electrical Engineering, Purdue University, November 1972.
+
+4. R. L. Kashyap, Probability and uncertainty, IEEE Trans. Inform. Theory, 641-650
+(1971).
+
+5. S. Kuliback, Information Theory and Statistics, Dover, New York, 1959.
+
+6. R. G. Gallagher, Information Theory and Reliable Communication, Wiley, New York,
+1968.
+
+Received January, 1974</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900218</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90021-8</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90021-8</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:article-footnote xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:label>☆</ce:label>
+				<ce:note-para>Partially supported by U.S. National Science Foundation under grant GK-36721 and the U.S. AFOSR under grant 69-1776.</ce:note-para>
+			</ce:article-footnote>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Minimax estimation with divergence loss function</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>R.L.</ce:given-name>
+					<ce:surname>Kashyap</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>School of Electrical Engineering, Purdue University, West Lafayette, Indiana 47907 USA</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">We propose a class of loss functions for parameter estimation obtained by considering the discrepancy between the probability distribution p.d. with the unknown parameter and the p.d. with the parameter replaced by the estimate, the discrepancy being measured by the divergence functional. The minimax estimate of the binomial distribution is determined using the divergence loss function. The minimax estimate is Bayes with respect to a CDF 
+						<cja:math altimg="si1.gif">F
+							<cja:sup loc="post">∗</cja:sup>
+						</cja:math> which is obtained by maximizing the conditional mutual information function. The CDF 
+						<cja:math altimg="si2.gif">F
+							<cja:sup loc="post">∗</cja:sup>
+						</cja:math> is a staircased function. The minimax estimate is compared with other estimates, such as the maximum likelihood estimate, the minimax estimate with the quadratic loss function, etc. It is found that the estimate derived here is satisfactory both for large and small samples, unlike the maximum likelihood estimate which is satisfactory only with large samples and the minimax estimate with the quadratic loss function which is satisfactory only with small samples.
+					</ce:simple-para>
+					<ce:simple-para view="all">The theory given here can be easily extended for estimation in multinomial distributions.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.W.</ce:given-name>
+										<ce:surname>Ferguson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Mathematical Statistics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1967</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.J.</ce:given-name>
+										<ce:surname>Savage</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Foundation of Statistics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1956</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Kashyap</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Small sample estimation from information theoretic methods</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rep. TR EE-31</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>November 1972</sb:date>
+									<sb:publisher>
+										<sb:name>School of Electrical Engineering, Purdue University</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Kashyap</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Probability and uncertainty</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>641</sb:first-page>
+									<sb:last-page>650</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Kullback</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Information Theory and Statistics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1959</sb:date>
+									<sb:publisher>
+										<sb:name>Dover</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.G.</ce:given-name>
+										<ce:surname>Gallagher</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Information Theory and Reliable Communication</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

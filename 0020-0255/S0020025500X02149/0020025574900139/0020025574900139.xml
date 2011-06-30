@@ -1,0 +1,33 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90013-9"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Foreword</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Demetrios G. Lainiotis</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 189-189. doi:10.1016/0020-0255(74)90013-9</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">189-189</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">189</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">189</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90013-9</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90013-9</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90013-9</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>189
+
+Foreword
+
+This special issue on estimation resulted from the belief that the subject of
+estimation has reached a certain degree of maturity with respect to significant
+theoretical and algorithmic advances as well as from the fact that estimation has
+important current and potential future engineering applications. This collection
+of papers providing a unified and lucid presentation of the state of the art of es-
+timation and presenting several aspects of the problem can serve a useful purpose
+for the scientific community as a whole, and the control, communications, and
+systems community in particular.
+
+DEMETRIOS G. LAINIOTIS
+Guest Editor</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="edi" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900139</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90013-9</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90013-9</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Foreword</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Demetrios G.</ce:given-name>
+					<ce:surname>Lainiotis</ce:surname>
+					<ce:roles>Guest Editor</ce:roles>
+				</ce:author>
+			</ce:author-group>
+		</cja:head>
+	</cja:converted-article></doc:document>

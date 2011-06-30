@@ -1,0 +1,1263 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90011-5"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">The quantification and analysis of information used in decision processes</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Bruce J. Whittemore</rdf:li><rdf:li>M.C. Yovits</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 171-184. doi:10.1016/0020-0255(74)90011-5</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">171-184</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">171</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">184</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90011-5</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90011-5</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90011-5</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMA TION SCIENCES 7, 171 -184 (1974) 171
+
+The Quantification and Analysis of Information Used in Decision Processes*
+
+BRUCE J. WHITTEMORE** and M. C. YOVITS1'
+
+Department of Computer and Information Science,
+The Ohio State University, Columbus, Ohio
+
+Communicated by J. M. Richardson
+
+ABSTRACT
+
+If information science is to be considered a "science" in the true sense of the word, there
+is a clear need for the development of a set of general concepts and analytical expressions
+regarding the flow of information in any situation for which information serves as a re-
+source. This paper discusses quantitative aspects of a theory leading to the development of
+such a pragmatic information theory. At the heart of a theory of pragmatic information is
+the measure of information contained in a set of data. At the pragmatic level, information
+has value to the extent that it is useful as a resource for purposeful activity. The primary
+"purposeful activity" in life is decision-making. Hence, information and decision-making
+are inextricably tied together; in fact, information is data of value in decision-making. In
+this paper, we discuss quantitatively a very general decision model which provides a formal
+and comprehensive representation of uncertainty in decision-making. Other decision models
+presented in the literature assume away a considerable and important portion of the uncer-
+tainty that exists in decision-making. This model is then used as a framework for examining
+the role of information in decision-making in a way that is also formal and comprehensive.
+Hence, the decision model suggested facilitates a meaningful analysis of information; this
+analysis culminates in the development of a measure of the value of the pragmatic informa-
+tion contained in a set of data.
+
+1. INTRODUCTION
+
+This paper discusses certain quantitative aspects of previously published ma-
+terial [1-3] by the authors and others. The overall objective of this research is
+to establish a fundamental theory for the analysis and flow of information. Such
+
+*Research sponsored in part by the National Science Foundation through Grant No. GN-
+534 from the Office of Science Information Service to the Computer and Information
+Science Research Center, The Ohio State University.
+
+**Now at the Institute for Defense Analyses, Arlington, Virginia.
+t All correspondence concerning this paper should be sent to Dr. M. C. Yovits, Depart-
+ment of Computer and Information Science, The Ohio State University, Columbus, Ohio.
+
+© American Eisevier Publishing Company, Inc. 1974
+
+172                             BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+a theory would include fundamental relationships, measures, and quantitative
+expressions about information flow in any situation for which information serves
+as a resource. In this theoretical development we relate information to decision-
+making. Accordingly, one of the objectives of this approach is to establish prin-
+ciples and guidelines regarding the use of information in decision processes.
+
+Weaver [4] has suggested a three-fold classification of the communications
+problems of interest in information science: (1) the technical problem; (2) the
+semantic problem; and (3) the effectiveness (or behavioral) problem. Problems
+at the first level are well in hand. The significance of Shannon's work [4] on
+communication theory is, of course, widely recognized. The treatment of prob-
+lems at the second level has been somewhat less complete than the treatment of
+those at the first level; nevertheless, significant and quite widely accepted work
+of a fundamental nature (e.g., by such people as Carnap and Bar-Hillel [5],
+Winograd [6], and others) does exist. However, no comprehensive and widely
+accepted theory of information at the third level has yet been published, despite
+its clear significance.
+
+The effectiveness or behavioral problem involves an investigation of the use
+and effect of information on human activity. Studies in this area involve the re-
+lationship between information, communication processes, and human behav-
+ioral activities. A comprehensive theory dealing with communications problems
+at this third level would consist, in part, of situation-dependent and time-
+dependent measures of the effect of information on any activity for which infor-
+mation serves as a resource. Furthermore, it would contain fundamental expres-
+sions regarding the flow of information in any such situation. Using the termi-
+nology of the linguist, we may refer to such a theory as a theory of pragmatic
+information.
+
+In this paper, we discuss quantitatively a generalized decision model which
+provides a formal and comprehensive representation of uncertainty in decision-
+making. This model is then used as a framework for examining the role of infor-
+mation in decision-making in a way that is also formal and comprehensive.
+Hence, the generalized decision model facilitates a meaningful analysis of infor-
+mation, culminating in the development of a measure of the value of the prag-
+matic information contained in a set of data.
+
+2.BACKGROUND
+
+At the pragmatic level, the primary activity for which information serves as a
+resource is decision-making. Information is used for making decisions; it is ac-
+quired, processed, and disseminated for this very reason. Hence, information
+and decision-making are inextricably tied together. Indeed, information can be
+defined as data of value in decision-making. In [1 ] and [2], one of the authors
+has discussed the basis for such a definition as well as the implications thereof.
+
+QUANTIFICATION AND ANALYSIS OF INFORMATION
+
+173
+
+ENVIRONMENT
+
+ENVIRONMENT
+
+
+
+INFORM ACQUIS	ATI ON ITION	INFORMATION		DECISION-	0	COURSES F ACTION ^	EXECL	JT10N
+SEMI NA(IA	TION D)			(DM)			1	E)
+		OATA	T	»ANSFORMATIO	M	OBSER	VABLES	
+				(T)				
+
+Fig. 1. The generalized information system model.
+
+In particular, this definition gives rise to the generalized information system
+model depicted in Fig. 1. This model is a perfectly general one, limited only by
+three basic hypotheses.
+
+The first hypothesis is that there is a close interrelationship between informa-
+tion and decision-making; this interrelationship gives rise to the definition of in-
+formation stated. The second hypothesis is related to the ability to measure or
+quantify information or even to know of its existence. In the physical world,
+the only way in which a real parameter, say a mass or a force, can be measured,
+is by its interaction with the environment. If this interaction does not exist,
+then it is impossible, almost by definition, to measure a quantity or even to es-
+tablish its existence. One ought to be able to make the same statement about in-
+formation. It is necessary that the information produce physical interaction-
+with the real world. In any real situation it must give rise to an observable
+effect. The third hypothesis which the model is to satisfy is the necessity that
+the decision-maker must have some way of comparing predicted observables with
+the actual observables that result from any decision for which he is responsible.
+The decision-maker generates a course of action which he believes will have cer-
+tain observable effects. It is only after comparing the actual observables with
+those he has predicted, that he has some way of verifying the validity of his
+course of action. In other words, the third hypothesis dictates that the general-
+ized model must have feedback between the resulting observables and the
+decision-maker.
+
+In a recent paper [3], the authors provide further refinement and extension
+for some of the relationships suggested in [1] and [2]. In [3], a new and quite
+general decision model was developed; such a decision model was necessary pri-
+marily because existing decision models do not provide a comprehensive rep-
+resentation of uncertainty. Specifically, the group to whom typical decision
+models (as found in voluminous form in the decision theoretic literature) are
+addressed consists of decision-makers who are assumed to have reached a rather
+
+174
+
+BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+advanced state of knowledge about the decision situation in questioni.e.,
+decision-makers who have already resolved a considerable amount of uncertainty.
+This shortcoming is important because a formal and comprehensive analysis of
+the role of information in decision-making can only be founded on a decision
+model that provides a formal and comprehensive representation of uncertainty in
+decision-making.
+
+In other words, the decision theoretic literature which exists in voluminous
+form treats the situation where the decision-maker already has a high degree of
+expertise. On the other hand, the information science aspects of decision theory
+must cover comprehensively those decision-makers who not only are expert, but
+those decision-makers who may be mediocre or even rather poor. A large part
+of the development of information systems is clearly aimed at the non-expert or
+even the novice decision-maker. It is, therefore, most important in developing a
+formal role for information science that all levels of effectiveness of decision-
+makers be considered.
+
+In [3] we point out that a decision-maker (DM) must contend (either con-
+sciously or unconsciously) with two fundamental types of uncertainty: struc-
+tural uncertainty and relational uncertainty. The DM must first attempt to
+identify the basic structure of the situation: the nature and number of elements
+involved. Given some representation of this basic structure (albeit incomplete
+or even totally incorrect), the DM can then attempt to assess the nature of the
+relationships between these elements.
+
+At the same time another categorization of uncertainty exists. It is seen from
+Fig. 1 that the execution of courses of action results in observable outcomes; yet
+there is executional uncertainty associated with predicting exactly which out-
+come will occur when a given action is executed. Furthermore, deciding which
+course of action to select involves consideration of the relative desirability of
+possible decision outcomes; this "relative desirability" can be determined only
+by addressing goal uncertainty. Finally, the state of the external environment
+
+
+
+		UNCERTA^	-ITY ABOUT;	
+5	^^	EXECUTION OF COURSES OF ACTION	G'OALS	ENVIRONMENT
+2 5 &gt;-z &lt;	STRUCTURAL COMPONENTS OF THE DECISION MODEL	STRUCTURAL-EXECUTIONAL UNCERTAINTY	STRUCTURAL-GOAL UNCERTAINTY	STRUCTURAL-ENVIRONMENTAL UNCERTAINTY
+UJZ3	RELATIONSHIPS AMONG THE STRUCTURAL COMPONENTS	RELATIONAL-EXECUTIONAL UNCERTAINTY	RELATIONAL-GOAL UNCERTAINTY	RELATIONAL-ENVIRONMENTAL UNCERTAINTY
+
+Fig. 2. A classification of uncertainty in decision-making.
+
+QUANTIFICATION AND ANALYSIS OF INFORMATION
+
+175
+
+(or "state of nature") often plays an important role in decisions; hence, the DM
+must also contend with environmental uncertainty.
+
+In general then, uncertainty in decision-making can be classified in two pos-
+sible ways. Uncertainty may be structural or relational in nature; at the same
+time, it may be executional, environmental, or goal associated. This classifica-
+tion of uncertainty is depicted in Fig. 2.
+
+The conceptual decision model suggested in Reference [3] is a general one: a
+structure consisting of courses of action, decision outcomes, values of decision
+outcomes, and states of nature as well as the associated sources of uncertainty.
+The conceptual model is depicted schematically in Fig. 3.
+
+ENVIRONMENTAL
+UNCERTAINTY
+
+
+
+STATES OF NATURE;s^)
+1 ' 1
+
+
+
+	(RELATIONAL)	-J ; L-		
+r i *		*		1 l
+COURSES OF		OUTCOMES		VALUES OF OUTCOMES
+(°i&gt;	(RELATIONAL)	(^	(RELATIONAL)1	(ofo.n
+
+'(STRUCTURAL)^
+
+EXECUTIONAL
+UNCERTAINTY
+
+(STRUCTURAL)^
+
+GOAL
+UNCERTAINTY
+
+Fig. 3. The conceptual decision model.
+
+The purpose of this paper is to discuss the quantitative aspects of the decision
+model depicted m Fig. 3 and to discuss the use of this model for the quantifica-
+tion and analysis of information in decision processes.
+
+3. ANALYSIS OF INFORMATION
+
+Consider a DM who is required to make a sequence of related choices from
+among a discrete set of alternatives A = {ai, a-i,    , aJ. Since the DM
+may be uncertain about the nature and number of elements in this set, m may
+not be a fixed and/or known constant. The execution of a particular course of
+action results in the occurrence of one of a set of possible outcomes 0 =
+{oi, o-i,    , On}. To allow for unexpected outcomes, n should also be inter-
+preted as variable over time. The DM may be uncertain as to the relationship be-
+
+176
+
+BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+
+
+OUTCOMES	\						
+COURSES OF ACTION	\	"l	"2		°J		°n
+	'l	"11	"12		"U		"in
+	"i	"21	"22		"y		"Zn
+	"i	"tl	"f2		"^		"in
+	"»	"».l	"m2		"^		"i«
+
+Fig. 4. The execution matrix.
+
+tween a particular course of action a, and an outcome o/. The likelihood that
+the execution of course of action a, will result in outcome o, can be denoted by
+the subjective probabilistic estimate wy. This is indicated in Fig. 4.
+
+After a DM has determined his overall goal structure (i.e., to what goal he
+aspires), he must then assign numbers (in terms of value units) to the various de-
+cision outcomes that reflect the relative value of these outcomes with respect to
+goal attainment. These relative values are denoted by { u(oy)}; the execution
+matrix now becomes that depicted in Fig. 5.
+
+
+
+RELATIVE VALUES	\						
+OUTCOMES	\	vlo. l	"'"S1		vto.)		"'.'
+COURSES OF ACTION	\	"l	°2		"J		"n
+	"I	"11	"12		"l;		"in
+	"2	"21	"22		"y		"2n
+	"t	"tl	"t2		"ü		"t,
+	"m	"«I	"»2		"^		"m
+
+Fig. 5. The execution matrix with relative values of outcomes.
+
+QUANTIFICATION AND ANALYSIS OF INFORMATION
+
+177
+
+The set of relevant states of nature can be denoted by S = {xi, Si,    , Sr}.
+As with m and n, r is also interpreted as a number whose value may vary accord-
+ing to the DM's current understanding of the decision situation. The probabili-
+ties of occurrence for the various states of nature can be denoted by the subjec-
+tive estimates P(si),P(s-t),    ,P{Sr).
+
+The values of the probabilities w,y and P(sk) depend on the DM's current
+understanding of the situation. In general, this understanding changes over time;
+
+nevertheless, at any one point in time at which the DM is required to use his de-
+cision model to make a decision, m, n, and r assume whatever values reflect his
+current understanding of the situation. Hence, at any particular point in time
+S}Li w = 1 ; = 1, 2,    , m and S^i P(^) = l.
+
+The decision elements A, O, {n'iy}, and [u(o,)} are clearly dependent upon
+the state of the external environment. These dependencies can be incorporated
+as follows: the sets A and 0 can be defined so as to reflect the DM's current
+understanding of all possible courses of action and all possible decision out-
+comes for all states of nature. A set of {wf,} and {u^ (o,)} can be assumed to
+exist for each state of nature s^. The suggested mathematical representation is
+depicted in Fig. 6.
+
+The mathematical decision model suggested here consists of this decision ma-
+trix together with an appropriate decision rule which results in the selection of a
+single course of action.
+
+The exact nature of this decision rule is dependent upon the decision-maker's
+personal attitude. For example, if the DM is rather conservative, he might
+choose to select that course of action which maximizes his minimum possible
+
+
+
+RELATIVE VALUES	\						
+OUTCOMES	\	k	,k ^2		S;		k "
+COURSES OF ACTION	\	°1	°2		0 . J		Ü
+	a!	k "11	It '^IS		k		^
+	a?	k "2;	.t		k"2J		k"2f!
+	a.	"^	it"is		^		k in
+	"r,	"^	^		^.m,]		"^
+
+Fig. 6. The decision matrix for the kth state of nature.
+
+178                             BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+gain. For illustrative purposes, assume that the DM selects an alternative on the
+basis of maximum expected (relative) value. That is, he selects a*, such that
+
+£T(ff*)=max{£T(a;)},                  (3.1)
+(
+
+where E V is defined by
+
+£T(a,)=E P^iwffV^o,).              (3.2)
+fc=i     /=i
+
+It is important to note that nothing yet indicated is really dependent upon
+the type of decision rule which the decision-maker may use. This decision rule
+may be totally a descriptive one, or it may be a normative rule of any type, or it
+may be a combination of the two. The above equations are representative only
+and suggest a specific decision rule that one might apply. It is, however, a very
+reasonable rule and one that it is convenient to consider in somewhat more detail
+later.
+
+The generalized decision model discussed above provides a framework for ex-
+amining the role of information in decision-making in a way that is formal, com-
+prehensive, and meaningful. Let us begin this examination and analysis by con-
+sidering the separate effects of information on the various types of uncertainty;
+
+we will then consider the aggregated effect.
+
+The information contained in a set of data (either unexpected new data from
+the external environment or feedback data from past decisions) has either struc-
+tural value or relational value or both. If the data indicate to the DM that his
+understanding of the structural components of the decision situation is incom-
+plete and/or incorrect, then these data contain structural information. On the
+other hand, data that help the DM refine his model of the relationships that exist
+between known structural components contain relational information. These
+concepts are elaborated on at length in [3].
+
+Consider the DM who has resolved a certain amount of structural uncertainty;
+
+i.e., he has a rather good idea as to his decision goals, the available courses of
+action, the possible decision outcomes, and the relevant states of nature. The
+DM's current lists of mutually exclusive courses of action, decision outcomes,
+and states of nature can be made exhaustive by the addition of a "catch-all
+category" in each case. For example, if the DM can identify n - 1 possible de-
+cision outcomes, then o represents "the occurrence of some other, unexpected
+outcome." Similarly, alternative dm denotes "any other course of action" and
+state Sr denotes "any other relevant state of nature." Here the role of relational
+information (either new information from the external environment or feedback
+information) can be discussed in rather precise quantitative terms.
+
+Initially, a DM who is completely uncertain about the execution of a particu-
+
+QUANTIFICATION AND ANALYSIS OF INFORMATION                      179
+
+lar course of action a;' given state of nature s^' has "insufficient reason" to as-
+sume anything other than that the various decision outcomes are equally prob-
+able; i.e., w^- = \jn for  = 1, 2,    , n. Of course, the use of the principle of in-
+sufficient reason can only follow from the DM's acceptance of certain underlying
+axioms. Luce and Raiffa [7] discuss these axioms in detail. For act a,' and
+state Sk' then, such a distribution reflects a state of complete indeterminism.
+Any change in this distribution can occur only as a result of utilizing relational-
+executional information. If the DM has prior information about the execution
+of alternative a,' given state x^', the associated distribution would, of course, in-
+dicate this by reflecting something other than a state of indeterminism. If there
+is no executional uncertainty associated with a,', then a state of determinism
+would be reflected by one of the w^'j elements being unity and all others being
+zero.
+
+In general then, at time t the DM has a set {Pf(o, |a,;Sfe')} of n probabilistic
+estimates regarding the occurrence of observable decision outcome Oy given that
+course of action a,' is selected and state of nature s^' prevails. Specifically,
+
+Pt (o, la,' ; Sk ) = w^', for  = 1, 2,    , n.                (3.3)
+
+New data or feedback data that contain relational-executional information must
+in some way affect this distribution.
+
+Numerous schemes exist for combining new and old information. Recent
+papers by Fu [8] and Tsypkin [9] provide a survey of these "learning algo-
+rithms." Clearly, whether a particular scheme for combining new and old infor-
+mation is "best" depends entirely on the characteristics of the particular situa-
+tion at hand. Nevertheless, one learning rule discussed by Fu [8], and in more
+detail by Bush and Mosteller [10] and Fu and McLaren [11 ], is particularly
+well suited for use in conjunction with the generalized decision model.
+
+If the underlying stochastic process that governs the execution of course of
+action a,' given state of nature s^' is assumed to be stationary or at least quasi-
+stationary (i.e., stationary over certain intervals of time), then the effect of
+relational-executional information on the probabilities [Pt(o, |a;'; Sfe')} can be
+described mathematically by the following linear reinforcement learning rule:
+
+P^(o,\a,';Sk'}=\Pt(o,\a,;Sk')+(.ï - X)P^';a,-;o/),      (3.4)
+
+where /^(sfc';a/';o,) represents the probability at time t of the joint occurrence
+of s fc', Ok, and oy. By the multiplication rule that results from the definition of
+conditional probability,
+
+P^;a,;o,)=P,(Sk')Pt'(ai'\s,')P,(o,\Sh';a,'),           (3.5)
+
+which can be readily computed since, from the decision model, Pt(Sk') ::P(sk')
+and Pt(oj\Sic',aj') = w^'j and since P( (a;' \s^') can be defined as the conditional
+
+180 BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+probability of choice for state s^',
+
+EV(ai')
+Pt(ai'\Sk')=
+
+(3.6)
+
+where
+
+£ EV(ah)
+/i=i
+
+EV(a,)=^^uk'(o,).
+/=i
+
+(3.7)
+
+The value of X is such that O &lt; X &lt; l, although typically O &lt; À &lt; l.
+
+This parameter may be interpreted in two different, but intuitively consistent
+ways. First, X is a learning parameter; a larger value of À results in a slower learn-
+ing rate, while a smaller value of X results in a more rapid rate of learning.
+Secondly, À can be viewed as a parameter whose value reflects the DM's confi-
+dence in his current representation of uncertainty. As such, this value also re-
+flects the weight the DM is willing to give his prior representation of uncertainty
+in combining this old information with new information in order to obtain a new
+representation of uncertainty.
+
+The relative value of outcome o, given that the state of nature is s^:' is given
+by u^ (oy). This number represents the relative desirability of outcome o/ to the
+DM. As the DM increases his understanding of the decision situation, he may be
+able to assess more accurately the relative values of the possible decision out-
+comes. The DM can incorporate relational-goal information by changing the ap-
+propriate relative values of these outcomes so that they reflect his current under-
+standing of the situation.
+
+Now consider the DM's representation of relational-environmental uncer-
+tainty: the subjective (in general) probability distribution of the states of nature,
+P(si), P(si),   , P(Sr). What is the effect on this distribution of the actual se-
+lection of a given alternative a,' and the execution of this alternative into out-
+come Oy'? If the underlying stochastic process can reasonably be assumed to be
+stationary, it is well known that it provides an optimal method for combining
+prior, subjective information with such new, objective data (i.e., data which con-
+tain feedback information). Noting that w^' is actually the likelihood that Oy'
+will result from act a;' given that the state of nature is s^, the following applica-
+tion of Bayes' theorem gives a precise representation of the role of feedback in-
+formation here :
+
+P^,o,)= p(sk)w''  .                 (3.8)
+
+É^)^'
+/i=i
+
+QUANTIFICATION AND ANALYSIS OF INFORMATION                       181
+
+In general, decision-makers do not make decisions on the basis of what the
+decision situation actually is, but rather on the basis of what they think the situ-
+ation is. Here the notion of an "information structure," as defined by Marschak
+[12], adds some operational significance to this conceptual notion. Part of the
+function of an information system is to diagnose the state of nature. If Z =
+{zi, z .z,    , Zy] denotes the set of diagnostic signals about the states Si, s-i,   
+   ,Sf, then the q^ elements in Marschak's information structure represent the
+probability that the information system will emit signal Zy given that x; is the
+true state of nature. Hence, the (jr,y are likelihoods, and a straightforward appli-
+cation of Bayes' theorem can describe precisely the effect of this diagnostic in-
+formation on the DM:
+
+P^\.,)= nsk)qk'                    (3.9)
+
+r
+
+Z P(Sh)qhj'
+
+h^\
+
+It is important to recognize that the learning rules discussed above are only
+suggestive and/or illustrative of what a reasonable DM might, or in some cases,
+should do. The way in which a particular DM actually uses information to revise
+or reinforce his current understanding of the decision situation is, of course, a
+highly individualistic process. Hence, the learning rules suggested here are only
+meant to be examples of ways in which a DM's representation of uncertainty
+might be revised or reinforced. The fact that the decision model suggested here
+is amenable to the application of these and other learning rules is clearly an indi-
+cation of its generality.
+
+Although the separate effects of the various types of information are clearly
+important, they are really only of major significance in their combined effect on
+the DM's understanding of the situation. The amount or value of the informa-
+tion contained in a set of data cannot be meaningfully expressed except in terms
+of how these data affect the DM's model of the decision situation. One of the
+purposes of this study is to suggest a measure of pragmatic information that sub-
+sumes any possible measure of amount of information in that it is, in fact, a mea-
+sure of the value of an amount of information.
+
+Information has value in decision-making to the extent that it changes the
+DM's state of knowledge about a decision situation or, to use MacKay's [13]
+terminology, his "state of conditional readiness" for making that decision. The
+generalized decision model provides the means by which this notion of a deci-
+sion state can be readily represented.
+
+Regardless of what decision rule a DM is utilizing, it is possible to obtain a dis-
+tribution that reflects his overall inclination toward the various courses of action.
+For example, as we have already considered, if the DM is an expected value
+maximizer, he will select course of action a* according to Eqs. (3.1) and (3.2).
+
+182
+
+BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+lfP(a,) is defined by
+
+P(a.) =
+
+EV(a,)
+
+(3.10)
+
+then selecting a* such that
+
+Z EV(ah)
+
+/)=!
+
+P(a*~) = max {P(a,)}
+
+(3.11)
+
+is an identical decision rule.
+
+The numbers P(ai), P(a-i),    ,P(a,n) can be interpreted as the DM's proba-
+bilities of choice regarding the m courses of action. Notice that these probabili-
+ties of choice are dependent upon all the components of the generalized decision
+model; specifically, the effects of any of the six types of uncertainty depicted in
+Fig. 2 are manifested in this one distribution. Consequently, the extent to which
+information reduces any of these six types of uncertainty will be reflected in this
+distribution. Assuming the DM has resolved sufficient structural uncertainty to
+enumerate an exhaustive list of courses of action (by inserting a "catch-all alter-
+native," if necessary), then the expression (originally suggested by Ackoff [14])
+
+i=i
+
+m
+
+(3.12)
+
+provides a measure of the "distance" a DM is from a state of indeterminism.
+Specifically, if each PCa,) = l lm, then the DM has no basis for choice and the
+value of the expression is zero. At the other extreme, if one of the probabilities
+of choice is unity and all others are zero, then the situation is completely deter-
+mined and the value of the expression is maximal:
+
+m
+
+Z P(ff,)--= 1-- +(w- l) 0--=2-
+
+~-^             m     \     ryi i                      m
+
+m
+
+m
+
+m
+
+(3.13)
+
+The value V of the decision state DS at time f is a function of the probabili-
+ties {Pt(cij)} and can be defined by
+
+2-2
+
+7?!
+
+(3.14)
+
+If the decision state is completely indeterminate (i.e., the DM has no information
+on which to base a choice), then V(DSf) = 0; if the state is completely deter-
+
+QUANTIFICATION AND ANALYSIS OF INFORMATION                     183
+
+minate (i.e., the DM has no uncertainty whatsoever about which alternative to
+select), then V(DSt) = 1.
+
+The probabilities of choice {P( (a,)} which define the decision state at time ;
+
+are functions of the various components of the decision model. Specifically,
+from equations (3.2) and (3.10)
+
+ma.)     t^^^
+
+PAa,)=     \al)   =^1^.       (3.15)
+
+m                   mr              n
+
+^ £T(a) ^ ^ P(s,) ^ &lt; ^ (o/)
+
+h=l         h=ï fc=l      =!
+
+(For the sake of clarity, the t subscripts on the P(sic), w^., and uk (o,) are
+omitted.) The treatment of all the types of uncertainty depicted in Fig. 2 is re-
+flected in these probabilities of choice {P, (a,)}. Information has its impact on
+the various components of the decision model. Consequently, the pragmatic in-
+formation / contained in a set of data D can be defined by the impact of these
+data on the value of the DM's decision state:
+
+I(D)=V(DS^)- V(DS,).                (3.16)
+
+Equation (3.16) says that the pragmatic information content of a set of data
+or a message is equal to the difference of the value of the decision state of the
+decision-maker after and before receipt of the message, where the value of the
+decision state is a function of the determinism of the decision maker. Many dif-
+ferent approaches may be used to determine the decision state, either descrip-
+tively or analytically. However, in our suggested formulation this is obtained
+directly from Eqs. (3.14) and (3.15).
+
+4. CONCLUSION
+
+In information science there is a need for the development of a theory of
+pragmatic information. Such a theory would relate information to its use and
+usefulness in choice situations; it would treat information as a resource whose
+value is relative. At the heart of such a theory would be a measure of the prag-
+matic information content of a message for a particular decision-maker in a par-
+ticular decision situation at a particular point in time.
+
+The measure defined in equation (3.16) is suggested as such a measure and is,
+therefore, thought to be of major importance. Some additional implications of
+this measure are suggested in [3]. In general, this measure quantifies informa-
+tion in terms of its effect on the state of the decision-maker. A decision state is
+defined so that it represents a complete quantitative description of the DM's cur-
+rent understanding of a decision situation. The detailed development of this
+measure is the primary contribution of this study to information science.
+
+184                              BRUCE J. WHITTEMORE AND M. C. YOVITS
+
+REFERENCES
+
+1. M. C. Yovits and R. L. Ernst, Generalized information systems: consequences for infor-
+mation transfer, in People and Information (H. B. Pepinsky, Ed.) Pergamon Press, New
+York (1969).
+
+2. M. C. Yovits, Information science: toward the development of a true scientific disci-
+pline, American Documentation 20, 369-76 (1969).
+
+3. B. J. Whittemore and M. C. Yovits, A generalized conceptual development for the analy-
+sis and flow of information, J. Am. Soc. Inform. Sei. (May-June 1973).
+
+4. C. E. Shannon and W. Weaver, The Mathematical Theory of Communication, University
+of Illinois Press, Urbana, 111. (1949).
+
+5. R. Carnap and Y. Bar-Hillel, An outline of a theory of semantic information. Tech.
+Rep. No. 247, Research Laboratory of Electronics, M.I.T., 1952.
+
+6. T. Winograd, Understanding natural language, Cognitive Psych. 3 (1972).
+
+7. R. Luce and H. Raiffa, Games and Decisions, Wiley, New York (1957).
+
+8. K. S. Fu, Learning control systems, in Advances in Information Sciences, Vol. l (J. T.
+Tou, Ed.) Plenum, New York (1969), pp. 251-292.
+
+9. Y. Z. Tsypkin, Learning systems, m Advances in Information Systems Sciences, Vol. 2
+(J. T. Tou, Ed.) Plenum, New York (1969), pp. 1-35.
+
+10. R. Bush and F. Mosteller,Stóc/iasr;c Models for Learning, Wiley, New York (1955).
+
+11. K. S. Fu and R. W. McLaren, An application of stochastic automata to the synthesis of
+learning systems, Tech. Rep. TR-EE-65-17, School Electrical Engineering, Purdue Uni-
+versity, 1965.
+
+12. J. Marschak, Problems in information economics, in Management Controls (C. P.
+Bonini, R. K. Jaedicke, and H. M. Wagner, Eds.) McGraw-Hill, New York (1964), pp.
+38-74.
+
+13. D. M. MacKay, Meaning and mechanism, a paper presented in January, 1960 on the
+B. B. C. Third Program. Text contained in MacKay's book. Information, Mechanism
+and Meaning, M.I.T. Press, Cambridge, Mass. (1969).
+
+14. R. L. Ackoff, Towards a behavioral theory of communication. Management Sei. 4,
+218-234(1958).
+
+Received October 1972; revised April 20, 1973</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900115</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90011-5</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90011-5</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:article-footnote xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:label>☆</ce:label>
+				<ce:note-para>Research sponsored in part by the National Science Foundation through Grant No. GN-534 from the Office of Science Information Service to the Computer and Information Science Research Center, The Ohio State University.</ce:note-para>
+			</ce:article-footnote>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">The quantification and analysis of information used in decision processes</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Bruce J.</ce:given-name>
+					<ce:surname>Whittemore</ce:surname>
+					<ce:cross-ref refid="AFF1">
+						<ce:sup loc="post">a</ce:sup>
+					</ce:cross-ref>
+					<ce:cross-ref refid="AFF2">
+						<ce:sup loc="post">∗∗</ce:sup>
+					</ce:cross-ref>
+				</ce:author>
+				<ce:author>
+					<ce:given-name>M.C.</ce:given-name>
+					<ce:surname>Yovits</ce:surname>
+					<ce:cross-ref refid="AFF1">
+						<ce:sup loc="post">a</ce:sup>
+					</ce:cross-ref>
+					<ce:cross-ref refid="COR1">
+						<ce:sup loc="post">†</ce:sup>
+					</ce:cross-ref>
+				</ce:author>
+				<ce:affiliation id="AFF1">
+					<ce:label>a</ce:label>
+					<ce:textfn>Department of Computer and Information Science, The Ohio State University, Columbus, OhioUSA</ce:textfn>
+				</ce:affiliation>
+				<ce:affiliation id="AFF2">
+					<ce:label>∗∗</ce:label>
+					<ce:textfn>Now at the Institute for Defense Analyses, Arlington, VirginiaUSA</ce:textfn>
+				</ce:affiliation>
+				<ce:correspondence id="COR1">
+					<ce:label>†</ce:label>
+					<ce:text>All correspondence concerning this paper should be sent to Dr. M.C. Yovits, Department of Computer and Information Science, The Ohio State University, Columbus, Ohio.</ce:text>
+				</ce:correspondence>
+			</ce:author-group>
+			<ce:date-revised day="20" month="4" year="1973" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:miscellaneous xmlns:ce="http://www.elsevier.com/xml/common/schema">Communicated by J. M. Richardson</ce:miscellaneous>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">If information science is to be considered a “science” in the true sense of the word, there is a clear need for the development of a set of general concepts and analytical expressions regarding the flow of information in any situation for which information serves as a resource. This paper discusses quantitative aspects of a theory leading to the development of such a 
+						<ce:italic>pragmatic information theory</ce:italic>. At the heart of a theory of pragmatic information is the measure of information contained in a set of data. At the pragmatic level, information has value to the extent that it is useful as a resource for purposeful activity. The primary “purposeful activity” in life is decision-making. Hence, information and decision-making are inextricably tied together; in fact, 
+						<ce:italic>information is data of value in decision-making</ce:italic>. In this paper, we discuss quantitatively a very general decision model which provides a formal and comprehensive representation of uncertainty in decision-making. Other decision models presented in the literature assume away a considerable and important portion of the uncertainty that exists in decision-making. This model is then used as a framework for examining the role of information in decision-making in a way that is also formal and comprehensive. Hence, the decision model suggested facilitates a meaningful analysis of information; this analysis culminates in the development of a measure of the value of the pragmatic information contained in a set of data.
+					</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.C.</ce:given-name>
+										<ce:surname>Yovits</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Ernst</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Generalized information systems: consequences for information transfer</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>H.B.</ce:given-name>
+											<ce:surname>Pepinsky</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>People and Information</sb:maintitle>
+									</sb:title>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>Pergamon Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.C.</ce:given-name>
+										<ce:surname>Yovits</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Information science: toward the development of a true scientific discipline</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>American Documentation</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>20</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>369</sb:first-page>
+									<sb:last-page>376</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>B.J.</ce:given-name>
+										<ce:surname>Whittemore</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.C.</ce:given-name>
+										<ce:surname>Yovits</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A generalized conceptual development for the analysis and flow of information</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Am. Soc. Inform. Sci.</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>May–June 1973</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.E.</ce:given-name>
+										<ce:surname>Shannon</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>W.</ce:given-name>
+										<ce:surname>Weaver</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Mathematical Theory of Communication</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1949</sb:date>
+									<sb:publisher>
+										<sb:name>University of Illinois Press</sb:name>
+										<sb:location>Urbana, Ill</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Carnap</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Y.</ce:given-name>
+										<ce:surname>Bar-Hillel</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An outline of a theory of semantic information</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rep. No. 247</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1952</sb:date>
+									<sb:publisher>
+										<sb:name>Research Laboratory of Electronics, M.I.T</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Winograd</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Understanding natural language</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Cognitive Psych.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>3</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB7">
+						<ce:label>7.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Luce</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Raiffa</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Games and Decisions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1957</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB8">
+						<ce:label>8.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>K.S.</ce:given-name>
+										<ce:surname>Fu</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Learning control systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:editors>
+											<sb:editor>
+												<ce:given-name>J.T.</ce:given-name>
+												<ce:surname>Tou</ce:surname>
+											</sb:editor>
+										</sb:editors>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Advances in Information Sciences</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>Vol. 1</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>Plenum</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>251</sb:first-page>
+									<sb:last-page>292</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB9">
+						<ce:label>9.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.Z.</ce:given-name>
+										<ce:surname>Tsypkin</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Learning systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:editors>
+											<sb:editor>
+												<ce:given-name>J.T.</ce:given-name>
+												<ce:surname>Tou</ce:surname>
+											</sb:editor>
+										</sb:editors>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Advances in Information Systems Sciences</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>Vol. 2</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>Plenum</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>1</sb:first-page>
+									<sb:last-page>35</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB10">
+						<ce:label>10.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Bush</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>F.</ce:given-name>
+										<ce:surname>Mosteller</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Stochastic Models for Learning</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1955</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB11">
+						<ce:label>11.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>K.S.</ce:given-name>
+										<ce:surname>Fu</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.W.</ce:given-name>
+										<ce:surname>McLaren</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An application of stochastic automata to the synthesis of learning systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rep. TR-EE-65-17</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1965</sb:date>
+									<sb:publisher>
+										<sb:name>School Electrical Engineering, Purdue University</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB12">
+						<ce:label>12.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Marschak</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Problems in information economics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>C.P.</ce:given-name>
+											<ce:surname>Bonini</ce:surname>
+										</sb:editor>
+										<sb:editor>
+											<ce:given-name>R.K.</ce:given-name>
+											<ce:surname>Jaedicke</ce:surname>
+										</sb:editor>
+										<sb:editor>
+											<ce:given-name>H.M.</ce:given-name>
+											<ce:surname>Wagner</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Management Controls</sb:maintitle>
+									</sb:title>
+									<sb:date>1964</sb:date>
+									<sb:publisher>
+										<sb:name>McGraw-Hill</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>38</sb:first-page>
+									<sb:last-page>74</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB13">
+						<ce:label>13.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.M.</ce:given-name>
+										<ce:surname>MacKay</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Meaning and mechanism</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>a paper presented in January, 1960 on the B. B. C. Third Program</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Information, Mechanism and Meaning</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>M.I.T. Press</sb:name>
+										<sb:location>Cambridge, Mass</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+							<sb:comment>Text contained in MacKay's book</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB14">
+						<ce:label>14.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Ackoff</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Towards a behavioral theory of communication</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Management Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>4</sb:volume-nr>
+									</sb:series>
+									<sb:date>1958</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>218</sb:first-page>
+									<sb:last-page>234</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

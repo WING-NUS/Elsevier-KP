@@ -1,0 +1,4414 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90015-2"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Partitioned estimation algorithms, I: Nonlinear estimation</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Demetrios G. Lainiotis</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 203-235. doi:10.1016/0020-0255(74)90015-2</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">203-235</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">203</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">235</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90015-2</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90015-2</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90015-2</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMATION SCIENCES 7,203-235 (1974) 203
+
+Partitioned Estimation Algorithms, 1: Nonlinear Estimation
+
+DEMETRIOS G. LAINIOTIS
+
+Department of Electrical Engineering, State University of New York at Buffalo,
+
+Buffalo, New York 14214
+
+ABSTRACT
+
+In this paper, the nonlinear estimation problem, both the representation, a posteriori
+probabilities, as well as the realization part of it, namely, the mean-square estimates, is
+viewed from a radically different viewpoint based mainly on Lainiotis' "partition theorem."
+Using the partition theorem-an explicit Bayes theorem applicable in general to nonlinear as
+well as to linear estimation-the nonlinear estimation problem is treated from a global
+viewpoint that readily yields and unifies previously derived and seemingly unrelated results,
+as well as and perhaps more importantly, yields fundamentally new estimation algorithms in
+terms of explicit, integral expressions in a "partitioned" or "parallel" realization form. The
+partitioned estimation algorithms are shown to have several important properties both from
+a theoretical as well as from a realization or computational standpoint.
+
+I. INTRODUCTION
+
+The nonlinear estimation problem considered is briefly described by the fol-
+lowing model equations and statement of objective. Specifically, the model is
+given by the equations:
+
+dxj^=f[x(t},t}^u(t),                     (1)
+
+z(t)=h(x(t),t)-m(t),                     (2)
+
+where x(t) and z(r) are the n and w-dimensional state and observation processes,
+respectively; {u(t)} and {v(t)} are independent plant and observation, zero-
+mean, white-gaussian noise random processes with covariances Q(t) and R(t),
+respectively. The initial state vector x(/o) = Xo has a priori probability density
+p(xo). Moreover, Xo is independent of {u(t)} and {u(r)} for f&gt; to.
+
+Given the measurement record, \(t, to) = {z(a); cr £ (/o, 0), the optimal in
+the mean-square-error-sense estimate x(r 11) of x(r) and the associated a pos-
+teriori probability p [x(r) \ \(t, to)} are desired.
+
+The above nonlinear estimation problem has attracted considerable attention
+©American Eisevier Publishing Company, Inc., 1974
+
+204                                          DEMETRIOS G. LAINIOTIS
+
+in the past two decades [1-62]. Past efforts were directed both to the derivation
+of exact results pertaining to the relevant a posteriori probabilities and mean-
+square estimates [e.g., 1-14, 17-19, 24-26, 30-32, 38-43, 46, 49-50, 54-56,
+58, 62] as well as, and most frequently, to the derivation of approximate but
+realizable nonlinear estimators [15-16, 18-23, 27-30, 33, 35-38, 40, 43-48, 50,
+53-55, 59-61]. In the approximate realization of nonlinear estimators two
+fundamentally distinct methods were taken, namely a "local" approach [59],
+as exemplified by the extended Kalman filter and the global approach [59] as
+exemplified by the quantization approach ofMagill [53], Lainiotis [18, 22-23,
+25, 27, 30, 38, 40, 46, 50, 51, 55] and Bucy [29], and the gaussian sum ap-
+proach of Aoki [ 15], Lainiotis et al. [23, 41, 43, 50, 52, 55], Sorenson and
+Alspach [45, 53, 59, 61], and Lo [28, 49, 54]. Other "global" approximations
+are based on spline functions, e.g., deFiguerido and Jan [47] and Lainiotis and
+Deshpande [60], as well as on more general least-square approximations such as
+those proposed by Lainiotis [22-23], and more recently by Center [44]. For a
+more detailed and comprehensive discussion of approximate nonlinear filters
+the reader is referred to Sorenson [59].
+
+In this paper, the nonlinear estimation problem, both the representation
+(a posteriori probabilities) as well as the realization part of it (mean-square
+estimates) is viewed from a radically different viewpoint based mainly on
+Lainiotis' "partition theorem" [30, 38, 40,43, 46, 50]. Using the "partition
+theorem"an explicit Bayes theorem applicable in general to nonlinear as well
+as to linear estimationthe nonlinear estimation problem is treated from a
+global viewpoint that readily yields and unifies previously derived and seemingly
+unrelated results, as well as and perhaps more importantly, yields fundamentally
+new estimation algorithms in terms of explicit, integral expressions in a "parti-
+tioned" or "parallel" realization form. The "partitioned" estimation algorithms
+are shown to have several important properties both from a theoretical as well
+as from a realization standpoint.
+
+II. PARTITIONED REPRESENTATIONS
+
+In this section, several "partitioned" representations are given, and their theo-
+retical significance, interpretation, realizability, and comparison with previous
+results are discussed.
+
+The fundamental representation is given in the following general form of the
+"partition" theorem [40,43, 46] :
+
+THEOREM I (PARTITION THEOREM) The a posteriori probability ofx(r)=
+Xr,given \(t,to)= {z(o);o£ (ty, t)}and the vectorO, denotedp(x^ \t,to;9),
+is given by
+
+p(x,\t,te^.^(t^x^-, p(^i0),      o)
+
+-
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION    205
+
+where A(t, to I XT, 0) is a likelihood ratio given as
+A(f,fo |x^0)=expU hr(o\a,to, XT,9)R~l(o)z(o)da
+
+(f;
+
+r' -              ,1
+
+-   \\h(a\a;to;Xr,9)\\^^da&gt;,
+
+\                      J
+
+(4)
+
+/N
+
+h(- ) is the conditional, causal, mean-square-error estimate of h ( ), namely
+
+h(a | a, to; Xr, 0)=E[h(x(a), a) \ X(o, to),Xr, 6},          (5)
+
+and 6 is any "parameter" vector, e.g., O = [x(ti),x(t-t),. . .x(r^);a}, where a
+;s any parameter vector that characterizes the model, or 0 could be an empty
+set', p (XT 10) is the a priori conditional density.
+
+Proof: The above "partition" theorem was first given in various forms in
+[30, 38, 40, 43, 46, 50] and proven in [40, 46]. As such, the proof is omitted.
+
+Remarks
+
+(i) the "partition" theorem is a general, continuous-data. Bayes rule for the
+a posteriori probability density, applicable to filtering, prediction as well as
+smoothing, is given in the usual Bayesian recursive form, namely in terms of the
+a priori conditional probability density p(x^10) and a nonlinear functional of
+the observation record \(t, to). The nonlinear function consists of the ratio of
+two likelihood ratios (LR), namely, the conditional LR \(t, ty Ix,-, 6) of the
+detection problem:
+
+//i : z(t) = h(x(t); t;Xr,0) + v(t),                  (6a)
+Ho:z(t)=v(t),                                  (6b)
+
+where h (x(t); r;^, 0) denotes the value of h(') corresponding to a specified
+value of XT, and 6 (i. e., forx,-, and 6 "anchored" at a specified admissible
+value), and
+
+A(r,fol0)= \\(t,to\XT,6)p(xr\0')dxT,            (7)
+
+is the LR for the related compound detection problem
+
+Hi:z(t)=h(x(t);t;9)+u(t),                 (8a)
+H^.z(t)=v(t),                             (8b)
+
+where h(x(t), t;6) denotes the value of/i(") corresponding to a specified value
+of 0 only, namely for 6 "anchored" at a given specified value.
+
+We note that A(r, to \Xr,6) is in the canonical estimator-correlator form of
+Duncan-Kailath [14, 26] which is well-suited to interpretation as well as to
+realization. Moreover, we note that the generalized LR A(f, fo I 9) is applicable
+
+206                                          DEMETRIOS G. LAINIOTIS
+
+to Bayes-optimal compound detection, and as such is more general than the
+Duncan-Kailath formula, the latter being applicable to classical hypothesis test-
+ing without consideration of prior probabilities. The generalized LR for con-
+tinuous data, compound detection was first given in this form in [30, 38, 40,
+46] using the "partition" theorem.
+
+(ii) For the case where Q is an empty set, we have the following obvious
+corrolary of the "partition" theorem:
+
+COROLLARY 1.
+
+/  i    ^         A(t,tp\Xr)         , .               ..,.
+P(x^\t,to)=-ç.p(Xr),              (9)
+
+^(t,to\Xr)p(Xr)dXr
+
+where A(f, to I x^) is the LR given by
+
+A(r,/ol^T)=exp^ T h7'(a \ a, to; XT.) R~1 (a) z (a) do  
+l-^o
+
+if-          ,      1
+--   \\h(p\a,t^Xr\\^^da\, (10)
+
+- J^                       )
+/\
+and h(-)is the conditional mse, causal, estimate of h(-), namely
+
+h(a\a, t^Xr)=E [h(x(a), o)\\(a, fo);^r]            (11)
+
+The a-priori density ofx^ is denoted by p (XT).
+
+The remarks made in connection with Theorem I apply here also. Namely,
+we note that A(/, to l ^r)ls t^e LR of the detection problem
+
+H^.z(t)=h(x(t);t;xr)+v(t),                (12a)
+fl^z(t)=u(t),                            (12b)
+
+where h(x(t); t;x^.) denotes the value ofh(-) corresponding to a specified value
+of .x,. (foi XT "anchored"), and
+
+A(r, fo) "J A(?, to \Xr)p(Xï) dxr,               (13)
+
+is the "compound" detection form of the LR for the unconditional detection
+problem:
+
+H,:z(t)=h(x(t);t)+u(t),                  (14a)
+Ho:z(t)=u&lt;it).                            (14b)
+
+The LR A(t, ty \Xr) as given in Eq. (10) is in the canonical estimator-
+correlator form of Duncan-Kailath.
+
+PARTITIONED ESTIMATION ALGORITHMS, 1: NONLINEAR ESTIMATION     207
+
+(iii) The detection problem given in Eqs. (14) is the one previously considered
+by Duncan [14] and Kailath [26]. Their LR for the problem was given [14,
+26] as:
+
+(f;
+
+A(r,fo)=exp.| + h(a\a,to)R 1 (o) z(o) da
+
+1 f \\h(a\a,to)\\^^da\. (15)
+
+-?,i                         J
+
+n
+
+Comparison of Eqs. (13) and (15) yields the following interesting corollary:
+
+COROLLARY 2. For the detection problem given by Eqs. (14), we have
+
+C                       { C* ^
+\A(t,to Xr)p(xT)dXr=e\p J + h(a\a,[o)R~t(a)z(a)da
+
+l  t»
+
+i r' -               1
+
+--,    II h (o | o, t o) II ^ ^da\ (16)
+
+- 't«                               J
+^*,
+
+where A (r, ?o l ^r)aM^ h(a\a,to) are as defined previously.
+
+The above corollary is both interesting as well as somewhat unexpected. It,
+essentially, states that the expected value of a nonlinear functional of
+h(a | a, ty',x^) with respect to p(xr), is equal to the same nonlinear functional
+of the expected value of h (a \ a, to; x^-) with respect top(x,- \t, to). This was
+first proven m [40, 43, 46, 50], and its proof was based on Bayes-rule manipula-
+tions. Subsequently, it was also proven by Park and Lainiotis [66] using Ito
+calculus.
+
+(iv) It must be noted that both "partitioned" representations of Theorem 1
+and Corollary 1 are applicable to smoothing and prediction as well as to filtering.
+Moreover, for the case of smoothing the following simplification arises:
+
+COROLLARY 3. The a posteriori density for smoothing, to &lt; r &lt; t, is
+given by
+
+p(xT\t,to)=-r'Tp(xr\T,to),       (18)
+
+
+
+where
+A(?,r|^)=exp^ -^ hT(a\a,T,XT)R~l(a)z(o)da
+
+^ r-t                              1
+
+-   \\h(a\o,T,x,)\\^^da\, (19)
+
+JT                                                                J
+
+208 DEMETRIOS G. LAIN10TIS
+
+and
+
+h(a | o, T;Xr) =E[hCx(a), a) l \(a, r);^] (20)
+
+Proof: The proof consists of straightforward manipulations of Eq. (9) and use
+of the fact that x(-) is Markovian. The proof was given in detail in [43], and as
+such it is omitted.
+
+The above corollary has significant implications and has yielded important
+and interesting new results in linear estimation and in the computationally ef-
+fective solution of Riccati equations [43, 56, 62]. It is a recursive formula for
+obtaining the a-posteriori probability density (pdf) for smoothing in terms of the
+a posteriori pdf for filtering. In other words, we note that the pdf for smoothing
+is decomposed into the product of two parts. One is the a posteriori pdf for
+filtering, p(x.^ \ r, to), depending only the observation record A(r, to), and the
+other is the ratio of the two likelihood ratios given in terms of the observation
+record \(t, r). Moreover, we note that each part is given in terms of a forward,
+causal, mse estimate, the two estimates being decoupled or "partitioned" from
+each other. Specifically, p (XT \ r, to) is given in terms of the mse h(a \ a, ty ',
+XT-) t &lt; o &lt; r, and the part consisting of the ratio of the two LRs is given in
+
+*'\
+
+terms of the mse h(a | o, r; Xr), where r &lt; a ^ t. Thus, we see that there is an
+explicit "partitioning" ofpCx^ 11, to) into two parts, one containing the in-
+formation in the data from to to T (as well as in the initial conditions at to) as
+summarized in the conditional causal, mse estimates h(a | a, to ', Xr), and the
+other containing the information in the data from r to t, as summarized in the
+
+/&lt;
+
+causal, mse estimates h (a \ a, r, XT-), independently of the past information.
+Essentially, then, the above "partitioned" smoothing representation constitutes
+an implicit nonlinear projection theorem or orthogonality principle!
+
+(v) The cardinal aspect of Theorem 1 and Corollaries 1 and 3 is that the "par-
+titioned" representations they give are evaluated in terms of the set of condi-
+tional or "anchored" estimates in a partitioned or decoupled, parallel realization
+form. In essence then, the "partitioned" representation constitutes a solution of
+the problem by partitioning or decomposing it into a set of similar but simpler
+problems which are decoupled from each other.'
+
+(vi) It is of interest to contrast the above "partitioned" representations to the
+first representation theorem for continuous data, namely the one proposed by
+Bucy [8], and proven in [39]. To facilitate the comparison, Bucy's representa-
+tion theorem is given below:
+
+THEOREM 2 (BUCY'S REPRESENTATION THEOREM) The a posteriori proba-
+bility density for filtering,p(X( \ t, to), is given by
+
+^^^S^^-
+
+lAn example of an application of partitioning is given in Richardson's [63] interesting
+approach to statistical mechanics.
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION    209
+
+where
+r(f, fo)= exp ].! hT(x(a), a) R-1 (o) 2 (ff) da
+
+i r'                 1
+
+--    ||^(CT),a)l|^,()^ (22)
+
+-^             J
+
+aró f^ [  ] denotes the appropriate expectation operation over all paths of the
+state x(a), a e (to, t), with the observation sequence held fixed.
+
+We note several important contrasts between the "partitioned" representa-
+tions of Theorem 1 and Corollary 1 and Bucy's representation theorem. First,
+Bucy's representation is given for filtering only; the "partitioned" representa-
+tions are applicable to smoothing and prediction as well as to filtering. More-
+over, Bucy's representation is given in terms of the expectations E\[} which in
+the form given were difficult to interpret and more importantly, even more
+difficult to realize. To reiterate, E^C') is an expectation operation over all state
+sample paths with the observation sequence he\d fixed. It is not equivalent to
+the conditional expectation E[r(t, ty) I A(r, to)}. Duncan [14] has subse-
+quently shown that E^o) [r(r, to)] is the LR given by Eq. (15). Moreover,
+comparison of the "partitioned" representation of Eq. (9) with Bucy's repre-
+sentation yields the fact that
+
+£^,r)rr(^)|^] =A(f,fol^r).                (23)
+
+But perhaps the most significant difference between Bucy's representation
+and the "partitioned" representation is that the latter is given in terms of the set
+of conditional or "anchored" estimates h (a \ a, to, Xr), giving rise to a "parti-
+tioned" or parallel realization form. This parallel form is particularly amenable
+to parallel processing computation.
+
+(vii) An interesting variation of Corollary 1, given in terms of partial or condi-
+tional innovations, may be readily obtained by straightforward algebraic manipu-
+lations. It is given in the following corollary:
+
+COROLLARY 4.
+
+p(x, 11, ro) = .  ^ol^) p(^),          (24)
+
+JL(t,to\Xr)p(Xr')dXr
+
+where L(t, to I x^} is the modified LR defined as
+
+(   i (t                                1
+
+L(t, to | x,) = exp J - -    II z'(o/o, to;Xr) ll^-&gt; () da Y        (25)
+
+l    " */ t                                              \
+t          »O                                            '
+
+210                                            DEMETRIOS G. LAINIOTIS
+
+and z'(o/o, to ', x^) is the partial or conditional innovation given as
+
+?(a/a, to ; XT.) = z(ff) - h(a/a, to, x^)                (26)
+
+We note several interesting aspects of the above "partitioned" representation,
+namely (a) it shows that, as far as the a posteriori probability is concerned, all
+the information contained in the measurements A(r, ;o) is equivalent to the in-
+formation contained in the "bank" of partial (conditional or "anchored") in-
+novations {ï(a/a, to', XT-)}', in this sense then, {'z(a/a, to'iX^)} is equivalent to
+\(t, to); (b) moreover, as far as the a posteriori probability is concerned, the
+total innovation process {z'((7/o-, to)} is, apparently, not equivalent to A(r, to)',
+and (c) we finally note that the "partitioned" representation of Corollary 4 has
+a form similar to that for discrete, gaussian, linear models.
+
+(viii) Using Corollary 2 in Corollary 4 and after simple algebraic manipula-
+tions, the following interesting variations of Corollary 4 are obtained:
+
+COROLLARY 5.
+
+P(Xr\t,^=L('^-ÎP^),               (27a)
+
+L(t, to)
+
+=D(t,to)p(x,),                  (27b)
+
+where the modified conditional LR L(t, to I -fr) was given by Eq. (25 ), and the
+unconditional LR L(t, to ) is similarly defined as
+
+fir'        1
+
+L(r,ro)=expj--   \\ï(alo,t^\\^^da\,          (28)
+l   J t,                 }
+
+where the unconditional innovation process ï(ala, to) is defined as ï(ala, to) =
+z (a)- h(a/a,to).
+
+The ratio of the above LRs denoted, D(t, to), is given as
+
+fir'                  1
+
+D(t,to)=exp\--   [\\ï(a/a,to;xr\\^^-\\ï(ala,to)\\^^]da\.
+[ L 't»                                        J
+
+Or
+
+(29)
+p(xr\t,to)=D,(t,to)p(x^,                 (30)
+
+where
+
+Ut
+D^t, to) = exp     A^a/o, ro;-ÏT)^-'(a)z'((7/o, to)da
+
+^t                     1
+
+   \\âï(a/a,to;x,)\\^^da[, (31)
+
+^o                  J
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION    211
+
+and
+
+A?(o/o, 0 ; XT) = ?(CT/O, to ) - z'(o/o, fo ; XT).
+
+We observe that the "partitioned" representation ofEq. (27) is given in terms
+of the partial and total innovations, while the "partitioned" representation of
+Eq. (30) is in terms of the total innovation and the set of partial innovation
+residuals, namely {Az(a/u, to;x^)].
+
+(ix) In a similar fashion, using Corollary 2 in Corollary 1, we obtain the
+following interesting variations of Corollary 1 :
+
+COROLLARY 6.
+
+p(xr\t,to)=^(t,to)p(xr),                  (32)
+where
+
+f r -r
+
+^([,to)=e-x.pj    M (a/a, to; XT.) R  (o) z (a) do
+IA
+
+-^f [\\h{ala,[,;x,)\\^^-\\h(ala,to)\\^^]da\,  (33)
+
+2 't»                                         J
+
+and
+
+^h(ala,to;XT)=h(alo,to;Xr) - h(oja,to).           (34)
+Or
+
+p(Xr\[,[o)=^h(t,to)p(Xr),                    (35)
+
+where
+
+fr'
+
+A0,ro)=expJ   ^(alo^^x^R'^a^ala^^do
+[ "
+
+1 r'                    1
+
+- -    || M(alo, ?o ; x,) ||^-, () da \. (36)
+--J t                             )
+
+The "partitioned" representation of Eq. (35) is given in terms of the total
+innovation and the differential estimates of h(-), namely, the set of estimation
+differences {A/i(u/o-, fo;^r)}-
+
+At this point, we can return to the general "partition" representation of
+Theorem 1. As indicated in the introduction, the ultimate objective of the
+estimation problem is to obtain both representations (a posteriori probabilities)
+and realizations (e.g., mse estimates) ofx,- given X(f, to). Thus, it is necessary to
+obtainp(x,. 11, to). This is given, using Theorem 1 in the following general
+"partitioned" representation:
+
+THEOREM 3 (GENERAL PARTITIONED REPRESENTATION)
+
+p(Xr\t,to)= ^p(xr\t,[o;0)p(6\t,[o)de,           (37)
+
+212                                          DEMETRIOS G. LAINIOTIS
+
+where                           ./   ,a
+
+p(0|/,^o)=\(-r^ol0)p(0),             (38)
+^(t,to\6)p(0)d6
+
+and A(t, to 16) is the LR given by
+
+r çt ^
+A(r,rol0)=expJ4 h(a/a, to;6)R~1 (o)z(a)ufü
+
+10                         ^                             1
+
+--    ||A(ü/o,ro;0)llß-.(&lt;^4' (39)
+
+2J^                      J
+/*%
+and h(') is the 9-conditional mse estimate ofh('), namely
+
+h(a/o,to;6)=E[h(x(a);a)\\(a,to);6].            (40)
+
+Proof. The proof of the above theorem, based on simple rules of probability
+and repeated application of the "partition" theorem, was given in [40, 43, 46].
+As such, it is omitted.
+
+Remarks
+
+(i) The general "partitioned" representation of Theorem 3 is radically new
+and of fundamental importance both from an interpretation point of view, as
+well as, and perhaps most importantly, from a realization standpoint. Namely,
+it is the natural framework in which to study and implement the estimation
+problem under consideration, and serves to unify all previously available results
+both on representation as well as on realization. In addition, its use yields
+several significant new results, [40, 43, 46, 62], that could not be obtained
+previously via other methods, or at the very least they could be derived but with
+considerable labor and complications, and without insight into their nature and
+interconnection.
+
+The fundamental characteristic of the representation of Theorem 3 is that it
+is given in a "partitioned" or parallel realization form, in terms of the condi-
+tional representations p (x^ \ t, to; 0), and the a posteriori probabilities p (O 11, to)-
+Moreover, both p (x^ \t, ty', 9), as well as,p(0 11, ty) are given in terms of the
+conditional mse h (al a, ty ; XT, 8). This can be readily seen by applying the
+smoothing property of expectations to Eq. (40), namely
+
+-
+
+h(a/a,to;e)=l h(ala,to;XT,6)p(xT\a,to;9)dXr.       (41)
+
+Thus, we see that both the representation as well as the realization aspects of
+the nonlinear estimation problem under consideration are given in a partitioned
+or parallel form, in terms of the conditional or "anchored" estimates,
+h(a/o,to-,x^,0).
+
+More will be said on the "partitioned" realization of the mse estimates, both
+exact as well as approximate realizations, in a later section. At this point, how-
+ever, it can be readily seen that the "partitioned" representation, given in a
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION    213
+
+parallel form in terms of the conditional or "anchored" representations
+pOc-r 11, to ; 6), constitutes a partitioning or decomposition of the overall repre-
+sentation p (^7. 11, to) into the set of "partial" or conditional representations
+p(xr 11, to ; 6). The latter are easier to evaluate and to interpret. Essentially
+then, as stated previously, the partitioned representation theorem constitutes a
+partitioning or decomposition of the problem into a set of similar but simpler
+problems which are moreover decoupled from each other. It is of interest to
+compare this to invariant imbedding.2
+
+(ii) The usefulness of the general partitioned representation can be readily
+demonstrated by considering the case of prediction, namely for to &lt; t &lt; r.
+For this case, the representation is given in the following corollary of Theorem 3:
+
+COROLLARY 7. For ty &lt; t &lt; r, the a posteriori probability density (pdf)
+p (XT \t, to) is given by
+
+p(xJf,fo)= ^p(xT\Xt)p(Xt\[,to)dXt,             (42)
+where the filtering pdfp (Xf t, ty) is given by Eq. (9).
+
+Proof. The proof follows readily from the markovian nature of x(-). For
+details see [43].
+
+(iii) A further demonstration of the usefulness and versatility of the partition-
+ing approach is provided by considering the case of filtering. Specifically, using
+partitioning, filtering may be given in terms of smoothing, as shown in the fol-
+lowing corollary of Theorem 3:
+
+COROLLARY 8. For to &lt; T &lt; t, the pdf for fil tering, p (X( | r, ty), is given by
+p(Xt\t,to)=^ p(Xt\t,T;Xr)p(xT\[,[o)dXr,           (43)
+
+where the conditional filtering pdfp (X( \ t, T;X^), and the smoothing pdf
+p (XT 11, ty) are given by Eqs. (3) and (18), respectively.
+
+A nother more explicit expression for p (x ^ 11, ty ) is given by
+
+p(x,|r,ro)=j   t. xt'XT p(Xt\ XT') p (XT 11, to ) dxr,      (44)
+
+where A(f, T | Xf, Xr) and \{t, r \ x^) are given in terms of the partitioned
+{anchored or conditional) mse estimates ^(u/o, r; Xf, x^) and ïi(pia, T, Xr),
+respectively.
+
+Proof. The proof is again based on conditioning and on invoking the
+markovian nature of x(-). The details of the proof can be found m [43, 56].
+
+Specifically, while invariant imbedding imbeds a problem into a more general and diffi-
+cult problem, "partitioning" decomposes it into a set of simpler sub-problems which are
+similar to each other but decoupled from each other.
+
+214                                            DEMETRIOS G. LAINIOTIS
+
+The above partitioned representations for filtering have several interesting
+interpretations and properties. First, we note from Eq. (43) that filtering is
+given in terms of smoothing. Moreoever, we note from Eq. (44) that the filter-
+ing pdfp(Xt\t, to) is given in terms of the partitioned estimates h(a/a, r;
+
+Xf, XT-), which are obtained with x(' ) "anchored" to the values Xr and X( at the
+initial and final time of the data interval (r, t). As such determination of these
+anchored estimates constitutes essentially a two-point boundary value problem.
+This point will arise again, and will be discussed further when the various
+special cases, e.g., linear filtering, are considered in the sequel.
+
+We note further that in view of the double anchoring of the estimates
+
+/**.
+
+h (a/a, T',Xf,x.f) they are ideally suited to spline function approximation.
+Specifically, the data interval [to, t} may be divided into several subintervals,3
+e.g., {ro, ti, t-i,..., tk-i, t}, followed by anchoring ofx(-)at the beginning
+and end of each subinterval, and spline function approximation of the anchored
+estimates and conditional pdfs for each subinterval. Namely, in the spline func-
+tion approximation, the time instants {to, ty, t^,. .., t^-i, t} will constitute
+the knots [57, 60], naturally. Thus, in approximating p(Xy/a, T,X^) we have
+essentially a natural setting for spline interpolation, and the best approximation
+ofp(X(,/(,, T;Xt,XT) from the computational standpoint, also, may very well be
+in terms of splines.
+
+III. PARTITIONED REALIZATIONS
+
+In this section and the following ones, the realization aspects of the nonlinear
+estimation problem will be considered and both exact as well as approximate
+but computationally effective partitioned realizations (e.g., mse estimates) will
+be presented. Moreover, both the exact as well as the approximate partitioned
+realizations will be examined critically and their theoretical significance, inter-
+pretation, computational and storage requirements will be discussed. Compari-
+son of the partitioned estimation algorithms with previous algorithms will also
+be given, as appropriate.
+
+The fundamental partitioned realization is given in the following general form
+of the realization part of the "partition theorem" [30,38,40,43,46, 50]:
+
+THEOREM 4 (PARTITIONED REALIZATIONS). The optimal mse estimate
+x(r\t, to), and the corresponding error-covariance matrix P'(rit, ty) are given,
+respectively, by
+
+'
+
+x(T/t,to)= x(Tlt,to;0)p(9/t,to)d0, (45)
+
+^uch a partitioning of the data-interval arises naturally in multi-shot detection problems
+[50, 55,66] as well as in estimation problems with observations interrupted by a Jump
+Markov process [81].
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION     215
+
+and
+P(Tlt, r) =  {P(Tlt, to ; 9) + [x(rlt, to ; 0) - xÇrIt, to)] [î(T/r, îo ; 0)
+
+-x(Tlt,to)]}p(61t,to)dO, (46)
+w/i ere
+
+x(Tlt,to;6)=j x(T)p(x,lt,to;6)dx^,             (47)
+
+ÛMC?
+^(T/f, /o ; 6) = £ {[X(T) - x(Tlt, to ; 6)} [X(T) - x(Tlt, IQ ; 0)}7'l\(t, to); 0}. (48)
+
+The pdfs p(6lt, to) and p(x^jt, to ; 6) are given by Eqs. (38) and (3),
+respectively.
+
+Proof. The above "partitioned" realization was first given for the continuous
+case in various forms in [30,38,40,46, 50]. The proof was given in these refer-
+ences, and as such it is omitted.
+
+Remarks
+
+(i) Once again we note from Eq. (45), that the partitioned realization of the
+mse estimates x(rlt, ty) m terms of the conditional or "anchored" estimates
+constitutes a decomposition or partitioning of the problem into a set of simpler
+Subproblems which are decoupled from each other (e.g., each "anchored" esti-
+mate x(rlt, to ; 0) is realized independently from the other anchored estimates).
+Moreover, the over-all optimal partitioned realization ofx(rlt, ?o), as given in
+Eq. (45), is in a weighted-sum, parallel realization form, which is particularly
+attractive for parallel processing.
+
+Thus, the partitioned realization, Eq. (45), is an effective disaggregation or
+decoupling of the problem into simpler estimation Subproblems, the solution to
+which is easier to realize either exactly, or at least approximately. More impor-
+tantly, the desired optimal estimate S(rlt, to) is given as the optimal aggregation
+of the "anchored" estimates, the aggregation given in the simple, weighted-sum,
+decoupled, parallel realization. In the following sections, several special classes
+of nonlinear estimation problems will be presented the solution of which is
+readily forthcoming using partitioning. Further, the results obtained thereby
+are of fundamental importance both from a theoretical as well as from a com-
+putational standpoint.
+
+(ii) In most past investigations of the continuous nonlinear estimation prob-
+lem, the results were mostly given in terms of stochastic differential equations
+(sde) for the estimates and the pdfs [7,11,13,17, 33]. However, given the non-
+linear nature of the models that result in nongaussian, and most importantly,
+nonreproducing densities, the solution of the problem requires the solution of a
+system of coupled, nonlinear partial differential equations all of which contain
+the observations. Moreover, the system consists of a denumerable infinity of
+equations, one for each order moment of the nongaussian a posteriori pdf. As
+
+216                                         DEMETRIOS G. LAINIOTIS
+
+such, the solution via stochastic differential equations is not, in general, easily
+forthcoming or very illuminating. Further, approximate solutions of these
+equations are ad hoc and the effect of the approximations made can not be
+easily assessed. An example of such approximation is the elimination or trunca-
+tion of the sdes for the higher order moments, by setting those moments to zero
+for all time under consideration. These arbitrary approximations may yield
+absurd results such as negative pdfs etc., as well as unacceptable estimator per-
+formance; Licht [33].
+
+In contrast, the integral expressions for pdfs and mse estimates given in the
+above partitioned theorems, are, in the opinion of this author, far more valuable
+both from a theoretical and interpretation point of view, as well as, and perhaps
+most importantly, from a practical, implementation standpoint. For example,
+we note that the effects of approximations made in evaluating the integral ex-
+pressions, e.g., Eq. (45), such as the finer quantization of the range of0 (if
+quantization is used as an approximation) can be easily assessed and improved
+upon if desired. Moreover, the integral partitioned expressions are given in the
+aforementioned decoupled, parallel realization form that is exceedingly attrac-
+tive. And finally, if one desires the sdes they can be readily obtained from the
+partitioned integral expressions simply by using Ito stochastic calculus
+[35,42,43,46].
+
+(iii) An interesting by-product of Theorem 4 is given in the following corol-
+lary, which is the realization counterpart of the representation Corollary 8.
+
+COROLLARY 9. For to &lt; r &lt; t, the filtering pdfp(x^ \ t, ty) is given by
+
+S
+
+S(tit,to)= x(t\t,T;x,)pCx^t,to)dx^, (49)
+
+and
+
+P(t\t,t,)= f {P(t/t,T,X,)+ [x(tlt,to)][5c(t/t,T;X,)
+
+-^(t/t.t^pCx.lt.t^dx,, (50)
+
+where p(Xr\t, to) is given by Eq. (18), and x(t\ t. T; x^) and P(t\ t, r; x^) are the
+"anchored" or conditioned mse estimate and error-covariance matrix, respec-
+tively, given \(t, r) and x^.
+
+The above realization of the filtering estimate in terms of the smoothed pdf
+is very useful both in the effective approximate realization of general nonlinear
+estimators as well as for the exact realization in a simple and computationally
+attractive form of the estimators for special classes of nonlinear estimation
+problems. Specifically, partitioning the data interval {/o, /} into several small
+subintervals, e.g., {/o, /i, t^,..., t^-i, t} and repeated use of Eq. (49) for each
+subinterval leads to effective and computationally manageable estimation algo-
+
+PARTITIONED ESTIMATION ALGORITHMS, 1: NONLINEAR ESTIMATION    217
+
+rithms for the general nonlinear estimation problem. For example, given the
+small length of each subinterval, the mse ï(t \ t. T; x^) can be approximated by
+linearized Kalman filters, or even extended Kalman filters. Since the subinter-
+vals are small and more importantly since the estimates are ''''anchored" at x^,
+the dominant contribution to each state will be due to the initial conditions x^.
+(for each interval), and not due to the plant noise, leading to good results with
+linearization, and avoiding divergence. Moreover, if an approximate "anchored"
+estimate diverges, it will be decoupled or essentially cut-off from the weighted
+sum, since the corresponding conditional pdfwill tend to zero. As such, the
+partitioned realization (49) has its own "fault-detection" and "correction"
+mechanism built into its weighted-sum or parallel-realization form.
+
+(iv) There are several possible approximate but effective realizations of gen-
+eral nonlinear estimators. They are based on quantization, spline, and gaussian
+sum approximations of the relevant pdfs, as well as on linearized Kalman filter
+or extended Kalman filter approximations of the "anchored" estimates. How-
+ever, due to lack of space, these algorithms and related matters will be presented
+elsewhere [64].
+
+IV. ADAPTIVE ESTIMATION
+
+The adaptive estimation problem considered in this section is a nonlinear
+estimation problem with linear models but unknown time-invariant parameters.
+Specifically, the model is given by:
+
+ä^)=F(t,e)x(t)+u(t),                  (51)
+
+z(t)=H(t,0)x(t)+v(t),                  (52)
+
+where x(t), and z(t) are as described in the introduction, {u(t)} and [v(t)} are
+independent, zero-mean, white-gaussian noise random processes with covariances
+Q(t, 9) and R(t), respectively, conditioned on 6. The initial state vector
+x(to) = XQ is independent of {ii(t)], and [v(t)] for t &gt; ty, when conditioned on
+0, and has a 0 -conditional gaussian density p(xy \0) with mean x(to I ty, 9) and
+variance P(to \ to, 0).
+
+The above model is specified up to a set of unknown parameters, denoted by
+6. The parameter vector 6, which if known completely specifies the model, is
+assumed time-invariant. Moreover, following a Bayesian approach to the prob-
+lem, 6 is considered a random variable with known or assumed arbitrary a priori
+
+pdfp(0/fo)=p(0).
+
+Given the observation record \(t, to) it is desired to obtain the mse estimate
+of x(t), under the above uncertainty as to the true value of the defining parame-
+ter vector 6.
+
+218                                         DEMETRIOS G. LAINIOTIS
+
+The problem as stated is usually referred to as adaptive estimation [30, 38,
+40,43,46, 50], and may be viewed as joint estimation and system identification
+or modelling. There exists a large class of physical problems for which the above
+formulation is suitable. Moreover, by augmenting the state-vector with the
+vector 6, it can be readily seen that the problem is a nonlinear estimation prob-
+lem with the attendant difficulties in realizing the optimal estimators if the usual
+differential approach is followed. However, using the partitioned realization,
+the optimal estimator is obtained in an implementable closed form. This is given
+in the following corollary of Theorem 4.
+
+COROLLARY 10. The optimal mse and the corresponding error-covariance
+matrix are given by Eqs. (45-46), where the ''anchored'" estimates x(t\t, to ; 9)
+and the corresponding error-covariance matrix P(t\t, to ; 0) are given by Kalman-
+Bucy filters, one for each admissible value of 6, namely
+
+^^^^F^^jîOl^roS^+^^e)^!?,^;^,     (48)
+dt
+
+with initial condition x(to I to; 0); where
+
+z(t\t,to;e)=z(t)-H(t,6)x(t\t,to;6),            (49)
+
+K(t,e)=P(t\t,to;6)HT(t,e)R-l(t),           (50)
+and
+
+dp(t\tvto'e)=F(t,6)P(t\t,to;6)+P(t\t,to,e)FT(t,9)+Q(t,6)
+dt
+
+-P(t\t,to;ô)HT(t,e)R-l(t)H(t,6)P(t\t,to;e), (51)
+
+with initial condition P(to \ ty ; 6).
+
+Moreover, the a-posteriori pdfp (8 \ t, to ) is given by Eqs. (38-39), where
+A(o/a, to; 6) takes the simpler form
+
+h(a/a, to; 6)= H(a, 9) x(ala, to ; 6).               (52)
+
+Proof. The proof of the above special case of the continuous "partition
+theorem" was first given in [30,40]. As such the proof is omitted.
+
+Remarks
+
+(i) We note from Corollary 10 that partitioning has decomposed the optimal
+nonlinear estimator into a linear, nonadaptive part consisting of a bank of
+Kalman-Bucy filters, each filter in the bank matched to an admissible (in the
+sense ofp(0)) value of0, and a nonlinear part consisting of a posteriori pdfs,
+that incorporates the adaptive, learning or system identifying nature of the
+adaptive estimator.
+
+(ii) Moreover, we note that the error-covariance P(t\t, to) as given in Corol-
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION    219
+
+lary 10, consists of quantities readily available from the adaptive estimator.
+Hence, its evaluation requires a minimum of additional computation. As such,
+P(f\t, ty) is useful for the on-line evaluation of the nonlinear adaptive estimator
+performance, as well as for the on-line comparison of the optimal adaptive esti-
+mator to suboptimal procedures.
+
+(iii) At this point the implementation of the "adaptive" nonlinear estimator
+and the associated computational and storage requirements should be discussed.
+These are integrally related to the nature of the parameter 0, namely, whether
+there is a continuous or finite discrete range of values. There exist several impor-
+tant applications of adaptive estimation where the range of0 is naturally dis-
+crete, e.g..joint detection and estimation [38,40,46, 50], or in joint fault de-
+tection and estimation. However, in many cases of practical interest, e.g., joint
+estimation and system identification, and in control applications, the range of 0
+is continuous.
+
+In the continuous 6 case,p(0) is a continuous pdf resulting in a continuous
+p(6 \t, to), and hence a bank of Kalman filters consisting of a nondenumerable
+infinity of Kalman filters. This is not at all surprising since, if a stochastic dif-
+ferential equation (sde) approach is taken then one must solve a system consist-
+ing of a ^enumerable infinity of coupled, nonlinear, partial sdes all of which
+contain the observations. Thus, the cardinal difference between the partitioning
+approach and the sde approach is that in the former the estimator is partitioned
+into simple decoupled building blocks of identical structure, namely, the Kal-
+man filters, each of which requires the solution of two ordinary differential
+equations, namely, Eqs. (48) and (51), one of which is nonlinear, the Riccati
+equation (51), but does not contain the observations, and the other, Eq. (48),
+contains the observations but is linear. Moreover, there is one-way coupling
+from the nonlinear to the linear equation permitting off-line evaluation of the
+nonlinear equation, if desired.
+
+There is an apparent penalty to be paid in the partitioning approach, namely,
+one has to solve a system consisting of a nondenumerable infinity of differential
+equations instead of a system of denumerable infinity of differential equations
+as in the sde approach. However, this penalty is only apparent and illusory since
+it is much easier to solve the former than the latter. Moreover, as pointed out
+earlier, approximations are much more effectively made in the partitioned
+realization than in the sde realization. In summary, then, in the exact realization
+of both approaches the computational and storage requirements are excessive,
+but in the partitioned realization we have the advantage of having to solve an
+easier system of pairwise decoupled differential equations whose approximate
+solution is readily forthcoming.
+
+The above result, namely, the solution of a system of coupled, nonlinear,
+partial differential equations in terms of a related system of decoupled, ordinary
+differential equations is of independent and great interest in the theory of sto-
+chastic differential equations. More is said about that elsewhere [64].
+
+220                                          DEMETRIOS G. LAINIOTIS
+
+(iv) Several approaches [23, 59] can be taken to alleviate the above computa-
+tional difficulties, resulting in approximate nonlinear estimators of varying
+efficacy and complexity. Most notable of these are the "global" approaches
+[23, 59], such as the quantization approach [9, 18, 23, 25, 27, 29,30,38,
+40, 65], the gaussian sum approach [15,28,40,43,49, 50, 52-55,61], and the
+spline function approach [47, 57,60].
+
+(v) Quantization consists of approximating the continuous parameter space
+with a finite set of points, i.e., finite quantization. So either because Q is natu-
+rally discrete or because a continuous 6 has been suitably quantized, the a priori
+pdfp(0) is given by
+
+p(6)=^p(e,)s(,ff-e,)
+
+i=l
+
+resulting m the following variation of Corollary 10:
+
+COROLLARY lOa
+
+(53)
+
+S(t\t, to) = ^ $(r|r, to,9,)p(e,\t, ?o)               (54)
+(=i
+
+and
+
+P(t\t,to)= ^ [P(t\t,to;6i)+ [S(t\t,to;0,)-S(t\t,to)][S(t\t,to;6,)
+1=1
+
+-î(/|r,ro)r}p(0,l^o), (55)
+and the mse estimate of 6 is given simply by
+
+^(t,to)=^9ip(o,\t,t^,                  (56)
+i=i
+
+where l is the number o f quantization levels, and all the other quantities are as
+defined in Corollary 10.
+
+Proof. The proof follows readily by substituting Eq. (53) in Corollary 10,
+and performing the indicated integrations.
+
+We note that in quantizing we are faced with the curse of dimensionality
+since, in general, 6 is m-dimensional. Namely, we are confronted with the
+dilemma of choosing between coarse quantization resulting in inaccurate esti-
+mates and fine quantization that requires an unreasonable number of Kalman
+filters (e.g., r quantizations for each parameter requires / =rm filters). To re-
+duce the number of 6 quantization levels required for fine quantization one may
+utilize the adaptive, on-line, simple, binary quantization algorithms of Sengbush
+
+PARTITIONED ESTIMATION ALGORITHMS, I; NONLINEAR ESTIMATION    221
+
+and Lainiotis [27], or the more sophisticated and computationally demanding
+schemes of Bucy and Senne [29, 65].
+
+(vi) Spline functions, specifically variation diminishing splines can also be used
+to obtain effective approximate realizations of the optimal continuous adaptive
+estimators, as they have been used for discrete nonlinear estimators [47, 57, 60].
+Variation diminishing splines, which are pieces of smoothly tied polynomials,
+can be used to approximate the product ï(t\t, to;6)p(6 \t, to) as a function of
+0 in terms of a finite number of parameters (finite parametrization of the non-
+reproducing density) yielding a readily implementable approximation of the
+optimal adaptive estimator. The parameters of the approximation are deter-
+mined in terms of the set of knots [S(t\t, ?o;0;) ' P(6i\t, to)] obtained from
+the associated bank of Kalman filters. Specifically, the algorithm proceeds as
+follows:
+
+(a) Select an a priori quantization {0,(?o); ''= 1 &gt; 2,...,/}.
+
+(b) Use Corollary 10a with the associated bank of Kalman filters to obtain the
+set of products {S[t\t, to;0i(to)] -p[0i(to)\t, ty] }.
+
+(c) Choose the degree s of the polynomial spline function of 6, and set the /
+knots to equal the set {6i(to);i= 1, 2,...,/}.
+
+(d) Approximate S[t\ t, to',0i(to)] p [0;(fo)lf, to] by the above polynomial
+spline, at any desired t.
+
+(e) Obtainî(î|r,fo)as
+
+^(t\t,h)= \S(t\t,to;0)p(ß\t,to))d6,            (57)
+
+where (S(t\t, to',0)p(6\t, ty)) denotes the above spline approximation of the
+enclosed quantity.
+
+(f) Change the quantization at any time f, when one of the a posteriori prob-
+abilities goes below a predetermined level. To do so, approximate with splines
+the a posteriori pdfp(6 \tj, ty) by using the set {p[6i(to)\t, ty]}. Choose the
+new quantization levels as the centers of a set of equiprobable 0-intervals.
+Namely, if&lt;p(0|r to)) is the spline approximation ofp(0|r to), then choose
+the quantization so that
+
+COj^(ti)
+
+{p(e\t,i,to))de,                    (58)
+
+"Bit t:)
+
+is the same for all ö-subintervals, {0/(ï,), Ê^i (t,)}.
+(g) Continue with steps b-e, etc.
+
+There are several other variations of the above algorithm but due to space
+limitations we forebear from presenting these results here. They can be found
+in [64]. For further details on splines and their applications to parameter esti-
+mation refer to [60] in this issue.
+
+222                                         DEMETRIOS G. LAINIOTIS
+
+We note that the above spline quantization algorithm constitutes an effective
+adaptive quantization algorithm. In summary, the salient aspects of the pro-
+posed spline-based approximate adaptive estimator are: (a) it is easily imple-
+mentable, its implementation requiring essentially a bank of Kalman filters, and
+integration of piece-wise polynomial functions, as in Eq. (57); (b) the spline
+algorithm is based essentially on the imbedded quantization, namely, the one
+corresponding to the bank of Kalman filters used for the interval (/ /,+i ); (c) as
+such, the spline estimator has greater computational requirements than the as-
+sociated quantization algorithm; but (d) it is more accurate than the quantiza-
+tion algorithm as well as it permits us to use coarser quantization because of the
+smoothing effect of the spline approximation.
+
+(vii) The gaussian sum approximation of the adaptive estimator is based on
+using gaussian sums to approximate p (6 \t, to)- The rationale for using this ap-
+proximation is based on Wiener's approximation theorem [28,43,45, 59, 61]
+which states that any density may be approximated as closely as desired by a
+sum of gaussian densities. This approximation constitutes the so-called gaussian
+"mixture" density [23,43, 50]. A particular gaussian sum approximate realiza-
+tion of the adaptive estimator proceeds as follows:
+
+(a) Select a gaussian mixture so that p(6) is approximated well by4
+
+P(0) ^ Z P,(to)N{6,(to);Pe,(to)}                 (59)
+»=i
+
+by choosing the set [p,(to), 6», (?(,), PO, (^o);' = 1, 2,...,/}.
+
+(b) Use Corollary 10a with the quantization set {Oj(to)] to obtain the set of
+"anchored" estimates {S(t\ t, to ; 0,)} and a posteriori probabilities p,{t) =
+
+P(6i\t,to).
+
+(c) Approximate p (6 \t, to) by
+
+p(e \t, to) ^ ^ Pi(t)N{0,(to);Pe,(to)}.             (60)
+
+i=l
+
+(d) Obtain the gaussian-sum approximate realization ofS(tit, to) by
+
+ï(t\t, t») =S[t\t, to-^(t, to)} + ïV2 {S[t\t, to ; ^(t, to)pg (t)},   (61)
+where 6(t, to) andPe(/) are obtained from Eqs. (55) and (56), respectively, as
+
+^(t,to)=ZO,(to)P,(t),
+1=1
+
+Pe(t) = S {Pe,(t) + [9,(to) - ^(t, to)] [e,(to) - ^0, to)}7'} P,(t),
+
+4 Where N {a; b} denotes a gaussian density of mean a and covariance b.
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION 223
+
+and
+
+(e) At predetermined time instants t j j = Q, l, .. . , or whenever a given p;(f)
+goes below a certain specified value, change the quantization. Obtain new
+quantization as follows: (1) Find the 6 error-covariance matrix at the above
+time, denoted PeCt); (2) then approximate the right hand side of Eq. (60) by the
+following approximation:
+
+^ pi(t)N{6i(t,);Pe^)} ^ ^ p^)N{6,(t);1 Pe(t)},     (62)
+
+!=1                                (=1
+
+namely, determine the set {p,(f1'), 0;(?)}-
+
+(f) Proceed again with steps b-f for the new set {p,(t''), 0,(r); (l//)p@(r)}.
+
+There are several variations of the above algorithm given in [64]. As such,
+they are omitted. It must be noted that the above variable quantization algo-
+rithm also constitutes an on-line, adaptive one. For further details on gaussian
+sum approximations of discrete nonlinear filters, the reader is referred to
+[15,29,53,59,61].
+
+In conclusion, we note that the salient features of the proposed gaussian-sum
+based adaptive estimator are similar to those of the spline algorithm. As such,
+the related remarks made previously for the spline algorithm apply here also.
+There is, however, one important difference; namely, that the gaussian-sum algo-
+rithm requires evaluation of V2 {x Pg } which is not usually as easy as integrating
+piece-wise polynomials as is the case with splines.
+
+(viii) In summary, we note the cardinal common feature of all of the above
+approximate nonlinear estimators; namely, they all are based on an imbedded
+quantization. In fact, pure quantization constitutes a limiting case of the
+gaussian-sum approach. From these considerations we conclude that quantiza-
+tion constitutes essentially an effective basic building block for approximate
+nonlinear estimation.
+
+V. NONLINEAR ESTIMATION: LINEAR MODELS AND NONGAUSSIAN
+INITIAL STATE
+
+The nonlinear estimation problem considered in this section concerns optimal
+estimation for completely known linear, gaussian models with non-gaussian ini-
+tial state-vector. Specifically, the model is given by
+
+^)=F(Ox(?)+M(^),                  (63)
+
+224                                         DEMETRIOS G. LAINIOTIS
+
+z(t)=H(t)x(t)+v(t),                   (64)
+
+where all quantities are as defined in Sec. IV with the difference that F(-), H(-),
+ß(-), R(-) aie now completely known. Moreover, the initial state vector x(to) =
+XQ, which is still independent of {u(t)} and {v(t)} for t &gt; to, has now a non-
+gaussian a priori probability density p (xo)-
+
+The above estimation problem constitutes a simple special case of the adap-
+tive estimation problem of Sec. IV. This can be readily demonstrated by ex-
+pressing p (^o) as a continuous or nondenumerable gaussian sum, namely, as
+
+p(xo)=[N{6;Po(to)]p(e)d9,              (65a)
+
+=(p(x,\0)p(e)d6,
+or by expressing p (xo) by the identity
+
+p(xo)= lim  'N{e;Po(t^}p(9)d6,
+P»W-O j
+
+(65b)
+
+=P(.Xo),                                  (66)
+
+where x(to I to, 0) = 6 and P(to \ to ; 9) = PoOo).
+
+We note that p(xy) can be expressed as in Eq. (65) either exactly or at least
+approximately by choosing p (6) andPo(/o)- Moreover, p (xo) can always be ex-
+pressed by the identity of Eq. (66). We can readily see at this point that this
+problem is a special case of the adaptive estimation problem of Sec. IV, with the
+simplifying fact that in this case F(t, 9) = F(t), H(t, 8) = H(t), and Q(t, 6) =
+Q(t), not functions of 6. Only x (to\ to, ff) is a function of6, specifically
+x(to\to,6)=6. Moreover, in the limit as Po(to)-^ 0,6 =Xo. Namely, the initial
+state is considered to be the only unknown parameter of the model.
+
+Since the problem under consideration is a special case of the adaptive esti-
+mation problem, the results of Sec. IV apply directly. The resulting optimal
+nonlinear estimator is given in the following corollary of Corollary 10:
+
+COROLLARY 11. The filtering mse estimate and the corresponding error-
+covariance matrix are given, respectively, by
+
+x(t 11, to) = xo (t 11, to) + $o (t, to) S (to 11, to),              (67)
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION     225
+
+and
+
+P(t\t, to) =Po(t\t, to) + &lt;î&gt;o(t, to)P(to\t, to) &lt;(?, to),        (68)
+where Xo (t \ t, t o) and Po (t 11, t o) are given by the Kalman filter equations
+
+dxo(t\^ to) = nt)xo(t\t, to)+Po(t\t, t^H^R-^t)^),      (69)
+
+with initial condition x(to \ t, to) = 0; where the partial or conditional innovation
+ZQ (t) = z (t) - H(t) Xo (t 11, to ) and
+
+dpo(t^t'to) = F(t)Po(t\t, to) +Po(t\t, to)F(t) + Q(t)
+
+- Po(t | /, to) H^t) R-1 (t) H(t) Po(t 11, to), (70)
+
+with initial condition Po(,to\to) = 0.
+
+The matrix $o(^ to) is the transition matrix for the Kalman filter dynamic
+matrix
+
+F(t)-Po(t\t,to)HT(t)R-l(t)H(t).
+
+The smoothed estimate x(to 11, to) and smoothed covariance matrix
+P(to 11, to) are given as
+
+x(to\t,to)=^Xop(xo\t,to)dxo,                (71)
+and
+
+P(to\t, to) =J^o - x(to\t, to)} [xo - x(to\t, to)} ^(xoir, to)dxo, (72)
+
+wherep(xo\t, to)is the a posteriori pdfofXo given \(t, to).
+
+Proof. Since this problem is a special case of the adaptive estimation prob-
+lem, the anchored filtered estimate x(t \ t, to ; Xo) and covariance matrix
+P(t 11, to ; Xo) are given by Eqs. (48-51) with initial conditions Xo, and Po^o),
+respectively. Taking the limit -Po(^o) -&gt; 0, reduces Eq. (51) to Eq. (70), namely
+P(t\t, to,Xo) =Po(t\t, to). Moreover, in the limit Eq. (48) takes the form
+
+^^^^FWx^^x^+Po^^fI^R-^t)
+
+[z(t)-H(t)x(t\t,to;Xo)}, (73)
+
+226                                            DEMETRIOS G. LAINIOTIS
+which can be written in the integral form
+
+x(t\t,to;xo)=&lt;î&gt;o(t,to)x(to\to;xo)+ ( ^o(t,T)Po(T\T,to)
+'t»
+
+H^R'^^z^dr (74)
+
+where Xo(t\t, to)=  $o(A T)Po(r\T, t^H^R'^^z^d-r, obeys Eq. (69)
+
+"to
+and x(to I ?o ; -&lt;'o) = Xo, yielding
+
+x(t 11, to ; Xo) = îo ^ I /,?o)+ 'î&gt;o(t,to)xo.              (75)
+
+Using Eqs. (45-46) with Eq. (75) we obtain trivially Eqs. (67-68). The proof is
+given in greater detail in [43].
+
+The corresponding smoothing and filtering representations (a posteriori pdfs)
+are given in the following corollary:
+
+COROLLARY 12.
+, ,   , _   P(xo) exp {4 \\Xo - Vo(t, to)Mo(t, ?o)ll^-'(,,,)}
+
+P{Xo\t, to)- f                                                          (.'")
+
+Jp(xo)exp {4 ll^o- ^o(?,^o)^o(/^o)112v-»(»,f)}^o
+and
+
+P^tit.t,)^^ p(Xt\t,to;Xo)p(xo\t,to)dXo
+
+=JN{xo(t\t) + $o(^, to)xo;Po(t\t, to)}p(xo\t, to)dx»,   (77)
+where
+
+V^(t,t^ f ^t^H^R-^^H^^^^dT,     (78)
+"t,
+
+and
+
+W, /o)== f &lt;(T, to) H^T) R-1 (r) zo(r) dr,          (79)
+-^
+
+where Zy (/) = z (t) - H (t) Xo(t\t, to), and all other quantities are as defined in
+Corollary 11.
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION     227
+
+Proof. Equation (76) follows directly by using Eq. (75) in Corollary 1 and
+collecting terms. Equation (77) follows by using Eq. (43) and the fact that x(t)
+is gaussian conditioned on Xo and \(t, to)- The proof is given in greater detail in
+[43].
+
+Remarks.
+
+(i) We note from Eq. (67) that the nonlinear estimate is "partitioned" into a
+linear part, namely the linear state filtering estimate Xo(t\t, to) given by a
+Kalman-filter, and a nonlinear part, namely, the smoothed estimate ofxo,
+x(to 11). The first part pertains to optimal estimation with the initial state
+"anchored" at zero, and the second part pertains to smoothing of the initial
+state, the latter viewed as a parameter.
+
+Similar Remarks also apply to the error-covariance matrix as given by Eq.
+(68).
+
+(ii) Further insight into the basic nature of the above "partitioned" realiza-
+tion may be gotten by comparing it with the corresponding equations for x(t)
+and P(t) = E^C^x7^^)], as obtained from the model equations (63-64). These
+are given by
+
+x(t)=x^t)-KS&gt;(t,to)xo                    (80)
+
+and
+
+where
+
+(81)
+
+^o(0=    &lt;S&gt;(t,a}u(a)da,                   (82)
+"t,
+
+and
+
+Po(t)=  $(?, 0)6(0) &lt;!&gt;(/, o)u?o.                 (83)
+
+to
+
+Comparing Eqs. (80-81) to Eqs. (67-68) we note a striking similarity be-
+tween them. This similarity becomes even more apparent by noting that
+
+xo(.t\t,to)= f &lt;fo(/,o)z(o)üfo,                (84)
+J^
+
+and
+
+Po(?l^o)= f $o(r,o)A(o)&lt;(o)ü?o,             (85)
+"t,,
+
+228                                            DEMETRIOS G. LAINIOTIS
+
+where z(t) =Ko(t)z(t),A(t) = Q(t) + Ko(t)R(t)K^(t), and Ko(t) =
+PoCt^^H^R-^t).
+
+Thus, the "partitioned" realization of the nonlinear filtered estimate
+x(t 11, to) is given in a form paralleling that given by the defining model namely
+Eqs. (80-81). Specifically, both Eqs. (80-81) and Eqs. (67-68) are partitioned
+into a part due to excitations and into a part due to initial conditions. In fact,
+the second part constitutes a predicted estimate ofx(t) based on the best knowl-
+edge of the initial state. Namely, the best predicted estimate ofx(t) given Xy is
+^(t, to)Xo ofEq. (80), while ^o(t, to)x(to\t, to) constitutes the "best" pre-
+dicted estimate ofx(t) based on the smoothed estimate ofxy given \(t, to).5
+
+(iii) We finally note that Vo^Ct, to) constitutes the stochastic observability
+matrix of the system. For further remarks and interpretations on this, the
+reader is referred to part II of this paper [62].
+
+(iv) The nonlinearity ofx(to\t) arises from the nongaussian nature of the
+p(xo), which results in nongaussian p (xo 11, to). To alleviate this difficulty, we
+may proceed as in Sec. IV, namely, we can use quantization, spline functions, or
+gaussian mixtures.
+
+Specifically, if we use an /-level quantization, we will have that Eqs. (71-72)
+are given by the appropriate /-sums. Moreover, if splines are used we proceed as
+in the algorithm of Sec. IV with the only exception being that now, we approxi-
+mate with splines the set of products [x'o  p(x'o\t, to)} ,;'= 1, 2,.. ., 1, obtain-
+ing x (t o\t, to) as
+
+x(toit,to)=j (XQ -p(xo\t,to)}dxo,              (86)
+
+where x'o is the ith quantization ofxo, and uco ' P(^o It, ^o)) denotes the spline
+approximation of the enclosed quantity.
+
+Further, if a gaussian sum is used, then the following interesting corollary of
+Corollary 12 is obtained:
+
+COROLLARY 13. If
+
+P(.Xo)^Zp,(to)N{x,(to\to);P,(to\to)},              (87)
+i=i
+
+then
+
+p(xo\t, to) - Z p,(t)N{x,(to\t);P,(to\t)],              (88)
+i=i
+
+where
+
+Pi(to\t)= [^o-l(^o)+-P,"l(/o^o)^l,                (89)
+
+^hus, the above "partitioning" constitutes essentially a "predictive decomposition."
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION     229
+
+and
+
+x,(to\t)=P,(to\t)[Mo(t, fo)+^'l(^o)^oM         (90)
+
+Moreover, the a posteriori mixing probability p,{t) is given by:
+
+P,(0= ^ wi(t)Pi(to),                    (91)
+Z w,(t)Pf(to)
+
+;=!
+
+where
+
+^(O^.P^olO^oko)!172 exp {4 [îAfol^^oko^olîo)
+
++-x^to\t)P^(to\t)x,(to\t)}}. (92)
+
+T^oc^ The proof of Eqs. (88-92) consists of direct substitution of Eq. (87)
+into Eq. (76), combining the exponential terms, and completion of the square.
+Details can be found in [43]. Moreover, the gaussian sum approximations of
+the filtered and smoothed estimates are given in the following corollary of
+Corollary 11 :
+
+COROLLARY 14
+
+x(to\t,to)^Zpi(t)xi(to\t)                    (93)
+i=i
+
+P(to 11, t,) =- ^ p,(t) [P,(to 10 + [x,(to 11)
+i=l
+
+-x(to\t,to)} [x^olO-^ol^o)]7'} (94)
+
+and
+
+x(t\t, to) = xo(t\t, to) + &lt;S&gt;o(t, t») Z p;(0 x,(to 10,            (95)
+i=i
+
+P(t\t, to) =Po(t\t, to) + &lt;I&gt;o(r, to)P(to\t, to) &lt;(/, to).         (96)
+
+Proof. The proof follows readily by direct substitution of Eqs. (87-88) into
+Eqs. (67-68) and Eqs. (71-72). More details are given in [43].
+
+(v) We note that the above problem was also solved by Lo [28]. Specifically,
+Lo [28] obtained results similar to those of Corollaries 11-14. However, Lo's
+expressions as well as his proofs, based on Bucy's representation theorem, were
+more complicated. The results of this section are as given in Lainiotis [43].
+Moreover, Lainiotis [40] also obtained previously the quantized approximation
+of the nonlinear estimators as given above. Further in this section, for the first
+time in the literature, spline-based approximation were also given. Other investi-
+
+230                                         DEMETRIOS G. LAINIOTIS
+
+gators, Cameron [67] and Sorenson and Alspach [68], Lainiotis et al. [41, 52]
+and Lo [69] considered the discrete case of the problem, obtaining similar
+results.
+
+(vi) As a final observation, we offer the fact that for the nonlinear estimation
+problem considered in this section, the quantization-based approximation and
+the gaussian sum approximation yield identical approximate estimators. This
+can be readily verified [64].
+
+VI. LINEAR ESTIMATION
+
+The linear estimation problem is a special case of the nonlinear estimation
+problem of the previous section. Namely, it is given by Eqs. (63-64), where
+nowp(xo) is gaussian with mean S (to I to) and covariance P(to I to). As such the
+results are given by the following special case of Corollary 14, for / = 1. Namely,
+they are given by:
+
+COROLLARY 14a
+
+x(to 11, to) = x(to | /) = P(to 10 [Mo(t, to) + P~1 (to I /o) x(to I /o)],    (97)
+
+P(to I /, /o) = P(to 11) = [Vo1 (t, to) + P~1 (to I to)}'1,          (98)
+and
+
+x(t\t)=xo(t\t) + &lt;î&gt;o(t, to)x(to\t),                  (99)
+P(t\t) =Po(t\t) + $o(/, to)P(to\t) &lt;S&gt;ï(t, to),            (100)
+
+where for simplicity x(t \ t, to) = x(t \ t), P(t \ t, to) = P(t 11), and Po (t 11, to) =
+Po(t\t).
+
+Proof. The proof follows by noting that p (xo) = ^ N{x(to I /o); P(to I to)},
+
+i=i
+and substituting this into the equations of Corollary 14.
+
+Remarks
+
+(i) The above "partitioned" linear estimation algorithms were first obtained m
+[43], and elaborated upon in [56]. In part II of this paper they are shown to be
+the natural framework in which to study such important concepts as observabil-
+ity, controllability, unbiasedness, and the solution of Riccati equations. Spe-
+cifically, the "partitioned" linear estimation algorithms are studied in depth in
+part II, yielding valuable insight as well as several significant results on: (a) un-
+biased estimation; (b) stochastic observability and controllability; (c) estimation
+error-bounds; and most importantly, (d) computationally efficient "partitioned"
+solutions of time-varying matrix Riccati equations.
+
+(ii) The above "partitioned" linear estimation algorithms are generalizations
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION    231
+
+to time-varying models of the so-called Chandrasekharan-Abarzumiah linear esti-
+mation algorithms [70] for constant models. Moreover, it must be noted that
+the partitioned results for the general time-varying case [43, 56] were obtained
+by this author prior to publication of the Chandrasekharan algorithms [70],
+which pertain to the non-stationary situation but restricted to constant models.
+More recently, Morfet al., [71] and Sidhu and Kailath [72] have also obtained
+the Chandrasekharan algorithms for the constant model, discrete and continuous
+case, respectively by using the partitioning approach [30, 38, 40, 41, 43, 46, 50,
+52, 55, 56] and labeling the approach the shift invariance method, since parti-
+tioning, naturally, yields important shift invariance properties for the time-
+invariant case. However, it must be emphasized that the key to this is indeed
+partitioning; see, for example, Morfet al. [71].
+
+(iii) Further, we note that partitioning also yields, naturally, the generaliza-
+tion to nonstationary processes resulting from constant models, of a fast algo-
+rithm of Levinson [73] first derived for stationary processes.
+
+(iv) It can be easily shown (see Part II [62] ) that all previously established
+smoothing algorithms, such as the Mayne-Fraser one [74-75], and the Kailath-
+Frost innovation algorithm [76] can be readily obtained from the "partitioned"
+algorithm directly. Moreover, comparison of the "partitioned" smoothing algo-
+rithm to the Mayne-Fraser algorithm yields directly a generalization of a recent
+result of Burg [77]. Specifically, Burg [77] has established essentially the
+equivalence of the backward filter system matrix to the corresponding forward
+filter matrix for stationary random processes. This has been recently extended
+by Lindquist [78] to state-models for the observed stationary process. The gen-
+eralization to Burg's result essentially consists in extending it to general non-
+stationary processes resulting from time-varying models, Part II [62]. This can
+be readily seen by referring to the results of Part II [62] where it is shown that
+
+^(^^(W)                    (101)
+
+where the stochastic observability matrix Vy1 (t, to) has been defined previously
+andPfi'^o, t), the backward filtering error-covariance matrix, is given [62] by
+
+dpb1^ t) = -PÎ1 (r, t) F(r) - F\T) F1 (r, t) + PI1 (T, t) Q(r) P-,1 (r, t)
+
+-^(T)^-1^)^), (102)
+
+with final condition?;;1 (t, t) = 0.
+
+Equation (101) constitutes essentially the time-varying generalization of
+Burg's result. This is discussed further and in more detail in [79, 80, 81].
+
+(v) In conclusion, it must be noted that the partitioned solutions of the
+Riccati equation serve as the basis for numerically effective computational algo-
+rithms for the numerical solution of Riccati equations [62,79-80] as well as for
+
+232                                          DEMETRIOS G. LAINIOTIS
+
+the solution of Fredholm integral equations. These are being pursued further
+elsewhere [62,79-80].
+
+REFERENCES
+
+1. R. L. Stratonovich, On the theory of optimal nonlinear filtration of random functions,
+Theory Prob. Appl. 4,223-225 (1959).
+
+2. R. L. Stratonovich, Conditional Markov processes. Theory Prob. Appl 5 (2), 156-178
+(1960).
+
+3. P. Masani, and N. Wiener, Nonlinear prediction, Proc. 4th Berkeley Symp. Math. Stat.
+Problems, 2,403^19 (1961).
+
+4. H. J. Kushner, On the differential equations satisßed by conditional probability densi-
+ties of Markov processes with applications, SIAMJ. Control 1 (1), 106-119 (1962).
+
+5. H. J. Kushner, On the dynamical equations of conditional probability density functions
+with applications to optimal control theory, J. Math. Anal. Appl. 8, 322-344 (1964).
+
+6. Y. C. Ho and R. C. K. Lee, A bayesian approach to problems in stochastic estimation
+and control, IEEE Trans. Auto. Control 9, 333-339 (1964).
+
+7. W. M. Wonham, Some applications of stochastic differential equations to optimal non-
+linear filtering, SIAMJ. Control 2, 347-369 (1965).
+
+8. R. S. Bucy, Nonlinear filtering, IEEE Trans. Au.to. Control AC10 (2), 198 (Aprü
+1965).
+
+9. D. T. Magill, Optimal adaptive estimation of sampled stochastic processes, IEEE Trans.
+Auto. Control AC10,434-439 (October 1965).
+
+10. A. N. Shiryaev, On stochastic equations in the theory of conditional Markov processes,
+Theory Prob. Appl. Il, 179-184 (1966).
+
+11. R. E. Mortensen, Optimal control of continuous-time stochastic systems. Technical Re-
+port No. ERL-66-1, Electronics Research Laboratory, Univ. of California, Berkeley,
+August 19,1966.
+
+12. D. M. Detchmendy and R. Sridhar, Sequential estimation of states and parameters in
+noisy nonlinear dynamical systems, Trans. ASME, J. Basic Eng. D88, 362-368 (1966).
+
+13. H. J. Kushner, Dynamical equations for optimal nonlinear filtering, J. Differential
+Equations 3 (2), 179-190 (April 1967).
+
+14. T. E. Duncan, Probability densities for diffusion processes with applications to non-
+linear filtering theory and detection theory. Technical Report TR No. 7001-4, Stanford
+Electronics Laboratory, Stanford University, May 1967.
+
+15. M. Aoki, Optimization of Stochastic Systems, Academic Press, New York, 1967.
+
+16. H. J. Kushner, Approximations to optimal nonlinear filters, IEEE Trans. Auto. Control
+12 (5), 546-556 (October 1967).
+
+17. l. R. Fisher and E. B. Stear, Optimal nonlinear filtering for independent increment
+processes. Part I, II, 3 (4), 558-578 (October 1967).
+
+18. D. G. Lainiotis and C. G. Hüborn, Learning systems for minimum risk adaptive pattern
+classification and optimal adaptive estimation, CSRG Technical Report No. 9, Depart-
+ment of Electrical Engineering, University of Texas at Austin, November 1967.
+
+19. P. A. Frost, Nonlinear estimation in continuous time systems, Ph.D. Dissertation, De-
+partment of Electrical Engineering, Stanford University, 1968.
+
+20. L. Schwartz and E. B. Stear, A valid mathematical model for approximate nonlinear
+minimal-variance filtering, J. Math. Anal. Appl. 21 (1), 1-6 (January 1968).
+
+21. H. W. Sorenson and A. R. Stubberud, Nonlinear filtering by approximation of the
+a-posteriori density. Int. J. Controls (l), 35-51 (1968).
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION     233
+
+22. D. G. Lainiotis, A nonlinear adaptive estimation recursive algorithm, IEEE Trans. Auto.
+Control AC13 (2) (April 1968).
+
+23. D. G. Lainiotis, Adaptive mixture decomposition: A unifying approach, Proc. Nat.
+Electron. Conf. 24 (1968).
+
+24. R. E. Mortensen, Maximum likelihood recursive nonlinear filtering, J. Optimization
+Theory Appl. 1 (6), 386-394 (1968).
+
+25. C. G. Hilborn and D. G. Lainiotis, Optimal estimation in the presence of unknown
+parameters, IEEE Trans. System Sei Cybemet. SSC5 (l) (January 1969).
+
+26. T. Kailath, A general likelihood-ratio formula for random signals in gaussian noise,
+IEEE Trans. Inform. Theory IT15 (2), 350-361 (March 1969).
+
+27. R. L. Sengbush and D. G. Lainiotis, Simplified parameter quantization procedure for
+adaptive estimation, IEEE Trans. Auto. Control AC14 (4), 424-425 (August 1969).
+
+28. J. T. Lo, Finite dimensional sensor orbits and optimal nonlinear filtering, Ph.D. Disser-
+tation, Department of Aerospace Engineering, University of Southern California, Los
+Angeles, August 1969.
+
+29. R. S. Bucy, Bayes theorem and digital realizations for nonlinear filters, J. Astronaut.
+Sei. 17 (2), 80-94 (September-October 1969).
+
+30. D. G. Lainiotis, Optimal adaptive estimation: Structure and parameter adaptation,
+Proc. IEEE Symp. Adaptive Processes, November 1969; also published as Technical
+Report No. 74, Electronics Research Center, University of Texas, September 1969.
+
+31. C. G. Hilborn and D. G. Lainiotis, Optimal adaptive filter realizations for sampled
+
+stochastic processes with an unknown parameter, IEEE Trans. Auto. Control AC14 (6)
+(December 1969).
+
+32. C. T. Leondes, J. B. Peller, and E. B. Stear, Nonlinear smoothing theory, IEEE Trans.
+Systems Sei Cybemet. SSC6 (l), 63-71 (January 1970).
+
+33. B. W. Licht, Approximations m optimal nonlinear filtering. Technical Report No. SRC
+70-1, Systems Research Center, Case Western Reserve Univ., April, 1970.
+
+34. D. G. Lainiotis and F. L. Sims, Performance measures for adaptive kalman estimators,
+IEEE Trans. Auto. Control AC15 (2) (April 1970).
+
+35. A. H. Jazwinski, Stochastic Processes and Filtering Theory, Academic Press, New York,
+1970.
+
+36. J. R. Fisher and E. B. Stear, Near-optimal nonlinear filtering using quasimoment func-
+tions,/nî. J. Control 12 (4), 685-697 (1970).
+
+37. J. S. Meditch, Formal algorithms for continuous-time nonlinear filtering and smooth-
+ing,^?. / Control 11,1061-1068 (1970).
+
+38. D. G. Lainiotis, Sequential structure and parameter adaptive pattern recognition, part I:
+
+Supervised learning, IEEE Trans. Inform. Theory IT16 (5), 548-556 (September 1970).
+
+39. G. Kallianpur and C. Striebel, "Estimation of stochastic systems: arbitrary system
+process with additive white observation errors," Ann. Math. Stat. 39, 785-801 (1969).
+
+40. D. G. Lainiotis, Optimal adaptive estimation: Structure and parameter adaptation,
+IEEE Trans. Auto. Control AC16 (2), 160-170 (April 1971).
+
+41. D. G. Lainiotis, S. K. Park, and R. Krishnaiah, Optimal state-vector estimation for non-
+gaussian initial state-vector, IEEE Trans. Auto. Control AC16 (2), 197-198 (April
+1971).
+
+42. P. A. Frost and T. Kailath, An innovations approach to least-squares estimation, part
+III: Nonlinear estimation in white gaussian noise, IEEE Trans. Auto. Control AC16 (3),
+217-226 (1971).
+
+43. D. G. Lainiotis, Optimal nonlinear estimation. Int. J. Control 14 (6), 1137-1148
+(1971).
+
+44. J. L. Center, Practical nonlinear filtering of discrete observations by generalized least-
+
+234                                         DEMETRIOS G. LAINIOTIS
+
+squares approximation of the conditional probability distribution, Proc. Nonlinear Esti-
+mation Symp. 2, 88-99 (1971).
+
+45. H. W. Sorenson and D. L. Alspach, Recursive bay esian estimation using gaussian sums,
+Automatica 7 (4) (1971).
+
+46. D. G. Lainiotis, Joint detection, estimation, and system identification, Inform. Control
+J. 19 (8), 75-92 (August 1971).
+
+47. R. J. D. de Piguerido and Y. 0. Jan, Spline filters, Proc. Nonlinear Estimation Symp.
+September 1971.
+
+48. A. P. Sage and J. L. Melsa, Estimation Theory with Applications to Communications
+and Control, McGraw-Hill, New York, 1971.
+
+49. J. T. Lo, On optimal nonlinear estimation, part I: Continuous observations. Inform.
+Sei 6 (l), 19-32 (1973).
+
+50. D. G. Lainiotis, Adaptive pattern recognition: A state-variable approach, in Frontiers of
+Pattern Recognition (M. Watanabe, Ed.), Academic Press, New York, May 1972.
+
+51. D. G. Lainiotis, J. G. Deshpande, and T. N. Upadhyay, Optimal adaptive control: A
+nonlinear separation theorem. Int. J. Control 15 (5), 877-888 (May 1972).
+
+52. S. K. Park and D. G. Lainiotis, Monte-Carlo study of the optimal nonlinear estimator:
+
+Linear systems with non-gaussian initial state. Int. J. Control 16 (6), 1029-1040 (1972).
+
+53. D. L. Alspach and H. W. Sorenson, Nonlinear bayesian estimation using gaussian sum
+approximations, IEEE Trans. Auto. Control AC17 (4), 439-448 (August 1972).
+
+54. J. T. Lo, Finite-dimensional sensor orbits and optimal nonlinear filtering, IEEE Trans.
+Inform. Theory IT18 (5), 583-588 (September 1972).
+
+55. D. G. Lainiotis and S. K. Park, On joint detection, estimation and system identification:
+
+Discrete data esse. Int. J. Control 17 (3), 609-633 (March 1973).
+
+56. D. G. Lainiotis, Optimal linear smoothing: Continuous data case, Int. J. Control 17 (5),
+921-930 (May 1973).
+
+57. J. G. Deshpande and D. G. Lainiotis, Identification and control of linear stochastic sys-
+tems using spline functions. Technical Report No. 146, Electronics Research Center,
+University of Texas at Austin, May 1973.
+
+58. K. P. Dünn and I. B. Rhodes, A measure-transformation approach to estimation and
+detection, Proc. 1973 Allerton Conf. System Sei, October 1973.
+
+59. H. W. Sorenson, On the development of practical nonlinear filters. Inform. Sei. 7 (3/4)
+(Fall 1974), this issue.
+
+60. D. G. Lainiotis and J. G. Deshpande, Parameter estimation using splines. Inform. Sei.
+7 (3/4) (Fall 1974), this issue.
+
+61. D. G. Alspach, The use of gaussian sum approximations in nonlinear filtering. Inform.
+Sei. 7 (3/4) (Fall 1974), this issue.
+
+62. D. G. Lainiotis, Partitioned estimation algorithms, II: Linear estimation. Inform. Sei.
+7 (3/4) (Fall 1974), this issue.
+
+63. J. M. Richardson, "The implicit conditioning method in statistical mechanics," Inform.
+Sei. 7 (3/4) (Fall 1974), this issue.
+
+64. D. G. Lainiotis, Approximate nonlinear filters: Partitioned realizations, submitted for
+publication to Int. J. Control.
+
+65. R. S. Bucy and K. D. Senne, Digital synthesis of nonlinear filters, Automatica 7 (3),
+287-298 (May 1971).
+
+66. S. K. Park and D. G. Lainiotis, A unified approach to detection, estimation, and system
+identification. Technical Report No. 136, Electronics Research Center, University of
+Texas, Austin, Texas, August 1972.
+
+67. A. V. Cameron, Control and estimation of linear systems with non-gaussian a-priori
+distributions, Proc. 2nd Allerton Conf. Systems Sei University of Illinois, pp. 426-431,
+October 1968.
+
+PARTITIONED ESTIMATION ALGORITHMS, I: NONLINEAR ESTIMATION     235
+
+68. H. W. Sorenson and D. L. Alspach, Gaussian sum approximations for nonlinear filtering,
+Proc. 1970 IEEE Symp. Adaptive Processes, pp. 19.3.1-19.3.9, December 1970.
+
+69. J. T. Lo, On optimal nonlinear estimation: Part II, Proc. 1970 IEEE Symp. Adaptive
+Processes, pp. 19.2.1-19.2.4, December 1970.
+
+70. T. Kailath, Some new algorithms for recursive estimation in constant linear systems,
+IEEE Trans. Inform. Theory IT19 (6), 750-760 (November 1973).
+
+71. M. Morf, G. S. Sidhu, and T. Kailath, Some new algorithms for recursive estimation in
+constant, linear, discrete-time systems, IEEE Trans. Auto. Control AC-19 (4) (Aug.
+1974).
+
+72. G. S. Sidhu and T. Kailath, Development of new estimation algorithms by innovations
+analysis and shift-invariance properties, to appear in IEEE Trans. Inform. Theory, 1975.
+
+73. Levinson, N., The Wiener rms error criterion in filter design and prediction, J. Math.
+Phyn 24 (4), 261-278 (January 1974).
+
+74. D. Q. Mayne, A solution of the smoothing problem for linear dynamic systems,
+Automatica 4, 73-92 (1966).
+
+75. D. C. Fraser, A new technique for optimal smoothing of data, Sc. D. Dissertation, MIT,
+January 1967.
+
+76. T. Kailath and P. Frost, An innovations approach to least-squares estimation-part II:
+
+Linear smoothing in additive white noise, IEEE Trans. Auto. Control AC13 (6), 655-
+660 (December 1968).
+
+77. R. A. Wiggins and E. A. Robinson, Recursive solution to the multichannel filtering
+problem,  Geophys. Res. 70 (8), 1885-1891 (April 1965).
+
+78. A. Lindquist, A new algorithm for optimal filtering of discrete-time stationary
+processes, to appear in SIAM J. Control (1974).
+
+79. Lainiotis, D. G., Partitioned linear estimation algorithms: Discrete case, submitted for
+publication to IEEE Trans. Auto. Control.
+
+80. Lainiotis, D. G., Riccati equations: Partitioned solutions, submitted for publication to
+IEEE Trans. Auto. Control.
+
+81. Y. Sawaragi, T. Katayama, and S. Fujishige, "State-estimation for continuous-time
+systems with interrupted observations," IEEE Trans. Auto. Control AC-19 (4) (Aug.
+1974).
+
+Received January, 1974</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900152</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90015-2</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90015-2</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Partitioned estimation algorithms, I: Nonlinear estimation</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Demetrios G.</ce:given-name>
+					<ce:surname>Lainiotis</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Department of Electrical Engineering, State University of New York at Buffalo, Buffalo, New York 14214 USA</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">In this paper, the nonlinear estimation problem, both the representation, a posteriori probabilities, as well as the realization part of it, namely, the mean-square estimates, is viewed from a radically different viewpoint based mainly on Lainiotis' “partition theorem.” Using the partition theorem—an explicit Bayes theorem applicable in general to nonlinear as well as to linear estimation—the nonlinear estimation problem is treated from a global viewpoint that readily yields and unifies previously derived and seemingly unrelated results, as well as and perhaps more importantly, yields fundamentally new estimation algorithms in terms of explicit, integral expressions in a “partitioned” or “parallel” realization form. The partitioned estimation algorithms are shown to have several important properties both from a theoretical as well as from a realization or computational standpoint.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Stratonovich</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On the theory of optimal nonlinear filtration of random functions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Theory Prob. Appl.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>4</sb:volume-nr>
+									</sb:series>
+									<sb:date>1959</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>223</sb:first-page>
+									<sb:last-page>225</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Stratonovich</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Conditional Markov processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Theory Prob. Appl.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>5</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>1960</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>156</sb:first-page>
+									<sb:last-page>178</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Masani</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Wiener</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear prediction</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Proc. 4th Berkeley Symp. Math. Stat. Problems</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>2</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1961</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>403</sb:first-page>
+									<sb:last-page>419</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Kushner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On the differential equations satisfied by conditional probability densities of Markov processes with applications</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>SIAM J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>2</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1962</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>106</sb:first-page>
+									<sb:last-page>119</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Kushner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On the dynamical equations of conditional probability density functions with applications to optimal control theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Math. Anal. Appl.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>8</sb:volume-nr>
+									</sb:series>
+									<sb:date>1964</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>322</sb:first-page>
+									<sb:last-page>344</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.C.</ce:given-name>
+										<ce:surname>Ho</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.C.K.</ce:given-name>
+										<ce:surname>Lee</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A bayeskn approach to problems in stochastic estimation and control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>9</sb:volume-nr>
+									</sb:series>
+									<sb:date>1964</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>333</sb:first-page>
+									<sb:last-page>339</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB7">
+						<ce:label>7.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.M.</ce:given-name>
+										<ce:surname>Wonham</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Some applications of stochastic differential equations to optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>SIAM J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>2</sb:volume-nr>
+									</sb:series>
+									<sb:date>1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>347</sb:first-page>
+									<sb:last-page>369</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB8">
+						<ce:label>8.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC10</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>April 1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>198</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB9">
+						<ce:label>9.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.T.</ce:given-name>
+										<ce:surname>Magill</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive estimation of sampled stochastic processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC10</sb:volume-nr>
+									</sb:series>
+									<sb:date>October 1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>434</sb:first-page>
+									<sb:last-page>439</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB10">
+						<ce:label>10.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.N.</ce:given-name>
+										<ce:surname>Shiryaev</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On stochastic equations in the theory of conditional Markov processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Theory Prob. Appl.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>11</sb:volume-nr>
+									</sb:series>
+									<sb:date>1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>179</sb:first-page>
+									<sb:last-page>184</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB11">
+						<ce:label>11.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Mortensen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal control of continuous-time stochastic systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. ERL-66-1</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>August 19, 1966</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Laboratory, Univ. of California</sb:name>
+										<sb:location>Berkeley</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB12">
+						<ce:label>12.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.M.</ce:given-name>
+										<ce:surname>Detchmendy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Sridhar</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Sequential estimation of states and parameters in noisy nonlinear dynamical systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Trans. ASME, J. Basic Eng.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>D88</sb:volume-nr>
+									</sb:series>
+									<sb:date>1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>362</sb:first-page>
+									<sb:last-page>368</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB13">
+						<ce:label>13.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Kushner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Dynamical equations for optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Differential Equations</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>3</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>April 1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>179</sb:first-page>
+									<sb:last-page>190</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB14">
+						<ce:label>14.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.E.</ce:given-name>
+										<ce:surname>Duncan</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Probability densities for diffusion processes with applications to nonlinear filtering theory and detection theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report TR No. 7001-4</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>May 1967</sb:date>
+									<sb:publisher>
+										<sb:name>Stanford Electronics Laboratory, Stanford University</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB15">
+						<ce:label>15.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Aoki</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimization of Stochastic Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1967</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB16">
+						<ce:label>16.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Kushner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Approximations to optimal nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>12</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>October 1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>546</sb:first-page>
+									<sb:last-page>556</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB17">
+						<ce:label>17.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.R.</ce:given-name>
+										<ce:surname>Fisher</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:comment>Part I, II</sb:comment>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Optimal nonlinear filtering for independent increment processes</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>3</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>October 1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>558</sb:first-page>
+									<sb:last-page>578</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB18">
+						<ce:label>18.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.G.</ce:given-name>
+										<ce:surname>Hilborn</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Learning systems for minimum risk adaptive pattern classification and optimal adaptive estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>CSRG Technical Report No. 9</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>November 1967</sb:date>
+									<sb:publisher>
+										<sb:name>Department of Electrical Engineering, University of Texas</sb:name>
+										<sb:location>Austin</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB19">
+						<ce:label>19.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.A.</ce:given-name>
+										<ce:surname>Frost</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear estimation in continuous time systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Ph.D. Dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>Department of Electrical Engineering, Stanford University</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB20">
+						<ce:label>20.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.</ce:given-name>
+										<ce:surname>Schwartz</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A valid mathematical model for approximate nonlinear minimal-variance filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Math. Anal. Appl.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>21</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>January 1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1</sb:first-page>
+									<sb:last-page>6</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB21">
+						<ce:label>21.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.R.</ce:given-name>
+										<ce:surname>Stubberud</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear filtering by approximation of the a-posteriori density</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>8</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>35</sb:first-page>
+									<sb:last-page>51</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB22">
+						<ce:label>22.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A nonlinear adaptive estimation recursive algorithm</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC13</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>April 1968</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB23">
+						<ce:label>23.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Adaptive mixture decomposition: A unifying approach</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Proc. Nat. Electron. Conf.</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>24</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1968</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB24">
+						<ce:label>24.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Mortensen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Maximum likelihood recursive nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Optimization Theory Appl.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>2</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>386</sb:first-page>
+									<sb:last-page>394</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB25">
+						<ce:label>25.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.G.</ce:given-name>
+										<ce:surname>Hilborn</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal estimation in the presence of unknown parameters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. System Sci. Cybernet.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>SSC5</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>January 1969</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB26">
+						<ce:label>26.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A general likelihood-ratio formula for random signals in gaussian noise</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT15</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>March 1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>350</sb:first-page>
+									<sb:last-page>361</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB27">
+						<ce:label>27.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Sengbush</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Simplified parameter quantization procedure for adaptive estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC14</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>August 1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>424</sb:first-page>
+									<sb:last-page>425</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB28">
+						<ce:label>28.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Finite dimensional sensor orbits and optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Ph.D. Dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>August 1969</sb:date>
+									<sb:publisher>
+										<sb:name>Department of Aerospace Engineering, University of Southern California</sb:name>
+										<sb:location>Los Angeles</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB29">
+						<ce:label>29.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Bayes theorem and digital realizations for nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Astronaut. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>17</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>September–October 1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>80</sb:first-page>
+									<sb:last-page>94</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB30">
+						<ce:label>30.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive estimation: Structure and parameter adaptation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Proc. IEEE Symp. Adaptive Processes</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>November 1969</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:comment>also published as</sb:comment>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. 74</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>September 1969</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Center, University of Texas</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB31">
+						<ce:label>31.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.G.</ce:given-name>
+										<ce:surname>Hilborn</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive filter realizations for sampled stochastic processes with an unknown parameter</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC14</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>December 1969</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB32">
+						<ce:label>32.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.T.</ce:given-name>
+										<ce:surname>Leondes</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.B.</ce:given-name>
+										<ce:surname>Peller</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear smoothing theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Systems Sci. Cybernet.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>SSC6</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>January 1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>63</sb:first-page>
+									<sb:last-page>71</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB33">
+						<ce:label>33.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>B.W.</ce:given-name>
+										<ce:surname>Licht</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Approximations in optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. SRC 70-1</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>April, 1970</sb:date>
+									<sb:publisher>
+										<sb:name>Systems Research Center, Case Western Reserve Univ</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB34">
+						<ce:label>34.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>F.L.</ce:given-name>
+										<ce:surname>Sims</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Performance measures for adaptive kalman estimators</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC15</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>April 1970</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB35">
+						<ce:label>35.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.H.</ce:given-name>
+										<ce:surname>Jazwinski</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Stochastic Processes and Filtering Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB36">
+						<ce:label>36.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.R.</ce:given-name>
+										<ce:surname>Fisher</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Near-optimal nonlinear filtering using quasimoment functions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>12</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>685</sb:first-page>
+									<sb:last-page>697</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB37">
+						<ce:label>37.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.S.</ce:given-name>
+										<ce:surname>Meditch</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Formal algorithms for continuous-time nonlinear filtering and smoothing</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>11</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1061</sb:first-page>
+									<sb:last-page>1068</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB38">
+						<ce:label>38.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Sequential structure and parameter adaptive pattern recognition, part I: Supervised learning</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>September 1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>548</sb:first-page>
+									<sb:last-page>556</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB39">
+						<ce:label>39.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.</ce:given-name>
+										<ce:surname>Kallianpur</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Striebel</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation of stochastic systems: arbitrary system process with additive white observation errors</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Ann. Math. Stat.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>39</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>785</sb:first-page>
+									<sb:last-page>801</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB40">
+						<ce:label>40.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive estimation: Structure and parameter adaptation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>April 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>160</sb:first-page>
+									<sb:last-page>170</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB41">
+						<ce:label>41.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Krishnaiah</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal state-vector estimation for non-gaussian initial state-vector</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>April 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>197</sb:first-page>
+									<sb:last-page>198</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB42">
+						<ce:label>42.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.A.</ce:given-name>
+										<ce:surname>Frost</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An innovations approach to least-squares estimation, part III: Nonlinear estimation in white gaussian noise</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>217</sb:first-page>
+									<sb:last-page>226</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB43">
+						<ce:label>43.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal nonlinear estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>14</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1137</sb:first-page>
+									<sb:last-page>1148</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB44">
+						<ce:label>44.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.L.</ce:given-name>
+										<ce:surname>Center</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Practical nonlinear filtering of discrete observations by generalized leastsquares approximation of the conditional probability distribution</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Proc. Nonlinear Estimation Symp.</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>2</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>88</sb:first-page>
+									<sb:last-page>99</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB45">
+						<ce:label>45.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recursive bayesian estimation using gaussian sums</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB46">
+						<ce:label>46.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Joint detection, estimation, and system identification</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Control J.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>19</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>8</sb:issue-nr>
+									<sb:date>August 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>75</sb:first-page>
+									<sb:last-page>92</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB47">
+						<ce:label>47.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.J.D.</ce:given-name>
+										<ce:surname>de Figuerido</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Y.O.</ce:given-name>
+										<ce:surname>Jan</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Spline filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. Nonlinear Estimation Symp.</sb:maintitle>
+									</sb:title>
+									<sb:date>September 1971</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB48">
+						<ce:label>48.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.P.</ce:given-name>
+										<ce:surname>Sage</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.L.</ce:given-name>
+										<ce:surname>Melsa</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation Theory with Applications to Communications and Control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1971</sb:date>
+									<sb:publisher>
+										<sb:name>McGraw-Hill</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB49">
+						<ce:label>49.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On optimal nonlinear estimation, part I: Continuous observations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>6</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>19</sb:first-page>
+									<sb:last-page>32</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB50">
+						<ce:label>50.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Adaptive pattern recognition: A state-variable approach</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>M.</ce:given-name>
+											<ce:surname>Watanabe</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Frontiers of Pattern Recognition</sb:maintitle>
+									</sb:title>
+									<sb:date>May 1972</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB51">
+						<ce:label>51.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.G.</ce:given-name>
+										<ce:surname>Deshpande</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.N.</ce:given-name>
+										<ce:surname>Upadhyay</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive control: A nonlinear separation theorem</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>15</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>May 1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>877</sb:first-page>
+									<sb:last-page>888</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB52">
+						<ce:label>52.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Monte-Carlo study of the optimal nonlinear estimator: Linear systems with non-gaussian initial state</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1029</sb:first-page>
+									<sb:last-page>1040</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB53">
+						<ce:label>53.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear bayesian estimation using gaussian sum approximations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC17</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>August 1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>439</sb:first-page>
+									<sb:last-page>448</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB54">
+						<ce:label>54.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Finite-dimensional sensor orbits and optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT18</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>September 1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>583</sb:first-page>
+									<sb:last-page>588</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB55">
+						<ce:label>55.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On joint detection, estimation and system identification: Discrete data case</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>17</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>March 1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>609</sb:first-page>
+									<sb:last-page>633</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB56">
+						<ce:label>56.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal linear smoothing: Continuous data case</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>17</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>May 1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>921</sb:first-page>
+									<sb:last-page>930</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB57">
+						<ce:label>57.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.G.</ce:given-name>
+										<ce:surname>Deshpande</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Identification and control of linear stochastic systems using spline functions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. 146</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>May 1973</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Center, University of Texas</sb:name>
+										<sb:location>Austin</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB58">
+						<ce:label>58.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>K.P.</ce:given-name>
+										<ce:surname>Dunn</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>I.B.</ce:given-name>
+										<ce:surname>Rhodes</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A measure-transformation approach to estimation and detection</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1973 Allerton Conf. System Sci.</sb:maintitle>
+									</sb:title>
+									<sb:date>October 1973</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB59">
+						<ce:label>59.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On the development of practical nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB60">
+						<ce:label>60.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.G.</ce:given-name>
+										<ce:surname>Deshpande</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Parameter estimation using splines</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB61">
+						<ce:label>61.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The use of gaussian sum approximations in nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB62">
+						<ce:label>62.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Partitioned estimation algorithms, II: Linear estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB63">
+						<ce:label>63.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.M.</ce:given-name>
+										<ce:surname>Richardson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The implicit conditioning method in statistical mechanics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB64">
+						<ce:label>64.</ce:label>
+						<ce:other-ref>
+							<ce:textref>D. G. Lainiotis, Approximate nonlinear filters: Partitioned realizations, submitted for publication to 
+								<ce:italic>Int. J. Control</ce:italic>.
+							</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB65">
+						<ce:label>65.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.D.</ce:given-name>
+										<ce:surname>Senne</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Digital synthesis of nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>May 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>287</sb:first-page>
+									<sb:last-page>298</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB66">
+						<ce:label>66.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A unified approach to detection, estimation, and system identification</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. 136</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>August 1972</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Center, University of Texas</sb:name>
+										<sb:location>Austin, Texas</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB67">
+						<ce:label>67.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.V.</ce:given-name>
+										<ce:surname>Cameron</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Control and estimation of linear systems with non-gaussian a-priori distributions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>
+											<ce:italic>Proc. 2nd Allerton Conf. Systems Sci.</ce:italic> University of Illinois
+										</sb:maintitle>
+									</sb:title>
+									<sb:date>October 1968</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>426</sb:first-page>
+									<sb:last-page>431</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB68">
+						<ce:label>68.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Gaussian sum approximations for nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1970 IEEE Symp. Adaptive Processes</sb:maintitle>
+									</sb:title>
+									<sb:date>December 1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>19.3.1</sb:first-page>
+									<sb:last-page>19.3.9</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB69">
+						<ce:label>69.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On optimal nonlinear estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:comment>Part II</sb:comment>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1970 IEEE Symp. Adaptive Processes</sb:maintitle>
+									</sb:title>
+									<sb:date>December 1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>19.2.1</sb:first-page>
+									<sb:last-page>19.2.4</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB70">
+						<ce:label>70.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Some new algorithms for recursive estimation in constant linear systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT19</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>November 1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>750</sb:first-page>
+									<sb:last-page>760</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB71">
+						<ce:label>71.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Morf</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>G.S.</ce:given-name>
+										<ce:surname>Sidhu</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Some new algorithms for recursive estimation in constant, linear, discrete-time systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-19</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>November 1973</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB72">
+						<ce:label>72.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.S.</ce:given-name>
+										<ce:surname>Sidhu</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Development of new estimation algorithms by innovations analysis and shift-invariance properties</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:comment>to appear in</sb:comment>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1975</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB73">
+						<ce:label>73.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Levinson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Wiener rms error criterion in filter design and prediction</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Math. Phys.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>24</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>January 1974</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>261</sb:first-page>
+									<sb:last-page>278</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB74">
+						<ce:label>74.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.Q.</ce:given-name>
+										<ce:surname>Mayne</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A solution of the smoothing problem for linear dynamic systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>4</sb:volume-nr>
+									</sb:series>
+									<sb:date>1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>73</sb:first-page>
+									<sb:last-page>92</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB75">
+						<ce:label>75.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.C.</ce:given-name>
+										<ce:surname>Fraser</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A new technique for optimal smoothing of data</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Sc. D. Dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>January 1967</sb:date>
+									<sb:publisher>
+										<sb:name>MIT</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB76">
+						<ce:label>76.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Frost</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An innovations approach to least-squares estimation-part II: Linear smoothing in additive white noise</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC13</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>December 1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>655</sb:first-page>
+									<sb:last-page>660</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB77">
+						<ce:label>77.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.A.</ce:given-name>
+										<ce:surname>Wiggins</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.A.</ce:given-name>
+										<ce:surname>Robinson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recursive solution to the multichannel filtering problem</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Geophys. Res.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>70</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>8</sb:issue-nr>
+									<sb:date>April 1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1885</sb:first-page>
+									<sb:last-page>1891</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB78">
+						<ce:label>78.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Lindquist</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A new algorithm for optimal filtering of discrete-time stationary processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:comment>to appear in</sb:comment>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>SIAM J. Control</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB79">
+						<ce:label>79.</ce:label>
+						<ce:other-ref>
+							<ce:textref>Lainiotis, D. G., Partitioned linear estimation algorithms: Discrete case, submitted for publication to 
+								<ce:italic>IEEE Trans. Auto. Control</ce:italic>.
+							</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB80">
+						<ce:label>80.</ce:label>
+						<ce:other-ref>
+							<ce:textref>Lainiotis, D. G., Riccati equations: Partitioned solutions, submitted for publication to 
+								<ce:italic>IEEE Trans. Auto. Control</ce:italic>.
+							</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB81">
+						<ce:label>81.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.</ce:given-name>
+										<ce:surname>Sawaragi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Katayama</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Fujishige</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>State-estimation for continuous-time systems with interrupted observations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-19</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

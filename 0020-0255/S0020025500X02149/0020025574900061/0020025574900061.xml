@@ -1,0 +1,627 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90006-1"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Note on analogue memory automata</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Shinichi Tamura</rdf:li><rdf:li>Kokichi Tanaka</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 73-80. doi:10.1016/0020-0255(74)90006-1</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">73-80</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">73</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">80</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90006-1</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90006-1</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90006-1</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMA TION SCIENCES 7, 73-80 (1974) 73
+
+Note on Analogue Memory Automata
+
+SHIN1CHI TAMURA AND KOKICHI TANAKA
+
+Department of Information and Computer Sciences, Faculty of Engineering Science,
+
+Osaka University, Toyonaka, Osaka, Japan 560
+
+Communicated by K. S. Fu
+
+ABSTRACT
+
+A hybrid automaton that has an analogue memory, that is, an analogue memory autom-
+aton (AMA), is proposed. Further, a multiplicative AMA (MAMA) that has only analogue
+multiplication function is presented. As a special case of MAMA, a counter machine and
+counter language are considered. Furthermore, a MAMA event is defined as a final value of
+the analogue memory of MAMA, and it is shown that the MAMA event is a subclass of the
+probabilistic event.
+
+1. INTRODUCTION
+
+When electronic computers appeared as "artificial brains" in the world, it was
+thought that the "artificial brain" might, at early date, be able to carry out al-
+most all the intellectual actions of human being. After many unsuccessful trials,
+it has been realized that the "artificial brain" is essentially different from the
+brain of a human being.
+
+The essential difference between the thinking process of human beings and
+that of computers is that human thinking is of the analogue type with emotion,
+fuzziness, taste, premonition, etc. and is very flexible, while computer thinking
+is of the digital type, does not contain them, and is poor in the flexibility.
+
+Though the present progress of digital technique is remarkable, for the rea-
+sons described above, in the pattern recognition field, the topological advantage
+of the analogue method has come again under evaluation. On the other hand,
+also in an automaton field, some automata that have analogue values have been
+proposed and studied. For example, probabilistic automata [1] and fuzzy au-
+mata [2] have fixed analogue values as transition table or threshold. Since these
+automata have both analogue values and digital values, they may be called
+hybrid automata.
+
+In this paper, we discuss hybrid automata with analogue memories, that is,
+analogue memory automata (AMA) and consider this ability. Our notation, ter-
+minology, and reasoning parallel closely the presentation of the theory of push-
+
+©American Eisevier Publishing Company, Inc., 1974
+
+74
+
+SHINICHI TAMURA AND KOKICHI TANAKA
+
+down automaton in Hopcroft and Ullman [3] and the theory of probabilistic
+automaton in Paz [l].
+
+2. ANALOGUE MEMORY AUTOMATON
+
+We shall now formalize the AMA following the formulation of the pushdown
+automaton.
+
+An AMA M is a system (so, S, 2, 5 ) as shown in Fig. 1.
+
+1. So is an initial state.
+
+2. S is a finite set of states such that So ^S.
+
+3. S is a finite alphabet called the input alphabet.
+
+4. ô is a mapping from S X 2; U {e} X (O, l ] to S X (O, l ], where e denotes
+the empty symbol.
+
+INPUT TAPE
+
+
+
+
+
+
+FINITE	4»	^-»	riM
+CONTROL			-0
+
+ANALOGUE
+MEMORY
+
+Fig. 1. Analogue memory automaton.
+
+The interpretation of
+
+50,a,JL()={(A,7i),(?2,72),...,(^,'ym)},
+
+where s and t 1 &lt; ; &lt; m, are in S, a is in S U {e}, ß, and y 1 &lt; ; &lt; m, are in
+(0, 1], is that the AMA in state s, with input symbol a and p. the value of anal-
+ogue memory, can, for any ;', enter state t,, replace IJ. by 7;, and advance the
+input head one symbol.
+
+A configuration of an AMA is a pair (s, p.) where s is a state in S and
+At G (O, l ] is a value of analogue memory. We say that an AMA M is in con-
+figuration (s, ti) if M is in state s with fi in the analogue memory. Without loss
+of generality, we assume that the initial value of the analogue memory is unity,
+i.e.; the initial configuration ofAfis (so, 1). If a is in 2 U {e}, s and t are m S,
+
+ANALOGUE MEMORY AUTOMATA                                     75
+
+11 and 7 are in (O, l ], and if the pair (/, -y) is in 8(s, a, ß), then we write
+
+a: (î, ti) r^- (t, 7).                             (l)
+
+The above (l) means that according to the rules of the AMA the input a may
+cause M to go from configuration (s, yu) to configuration (/, 7).
+
+If forai, flî, . . . , ff, each in S U {e}, states Si, Si, . . . , Sn+i and values of
+the analogue memory ^i, ^2,. . . , ;-(+,, each in (0, 1], we have
+
+ai'- (sßi)\-J^- (s,+1,^.1)
+for all / ( 1 &lt; ; &lt; n), then we write
+
+fflff2 an'- (Sl,^l) 1-^ (S«+i,/^n.i).
+
+For an AMA Af we define Z(Af ), the language accepted by full memory, to be
+
+f                    *                                     1
+
+iw\w: (so, 1) \-^- (s, 1) for any s in S; w £ S* L         (2)
+
+This acceptance by full memory is adopted instead of the acceptance by zero
+memory for the sake of simplicity in the following discussion, and corresponds
+to the acceptance by empty store in pushdown automata. Furthermore, as in
+the pushdown automaton case, by adding the e-move and defining the language
+accepted by Final states, we can prove that both languages are identical. For sim-
+plicity, however, we assume that acceptance in the following means acceptance
+by full memory.
+
+3. MULTIPLICATIVE AMA
+
+Since the definition of the AMA is too general, in this chapter, we propose a
+multiplicative AMA (MAMA) whose mapping § is restricted.
+A MAMA M is an AMA whose mapping § is given by
+
+8(s,a,lJi)=(t,ofi)
+or
+
+a: (s. At) \-Jf- (t, ap.),
+
+where a^K, and A" is a finite set of positive real numbers called multiplication
+elements, i.e., A' = {ui, a;, . . ., a^la, G(0, °°)}, and ?and a are determined
+only by (s, a). This restriction is reasonable since the multiplication of analogue
+value can be realized by fixed procedures of hardware. We assume that if a p.
+becomes greater than one, or the machine is not able to move, since the next
+configuration is undefined, then the existing input string is rejected.
+
+76                             SHINICHI TAMURA AND KOKICHI TANAKA
+
+Example l. Let a MAMA Af be (SQ,S, 2,0), where S = {so,St},
+ï={a,b},K={ll2,-2],and
+
+S(so,a,^)=(so,^/2)
+6(so,b,ti)=(si,2ß)
+S(si,b,lJi)=(si,2n).
+The initial configuration is (so, l). Further,
+
+a": Oo,l)h^-(^,2-")
+
+a"Z/": (^Dh^i^"-"0), n&gt;m.
+
+Thus, the language £(Af) accepted by full memory is
+
+ZW={a"n"=0,l,2,...}.                  (3)
+If we take an analogue error into consideration, L(M) may become
+
+{a"bm\n^m}.                      (4)
+
+It is interesting to compare the language (4) with the fact that we often make a
+mistake so that right parentheses and left parentheses in a formula of computer
+programs do not coincide in number, or with the fact that it is difficult to recall
+highly self-embedded sentences [4] for the human being. Further, the language
+(4) may be viewed as a fuzzy language [5,6].
+
+Example 1. Let a MAMA M be (SQ,S, S, o), where S = {so. Si, s^},
+2={a,&amp;,c},^={l/2,l/3,6},and
+
+6(so,a,p.)= (io&gt;^/2)
+6(so,b,u)= (s i,^i/3)
+
+ô(Si,&amp;,JLt)=(Si,JLt/3)
+
+6(si,c,^i)=(Sî,6p.)
+6(s^,c,p.)=(si,6p.).
+The initial configuration is (so, 1). Then
+
+a": (so,l)h^-(^,2-")
+
+a"&amp;": (îo, 1) r^-(^ 6-")
+^"c": (îo,l)h(^,l).
+
+ANALOGUE MEMORY AUTOMATA                                  77
+
+Thus,
+
+L(M)^{a'ïbnc"\n=0, 1,2,...}.                (5)
+
+It is well known that (5) is a context-sensitive language. The reason why the
+context-sensitive language is accepted is that both a and b are cancelled with one
+c. Therefore, one may consider this type of machine as corresponding to a two
+head stack automaton.
+
+4. COUNTER MACHINE TYPE MAMA
+
+A MAMA with a few further restrictions or modifications, may be trans-
+formed to any one of the various types of automata. In Sections 4 and 5, two
+types of such MAMA are considered. In this chapter, a counter machine type
+MAMA is considered. The counter machine type MAMA is a MAMA such that
+K = {1 la, a} for some a e ( 1, °°). A typical example of counter machine type
+MAMA is a machine in Example 1. Clearly, this type of MAMA is equivalent to
+the counter machine [3], since the analogue memory of this type of MAMA is
+equivalent to the counter tape of the counter machine. A MAMA with two
+analogue memories is equivalent to a Turing machine, since a counter machine
+with two counter tapes is equivalent to a Turing machine.
+
+Now, by a phrase structure grammar, we characterize a language accepted by
+a counter machine. A context-free grammar G is a quadruple G = (VN, VT' Pi °)&gt;
+where V^, VT,P, and a are a set of nonterminal symbols, terminal symbols,
+productions, and a start symbol (a£ V^), respectively. If a context-free gram-
+mar G = (Vff, Vf, P, o) is given in Greibach normal form and satisfies the fol-
+lowing two conditions, it is called "counter grammar."
+
+1. P contains productions of only the following five types
+X&gt;e
+X^a
+
+^   &gt; ^k^m^m^^'m^m^    "ffig.^mg,) "»îie_j wg
+^tmg   &gt;akDm^nt'i "m^m^   ""'B-2"ig-i "'fi-i'"E
+"img   &gt;^kam^m^t'mimJ   --"'g_^mg_i "mc_j mg
+
+2. If P contains
+
+-A^^Bm^m^m^m^   °mE_2»ig_i "'"g_(mg&gt;
+then for any m't (0 &lt; m\ &lt; Wo, 2 &lt; t &lt; £ - \},P also contains
+
+"   ^^"m^m'tm'^m'^   ffig-^mg.i '"g-i'wg
+
+78                            SHINICHI TAMURA AND KOKICHI TANAKA
+
+where a^ £ VT, and A', Äy,/1,y,/?, Vu such that {{a}, [A,j\0&lt;i,J&lt;mo},
+{Bfj 10 &lt; ;',  &lt; WQ }} is a partition of V^ -
+
+A language generated by a counter grammer is called "counter language."
+The following theorem can be proved constructively.
+
+THEOREM 1. A counter language is accepted by a counter machine. Con-
+versely, a language accepted by a counter machine is generated by a counter
+grammar.
+
+Example 3. Let a counter grammar G = (V N, VT,P, a) whose my = I, and
+P is given by
+
+a&gt;e           Boo&gt;aBo\B\Q
+
+Am &gt;e           ^01  ^aBooBoi
+An &gt;e           ^01 ^aBoiBn
+
+a&gt;aBooAoi      BOI &gt;b
+
+o&gt;aBotAn      Bll &gt;b-
+Boo &gt;aBooBoo
+
+It is easy to see that the language L(G) generated by G is {fl" b" \ n = 0, l,
+2,. ..}. This is the same as the language in Example 1. The configuration
+transition of the underlying counter machine M = (S, 2, r, S, So, Z o, &lt;p) is given
+by (as to the system representation, see [3])
+
+e (so,Zo)\(si,e)
+e (si,Zo)|(îi,e)
+a (so,Zo)\(so,BZo)
+a (so,B)\(so,BB)
+b (so,B)\(s,,e)
+b (si,B)\(St,e)
+
+where S = {so. Si}, 2 = [a, b}, F = {Zo,B}, and 0(= null set) means the accep-
+tance by empty store. Z o is an end symbol of the counter tape corresponding to
+p. = 1, and B is a blank symbol of the counter tape corresponding to the I/a
+element in K.
+
+5. PROBABILISTIC AUTOMATON TYPE MAMA
+
+The probabilistic automaton type MAMA is a MAMA such that K = {tti,
+a;,.. ., afe | a,  (0, 1 ]}. Since the value of an analogue memory is non-
+increasing, the language accepted by this MAMA is regular.
+
+ANALOGUE MEMORY AUTOMATA
+
+79
+
+On the other hand, such a MAMA may be viewed as a mapping machine from
+2* to (0,1]. Let the final memory of MAMA M be  such that
+
+w: (so,l)
+
+M
+
+-(s, f)
+
+for some s GS. Then a single word function  over an alphabet 2 [: 2* &gt;
+(O, l ] ] can be viewed as a type of event [ 1 ]. Let us call this event a MAMA
+event.
+
+The MAMA event is given as follows. Let a MAMA M be a quadruple (s'o, S,
+2, 5), and the number of elements of S be \S\. Further, let a | S 1-dimensional
+initial row vector (100    0) be n, a transition matrix of M for an input symbol
+a be T{a) whose (;,/)-th entry is a.m e K for 5 (s a, p.) = (Sy, a, ^) and zero for
+otherwise, and a 151-dimensional final column vector (11    l)7' be T?, where
+the superscript r means transpose. Each row of T{a) has only one non-zero
+entry in (0, 1]. Then, we can see that the MAMA event for w = aid-i . .. an is
+given by
+
+where
+
+(6)
+
+THEOREM 2. For any MAMA event, there exists a probabilistic event f ' such
+thatf(w) =f'(w)forall we S*.
+
+Proof. LetH=(-n',S','S, {T'{a}}, T/) be a system, where n' = (Tri 0),
+ßo
+
+T'(a) =
+
+T(a)
+
+ISI-l
+
+0 0
+
+0   l
+
+=11 p.
+
+ßi = l - a, for o (s a, ju) = (xy, a, ^i), and i?' = (^ ! O)7'. Then, py  [0, l ] for
+
+0 &lt; ; &lt; l S | and 0 &lt; &lt; l S \, and sJfg p,y = l for 0 &lt; ; ^ | S \. Therefore, we can
+see that H is a probabilistic automaton. Let a probabilistic event corresponding
+to H bef'. Then we can easily see
+
+f(w)=f'(w),   VwES*.                        
+The constant function is not generally in the set of MAMA event, differently
+
+80                              SHINICHI TAMURA AND KOKICHI TANAKA
+
+from the probabilistic event, since the MAMA event for A (empty sentence) is
+unity, i.e.;/(X)= 1.
+
+THEOREM 3. I f f and g are MAMA events, then also f g is a MAMA event.
+
+Proof. The proof is the same with the probabilistic automaton case of Paz
+[1, Proposition 1.3, Chapter III].
+
+6. CONCLUSION
+
+Analogue memory automata (AMA), especially multiplicative AM A (MAMA)
+having an analogue memory are proposed and studied in detail. The similarity
+of these automata with human beings has been discussed. It has been shown
+that the MAMA can accept context-sensitive languages. Further, as a special
+case of MAMA, counter machines and counter languages have been considered,
+and it has been shown that they have a one-to-one correspondence. Lastly, we
+have defined a MAMA event that is the final value of the analogue memory of
+the MAMA. It has been shown that the MAMA event is a subclass of the prob-
+abilistic event. However, the whole ability of the MAMA has not yet been made
+clear.
+
+The authors wish to express their thanks to Mr. Mutsumi Sato ofKinki Uni-
+versity who pointed out the existence of the counter language and gave the
+proof of THEOREM 1.
+
+REFERENCES
+
+1. A. Paz, Introduction to Probabilistic Automata, Academic Press, New York and London
+(1971).
+
+2. W. G. Wee and K. S. Fu, A formulation of fuzzy automata and its application as a model
+of learning systems, IEEE Trans. Syst. Sei. Cybern. SSC-5, 215-223 (1969).
+
+3. J. E. Hopcroft and J. D. Ullman, Formal Languages and Their Relation to Automata,
+Addison-Wesley, Reading, Mass. (1969).
+
+4. G. A. Miller and S. Isard, Free recall of self-embedded English sentences, Information
+and Control 7, 292-303 (1964).
+
+5. E. T. Lee and L. A. Zadeh, Note on fuzzy languages. Information Sciences 1, 421-434,
+(1969).
+
+6. S. Tamura and K. Tanaka, Learning of fuzzy formal language, IEEE Trans. Syst. Man
+Cybern. SMC-3, 98-102 (Jan. 1973).
+
+Received January 5, 1973</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900061</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90006-1</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90006-1</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Note on analogue memory automata</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Shinichi</ce:given-name>
+					<ce:surname>Tamura</ce:surname>
+				</ce:author>
+				<ce:author>
+					<ce:given-name>Kokichi</ce:given-name>
+					<ce:surname>Tanaka</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Department of Information and Computer Sciences, Faculty of Engineering Science, Osaka University, Toyonaka, Osaka, Japan 560</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:date-received day="5" month="1" year="1973" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:miscellaneous xmlns:ce="http://www.elsevier.com/xml/common/schema">Communicated by K. S. Fu</ce:miscellaneous>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">A hybrid automaton that has an analogue memory, that is, an analogue memory automaton (AMA), is proposed. Further, a multiplicative AMA (MAMA) that has only analogue multiplication function is presented. As a special case of MAMA, a counter machine and counter language are considered. Furthermore, a MAMA event is defined as a final value of the analogue memory of MAMA, and it is shown that the MAMA event is a subclass of the probabilistic event.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Paz</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Introduction to Probabilistic Automata</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1971</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York and London</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.G.</ce:given-name>
+										<ce:surname>Wee</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.S.</ce:given-name>
+										<ce:surname>Fu</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A formulation of fuzzy automata and its application as a model of learning systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Syst. Sci. Cybern.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>SSC-5</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>215</sb:first-page>
+									<sb:last-page>223</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.E.</ce:given-name>
+										<ce:surname>Hopcroft</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.D.</ce:given-name>
+										<ce:surname>Ullman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Formal Languages and Their Relation to Automata</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>Addison-Wesley</sb:name>
+										<sb:location>Reading, Mass</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.A.</ce:given-name>
+										<ce:surname>Miller</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Isard</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Free recall of self-embedded English sentences</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Information and Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:date>1964</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>292</sb:first-page>
+									<sb:last-page>303</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.T.</ce:given-name>
+										<ce:surname>Lee</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>L.A.</ce:given-name>
+										<ce:surname>Zadeh</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Note on fuzzy languages</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Information Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>1</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>421</sb:first-page>
+									<sb:last-page>434</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Tamura</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.</ce:given-name>
+										<ce:surname>Tanaka</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Learning of fuzzy formal language</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Syst. Man Cybern.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>SMC-3</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>98</sb:first-page>
+									<sb:last-page>102</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

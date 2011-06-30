@@ -1,0 +1,103 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/S0020-0255(11)00240-4"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Inside Front Cover - Editorial Board</dc:title><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 181 (2011) IFC-IFC. doi:10.1016/S0020-0255(11)00240-4</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © 2011 Published by Elsevier Inc. All rights reserved.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">181</prism:volume><prism:number xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">16</prism:number><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">2011</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">2011</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">IFC-IFC</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">IFC</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">IFC</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/S0020-0255(11)00240-4</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/S0020-0255(11)00240-4</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/S0020-0255(11)00240-4</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMATION SCIENCES
+Editor-in-Chief
+W. Pedrycz, University of Alberta, Department of Electrical and Computer Engineering, T6G 2V4, Edmonton, Canada,
+Tel.: +1 780 492 4661; Fax: +1 780 492 1811; E-mail: pedrycz@ee.ualberta.ca
+Associate Editors
+R. Aliev, Azerbaijan State Oil Academy, Baku, Azerbaijan; E-mail: raliev@asoa.edu.az
+A. Bargiela, University of Nottingham, Nottingham, UK; E-mail: andrzej.bargiela@nottingham.ac.uk
+B. Bede, The University of Texas-Pan American, Edinburg, TX, USA; E-mail: bedeb@utpa.edu
+A. Bretto, UniversiteÂ´ de Caen, Caen Cedex, France; E-mail: alain.bretto@info.unicaen.fr
+S.-M. Chen, National Taiwan University of Science and Technology, Taipei, Taiwan, ROC; E-mail: smchen@mail.ntust.edu.tw
+Y.-P. Chen, National Chiao Tung University, Hsinchu City, Taiwan, ROC; E-mail: ypchen@cs.nctu.edu.tw
+D. Ciucci, University of Milano-Bicocca, Milano, Italy; E-mail: ciucci@disco.unimib.it
+S. Das, Jadavpur University, Kolkata, India; E-mail: swagatam@etce.jdvu.ac.in
+P. DâUrso, Sapienza University of Rome, Rome, Italy; E-mail: Pierpaolo.durso@uniroma1.it
+P. Ekel, Pontifical Catholic University of Minas Gerais and ASOTECH, Belo Horizonte, Brazil; E-mail: pekel@superig.com.br
+P.H. Guzzi, University ââMagna GrÃ¦ciaââ of Catanzaro, Catanzaro, Italy; E-mail: hguzzi@unicz.it
+L. Hernandez-Encinas, Spanish National Research Council, Madrid, Spain; E-mail: luis@iec.csic.es
+F. Herrera, Universidad de Granada, Granada, Spain; E-mail: herrera@decsai.ugr.es
+E. Herrera-Viedma, Universidad de Granada, Granada, Spain; E-mail: viedma@decsai.ugr.es
+J. Kacprzyk, Polish Academy of Science, Warsaw, Poland; E-mail: kacprzyk@ibspan.waw.pl
+R. Mesiar, Slovak University of Technology Bratislava, Bratislava, Slovakia; E-mail: mesiar@math.sk
+P. Shi, University of Glamorgan, Pontypridd, UK; E-mail: peng.shi@vu.edu.au
+P. Siarry, UniversiteÂ´ Paris-Est CreÂ´teil Val-de-Marne, CreÂ´teil, France; E-mail: siarry@univ-paris12.fr
+A. Skowron, University of Warsaw, Warsaw, Poland; E-mail: skowron@mimuw.edu.pl
+D. S
+Â´
+leËzak, Infobright Inc., Toronto, ON, Canada; E-mail: dominik.slezak@infobright.com
+P.N. Suganthan, Nanyang Technological University, Singapore; E-mail: epnsugan@ntu.edu.sg
+D. Tao, Nanyang Technological University, Singapore; E-mail: dctao@ntu.edu.sg
+Y.-C. Tian, Queensland University of Technology, Brisbane, QLD, Australia; E-mail: y.tian@qut.edu.au
+V. Torra, Consejo Superior de Investigaciones CientÄ±Â´ficas (CSIC), Bellaterra, Catalonia, Spain; E-mail: vtorra@iiia.csic.es
+D.-H. Wang, La Trobe University, Melbourne, VIC, Australia; E-mail: dh.wang@latrobe.edu.au
+M. Wang, National University of Singapore, Singapore; E-mail: eric.mengwang@gmail.com
+W. Wang, Dalian University of Technology, Dalian City, China; E-mail: wangwei@dlut.edu.cn
+X.-Z. Wang, Hebei University, Baoding City, China; E-mail: xizhaowang@ieee.org
+S. Zhong, State University of New York at Buffalo, Amherst, NY, USA; E-mail: szhong@buffalo.edu
+Special Issue Editor
+P.P. Wang, Duke University, Department of Electrical Engineering, P.O. Box 90291, Durham, NC 27708-0291, USA,
+Tel.: +1 919 660 5259; Fax: +1 919 660 5293; E-mail: ppw@ee.duke.edu
+Editorial Board
+H. Adeli, Ohio State University, Columbus, OH, USA
+H.J. Caulfield, Alabama A &amp; M University, Normal, AL, USA
+G. Chen, Tsinghua University, Beijing, China
+H.D. Cheng, Utah State University, Logan, UT, USA
+F. Crestani, University of Lugano, Lugano, Switzerland
+D. Dubois, UniversiteÂ´ Paul Sabatier, Toulouse, France
+A. Elmagarmid, Purdue University, West Lafayette, IN, USA
+T. Fukuda, Nagoya University, Nagoya, Japan
+D.E. Goldberg, University of Illinois at Urbana-Champaign,
+Urbana, IL, USA
+S. Gottwald, Leipzig University, Leipzig, Germany
+S. Grossberg, Boston University, Boston, MA, USA
+K. Hirota, Tokyo Institute of Technology, Yokohama, Japan
+Y.C. Ho, Harvard University, Cambridge, MA, USA
+N. Kasabov, Auckland University of Technology,
+Auckland, New Zealand
+E.E. Kerre, Ghent University, Ghent, Belgium
+L.J. Kohout, Florida State University, Tallahassee, FL, USA
+B. Kosko, University of Southern California, Los Angeles, CA, USA
+D. Manivannan, University of Kentucky, Lexington KY, USA
+S.K. Pal, Indian Statistical Institute, Calcutta, India
+H. Prade, UniversiteÂ´ Paul Sabatier, Toulouse, France
+G. Succi, Free University of Bozen, Bozen, Italy
+A.V. Vasilakos, University of Western Macedonia, Kozani, Greece
+B. Wah, University of Illinois at Urbana-Champaign, Urbana, IL, USA
+F.-Y. Wang, Chinese Academy of Sciences, Beijing, China
+K. Weber, EnBW Energie Baden-WuÂ¨rttemberg AG, Karlsruhe, Germany
+G. Weiss, Technical University of Munich, Garching bei MuÂ¨nchen, Germany
+X. Yao, The University of Birmingham, Birmingham, UK
+L.A. Zadeh, University of California, Berkeley, CA, USA
+D. Zhang, Hong Kong University of Science &amp; Technology,
+Kowloon, Hong Kong
+Aims and Scope
+Information Sciences will publish original, innovative and creative research results. A smaller number of timely tutorial and surveying contributions will be
+published from time to time.
+The journal is designed to serve researchers, developers, managers, strategic planners, and others interested in state-of-the-art research activities in
+information, knowledge engineering and intelligent systems. Readers are assumed to have a common interest in information science, but with diverse
+backgrounds in fields such as engineering, mathematics, statistics, physics, computer science, cell biology, molecular biology, management science, cognitive
+science, neurobiology, behavioural sciences and biochemistry.
+The journal publishes high-quality, refereed articles. It emphasizes a balanced coverage of both theory and practice.
+Topics include:
+â¢ Foundations of Information Science: Information Theory, Mathematical Linguistics, Automata Theory, Cognitive Science, Theories of Qualitative
+Behaviour, Artificial Intelligence, Computational Intelligence, Soft Computing, Semiotics, Computational Biology and Bio-informatics.
+â¢ Implementations and Information Technology: Intelligent Systems, Genetic Algorithms and Modelling, Fuzzy Logic and Approximate Reasoning,
+Artificial Neural Networks, Expert and Decision Support Systems, Learning and Evolutionary Computing, Self-adaptation and Self-organisational Systems,
+Data Engineering, Fusion of Data, Information and Knowledge, Adaptive and Supervisory Control, Discrete Event Systems, Symbolic/Numeric and
+Statistical Techniques, Perceptions and Pattern Recognition, Design of Algorithms, Software Design, Computer Systems and Architecture Evaluations and
+Tools, HumanâComputer Interface, Computer Communication Networks and Modelling and Computing with Words.
+â¢ Applications: Manufacturing Automation and Mobile Robots, Virtual Reality, Image Processing and Computer Vision Systems, Photonics
+Networks, Genomics and Bioinformatics, Brain Mapping, Language and Search Engine Design, User-friendly ManâMachine Interface, Data
+Compression and Text Abstraction, Virtual Reality, Finance and Economics Modelling and Optimisation.
+</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S300.1</dp:version-number></dp:document-properties><ja:simple-article docsubtype="edb" xml:lang="en" version="5.1" xmlns:ja="http://www.elsevier.com/xml/ja/schema">
+		<ja:item-info>
+			<ja:jid>INS</ja:jid>
+			<ja:aid>80003441</ja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">S0020-0255(11)00240-4</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/S0020-0255(11)00240-4</ce:doi>
+			<ce:copyright type="other" year="2011" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</ja:item-info>
+		<ja:simple-head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Inside Front Cover - Editorial Board</ce:title>
+		</ja:simple-head>
+	</ja:simple-article></doc:document>

@@ -1,0 +1,1218 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90003-6"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Checking experiments for sequential machines</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Z. Kohavi</rdf:li><rdf:li>J.A. Rivierre</rdf:li><rdf:li>I. Kohavi</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 11-28. doi:10.1016/0020-0255(74)90003-6</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">11-28</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">11</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">28</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90003-6</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90003-6</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90003-6</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMATION SCIENCES 7, 11-28 (1974) 11
+
+Checking Experiments for Sequential Machines
+
+Z. KOHAVI
+
+Departments of Electrical Engineering and Computer Science, Technion, Israel Inst. of'
+Technology, Haifa, Israel
+
+J. A. RIVIERRE
+
+University of Paris, France
+and
+
+I. K.OHAVI
+
+Tetrad-Telecommunication and Electronic Industries, Lod, Israel; and Department of
+
+Electrical Engineering, Technion, Haifa, Israel
+
+Communicated by A. Grasseli
+
+ABSTRACT
+
+This paper describes procedures for the design of experiments to determine whether or
+not a given finite-state machine is operating correctly. The machines in question are
+assumed to be strongly connected and in a reduced form. The procedures presented are
+valid for any type of faults that do not increase the number of states of the original ma-
+chine. More efficient procedures are presented in the last section, when certain restrictions
+arc imposed on the class of possible faults.
+
+INTRODUCTION
+
+This paper is concerned with the problem of designing terminal experiments
+that can be used for the purpose of detecting faults in digital sequential
+machines.
+
+A machine checking experiment is an input sequence whose application to a
+given «-state machine results in an output sequence which distinguishes the given
+machine from all other machines with n-states or less. Checking experiments and
+their application to fault detection in sequential machines were investigated in
+several publications [1-7].
+
+The general philosophy [2-4] of designing checking experiments can be sum-
+marized as follows: The machine is supplied with an input sequence, which takes
+it through all its states in such a way that the machine's response makes it pos-
+sible to uniquely identify each of its n states. The machine is then made to go
+through all its state transitions and each transition is identified by means of the
+response displayed in the previous part of the experiment. Such design tech-
+
+© American Eisevier Publishing Company, Inc., 1974
+
+12                                 Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+niques have been shown to be particularly suitable for machines having preset'
+distinguishing sequences. (Recall that an input sequence XQ is called a distin-
+guishing sequence [4,8] if the output sequence produced by the machine in re-
+sponse to Xo is different for each initial state). In this case, the machine is first
+supplied with an input sequence which causes it to visit each state and to display
+its response to the distinguishing sequence. The machine is next made to go
+through every state transition, and in each case the transition is verified by dis-
+playing its response to the distinguishing sequence.
+
+Suppose that iS'i, S^, 5 3,    5 are the states of a sequential machine M, and
+suppose that Xy is a distinguishing sequence for this machine. Let Q, be the
+state to which M goes when initially in S, as a result of the input sequence Xy 
+Also let T(S Sj) denote an input sequence (not necessarily unique) that trans-
+fers the machine from state S, to state iS,. Now suppose that machine M is ini-
+tially in its starting state, Si. Then, the sequence
+
+XoT(Q,,S,)XoT(QS,)XoT(QS,)---XoT(Q,S^Xo
+
+will serve to take the machine through each of its states and to display all the
+different responses to the distinguishing sequence. For example, starting in 5'i,
+Xo leaves the machine in Qi. Then T(Qi, Si) transfers the machine to S-^,
+where Xy is applied again, leaving the machine in Q^. The corresponding output
+sequence clearly displays the response of M to Xo, when initially in either state
+Si, or state S^. The machine is similarly led through all its n states and at each
+point the sequence Xo is applied followed by the transfer sequence T(Q S,+i).
+
+At the end of this part of the experiment, the machine receives the sequence
+Xo T(Q^, Si ). If it operates correctly, it will be in state Si. This is verified by
+applying to it again the distinguishing sequence Xo. Clearly, if its response to
+the last XQ is identical with its response to the first Xo, the machine will indeed
+be at the end of this part in state Qi. Thus, the second part of the experiment
+can start at this point by identifying the transitions out of state Qi.
+
+In the second part of the experiment we establish the various state transitions.
+To check, for example, the 0-transition out of state 5',, when the machine is in
+some state Q,, the appropriate sequence is
+
+T(QS,^)XoT(Q,.,,S,)OXo.
+
+The sequence T(Q/, S,-i)^o guarantees that the machine indeed went to
+state ß;_ i, as it has done in the previous part of the experiment. T(Q,_ i, 5,)
+transfers M to state 5',, and then OXo is applied to cause and identify the 0
+transition out of S,. In a similar manner the machine can be taken through
+every transition, in each case identifying the transition by means of the response
+
+ An experiment is said to be preset if the entire input sequence is predetermined, inde-
+pendently of the output. An experiment is called adaptive if the input at any instant of
+time depends on the previous outputs.
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES                   13
+
+already established in the first part of the experiment. In general, however, in
+order to reduce the length of the experiment, it is possible to apply the two parts
+of the experiment simultaneously, instead of sequentially.
+
+In [7] it was shown that the foregoing procedures can be applied also to ma-
+chines having only adaptive distinguishing sequences. That is, preset checking
+experiments can be constructed for machines which have only adaptive distin-
+guishing sequences. The adaptive distinguishing sequences are determined by
+means of the adaptive distinguishing tree [4, 8], and the design of the checking
+experiment is done in a manner similar to that used in designing experiments for
+machines having preset distinguishing sequences, the difference being that now
+different sequences may be used to identify the various states, while in the
+former case the same sequence Xy was used for state identifications. For ma-
+chines that have both preset and adaptive distinguishing sequences, the use of
+the latter ones will in most cases yield shorter experiments, since the minimal
+adaptive distinguishing sequences are at most as long as the minimal preset dis-
+tinguishing sequences, and are usually shorter.
+
+We shall now show that the adaptive distinguishing tree is an important tool
+in the design of checking experiments for machines which have no distinguish-
+ing sequences. By means of the adaptive tree we derive a set of partitions on the
+states of the machine. These partitions are instrumental in the selection of ap-
+propriate sequences which are necessary for state identifications. The last sec-
+tion of the paper is concerned with the design of checking experiments for se-
+quential machines, when certain restrictions are imposed on the class of possible
+faults.
+
+MACHINES HA VING NO DISTINGUISHING SEQUENCES
+
+The problem of constructing checking experiments for machines that have no
+distinguishing sequences is more complex. The state of the machine at each
+point during the experiment cannot be determined merely by observing the ma-
+chine's response at that point. Instead, it may be necessary to gather informa-
+tion from several points simultaneously, and to observe the response of the state
+in question to different input sequences. Only then will the state identification
+be possible. Our general approach in this case is to partition the states of the
+given machine in such a way that a simple (preset or adaptive) sequence exists
+which distinguishes the blocks of the partition. A different sequence (or se-
+quences) is next found which distinguishes the states in each block. These se-
+quences, which are referred to as characterizing sequences, serve to identify
+uniquely the states of the machine. We shall consider first the case of machines
+whose states are distinguishable by at most two characterizing sequences.
+
+As an example, let us design a checking experiment for machine Mi, whose
+state table is shown in Table 1. Evidently, this machine does not have any preset
+or adaptive distinguishing sequence. However, the input sequence OIO distin-
+
+14
+
+Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+
+
+TABLE 1 Machine MI
+NS,z PS x=0 x=\
+A B, 0 fl, 0 B A,0 B,0 C D, l A,0 D D,l C,0
+
+TABLE 2
+
+Response of Mi to Characterizing
+Sequences
+
+
+
+	Response to	Response to
+State	010	10
+A	000	01
+B	OOI	00
+C	101	00
+D	101	01
+
+guishes the blocks of the partition lïi = [A, B, CD}, while the sequence 10 dis-
+tinguishes state Cfromü. Thus, the sequences 010 and 10 constitute a set of
+characterizing sequences for machine Mi. (Note that this set is not unique,
+since 0 and 10 also constitute a set of characterizing sequences.)
+
+Clearly, the characterizing sequence 010, together with the corresponding re-
+sponse, is sufficient to distinguish each of the states A and B from the remaining
+states. Specifically, the input sequences and their associated output sequences
+are:
+
+O l O
+
+O l O
+
+A
+
+B
+
+000
+
+O O l
+
+To determine the sequence that identifies state C, a different technique must
+be employed. First, we observe that, having identified uniquely states A and B,
+there may be at most two states that respond to a 0 input by producing a 1 out-
+put. (Note that both A and B respond to a 0 input by producing a 0 output.)
+Suppose now that the machine is supplied with the input sequence below and in
+turn produces the associated output sequence.
+
+Input:
+
+01 01
+
+01
+
+State: S, S,
+
+Sn
+
+Output:
+
+10 10
+
+10
+
+10
+
+00
+
+Because the machine can have at most two states that respond to a 0 by pro-
+ducing a 1, state S^ must be identical to either S, or to Sj (or to both). Conse-
+quently, Sp is identical to at least one of the states S,, Sj, and Sic- Therefore, Sp
+is a state that responds to a 0 input by producing a 1 output, and to a 10 input
+by producing a 00 output. From Table 2 it is evident that these sequences iden-
+tify uniquely state C. Similar reasoning shows that the sequences below identify
+state D, since they identify a state that responds to a 0 input by producing a 1
+output and to a 10 input by producing a 01 output.
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES                  15
+
+Input:      00    0     10
+State:   S'i   S',   S'k   S'p
+Output:      1    1     1     01
+
+The above sequences, which identify states C and D, may be written com-
+pactly as
+
+/0 1\3 10         /0\3 10
+
+c                D[]
+\1 0/ 00        \1/ 01
+
+where the exponent indicates that the sequences within the parentheses are to be
+repeated three times. The set of input sequences used to identify the states of
+the machine are referred to as identifying sequences.
+
+As we have seen in this example, the identifying sequences of some states may
+consist each of just a single characterizing sequence, e.g., states A and B, while
+those of other states e.g., C and D, are more complex and contain two character-
+izing sequences. Before describing the procedure for designing these latter iden-
+tifying sequences, we introduce some notation. Let Si, Si    , 5' be the states
+of a machine for which Xi and X^ are characterizing sequences. Suppose the
+machine is in state S,, and input Xi is applied, then let Q, denote the state of
+the machine at the end of this sequence. Again let T(S S,) denote a transfer se-
+quence which takes the machine from 5'; to Sj.
+
+Now suppose that we wish to find an identifying sequence for S, by demon-
+strating its response to the two characterizing sequences Xi and X-i. Suppose
+also that at most m states can respond in a given way to Xi. To ensure that the
+machine will definitely be in the same state (i.e., iS',) before the application of
+both Xi and X^, it is necessary to apply m + 1 times the sequence X^ T(Q,, 5',).
+Therefore, during the sequence
+
+[^nß,,^)]""1^
+
+the state of the machine prior to the application of Xi must be the same as the
+state prior to the application of some Xi. Thus, such a sequence exhibits the re-
+sponse of that state to both Xi and Xi. This sequence therefore is an identi-
+fying sequence for that state. It is important to observe at this point that Xi
+in the above sequence need not always be the complete characterizing sequence.
+Very often a prefix of the complete sequence is sufficient, as illustrated in the
+case of states C and D above, where the prefix 0 has been used instead of the
+complete sequence 010. Subsequently, we refer to identifying sequences
+consisting of just a single characterizing sequence as identifying sequences of the
+first order, and to sequences of the type [Xi T(Q 5,)]m +1 Xz as identifying se-
+quences of second order.
+
+16                                  2. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+Once the identifying sequences for all of the states of the machine have been
+determined, the checking experiment can be constructed. For the experiment to
+be a checking experiment, it must contain at least one identifying sequence for
+each state. By means of these sequences, we identify uniquely the n states of
+the machine in question. In addition, from the responses of the machine to the
+various identifying sequences, we can determine the responses of each of the
+machines' states to the characterizing sequences Xi and X^. The design of a
+checking experiment can now be described.
+
+Let /, be the identifying sequence for state S and let P, be the state which
+the machine enters at the end of /,. One possible way of designing a checking
+experiment is to start with a sequence consisting of alternating identifying se-
+quences and transfer sequences, i.e.,
+
+A T(P,, S,)I, T(P,, S,)l3, , n^-i, 5)/.
+
+This sequence takes the machine through all its n states and displays the re-
+sponse of each of the states to its identifying sequence.
+
+The next problem is to determine the state of the machine at the end of/.
+In general, the determination of the state, S,, of the machine at the end of some
+identifying sequence, say I/c, depends on the order of/,. If it is of first order,
+then /( is simply applied following /^ to identify 5';. If, however, /, is of second
+order, it is necessary to display the response of5', to both Xi and X-i. This can
+be achieved by means of the sequence
+
+IkX,T(QSk)IkX^.
+
+If the circuit produces the same response in the two applications of I^, then it
+must be in the same state, i.e., 5' at the end of the two applications of 1^. Thus
+the foregoing sequence identifies uniquely S, by displaying its response to Xi
+and then to X-i.
+
+Once the state of the machine can be established at a certain point during the
+experiment, the transitions leading out of the state can be determined. Suppose
+for example, that we wish to examine the transition from S, to S/ under an input
+of 0. If Ij is of first order, then the input sequence 01 j checks this transition. If,
+however, /y is of second order, the 0-successor, S,, must be checked twice, once
+for each of the characterizing sequences. This check can be accomplished by
+applying the following sequence :
+
+4 m, S,)OXt T(Q,, ^)4 T(Pk, S,)OX^.
+
+The subsequence /^ T(P^, S,) takes the machine to state S while the subse-
+quence T(Q,, Sk)Ik T(Pk, Si) returns the machine to S, for the second check.
+The transition under 1 input can be checked in the same way, and similarly for
+transitions from other states. The checking experiment can now be designed in a
+straightforward manner. An experiment for machine My is given m Appendix 1.
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES                    17
+
+Following this procedure it is evident that each transition to a state for which
+the identifying sequence is of second order must be checked twice, while every
+transition to a state for which the identifying sequence is of first order need only
+be checked once. Consequently, in order to obtain minimal experiments, it is in
+most cases advantageous to select a set of identifying sequences in which a maxi-
+mal number of states are distinguishable by identifying sequences of first order.
+
+PARTITIONS ASSOCIATED WITH INPUT SEQUENCES
+
+A partition, n, on the set of states of a machine, M, is said to be associated
+with an input sequence, X, if it is the smallest partition whose blocks can be dis-
+tinguished by their responses to X; that is, two states belong to the same block in
+n if an only if their responses to X are identical. For example, in the case of .Mi,
+IIi = [A,B, CD} is associated with the input sequence 010, and ïl^ = {AD, BC}
+is associated with 10.
+
+Following the discussion in the foregoing section, it is evident that a necessary
+and sufficient condition for a set of sequences to be characterizing sequences is
+that the product of the partitions associated with these sequences will be zero.
+Indeed, in the case of machine Mi, Hi  n^ = 0. Whenever a partition associated
+with an input sequence is the zero partition, that sequence is known as a preset
+distinguishing sequence. Generalizing the definition of an "input sequence" to
+cover the case of an adaptive sequence (which actually consists of a set of se-
+quences), we conclude that the existence of a zero partition associated with
+some (preset or adaptive) input sequence X is a necessary and sufficient condi-
+tion for X to be a distinguishing sequence.
+
+Although the length of the checking experiment is not necessarily directly
+proportional to the length of the characterizing sequences or the order of the
+identifying sequences, the use of longer and higher-order sequences does tend to
+substantially increase the length of the experiment. In particular, since we must
+check twice each transition leading to a state whose identifying sequence is of
+second order, it is desirable to find sets of identifying sequences containing as
+many sequences of first order as possible. To simplify the identifying sequences
+of second order, it is necessary to reduce the number of repetitions of sequences
+of the type XT(Q. 5;). In terms of partitions, the number of states distinguish-
+able by a first-order identifying sequence is equal to the number of single-state
+blocks in the partition associated with the sequence in question. For each block
+containing m states, at least two characterizing sequences must be used in form-
+ing an identifying sequence, and the number of repetitions of the sequence
+XT(Q S,) is at least m + 1.
+
+The problem of determining an appropriate set of characterizing sequences is
+thus transformed to the equivalent problem of selecting a set of partitions
+whose product is zero and which correspond to simple and low-order identifying
+sequences. As the first step in the selection of this set of partitions we generate,
+
+18
+
+Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+TABLE 3
+Machine M^
+
+Ns, z
+PS x=0   x=l
+
+A B,\   C, O
+B D,0   B,0
+C A,0   0,1
+D E, l   D,l
+E A,0   B,0
+
+by means of the adaptive distinguishing tree, the entire set of partitions asso-
+ciated with possible characterizing sequences. From this set we next select a sub-
+set which yields the necessary characterizing sequences.
+
+As an example, consider machine, Mi, whose state table is shown in Table 3.
+The partitions2 below are derived in a straightforward manner from the adaptive
+tree of Fig. 1.
+
+ITi = [AD, BCE}   associated with the input symbol 0.
+
+n; = {A, D, BCE}  associated with the (adaptive) set of input sequences {0,001}.
+
+na = [AD, B, CE} associated with the input sequence 01.
+
+IÏ4 = {A,B, CE, D} associated with the (adaptive) set of input sequences {01,00l}.
+
+115 = [ABE, CD}   associated with the input symbol 1.
+
+FIfi = [A, BE, CD}  associated with the input sequence 11.
+
+From this set of partitions we must now choose a subset whose product is
+zero. The selection of such a subset, however, is not necessarily unique and
+there is no way of determining (except by actual construction) which subset
+yields a minimal experiment. In general, a "good" selection of partitions is
+based on the following two criteria. First, select a partition IÏ that contains the
+largest number of single-state blocks and thus yields the largest number of states
+whose identifying sequences are of first order. Second, among the partitions
+satisfying the foregoing criterion, select one in which the number of repetitions
+of sequences of the type XT(Q{, S,) is minimal. Finally, select one or more par-
+titions whose product with n is zero. If more than one selection of partitions
+that meet these criteria exists, select those partitions that are associated with
+shorter characterizing sequences. In most cases, such a selection will indeed re-
+sult in nearly minimal checking experiments.
+
+In our example, IÏ4 is clearly the only partition that leads to a set of identi-
+fying sequences such that three states, A, B, and D, are distinguishable by a first-
+order identifying sequence. Moreover, since the largest block in IÏ4 consists of
+just two states, C and E, the number or repetitions of the sequence XT(Q,, 5,) is
+minimal, i.e., 3. Of the two partitions. Ils and ilg, whose product with ïï^ is
+
+^ote that many of these partitions (including 114) cannot be generated by means of a
+preset distinguishing tree.
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES
+
+
+
+
+Fig. 1. Adaptive tree for machine Af;.
+
+zero, ris is selected because it is associated with a shorter characterizing
+sequence, that is, 1. The selection of 114 and Us, where 114  Hs = 0, in effect
+determines the characterizing sequences for the states ofAf^. This in turn deter-
+mines the set of identifying sequences for M^.
+
+The response of machine M^ to the (adaptive) input sequences associated
+with ri4 is summarized in Table 4. The identifying sequences for statest, B,
+and D are thus given by:
+
+O O l
+
+O l
+
+O O l
+
+A
+
+B
+
+D
+
+l O l
+
+O l
+
+l O O
+
+It is now evident that at most two states can respond to an input 01 by pro-
+ducing an output 00. These states, C and E, are distinguishable by the second
+characterizing sequence X^ = 1 associated with n;. We thus obtain the identify-
+
+TABLE 4
+Response ofM;
+
+
+
+State	Input Sequence	Output Sequence
+A	OOI	101
+B	01	01
+C	01	00
+D	OOI	100
+E	01	00
+
+20                                 Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+ing sequences for states C and E as follows
+
+Xi    XT.          Xi T(C,E)   Xî
+
+/0 1\3  1          /0 1   1 0\ 3  1
+
+c'                    £'
+\0 0/    1           \0 0   1 1/     0
+
+Having constructed the identifying sequences, the design of a checking experi-
+ment for machine M^ is now straightforward. One such experiment is shown in
+Appendix 2.
+
+MACHINES CHARACTERIZED BY THREE OR MORE SEQUENCES
+
+In the preceding example, the characterizing sequence Xi was used to distin-
+guish between the blocks of 114, while X^ was used to distinguish the states
+within the blocks. It may often occur that, while X^ distinguishes the blocks of
+the partition, different sequences will be needed to distinguish the states in
+different blocks. For example, consider machine My (Table 5) and the set of
+partitions below generated from its adaptive distinguishing tree. Clearly, there
+are no two partitions in this set whose product is zero. We must therefore search
+for a set of three or more partitions associated with an appropriate set of charac-
+terizing sequences.
+
+[Is is chosen as the first partition because it contains two single-state blocks,
+and none of its blocks contains more than two states. States B and E can now
+be distinguished by the sequence associated with 113, while states C and F aïe
+distinguishable by the sequence associated with IIi. Obviously, Hi  113  IT; =
+0. It is easy to verify from the distinguishing tree that Us is associated with the
+set of (adaptive) input sequences 1, 11, 110,113 is associated with the sequence
+10, and rii is associated with the sequence 0. The identifying sequences derived
+from these characterizing sequences are summarized as follows:
+
+110              110
+A                    D
+
+000          OOI
+/1 l O 1\3 10          /1 l 1\3 10
+
+5                        ^
+\0 l O 0/   00          \0 l 0/   01
+
+/i o i i\3 o         /i i A3 o
+
+c                                /?
+
+U O O 0/   O             \1 O 0/   l
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES
+
+TABLE 5
+Machine My
+
+21
+
+ NS, z
+PS x = 0 x = l
+
+A A,0 B,Q n^={ABCDE,F}
+
+B A,0 C,0 n; = [4BDE,CF}
+
+C /4,0 D,\ 113 = [ABD, CF,E}
+
+0 A,0 E,0 [[4= {AD,BE,CF}
+
+E A,0 F,0 115 = [A,BE, CF,D}
+
+F A, l D,l
+
+HIGHER-ORDER IDENTIFYING SEQUENCES
+
+It is not always possible to distinguish all the states of an arbitrary machine
+by just two characterizing sequences. In such cases, higher-order identifying se-
+quences are needed in order to distinguish some of the states of the machine. In
+general, the states of every reduced n-state machine can always be distinguished
+by at most n - 1 characterizing sequences, where the length of each such se-
+quence need never exceed n - \. This follows immediately from the fact that
+any two given states m the reduced machine are distinguishable by an input se-
+quence of length at most n - 1.
+
+The design of experiments for machines whose states have identifying se-
+quences of order k, where k &gt; 2, is generally more complicated. First, the design
+of the fc-th order identifying sequences is more involved. Second, each transition
+to such a state must be checked k times to determine its response to each of the
+characterizing sequences. The order of identifying sequences is clearly depen-
+dent on the choice of partitions. Because at most k - 1 characterizing sequences
+are needed to distinguish k states, each of the states in a block containing k
+states can be distinguished by an identifying sequence whose order is at most k.
+Consequently, in order to reduce the order of identifying sequences, the selec-
+tion of the first partition n must be such that it will contain as many single-state
+blocks as possible, and in addition each of its remaining blocks will contain as
+few states as possible.
+
+Whenever a block in the partition II contains more than two states, higher-
+order identifying sequences may be needed to distinguish the states in such a
+block. Suppose we wish to design an identifying sequence for a state 5, con-
+tained in a fc-state block. Let -Y] X^,   , X^ be the characterizing sequences
+for the states in this block. Let Y, designate the sequence XjT(R,, Sj), which
+takes the machine from S, to R^ and back to 5y. Then, for the reasons outlined
+in the preceding sections, the sequence Y^'1'1 Y^ can be used to display the re-
+sponse of S, to Xi and X-t and finally to return the machine to state Sj. Ex-
+tending the techniques used in constructing second-order identifying sequences
+
+22                                 Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+to third-order sequences, it can be shown [2] that the sequence
+[^(Yf^Y^^Y^Y^
+
+is an identifying sequence of third order. In this case, the state of the machine
+prior to the last application of Y^ must be identical to its state prior to one of
+the other applications of Y^. But since this is the same state as the state prior to
+the application of Y y, the above sequence displays the response of .S'y to Xi, X^,
+and X^, and thus it is an identifying sequence of third order. Substituting the
+sequences represented by the Vs, we obtain
+
+/,= {[X^R^S^X.TCR^S,)}^1 [X^R^S^^X^R^S,).
+
+The third-order identifying sequence (Y^1 Y^^ Y^*1 Yy can be obtained
+from the second-order sequence ^fc+' Y^ by repeating the latter sequence n + 2
+times and substituting Y^ for Yy m the last repetition. This same procedure can
+be followed again to obtain the fourth-order identifying sequence, namely
+
+ _ IYV^+I v '^'i yk+i v i^+i/vk+i v \k1'l yfc+i v
+'f ~ [(ï i ï^)   'i  Ï3\   \' i  "'i)   'i  '4-
+
+In a similar manner we can obtain higher-order identifying sequences.
+
+CHECKING EXPERIMENTS FOR A RESTRICTED CLASS OF FAULTS
+
+The checking experiments described in the preceding sections and in the lit-
+erature [2, 3, 5, 6, 7] are designed in such a way that each experiment actually
+contains two (not necessarily disjoint) parts. The first part identifies each of the
+states of the machine, while the second part verifies all state transitions and their
+corresponding outputs. The resulting experiment distinguishes the given «-state
+machine from all other machines which have n states or less.
+
+A more efficient approach is to construct an experiment which distinguishes
+the machine in question from those machines into which it can be transformed
+as a result of some actual physical fault. However, in order to design such exper-
+iments, we must know the actual realization of the machine, in addition to the
+knowledge of its state table.
+
+We shall consider sequential machines realized in the general form of Fig. 2.
+Each machine has a finite number of input and output terminals and a finite
+number of unit delays. We assume that the faults are single and of the stuck-at
+type and, as in the previous sections, they do not increase the number of states
+of the original machine.
+
+Again, each experiment will contain two parts. The first part identifies the
+response of each of the states and verifies that the machine indeed contains at
+least n states. The second part identifies a subset of the state transitions which is
+sufficient to distinguish the given machine from those »-state machines to which
+it can be transformed as a result of some fault.
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES
+
+23
+
+
+
+		YJ	i11!
+			DELAY l-l
+		Y2	DELAY \ 2 -
+	COMBINATIONAL LOGIC		i
+	NETWORK	Yk	
+.		-1	
+^ î		n'	
+
+
+Fig. 2. Block diagram of a sequential machine.
+
+Any s-a-0 or s-a-Ï fault in the terminals of the delay elements will cause a de-
+crease in the number of states of the machine. Such faults will thus be detected
+in the first part of the experiment. Consequently, we can restrict our attention
+to just the faults in the combinational network. To detect these faults, we may
+use as a basis any method that generates a set of tests which detect faults in com-
+binational networks. The method used in this section is taken from [9].
+Clearly, the tricky step in checking the combinational network is not in generat-
+ing the tests, but rather in the application of these tests to the network since part
+of the input terminals (yi,yi,~   ,Yk) and part of the output terminals
+(y!, y!, " ' &gt; Vfe) are îïot accessible. In addition, the inputs y i ,y^ ,,Yk
+are functions of previous inputs. To overcome these difficulties we must design
+the X inputs in such a way that they will yield the required y's and so that, from
+the output vector Z, we shall be able to determine the necessary Y's as well.
+
+The initial step is to bring the machine into a predetermined starting state
+(?, YÏ, ' ' ' &gt; yî) ^dtnen apply tne ^P^ vector X. This combination of inputs
+and starting state results in an output vector Z which is observable and a next-
+state vector (TI , Y 2,   , Yfe) which must be identified by additional inputs.
+The next state vector can be identified by means of an identifying sequence.
+To illustrate the procedure, we shall design a checking experiment for machine
+Ms, whose state table is given in Table 6, and which is realized, as shown in Fig.
+3. The maps for the next-state variables, Yi and YT. , and for the output z are
+shown in Fig. 4.
+
+Using the map method developed in [9], or any other method, we can show
+that the minimal set of tests which detects simultaneously all single stuck-at
+faults in Vi, ^2, and 2 is given by
+
+T= {2,4,8,11,12, 14},
+
+24
+
+Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+'» "2 n ^2
+
+
+
+
+Fig. 4. Maps for output and next-state variables.
+
+where the numbers within the parentheses represent the binary combinations of
+XiX-2. These six tests are marked by an asterisk m the corresponding cells of
+Table 6. Clearly, these tests yield the lower bound on the number of transitions
+which must be checked in order to test the network. This number is consider-
+ably lower than the total number of transitions, which is 16.
+
+TABLE 6
+
+Machine M^
+
+NS.z
+
+PS
+
+
+
+0 0	A	5,0	A*,0	C*, l	B*,l
+0 l	B	C,0	D,0	C,l	C,l
+l l	C	C, l	D, l	D, l	D*,0
+l 0	D	C*,l	D, l	A*,l	A,0
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES                  25
+
+Machine Ms, has a synchronizing sequence 00 and a distinguishing sequence
+22. Thus, the first part of the experiment, identifying the machine's four states
+is as follows:
+
+Input^: 0022222
+State:    C D A B
+Output Z:      00110
+
+The complete experiment is given below. The (*) indicates where the neces-
+sary transitions are being checked.
+
+Input X: 00222222522Î2223222Ô22
+State S:    CDABCDACDAABCDABCDC
+Output Z:      00110010001101 110100
+
+The length of this experiment is 20, which is considerably shorter than any
+other known checking experiment for machine Mi\.
+
+In special situations when, for example, a single fault permutes one state into
+the other, care must be taken in designing the experiment and checking addi-
+tional transitions may become necessary.
+
+CONCLUSIONS
+
+In this paper, we described a systematic procedure for designing checking ex-
+periments for sequential machines. The procedure is based on a set of partitions
+derived from the adaptive distinguishing tree. From this set, we select a subset
+that forms the basis for a set of characterizing sequences, from which the identi-
+fying sequences are derived. Experiments designed by means of this procedure
+are generally more compact than those designed by other known techniques,
+although they are by no means the shortest possible. The major disadvantage of
+the procedure described in this paper is the lack of a precise algorithm for the
+selection of the set of partitions leading to the shortest and lowest-order identi-
+fying sequences, and consequently, some trial and error cannot yet be avoided.
+Another disadvantage is the need to resort in complicated cases to high-order
+identifying sequences, which in turn increase the length of the experiment.
+Further work is needed in order to overcome these disadvantages.
+
+When the actual realization of the machine is given and we restrict the class of
+faults to single stuck-at type faults, more efficient procedures can be employed.
+A lower bound on the number of transitions that must be checked was estab-
+lished and in most cases this bound is substantially lower than the total number
+of state transitions. However, it is not straight forward to determine when this
+bound can be met and when checking additional transitions becomes necessary.
+
+26                                 Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+APPENDIX l
+
+The checking experiment for machine Mi shown below is of length 35. This
+is considerably shorter than the experiment designed for this machine in [2]
+which required 152 symbols.
+
+Ic                   IB
+
+ID II I A
+
+t: l 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+X: 100010101  0  1   1  0  1  0  1  0
+Z: 011101010  1  0  0  0  0  0  0  1
+
+IA         IA           IB
+
+t: 18 19 '20 21 22' '23 24 25" 26 "27 28 29' 30 31 32 33 34 35
+X:   110100100010111100
+Z:   000000000001000011
+
+To prove that the experiment is indeed a checking experiment for Mi, it is suf-
+ficient to analyze the experiment and to show that it corresponds to a unique
+state table. By observing/^,/a,/c, and/o we identify four distinct states.
+Thus we have
+
+5(13) =5(20) =5(23) =.4
+5(15) =5(27) =B
+5(12)=^
+S(5) =D
+
+From the above we find:
+
+1. Since 5(12) = C and 5(13) =A,A is the 1-successor of C and the corre-
+sponding output is 0.
+
+2. Since 5(20) = 5(23) =A, A is the Old-successor of .4; consequently,
+5(16) = 5(26) = A. From this we find that A is the 0-successor of B with
+an output of 0 and B is the 0-successor of.4, also with an output of 0.
+
+3. Since 5(14) = B we conclude that B is the 1-successor of B.
+
+4. At t = 15 we see that .4 is the 01011 -successor of B and since 5(27) = B,
+we get 5(32) =A. Also, since 5(16) =5(32) =A, we conclude that
+5(17) = 5(33) is a state that responds to a 0 by producing a 1, and to a
+10 by producing 01. Consequently, 5(17) =5(33)= D which implies that
+D is the 1-successor of A.
+
+CHECKING EXPERIMENTS FOR SEQUENTIAL MACHINES                  27
+
+5. Now, since 5(12) = C, Cis the 1-successor of 5(11). But the 1-successors
+of states A, B, and Carefl,5, ana A, respectively. Thus, 5(11) must be
+D. Similarly, since A is the 1-successor of 5(19), we find that 5(19) = C
+and 5(18) = D, which in turn implies that D is the 0-successor OÎD.
+
+6. Finally, since 5(5) = 5(33) = D, then 5(6) = 5(34) = C and 5(7) = 5(35).
+But this last state responds to a 0 by producing a 1 and to 10 by produc-
+ing a 01. Consequently, it must be state Ü, and D is the 1-successor of C.
+We have thus shown that the above experiment is a checking experiment forAf,.
+
+APPENDIX 2
+
+The following experiment is a checking experiment for machine Mi. The
+proof follows the line of reasoning used in verifying the experiment in
+Appendix 1.
+
+I B ID lc ID
+
+X: 001001010  l   O  l   l  O  O  l
+Z. 101100000  O  O  O  l   l  O  O
+f: l 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+IE
+
+ID ID IB
+
+X:   1001100110101
+Z:   1100110011001
+t: 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+
+IA IB ID
+
+X: 0000101101010001
+Z: 10101  10001  100100
+t: 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
+
+REFERENCES
+
+1. E. F. Moore, Gedanken-experiments on sequential machines. Autowate Studies, Prince-
+ton University Press, Princeton, N.J. (1956).
+
+2. F. C. Hennie, Fault detecting experiments foi sequential circuits, in Proc. 5th Ann.
+Symp. Switching Theory and Logical Design (Nov. 1964).
+
+28                                 Z. KOHAVI, J. A. RIVIERRE AND I. KOHAVI
+
+3. Z. Kohavi and P. Lavallee, Design of sequential machines with fault-detection capabili-
+ties, I.E.E.E. Trans, on Computers EC-16, No. 4, 473-484 (August 1967).
+
+4. Z. Kohavi, Switching and Finite Automata Theory, McGraw-Hill Book Co., New York
+(1970).
+
+5. C. R. Kirne, An organization for checking experiments on sequential circuits, I.E.E.E.
+Trans. Electron. Comput. EC-15, 113-115 (February 1966).
+
+6. E. P. Hsieh, Optimal checking experiments for sequential machines, I.E.E.E. Trans, on
+Computers C-20, 1152-1166 (October 1971).
+
+7. I. Kohavi and Z. Kohavi, Variable-length distinguishing sequences, I.E.E.E. Trans, on
+Computers C-17, 792-795 (August 1968).
+
+8. A. Gill, Introduction to the Theory of Finite-State-Machines, McGraw-Hill Book Co.,
+New York (1962).
+
+9. I. Kohavi and Z. Kohavi, Detection of multiple faults in combinational logic networks,
+I.E.E.E. Trans, on Computers C-21, 556-568 (June 1972).
+
+Received A ugust 25, 1972</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900036</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90003-6</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90003-6</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Checking experiments for sequential machines</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Z.</ce:given-name>
+					<ce:surname>Kohavi</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Departments of Electrical Engineering and Computer Science, Technion, Israel Inst. of Technology, Haifa, Israel</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>J.A.</ce:given-name>
+					<ce:surname>Rivierre</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>University of Paris, France</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>I.</ce:given-name>
+					<ce:surname>Kohavi</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Telrad-Telecommunication and Electronic Industries, Lod, Israel; and Department of Electrical Engineering, Technion, Haifa, Israel</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:date-received day="25" month="8" year="1972" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:miscellaneous xmlns:ce="http://www.elsevier.com/xml/common/schema">Communicated by A. Grasseli</ce:miscellaneous>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">This paper describes procedures for the design of experiments to determine whether or not a given finite-state machine is operating correctly. The machines in question are assumed to be strongly connected and in a reduced form. The procedures presented are valid for any type of faults that do not increase the number of states of the original machine. More efficient procedures are presented in the last section, when certain restrictions are imposed on the class of possible faults.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.F.</ce:given-name>
+										<ce:surname>Moore</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Gedanken-experiments on sequential machines</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Automata Studies</sb:maintitle>
+									</sb:title>
+									<sb:date>1956</sb:date>
+									<sb:publisher>
+										<sb:name>Princeton University Press</sb:name>
+										<sb:location>Princeton, N.J</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>F.C.</ce:given-name>
+										<ce:surname>Hennie</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Fault detecting experiments for sequential circuits</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 5th Ann. Symp. Switching Theory and Logical Design</sb:maintitle>
+									</sb:title>
+									<sb:date>1956</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Z.</ce:given-name>
+										<ce:surname>Kohavi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Lavallee</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Design of sequential machines with fault-detection capabilities</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>I.E.E.E. Trans. on Computers</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>EC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>No. 4</sb:issue-nr>
+									<sb:date>August 1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>473</sb:first-page>
+									<sb:last-page>484</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Z.</ce:given-name>
+										<ce:surname>Kohavi</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Switching and Finite Automata Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>McGraw-Hill Book Co</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.R.</ce:given-name>
+										<ce:surname>Kime</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An organization for checking experiments on sequential circuits</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>I.E.E.E. Trans. Electron. Comput.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>EC-15</sb:volume-nr>
+									</sb:series>
+									<sb:date>February 1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>113</sb:first-page>
+									<sb:last-page>115</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.P.</ce:given-name>
+										<ce:surname>Hsieh</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal checking experiments for sequential machines</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>I.E.E.E. Trans. on Computers</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>C-20</sb:volume-nr>
+									</sb:series>
+									<sb:date>October 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1152</sb:first-page>
+									<sb:last-page>1166</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB7">
+						<ce:label>7.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>I.</ce:given-name>
+										<ce:surname>Kohavi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Z.</ce:given-name>
+										<ce:surname>Kohavi</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Variable-length distinguishing sequences</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>I.E.E.E. Trans. on Computers</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>C-17</sb:volume-nr>
+									</sb:series>
+									<sb:date>August 1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>792</sb:first-page>
+									<sb:last-page>795</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB8">
+						<ce:label>8.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Gill</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Introduction to the Theory of Finite-State-Machines</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1962</sb:date>
+									<sb:publisher>
+										<sb:name>McGraw-Hill Book Co</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB9">
+						<ce:label>9.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>I.</ce:given-name>
+										<ce:surname>Kohavi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Z.</ce:given-name>
+										<ce:surname>Kohavi</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Detection of multiple faults in combinational logic networks</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>I.E.E.E. Trans. on Computers</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>C-21</sb:volume-nr>
+									</sb:series>
+									<sb:date>June 1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>556</sb:first-page>
+									<sb:last-page>568</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

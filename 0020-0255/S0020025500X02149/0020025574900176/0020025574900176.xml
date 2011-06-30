@@ -1,0 +1,2425 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90017-6"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">On the development of practical nonlinear filters</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>H.W. Sorenson</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 253-270. doi:10.1016/0020-0255(74)90017-6</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">253-270</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">253</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">270</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90017-6</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90017-6</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90017-6</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMA TION SCIENCES 7, 253-270 (1974) 253
+
+On the Development of Practical Nonlinear Filters
+
+H. W. SORENSON
+
+Department of Applied Mechanics and Engineering Sciences, University of California,
+
+San Diego, La Jolla, California 92037
+
+ABSTRACT
+
+The general problem of estimating the state of a nonlinear, time-discrete system from
+noisy measurement data is considered from the point of view of developing feasible compu-
+tational algorithms for evaluating the Bayesian recursion relations. Algorithms which have
+been proposed are reviewed; the computational implementation of these algorithms is dis-
+cussed; general conclusions coming from numerical studies are noted; and areas requiring
+additional research are defined.
+
+1. THE RECURSIVE NONLINEAR FILTERING PROBLEM
+
+Our attention is directed exclusively to systems in which a finite number of
+measurements z* = {zi, z.;,. .., z^} are made at discrete times ti, t^,..., t^.
+This focus is made because our intention is to discuss algorithms which are
+suitable for digital computation. Although more general models can be formu-
+lated, it is convenient for the following discussion to consider systems with plant
+and measurements described by
+
+Xfe+i =ife(xfc)+Wfc; k=ï,î,...,              (1.1)
+Zfe=hfc(xfc)+üfc; k=\,l,....              (1.2)
+
+The structural relations f^, h^ are assumed to be known as are the stochastic de-
+scriptions of the initial state Xi and the noise sequences. The noise sequences
+are assumed to be white and Gaussian with zero mean and covariance matrices
+
+£'[Wfcwf]=o5,; E[V^VT} =^ofc/,
+
+E [w^] = 0 for / &lt; k, E [v,,\T] = 0 for all /, k,
+E[Wkvf} =0{oïaïlj,k.
+
+The initial state Xi is assumed to have the known a priori density p(\i ).
+
+©American Eisevier Publishing Company, Inc., 1974
+
+254                                               H. W. SORENSON
+
+In the absence of plant and measurement noise, the problem that is con-
+sidered below would have the following simple, deterministic statement. Deter-
+mine the state Xfe from the measurement data z*. When stochastic effects are
+included in the model as in (1.!)-(! .2), the statement of the filtering problem
+comes to include an element of arbitrariness. Certainly, the basic objective is to
+"estimate" the state from the data. However, the random effects in the system
+model implies that redundant data must be collected in order to minimize the
+noise influence on the estimate. Now, it becomes reasonable to define "best"
+estimates, thereby introducing the arbitrariness mentioned immediately above.
+
+A widely accepted defmition of the filtering problem states that the data are
+to be used to determine the a posteriori density function p(\ic \zk). This density
+function provides the most complete description of the system that is possible.
+All subsequent discussion will be addressed to the problem of determining or
+approximating p (x k | z*) for all k and will be referred to as the filtering problem.
+
+While the a posteriori density provides a complete solution of the filtering
+problem, it has the disadvantage that it is a function rather than a finite-
+dimensional estimate. If the problem were deterministic, the solution would be
+provided by the vector Xfeifc that satisfied the plant and measurement equations
+for all k. A similar "solution" is commonly sought for the stochastic problem.
+To obtain estimates x^n., criteria are defined which lead to "optimal" estimates.
+Two of the more important criteria are the following.
+
+MINIMUM MEAN-SQUARE ESTIMATES
+
+The estimate xj^ of the state x^ based on the measurement data z^ is
+chosen so that the mean-square error E [(x^ - x^)7^^ - x^)] is minimized.
+The estimate that accomplishes the minimization is provided by the conditional
+mean
+
+x^^x^].                          (1.3)
+
+MAXIMUM A Posteriori ESTIMATES
+
+The estimate x^^ of the state x^ based on the data zk is chosen so that the
+a posteriori density is maximized.
+
+p(x^plzfc)=maxp(X)Jzfc).                 (1.4)
+^k
+
+Note that both estimates can be determined if the a posteriori density is known.
+
+Much of the current research on nonlinear filtering is concerned with recur-
+sive formulations in which the solution for the (k - l)th stage is used to obtain
+the solution for the fern stage. Only the recursive formulation shall be con-
+sidered here. A general solution of the recursive filtering problem can be ob-
+tained through Bayes' rule. It is not difficult to show [1] that the a posteriori
+density evolves in the following manner.
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS             255
+
+BA YESIAN RECURSION RELA TIONS
+
+p(Xfel z*) = Cfcp(Xfcl z*'1 )p(Zfel Xfe),              (1.5)
+
+^(Xfelz^^JpCxk-Jz^Mxfclxfc-i^Xfc-i,        (1.6)
+where the normalizing constant c^ is
+
+l/Cfc=p(Zfclzk-l)=J p(Xfclz'c-l)p(Zfclxfc)dXfc,
+
+and the initial condition for (1.5) is
+
+p(Xllz'l)=p(Xl).
+
+The densities p (Zfc I x^) and p(x^l x^-i ) can be written more explicitly by
+introducing the a priori assumptions about the system. It is seen, assuming
+ßk1 and R^ exist, that
+
+p(Zfclxfc) = k, exp {- \ [Zfc - hfc(xfc)] TRï\ [z^ - hfc(xfc)] },      (1.7)
+P(xk+ilxfe)=^ exp {-^[Xfc+i - i^^VQ'k [Xfc+i - ffc(Xfc)]}.   (1.8)
+
+Utilization of (1.7) and (1.8) in conjunction with the prescribed initial condition
+p(xi ) provides the information required for the determination ofp(x^l z^) for
+any k. Thus, a general solution of the nonlinear filtering problem is available.
+Unfortunately, the actual evaluation of the Bayesian recursion relations for a
+specific nonlinear system is not accomplished in a trivial manner. It is to the
+problem of developing computational algorithms for evaluating (1.5)-(1.6) for
+specific systems that the remainder of this discussion is directed.
+
+2. APPROXIMATE SOLUTION OF THE BAYESIAN
+RECURSION RELATIONS
+
+The only general system for which closed-form solutions of(1.5)-(1.6) can
+be found is when the plant and measurement equations are linear. Then, the
+a posteriori density is Gaussian and the conditional mean and covariance are de-
+scribed by the Kalman filter equations [2, 3]. Consequently, it is necessary to
+seek their solution numerically for nonlinear systems.
+
+In essence, we are faced with the problem of evaluating multidimensional
+integrals. Certainly, the determination ofp(XjJ z*"' ) using (1.6) requires an
+integration. The calculation of the filtering density p(xJ z*^ using (1.5) is seen
+to require the multiplication of two density functions. This does not represent
+a difficult task other than in the storage requirements that are implied in such
+an operation. However, the normalization and the determination of moments
+requires integration of the product.
+
+256                                               H. W. SORENSON
+
+We shall first consider the solution of the problem from a very basic point of
+view. Clearly, the a posteriori density is a random function of the data. When a
+measurement realization is available, then we have the density as a function of
+the state x. To emphasize this and to reduce the notational complexity, let us
+make the following conventions. The prediction density shall be written as
+
+p(xfclzk-l)êîr(x)^ I p(ri)q(\lri) dv\.
+Using (1.8), this becomes
+
+ff(x)= fp(ri)q(x-f(rf))dr).                 (2.1)
+
+'-f
+
+We have renamed x^ as x and x^-i as T?. The subscripts denoting the sampling
+time have been suppressed since they play no active role in the discussion. That
+is, the Bayesian recursion relations have the same form at every sampling time.
+Next, the filtering density shall be rewritten in the following manner
+
+p(Xfcl z*) ê p(x) ^ c7r(x) w(z - h(x)),               (2.2)
+
+where c is the normalization constant, n is the prediction density as in (2.1), and
+m is the density of z given x. The measurement z can be regarded as being
+known.
+
+Consider the calculations required for one complete stage of the recursion.
+The filtering density p is computed as the product of TT and m. Note that the
+calculations are started at fi with v equal to the a priori density p(xi ). Thus,
+p(xfel I.k)|c|c is readily formed for all k. The normalization constant is formed
+as
+
+
+
+c = i 7r(x) m(z - h(x)) dx.
+
+The integration generally must be accomplished numerically. It is immediately
+apparent that a considerable computational burden can be avoided if c is not
+determined. If one is interested in obtaining only the MAP estimator x^7',
+then c does not have to be found. However, if the mean-square estimator x^
+is desired or if any moments of the distribution are to be computed, then an
+accurate value for c is required.
+
+After determining?, the integrand in (2.1) can be formed. The prediction
+density v is obtained by carrying out the nonlinear convolution indicated in
+(2.1). Again, it is generally necessary to resort to numerical methods to deter-
+mine ÎT. Since n is a function of x, the convolution implies that a large number
+of numerical integrals must be computed; essentially, an integration for each
+possible value ofx is required.
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS            257
+
+After determining p and TT, it is natural to compute moments of the
+a posteriori density. As noted above, the minimum mean-square estimate
+is provided by the conditional mean. The quality of the estimate is commonly
+gauged by forming the conditional covariance matrix. Conceivably, higher-
+order moments might also be determined as indicators of the effect of the non-
+linearities and of the deviation of the a posteriori density from a Gaussian. Of
+course, these are not ensemble statistics but are associated with a specific mea-
+surement realization.
+
+A large number of methods for the evaluation of the Bayesian recursion rela-
+tions have been proposed and studied. These methods have the common charac-
+teristic that the calculations are performed after defining a "grid." The grid
+points provide a finite collection on which approximations can be based. Obvi-
+ously, these points are contained in a finite region of state space even though the
+integrations generally are carried out over infinite intervals. Thus, the functions
+must be such that there is negligible probability mass outside of the region con-
+taining the grid points. The manner in which the grid is defined is an important
+consideration in the development of an algorithm.
+
+Let us consider an approach to the evaluation of the nonlinear convolution
+(2.1). Suppose that a specific value x, is prescribed for x so the integration will
+yield a well-defined number. The numerical integration of (2.1) essentially re-
+quires that the integral be replaced by a summation involving a discretization of
+the integration-variable r). The manner in which the grid points are defined may
+be accomplished arbitrarily or as in integral part of the quadrature method. For
+example, in an nth-order Gauss-Hermite quadrature, the grid points are chosen
+as the zeros of the nth Hermite polynomial. Let r)j, {j = 1, 2, . .., Nic-i} denote
+the -/Vfc-i grid points for the variable 17. Furthermore, suppose that x, is regarded
+as the fth grid point for the discretization of the variable x into N^ points. Then,
+the convolution (2.1) is replaced by
+
+^Vfc-l
+
+p(\i)= ^ a/p(7?y)p(x,-f(7?/)),   i=l,2,...,Nk.     (2.3)
+/°i
+
+The coefficients a, represent the weighting coefficients of the numerical integra-
+tion scheme. Clearly, if there are a large number of grid points the storage and
+computational burden can be enormous, even for present-day digital computers.
+
+Because of the storage and computational burden implied by solving the
+Bayesian recursion relations, it is natural to seek ways in which these require-
+ments can be reduced. Effectively, the nonlinear filtering problem can be re-
+garded in this completely computational context. In the subsequent discussion,
+we shall review some of the approaches that have been proposed, summarize the
+types of results that have been obtained, and make suggestions for areas requir-
+ing additional investigation.
+
+258                                               H. W. SORENSON
+
+The earliest and by far the most extensively applied approach was motivated
+by the existence of the general solution for linear, Gaussian systems (i.e., the
+Kalman filter). In this case, a single grid point is defined at each sampling time.
+Then, the system equations f and h are linearized relative to the grid point. This
+approximation of the system itself implies that the state and measurement per-
+turbations are Gaussian so the Kalman filter can be applied directly. A number
+of generalizations to include higher order perturbations have been proposed. We
+shall discuss this class of methods in Sec. 3. Since the approximations can be
+regarded as being most accurate in some neighborhood of the single grid (or
+reference) point, we shall refer to them as local methods. More recently, a
+second class of techniques has emerged which explicitly attempt to obtain solu-
+tions by defining a grid over the entire region containing significant probability
+mass. This class shall be referred to as global methods and is discussed in
+Sec. 4.
+
+3. LOCAL NONLINEAR FILTERING METHODS
+
+Virtually the only recursive nonlinear filtering method that has seen applica-
+tion to practical problems is the so-called extended Kalman filter. In this ap-
+proach, a single grid point is defined at each stage and the system is linearized
+relative to Ais point. If the grid point is chosen as the "best" estimate (i.e., the
+approximation of the conditional mean), the resulting estimator is called the
+extended Kalman filter [4, 5]. This is apparently the simplest possible approach
+since it involves a single grid point and linear equations at each sampling time.
+In addition, the grid point at the fcth time is obtained directly from the previous
+grid point and the appropriate system equation. It is also the most crude ap-
+proximation and its validity depends heavily on the quality of the linear
+approximation.
+
+Practical experience has demonstrated that the assumptions inherent in the
+extended Kalman filter are often valid and satisfactory results are often ob-
+tained. There are also well-known disadvantages and difficulties associated with
+the application of the extended Kalman filter. The manifestation of these diffi-
+culties is commonly referred to as the divergence [4-6] problem. Divergence is
+said to occur when the actual error in the estimate becomes inconsistent with
+the error covariance matrix approximation provided by the filter equations.
+This situation arises because of errors in the filter model, either as a result of
+errors in the basic model or as a result of the linearization errors.
+
+Experience with the extended Kalman filter in a variety of applications has
+led to the definition of a number of Subproblems that may have to be solved in
+order to develop a useful algorithm.
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS            259
+
+A. FILTER INITIALIZATION
+
+Before utilizing the Kalman filter, it is often necessary to process a small
+amount of data to obtain reference values to be used in the linearizations. Re-
+gardless of the manner in which it is accomplished, the filter must be initialized
+with suitable values for the estimate and error covariance matrix in order to ob-
+tain reasonable estimates at subsequent times.
+
+B. FORM OF THE FILTER MODEL
+
+The linearization errors can be reduced in many cases by the form used for
+the system model. The choice of coordinate system can be important [7].
+Furthermore, the use of transformations [9] to obtain models which are more
+easily linearized are often possible.
+
+C. ITERATIVE CALCULATIONS
+
+To improve the linearizations, one can iterate through a small amount of the
+data (e.g., one sample at a time) and use improved estimates in the linearizations
+before reprocessing the data.
+
+D. DIVERGENCE CONTROL
+
+Divergence often occurs because the model does not adequately describe the
+system. To compensate for model errors, the plant and measurement noise co-
+variance matrices can be increased. This has the effect of causing the error co-
+variance matrix to be increased and in a way to cause past data to be discounted
+relative to more recent samples. A large number of methods have been devised
+to compensate for model errors [4, 5,9].
+
+In our Bayesian context, the use of the extended Kalman filter implies that
+the a posteriori density is Gaussian. This can be an extremely poor approxima-
+tion of the actual density function if all possible values of the state x are con-
+sidered. Other local (or perturbative) schemes have been devised in an effort to
+improve the quality of the approximation. The obvious extension [10,11] is to
+consider retaining the second-order terms in the expansion of the system func-
+tions f and h. Commonly, the assumption is made that the a posteriori density
+is still Gaussian even with the presence of the second-order terms. This assump-
+tion is made in order to overcome the "moment closure problem" which is dis-
+cussed briefly below.
+
+For the purposes of discussion, suppose that we are considering a scalar,
+second-order system
+
+Xk=fkXk-i +Skxî-^ +Wfc-i,
+zk = ^Xk + ekxl + ufc.
+
+260                                                 H. W. SORENSON
+
+Suppose at the (k - l)th sampling time that we know
+
+^[Xfe-ilz*'1] =^-i|fe_i,
+
+and
+
+The mean value E [x^z11'1} is seen to be
+
+E[Xk\Zk~l]=Sk\k-l =fk^k-l\k-l +J?fc(Pk-llfc-l +^-llfc-l).
+
+To determine the variance, we note that
+Xk-E[Xk\k-i] =Xk\k-l =gk^-i\ic-i +(fk+^gk^k-l\k-l)xk-^^k-l
+
+~8kPk-l\k-i +Wfc-i
+
+so
+
+var (Xfcl z^1 ) = q^-i + (/fc + 2^A-i ifc-i )2 pk-i ifc-i
+
++ 2^(/fc + 2^A-iifc.i)^fe-iifc_i
+
+-'-^O'fc-ilfc-i -P^-ilfc-i),
+
+where ^.ii^-i and ffc-iik-i represent the third and fourth central moments of
+Xfe-i given zk~\. Thus, the calculation of var (x^\ z^'1 ) requires knowledge of
+the first four central moments ofx^-i given z*'1. For this example, the calcu-
+lation of the i'th moments always requires knowledge of the 2;th moment at the
+preceding time. This implies that one must know moments of every order and is
+referred to in general as the moment closure problem. To close the problem, it
+is common to assume that moments of order greater than some integer corre-
+spond with Gaussian moments. For example, if the 3rd and higher order mo-
+ments are assumed to be Gaussian, then for all k
+
+Vk=Q.
+^=3p2.
+
+The first serious attempt to eliminate the Gaussian assumption involved the
+use of Gram-Charlier or Edgeworth expansions [12]. The expansion is a series
+of polynomials which are orthogonal with respect to a Gaussian distribution and
+can be used to represent a wide class of density functions. The initial use of this
+non-Gaussian approximation was based on a perturbative approximation. As a
+consequence, it suffered from the disadvantage that a large number of terms
+were required to obtain a reasonable approximation of a distinctly non-Gaussian
+density. The behavior of the estimator obtained from this density approxima-
+tion was found to be very sensitive to the quality of the approximation. When
+the infinite series is truncated, as it must for practical application, the resulting
+series can become negative over portions of the state space. Consequently, the
+density approximation is not itself a density. This can introduce unexpected
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS             261
+
+influences into the behavior of the estimator, particularly if the integral over
+the region in which the function is nonpositive has a nontrivial value. Subse-
+quently, other density approximations using the Edgeworth expansion have
+been proposed [13,14]. This local method seems to be most useful when the
+a posteriori density is unimodal even though it is not Gaussian.
+
+4. GLOBAL NONLINEAR FILTERING METHODS
+
+The obvious disadvantage of the local methods stems from the use of a single
+grid point on which to base the approximation. During the past few years, sev-
+eral methods have been proposed which attempt to improve the approximation
+by considering the density at many points selected throughout the region con-
+taining nonnegligible probability mass. These methods can be regarded as repre-
+senting specific examples of ways in which the numerical integrations discussed
+in Sec. 2 can be accomplished. Some of these global approximations are re-
+viewed in this section.
+
+Quite possibly, the first step toward the development of a global method was
+taken by Magill [15] with a subsequent generalization by Hilborn and Lainiotis
+[16]. They considered linear systems with unknown parameters. To deal with
+this nonlinear problem, a grid was established by discretizing the unknown
+parameters and by considering the resulting collection of linear filtering prob-
+lems. A global method for the general nonlinear filtering problem was proposed
+by Bucy [17] when he introduced the point-mass method. This approach was
+elaborated upon by Bucy and Senne [18] at the First Symposium on Non-
+linear Estimation in 1970. At this same meeting Alspach and Sorenson [19]
+proposed the Gaussian sum approximation as an alternative approach. Sub-
+sequent Symposia on Nonlinear Estimation have included many extensions and
+have seen the introduction of other techniques. Center [20] provided a
+unifying theoretical framework by considering the problem in the context of
+generalized least-squares. His approach permits, conceptually at least, the
+development of a countless number of approximations. In the Second
+Symposium on Nonlinear Estimation, Center discussed as specific examples
+the point-mass, Gaussian sum, and Edgeworth expansion approximants. Later
+[21], he also discussed the spline approximation method proposed by Jan
+and de Figueiredo [22].
+
+All specific global methods must provide solutions of the following general
+problems.
+
+(a) An initial grid must be defined. It is important that the region encom-
+passed by the grid includes the true value of the state. In addition, the number
+and manner in which the grid points are distributed within the approximation
+region must be defined.
+
+(b) A procedure must be defined for defining the grid at each subsequent
+sampling time. While the grid could be the same throughout, the dynamic nature
+
+262                                                  H. W. SORENSON
+
+of the problem and the desire for computational efficiency indicate the advisa-
+bility of redefining the grid at each sampling time.
+
+(c) Given the grid, a method must be selected for approximating the functions
+and/or for carrying out the Bayes' rule calculations. The approximation method
+and the grid selection method are not unrelated and the implementation of a
+particular method may require interaction between the two considerations.
+
+Let us now briefly summarize some of the approaches which have been
+investigated.
+
+POINT MASS APPROXIMATION
+
+Bucy [17] and Bucy and Senne [18] suggested that the error covariance
+matrix be used to establish the region and the grid. Essentially, the eigenvectors
+are used to define the principal axes. The grid is centered at the mean value.
+The grid along each axis was chosen to extend over a distance sufficient (e. g.,
+16 times the magnitude of the corresponding eigenvalue) to insure that the true
+state is contained within the grid region. The number of grid points is prescribed
+to provide an adequate approximation. The basic method of defining the grid is
+modified to suit the requirements imposed by a particular problem. For exam-
+ple, when the a posteriori density is multimodal, it is reasonable to define a grid
+for each mode rather than for the entire density.
+
+The manner in which the grid is updated at the next sampling time is straight-
+forward since the system dynamics provide the mean values and the covariance
+matrix for the predictor density.
+
+Once the grid points have been established, the density functions can be eval-
+uated at each of them. These values, after being suitably normalized, can be
+regarded as point masses for a discrete approximation of the distributions. Using
+the point-mass approximation, the Bayesian recursion relations are readily eval-
+uated. This approximation is essentially equivalent to using a rectangular inte-
+gration rule to accomplish the numerical quadratures.
+
+GA USSIAN SUM APPROXIMA TION
+
+Alspach and Sorenson [19, 23, 24] proposed approximating the a posteriori
+density function by a weighted sum ofGaussian densities. For example, a den-
+sity p is approximated by the density' pa
+
+Pa(x)=f;a,^(x/',),
+
+i=l
+
+lN^,B)û(2n)-nt2(detB)-lt2exp {-^(x-a)7'^-1 (x-a)}.
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS            263
+q
+
+where the weighting coefficients a, are nonnegative and y a, = 1. This approx-
+imation is motivated by the realization that p^ converges uniformly to p for a
+large class of densities. Thus, the approximation p^ can be made as accurate as
+one wants through the choice ofq. The idea of using this type of approximation
+has been suggested by several others [e.g., 25-31].
+
+After q has been defined, it is necessary to assign values to the parameters
+a x,,P {;' = 1, 2,. . ., q}. The mean values x, represent grid points for the
+approximation. The selection of all of these parameters must yield a satisfac-
+tory representation of the a posteriori density. It is natural to formulate their
+determination as an optimization problem. Let us choose a,, x,, P,,
+[i = 1, 2,. .. ,q} so that the generalized least-squares performance index,
+
+= f[pW-p,Wdx,
+
+ILS -
+
+is minimized subject to the constraints that for all / a, &gt; 0, S a, = 1 and P, is a
+positive semidefmite matrix. While this is a reasonable formulation, it is gener-
+ally very difficult to solve. Thus, simpler approaches must be taken. A method
+which has proven to be useful has been described in [23]. The grid points are
+selected uniformly over the region for which p (x) &gt; e where e is an arbitrary
+positive constant. The coefficients a, are chosen to equal to the value of the
+density function at the grid point x, divided by the appropriate normalization
+constant. Further, P, is defined to be the diagonal matrix a1! and o2 is selected
+to minimize l^s- If the resulting approximation is not adequate, the number of
+terms q can be increased until a suitable approximation is obtained.
+
+There are a variety of ways in which the following general approximation can
+be utilized. Alspach and Sorenson proposed that the computational utility of
+the Kalman filter be exploited to obtain the a posteriori density approximation.
+The a priori density p(xi ) ê ff(x) is approximated by a Gaussian sum. This
+defines a grid for the initial state. To include the measurement Zi, it is necessary
+to multiply TT by m(z - h(x)). If we proceed directly to carry out the multiplica-
+tion, the result is no longer a Gaussian sum. Instead, the measurements are
+linearized relative to each of the grid points. Because the variance of each term
+of the sum is small, the linearization must be valid only in a small region sur-
+rounding the grid point. The extended Kalman filter can be applied at each grid
+point to obtain the means x, and covariances P{ in the terms of the Gaussian sum
+approximation of the filtering applied to determine the prediction density. The
+extended Kalman filter is used to obtain a grid for the next sampling time and to
+obtain the Gaussian sum approximation of the prediction density TT. However,
+carrying out the convolution (2.1) can cause the number of terms in the Gauss-
+ian sum (i.e. the number of grid points) to increase. Generally, some of the grid
+
+264                                               H. W. SORENSON
+
+points can be eliminated because the weighting coefficient of the term is negli-
+gible. Also, some grid points from the prediction can be sufficiently close that
+the terms can be combined. Consequently, it is possible to control the number
+of points in the grid through these and other considerations.
+
+The Gaussian sum approximation takes the form of a number of extended
+Kalman filters operating in parallel. It is easy to obtain an indication of the
+computational burden that is associated with this nonlinear filter. If q extended
+Kalman filters are required at each stage of the sequence, then the Gaussian sum
+requires approximately q times as much effort as a single filter. The burden of a
+single filter is well-known [e.g., see 32].
+
+The parallel structure of the algorithm suggests a possible implementation
+that may permit a practical realization of the filter. It has been proposed with
+increasing ardor [e.g., 18, 33] that these Bayes' rule calculators can be realized
+using so-called parallel computers [for an excellent general discussion of these
+devices, see 34]. In both the Gaussian sum and point-mass approximations,
+there are many operations which could be performed simultaneously rather than
+serially. If they are, the cycle time could be reduced substantially.
+
+The point-mass and Gaussian sum approximations represent two of the ap-
+proaches that have been proposed and investigated. We shall mention briefly
+some of the other studies that have been conducted. The reader is directed to
+the references for more detailed discussions.
+
+A variety of numerical quadrature methods are available for application. An
+obvious choice would be Gauss-Hermite quadrature since the weighting function
+is essentially a Gaussian density function. We mentioned above that the Edge-
+worth expansion had been investigated for local methods. These expansions
+involve the Hermite polynomials which are intimately involved in Gauss-Hermite
+quadrature. Hecht [35] has investigated the use of Hermite polynomials and of
+Gauss-Hermite quadrature to approximate the a posteriori density. Hecht claims
+that this quadrature is significantly more efficient than the use of a rectangular
+integration rule. That is, significantly fewer grid points are required to obtain
+the same accuracy. More recently, Kasemratanasunti and Klein [36] have con-
+sidered the use of quadrature estimators from a more general point of view.
+They claim that significantly more efficient calculations can be accomplished
+with the methods that they propose. As mentioned above, de Figueiredo and
+Jan [22] investigated the use of fundamental splines. The knots of the spline
+approximation are the grid points. Between the knots, the density is approxi-
+mated by polynomials. They use fundamental splines because the resulting ap-
+proximation is nonnegative and integrates to a value of one.
+
+The method of selection of the grid for an approximation has generally been
+based on a considerable amount of arbitrariness and on common sense. Since
+the basic goal of the study of these numerical methods must be to improve com-
+putational efficiency, it is natural to attempt to develop a more rational and
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS             265
+
+quantitative procedure for establishing the grid. Tse and Larson [37] have at-
+tempted to develop optimum quantization algorithms.
+
+Efficient computer implementation has been the subject of several investiga-
+tions. Certainly, the use of parallel computers has been suggested and several
+"parallel algorithms" have been proposed [e.g., 18, 33, 37]. There have been
+other studies of efficient computational algorithms which do not involve parallel
+computers. For example, Bucy, Merritt, and Miller [38] have examined the use
+of hybrid computers.
+
+Nonlinear filtering algorithms have been applied to a number of different
+example problems. These studies have provided insights into the behavior of
+nonlinear filters, and have permitted comparisons of local and global techniques.
+Some of these studies are described in the preceding references. The most com-
+plete survey and extensive numerical comparisons of nonlinear filtering algo-
+rithms are given in Ref. [39].
+
+5. NONLINEAR FILTERING-A CRITICAL LOOK
+
+Global nonlinear filtering is growing beyond its infancy. As must be true for
+any infant, the first steps, as exemplified by the work mentioned above, are
+exhilarating for those involved and can easily lead to overly ambitious claims
+and unwarranted optimism. Viewed with even a modicum of perspective, how-
+ever, it becomes obvious that much work remains before the infant will grow to
+maturity. It is fun and hopefully, worthwhile to attempt to predict the char-
+acter of the mature development and to suggest some activities that are required
+to shape the development.
+
+The basic objective of global nonlinear filtering might be regarded as the de-
+velopment of a practical computational algorithm which will permit the deter-
+mination of the a posteriori density to any prescribed accuracy for any system
+that can be described, for example, by (1.1) and (1.2). This is the achievement
+of the Kalman filter for linear, Gaussian systems; if it can be accomplished for
+nonlinear non-Gaussian systems, the achievement would be worthy of any of the
+scientific titans of history. The developments described above in Sec. 4 do pro-
+vide procedures for computing the a posteriori density for any system. But they
+have the practical limitation that the computational requirements associated
+with their implementation are enormous. Thus, the development of an algo-
+rithm must be guided by the requirement of achieving computational efficiency.
+With the rapid development of mini computers, it appears that practical non-
+linear filtering may be possible using special-purpose rather than general-purpose
+digital computers. It appears reasonable to consider, for example, the use of
+mini computers for parallel processing. Possibly, some of the general ideas dis-
+cussed by Korn [40] will prove useful.
+
+266                                              H. W. SORENSON
+
+Assuming that global nonlinear filtering methods will continue to require
+substantially more computation than local filtering techniques, it is natural to
+ask and attempt to answer the following question. Under what conditions is it
+desirable and necessary to assume the additional computational burden and
+utilize global nonlinear filtering techniques? Certainly, no answer to this ques-
+tion that could be universally accepted exists at this time. However, some re-
+lated considerations can be discussed.
+
+Local filtering techniques in general and the extended Kalman filter (here-
+after referred to as EKF) in particular are looked upon with scorn in some quar-
+ters because these approaches are "suboptimal." In addition, the degree of sub-
+optimality is not readily determined. As a consequence, it is reasonable to solve
+the global filtering problem if only to provide a reference against which local
+methods can be compared. However, the continued use of the EKF must be
+tolerated because it has proven to provide satisfactory results for many nonlinear
+systems. This is especially true when the filter is designed to monitor the resid-
+uals and to initiate corrective action whenever a low frequency component is
+observed that implies the onset of divergence.
+
+The success of the EKF forces a search for general circumstances in which
+this local filtering method cannot be expected to perform satisfactorily. Cer-
+tainly, one of the most important requirements is that an a priori estimate be
+available which permits the local approximation to be valid initially. If it is im-
+possible to define an appropriate a priori estimate, then the EKF is doomed to
+failure and a global filter is required. For many systems of interest, this would
+appear to be an unlikely situation. Frequently, the signal-to-noise ratio is suffi-
+ciently large that a reasonable estimate can be obtained using only deterministic
+models. When more than one solution is possible, physical considerations may
+permit the determination of the only reasonable solution which can then be
+used to initiate the EKF. If more than one a priori estimate must be considered,
+the a posteriori density will be multimodal so the EKF cannot be used.
+
+If the a posteriori density can be regarded as unimodal but non-Gaussian, the
+EKF must produce suboptimal results. Thus, it may be desirable to utilize local
+or global procedures which eliminate the Gaussian assumption. In many cases,
+the EKF can be expected to provide pessimistic results since the Gaussian den-
+sity maximizes entropy. As long as the residual is forced to be white, the EKF
+should produce results that are satisfactory in some ways. More complicated
+procedures may provide improvements but this would seem to be very problem-
+dependent.
+
+Finally, the signal-to-noise ratio may be so small that linearizations provide
+inadequate approximations with the result that the EKF produces little data
+filtering. That is, the divergence control logic may require past data to be dis-
+counted so strongly that only current data is used in determining the estimate.
+Then, the estimation error will be comparable or greater than the measurement
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS             267
+
+noise indicating the lack of any filtering (noise removal) activity. In this case
+global nonlinear filters may be required in order to extract the maximum infor-
+mation from the data.
+
+Among the advantages that can result from the use of global nonlinear filter-
+ing are the following
+
+(a) It is not necessary to have a priori estimates of the state that are suffi-
+ciently accurate to validate the linearization. Thus, the problem of initializing
+the filter is eliminated.
+
+(b) Situations in which the a posteriori density is multimodal are handled in a
+straightforward manner. The consideration of multimodality enters primarily
+through the definition of the grid and the choice of estimator criterion.
+
+(c) The elimination of the assumption that the a posteriori density is Gaussian
+can permit more accurate statistical statements to be made. A simple example is
+given in Ref. [19] which demonstrates the insights possible from knowledge of
+the a posteriori density.
+
+(d) Calculation of the a posteriori density provides a meaningful reference
+which can be used to measure the performance of all suboptimal procedures.
+The accurate calculation of^x^/z^ permits one to more rationally evaluate the
+effects of the approximations used in suboptimal estimators. Generally, even
+suboptimal estimators approach the optimal response of the global filter after a
+large quantity of data has been processed. The difference in transient response
+can be determined and can provide a measure of the adequacy of a particular
+suboptimal algorithm.
+
+In the study of nonlinear filtering, it is not surprising to find that there are
+few analytical results and closed-form solutions. Thus, to deal with these prob-
+lems, it is natural to see a concentration of effort on the development of com-
+putational procedures. In this sense, the field is similar to the study of non-
+linear programming. Unlike the latter, we do not have standard test problems
+nor extensive numerical studies of different algorithms which have been de-
+veloped for the same general problem. It seems that this is a gap that must be
+filled. Several problems have appeared in the literature [e.g., 10,11, 18, 24,
+41-45] and these can serve as candidates for standard test problems. Rational
+criteria for comparing algorithms need to be established. It should be incum-
+bent upon the proposer of a new algorithm to provide meaningful comparisons
+of his procedure with existing algorithms. By this means one can hope to
+establish situations in which specific algorithms will have demonstrable
+advantages.
+
+As nonlinear filtering begins to see practical application, a wealth of new
+problems will be uncovered and the research will progress into new areas. A
+question which requires immediate consideration arises when we contemplate
+the basic assumptions implicit in the Bayesian recursion relations. This solution
+
+268                                                   H. W. SORENSON
+
+of the nonlinear filtering problem supposes that we have a complete probabilistic
+description of the system. In practice, one often considers himself lucky to have
+information about the second moments. Thus, it is naive to believe that the
+probabilistic model is justified. Consequently, it is imperative that the sensitiv-
+ity to model errors be examined in considerable detail.. On one hand, it might
+be possible to reduce the computational burden associated with the current
+global filters by exploiting the knowledge that model errors exist. On the other
+hand, sensitivity to model errors might indicate the folly of the Bayesian ap-
+proach entirely and cause the redirection of research activities into less model-
+dependent formulations.
+
+REFERENCES
+
+1. Y. C. Ho and R. C. K. Lee, A Bayesian approach to problems in stochastic estimation
+and control, IEEE Trans. Auto Control AC9, 333-339 (1964).
+
+2. R. E. Kalman, A new approach to linear filtering and prediction problems, J. Basic
+Engr. 82D, 35-45 (March 1960).
+
+3. H. W. Sorenson, Comparison of Kalman, Bayesian, and maximum likelihood estimation
+techniques, in Theory and Applications of Kalman Filtering, NATO AGARDograph
+139, Feb. 1970,pp.119-142.
+
+4. A. H. Jazwinski, Stochastic Processes and Filtering Theory, Academie, New York,
+1970.
+
+5. H.W. Sorenson, Kalman filtering techniques. Advances in Control Systems
+(C. T. Leondes, Ed.), 3, Academie, New York, 1966.
+
+6. R. J. Fitzgerald, Divergence of the Kalman filter, IEEE Trans. Auto. Control AC-16,
+736-747 (1971).
+
+7. R. K. Mehra, A comparison of two nonlinear filters for ballistic trajectory estimation,
+Proc. First Symp. Nonlinear Est., San Diego, 273-280, Western Periodicals, North
+Hollywood, Cal. (1970).
+
+8. D. W. Whitcombe, Pseudostate measurements applied to recursive nonlinear filtering,
+Proc. Third Symp. on Nonlinear Est., San Diego, 278-281, Western Periodicals, North
+Hollywood, Cal. (1972).
+
+9. H. W. Sorenson, and J. E. Sacks, Recursive fading memory filtering. Info. Sei. 3, 101-
+119(1971).
+
+10. H. W. Sorenson and A. R. Stubberud, Recursive filtering for systems with small but
+nonnegligible nonlinearities. Int. J. Control 7, 271-280 (1968).
+
+11. M. Athans, R. P. Wishner, and A. Bertolini, Suboptimal state estimators for continuous-
+time nonlinear systems from discrete noisy measurements, IEEE Trans. Auto. Control
+AC-13,504-514 (1968).
+
+12. H. W. Sorenson and A. R. Stubberud, Nonlinear filtering by approximation of the
+a posteriori density, Int. J. Control S, 33-51 (1968).
+
+13. W. Kizner, Optimal nonlinear estimation based on orthogonal expansions, JPL Tech.
+Rep. 32-1366,1969.
+
+14. K. Srinivasan, State estimation by orthogonal expansion of probability distributions,
+IEEE Trans. Auto. Control AC15, 3-10 (1970).
+
+15. D. T. Magill, Optimal adaptive estimation of sampled stochastic processes, IEEE Trans.
+Auto. Control AC10,434-439 (1965).
+
+ON THE DEVELOPMENT OF PRACTICAL NONLINEAR FILTERS             269
+
+16. C. G. Hilborn and D. G. Lainiotis, Optimal estimation in the presence of unknown
+parameters, IEEE Trans. Syst. Sei. Cybernet. SSC5, 38-43 (1969).
+
+17. R. S. Bucy, Bayes' theorem and digital realization for nonlinear filters, J. Astronaut.
+Sic. 17, 80-94 (1969)
+
+18. R. S. Bucy and K. D. Senne, Realization of optimum discrete-time nonlinear estimators,
+First Symp. on Nonlinear Est., San Diego, 1970,'pp. 6-17.
+
+19. D. L. Alspach, H. W. Sorenson, Approximation of density function by a sum of
+Gaussians for nonlinear Bayesian estimation. First Symp. on Nonlinear Est., San
+Diego, 1970, pp. 19-31.
+
+20. J. L. Center, Practical nonlinear filtering of discrete observations by generalized least-
+squares approximation of the conditional probability distribution. Second Symp. on
+Nonlinear Est., San Diego, 1971, pp. 88-99.
+
+21. J. L. Center, Practical nonlinear filtering based on generalized least-squares approxima-
+tion of the conditional probability distribution, Ph.D. dissertation, Washington Univer-
+sity, St. Louis, 1972.
+
+22. R. J. P. de Figueiredo and J. G. Jan, Spline filters. Second Symp. on Nonlinear Est.,
+San Diego, 1971, pp. 127-138.
+
+23. H. W. Sorenson and D. L. Alspach, Recursive Bayesian estimation using Gaussian sums,
+Automatica 7,465-479 (1971).
+
+24. D. L. Alspach and H. W. Sorenson, Nonlinear Bayesian estimation using Gaussian sum
+approximations, IEEE Trans. Auto. Control AC17,439-448 (1972).
+
+25. M. Aoki, Optimization of Stochastic Systems, Academic, New York, 1967.
+
+26. A. V. Cameron, Control and estimation of linear systems with non-Gaussian a priori
+distributions, Proc. Sixth Ann. Allerton Con f. Circuit and Sup. Theory, Urbana, 111.,
+1968.
+
+27. D. G. Lainiotis, Optimal adaptive estimation: Structure and parameter adaptation,
+
+IEEE Trans. Auto. Control AC16,160-170 (1971); also Proc. IEEE Adaptive Processes
+Symp. (1969).
+
+28. P. J. Buxbaum and R. A. Haddad, Recursive optimal estimation for a class of non-
+gaussian processes, Proc. Symp. Comp. Comm., Poly. Inst. of Brooklyn, 375-399
+(1969).
+
+29. D. G. lainiotis. Optimal nonlinear estimation, Int. J. Control 14 (1971).
+
+30. J. T. Lo, Finite-dimensional sensor orbits and optimal nonlinear filtering, IEEE Trans.
+Inform. Theory IT18 (1972); also, USC Tech. Rep. USCAE 114, University of South-
+ern California, Los Angeles, 1969.
+
+31. S. K. Park and D. G. Lainiotis, Monte-Carlo study of the optimal nonlinear state-vector
+estimator for linear model and non-Gaussian initial state, Int. J. Control 16 (1972).
+
+32. J. M. Mendel, Computational requirements for a discrete Kalman filter, IEEE Trans.
+Auto. Control AC16, 748-758 (1971).
+
+33. E. Tse, Parallel computation of the conditional mean state estimate for nonlinear sys-
+tems, Second Symp. Nonlinear Est., San Diego, 1971, pp. 385-394.
+
+34. J. E. Shore, Second thoughts on parallel processing, Computers Elect. Engr. I, 95-110
+(1973).
+
+35. C. Hecht, Digital realization of nonlinear filters, Second Symp. on Nonlinear Est., San
+Diego, 1971, pp. 152-158.
+
+36. W. Kasemratanasunti and R. L. Klein, Quadrature formulae realization of nonlinear
+estimators, Fourth Symp. Nonlinear Est., San Diego, 1973.
+
+37. E. Tse and R. E. Larson, Optimum quantization and parallel algorithms for nonlinear
+state estimation. Third Symp. Nonlinear Est., San Diego, 1972, pp. 260-265.
+
+38. R. S. Bucy, M. J. Merritt, and D. S. Miller, Hybrid computer synthesis of optimal
+discrete nonlinear filters. Second Symp. Nonlinear Est., San Diego, 1971, pp. 59-87.
+
+270                                                 H. W. SORENSON
+
+39. R. S. Bucy, C. Hecht, and K. D. Senne, An engineer's guide to building nonlinear
+filters, Frank J. Seiler Research Laboratory Report SRL-TR-72-0004, May 1972.
+
+40. G. A. Korn, Back to parallel computation: Proposal for a completely new on-line
+simulation system using standard mini-computers for low-cost multiprocessing,
+Simulation 19, 37-46 (1972).
+
+41. R. P. Wishner, J. A. Tabaczynski, and M. Athans, A comparison of three nonlinear
+filters, Automatica 5,487-496 (1969).
+
+42. H. J. Kushner, Approximations to nonlinear filters, IEEE Trans. Auto. Control AC12,
+546-556(1969).
+
+43. L. Schwartz and E. B. Stear, A computational comparison of several nonlinear filters,
+IEEE Trans. Auto. Control AC13, 83-86 (1969).
+
+44. R. S. Bucy, Realization of nonlinear filters, Second Symp. Nonlinear Est., San Diego,
+1971,pp.51-58.
+
+45. R. S. Bucy, C. Hecht, and K. D. Senne, An application of Bayes law estimation to non-
+linear phase demodulation. Third Symp. on Nonlinear Est., San Diego, 1972, pp.
+23-35.
+
+Received January, 1974</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900176</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90017-6</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90017-6</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">On the development of practical nonlinear filters</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>H.W.</ce:given-name>
+					<ce:surname>Sorenson</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Department of Applied Mechanics and Engineering Sciences, University of California, San Diego, La Jolla, California 92037 USA</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">The general problem of estimating the state of a nonlinear, time-discrete system from noisy measurement data is considered from the point of view of developing feasible computational algorithms for evaluating the Bayesian recursion relations. Algorithms which have been proposed are reviewed; the computational implementation of these algorithms is discussed; general conclusions coming from numerical studies are noted; and areas requiring additional research are defined.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.C.</ce:given-name>
+										<ce:surname>Ho</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.C.K.</ce:given-name>
+										<ce:surname>Lee</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Bayesian approach to problems in stochastic estimation and control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC9</sb:volume-nr>
+									</sb:series>
+									<sb:date>1964</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>333</sb:first-page>
+									<sb:last-page>339</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Kalman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A new approach to linear filtering and prediction problems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Basic Engr.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>82D</sb:volume-nr>
+									</sb:series>
+									<sb:date>March 1960</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>35</sb:first-page>
+									<sb:last-page>45</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Comparison of Kalman, Bayesian and maximum likelihood estimation techniques</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Theory and Applications of Kalman Filtering</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>NATO AGARDograph 139</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>March 1960</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>119</sb:first-page>
+									<sb:last-page>142</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.H.</ce:given-name>
+										<ce:surname>Jazwinski</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Stochastic Processes and Filtering Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>Academic</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Kalman filtering techniques</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:editors>
+											<sb:editor>
+												<ce:given-name>C.T.</ce:given-name>
+												<ce:surname>Leondes</ce:surname>
+											</sb:editor>
+										</sb:editors>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Advances in Control Systems</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>3</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1966</sb:date>
+									<sb:publisher>
+										<sb:name>Academic</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.J.</ce:given-name>
+										<ce:surname>Fitzgerald</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Divergence of the Kalman filter</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>736</sb:first-page>
+									<sb:last-page>747</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB7">
+						<ce:label>7.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.K.</ce:given-name>
+										<ce:surname>Mehra</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A comparison of two nonlinear filters for ballistic trajectory estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. First Symp. Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>Western Periodicals</sb:name>
+										<sb:location>North Hollywood, Cal</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>273</sb:first-page>
+									<sb:last-page>280</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB8">
+						<ce:label>8.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.W.</ce:given-name>
+										<ce:surname>Whitcombe</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Pseudostate measurements applied to recursive nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. Third Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Western Periodicals</sb:name>
+										<sb:location>North Hollywood, Cal</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>278</sb:first-page>
+									<sb:last-page>281</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB9">
+						<ce:label>9.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.E.</ce:given-name>
+										<ce:surname>Sacks</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recursive fading memory filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Info. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>3</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>101</sb:first-page>
+									<sb:last-page>119</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB10">
+						<ce:label>10.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.R.</ce:given-name>
+										<ce:surname>Stubberud</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recursive filtering for systems with small but nonnegligible nonlinearities</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:date>1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>271</sb:first-page>
+									<sb:last-page>280</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB11">
+						<ce:label>11.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Athans</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.P.</ce:given-name>
+										<ce:surname>Wishner</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Bertolini</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Suboptimal state estimators for continuous-time nonlinear systems from discrete noisy measurements</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-13</sb:volume-nr>
+									</sb:series>
+									<sb:date>1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>504</sb:first-page>
+									<sb:last-page>514</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB12">
+						<ce:label>12.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.R.</ce:given-name>
+										<ce:surname>Stubberud</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear filtering by approximation of the 
+										<ce:italic>a posteriori</ce:italic> density
+									</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>8</sb:volume-nr>
+									</sb:series>
+									<sb:date>1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>33</sb:first-page>
+									<sb:last-page>51</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB13">
+						<ce:label>13.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.</ce:given-name>
+										<ce:surname>Kizner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal nonlinear estimation based on orthogonal expansions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>JPL Tech. Rep. 32-1366</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB14">
+						<ce:label>14.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>K.</ce:given-name>
+										<ce:surname>Srinivasan</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>State estimation by orthogonal expansion of probability distributions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC15</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>3</sb:first-page>
+									<sb:last-page>10</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB15">
+						<ce:label>15.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.T.</ce:given-name>
+										<ce:surname>Magill</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive estimation of sampled stochastic processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC10</sb:volume-nr>
+									</sb:series>
+									<sb:date>1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>434</sb:first-page>
+									<sb:last-page>439</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB16">
+						<ce:label>16.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.G.</ce:given-name>
+										<ce:surname>Hilborn</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal estimation in the presence of unknown parameters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Syst. Sci. Cybernet.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>SSC5</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>38</sb:first-page>
+									<sb:last-page>43</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB17">
+						<ce:label>17.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Bayes' theorem and digital realization for nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Astronaut. Sic.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>17</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>80</sb:first-page>
+									<sb:last-page>94</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB18">
+						<ce:label>18.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.D.</ce:given-name>
+										<ce:surname>Senne</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Realization of optimum discrete-time nonlinear estimators</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>First Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>6</sb:first-page>
+									<sb:last-page>17</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB19">
+						<ce:label>19.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Approximation of density function by a sum of Gaussians for nonlinear Bayesian estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>First Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>19</sb:first-page>
+									<sb:last-page>31</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB20">
+						<ce:label>20.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.L.</ce:given-name>
+										<ce:surname>Center</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Practical nonlinear filtering of discrete observations by generalized least-squares approximation of the conditional probability distribution</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Second Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>88</sb:first-page>
+									<sb:last-page>99</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB21">
+						<ce:label>21.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.L.</ce:given-name>
+										<ce:surname>Center</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Practical nonlinear filtering based on generalized least-squares approximation of the conditional probability distribution</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Ph.D. dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Washington University</sb:name>
+										<sb:location>St. Louis</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB22">
+						<ce:label>22.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.J.P.</ce:given-name>
+										<ce:surname>de Figueiredo</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.G.</ce:given-name>
+										<ce:surname>Jan</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Spline filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Second Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>127</sb:first-page>
+									<sb:last-page>138</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB23">
+						<ce:label>23.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recursive Bayesian estimation using Gaussian sums</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>465</sb:first-page>
+									<sb:last-page>479</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB24">
+						<ce:label>24.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear Bayesian estimation using Gaussian sum approximations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC17</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>439</sb:first-page>
+									<sb:last-page>448</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB25">
+						<ce:label>25.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Aoki</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimization of Stochastic Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1967</sb:date>
+									<sb:publisher>
+										<sb:name>Academic</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB26">
+						<ce:label>26.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.V.</ce:given-name>
+										<ce:surname>Cameron</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Control and estimation of linear systems with non-Gaussian 
+										<ce:italic>a priori</ce:italic> distributions
+									</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. Sixth Ann. Allerton Conf. Circuit and Sup. Theory</sb:maintitle>
+									</sb:title>
+									<sb:conference>Urbana, Ill.</sb:conference>
+									<sb:date>1968</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB27">
+						<ce:label>27.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal adaptive estimation: Structure and parameter adaptation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC16</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>160</sb:first-page>
+									<sb:last-page>170</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. IEEE Adaptive Processes Symp.</sb:maintitle>
+									</sb:title>
+									<sb:date>1969</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB28">
+						<ce:label>28.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.J.</ce:given-name>
+										<ce:surname>Buxbaum</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.A.</ce:given-name>
+										<ce:surname>Haddad</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recursive optimal estimation for a class of non-gaussian processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>
+											<ce:italic>Proc. Symp. Comp. Comm.</ce:italic>, Poly. Inst. of Brooklyn
+										</sb:maintitle>
+									</sb:title>
+									<sb:date>1969</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>375</sb:first-page>
+									<sb:last-page>399</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB29">
+						<ce:label>29.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal nonlinear estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>14</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB30">
+						<ce:label>30.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Finite-dimensional sensor orbits and optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT18</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>USC Tech. Rep. USCAE 114</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>University of Southern California</sb:name>
+										<sb:location>Los Angeles</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB31">
+						<ce:label>31.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Monte-Carlo study of the optimal nonlinear state-vector estimator for linear model and non-Gaussian initial state</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>16</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB32">
+						<ce:label>32.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.M.</ce:given-name>
+										<ce:surname>Mendel</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Computational requirements for a discrete Kalman filter</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC16</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>748</sb:first-page>
+									<sb:last-page>758</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB33">
+						<ce:label>33.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Tse</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Parallel computation of the conditional mean state estimate for nonlinear systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Second Symp. Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>385</sb:first-page>
+									<sb:last-page>394</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB34">
+						<ce:label>34.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.E.</ce:given-name>
+										<ce:surname>Shore</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Second thoughts on parallel processing</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Computers Elect. Engr.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>1</sb:volume-nr>
+									</sb:series>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>95</sb:first-page>
+									<sb:last-page>110</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB35">
+						<ce:label>35.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Hecht</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Digital realization of nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Second Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>152</sb:first-page>
+									<sb:last-page>158</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB36">
+						<ce:label>36.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.</ce:given-name>
+										<ce:surname>Kasemratanasunti</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Klein</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Quadrature formulae realization of nonlinear estimators</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Fourth Symp. Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1973</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB37">
+						<ce:label>37.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Tse</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Larson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimum quantization and parallel algorithms for nonlinear state estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Third Symp. Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1972</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>260</sb:first-page>
+									<sb:last-page>265</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB38">
+						<ce:label>38.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.J.</ce:given-name>
+										<ce:surname>Merritt</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.S.</ce:given-name>
+										<ce:surname>Miller</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Hybrid computer synthesis of optimal discrete nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Second Symp. Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>59</sb:first-page>
+									<sb:last-page>87</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB39">
+						<ce:label>39.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Hecht</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.D.</ce:given-name>
+										<ce:surname>Senne</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An engineer's guide to building nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Frank J. Seiler Research Laboratory Report SRL-TR-72-0004</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>May 1972</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB40">
+						<ce:label>40.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.A.</ce:given-name>
+										<ce:surname>Korn</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Back to parallel computation: Proposal for a completely new on-line simulation system using standard mini-computers for low-cost multiprocessing</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Simulation</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>19</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>37</sb:first-page>
+									<sb:last-page>46</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB41">
+						<ce:label>41.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.P.</ce:given-name>
+										<ce:surname>Wishner</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.A.</ce:given-name>
+										<ce:surname>Tabaczynski</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Athans</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A comparison of three nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>5</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>487</sb:first-page>
+									<sb:last-page>496</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB42">
+						<ce:label>42.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Kushner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Approximations to nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC12</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>546</sb:first-page>
+									<sb:last-page>556</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB43">
+						<ce:label>43.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.</ce:given-name>
+										<ce:surname>Schwartz</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A computational comparison of several nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC13</sb:volume-nr>
+									</sb:series>
+									<sb:date>1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>83</sb:first-page>
+									<sb:last-page>86</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB44">
+						<ce:label>44.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Realization of nonlinear filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Second Symp. Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>51</sb:first-page>
+									<sb:last-page>58</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB45">
+						<ce:label>45.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Hecht</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.D.</ce:given-name>
+										<ce:surname>Senne</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An application of Bayes law estimation to non-linear phase demodulation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Third Symp. on Nonlinear Est.</sb:maintitle>
+									</sb:title>
+									<sb:conference>San Diego</sb:conference>
+									<sb:date>1972</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>23</sb:first-page>
+									<sb:last-page>35</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

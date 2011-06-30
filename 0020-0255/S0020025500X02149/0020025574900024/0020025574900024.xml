@@ -1,0 +1,979 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90002-4"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">On optimal nonlinear estimation — Part II: Discrete observation</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>James Ting-Ho Lo</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 1-10. doi:10.1016/0020-0255(74)90002-4</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1-10</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90002-4</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90002-4</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90002-4</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>INFORMATION SCIENCES 7, 1-10 (1974) l
+
+On Optimal Nonlinear EstimationPart II: Discrete Observation*
+
+JAMES TING-HO LO
+
+Division of Mathematics and Physics, University of Maryland, Baltimore County, Baltimore,
+
+Md. 21228
+
+Communicated by John M. Richardson
+
+ABSTRACT
+
+A general representation for the joint conditional probability density of an arbitrary
+random signal process under discrete-time observation is obtained. This representation
+forms the cornerstone of the paper, and from it all other results are deduced. The condi-
+tional densities of prediction and smoothing are expressed in terms of filtering via the
+application of the general representation. The prediction and smoothing of a random
+process with linear dynamics and arbitrary a priori distribution are given to illustrate the
+applicability of the previous results in obtaining effectively computable formulas.
+
+1. INTRODUCTION
+
+As the title indicates, this paper complements [1 ], but maintains a format
+so that it may be read independently. We shall primarily be concerned with the
+case of optimal estimation for a continuous or discrete-time Markovian signal
+process,^, from discrete-time observations contained in white Gaussian noise.
+The observation process is described by the following random difference
+equation
+
+z,=h(x(t,),ti)+Vi, i= 1,2,---,
+
+where {f;}is a sequence of zero-mean Gaussian random variables independent of
+x, with variance &amp;r,i^' = o,^,.
+
+The fundamental result of this paper is a generalized representation theorem
+obtained in Section 2. It generalizes a well-known representation for the condi-
+
+*This work was supported in part by the U.S. Army Contract DA-31-124-ARO(D) 394
+and NASA Grant NGL 05-020-073 while the author was at Stanford University, and by the
+U.S. Office of Naval Research under the Joint Services Electronics Program by Contract
+N00014-67-A-0298-0006 while the author was at Harvard University.
+
+This work was presented at the 1970 IEEE Symp. Adaptive Processes: Decision and
+Control, Austin, Texas (see [3]).
+
+© American Eisevier Publishing Company, Inc., 1974
+
+2                                                  JAMES TING-HO LO
+
+tional probability density in the case of filtering (see [2], p. 58) to a similar
+representation for the case of general estimation. Its proof is a straight-
+forward application of the Bayes rule. This generalization is the cornerstone for
+this paper since it facilitiates other results of interest.
+
+Thus, in Section 3, an explicit formula for the conditional density of predic-
+tion in terms of the conditional density of filtering is obtained by using our
+general representation. This formula resembles the well-known Chapman-
+Kolmogorov equation for the transition density. Consequently, this leads to the
+second result of this section, a general Chapman-Kolmogorov equation which
+can easily be proved by the Markov property and the smoothing property of the
+conditional expectation.
+
+In Section 4, two formulas for the conditional density of smoothing are
+derived by applying the general representation theorem. One is expressed in
+terms of prediction and parameter estimation, while the other is expressed in
+terms of filtering only.
+
+In Section 5, the optimal prediction and smoothing problems for a Markov
+process with linear dynamics and arbitrary a priori distribution are resolved.
+This section illustrates the applicability of the results obtained in previous sec-
+tions to deduce effectively computable formulas for optimal smoothing and
+prediction.
+
+2. A GENERAL REPRESENTATION FOR THE CONDITIONAL DENSITY
+
+Simply applying the Bayes rule, we obtain the following theorem which is
+of central interest in optimal estimation from discrete-time observation.
+
+THEOREM 1. Let x(') be a real-valued, finite dimensional, continuous-time
+or discrete-time vector random signal process, {v i = 1, 2,...} be a sequence of
+zero-mean Guassian random variables with variance Siw' = o,,/?,, and indepen-
+dent ofx{-),
+
+T = a fixed set {r,,..., rJ,
+
+r'=afixedset{r'i,...,T,},
+X(T)=(X^),...,X(T^)),
+
+T?(D=(îh,...,T?,).
+
+If the observation process is described by the random difference equation,
+
+z,=h(x(t,),t,)+v ; =1,2,...,                    (1)
+then the conditional joint probability density may be expressed by the following
+Px(T)(.r&gt;T\Z(.l,n),x(r)^S;r')-
+
+&amp;(exp H(\ ,n)\x(T) ^ ^r,x(f) = ^r-)^(r)(T?rl^) = ^r)
+
+&amp;(expH(l,n)\x(r)=^r')               ()
+
+OPTIMAL NONLINEAR ESTIMATION                                      3
+
+where
+
+Z(l,^)={z...,z},                                     (3)
+
+H(l ,n) = - ^ f; || h(x(t,), ?,)||2   + ^ A'(x(/,), ?,)^,-1 z          (4)
+
+^ v x ' " R' 1=1
+
+and róe expectation a ;',$ tó/:en w;&lt;7; Z being held fixed.
+
+Proof. By the smoothing property of the conditional expectation,
+
+p(Z(i,n)lx(r)=T?r,^r')=^')=
+
+= E(p(Z(l,n)l^(r) = T?r,^) = ^^(^),
+
+;=l,..,n)lx(r)=^X7')=Sr').            (5)
+Since v. is independent of.x.,
+
+p(Z(l ,n)l^r) = îîr^(r') = Sr',^,), '= 1 ,...,")=
+
+=/:exp(- ^ ||z,- /!(^;),r,)l|2,') .        (6)
+
+Applying the Bayes rule, we obtain
+Px(T)(^^T\Z(l,n),x(r)=iiT)=
+
+_ p(Z(l ,n)\x(T) = 7?r,^) = gr')P^r)(î?rl^(r') = ^)
+
+p(Z(l,«)lx(r)=^)               '
+Substituting (5) and (6) into (7), we completed the proof.
+
+3. OPTIMAL NONLINEAR PREDICTION
+
+A general Chapman-Kolmogorov equation, which expresses the conditional
+density of prediction in terms of that of filtering for both continuous and
+discrete-time systems, was presented in [1]. Nevertheless, in this section we
+will derive it for the case considered in this article by applying Theorem 1 and
+restate the general theorem for the sake of completeness of this article as well as
+for the convenience of the reader.
+
+THEOREM 2. Consider the nonlinear model described m Theorem 1. As-
+sume that x. is a Markov process. Given the conditional density of filtering, the
+conditional density of prediction px(r)(T]\Z(\ ,n)),for r &gt; tn, may easily be
+calculated by the equation
+
+P^)(T;IZ(I ,n))=jp^r)(ri\x(t^) = S)p^)(^IZ(l ,n})d^.
+
+,")) = I Px(r)Wt^) = ^p^)(^Z(l ,n))^. (8)
+
+4                                                    JAMES TING-HO LO
+
+Proof. By Theorem 1 we have
+
+&amp;(expH(l,n)\x(T)=n)px(r)(-n)
+P-&lt;T&gt;(Î?IZ(1 ") = S(exp^(l..))            (9)
+
+By the Markov property ofx. and the smoothing property of the conditional
+expectation, we obtain
+
+P^)(T?IZ(l,«))=
+
+_ r ê(exptf(l ,n)\x(r} = ri,x(t^) = ^Px(r)(^)Px(tn)WT) = T?)
+J                    Ê(exp//(l,»))
+
+=fw^(l,"))p-ï(T)(^^                d")
+
+J                       PxÇtn)'^'
+Applying the Bayes rule we obtain (8), the desired result.
+
+THEOREM 3. Let x. bean n-vector Markov process {continuous or discrete-
+time}. Then, given any a-field Sy, which is independent ofx^ for all s &gt; t, the
+conditional density of prediction, py_^ (r] 12,) for T &gt; t, satisfies the equation
+
+P^(i?l^)=^(r?lx,=7?)p^(;;l2,)u?T?.               (11)
+
+Proof. By the smoothing property we have
+
+p,/îîl2;,)=Ê(p^lS^)IS,).                   (12)
+Since S, is independent ofx; for all s &gt; t, the Markov property ofx implies
+
+Px^\'st,Xt)=Pxr(r^\xt)                         (I3)
+
+4. OPTIMAL NONLINEAR SMOOTHING
+
+In this section we consider the nonlinear model described in Theorem 1.
+Two formulas for the conditional density of smoothing are derived. One is
+expressed in terms of prediction and parameter estimation and another in terms
+of filtering only.
+
+THEOREM 4. Assume that x. is a Markov process. Then the conditional
+density of smoothing p Jc(r^r]\Z{\,n)), for T &lt; t n, is equal to the product o f the
+conditional density of prediction Px^i^Z^ &gt;?l'))&gt; where tn is the maximal
+element of {ti, t^,...} such that t^' ^ T, and the conditional density of
+parameter estimation Px(T) (7? \Z(n' + 1, n)) divided by the density px&lt;T) ûr/îûf tne
+normalizing constant K, i. e.,
+
+, ,-  px(r)Wl,n'))p^\Z(n' + 1,«))
+Px(r)WZ(l,n)) = -^ ,        (14)
+
+^Px^W
+
+OPTIMAL NONLINEAR ESTIMATION                                       5
+
+where
+
+ ÇPx(r)WZ(l ,n))p^)('n\Z(n' + l,«))
+
+A -    dri.
+
+J                       PX(T)W
+
+Proof. By Theorem 1 we have
+
+, ,-  &amp;(expH(ï,n)\x(T)=ii)p^)(n)
+^(T?IZ(1 '")) ~- S(exp//(l,.))          (15)
+
+By the Markov property ofx we obtain
+
+&amp;(exp//(l,n)lx(T)= T?) = &amp;(exp//(l,n')lx(T) = 'n)&amp; (ex p H(n'-+ \,n)\x(r) = n).
+
+(16)
+Substituting this into (15) and then applying Theorem 1 again, we obtain (14).
+
+THEOREM 5. Assume x. is Markovian. The conditional density of smoothing
+p^(r]\Z(l ,n)), where T &lt; t may be expressed in terms of the conditional
+density o f filtering as follows,
+
+p^\Z(\,n))=fp^\x(t^=^p^,föZ(Ï,n'))d!;   f\ n    (17)
+
+-                                           i'=n'+l
+
+where
+
+[w^,i,z,)p^\x(T) = r?,Z(U - 1))^
+
+Î2, = ..                (18)
+
+^(U,Zi)p^\Z{\,i- 1))^
+
+W(xi,Zi) = exp(- ^ \\h(xi)\\2   + h'CXiWz,),             (19)
+^i
+
+and tn is the maximal element of {ti, ti,...} such that tn' &lt; T, and Xi = x(t,).
+Proof. By the smoothing property of the conditional expectation we have
+
+&amp; (exp H(\ ,n)\x(T) = n) = ( Ê (exp //(! ,n)\x(r) = n,x(t^) = C)
+
+Px(t,)WT)=ri)dH= jw(Si,n,z^)
+
+&amp;(expH(l,n- l)lx(T)=7i,x(/)=0
+
+P.(r,)fôl^)=îî)^.               (20)
+
+6                                                     JAMES TING-HO LO
+
+Applying Theorem 1, we have
+E(exp H(\ ,n)\x(r} = n) = Ê (exp H(\ ,n - l)lx(r) = T?)
+
+J^a,n,z)p^ai^(r)=T?,Z(l,n- l))dr,. (21)
+Similarly, we obtain
+
+E(exp H(l,n)) = &amp;(exp /(!,« - 1))  jw^,n,z^p^^\Z(\,n - l))drf. (22)
+
+Substituting (20) and (21) into (15), we obtain
+
+P^)O?IZ(I,«)) = P,(,)(T?IZ(I ,n - 1))S2.               (23)
+Hence,
+
+p^)0?IZ(l,«))=p^)(7?IZ(l,«')) n ",-             (24)
+iW+i
+
+Since .x. is Markovian, we may apply Theorem 2 and obtain
+
+p^\Z(\,n')) = fp^\x(t,) = S)p^,)(SlZ(l,n'))^.
+
+5. SYSTEMS WITH LINEAR DYNAMICS AND ARBITRARY A PRIORI
+DISTRIBUTION
+
+In [4], the optimal filtering problem for continuous-time systems with linear
+dynamics and arbitrary a priori distribution was solved. Its discrete-time
+analogue can be solved in exactly the same way. This discrete-time problem was
+considered by Sorenson and Alspach [5], Lo [3], Lainiotis, Park and Krishnaiah
+[6]. The solution is included here simply to facilitate our results for smoothing
+and prediction, which illustrate the applicability of the previous results to ob-
+tain computable expressions of the optimal estimates.
+
+Let {.»: i = O, l,...} and {z i = O, l,...} be the w-dimensional signal
+process and the r-dimensional process, respectively, satisfying the random dif-
+ference equations
+
+.ï,=&lt;î&gt;0',/- l ).&lt;:,_ i +^                          (25)
+
+-"o = c,                                       (26)
+Zi=H,x,+v                                (27)
+
+OPTIMAL NONLINEAR ESTIMATION                                      7
+
+whf e {u,,; =1,2,...} and {ü,,; = l, 2,.. .} are discrete Gaussian white-noise
+semences with zero mean, which are uncorrelated and satisfy
+
+&amp;u,u',=8Qi,                        (28)
+êü;ü;=5,/?                        (29)
+
+with o,, being the Kronecker delta function.
+We will adopt the following notations:
+
+F(0^)exp(-?lle-^M,||^,)^
+
+L(f(Y),t) = rt-.            (30)
+
+J^)exp(-}||§- VtM,\\ ^)dH
+
+Zn = {zi,Z2,...,Z} ,                         (31)
+
+^-i - ^ [^'(iß^R^Hi^iß) +A'i.^&lt;h'fi -
+1=1
+
+^^Z [^(iflW^Wiffl+A',.^,!- l^o'O'lî- l)
+
+^;-i-/l;.-i$'0-,i- OPo'O'l'- l)(?l//;+PolOl^- l))''
+
+PO'O'I'- l)-r0',&lt;- IM,-,],                               (32)
+
+Mn=Z [^'(iMR^Zi-A'^ $(,;- l)?^^^'- 1)W- 1)
+
+$?-, +A;..i«ï&gt;'o-,;- i^o'o'i;- ixw^+wi;- i)r1
+
+ (T/^-'z, +/'o'0'l'- 1)^0',;- D^-i )],                     (33)
+j?^$(«,/i- l)^-i +^(z-/$(«,«- l)^.i),     (34)
+J?g=0,                                             (35)
+An = &lt;!&gt;(«,« - lM.i - K°,H&lt;S&gt;(n,0),                   (36)
+^o = 0,                                             (37)
+K°,=Po(n\n- ïWH^(n\n- 1)^+/?J-1,          (38)
+P^n\n- 1) =$(«,«- l)Po("- 1)$'(",M- l)+û,              (39)
+^o(")=(/- ^//)^o("l"- 1)0- KW+K^K0,',     (40)
+^o(O)= 0,                                             (41)
+$fcl=Ê(^IZ),                                      (42)
+
+^I^ÊK^-^I«)^-^!")'^]-                    (43)
+
+8                                                   JAMES TING-HO LO
+
+THEOREM 6. The conditional density p ^ (^\Zn) of filtering may be ex-
+pressed as follows:
+
+Idetpo'O!)!172
+P.(SIZ)=    ^ ^    ^(exp(- ^IIS- Wn,0)+A^)y- W^ ^n).
+
+(44)
+^
+77;e conditional mean $ In an^ ^e conditional error covariance En in ^^^ ^e
+
+expressed as follows:
+
+x,^=x°,+(&lt;î&gt;(n,0)+A^L(y,n).                 (45)
+f n In =po(")+W",0)+A)(LOy,n)- £(.y,«)L(/,«))(&lt;î&gt;(",0)+Ay. (46)
+
+J'rocy; Applying Theorem 1 of this paper, and following strictly the proof of
+Theorem 4.1 and Theorem 4.2 of [4] yield the proof.
+Let us first consider the prediction problem.
+
+THEOREM 7. The conditional density of prediction may be expressed as
+follows: for k &gt; n,
+
+Px^^n) = ( Pxic^n = ^Pxn^n)^,               (47)
+where
+
+IdetUt'l172
+Px,(n\x, =0= T-exp(- ^||r?- &lt;Î&gt;(M)SII^,),         (48)
+
+Qk= ^ &lt;i&gt;(Mo,&lt;f'(^,0-                       (49)
+
+i=n+l
+
+/Voo/ This theorem is an immediate result of Theorem 2 and Theorem 6.
+
+THEOREM 8. The optimal predicting estimate and its conditional error co-
+variance may be calculated as follows: for k &gt; n,
+
+$k in = &lt;î&gt;(M)^ + (&lt;iW) + &lt;S&gt;(k,n)A^)L(y,n),            (50)
+Ek \n = Qk + $(M)^o(")&lt;i''(M) + (i'^,0) + f(.k,n)A^
+
+ (L(yy',n) - L(y,n)L(y',n)) (4&gt;(A:,0) + ^(k,n)A^', (51)
+
+/'roo/ This theorem is an immediate result of the last theorem.
+Let us now consider the smoothing problem.
+
+THEOREM 9. The conditional density of smoothing may be expressed as
+follows: for k &lt; n,
+
+OPTIMAL NONLINEAR ESTIMATION                                  9
+p,^T?IZ)=/:Z(exp(- ^||T?- ($(n,0)+A)&gt;'- ^||2    ), n)
+
+^0   v71-'
+
+ exp(-^'^î? + î?'5J, (52)
+wAere
+
+^= Z (V/'(;-UW,;-l)(Po'0'l&lt;-^-PO'O'I'-1)
+
+i=A:+l
+
+(//,/î,-l//,+/îo-l(l;- l))-1^^;!;- 1))
+
+W- DV/O-- !,/:)),                                   (53)
+
+ß«= a w- i,w^- iw^'i'- l)(W^-l^+/'ol(^l^- i)r1
+(=fc+i
+
+(//;7?,-lz,+7îol(^l^- 1)&lt;Î&gt;(^- 1)$?-,)- &lt;i&gt;(^- l)^-i)),      (54)
+
+^0'^)= Z ($(;,;-l)-A:?//,&lt;t&gt;(;,/-l)),              (55)
+(=fc+i
+
+^ =$(/,- l)î?., +^(z,-//,&lt;&amp;0\;- 1)$?.,),            (56)
+^=0                                              (57)
+/(:? =P^(i\i- l)H',(H,P^i\i- 1)//; +Ä,)-',             (58)
+
+40'1;- l)-^^,;- l)^(i- l)^^'- l)+ö                 (59)
+P^(i) = (/ - K,H,)PS(i \i - l ) (/ - /;,/,)' + ^,7?,^;.,          (60)
+^W=0,                                              (61)
+anûf À' is the normalizing constant which may easily be determined from (5).
+
+Proof. From the Kalman-Bucy theory we know
+Idet^qii- I)!-172
+
+(27T)'"/2'
+
+exp(- ^ |C- $(,;- l)^i II2 k         ), (62)
+
+'.'0 (.'l' - l II
+
+where
+
+Substituting (44) and (62) into the numerator of the right-hand side of (17), we
+obtain (52).
+
+10                                                  JAMES TING-HO LO
+
+THEOREM 10. The optimal smoothing estimate and its conditional error co-
+variance may be calculated as follows: for k&lt;n,
+
+^k !=(/+ PoW^-1 [ ^ + P^Wn + (&lt;i&gt;(«,0) + A^L, (y)]
+
+^l»:;(/+-Po(")^rl[Po(")+(tî&gt;(",0)+^)(^l(^')-/.lM    (63)
+Li(/))($(«,0)+^l)'(/+üPo("))-1],                 (64)
+where
+
+L^f(y)) =L(/OOexp(^||(«i&gt;(n,0) +A^)y ^P^n}B,\\-    ,
+'oV)
+
+-^\\Wn,0)+A,)y+W_   ),n),                 (65)
+
+-0   ^î
+
+and
+
+Po(n)=Po(n)+Po(ii)D^Po(n),                   (66)
+other symbols are defined as in Theorem 9.
+
+Proof. This theorem is an immediate result of Theorem 9.
+
+REFERENCES
+
+1. J. T. Lo, On optimal nonlinear estimation-Part I: continuous observation, Proc. 8th
+Annual Allerton Conf. on Circuit and System Theory (1970), and Information
+Sciences 6, pp. 19-32 (1973).
+
+2. R. S. Bucy and P. D. Joseph, Filtering for Stochastic Processes with Application to
+Guidance, Interscience, New York (1968).
+
+3. J. T. Lo, On optimal nonlinear estimation-Part II: discrete observation, Proc. 1970
+IEEE Symp. Adaptive Processes (9th), Decision and Control, pp. 19, 2.1-2.4, (1970).
+
+4. J. T. Lo, Finite dimensional sensor orbits and optimal nonlinear filtering. Thesis, De-
+partment of Aerospace Engineering, Univ. of So. Calif. (1969), and IEEE Trans. IT-18,
+No. 5, pp. 583-588 (1972).
+
+5. H. W. Sorenson and D. L. Alspach, Gaussian approximations for nonlinear filtering,
+Proc. 1970 IEEE Symp. Adaptive Processes (9th), Decision and Control, pp. 19 3.1-
+3.9 (1970).
+
+6. D. G. Lainiotis, S. K. Park and R. Krishnaiah, Optimal state-vector, Trans. IEEE, AC-16,
+2, pp. 197-198 (1971).
+
+7. R. S. Bucy, Nonlinear filtering theory, IEEE Trans., AC-10, p. 198 (1965).
+
+8. Y. C. Ho and R. C. K. Lee, A Bayesian approach to problems in stochastic estimation
+and control, IEEE Trans. Automatic Control, pp. 333-339 (1964).
+
+9. A. H. Jazwinski, Nonlinear filtering with discrete observations. Paper No. 66-38, AIAA
+
+3rd Aerospace Sciences Meeting, New York (1966).
+
+10. R. E. Kaiman, A new approach to linear filtering and prediction problems, J. Basic
+Engineering, 52, pp. 34-^5 (1960).
+
+Received May 30, 1972</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="fla" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900024</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90002-4</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90002-4</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:article-footnote xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:label>☆</ce:label>
+				<ce:note-para>This work was supported in part by the U.S. Army Contract DA-31-124-AR0(D) 394 and NASA Grant NGL 05-020-073 while the author was at Stanford University, and by the U.S. Office of Naval Research under the Joint Services Electronics Program by Contract N00014-67-A-0298-0006 while the author was at Harvard University.</ce:note-para>
+				<ce:note-para>This work was presented at the 1970 IEEE Symp. Adaptive Processes: Decision and Control, Austin, Texas (see [3]).</ce:note-para>
+			</ce:article-footnote>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">On optimal nonlinear estimation — Part II: Discrete observation</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>James Ting-Ho</ce:given-name>
+					<ce:surname>Lo</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Division of Mathematics and Physics, University of Maryland, Baltimore County, Baltimore, Md. 21228 USA</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:date-received day="30" month="5" year="1972" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:miscellaneous xmlns:ce="http://www.elsevier.com/xml/common/schema">Communicated by John M. Richardson</ce:miscellaneous>
+			<ce:abstract class="author" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para view="all">A general representation for the joint conditional probability density of an arbitrary random signal process under discrete-time observation is obtained. This representation forms the cornerstone of the paper, and from it all other results are deduced. The conditional densities of prediction and smoothing are expressed in terms of filtering via the application of the general representation. The prediction and smoothing of a random process with linear dynamics and arbitrary 
+						<ce:italic>a priori</ce:italic> distribution are given to illustrate the applicability of the previous results in obtaining effectively computable formulas.
+					</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On optimal nonlinear estimation-Part I: continuous observation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 8th Annual Allerton Conf. on Circuit and System Theory</sb:maintitle>
+									</sb:title>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Information Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>6</sb:volume-nr>
+									</sb:series>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>19</sb:first-page>
+									<sb:last-page>32</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.D.</ce:given-name>
+										<ce:surname>Joseph</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Filtering for Stochastic Processes with Application to Guidance</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>Interscience</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On optimal nonlinear estimation-Part II: discrete observation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1970 IEEE Symp. Adaptive Processes (9th)</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Decision and Control</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>19</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On optimal nonlinear estimation-Part II: discrete observation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1970 IEEE Symp. Adaptive Processes (9th)</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Decision and Control</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>2.1</sb:first-page>
+									<sb:last-page>2.4</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Finite dimensional sensor orbits and optimal nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Thesis</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>Department of Aerospace Engineering, Univ. of So. Calif</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. IT-18</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:issue-nr>No. 5</sb:issue-nr>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>583</sb:first-page>
+									<sb:last-page>588</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Gaussian approximations for nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1970 IEEE Symp. Adaptive Processes (9th)</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Decision and Control</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>19</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Sorenson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Alspach</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Gaussian approximations for nonlinear filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 1970 IEEE Symp. Adaptive Processes (9th)</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Decision and Control</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>3.1</sb:first-page>
+									<sb:last-page>3.9</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Krishnaiah</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal state-vector</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Trans. IEEE</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>197</sb:first-page>
+									<sb:last-page>198</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB7">
+						<ce:label>7.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear filtering theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-10</sb:volume-nr>
+									</sb:series>
+									<sb:date>1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>198</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB8">
+						<ce:label>8.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.C.</ce:given-name>
+										<ce:surname>Ho</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.C.K.</ce:given-name>
+										<ce:surname>Lee</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Bayesian approach to problems in stochastic estimation and control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Automatic Control</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1964</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>333</sb:first-page>
+									<sb:last-page>339</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB9">
+						<ce:label>9.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.H.</ce:given-name>
+										<ce:surname>Jazwinski</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear filtering with discrete observations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:comment>Paper No. 66-38</sb:comment>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>AIAA 3rd Aerospace Sciences Meeting</sb:maintitle>
+									</sb:title>
+									<sb:conference>New York</sb:conference>
+									<sb:date>1966</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB10">
+						<ce:label>10.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Kaiman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A new approach to linear filtering and prediction problems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Basic Engineering</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>82</sb:volume-nr>
+									</sb:series>
+									<sb:date>1960</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>34</sb:first-page>
+									<sb:last-page>45</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>

@@ -1,0 +1,280 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90022-X"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Author index to volume 7</dc:title><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 365-366. doi:10.1016/0020-0255(74)90022-X</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © 1974 Published by Elsevier Inc. All rights reserved.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">365-366</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">365</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">366</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90022-X</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90022-X</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90022-X</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>Author Index to Volume 7
+
+365
+
+Alspach, D. L.
+
+(Gaussian Sum Approximations in Non-
+linear Filtering and Control), 271
+Deshpande, J. G.
+
+(see Lainiotis, D. G., 291)
+Ephremides, A., and Thomas, J. B.
+
+(On Random Processes Linearly Equivalent
+
+to White Noise), 133
+Kashyap, R. L.
+
+(Minimax Estimation With Divergence Loss
+
+Function), 341
+Kitahashi, T.
+
+(see Takeuchi, A., 81)
+Kohavi, I.
+
+(see Kohavi, Z., 11)
+Kohavi, Z., Rivierre, J. A., and Kohavi, I.
+
+(Checking Experiments for Sequential Ma-
+chines), 11
+Lainiotis, D. G.
+
+(Estimation: A Brief Summary), 191
+Lainiotis, D. G-, and Deshpande, J. G.
+
+(Parameter Estimation Using Splines),
+
+291
+Lainiotis, D. G.
+
+(Partitioned Estimation Algorithms, I:
+
+Nonlinear Estimation), 203
+Lainiotis, D. G.
+
+(Partitioned Estimation Algorithms, II:
+
+Linear Estimation), 317
+Lo, J. T.
+
+(On Optimal Nonlinear Estimation Part II:
+
+Discrete Observation), 1
+Montanari, U.
+
+(Networks of Constraints: Fundamental
+
+Properties and Applications to Picture
+
+Processing), 95
+
+Reiter, R.
+(On Self-Modifying Programs), 157
+
+Richardson, J. M.
+
+(The Implicit Conditioning Method in
+Statistical Mechanics), 237
+
+Rivierre, J. A.
+(see Kohavi, Z., 11)
+
+Sage, A. P.
+(see Smith, N. J., 49)
+
+Schwartz, L.
+
+(Sequential Estimation with Unestimated
+Parameters-the Fallacy), 185
+
+Smith, N. J., and Sage, A. P.
+(Hierarchical Structuring for System Iden-
+tification), 49
+
+Sorenson, H. W.
+
+(On the Development of Practical Non-
+linear Filters), 253
+
+Takeuchi, A., Kitahashi, T., and Tanaka, K.
+(Two-Automata Games), 81
+
+Tamura, S., and Tanaka, K.
+(Note on Analogue Memory Automata),
+73
+
+Tanaka, K.
+
+(see Takeuchi, A.), 81
+(see Tamura, S.), 73
+
+Thomas, J. B.
+(see Ephremides, A.), 133
+
+Wernersson, A.
+
+(On Pursuit and Feedback in Optimal
+Stochastic   Control-Explicit   Control
+Laws), 29
+
+Whittemore, B. J., and Yovits, M. C.
+(The Quantification and Analysis of Infor-
+mation Used in Decision Processes), 171
+
+Yovits, M. C.
+(see Whittemore, B. J.), 171
+
+Title Index to Volume 7
+
+Algorithms, estimation
+
+(Lainiotis), 203, 317
+Analogue Memory Automata
+
+(Tamura and Tanaka), 73
+
+Conditioning Method, implicit
+
+(Richardson), 237
+Constraints,
+
+Picture processing (Montanari), 95
+
+366
+
+Control Laws
+
+(Wernersson), 29
+Decision Processes
+
+(Whittemore and Yovits), 171
+Discrete Observation
+
+(Lo), 1
+Divergence Loss Function
+
+(Kashyap), 341
+Estimation
+
+Algorithms, partitioned (Lainiotis), 203,
+317
+
+Brief Survey (Lainiotis), 191
+
+Linear (Lainiotis), 317
+
+Minimax (Kashyap), 341
+
+Nonlinear (Lainiotis), (Lo), 1
+
+Parameter (Deshpande and Lainiotis), 291
+
+Sequential (Schwartz), 185
+Experiments, checking
+
+(Kohavi et al), 11
+Explicit Control Laws
+
+(Wernersson), 29
+Feedback,
+
+in Optimal Stochastic Control (Werners-
+son), 29
+Games, two-automata
+
+(Takeuchi,etal),81
+Gaussian Sum Approximations
+
+(Alspach), 271
+Hierarchical Structuring
+
+(Smith and Sage), 49
+Implicit Conditioning Method
+
+(Richardson), 237
+Information Quantification
+
+and Analysis (Whittemore and Yovits),
+
+171
+Linear Estimation
+
+(Lainiotis), 317
+Machines, sequential
+
+(Kohavi et al), 11
+Memory, analog
+
+(Tamura and Tanaka), 73
+Minimax Estimation
+
+(Kashyap), 341
+
+Networks of Constraints
+
+(Montanari), 95
+Nonlinear Estimation
+
+(Lo), 1, (Lainiotis), 203
+Nonlinear Filters; Filtering
+
+(Alspach), 271, (Sorenson), 253
+Optimal Stochastic Control
+
+(Wernersson), 29
+Optimal Nonlinear Estimation
+
+(Lo),l
+Parameter Estimation
+
+(Lainiotis and Deshpande), 291
+Partitioned Estimation Algorithm
+
+(Lainiotis), 203, 317
+Picture Processing
+
+(Montanari), 95
+Processes
+
+Random (Ephremides and Thomas), 133
+
+Decision (Whittemore and Yovits), 171
+Random Processes
+
+(Ephremides and Thomas), 133
+Self-Modifying Programs
+
+(Reiter), 157
+Sequential Estimation
+
+(Schwartz), 185
+Sequential Machines
+
+(Kohavi, et al), 11
+Splines
+
+(Lainiotis and Deshpande), 291
+Statistical Mechanics
+
+(Richardson), 237
+Stochastic Control
+
+(Wernersson), 29
+Structuring, Hierarchical
+
+(Smith and Sage), 49
+System Identification
+
+(Smith and Sage), 49
+Two-Automata Games
+
+(Takeuchi,etal),81
+Unestimated Parameters
+
+(Schwartz), 185
+White Noise
+
+(Ephremides and Thomas), 133</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="mis" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>7490022X</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90022-X</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90022-X</ce:doi>
+			<ce:copyright type="other" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Author index to volume 7</ce:title>
+		</cja:head>
+	</cja:converted-article></doc:document>

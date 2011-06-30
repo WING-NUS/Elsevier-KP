@@ -1,0 +1,2196 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/j.ins.2011.04.022"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Two neuro-fuzzy control schemes for a traffic-regulating buffer in wireless technology</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>H.B. Kazemian</rdf:li></rdf:Seq></dc:creator><dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Bag><rdf:li>Arrival rate neuro-fuzzy</rdf:li><rdf:li>Departure rate neuro-fuzzy</rdf:li><rdf:li>Traffic-regulating buffer</rdf:li><rdf:li>MPEG</rdf:li><rdf:li>2.4-GHz wireless frequency</rdf:li></rdf:Bag></dc:subject><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 181 (2011) 3476-3490. doi:10.1016/j.ins.2011.04.022</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © 2011 Elsevier Inc. All rights reserved.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">181</prism:volume><prism:number xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">16</prism:number><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">2011</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">2011</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">3476-3490</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">3476</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">3490</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/j.ins.2011.04.022</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/j.ins.2011.04.022</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/j.ins.2011.04.022</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S300.1</dp:version-number></dp:document-properties><ja:article docsubtype="fla" xml:lang="en" version="5.1" xmlns:ja="http://www.elsevier.com/xml/ja/schema">
+		<ja:item-info>
+			<ja:jid>INS</ja:jid>
+			<ja:aid>9073</ja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">S0020-0255(11)00196-4</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/j.ins.2011.04.022</ce:doi>
+			<ce:copyright type="full-transfer" year="2011" xmlns:ce="http://www.elsevier.com/xml/common/schema">Elsevier Inc.</ce:copyright>
+		</ja:item-info>
+		<ce:floats xmlns:ce="http://www.elsevier.com/xml/common/schema">
+			<ce:figure id="f0005">
+				<ce:label>Fig. 1</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp010" view="all">MPEG, 12-frame GOP.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr1"/>
+			</ce:figure>
+			<ce:figure id="f0010">
+				<ce:label>Fig. 2</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp015" view="all">Two neuro-fuzzy control schemes for a traffic-regulating buffer.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr2"/>
+			</ce:figure>
+			<ce:figure id="f0015">
+				<ce:label>Fig. 3</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp020" view="all">Membership functions of a fuzzy variable mean queue.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr3"/>
+			</ce:figure>
+			<ce:figure id="f0020">
+				<ce:label>Fig. 4</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp025" view="all">Data flows to and from the traffic regulator.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr4"/>
+			</ce:figure>
+			<ce:figure id="f0025">
+				<ce:label>Fig. 5</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp030" view="all">Superman Returns – comparison of GOP size for the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr5"/>
+			</ce:figure>
+			<ce:figure id="f0030">
+				<ce:label>Fig. 6</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp035" view="all">Superman Returns – probability density of GOP size for the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr6"/>
+			</ce:figure>
+			<ce:figure id="f0035">
+				<ce:label>Fig. 7</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp040" view="all">Superman Returns – conventional VBR system for arrival rate (
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>) and actual transmission rate (
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr7"/>
+			</ce:figure>
+			<ce:figure id="f0040">
+				<ce:label>Fig. 8</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp045" view="all">Superman Returns – conventional VBR system for token bucket (available space).</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr8"/>
+			</ce:figure>
+			<ce:figure id="f0045">
+				<ce:label>Fig. 9</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp050" view="all">Superman Returns – NF systems results for the traffic regulator arrival rate (
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>), traffic regulator departure rate (
+						<ce:italic>R
+							<ce:inf loc="post">d</ce:inf>
+						</ce:italic>), and actual transmission rate (
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr9"/>
+			</ce:figure>
+			<ce:figure id="f0050">
+				<ce:label>Fig. 10</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp055" view="all">Superman Returns – traffic regulator queue length and token bucket for NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr10"/>
+			</ce:figure>
+			<ce:figure id="f0055">
+				<ce:label>Fig. 11</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp060" view="all">Superman Returns – overall buffer availability for NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr11"/>
+			</ce:figure>
+			<ce:figure id="f0060">
+				<ce:label>Fig. 12</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp065" view="all">The Santa Clause 3 – comparison of GOP size for the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr12"/>
+			</ce:figure>
+			<ce:figure id="f0065">
+				<ce:label>Fig. 13</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp070" view="all">The Santa Clause 3 – probability density of GOP size for the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr13"/>
+			</ce:figure>
+			<ce:figure id="f0070">
+				<ce:label>Fig. 14</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp075" view="all">The Santa Clause 3 – conventional VBR system for arrival rate (
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>) and actual transmission rate (
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr14"/>
+			</ce:figure>
+			<ce:figure id="f0075">
+				<ce:label>Fig. 15</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp080" view="all">The Santa Clause 3 – conventional VBR system for token bucket (available space).</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr15"/>
+			</ce:figure>
+			<ce:figure id="f0080">
+				<ce:label>Fig. 16</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp085" view="all">The Santa Clause 3 – NF systems results for traffic regulator arrival rate (
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>), traffic regulator departure rate (
+						<ce:italic>R
+							<ce:inf loc="post">d</ce:inf>
+						</ce:italic>), and actual transmission rate (
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr16"/>
+			</ce:figure>
+			<ce:figure id="f0085">
+				<ce:label>Fig. 17</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp090" view="all">The Santa Clause 3 – traffic regulator queue length and token bucket for NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr17"/>
+			</ce:figure>
+			<ce:figure id="f0090">
+				<ce:label>Fig. 18</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp095" view="all">The Santa Clause 3 – overall buffer availability for NF systems.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr18"/>
+			</ce:figure>
+			<ce:table frame="topbot" id="t0005" rowsep="0" colsep="0">
+				<ce:label>Table 1</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp100" view="all">Rules in the NF scheme, 
+						<ce:italic>R
+							<ce:inf loc="post">D</ce:inf>
+						</ce:italic> is the departure rate from RBF1 and 
+						<ce:italic>R
+							<ce:inf loc="post">D</ce:inf>
+						</ce:italic>
+						<ce:inf loc="post">-</ce:inf>
+						<ce:italic>
+							<ce:inf loc="post">NF</ce:inf>
+						</ce:italic> is the departure rate from 
+						<ce:italic>NF</ce:italic>.
+					</ce:simple-para>
+				</ce:caption>
+				<cals:tgroup cols="1" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+					<cals:colspec colname="col1" align="left"/>
+					<cals:tbody>
+						<cals:row valign="top">
+							<ce:entry>1. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>2. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>3. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>4. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is saturated) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>5. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>6. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>7. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>8. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is saturated) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>9. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is empty) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>10. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is average) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>11. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>12. If (Token-bucket-
+								<ce:italic>Y</ce:italic>(
+								<ce:italic>f</ce:italic>) is full) and (Queue-
+								<ce:italic>X</ce:italic>(
+								<ce:italic>f</ce:italic>) is saturated) then (
+								<ce:italic>R
+									<ce:inf loc="post">D</ce:inf>
+								</ce:italic> is 
+								<ce:italic>R
+									<ce:inf loc="post">D-NF</ce:inf>
+								</ce:italic>)
+							</ce:entry>
+						</cals:row>
+					</cals:tbody>
+				</cals:tgroup>
+			</ce:table>
+			<ce:table frame="topbot" id="t0010" rowsep="0" colsep="0">
+				<ce:label>Table 2</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp105" view="all">Superman Returns – Comparison of simulation results from the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<cals:tgroup cols="3" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+					<cals:colspec colname="col1" align="left"/>
+					<cals:colspec colname="col2" align="char" char="."/>
+					<cals:colspec colname="col3" align="char" char="."/>
+					<cals:thead>
+						<cals:row rowsep="1" valign="top">
+							<ce:entry/>
+							<ce:entry>Conventional VBR system</ce:entry>
+							<ce:entry>Two NF schemes</ce:entry>
+						</cals:row>
+					</cals:thead>
+					<cals:tbody>
+						<cals:row valign="top">
+							<ce:entry>Standard deviation of GOP size (kbit)</ce:entry>
+							<ce:entry align="char" char=".">116.22</ce:entry>
+							<ce:entry align="char" char=".">55.76</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>Average GOP size (kbit)</ce:entry>
+							<ce:entry align="char" char=".">373</ce:entry>
+							<ce:entry align="char" char=".">439.5</ce:entry>
+						</cals:row>
+					</cals:tbody>
+				</cals:tgroup>
+			</ce:table>
+			<ce:table frame="topbot" id="t0015" rowsep="0" colsep="0">
+				<ce:label>Table 3</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp110" view="all">Superman Returns – summary of the simulation results from the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<cals:tgroup cols="3" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+					<cals:colspec colname="col1" align="left"/>
+					<cals:colspec colname="col2" align="left"/>
+					<cals:colspec colname="col3" align="left"/>
+					<cals:thead>
+						<cals:row rowsep="1" valign="top">
+							<ce:entry/>
+							<ce:entry>Conventional VBR system</ce:entry>
+							<ce:entry>Two NF schemes</ce:entry>
+						</cals:row>
+					</cals:thead>
+					<cals:tbody>
+						<cals:row valign="top">
+							<ce:entry>% of data dropped at the token bucket</ce:entry>
+							<ce:entry>2.6605</ce:entry>
+							<ce:entry>0</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>% of data dropped at the traffic regulator</ce:entry>
+							<ce:entry>N/A</ce:entry>
+							<ce:entry>0.4991</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>Total % of data dropped</ce:entry>
+							<ce:entry>2.6605</ce:entry>
+							<ce:entry>0.4991</ce:entry>
+						</cals:row>
+					</cals:tbody>
+				</cals:tgroup>
+			</ce:table>
+			<ce:table frame="topbot" id="t0020" rowsep="0" colsep="0">
+				<ce:label>Table 4</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp115" view="all">The Santa Clause 3 – comparison of simulation results from the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<cals:tgroup cols="3" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+					<cals:colspec colname="col1" align="left"/>
+					<cals:colspec colname="col2" align="char" char="."/>
+					<cals:colspec colname="col3" align="char" char="."/>
+					<cals:thead>
+						<cals:row rowsep="1" valign="top">
+							<ce:entry/>
+							<ce:entry>Conventional VBR system</ce:entry>
+							<ce:entry>Two NF schemes</ce:entry>
+						</cals:row>
+					</cals:thead>
+					<cals:tbody>
+						<cals:row valign="top">
+							<ce:entry>Standard deviation of GOP size (kbit)</ce:entry>
+							<ce:entry align="char" char=".">218.77</ce:entry>
+							<ce:entry align="char" char=".">30.49</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>Average GOP size (kbit)</ce:entry>
+							<ce:entry align="char" char=".">514.88</ce:entry>
+							<ce:entry align="char" char=".">466.26</ce:entry>
+						</cals:row>
+					</cals:tbody>
+				</cals:tgroup>
+			</ce:table>
+			<ce:table frame="topbot" id="t0025" rowsep="0" colsep="0">
+				<ce:label>Table 5</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp120" view="all">The Santa Clause 3 – summary of the simulation results from the VBR system and two NF systems.</ce:simple-para>
+				</ce:caption>
+				<cals:tgroup cols="3" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+					<cals:colspec colname="col1" align="left"/>
+					<cals:colspec colname="col2" align="left"/>
+					<cals:colspec colname="col3" align="left"/>
+					<cals:thead>
+						<cals:row rowsep="1" valign="top">
+							<ce:entry/>
+							<ce:entry>Conventional VBR system</ce:entry>
+							<ce:entry>Two NF schemes</ce:entry>
+						</cals:row>
+					</cals:thead>
+					<cals:tbody>
+						<cals:row valign="top">
+							<ce:entry>% of data dropped at the token bucket</ce:entry>
+							<ce:entry>10.6551</ce:entry>
+							<ce:entry>0</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>% of data dropped at the traffic regulator</ce:entry>
+							<ce:entry>N/A</ce:entry>
+							<ce:entry>0</ce:entry>
+						</cals:row>
+						<cals:row valign="top">
+							<ce:entry>Total % of data dropped</ce:entry>
+							<ce:entry>10.6551
+								<ce:hsp sp="0.25"/>
+							</ce:entry>
+							<ce:entry>0</ce:entry>
+						</cals:row>
+					</cals:tbody>
+				</cals:tgroup>
+			</ce:table>
+		</ce:floats>
+		<ja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Two neuro-fuzzy control schemes for a traffic-regulating buffer in wireless technology</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author biographyid="vt1">
+					<ce:given-name>H.B.</ce:given-name>
+					<ce:surname>Kazemian</ce:surname>
+					<ce:e-address type="email">h.kazemian@londonmet.ac.uk</ce:e-address>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Intelligent Systems Research Centre, Faculty of Computing, London Metropolitan University, Tower Building, 166-220 Holloway Road, London N7 8DB, UK</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+			<ce:date-received day="5" month="8" year="2009" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:date-revised day="8" month="12" year="2010" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:date-accepted day="14" month="4" year="2011" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:abstract class="author" xml:lang="en" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para id="sp005" view="all">Bluetooth wireless operates in 2.4-GHz Industrial Scientific and Medicine (ISM) frequency, which may interfere with other devices functioning within the same frequency band, such as WiFi. Furthermore, Moving Picture Expert Group (MPEG) variable bit rate (VBR) video demands larger and more stable bandwidth and may cause data loss and time delay as a result of the high variation in bit rate in Bluetooth channels with limited bandwidth. To address these issues, two new neuro-fuzzy schemes are developed to control the input and output of a buffer referred to here as the traffic-regulating buffer. Regarding the input of this buffer, a rule-based fuzzy scheme is introduced and supervised by a neural network technique as a master controller to monitor the arrival rate to the buffer. The output of the traffic-regulating buffer is observed by another rule-based fuzzy scheme and is supervised by a second neural network to monitor the departure rate. Computer simulation results demonstrate that the two proposed neuro-fuzzy models reduce standard deviation and excessive data loss, and they also show an improved picture quality as compared with conventional MPEG VBR video over a Bluetooth channel.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+			<ce:keywords class="keyword" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Keywords</ce:section-title>
+				<ce:keyword>
+					<ce:text>Arrival rate neuro-fuzzy</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>Departure rate neuro-fuzzy</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>Traffic-regulating buffer</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>MPEG</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>2.4-GHz wireless frequency</ce:text>
+				</ce:keyword>
+			</ce:keywords>
+		</ja:head>
+		<ja:body view="all">
+			<ce:sections xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section id="s0005" view="all">
+					<ce:label>1</ce:label>
+					<ce:section-title>Introduction</ce:section-title>
+					<ce:para id="p0005" view="all">Soft computing techniques, such as neural networks, fuzzy logic and neuro-fuzzy, are suitable for non-linear, poorly defined, unpredictable and imprecise systems. Due to uncertainty of data transmission and distribution over wired and wireless technology, artificial neural networks 
+						<ce:cross-ref refid="b0125">[25]</ce:cross-ref>, fuzzy logic 
+						<ce:cross-refs refid="b0030 b0155 b0160">[6,31,32]</ce:cross-refs> and neuro-fuzzy systems 
+						<ce:cross-ref refid="b0120">[24]</ce:cross-ref> have been applied to communication networks to improve performance. For example, in the past few years, research has been carried out to apply neural networks to video in wired and wireless networks, such as video conferencing, MPEG-4 VBR traffic prediction and video over wireless technology, with various degree of success 
+						<ce:cross-refs refid="b0145 b0175 b0140">[29,17,28]</ce:cross-refs>. Fuzzy logic also has been applied to wireless medium access control for assignment of resources for video/audio, the priority scheduler in Mobile Ad hoc NETworks and video variable bit rate streaming over Digital Video Broadcasting for Handheld (DVB-H) terminals 
+						<ce:cross-refs refid="b0090 b0035 b0110">[18,7,22]</ce:cross-refs>.
+					</ce:para>
+					<ce:para id="p0010" view="all">Furthermore, neuro-fuzzy systems have been extensively utilized in communication to optimize performance. Some of applications of neuro-fuzzy systems to data transmission in networks are described below. Yuang and Tien 
+						<ce:cross-ref refid="b0150">[30]</ce:cross-ref> proposed a new intelligent multiple access control system (IMACS) with dynamic bandwidth allocation of wireless asynchronous transfer mode (ATM) networks. A traffic estimator/predictor (TEP) performs periodic estimation and on-line prediction of available bit rate (ABR) based on wavelet analysis and a neuro-fuzzy technique. An intelligent bandwidth allocator monitors dynamic bandwidth allocation for ABR and signaling control traffic by determining the optimal splitting depth using TEP. The experimental results show that using a back propagation neural network and a neuro-fuzzy in IMACS offer various QoS guarantees and maximize network throughput regardless of traffic variation. Garcia et al. 
+						<ce:cross-ref refid="b0025">[5]</ce:cross-ref> developed fuzzy and neuro-fuzzy approaches to object tracking based on sequences of video images for surveillance of airports. The experimental results from the automatic surveillance of ground operation show that the system is capable of solving complex scenarios and improving tracking accuracy, with robustness, flexibility in the design’s adaptation to different situations, efficiency of real-time operation and avoidance of combinatorial enumeration. Chimmanee et al. 
+						<ce:cross-ref refid="b0020">[4]</ce:cross-ref> applied a hybrid neuro-fuzzy technique to a load-balancing tool to take into account the current status of applications and network resources. The results show the optimization of QoS requirement for delay-sensitive applications and appropriate utilization of network resources. Abdennour 
+						<ce:cross-ref refid="b0005">[1]</ce:cross-ref> presented an adaptive neuro-fuzzy as a generic framework for predicting network traffics such as MPEG broadcasting video sequences. Four predictors are developed. Three are designed to perform a single-step-ahead prediction for Intra, Predicted and Bi-directional frames. The fourth is used to predict the multiple steps of the smoothed time series of the entire movie sequence. The overall conclusion is that adaptive neuro-fuzzy is capable of providing accurate predictions and has the added advantage of being simple to design and implement as compared to conventional designs. Kodogiannis et al. 
+						<ce:cross-ref refid="b0170">[15]</ce:cross-ref> proposed an integrated neuro-fuzzy learning scheme for detecting abnormal patterns in wireless capsule endoscopy (WCE) images. In summary, the high detection accuracy of neuro-fuzzy systems suggests that such an intelligent technique could be used as a supplementary diagnostic tool in WCE. Alotaibi et al. 
+						<ce:cross-ref refid="b0165">[2]</ce:cross-ref> proposed an adaptive neuro-fuzzy inference system (ANFIS) model for a robust prediction of wireless signal in the City of Riyadh. The results show that the neuro-fuzzy prediction model outperforms other conventional prediction models such as deterministic, empirical, as well as statistical models. The neuro-fuzzy field strength prediction is more flexible in adapting to different environments, able to process a high quantity of data, and also has high-speed processing power. Chen et al. 
+						<ce:cross-ref refid="b0015">[3]</ce:cross-ref> recently applied an ANFIS to admission control over wideband code division with multiple access in a Wireless Local Area Network for multimedia traffic. The ANFIS is a fuzzy Q-learning admission controller. Simulation results show that the ANFIS can always maintain the system’s QoS requirement up to a traffic intensity of 1.1, as it can appropriately admit or reject the user’s admission requests. The ANFIS further reduces the handoff rate by 15–20%.
+					</ce:para>
+					<ce:para id="p0015" view="all">Razavi et al. 
+						<ce:cross-ref refid="b0105">[21]</ce:cross-ref> presented a fuzzy logic control for the Bluetooth’s default automatic repeat request for video transmission. The fuzzy logic approach considers both the delay constraints of the video stream while simultaneously avoiding buffer overflow. For adverse channel conditions and buffer size, the tests show an improvement of at least 4 dB in video quality as compared to non-fuzzy schemes. Kazemian and Chantaraskul 
+						<ce:cross-ref refid="b0065">[13]</ce:cross-ref> developed a rule-based fuzzy controller and a neuro-fuzzy controller to monitor the arrival rate and the departure rate of a traffic-regulating buffer to smooth video transmission over Bluetooth. The computer simulation results demonstrate that the two controllers reduce the data loss and standard deviation of video while increasing the overall data distribution, thereby resulting in improved picture quality. Moreover, the fuzzy approach to quantization speeds up the transmission rate. This paper takes the research further by introducing two neuro-fuzzy controllers and expanding on these results. The overall objective of this research is to reduce data loss and improve the quality of the picture. MPEG video at the input and output of the traffic-regulating buffer is monitored and manipulated by two new neuro-fuzzy controllers to guarantee smooth transmission of data over wireless technology, thus accommodating for the volatility in video signal and channel condition. Section 
+						<ce:cross-ref refid="s0010">2</ce:cross-ref> explains the structure of the MPEG digital video and the 2.4-GHz Bluetooth channel utilized in this paper. Section 
+						<ce:cross-ref refid="s0025">3</ce:cross-ref> describes the two proposed neuro-fuzzy controllers developed for the arrival rate and departure rate of the traffic regulator. Section 
+						<ce:cross-ref refid="s0040">4</ce:cross-ref> outlines the computer simulation results, and Section 
+						<ce:cross-ref refid="s0055">5</ce:cross-ref> presents overall conclusions from the research.
+					</ce:para>
+				</ce:section>
+				<ce:section id="s0010" view="all">
+					<ce:label>2</ce:label>
+					<ce:section-title>Related work</ce:section-title>
+					<ce:para id="p0020" view="all">Existing packet-switching techniques are not entirely adequate for digital video transmission over wireless technologies with limited bandwidth, as packets can be delayed and even lost. The delays involved in re-transmitting packets means that the quality of the reproduction of the information upon reception deteriorates to the point of unintelligibility. Engineers and policy makers have attempted to provide solutions to these problems in at least three ways, that is, by building higher bandwidth wireless networks, developing more efficient transmission and packet-switching techniques, and applying more sophisticated data compression techniques. This paper proposes a new method so that data-hungry digital video such as MPEG can be transmitted over bandwidth-limited standards such as Bluetooth. This paper utilizes a novel soft computing technique to manipulate and reduce the burstiness of MPEG video data during the transmission period in order to reduce data loss. In general, data loss in digital video happens during the transmission process, which occurs in effect as packet loss. Packet loss is mainly caused by congestion in the network. The major setback of packet loss is that it may lead to degradation in video quality, as MPEG compression uses temporal dependencies and motion compensation. Therefore, handling and recovering from packet loss has been widely researched in video transmission. In this paper, we propose a system that recognizes the channel situation and provides appropriate transmission speed in order to adjust to bandwidth availability, hence reducing packet loss and delay during the transmission process.</ce:para>
+					<ce:section id="s0015" view="all">
+						<ce:label>2.1</ce:label>
+						<ce:section-title>Digital video</ce:section-title>
+						<ce:para id="p0025" view="all">MPEG video compression exploits the similarities or redundancies between consecutive frames or images that exists in video signal. This technique has a major advantage in reducing the size of video stream. MPEG-encoding provides constant video quality by statically setting the quantization scale 
+							<ce:cross-refs refid="b0115 b0070">[23,14]</ce:cross-refs> for Intra (I), Predicted (P), and Bi-directional (B) frames for the variable bit rates. The intra-coded picture is encoded independently, without passing through the temporal model, which contains the most original information, hence, the most data bits. The predictive-coded picture is encoded by using the previous I- or P-picture as a reference frame to obtain predictions, which are transmitted to the receiver along with the error compensation obtained from the compensation process. The bi-directionally predictive-coded picture is similar to the P-picture. However, it obtains predictions from the previous I- or P-pictures or the following I- or P- pictures. The B-picture can use both the previous and the next I- or P- pictures in this process. Under the highest degree of compression, the B- picture contains the fewest data bits, and furthermore, it highly depends on the reference frame(s). In MPEG, the group of pictures (GOP) is a group of frames between successive I-frames; the others are P-frames and B-frames. In the widest application of the Phase Alternate Line, the GOP is usually 12 frames in 25 frames per second, as outlined in 
+							<ce:cross-ref refid="f0005">Fig. 1</ce:cross-ref>
+							<ce:float-anchor refid="f0005"/>.
+						</ce:para>
+						<ce:para id="p0030" view="all">In this paper, only the B-picture is dropped, as the loss of B-picture does not affect other frames in the GOP. The MPEG decoder therefore must be modified in order to cope with the loss of B-picture. This is accomplished by replacing the missing information with the default values in order to complete the stream for each component. The components are subsequently ready to be decoded. In general, there are two types of MPEG video coding, namely, constant bit rate (CBR) coding and variable bit rate (VBR) coding 
+							<ce:cross-ref refid="b0100">[20]</ce:cross-ref>. For video communication applications, especially via dynamic channels, CBR coding is employed. For example, CBR is utilized for digital TV and video conferencing over ISDN. In contrast, VBR provides the option of fixing and controlling the picture quality by varying the bit rate. This type of coding provides constant video quality by statically setting the quantization scale for I-, P- and B-frames, whereas the bit rate is allowed to vary. VBR coding offers a low bit rate for scenes such as still frames, and a larger bit rate for those moving images that require more data to maintain constant image quality. This paper employs VBR to maintain a constant video quality.
+						</ce:para>
+					</ce:section>
+					<ce:section id="s0020" view="all">
+						<ce:label>2.2</ce:label>
+						<ce:section-title>Wireless technology</ce:section-title>
+						<ce:para id="p0035" view="all">In this paper, a Bluetooth channel is utilized to represent 2.4-GHz wireless frequency. Bluetooth is structured as such to offer two types of links, namely, the Synchronous Connection-Oriented (SCO) link and Asynchronous Connection-Less (ACL) link 
+							<ce:cross-refs refid="b0040 b0050">[8,10]</ce:cross-refs>. The SCO link is normally used to carry real-time traffic such as audio and video. The SCO link employs a slot reservation mechanism, which permits the periodic transmission of SCO data and guarantees bandwidth and delay. However it does not provide reliability because the SCO payload is not protected by a Cyclic Redundancy Check (CRC), and there are no re-transmissions. In contrast, the ACL link is suitable for data applications. The ACL link can offer both symmetric and asymmetric bandwidth. ACL may support 1000
+							<ce:hsp sp="0.25"/>kb/s downlink using DH5 packets, which is suitable for MPEG video transmission. The ACL payload is protected by error-checking schemes. When error checking fails, a re-transmission is performed, unless the pre-set flush timeout timer expires. In this paper, the ACL link of the Bluetooth channel is utilized for computer simulations, as it offers error-checking schemes.
+						</ce:para>
+					</ce:section>
+				</ce:section>
+				<ce:section id="s0025" view="all">
+					<ce:label>3</ce:label>
+					<ce:section-title>Use of neuro-fuzzy techniques for arrival rate and departure rate</ce:section-title>
+					<ce:para id="p0040" view="all">
+						<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>
+						<ce:float-anchor refid="f0010"/> presents the overall structure of two neuro-fuzzy control schemes for a traffic-regulating buffer in 2.4-GHz wireless technology. The Host Controller Interface (HCI) of the Bluetooth protocol stack is the point of interface between software and hardware, where the digital signal propagates at a frequency of 2.4-GHz. 
+						<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref> comprises of an MPEG Encoder, a generic cell rate algorithm hereafter referred to as a token bucket and a traffic-regulating buffer. The MPEG encoder encodes the incoming Audio Video Interleave (AVI). The conventional token bucket is based on a popular policing mechanism, which is associated with wireless and wired networks. A token bucket is a rate-policing buffer by which data streams can be judged to comply with the wireless traffic contract 
+						<ce:cross-ref refid="b0060">[12]</ce:cross-ref>. The token bucket and the associated policing mechanisms are mostly inadequate to sufficiently regulate the transmission of MPEG VBR video data over a 2.4-GHz wireless standard. The traditional token bucket buffers and leak rates with queuing management techniques are all fixed. The queuing management techniques use fixed thresholds and a limited number of arrival frames to ascertain when to allow or flush the entry of frames. Therefore, the conventional token buckets are not adequately controlled to meet the quality of picture required for a 2.4-GHz frequency band 
+						<ce:cross-ref refid="b0080">[16]</ce:cross-ref>. This work introduces another buffer called the traffic-regulating buffer before the departure rate to smooth the traffic entering the network, conform to traffic conditions, and prevent excessive back-to-back data streams from being generated during the peak transmissions of MPEG video. In policing the MPEG VBR traffic, the video stream is measured against the contracted peak rate of the Bluetooth channel, which is taken as 1000
+						<ce:hsp sp="0.25"/>kbps. In this paper, two original neuro-fuzzy methods entitled the arrival rate NF scheme and the departure rate NF scheme are developed to control input and output of the traffic-regulating buffer in order to reduce data loss and improve picture quality, as described in detail below.
+					</ce:para>
+					<ce:section id="s0030" view="all">
+						<ce:label>3.1</ce:label>
+						<ce:section-title>Arrival rate NF scheme</ce:section-title>
+						<ce:para id="p0115" view="all">In order to describe the arrival rate neuro-fuzzy (NF) scheme in 
+							<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>, the initial condition for a rule-based fuzzy (RBF) structure is outlined first. The initial fuzzy inputs are mean value 
+							<mml:math altimg="si1.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:mover accent="true">
+										<mml:mrow>
+											<mml:mi>X</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mo>¯</mml:mo>
+										</mml:mrow>
+									</mml:mover>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>k</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+								</mml:mrow>
+							</mml:math> and standard deviation 
+							<ce:italic>σ</ce:italic>(
+							<ce:italic>k</ce:italic>). The fuzzy output is the arrival rate 
+							<mml:math altimg="si2.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:mi mathvariant="italic">Ra</mml:mi>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>k</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+								</mml:mrow>
+							</mml:math>. In 
+							<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>, the inputs to block the arrival rate NF scheme also include the departure rate of the last frame in the GOP 
+							<mml:math altimg="si3.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>d</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>f</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">last</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">)</mml:mo>
+								</mml:mrow>
+							</mml:math> and the predicted data rate of the GOP 
+							<mml:math altimg="si4.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mtext>open</mml:mtext>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>k</mml:mi>
+									<mml:mo>+</mml:mo>
+									<mml:mn>1</mml:mn>
+									<mml:mo stretchy="false">)</mml:mo>
+								</mml:mrow>
+							</mml:math>. The inputs have four linguistic labels for mean value 
+							<mml:math altimg="si5.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:mover accent="true">
+										<mml:mrow>
+											<mml:mi>X</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mo>¯</mml:mo>
+										</mml:mrow>
+									</mml:mover>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>k</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+								</mml:mrow>
+							</mml:math>, including Small, Intermediate, Large and Very Large, as well as three linguistic labels for standard deviation 
+							<mml:math altimg="si6.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:mi>σ</mml:mi>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>k</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+								</mml:mrow>
+							</mml:math>, including Small, Intermediate and Large. The output arrival rate 
+							<ce:italic>Ra</ce:italic>(
+							<ce:italic>k</ce:italic>) has seven linguistic labels, including Very Small, Intermediate Small, Small, Intermediate, Large, Intermediate Large and Very Large. There are twelve rules in the RBF altogether.
+						</ce:para>
+						<ce:para id="p0050" view="all">The initial setting of the proposed arrival rate NF controller is the same as the RBF controller. In 
+							<ce:cross-ref refid="f0015">Fig. 3</ce:cross-ref>
+							<ce:float-anchor refid="f0015"/>, the membership functions of the fuzzy variable mean queue is generated by the NF scheme, which has a generalized bell activation function 
+							<ce:cross-ref refid="b0095">[19]</ce:cross-ref>. The activation function of a neuron is set to the membership function that specifies the neuron’s fuzzy set. The values of these activation functions and the exact shape of the bell are decided by training the adaptive neuro-fuzzy inference system (ANFIS). A rule neuron receives input from the respective fuzzification neurons and calculates the firing strength or the truth-value of the rule it represents. In this section, the simulations have been done for the unsupervised NF controller for the generation of the desired arrival rate 
+							<mml:math altimg="si7.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:mi mathvariant="italic">Ra</mml:mi>
+								</mml:mrow>
+							</mml:math>. The NF controllers for the arrival rate and the departure rate are both developed using the Takagi–Sugeno–Kang method of fuzzy inference 
+							<ce:cross-refs refid="b0135 b0130">[27,26]</ce:cross-refs>.
+						</ce:para>
+					</ce:section>
+					<ce:section id="s0035" view="all">
+						<ce:label>3.2</ce:label>
+						<ce:section-title>Departure rate NF scheme</ce:section-title>
+						<ce:para id="p0055" view="all">The departure rate NF scheme is shown in 
+							<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>. The fuzzy input includes the fuzzified queue length 
+							<ce:italic>X</ce:italic>(
+							<ce:italic>f</ce:italic>) and the fuzzified available tokens from the token bucket 
+							<ce:italic>Y</ce:italic>(
+							<ce:italic>f</ce:italic>), and the fuzzy output is 
+							<ce:italic>R
+								<ce:inf loc="post">d</ce:inf>
+							</ce:italic>(
+							<ce:italic>f</ce:italic>), which is the normalized departure rate from the traffic-regulating buffer, where 
+							<ce:italic>f</ce:italic> is a frame. The input includes three linguistic labels for 
+							<ce:italic>Y</ce:italic>(
+							<ce:italic>f</ce:italic>), namely, Empty, Average and Full, and four linguistic labels for 
+							<ce:italic>X</ce:italic>(
+							<ce:italic>f</ce:italic>), i.e., Empty, Average, Full and Saturated. 
+							<ce:italic>R
+								<ce:inf loc="post">d</ce:inf>
+							</ce:italic>(
+							<ce:italic>f</ce:italic>) has five linguistic labels, including Very Small, Small, Medium, Big, Very Big. RBF1 has 12 rules overall. The three linguistic labels of 
+							<ce:italic>Y</ce:italic>(
+							<ce:italic>f</ce:italic>) and four linguistic labels of 
+							<ce:italic>X</ce:italic>(
+							<ce:italic>f</ce:italic>) produce 12 output for 
+							<ce:italic>R
+								<ce:inf loc="post">d</ce:inf>
+							</ce:italic>(
+							<ce:italic>f</ce:italic>). The output of the normalized departure rate 
+							<ce:italic>R
+								<ce:inf loc="post">d</ce:inf>
+							</ce:italic>(
+							<ce:italic>f</ce:italic>) is used in the NF scheme of 
+							<ce:cross-ref refid="t0005">Table 1</ce:cross-ref>
+							<ce:float-anchor refid="t0005"/>. 
+							<ce:cross-ref refid="t0005">Table 1</ce:cross-ref> represents the rules in the NF scheme, 
+							<ce:italic>R
+								<ce:inf loc="post">D</ce:inf>
+							</ce:italic> is the departure rate from the RBF1 and 
+							<ce:italic>R
+								<ce:inf loc="post">D-NF</ce:inf>
+							</ce:italic> is the departure rate from the NF.
+						</ce:para>
+					</ce:section>
+				</ce:section>
+				<ce:section id="s0040" view="all">
+					<ce:label>4</ce:label>
+					<ce:section-title>Simulation results</ce:section-title>
+					<ce:para id="p0060" view="all">In order to train the NF controller and to obtain the best departure rate, that is, the correct bit rate of the video stream transmitted through the Bluetooth channel, the departure rate target 
+						<mml:math altimg="si8.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mo>-</mml:mo>
+										<mml:mi mathvariant="italic">target</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>f</mml:mi>
+								<mml:mo stretchy="false">)</mml:mo>
+							</mml:mrow>
+						</mml:math> must be derived. From 
+						<ce:cross-ref refid="f0020">Fig. 4</ce:cross-ref>
+						<ce:float-anchor refid="f0020"/>, there are two sources of data to be released from the traffic regulator. One is the compressed video sequence from the MPEG encoder. The other is the amount of data kept in the traffic regulator. Suppose the data currently kept in traffic regulator is released within one GOP and video sequence is delivered without delay. Then the data should be transmitted at the bit rate calculated from the following equation:
+						<ce:display>
+							<ce:formula id="e0005">
+								<ce:label>(1)</ce:label>
+								<mml:math altimg="si9.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">to</mml:mi>
+											<mml:mtext>-</mml:mtext>
+											<mml:mi mathvariant="italic">transmit</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>=</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>a</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>k</mml:mi>
+									<mml:mo>+</mml:mo>
+									<mml:mn>1</mml:mn>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>+</mml:mo>
+									<mml:mi>X</mml:mi>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>/</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>T</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">GOP</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mtext>,</mml:mtext>
+								</mml:math>
+							</ce:formula>
+						</ce:display>where 
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>(
+						<ce:italic>k</ce:italic>
+						<ce:hsp sp="0.25"/>+
+						<ce:hsp sp="0.25"/>1) is the arrival rate passing through the system, and 
+						<ce:italic>T
+							<ce:inf loc="post">GOP</ce:inf>
+						</ce:italic> is the time period of a GOP. At any given time in 
+						<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>, the 
+						<ce:italic>k</ce:italic>’th GOP is the picture group that has completely passed the network. The (
+						<ce:italic>k</ce:italic>
+						<ce:hsp sp="0.25"/>+
+						<ce:hsp sp="0.25"/>1)’th GOP is the group that is in the process of passing through the proposed system to reach the token-bucket and eventually enter the Bluetooth channel. The (
+						<ce:italic>k</ce:italic>
+						<ce:hsp sp="0.25"/>+
+						<ce:hsp sp="0.25"/>2)’th GOP is the group presently being encoded by the MPEG encoder. In 
+						<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>, 
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>(
+						<ce:italic>k</ce:italic>
+						<ce:hsp sp="0.25"/>+
+						<ce:hsp sp="0.25"/>2) is the arrival rate being encoded by the MPEG encoder. When 
+						<ce:italic>R
+							<ce:inf loc="post">to-transmit</ce:inf>
+						</ce:italic>(
+						<ce:italic>f</ce:italic>) is larger than 
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>(
+						<ce:italic>f</ce:italic>), some data are kept in the token bucket. 
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>(
+						<ce:italic>f</ce:italic>) represents the actual bandwidth or actual transmission rate. The maximum amount of data that can be stored in the token bucket is 
+						<ce:italic>Y</ce:italic>(
+						<ce:italic>f</ce:italic>). Therefore, the maximum value that the departure rate is allowed in order to avoid data loss is as follows:
+						<ce:display>
+							<ce:formula id="e0010">
+								<ce:label>(2)</ce:label>
+								<mml:math altimg="si10.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">accessible</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>=</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>r</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">actual</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>+</mml:mo>
+									<mml:mi>Y</mml:mi>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>/</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>T</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">frame</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mtext>,</mml:mtext>
+								</mml:math>
+							</ce:formula>
+						</ce:display>where 
+						<ce:italic>T
+							<ce:inf loc="post">frame</ce:inf>
+						</ce:italic> is the time period of a frame. From 
+						<ce:italic>R
+							<ce:inf loc="post">to-transmit</ce:inf>
+						</ce:italic>(
+						<ce:italic>f</ce:italic>) and 
+						<ce:italic>R
+							<ce:inf loc="post">accessible</ce:inf>
+						</ce:italic>(
+						<ce:italic>f</ce:italic>), 
+						<ce:italic>R
+							<ce:inf loc="post">d_target</ce:inf>(f)
+						</ce:italic> is set to at a minimum to prevent the overflow of video data
+						<ce:display>
+							<ce:formula id="e0015">
+								<ce:label>(3)</ce:label>
+								<mml:math altimg="si11.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>d</mml:mi>
+											<mml:mo>_</mml:mo>
+											<mml:mi mathvariant="italic">target</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>=</mml:mo>
+									<mml:mrow>
+										<mml:mi mathvariant="normal">min</mml:mi>
+									</mml:mrow>
+									<mml:mo stretchy="false">[</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">to</mml:mi>
+											<mml:mtext>-</mml:mtext>
+											<mml:mi mathvariant="italic">transmit</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mtext>,</mml:mtext>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">accessible</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo stretchy="false">]</mml:mo>
+									<mml:mtext>.</mml:mtext>
+								</mml:math>
+							</ce:formula>
+						</ce:display>The range of 
+						<mml:math altimg="si12.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mtext>-</mml:mtext>
+										<mml:mi mathvariant="italic">target</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>f</mml:mi>
+								<mml:mo stretchy="false">)</mml:mo>
+							</mml:mrow>
+						</mml:math> is between 
+						<ce:italic>R
+							<ce:inf loc="post">a</ce:inf>
+						</ce:italic>(
+						<ce:italic>k</ce:italic>
+						<ce:hsp sp="0.25"/>+
+						<ce:hsp sp="0.25"/>1) and 
+						<ce:italic>r
+							<ce:inf loc="post">actual</ce:inf>
+						</ce:italic>(
+						<ce:italic>f</ce:italic>). Equation 
+						<ce:cross-ref refid="e0020">(4)</ce:cross-ref> calculates 
+						<mml:math altimg="si13.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mtext>-</mml:mtext>
+										<mml:mi mathvariant="italic">target</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>f</mml:mi>
+								<mml:mo stretchy="false">)</mml:mo>
+							</mml:mrow>
+						</mml:math> from the fuzzified departure rate 
+						<mml:math altimg="si14.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>r</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mtext>-</mml:mtext>
+										<mml:mi mathvariant="italic">fuzzified</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>f</mml:mi>
+								<mml:mo stretchy="false">)</mml:mo>
+							</mml:mrow>
+						</mml:math> to provide the departure rate target
+						<ce:display>
+							<ce:formula id="e0020">
+								<ce:label>(4)</ce:label>
+								<mml:math altimg="si15.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>d</mml:mi>
+											<mml:mtext>-</mml:mtext>
+											<mml:mi mathvariant="italic">target</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>=</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>r</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>d</mml:mi>
+											<mml:mtext>-</mml:mtext>
+											<mml:mi mathvariant="italic">fuzzified</mml:mi>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:mi>f</mml:mi>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>×</mml:mo>
+									<mml:mrow>
+										<mml:mfenced open="(" close=")">
+											<mml:mrow>
+												<mml:msub>
+													<mml:mrow>
+														<mml:mi>R</mml:mi>
+													</mml:mrow>
+													<mml:mrow>
+														<mml:mi>d</mml:mi>
+														<mml:mo>_</mml:mo>
+														<mml:mrow>
+															<mml:mi mathvariant="normal">max</mml:mi>
+														</mml:mrow>
+													</mml:mrow>
+												</mml:msub>
+												<mml:mo>-</mml:mo>
+												<mml:msub>
+													<mml:mrow>
+														<mml:mi>R</mml:mi>
+													</mml:mrow>
+													<mml:mrow>
+														<mml:mi>d</mml:mi>
+														<mml:mo>_</mml:mo>
+														<mml:mrow>
+															<mml:mi mathvariant="normal">min</mml:mi>
+														</mml:mrow>
+													</mml:mrow>
+												</mml:msub>
+											</mml:mrow>
+										</mml:mfenced>
+									</mml:mrow>
+									<mml:mo>+</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi>R</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>d</mml:mi>
+											<mml:mo>_</mml:mo>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">min</mml:mi>
+											</mml:mrow>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mtext>,</mml:mtext>
+								</mml:math>
+							</ce:formula>
+						</ce:display>where 
+						<mml:math altimg="si16.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>r</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mtext>-</mml:mtext>
+										<mml:mi mathvariant="italic">fuzzified</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>f</mml:mi>
+								<mml:mo stretchy="false">)</mml:mo>
+							</mml:mrow>
+						</mml:math> is the fuzzified 
+						<mml:math altimg="si17.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mtext>-</mml:mtext>
+										<mml:mi mathvariant="italic">target</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>f</mml:mi>
+								<mml:mo stretchy="false">)</mml:mo>
+							</mml:mrow>
+						</mml:math>, and 
+						<mml:math altimg="si18.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mtext>_min</mml:mtext>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo>=</mml:mo>
+								<mml:mi mathvariant="normal">min</mml:mi>
+								<mml:mo stretchy="false">{</mml:mo>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>a</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>k</mml:mi>
+								<mml:mo>+</mml:mo>
+								<mml:mn>1</mml:mn>
+								<mml:mo stretchy="false">)</mml:mo>
+								<mml:mtext>,</mml:mtext>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>r</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi mathvariant="italic">actual</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">}</mml:mo>
+							</mml:mrow>
+						</mml:math> and 
+						<mml:math altimg="si19.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+							<mml:mrow>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>d</mml:mi>
+										<mml:mo>_</mml:mo>
+										<mml:mi mathvariant="normal">max</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo>=</mml:mo>
+								<mml:mi mathvariant="normal">max</mml:mi>
+								<mml:mo stretchy="false">{</mml:mo>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>R</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi>a</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">(</mml:mo>
+								<mml:mi>k</mml:mi>
+								<mml:mo>+</mml:mo>
+								<mml:mn>1</mml:mn>
+								<mml:mo stretchy="false">)</mml:mo>
+								<mml:mtext>,</mml:mtext>
+								<mml:msub>
+									<mml:mrow>
+										<mml:mi>r</mml:mi>
+									</mml:mrow>
+									<mml:mrow>
+										<mml:mi mathvariant="italic">actual</mml:mi>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo stretchy="false">}</mml:mo>
+							</mml:mrow>
+						</mml:math>.The two NF schemes are implemented using the adaptive neuro-fuzzy inference system (ANFIS) function, which simulates neuro-fuzzy training of the Sugeno-type fuzzy inference system. Computer simulations have been conducted for the two NF schemes and compared with the conventional VBR system. Conventional VBR system is comprised of a MPEG encoder and a generic cell rate algorithm (token bucket). Two video clips entitled ‘Superman Returns’ and ‘The Santa Clause 3’ are used to implement the proposed system in the simulations 
+						<ce:cross-ref refid="b0045">[9]</ce:cross-ref>. The two video clips are utilized to present two scenarios. The two NF schemes can either reduce the data loss significantly or eliminate it completely depending on the application and the requirements at the receiving end of the device. The computer simulation results are shown in Section 
+						<ce:cross-ref refid="s0045">4.1</ce:cross-ref>. ‘Superman Returns’ and 4.2. ‘The Santa Clause 3’, which demonstrate the two scenarios in detail. For computer simulation, a 2.4-GHz ISM frequency channel, IEEE 802.15.1 – Bluetooth, is used for video streaming 
+						<ce:cross-ref refid="b0055">[11]</ce:cross-ref>.
+					</ce:para>
+					<ce:section id="s0045" view="all">
+						<ce:label>4.1</ce:label>
+						<ce:section-title>Superman Returns</ce:section-title>
+						<ce:para id="p0065" view="all">
+							<ce:cross-refs refid="f0025 f0030">Figs. 5 and 6</ce:cross-refs>
+							<ce:float-anchor refid="f0025"/>
+							<ce:float-anchor refid="f0030"/> for ‘Superman Returns’ provide a comparison of the compressed video stream for the two NF schemes and the conventional VBR scheme. 
+							<ce:cross-ref refid="f0025">Fig. 5</ce:cross-ref> demonstrates a lower concentration of GOP size in one area for the two NF schemes, more distribution and less burstiness, which reduces the data loss and time delay. The probability density and histogram in 
+							<ce:cross-ref refid="f0030">Fig. 6</ce:cross-ref> shows that the density of ‘Superman Returns’ is slightly greater and GOP size is more with a larger number of bits, that is, more data availability for transmission and consequently, better image quality using the two NF schemes. 
+							<ce:cross-ref refid="t0010">Table 2</ce:cross-ref>
+							<ce:float-anchor refid="t0010"/> is a supplement to 
+							<ce:cross-refs refid="f0025 f0030">Figs. 5 and 6</ce:cross-refs>; it provides summarized hard values for both plots, showing that the standard deviation of the two NF systems is lower than the standard deviation obtained for the conventional VBR system because smaller standard deviation offers less burstiness. In 
+							<ce:cross-ref refid="t0010">Table 2</ce:cross-ref>, the GOP size is averaged for both methods, and there are more GOP sizes for the two NF schemes than the VBR scheme, which implies more data for transmission and hence better picture quality.
+						</ce:para>
+						<ce:para id="p0070" view="all">
+							<ce:cross-ref refid="f0035">Fig. 7</ce:cross-ref>
+							<ce:float-anchor refid="f0035"/> provides the results for the conventional VBR system for the arrival rate 
+							<ce:italic>R
+								<ce:inf loc="post">a</ce:inf>
+							</ce:italic> and the actual bandwidth or actual transmission rate 
+							<ce:italic>r
+								<ce:inf loc="post">actual</ce:inf>
+							</ce:italic>. 
+							<ce:cross-ref refid="f0040">Fig. 8</ce:cross-ref>
+							<ce:float-anchor refid="f0040"/> depicts the available space in the conventional token bucket. The token bucket buffer works such that the more token is taken, the less storage is available to keep the video data, hence resulting in data loss. 
+							<ce:cross-ref refid="f0045">Fig. 9</ce:cross-ref>
+							<ce:float-anchor refid="f0045"/> shows the two proposed NF schemes with 
+							<ce:italic>R
+								<ce:inf loc="post">d</ce:inf>
+							</ce:italic> from the traffic-regulating buffer. As shown, the two NF schemes manipulate the MPEG encoder and regulate the bit rate in order to decrease the burstiness much better than the conventional VBR system, which results in reduction in data loss and delays and thus better image quality.
+						</ce:para>
+						<ce:para id="p0075" view="all">
+							<ce:cross-ref refid="f0050">Fig. 10</ce:cross-ref>
+							<ce:float-anchor refid="f0050"/> shows separate plots for each buffer, the conventional token bucket and the traffic regulator from the proposed design. A token bucket buffer availability below 0 and a traffic regulator queue length above 1 indicate that the system is experiencing a drop in data. The traffic-regulating buffer works such that the more stored video data there is, the lesser buffer will be available, resulting in values shifting from 0 to 1. The data loss in 
+							<ce:cross-ref refid="f0050">Fig. 10</ce:cross-ref> is at the traffic-regulating buffer, through which the degree of loss can be easily manipulated by constantly monitoring the capacities of the two buffers and the network in real-time, thus facilitating a scenario in which the video data is predominantly lost at the traffic-regulating buffer. There is no loss at the token bucket buffer. 
+							<ce:cross-ref refid="f0055">Fig. 11</ce:cross-ref>
+							<ce:float-anchor refid="f0055"/> is provided for comparison purposes. 
+							<ce:cross-ref refid="f0055">Fig. 11</ce:cross-ref> is the compatible plot for the dropped data under the two NF schemes, and it is calculated by adding values from both buffers and re-plotting as if the system has only one buffer, that is, the token bucket with no NF schemes. 
+							<ce:cross-ref refid="f0055">Fig. 11</ce:cross-ref> can therefore be compared with the dropped data plot of the token bucket from the VBR system in 
+							<ce:cross-ref refid="f0040">Fig. 8</ce:cross-ref>. The overall data drop is much greater in the VBR system in 
+							<ce:cross-ref refid="f0040">Fig. 8</ce:cross-ref> than in the two NF schemes in 
+							<ce:cross-ref refid="f0055">Fig. 11</ce:cross-ref>. Furthermore, 
+							<ce:cross-ref refid="t0015">Table 3</ce:cross-ref>
+							<ce:float-anchor refid="t0015"/> provides figures for the conventional VBR system and the two NF schemes. There is no traffic-regulating buffer for the conventional VBR system and the overall dropped data through the token bucket is 2.6605%. With the two NF schemes, there is no data loss at the token bucket; rather, the loss is at the traffic-regulating buffer, and the overall data loss is 0.4991%. It can therefore be concluded that the percentage of data loss using the conventional VBR system is substantially greater that under the two proposed NF schemes. As stated in Section 
+							<ce:cross-ref refid="s0010">2</ce:cross-ref>, the B-picture is allowed be dropped in this work. The motion vector is a very important aspect of reconstructing the image for the B-picture. With a full set or a portion of the motion vector, the image can be reconstructed from the reference frame(s) 
+							<ce:cross-ref refid="b0115">[23]</ce:cross-ref>. Distortion therefore results from the missing parts of the AC coefficient and DC coefficient. The MPEG decoder is designed to be able to find the missing information for the DC and AC coefficients by substituting the default values to complete the stream for each component. The components are subsequently ready to be decoded. In the next clip, ‘The Santa Clause 3’ demonstrates that using the two NF schemes can eliminate data loss altogether, resulting in a standard deviation that is decreased significantly in order to reduce burstiness. In addition, the average GOP size is reduced slightly to avoid data loss.
+						</ce:para>
+					</ce:section>
+					<ce:section id="s0050" view="all">
+						<ce:label>4.2</ce:label>
+						<ce:section-title>The Santa Clause 3</ce:section-title>
+						<ce:para id="p0080" view="all">
+							<ce:cross-refs refid="f0060 f0065">Figs. 12 and 13</ce:cross-refs>
+							<ce:float-anchor refid="f0060"/>
+							<ce:float-anchor refid="f0065"/> provide a comparison of video stream for the two NF schemes and the conventional VBR scheme for ‘The Santa Clause 3’ clip. 
+							<ce:cross-ref refid="f0060">Fig. 12</ce:cross-ref> demonstrates a lower concentration of GOP size in one area for the two NF schemes, a broader distribution and a significant reduction in burstiness, resulting in no data loss and reduced time delay. The probability density and histogram in 
+							<ce:cross-ref refid="f0065">Fig. 13</ce:cross-ref> shows that the density is greater and the GOP size (bit) is less as compared to the conventional VBR scheme; that is, there is slightly less data for transmission and consequently no data loss under the two proposed NF schemes. 
+							<ce:cross-ref refid="t0020">Table 4</ce:cross-ref>
+							<ce:float-anchor refid="t0020"/> is a supplement to 
+							<ce:cross-refs refid="f0060 f0065">Figs. 12 and 13</ce:cross-refs>; it provides summarized values for both plots and shows that the standard deviation of the two NF schemes is substantially lower than the standard deviation obtained for the conventional VBR system. Hence, there is much less burstiness in the two NF schemes. In 
+							<ce:cross-ref refid="t0020">Table 4</ce:cross-ref>, the GOP size is averaged for both systems, and the GOP sizes are slightly less under the two NF schemes as compared to the VBR scheme, which prevents data loss altogether while still maintaining image quality.
+						</ce:para>
+						<ce:para id="p0085" view="all">
+							<ce:cross-ref refid="f0070">Fig. 14</ce:cross-ref>
+							<ce:float-anchor refid="f0070"/> provides the results for the conventional VBR system for the arrival rate 
+							<ce:italic>R
+								<ce:inf loc="post">a</ce:inf>
+							</ce:italic> and the actual bandwidth or actual transmission rate 
+							<ce:italic>r
+								<ce:inf loc="post">actual</ce:inf>
+							</ce:italic>. 
+							<ce:cross-ref refid="f0075">Fig. 15</ce:cross-ref>
+							<ce:float-anchor refid="f0075"/> depicts the available space in the token bucket for the conventional VBR system. 
+							<ce:cross-ref refid="f0080">Fig. 16</ce:cross-ref>
+							<ce:float-anchor refid="f0080"/> shows the proposed NF schemes with departure rate 
+							<ce:italic>R
+								<ce:inf loc="post">d</ce:inf>
+							</ce:italic> from the traffic-regulating buffer. As shown, the two NF schemes manipulate the MPEG encoder to regulate the bit rate in order to reduce burstiness much better than the conventional VBR system, which results in no data loss and a reduction in excessive delay, while maintaining image quality.
+						</ce:para>
+						<ce:para id="p0090" view="all">
+							<ce:cross-ref refid="f0085">Fig. 17</ce:cross-ref>
+							<ce:float-anchor refid="f0085"/> shows the storage availabilities of the traffic-regulating buffer and the conventional token bucket. There is no data loss from implementing the two NF schemes. Comparing 
+							<ce:cross-refs refid="f0050 f0085">Figs. 10 and 17</ce:cross-refs> demonstrates that for high variation in bit rate in a video clip such as ‘Superman Returns’, data loss could be improved, and with a low variation in bit rate in a video clip such as ‘The Santa Clause 3’, data loss could be prevented altogether. In 
+							<ce:cross-ref refid="f0090">Fig. 18</ce:cross-ref>
+							<ce:float-anchor refid="f0090"/>, there is no total data loss, and indeed, there is further capacity for additional transmission, which guarantees that a relatively low bit rate video clip such as ‘The Santa Clause 3’ could easily be transmitted without losing B- frames. Thus, there is no need for adding a default value upon reception. 
+							<ce:cross-ref refid="t0025">Table 5</ce:cross-ref>
+							<ce:float-anchor refid="t0025"/> is presented below to compare with 
+							<ce:cross-ref refid="t0015">Table 3</ce:cross-ref>. In 
+							<ce:cross-ref refid="t0025">Table 5</ce:cross-ref>, the data loss from the conventional token bucket of the VBR system is 10.6551%, whereas the proposed NF schemes do not exhibit any losses in either the token bucket or the traffic-regulating buffer. In comparison with 
+							<ce:cross-ref refid="t0025">Table 5</ce:cross-ref>, 
+							<ce:cross-ref refid="t0015">Table 3</ce:cross-ref> demonstrates data loss at the traffic-regulating buffer using the two NF schemes.
+						</ce:para>
+						<ce:para id="p0095" view="all">The computer simulation results show a reduction in standard deviation and burstiness, a lower concentration of GOP size in one area and a broader distribution, and a higher average GOP size for transmission, all of which result in a decrease in data loss and time delay, and thus, an improvement in image quality. This is achieved with little computational overhead, which could reduce computational time, memory requirements and bandwidth optimization for real-time implementations in delay-sensitive video services in mobile devices. As can be seen in Section 
+							<ce:cross-ref refid="s0025">3</ce:cross-ref> entitled ‘Use of neuro-fuzzy techniques for arrival rate and departure rate’, the rules underlying the rule-based fuzzy system and the neural network controllers provide algorithmic efficiency and hence do not require excessive processing power.
+						</ce:para>
+					</ce:section>
+				</ce:section>
+				<ce:section id="s0055" view="all">
+					<ce:label>5</ce:label>
+					<ce:section-title>Conclusion</ce:section-title>
+					<ce:para id="p0100" view="all">Two neuro-fuzzy schemes are proposed to inspect the arrival rate and departure rate of a traffic-regulating buffer to assist a conventional token bucket in controlling the flow of MPEG video over 2.4-GHz Bluetooth. Comparing a conventional token bucket model with a conventional token bucket and a traffic-regulating buffer controlled by a two neuro-fuzzy model shows that the proposed novel design has more capacity for further data transmission, and it also reduces data loss. Furthermore, computer simulation graphs demonstrate that the new neuro-fuzzy schemes present higher density with respect to GOP size, a lower concentration of GOP size in one area, a broader distribution and less burstiness, all of which contribute to a decrease in excessive time delay and data loss, while maintaining image quality.</ce:para>
+					<ce:para id="p0105" view="all">The rules underlying the rule-based fuzzy system at the input and the output of the traffic-regulating buffer are simple and effective and do not require excessive computational power. The neural networks update these rules according to changes encountered at the Bluetooth channel; they are also based on simple but very effective algorithms and thus do not require a disproportionate amount of power. Subsequently, the proposed neuro-fuzzy schemes are well suited to the real-time applications of delay-sensitive MPEG video over a 2.4-GHz frequency, as rules are constantly adjusted to provide the best effort throughput.</ce:para>
+				</ce:section>
+			</ce:sections>
+			<ce:acknowledgment xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Acknowledgement</ce:section-title>
+				<ce:para id="p0110" view="all">This work was funded by the Emerald Grant UK. The work was carried out at London Metropolitan University, UK.</ce:para>
+			</ce:acknowledgment>
+		</ja:body>
+		<ja:tail view="all">
+			<ce:bibliography id="bi0005" view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec id="bs0005">
+					<ce:bib-reference id="b0005">
+						<ce:label>[1]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Abdennour</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Short-term MPEG-4 video traffic prediction using ANFIS</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>International Journal of Network Management</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>15</sb:volume-nr>
+									</sb:series>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>377</sb:first-page>
+									<sb:last-page>392</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0165">
+						<ce:label>[2]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>F.D.</ce:given-name>
+										<ce:surname>Alotaibi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Abdennour</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.A.</ce:given-name>
+										<ce:surname>Ali</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A robust prediction model using ANFIS based on recent TETRA outdoor RF measurements conducted in Riyadh City – Saudi Arabia</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>AEU – International Journal of Electronics and Communications</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0015">
+						<ce:label>[3]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.H.</ce:given-name>
+										<ce:surname>Chen</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.J.</ce:given-name>
+										<ce:surname>Chang</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.Y.</ce:given-name>
+										<ce:surname>Huang</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Fuzzy q-learning admission control for WCDMA/WLAN heterogeneous networks with multimedia traffic</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Transactions on Mobile Computing</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>2009</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0020">
+						<ce:label>[4]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Chimmanee</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.</ce:given-name>
+										<ce:surname>Wipusitwarakun</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Runggeratigul</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Hybrid neuro-fuzzy based adaptive load balancing for delay – sensitive internet application</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Intelligent and Fuzzy Systems: Applications in Engineering and Technology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>79</sb:first-page>
+									<sb:last-page>93</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0025">
+						<ce:label>[5]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Garcia</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.M.</ce:given-name>
+										<ce:surname>Molina</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.A.</ce:given-name>
+										<ce:surname>Besada</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.I.</ce:given-name>
+										<ce:surname>Portillo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A multi-target tracking video system based on fuzzy and neuro-fuzzy techniques</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>EURASIP Journal on Applied Signal Processing</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>14</sb:volume-nr>
+									</sb:series>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>2341</sb:first-page>
+									<sb:last-page>2358</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0030">
+						<ce:label>[6]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Ghosh</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Q.</ce:given-name>
+										<ce:surname>Razouqi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Schumacher</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Celmins</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A survey of recent advances in fuzzy logic in telecommunications networks and new challenges</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Transactions on Fuzzy Systems</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>6</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>1998</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0035">
+						<ce:label>[7]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Gomathy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Shanmugavel</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Supporting QoS in MANET by a fuzzy priority scheduler and performance analysis with multicast routing protocols</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>EURASIP Journal on Wireless Communications and Networking</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>5</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>426</sb:first-page>
+									<sb:last-page>436</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0040">
+						<ce:label>[8]</ce:label>
+						<ce:other-ref>
+							<ce:textref>
+								<ce:inter-ref xlink:href="http://www.bluetooth.com/bluetooth/" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink">&lt;http://www.bluetooth.com/bluetooth/&gt;</ce:inter-ref> (accessed 10.01.2010).
+							</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0045">
+						<ce:label>[9]</ce:label>
+						<ce:other-ref>
+							<ce:textref>
+								<ce:inter-ref xlink:href="http://www.movie-list.com/nowplaying.shtml" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink">&lt;http://www.movie-list.com/nowplaying.shtml&gt;</ce:inter-ref> (accessed 25.01.2007.
+							</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0050">
+						<ce:label>[10]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Huang</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>L.</ce:given-name>
+										<ce:surname>Rudolph</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Bluetooth Essentials for Programmers</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:edition>first ed.</sb:edition>
+									<sb:date>2007</sb:date>
+									<sb:publisher>
+										<sb:name>Cambridge University Press</sb:name>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0055">
+						<ce:label>[11]</ce:label>
+						<ce:other-ref>
+							<ce:textref>IEEE standard 802.15.1, Part 15.1: MAC and PHY Specifications for WPANs, Published by IEEE, Inc., 3 Park Avenue, NY, 10016-5997, 2002.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0060">
+						<ce:label>[12]</ce:label>
+						<ce:other-ref>
+							<ce:textref>ITU-TSS Study Group 13, Recommendation I.371, Traffic control and congestion control in B-ISDN, Geneva, Switzerland, July 1995.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0065">
+						<ce:label>[13]</ce:label>
+						<ce:other-ref>
+							<ce:textref>H.B. Kazemian, S. Chantaraskul, Intelligent approach to video transmission over 2.4
+								<ce:hsp sp="0.25"/>GHz wireless technology, in: The 2008 IEEE World Congress on Computational Intelligence (WCCI 2008), Hong Kong, 2008, pp. 246–250.
+							</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0070">
+						<ce:label>[14]</ce:label>
+						<ce:other-ref>
+							<ce:textref>S. Kim, S.J. Lim, New quantization for rate control with frame variation consideration, in: IEEE International Conference on Multimedia and Expo, ICME 2006, 2006, pp. 113–116.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0170">
+						<ce:label>[15]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>V.S.</ce:given-name>
+										<ce:surname>Kodogiannis</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Boulougoura</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.N.</ce:given-name>
+										<ce:surname>Lygouras</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>I.</ce:given-name>
+										<ce:surname>Petrounias</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A neuro-fuzzy-based system for detecting abnormal patterns in wireless-capsule endoscopic images</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Neurocomputing</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>70</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4–6</sb:issue-nr>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>704</sb:first-page>
+									<sb:last-page>717</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0080">
+						<ce:label>[16]</ce:label>
+						<ce:other-ref>
+							<ce:textref>S. Lekcharoen, C. Chaochanchaikul, C. Jittawiriyanukoon, A design fuzzy control policing mechanisms on quality of service support in wireless networks, in: ACM International Conference Proceeding Series, Proceedings of the 3rd International Conference on Mobile Technology, Applications and Systems, vol. 270, Bangkok Thailand, Article no. 48, 2006.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0175">
+						<ce:label>[17]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.</ce:given-name>
+										<ce:surname>Liang</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Han</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Dynamic bandwidth allocation based on online traffic prediction for real-time MPEG-4 video streams</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>EURASIP Journal on Advances in Signal Processing</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>41</sb:first-page>
+									<sb:last-page>51</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0090">
+						<ce:label>[18]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Mar</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Kao</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>FLC-based MBWIMA/UMTS protocol for multimedia services in UTRA TDD mode</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Telecommunication Systems</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>29</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>89</sb:first-page>
+									<sb:last-page>108</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0095">
+						<ce:label>[19]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Negnevitsky</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Artificial Intelligence a Guide to Intelligent Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:edition>second ed.</sb:edition>
+									<sb:date>2004</sb:date>
+									<sb:publisher>
+										<sb:name>Pearson Education</sb:name>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0100">
+						<ce:label>[20]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Ortega</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Variable bite rate video coding compressed video over networks</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>M.T.</ce:given-name>
+											<ce:surname>Sun</ce:surname>
+										</sb:editor>
+										<sb:editor>
+											<ce:given-name>A.R.</ce:given-name>
+											<ce:surname>Reibman</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Signal Processing and Communications Series</sb:maintitle>
+									</sb:title>
+									<sb:date>2001</sb:date>
+									<sb:publisher>
+										<sb:name>Marcel Dekker, Inc.</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>343</sb:first-page>
+									<sb:last-page>382</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0105">
+						<ce:label>[21]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Razavi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Fleury</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Ghanbari</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:title>
+										<sb:maintitle>Fuzzy logic control of adaptive ARQ for video distribution over a Bluetooth wireless link</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Advances in Multimedia</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>2007</sb:date>
+									<sb:publisher>
+										<sb:name>Hindawi Publishing Corp</sb:name>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+							<sb:comment>Article ID 45798 (1) 13</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0110">
+						<ce:label>[22]</ce:label>
+						<ce:other-ref>
+							<ce:textref>M. Rezaei, M. Gabbouj, I. Bouazizi, Delay constrained fuzzy rate control for video streaming over DVB-H, in: International Conference on Intelligent Information Hiding and Multimedia Signal Processing (IIH-MSP’06), 2006, pp. 223–227.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0115">
+						<ce:label>[23]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>I.E.G.</ce:given-name>
+										<ce:surname>Richardson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>H264 and MPEG-4 Video Compression: Video Coding for Next-Generation Multimedia</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>2003</sb:date>
+									<sb:publisher>
+										<sb:name>John Wiley and Sons Ltd.</sb:name>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+							<sb:comment>ISBN: 0470848375</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0120">
+						<ce:label>[24]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>P.</ce:given-name>
+											<ce:surname>Stavroulakis</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Neuro-fuzzy and Fuzzy-neural Applications in Telecommunications (Signals and Communication Technology)</sb:maintitle>
+									</sb:title>
+									<sb:edition>first ed.</sb:edition>
+									<sb:date>2004</sb:date>
+									<sb:publisher>
+										<sb:name>Springer</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0125">
+						<ce:label>[25]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.</ce:given-name>
+										<ce:surname>Stegmayer</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>O.</ce:given-name>
+										<ce:surname>Chiotti</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:title>
+										<sb:maintitle>Neural networks applied to wireless communications</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>IFIP International Federation for Information Processing</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>2006</sb:date>
+									<sb:publisher>
+										<sb:name>Springer</sb:name>
+										<sb:location>Boston</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+							<sb:comment>217</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0130">
+						<ce:label>[26]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Sugeno</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Industrial Application of Fuzzy Control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1985</sb:date>
+									<sb:publisher>
+										<sb:name>Elsevier Science Pub. Co.</sb:name>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0135">
+						<ce:label>[27]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.X.</ce:given-name>
+										<ce:surname>Wang</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Adaptive Fuzzy Systems and Control: Design and Stability Analysis</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1994</sb:date>
+									<sb:publisher>
+										<sb:name>Prentice-Hall Inc.</sb:name>
+										<sb:location>Upper Saddle River, NJ, USA</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0140">
+						<ce:label>[28]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.W.</ce:given-name>
+										<ce:surname>Wen</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Q.H.</ce:given-name>
+										<ce:surname>Dai</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>Y.H.</ce:given-name>
+										<ce:surname>Jin</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A model-based adaptive error resilient scheme for wireless video delivery</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Chinese Journal of Electronics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>464</sb:first-page>
+									<sb:last-page>470</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0145">
+						<ce:label>[29]</ce:label>
+						<ce:other-ref>
+							<ce:textref>B. Yip, Face and eye rectification in video conference using artificial neural network, in: IEEE International Conference on Multimedia and Expo, 2005, pp. 690–693.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0150">
+						<ce:label>[30]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.C.</ce:given-name>
+										<ce:surname>Yuang</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.L.</ce:given-name>
+										<ce:surname>Tien</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Multiple access control with intelligent bandwidth allocation for wireless ATM networks</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Journal on Selected Areas on Communications</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>18</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>9</sb:issue-nr>
+									<sb:date>2000</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1658</sb:first-page>
+									<sb:last-page>1669</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0155">
+						<ce:label>[31]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.A.</ce:given-name>
+										<ce:surname>Zadeh</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Toward a generalized theory of uncertainty (GTU) – an outline</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>INS – Information Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>172</sb:volume-nr>
+									</sb:series>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1</sb:first-page>
+									<sb:last-page>40</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0160">
+						<ce:label>[32]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.A.</ce:given-name>
+										<ce:surname>Zadeh</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Is there a need for fuzzy logic?</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>INS – Information Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>178</sb:volume-nr>
+									</sb:series>
+									<sb:date>2008</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>2751</sb:first-page>
+									<sb:last-page>2779</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+			<ce:biography id="vt1" view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:simple-para id="sp125" view="all">
+					<ce:bold>H.B. Kazemian</ce:bold> (SM’1988) received a B.Sc. in Engineering from Oxford Brookes University, UK, a M.Sc. in Control Systems Engineering from the University of East London, UK, and a Ph.D. in Learning Fuzzy Controllers from Queen Mary University of London, UK, in 1985, 1987 and 1998, respectively. He is currently a full professor at London Metropolitan University, UK. He worked for Ravensbourne College University Sector, UK, as a senior lecturer for eight years. Previous lecturing experience includes the University of East London, UK, University of Northampton, UK, and Newham College, UK. Research interests include fuzzy and neuro-fuzzy control of networks, 2.4
+					<ce:hsp sp="0.25"/>GHz frequency bands, ATM, video streaming and rate control. Prof. Kazemian is a senior member of the Institute of Electrical and Electronics Engineers (SMIEEE), Fellow of the Institution of Engineering and Technology FIET (formerly IEE) UK and Chartered Engineer (C. Eng.) UK.
+				</ce:simple-para>
+			</ce:biography>
+		</ja:tail>
+	</ja:article></doc:document>

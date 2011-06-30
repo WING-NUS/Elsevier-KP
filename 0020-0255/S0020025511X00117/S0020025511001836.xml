@@ -1,0 +1,2744 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/j.ins.2011.04.015"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Image-based homing navigation with landmark arrangement matching</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Seung-Eun Yu</rdf:li><rdf:li>DaeEun Kim</rdf:li></rdf:Seq></dc:creator><dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Bag><rdf:li>Image-based navigation</rdf:li><rdf:li>Landmark navigation</rdf:li><rdf:li>Bio-inspired robotics</rdf:li><rdf:li>Arrangement matching</rdf:li><rdf:li>Homing navigation</rdf:li></rdf:Bag></dc:subject><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 181 (2011) 3427-3442. doi:10.1016/j.ins.2011.04.015</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © 2011 Elsevier Inc. All rights reserved.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">181</prism:volume><prism:number xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">16</prism:number><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">2011</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">2011</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">3427-3442</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">3427</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">3442</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/j.ins.2011.04.015</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/j.ins.2011.04.015</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/j.ins.2011.04.015</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S300.1</dp:version-number></dp:document-properties><ja:article docsubtype="fla" xml:lang="en" version="5.1" xmlns:ja="http://www.elsevier.com/xml/ja/schema">
+		<ja:item-info>
+			<ja:jid>INS</ja:jid>
+			<ja:aid>9066</ja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">S0020-0255(11)00183-6</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/j.ins.2011.04.015</ce:doi>
+			<ce:copyright type="full-transfer" year="2011" xmlns:ce="http://www.elsevier.com/xml/common/schema">Elsevier Inc.</ce:copyright>
+		</ja:item-info>
+		<ce:floats xmlns:ce="http://www.elsevier.com/xml/common/schema">
+			<ce:figure id="f0005">
+				<ce:label>Fig. 1</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp010" view="all">Description of the predictive image-matching method 
+						<ce:cross-ref refid="b0065">[13]</ce:cross-ref> (a) the possible directions of movement for the agent and (b) the prediction of the captured image for each corresponding direction of movement.
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr1"/>
+			</ce:figure>
+			<ce:figure id="f0010">
+				<ce:label>Fig. 2</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp015" view="all">Image shift of a landmark; the agent moves from position 
+						<ce:italic>C</ce:italic> to position 
+						<ce:italic>T</ce:italic> by moving distance 
+						<ce:italic>d</ce:italic>, changing the head orientation angle by 
+						<ce:italic>ψ</ce:italic>, and changing the viewing angle of a landmark from 
+						<ce:italic>θ</ce:italic> to 
+						<ce:italic>θ</ce:italic>
+						<ce:hsp sp="0.25"/>+
+						<ce:hsp sp="0.25"/>
+						<ce:italic>δ</ce:italic>.
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr2"/>
+			</ce:figure>
+			<ce:figure id="f0015">
+				<ce:label>Fig. 3</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp020" view="all">Landmarks and the perceived landmark vectors. (a) Landmarks projected in the omnidirectional ring and (b) the perceived landmark vectors with the robot’s head facing the north, where the length 
+						<ce:italic>R</ce:italic>
+						<ce:inf loc="post">
+							<ce:italic>i</ce:italic>
+						</ce:inf> is calculated based on the movement described in 
+						<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>.
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr3"/>
+			</ce:figure>
+			<ce:figure id="f0020">
+				<ce:label>Fig. 4</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp025" view="all">Procedure for determining the appropriate arrangement of landmarks with the same set of landmark vectors. The same landmark vectors are illustrated by the same type of line (
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">1</ce:inf> dotted (⋯),
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">2</ce:inf> dot-dashed (−·−·−
+						<ce:hsp sp="0.25"/>·), 
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">3</ce:inf> solid (—), and 
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">4</ce:inf> dashed (-
+						<ce:hsp sp="0.12"/>-
+						<ce:hsp sp="0.12"/>-)).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr4"/>
+			</ce:figure>
+			<ce:figure id="f0025">
+				<ce:label>Fig. 5</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp030" view="all">Illustration of the segmentation error; if there are errors in segmentation or landmark selection, the robot may construct a different environmental map.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr5"/>
+			</ce:figure>
+			<ce:figure id="f0030">
+				<ce:label>Fig. 6</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp035" view="all">Localization by rotational shift of landmark vectors with error in the landmark selection, 
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">1</ce:inf> dotted (⋯), 
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">2</ce:inf> dot-dashed (−·−·− ·), 
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">3</ce:inf> solid (—), and 
+						<ce:italic>LV</ce:italic>
+						<ce:inf loc="post">4</ce:inf> dashed (-
+						<ce:hsp sp="0.12"/>-
+						<ce:hsp sp="0.12"/>-).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr6"/>
+			</ce:figure>
+			<ce:figure id="f0035">
+				<ce:label>Fig. 7</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp040" view="all">Vector maps of (a) the predictive image matching method without compass and (b) with compass information and (c) image warping with gradient method.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr7"/>
+			</ce:figure>
+			<ce:figure id="f0040">
+				<ce:label>Fig. 8</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp045" view="all">Vector map with the landmark arrangement matching method (a) 
+						<ce:italic>d</ce:italic>
+						<ce:hsp sp="0.25"/>=
+						<ce:hsp sp="0.25"/>20 (b) 
+						<ce:italic>d</ce:italic>
+						<ce:hsp sp="0.25"/>=
+						<ce:hsp sp="0.25"/>50 (c) 
+						<ce:italic>d</ce:italic>
+						<ce:hsp sp="0.25"/>=
+						<ce:hsp sp="0.25"/>100 (d) 
+						<ce:italic>d</ce:italic>
+						<ce:hsp sp="0.25"/>=
+						<ce:hsp sp="0.25"/>150.
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr8"/>
+			</ce:figure>
+			<ce:figure id="f0045">
+				<ce:label>Fig. 9</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp050" view="all">Performance of landmark arrangement-matching method with varying moving distances and angular differences.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr9"/>
+			</ce:figure>
+			<ce:figure id="f0050">
+				<ce:label>Fig. 10</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp055" view="all">Performance comparison of (a) error curves for the landmark arrangement method and predictive image-matching method angular difference and (b) success rate among 100 trials with respect to the distance from home without a reference compass.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr10"/>
+			</ce:figure>
+			<ce:figure id="f0055">
+				<ce:label>Fig. 11</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp060" view="all">Trajectories of a mobile robot at the same points: (a) predictive image-matching approach and (b) image-warping with the gradient method and (c) landmark arrangement-matching approach (
+						<ce:italic>d</ce:italic>
+						<ce:hsp sp="0.25"/>=
+						<ce:hsp sp="0.25"/>50).
+					</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr11"/>
+			</ce:figure>
+			<ce:figure id="f0060">
+				<ce:label>Fig. 12</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp065" view="all">Vector maps and angular error performance (a)–(e) vector maps with the suggested method in various environments (f) error graphs for the vector maps in (b), (c) and (e).</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr12"/>
+			</ce:figure>
+			<ce:figure id="f0065">
+				<ce:label>Fig. 13</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp070" view="all">Mobile robot and its environment (a) robot with an omnidirectional camera and the (b) experimental environment with four cylindrical landmarks.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr13"/>
+			</ce:figure>
+			<ce:figure id="f0070">
+				<ce:label>Fig. 14</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp075" view="all">Omnidirectional camera and the captured image (a) camera on the robot and (b) the snapshot taken with the camera at home location.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr14"/>
+			</ce:figure>
+			<ce:figure id="f0075">
+				<ce:label>Fig. 15</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp080" view="all">Vector map created with the (a) predictive image matching method and the (b) landmark arrangement matching method.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr15"/>
+			</ce:figure>
+			<ce:figure id="f0080">
+				<ce:label>Fig. 16</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp085" view="all">Homing navigation (a) error curves of the angular differences for robot experiments with the landmark arrangement-matching method and the predictive image-matching method, and (b) the success rate of robot experiments with varying distances from the nest (each test included 100 trials).</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr16"/>
+			</ce:figure>
+			<ce:figure id="f0085">
+				<ce:label>Fig. 17</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp090" view="all">Homing performance (a) vector map of the robotic experiments and (b) error curves of the angular differences in the robot experiments using the distance estimation method.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr17"/>
+			</ce:figure>
+			<ce:figure id="f0090">
+				<ce:label>Fig. 18</ce:label>
+				<ce:caption>
+					<ce:simple-para id="sp095" view="all">Error curves (angular difference) for the landmark arrangement method and predictive image matching method with compass.</ce:simple-para>
+				</ce:caption>
+				<ce:link locator="gr18"/>
+			</ce:figure>
+		</ce:floats>
+		<ja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Image-based homing navigation with landmark arrangement matching</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Seung-Eun</ce:given-name>
+					<ce:surname>Yu</ce:surname>
+				</ce:author>
+				<ce:author>
+					<ce:given-name>DaeEun</ce:given-name>
+					<ce:surname>Kim</ce:surname>
+					<ce:cross-ref refid="cor1">
+						<ce:sup loc="post">⁎</ce:sup>
+					</ce:cross-ref>
+					<ce:e-address type="email">daeeun@yonsei.ac.kr</ce:e-address>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Biological Cybernetics Lab, School of Electrical and Electronic Engineering, Yonsei University, Shinchon, Seoul 120-749, South Korea</ce:textfn>
+				</ce:affiliation>
+				<ce:correspondence id="cor1">
+					<ce:label>⁎</ce:label>
+					<ce:text>Corresponding author. Tel.: +82 2 2123 5879.</ce:text>
+				</ce:correspondence>
+			</ce:author-group>
+			<ce:date-received day="9" month="6" year="2010" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:date-revised day="18" month="3" year="2011" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:date-accepted day="8" month="4" year="2011" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+			<ce:abstract class="author" xml:lang="en" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Abstract</ce:section-title>
+				<ce:abstract-sec>
+					<ce:simple-para id="sp005" view="all">Many insects and animals exploit their own navigation systems to navigate in space. Biologically-inspired methods have been introduced for landmark-based navigation algorithms of a mobile robot. The methods determine the movement direction based on a home snapshot image and another snapshot from the current position. In this paper, we suggest a new landmark-based matching method for robotic homing navigation that first computes the distance to each landmark based on ego-motion and estimates the landmark arrangement in the snapshot image. Then, landmark vectors are used to localize the robotic agent in the environment and to choose the appropriate direction to return home. As a result, this method has a higher success rate for returning home from an arbitrary position than do the conventional image-matching algorithms.</ce:simple-para>
+				</ce:abstract-sec>
+			</ce:abstract>
+			<ce:keywords class="keyword" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Keywords</ce:section-title>
+				<ce:keyword>
+					<ce:text>Image-based navigation</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>Landmark navigation</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>Bio-inspired robotics</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>Arrangement matching</ce:text>
+				</ce:keyword>
+				<ce:keyword>
+					<ce:text>Homing navigation</ce:text>
+				</ce:keyword>
+			</ce:keywords>
+		</ja:head>
+		<ja:body view="all">
+			<ce:sections xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section id="s0005" view="all">
+					<ce:label>1</ce:label>
+					<ce:section-title>Introduction</ce:section-title>
+					<ce:para id="p0005" view="all">Insects and animals leave their home area to forage or hunt for food and are able to accurately find their way home using information from their own sensors such as visual, olfactory, auditory, and magnetic, as well as proprioceptive information 
+						<ce:cross-refs refid="b0115 b0110 b0030">[23,22,6]</ce:cross-refs>. Animals show very robust and efficient performances of homing navigation. It is a challenge to develop bio-inspired navigation algorithms which model animal navigation for application in a robotic environment.
+					</ce:para>
+					<ce:para id="p0010" view="all">Path integration is a navigation skill based on egocentric motion, which is found in many animals such as desert ants 
+						<ce:cross-ref refid="b0030">[6]</ce:cross-ref>, fiddler crabs 
+						<ce:cross-ref refid="b0190">[38]</ce:cross-ref>, honey bees and gerbils 
+						<ce:cross-refs refid="b0055 b0120">[11,24]</ce:cross-refs>. However, for long-term exploration, path integration involves navigation errors since it is vulnerable to errors in accumulated motion or reference direction. The error in the path integration method accumulates in proportion to the navigation time. Desert ants and honeybees 
+						<ce:cross-refs refid="b0030 b0175">[6,35]</ce:cross-refs>, as well as mammals such as gerbils 
+						<ce:cross-ref refid="b0060">[12]</ce:cross-ref>, actually use visual information along with the path-integration mechanism for homing navigation. Combining these two types of information, they are able to successfully return home.
+					</ce:para>
+					<ce:para id="p0015" view="all">There are many navigation strategies that use visual information from the surrounding environment. As insects and animals demonstrate elegant homing behaviors with acquired visual information, various biologically inspired algorithms have been suggested based on these landmark-based navigation behaviors. Mammals such as rodents and gerbils use the “place” cells within their hippocampus to navigate back to their homes 
+						<ce:cross-refs refid="b0165 b0160">[33,32]</ce:cross-refs>. Rodents encode cognitive maps of visited locations in the environment using temporal sequences of places in a topological representation. When the rodent is in a particular location of space, the place cells in the hippocampus fire, and these firing regions correspond to a neuronal representation of the local environmental map 
+						<ce:cross-ref refid="b0135">[27]</ce:cross-ref>. In contrast, rather than using place cell memory, insects use a relatively simple form of encoding for environmental information 
+						<ce:cross-ref refid="b0030">[6]</ce:cross-ref>. Insects perform visual homing navigation without the development of a sophisticated map, but instead use snapshot images at specific locations 
+						<ce:cross-refs refid="b0015 b0035">[3,7]</ce:cross-refs>. One hypothesis about insect navigation is that the current image is compared with the snapshot image of the goal through image-matching methods, and then the moving direction is determined 
+						<ce:cross-ref refid="b0010">[2]</ce:cross-ref>. It has been reported that wood ants and desert ants use a visual cue with image matching process to reach their goal position 
+						<ce:cross-refs refid="b0130 b0095 b0005">[26,19,1]</ce:cross-refs>. Using a set of snapshots of the environment, ants and honeybees recognize landmark information and guide themselves to the goal without creating either a geometrical or topological map. Tracking the landmarks or memorizing a distribution of several landmarks in their views lead the ants or honeybees to their target locations 
+						<ce:cross-refs refid="b0010 b0090">[2,18]</ce:cross-refs>. The template image matching to derive a movement direction has been suggested to explain the behavior of honeybees 
+						<ce:cross-refs refid="b0010 b0085">[2,17]</ce:cross-refs>, desert ants 
+						<ce:cross-refs refid="b0185 b0180">[37,36]</ce:cross-refs> and hoverflies 
+						<ce:cross-ref refid="b0025">[5]</ce:cross-ref>. This idea has been a fundamental basis of biologically inspired navigation methods.
+					</ce:para>
+					<ce:para id="p0020" view="all">Inspired by insect navigation behavior, many types of image-based navigation methods have been developed 
+						<ce:cross-refs refid="b0125 b0020 b0195">[25,4,39]</ce:cross-refs>. Navigation methods can focus on matching the overall background characteristics 
+						<ce:cross-ref refid="b0150">[30]</ce:cross-ref>. Mobile robots can use optic flow information based on egomotion 
+						<ce:cross-refs refid="b0020 b0170">[4,34]</ce:cross-refs>, which is based on biological experiments with honeybees 
+						<ce:cross-ref refid="b0145">[29]</ce:cross-ref>. The snapshot image at the current location can be compared pixel by pixel with a snapshot image of the nest. The differences in the images often increase as the distance from the nest increases 
+						<ce:cross-ref refid="b0195">[39]</ce:cross-ref>. This image-matching property can be used to guide an agent home. One of the methods utilizing this approach was suggested by Franz et al. 
+						<ce:cross-ref refid="b0065">[13]</ce:cross-ref>. Under the equidistance assumption that the landmarks in view are all the same distance from the agent, the agent can predict the change in the captured image depending on the moving direction. Therefore, the navigation method predicts new images for every possible moving direction and compares the new images with the image of the nest. Instead of comparing every predicted image, Labrosse 
+						<ce:cross-ref refid="b0100">[20]</ce:cross-ref> suggested a method using the difference gradient in the image space along with only two warped images. By warping the image in two orthogonal directions, forward and right, and comparing the difference ratio with the image of the nest, the agent can easily determine the homing direction. The gradient information may be erroneous, but the overall flow heads toward the home location.
+					</ce:para>
+					<ce:para id="p0025" view="all">Lambrino et al. 
+						<ce:cross-ref refid="b0105">[21]</ce:cross-ref> suggested an ALV (average landmark vector) model that computes the homing vector for the next direction of movement, in which each landmark has a unit vector with the corresponding angular direction, and the average landmark vector is regarded as a sufficient feature for the whole snapshot image. This method calculates the vector sum of landmark vectors for the average landmark vector and thus only exploits the angular direction of each landmark in space, ignoring any additional information about the landmarks. The ALV model compares the two average landmark vectors at the current location and at the nest to determine the homing direction. This navigation algorithm is simple and computationally efficient, but it needs a reference compass to estimate the average landmark vector. The method ignores detailed properties of each landmark, for example, the occupied bearing angle or relative distance from the agent.
+					</ce:para>
+					<ce:para id="p0030" view="all">There have been robotic approaches for visual navigation. Vision-based localization has been used to build an environmental map 
+						<ce:cross-ref refid="b0140">[28]</ce:cross-ref>. Extracting features from a sequence of snapshot images and determining the homeward direction using matching points has been explored 
+						<ce:cross-refs refid="b0040 b0045 b0075">[8,9,15]</ce:cross-refs>. Goedeme et al. 
+						<ce:cross-ref refid="b0080">[16]</ce:cross-ref> used a sequence of images in the visual path to reach a target position, but they assumed that the feature map was well matched between a pair of images. Their method requires a large memory size for the environmental features and a lot of computation time. Many robotic navigation experiments use an omnidirectional camera 
+						<ce:cross-refs refid="b0080 b0070">[16,14]</ce:cross-refs> due to its advantage of an extended viewing range. The panoramic image is helpful for tracing the landmark, irrespective of the position of the agent 
+						<ce:cross-ref refid="b0155">[31]</ce:cross-ref>. Thus, our navigation approach will also use an omnidirectional camera.
+					</ce:para>
+					<ce:para id="p0035" view="all">In this paper, we suggest a new landmark-based navigation algorithm using the distance estimation and arrangement order of landmarks. More detailed information about the environment can more efficiently guide homing navigation. Thus, the distance to each landmark is estimated with ego-motion, that is, single step forward movement, and then the arrangement of the landmarks is compared with that at the nest in order to localize the agent in the environment. Finally, our approach can determine the direct route to the nest using the environmental map. This method can function using only a sequence of snapshot images in a local zone and does not require a reference compass. We will first introduce our approach in detail and then demonstrate the simulation results and robotic experiments.</ce:para>
+				</ce:section>
+				<ce:section id="s0010" view="all">
+					<ce:label>2</ce:label>
+					<ce:section-title>Method</ce:section-title>
+					<ce:para id="p0040" view="all">Image-based homing navigation is a challenging issue in robotics. As mentioned above, the predictive image-matching method provides a robust homing performance even without a reference compass as it is based on pure visual information 
+						<ce:cross-ref refid="b0065">[13]</ce:cross-ref>. Many navigation methods compare the snapshot image at an arbitrary position with that at the nest 
+						<ce:cross-refs refid="b0065 b0195 b0125 b0100">[13,39,25,20]</ce:cross-refs>.
+					</ce:para>
+					<ce:para id="p0045" view="all">The predictive image-matching process is described in 
+						<ce:cross-ref refid="f0005">Fig. 1</ce:cross-ref>
+						<ce:float-anchor refid="f0005"/>. The dashed line arrows diverging from the agent in 
+						<ce:cross-ref refid="f0005">Fig. 1</ce:cross-ref>(a) indicate possible directions for movement, and the number of directions determines the resolution of the prediction step. 
+						<ce:cross-ref refid="f0005">Fig. 1</ce:cross-ref>(b) shows predicted images for the possible moving directions. Even though the agent does not know the actual structure of the environment, using the equidistance assumption, it can predict the distorted images. Comparing predicted images with the image taken at the target location, the image with the least discrepancy in the size and bearing of landmarks is chosen, and the agent moves in the corresponding direction. The procedure is then repeated until the agent reaches its home destination. However, the predictive image-matching algorithm is largely affected by the distribution of surrounding landmarks or the number of landmarks.
+					</ce:para>
+					<ce:para id="p0050" view="all">The predictive image-matching algorithm suggested by Franz et al. 
+						<ce:cross-ref refid="b0065">[13]</ce:cross-ref> assumes equidistance for every landmark, which does not reflect real situations. The ALV (average landmark vector) model suggested by Lambrino et al. 
+						<ce:cross-ref refid="b0105">[21]</ce:cross-ref> ignores the distance information of landmarks and only considers the angular direction of landmarks in space. In addition, it cannot be applied to the robotic agent without a reference compass. We propose a new homing navigation algorithm that matches landmark arrangements at an arbitrary position and at a target location, including the distance information of each landmark. The mobile robot obtains a sequence of images based on the egocentric motion. The agent can extract the environmental features to determine the relative positions of landmarks. The method estimates the distances of landmarks from the current location and constructs an environmental map to localize the robotic agent in a given environment. The mobile robot estimates the current position in the landmark map and ultimately derives the homing direction. While conventional image-matching methods do not exploit the distances to landmarks, our homing navigation algorithm estimates environmental information about the angular direction and distance of the landmarks in the egocentric view.
+					</ce:para>
+					<ce:para id="p0055" view="all">In this paper, we focus on using homing navigation to return to the target location. Without a compass, the robotic agent needs to match the distribution of landmarks at the nest with an arbitrary position in order to localize itself in the environmental map and to determine the current direction on the map. Here, we suggest an efficient matching algorithm for landmark arrangements. The landmark arrangement matching in the two environmental maps may require a high computing cost, since it needs to determine the agreement between the two maps. The landmark map drawn at the nest is compared with another distribution of landmarks at the current position, and if the two maps agree, then the current location can be identified. Each map has a linear array of landmark arrangements with landmark distances relative to the agent in the omnidirectional view. The two different maps match each other to estimate the current position of the agent, and the landmark order will be of main concern in the matching process. The landmark arrangement matching can be obtained by shifting the linear order of landmarks in the egocentric view or by reconfiguring the landmark arrangements in the reference environment, that is, the nest environment. More details of the procedure and mathematical description are given below.</ce:para>
+					<ce:section id="s0015" view="all">
+						<ce:label>2.1</ce:label>
+						<ce:section-title>Mathematical description</ce:section-title>
+						<ce:para id="p0060" view="all">Using an omnidirectional camera, the agent can capture images of the surrounding landmarks in the environment. The mobile robot can obtain a 360° view of the surroundings and produce a panoramic image by unwrapping the captured snapshot. The center position of the landmark image recorded in the ring is denoted as angle 
+							<ce:italic>θ</ce:italic>, the angle measured in the counterclockwise direction, starting from the heading direction of the mobile robot. As the mobile agent moves from one position to the next, the landmark information in the omnidirectional ring changes, including both landmark size and angular position. The current position of the mobile robot is denoted as 
+							<ce:italic>C</ce:italic>, and the next position after moving is 
+							<ce:italic>T</ce:italic>. The image shift of a landmark on the camera image is denoted as angle 
+							<ce:italic>δ</ce:italic> – see 
+							<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>
+							<ce:float-anchor refid="f0010"/>. The distance to the landmark can be estimated using the angular information. The distance to the landmark from point 
+							<ce:italic>C</ce:italic> is denoted as 
+							<ce:italic>R</ce:italic>′ and the distance to the landmark from point 
+							<ce:italic>T</ce:italic> is 
+							<ce:italic>R</ce:italic>. Applying the sine law to the triangle ▵CLT, Eq. 
+							<ce:cross-ref refid="e0005">(1)</ce:cross-ref> is obtained, and Eq. 
+							<ce:cross-ref refid="e0010">(2)</ce:cross-ref> is derived to estimate 
+							<ce:italic>R</ce:italic>. The equation demonstrates that the distance to a landmark involves the change in the head orientation angle, the landmark direction, the image shift and the moving distance of the agent, as follows:
+							<ce:display>
+								<ce:formula id="e0005">
+									<ce:label>(1)</ce:label>
+									<mml:math altimg="si1.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:mi>ρ</mml:mi>
+										<mml:mo>=</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>δ</mml:mi>
+												<mml:mo>+</mml:mo>
+												<mml:mi>ψ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>d</mml:mi>
+											</mml:mrow>
+										</mml:mfrac>
+										<mml:mo>=</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>θ</mml:mi>
+												<mml:mo>-</mml:mo>
+												<mml:mi>ψ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>R</mml:mi>
+											</mml:mrow>
+										</mml:mfrac>
+										<mml:mo>=</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>θ</mml:mi>
+												<mml:mo>+</mml:mo>
+												<mml:mi>δ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:msup>
+													<mml:mrow>
+														<mml:mi>R</mml:mi>
+													</mml:mrow>
+													<mml:mrow>
+														<mml:mo>′</mml:mo>
+													</mml:mrow>
+												</mml:msup>
+											</mml:mrow>
+										</mml:mfrac>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+							<ce:display>
+								<ce:formula id="e0010">
+									<ce:label>(2)</ce:label>
+									<mml:math altimg="si2.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:mi>R</mml:mi>
+										<mml:mo>=</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mi>d</mml:mi>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>θ</mml:mi>
+												<mml:mo>-</mml:mo>
+												<mml:mi>ψ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>δ</mml:mi>
+												<mml:mo>+</mml:mo>
+												<mml:mi>ψ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+										</mml:mfrac>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+						</ce:para>
+						<ce:para id="p0065" view="all">The landmark position difference 
+							<ce:italic>δ</ce:italic> in the distance estimation actually corresponds to the optic flow, which is the image pattern of the motions of objects caused by agent motion. The movement of the agent with regard to static objects can produce optic flow of the objects due to relative motion between them. It is known that honeybees use optic flow estimation to detect a food source 
+							<ce:cross-ref refid="b0050">[10]</ce:cross-ref>. The optical flow of the image, based on the one step movement of a robot, can be used to determine the relative distance to a given landmark from the current position. While there have been a number of navigation methods used to compute the optic flow for the whole image 
+							<ce:cross-refs refid="b0020 b0170">[4,34]</ce:cross-refs>, the method we suggest focuses on the landmark motion information, thus reducing the computational complexity.
+						</ce:para>
+						<ce:para id="p0070" view="all">We can extend the distance estimation to multiple landmarks using ego-motion, allowing for the creation of an environmental map with a distribution of landmarks. The equation provides some insights into the characteristics of the distance estimation process. Intuitively, if an object is close to the moving robotic agent, the image shift 
+							<ce:italic>δ</ce:italic> is larger than those of distant objects. If a landmark is far from the agent, only a small image shift will result. Also, the angular position 
+							<ce:italic>θ</ce:italic> of a landmark influences the amount of image shift 
+							<ce:italic>δ</ce:italic>. If the robot moves toward an object ahead of itself, there will be no image shift; however, if a landmark is off to one side, a large image shift may occur.
+						</ce:para>
+						<ce:para id="p0075" view="all">During exploration, there exists a point where 
+							<ce:italic>δ</ce:italic>
+							<ce:hsp sp="0.25"/>+
+							<ce:hsp sp="0.25"/>
+							<ce:italic>ψ</ce:italic> becomes zero. For 
+							<ce:italic>δ</ce:italic>
+							<ce:hsp sp="0.25"/>+
+							<ce:hsp sp="0.25"/>
+							<ce:italic>ψ</ce:italic>
+							<ce:hsp sp="0.25"/>=
+							<ce:hsp sp="0.25"/>0, the computational result for 
+							<ce:italic>R</ce:italic> increases to infinity according to Eq. 
+							<ce:cross-ref refid="e0010">(2)</ce:cross-ref>. A typical case is that in which the robot moves directly toward the landmark. The suggested distance estimation formula does not operate properly in this case, and the size variation of the landmark should be considered to determine its distance. However, considering a set of landmarks to localize the agent in the environment, we can filter out inaccurately estimated distances and infer the most probable position of the agent with reliable landmark distances. Using the localization information, the agent can easily determine the direction of the target location.
+						</ce:para>
+					</ce:section>
+					<ce:section id="s0020" view="all">
+						<ce:label>2.2</ce:label>
+						<ce:section-title>Reference map</ce:section-title>
+						<ce:para id="p0080" view="all">The robot starts to move from the nest for exploration and wishes to later return to the nest. A sequence of snapshot images at the nest can derive the arrangements of landmarks by estimating the landmark distances. The distribution of landmarks is initially stored as an environmental map, which will be called the reference map. The reference map consists of landmark vectors, (
+							<ce:italic>R</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf>,
+							<ce:hsp sp="0.12"/>
+							<ce:italic>θ</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf>) where 
+							<ce:italic>R</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf> is the distance and 
+							<ce:italic>θ</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf> is the viewing angle of the 
+							<ce:italic>i</ce:italic>th landmark. The reference map does not possess any complicated features of the environment; instead, only the landmark vectors are encoded. For the nest-oriented view, we estimate 
+							<ce:italic>R</ce:italic>′ using Eq. 
+							<ce:cross-ref refid="e0015">(3)</ce:cross-ref>, which can be derived from Eq. 
+							<ce:cross-ref refid="e0005">(1)</ce:cross-ref>.
+							<ce:display>
+								<ce:formula id="e0015">
+									<ce:label>(3)</ce:label>
+									<mml:math altimg="si3.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:msup>
+											<mml:mrow>
+												<mml:mi>R</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mo>′</mml:mo>
+											</mml:mrow>
+										</mml:msup>
+										<mml:mo>=</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mi>d</mml:mi>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>θ</mml:mi>
+												<mml:mo>+</mml:mo>
+												<mml:mi>δ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">sin</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>δ</mml:mi>
+												<mml:mo>+</mml:mo>
+												<mml:mi>ψ</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+										</mml:mfrac>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+						</ce:para>
+						<ce:para id="p0085" view="all">The nest position can also be estimated from the above landmark vectors. That is, the distance measurements and angular positions of landmarks will provide the information needed to localize the agent in the environment. Similar to the reference map, a landmark map can be created at any position by observing the image shifts produced by ego-motion; for example, moving forward a preferred direction. The landmark map indicates arrangements of landmarks with distance information but no size information. The egocentric view of landmarks depends on the head direction and position of the mobile robot. However, each landmark map should represent the same environment, and so the distribution of static landmarks remains fixed at any moment. Only the robot’s location is dynamically changed in the environment. In this situation, we can estimate the robot’s current position in the environment if the landmark map matches the reference map of the nest-oriented view. Here, the robot is localized in the reference map and we can easily decide how to move the robot toward the nest.</ce:para>
+					</ce:section>
+					<ce:section id="s0025" view="all">
+						<ce:label>2.3</ce:label>
+						<ce:section-title>Localization process</ce:section-title>
+						<ce:para id="p0090" view="all">Creating and constantly updating a map of every feature of an environment during exploration is a complicated procedure. In our approach, the robot does not create any topological maps during exploration, but instead only determines a homing vector at each location. Although the method results in the production of an environmental map with landmark vectors, this map is used only for localization. The mobile robot uses a sequence of snapshot images to estimate the landmark distances and projects the perceived landmark information onto the reference map in order to determine the current position within the map. In other words, the egocentric landmark arrangement acquired during movement is mapped into the reference frame in the localization phase. From this process, the robot can determine its current location with respect to the coordinates of the landmarks in the reference map.</ce:para>
+						<ce:para id="p0095" view="all">By processing visual images without a reference compass, the navigation method is confronted with the correspondence problem between landmarks in the current map and those in the reference map. In order to pinpoint the current location of the mobile robot using the reference map, it is necessary to determine the matching order of the landmarks. That is, after acquiring landmark vectors at an arbitrary position, they have to be correctly projected onto the reference map. In this paper, we suggest a rotational arrangement matching method to solve this problem.</ce:para>
+						<ce:para id="p0100" view="all">An example of how the rotational shift-matching works is illustrated in 
+							<ce:cross-refs refid="f0015 f0020">Figs. 3 and 4</ce:cross-refs>
+							<ce:float-anchor refid="f0015"/>
+							<ce:float-anchor refid="f0020"/>. Circular objects in the 
+							<ce:cross-ref refid="f0015">Fig. 3</ce:cross-ref>(a) indicate the landmarks in the reference map. Landmarks 
+							<ce:italic>L</ce:italic>1, 
+							<ce:italic>L</ce:italic>2, 
+							<ce:italic>L</ce:italic>3 and 
+							<ce:italic>L</ce:italic>4 in the map are numbered in a clockwise direction. To accurately estimate the current location, the agent needs to identify the landmarks in the current view. The correspondence between landmarks in the current view and those in the reference map should be checked, and all possible landmark arrangements can be examined theoretically. Thus, determination of the appropriate landmark order in the map becomes the main problem in the localization of the agent in the environment. To solve the problem, we propose the rotational shift-matching of landmark arrangements, as shown in 
+							<ce:cross-ref refid="f0020">Fig. 4</ce:cross-ref>. We find that if the correspondence matching is successful, the sum of landmark vectors in the reference map produces a converging point. A set of landmark vectors is projected onto the reference map, where the circles indicate the landmark stored in the reference map and the arrows are landmark vectors. The end points of the landmark vectors depend on how each landmark vector is mapped. As shown in 
+							<ce:cross-ref refid="f0020">Fig. 4</ce:cross-ref>, it is obvious that 
+							<ce:cross-ref refid="f0020">Fig. 4</ce:cross-ref>(a) is the correct landmark vector set, since the end points of the projected landmark vectors show the best convergence. The criterion we use to determine the best matching landmark arrangement is the convergence level of the end points of the landmark vectors, which can be evaluated as the average variance of the end points. Graphically, the landmark vectors applied to landmarks in 
+							<ce:cross-ref refid="f0020">Fig. 4</ce:cross-ref>(a) converge to a single point, while those in the other figures do not. Similarly, we can test varying agent head directions and use them with the landmark vectors to determine the current head direction.
+						</ce:para>
+						<ce:para id="p0105" view="all">One of the important factors in localization is landmark selection. To include all possible arrangement orders of 
+							<ce:italic>n</ce:italic> landmarks requires 
+							<ce:italic>n</ce:italic>! cases. In this study, we assume that the landmark orders for any environment retain the sequential order found in the reference map. That is, for any pair of landmarks, the order in the camera view is the same as that on the map. This allows us to simplify the computational matching process of the arrangements. We need 
+							<ce:italic>n</ce:italic> times comparison of arrangement orders. If the agent is in a zone surrounded by landmarks, the arrangement order on the reference map is shifted depending on the head direction. Also, if the agent is in an outer zone of landmarks but is not far from landmarks, the landmark arrangement experiences a shift in the original order, not a permutation of the order. Thus, the rotational shift of the arrangements is an effective approach to match the landmark vectors, unless the agent is far from the nest.
+						</ce:para>
+						<ce:para id="p0110" view="all">The mobile robot first takes a snapshot, obtains the omnidirectional ring image and then applies the segmentation algorithm to the image. The segmentation is a computer vision algorithm used to discriminate different pixel segments in an image. In this paper, since we need to extract landmarks from a background image, we use color-based segmentation in which neighbor pixels of the same color are considered part of the same segment. After extracting landmark features through the segmentation process, the robot selects several landmarks for localization. The landmarks found in the reference map should be available in another environment to assure successful localization of the robot. Hence, if the robot finds landmarks different from those in the reference map, an error occurs. The arrangement matching process may lead to an erroneous result. 
+							<ce:cross-ref refid="f0025">Fig. 5</ce:cross-ref>
+							<ce:float-anchor refid="f0025"/> shows a case in which the robot misjudges the landmarks. The mobile robot successfully detects 
+							<ce:italic>L</ce:italic>
+							<ce:inf loc="post">2</ce:inf>, 
+							<ce:italic>L</ce:italic>
+							<ce:inf loc="post">3</ce:inf>, and 
+							<ce:italic>L</ce:italic>
+							<ce:inf loc="post">4</ce:inf> but misidentifies 
+							<ce:italic>L</ce:italic>
+							<ce:inf loc="post">1</ce:inf>. This would result in an error if the robot were to attempt to compute the current position by projecting the set of landmark vectors onto the reference map.
+						</ce:para>
+						<ce:para id="p0115" view="all">If one of the landmarks is not selected or if a noisy image component is wrongly selected as a landmark, the arrangement matching process may have difficulty choosing the right arrangement of landmarks, since the landmark vectors do not converge to a single point. If most of the landmarks are found in the feature selection, the majority of landmark vectors in the reverse direction will point to a single point. In this case, arrangement matching can improve the performance by filtering out the outliers. 
+							<ce:cross-ref refid="f0030">Fig. 6</ce:cross-ref>
+							<ce:float-anchor refid="f0030"/> shows an example of the landmark arrangement matching procedure. For the robustness of the method, the landmark with the largest deviation is considered to be an outlier and is not selected when calculating the convergence and the averaged end point. Therefore, in 
+							<ce:cross-ref refid="f0030">Fig. 6</ce:cross-ref>(a), 
+							<ce:italic>LV</ce:italic>
+							<ce:inf loc="post">1</ce:inf> is the outlier, and 
+							<ce:cross-ref refid="f0030">Fig. 6</ce:cross-ref>(a) would be the best matching case. The graphical explanation shows that the method can still identify the best case, even in a case of a misidentified landmark.
+						</ce:para>
+						<ce:para id="p0120" view="all">Now we describe the method mathematically. As has been shown in 
+							<ce:cross-ref refid="f0020">Fig. 4</ce:cross-ref>, the estimation of the current location is obtained by projecting the rotated perceived LV to the stored LV on the reference map. The stored landmark vectors and the perceived LV set are described in Eq. 
+							<ce:cross-ref refid="e0020">(4)</ce:cross-ref> and Eq. 
+							<ce:cross-ref refid="e0025">(5)</ce:cross-ref>, respectively, and the rotated landmark vector is presented in Eq. 
+							<ce:cross-ref refid="e0030">(6)</ce:cross-ref>.
+							<ce:display>
+								<ce:formula id="e0020">
+									<ce:label>(4)</ce:label>
+									<mml:math altimg="si4.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:msubsup>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">LV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">ref</mml:mi>
+											</mml:mrow>
+										</mml:msubsup>
+										<mml:mo>=</mml:mo>
+										<mml:mrow>
+											<mml:mfenced open="(" close=")">
+												<mml:mrow>
+													<mml:msubsup>
+														<mml:mrow>
+															<mml:mi>R</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi>i</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi mathvariant="italic">ref</mml:mi>
+														</mml:mrow>
+													</mml:msubsup>
+													<mml:mtext>,</mml:mtext>
+													<mml:msubsup>
+														<mml:mrow>
+															<mml:mi>θ</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi>i</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi mathvariant="italic">ref</mml:mi>
+														</mml:mrow>
+													</mml:msubsup>
+												</mml:mrow>
+											</mml:mfenced>
+										</mml:mrow>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+							<ce:display>
+								<ce:formula id="e0025">
+									<ce:label>(5)</ce:label>
+									<mml:math altimg="si5.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">LV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>=</mml:mo>
+										<mml:mo stretchy="false">(</mml:mo>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi>R</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mtext>,</mml:mtext>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi>θ</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo stretchy="false">)</mml:mo>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+							<ce:display>
+								<ce:formula id="e0030">
+									<ce:label>(6)</ce:label>
+									<mml:math altimg="si6.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">RV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>=</mml:mo>
+										<mml:mo stretchy="false">(</mml:mo>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi>R</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mtext>,</mml:mtext>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi>θ</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>+</mml:mo>
+										<mml:mi>α</mml:mi>
+										<mml:mo stretchy="false">)</mml:mo>
+									</mml:math>
+								</ce:formula>
+							</ce:display>where 
+							<mml:math altimg="si7.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:msubsup>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">LV</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>i</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">ref</mml:mi>
+										</mml:mrow>
+									</mml:msubsup>
+								</mml:mrow>
+							</mml:math> is the 
+							<ce:italic>i</ce:italic>th landmark vector in the reference map, 
+							<ce:italic>LV</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf> is the 
+							<ce:italic>i</ce:italic>th vector in the current map, 
+							<ce:italic>RV</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf> is the landmark vector rotated by angle 
+							<ce:italic>α</ce:italic>.
+						</ce:para>
+						<ce:para id="p0125" view="all">The vector 
+							<ce:italic>PV</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf> is the estimation of the current position in the reference map, which is obtained by projecting the landmark vectors to the reference map, and the best matching arrangement can be found by calculating the minimum variance of vector 
+							<ce:italic>PV</ce:italic>
+							<ce:inf loc="post">
+								<ce:italic>i</ce:italic>
+							</ce:inf>. In Eq. 
+							<ce:cross-ref refid="e0035">(7)</ce:cross-ref>, 
+							<ce:italic>PV</ce:italic> indicates the projected point vector for each landmark pairing in the matching function 
+							<ce:italic>p</ce:italic>(
+							<ce:italic>i</ce:italic>). The mean point in Eq. 
+							<ce:cross-ref refid="e0040">(8)</ce:cross-ref> is obtained by averaging every projected vectors. Searching for the arrangement 
+							<ce:italic>p</ce:italic>(
+							<ce:italic>i</ce:italic>) and the rotating angle 
+							<ce:italic>α</ce:italic> which leads to the minimum deviation in the endpoints of the projected vectors, we obtain the optimal arrangement order 
+							<ce:italic>z</ce:italic> and the orientation angle 
+							<ce:italic>α</ce:italic>
+							<ce:sup loc="post">∗</ce:sup> Eq. 
+							<ce:cross-ref refid="e0045">(9)</ce:cross-ref>.
+							<ce:display>
+								<ce:formula id="e0035">
+									<ce:label>(7)</ce:label>
+									<mml:math altimg="si8.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">PV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>=</mml:mo>
+										<mml:msubsup>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">LV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">ref</mml:mi>
+											</mml:mrow>
+										</mml:msubsup>
+										<mml:mo>-</mml:mo>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">RV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>p</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>i</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+										</mml:msub>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+							<ce:display>
+								<ce:formula id="e0040">
+									<ce:label>(8)</ce:label>
+									<mml:math altimg="si9.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:mi>M</mml:mi>
+										<mml:mo>=</mml:mo>
+										<mml:munderover>
+											<mml:mrow>
+												<mml:mo>∑</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+												<mml:mo>=</mml:mo>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:munderover>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">PV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+							<ce:display>
+								<ce:formula id="e0045">
+									<ce:label>(9)</ce:label>
+									<mml:math altimg="si10.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:mo stretchy="false">(</mml:mo>
+										<mml:mi>z</mml:mi>
+										<mml:mtext>,</mml:mtext>
+										<mml:msup>
+											<mml:mrow>
+												<mml:mi>α</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mo>∗</mml:mo>
+											</mml:mrow>
+										</mml:msup>
+										<mml:mo stretchy="false">)</mml:mo>
+										<mml:mo>=</mml:mo>
+										<mml:mi mathvariant="normal">arg</mml:mi>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="normal">min</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>p</mml:mi>
+												<mml:mo stretchy="false">(</mml:mo>
+												<mml:mi>i</mml:mi>
+												<mml:mo stretchy="false">)</mml:mo>
+												<mml:mtext>,</mml:mtext>
+												<mml:mi>α</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo stretchy="false">(</mml:mo>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">PV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>-</mml:mo>
+										<mml:mi>M</mml:mi>
+										<mml:mo stretchy="false">)</mml:mo>
+										<mml:mo stretchy="false">(</mml:mo>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">PV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>-</mml:mo>
+										<mml:mi>M</mml:mi>
+										<mml:msup>
+											<mml:mrow>
+												<mml:mo stretchy="false">)</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>T</mml:mi>
+											</mml:mrow>
+										</mml:msup>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+						</ce:para>
+						<ce:para id="p0130" view="all">Using the estimated best matching landmark arrangement and the heading direction, the homing vector 
+							<ce:italic>HV</ce:italic> is computed, and the agent chooses a movement direction 
+							<ce:italic>ϕ</ce:italic>
+							<ce:hsp sp="0.25"/>=
+							<ce:hsp sp="0.25"/>∠
+							<ce:italic>HV</ce:italic>.
+							<ce:display>
+								<ce:formula id="e0050">
+									<ce:label>(10)</ce:label>
+									<mml:math altimg="si11.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+										<mml:mi mathvariant="italic">HV</mml:mi>
+										<mml:mo>=</mml:mo>
+										<mml:mo>-</mml:mo>
+										<mml:munderover>
+											<mml:mrow>
+												<mml:mo>∑</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+												<mml:mo>=</mml:mo>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:munderover>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">PV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>=</mml:mo>
+										<mml:mo>-</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:mfrac>
+										<mml:munderover>
+											<mml:mrow>
+												<mml:mo>∑</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+												<mml:mo>=</mml:mo>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:munderover>
+										<mml:mrow>
+											<mml:mfenced open="(" close=")">
+												<mml:mrow>
+													<mml:msubsup>
+														<mml:mrow>
+															<mml:mi mathvariant="italic">LV</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi>i</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi mathvariant="italic">ref</mml:mi>
+														</mml:mrow>
+													</mml:msubsup>
+													<mml:mo>-</mml:mo>
+													<mml:msub>
+														<mml:mrow>
+															<mml:mi mathvariant="italic">RV</mml:mi>
+														</mml:mrow>
+														<mml:mrow>
+															<mml:mi>z</mml:mi>
+														</mml:mrow>
+													</mml:msub>
+												</mml:mrow>
+											</mml:mfenced>
+										</mml:mrow>
+										<mml:mo>=</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:mfrac>
+										<mml:munderover>
+											<mml:mrow>
+												<mml:mo>∑</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+												<mml:mo>=</mml:mo>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:munderover>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">RV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>z</mml:mi>
+												<mml:mtext>,</mml:mtext>
+												<mml:msup>
+													<mml:mrow>
+														<mml:mi>α</mml:mi>
+													</mml:mrow>
+													<mml:mrow>
+														<mml:mo>∗</mml:mo>
+													</mml:mrow>
+												</mml:msup>
+											</mml:mrow>
+										</mml:msub>
+										<mml:mo>-</mml:mo>
+										<mml:mfrac>
+											<mml:mrow>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:mfrac>
+										<mml:munderover>
+											<mml:mrow>
+												<mml:mo>∑</mml:mo>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+												<mml:mo>=</mml:mo>
+												<mml:mn>1</mml:mn>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>N</mml:mi>
+											</mml:mrow>
+										</mml:munderover>
+										<mml:msubsup>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">LV</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>i</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi mathvariant="italic">ref</mml:mi>
+											</mml:mrow>
+										</mml:msubsup>
+									</mml:math>
+								</ce:formula>
+							</ce:display>
+						</ce:para>
+						<ce:para id="p0135" view="all">If the perceived landmark numbers in two snapshots may be different in some case, the smaller number is used for the number of landmarks 
+							<ce:italic>N</ce:italic>. For example, even if there were four landmarks stored in the reference map and five landmarks are perceived at some point, only four landmarks can be projected onto the map. Here, we assume that the nest is the origin with the reference coordinate value, for example, (0,
+							<ce:hsp sp="0.12"/>0).
+						</ce:para>
+						<ce:para id="p0140" view="all">If we select the best matching arrangement 
+							<ce:italic>z</ce:italic>, the moving direction is simply determined using 
+							<mml:math altimg="si12.gif" overflow="scroll" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+								<mml:mrow>
+									<mml:msubsup>
+										<mml:mrow>
+											<mml:mo>∑</mml:mo>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>i</mml:mi>
+											<mml:mo>=</mml:mo>
+											<mml:mn>1</mml:mn>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>N</mml:mi>
+										</mml:mrow>
+									</mml:msubsup>
+									<mml:mo stretchy="false">(</mml:mo>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">LV</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>p</mml:mi>
+											<mml:mo stretchy="false">(</mml:mo>
+											<mml:mi>i</mml:mi>
+											<mml:mo stretchy="false">)</mml:mo>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo>-</mml:mo>
+									<mml:msubsup>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">LV</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>i</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">ref</mml:mi>
+										</mml:mrow>
+									</mml:msubsup>
+									<mml:mo stretchy="false">)</mml:mo>
+									<mml:mo>=</mml:mo>
+									<mml:msubsup>
+										<mml:mrow>
+											<mml:mo>∑</mml:mo>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>i</mml:mi>
+											<mml:mo>=</mml:mo>
+											<mml:mn>1</mml:mn>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>N</mml:mi>
+										</mml:mrow>
+									</mml:msubsup>
+									<mml:msub>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">LV</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>p</mml:mi>
+											<mml:mo stretchy="false">(</mml:mo>
+											<mml:mi>i</mml:mi>
+											<mml:mo stretchy="false">)</mml:mo>
+										</mml:mrow>
+									</mml:msub>
+									<mml:mo>-</mml:mo>
+									<mml:msubsup>
+										<mml:mrow>
+											<mml:mo>∑</mml:mo>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>i</mml:mi>
+											<mml:mo>=</mml:mo>
+											<mml:mn>1</mml:mn>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>N</mml:mi>
+										</mml:mrow>
+									</mml:msubsup>
+									<mml:msubsup>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">LV</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi>i</mml:mi>
+										</mml:mrow>
+										<mml:mrow>
+											<mml:mi mathvariant="italic">ref</mml:mi>
+										</mml:mrow>
+									</mml:msubsup>
+								</mml:mrow>
+							</mml:math>. This result is similar to that of the AVL method suggested by Lambrino et al. 
+							<ce:cross-ref refid="b0105">[21]</ce:cross-ref>, since the moving vector is the difference between the vector sum of the landmark vectors in the reference map and that in another environmental map.
+							<ce:display>
+								<ce:table frame="topbot" id="t0005" rowsep="0" colsep="0">
+									<cals:tgroup cols="1" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+										<cals:colspec colname="col1" align="left"/>
+										<cals:thead>
+											<cals:row rowsep="1" valign="top">
+												<ce:entry>
+													<ce:bold>Algorithm 1:</ce:bold> Unit movement
+												</ce:entry>
+											</cals:row>
+										</cals:thead>
+										<cals:tbody>
+											<cals:row valign="top">
+												<ce:entry>1: 
+													<ce:italic>I</ce:italic>
+													<ce:inf loc="post">0</ce:inf>
+													<ce:hsp sp="0.25"/>←
+													<ce:hsp sp="0.25"/>
+													<ce:italic>takeSnapshot</ce:italic>() / /image at the nest
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>2: 
+													<ce:italic>moveForward</ce:italic>
+													<ce:hsp sp="0.12"/>(
+													<ce:italic>d</ce:italic>)
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>3: 
+													<ce:italic>I</ce:italic>
+													<ce:inf loc="post">1</ce:inf>
+													<ce:hsp sp="0.25"/>←
+													<ce:hsp sp="0.25"/>
+													<ce:italic>takeSnapshot</ce:italic>()
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>4: 
+													<ce:italic>LV</ce:italic>
+													<ce:hsp sp="0.25"/>←
+													<ce:hsp sp="0.25"/>
+													<ce:italic>estimateDistance</ce:italic>
+													<ce:hsp sp="0.12"/>(
+													<ce:italic>I</ce:italic>
+													<ce:inf loc="post">0</ce:inf>,
+													<ce:hsp sp="0.12"/>
+													<ce:italic>I</ce:italic>
+													<ce:inf loc="post">1</ce:inf>)
+												</ce:entry>
+											</cals:row>
+										</cals:tbody>
+									</cals:tgroup>
+								</ce:table>
+							</ce:display>
+							<ce:display>
+								<ce:table frame="topbot" id="t0010" rowsep="0" colsep="0">
+									<cals:tgroup cols="1" xmlns:cals="http://www.elsevier.com/xml/common/cals/schema">
+										<cals:colspec colname="col1" align="left"/>
+										<cals:thead>
+											<cals:row rowsep="1" valign="top">
+												<ce:entry>
+													<ce:bold>Algorithm 2:</ce:bold> Homing
+												</ce:entry>
+											</cals:row>
+										</cals:thead>
+										<cals:tbody>
+											<cals:row valign="top">
+												<ce:entry>1: 
+													<ce:italic>ReferenceMap</ce:italic>
+													<ce:hsp sp="0.25"/>←
+													<ce:hsp sp="0.25"/>
+													<ce:italic>UnitMovement</ce:italic>
+													<ce:hsp sp="0.12"/>(
+													<ce:italic>home</ce:italic>)
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>2: 
+													<ce:bold>loop</ce:bold>
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>3: 
+													<ce:hsp sp="1"/>
+													<ce:italic>LV</ce:italic>
+													<ce:hsp sp="0.25"/>←
+													<ce:hsp sp="0.25"/>
+													<ce:italic>UnitMovement</ce:italic>()
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>4: 
+													<ce:hsp sp="1"/>
+													<ce:italic>ϕ</ce:italic>
+													<ce:hsp sp="0.25"/>←
+													<ce:hsp sp="0.25"/>
+													<ce:italic>ReferenceMap</ce:italic>
+													<ce:hsp sp="0.12"/>(
+													<ce:italic>LV</ce:italic>)
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>5: 
+													<ce:hsp sp="1"/>
+													<ce:italic>turnToHome</ce:italic>(
+													<ce:italic>ϕ</ce:italic>)
+												</ce:entry>
+											</cals:row>
+											<cals:row valign="top">
+												<ce:entry>6: 
+													<ce:bold>end</ce:bold>
+													<ce:hsp sp="0.35"/>
+													<ce:bold>loop</ce:bold>
+												</ce:entry>
+											</cals:row>
+										</cals:tbody>
+									</cals:tgroup>
+								</ce:table>
+							</ce:display>
+						</ce:para>
+						<ce:para id="p0145" view="all">The algorithms 1 and 2 briefly describe the overall structure of the method. The suggested algorithm can work well as described if the appearance of the landmarks does not change with the current viewing direction. If the appearance changes with respect to the orientation of landmarks, the distance estimation cannot be obtained correctly. We will thus use cylindrical landmarks to simplify the problem and focus on the performance of the algorithm itself.</ce:para>
+					</ce:section>
+				</ce:section>
+				<ce:section id="s0030" view="all">
+					<ce:label>3</ce:label>
+					<ce:section-title>Experiments</ce:section-title>
+					<ce:section id="s0035" view="all">
+						<ce:label>3.1</ce:label>
+						<ce:section-title>Simulation experiments</ce:section-title>
+						<ce:para id="p0150" view="all">For the suggested navigation approach, we first simulated robotic navigation experiments. The robot starts to move from the nest and explores the environment. When a mobile robot is positioned at an arbitrary position and attempts to return home after exploration, the robot should determine which direction to move from the current position to reach the goal point (nest). The environment includes four cylindrical objects surrounding the nest. In the schematic of the environment shown in 
+							<ce:cross-ref refid="f0035">Fig. 7</ce:cross-ref>
+							<ce:float-anchor refid="f0035"/>, landmarks with different sizes are drawn as large circles and the nest location is marked as a small square at (500,
+							<ce:hsp sp="0.12"/>500).
+						</ce:para>
+						<ce:para id="p0155" view="all">Initially, we applied the conventional image-based navigation methods, predictive image-matching 
+							<ce:cross-ref refid="b0065">[13]</ce:cross-ref> and the image-warping method with a gradient of the image space 
+							<ce:cross-ref refid="b0100">[20]</ce:cross-ref>. The image-based navigations including our approach take a sequence of snapshot images. It is assumed that each snapshot image has an omnidirectional view and it has landmark images as one color and non-landmark images as white in simulation experiments. The omnidirectional image can easily capture the angular position of landmarks. For our approach, the distance information is fetched with ego-motion as explained in the previous section. In real experiments, the landmark features should be extracted from the snapshot images. 
+							<ce:cross-ref refid="f0035">Fig. 7</ce:cross-ref> shows the vector maps, a collection of moving directions, in a given environment for each method. Generally, the robot does not follow a direct route to the origin. The robot instead tends to move toward a nearby landmark since that movement may increase the image-matching level between the home snapshot and the image snapshot at the given spot. The experiments show that pure comparison of image snapshots may not produce a desirable path in the local zone, although the predictive image-matching method follows a relatively simple procedure.
+						</ce:para>
+						<ce:para id="p0160" view="all">We constructed a landmark map by estimating the distance to every landmark by moving the robot one step forward with distance 
+							<ce:italic>d</ce:italic> and observing the image shift. As the distance estimation of a landmark is affected by the accuracy of the image shift (see 
+							<ce:cross-ref refid="f0010">Fig. 2</ce:cross-ref>), the distance 
+							<ce:italic>d</ce:italic> of one step can be used as a controlling factor in the method. To accurately sense the image shift, it is advantageous to increase 
+							<ce:italic>d</ce:italic>, which can lead to a clear difference between snapshots and thus reduce the estimation errors. The landmark arrangement in the current environment is compared with that in the reference map. Then the agent determines the moving direction to reach the goal point. 
+							<ce:cross-ref refid="f0040">Fig. 8</ce:cross-ref>
+							<ce:float-anchor refid="f0040"/> shows vector maps in which arrows represent the moving directions chosen by the mobile robot at each location. Four vector maps show results with varying distances 
+							<ce:italic>d</ce:italic>, but there is no significant difference among the vector map patterns. This indicates that a set of landmarks collectively determine the homing direction, and the resolution of the image shift for a single landmark is not important in our approach.
+						</ce:para>
+						<ce:para id="p0165" view="all">We provide a performance evaluation from two different perspectives; the first is the angular deviation. The angular deviation is calculated as the difference between the desired direction and the moving direction chosen by the agent. We assume that the desired angle for a mobile agent follows a direct route from the current position to the goal position. The other criterion for performance evaluation is the success rate of returning home. When a mobile robot is kidnapped and placed at an arbitrary position with a random head direction and it is able to return home within an error bound, it is regarded as a success. If the robot does not return home within a limited amount of time, it is regarded as a failure. Here, the success rate is the rate of successful returns home among 100 trials, where 100 robot positions are randomly sampled with random head directions. That is, the robot is positioned at an arbitrary position among 100 random positions in a given arena and supposed to return home with the perception of landmarks.</ce:para>
+						<ce:para id="p0170" view="all">
+							<ce:cross-ref refid="f0045">Fig. 9</ce:cross-ref>
+							<ce:float-anchor refid="f0045"/> shows the averaged angular errors. The error bars indicate the mean values and the 
+							<ce:italic>t</ce:italic>-distribution deviations at the 95 percent confidence level. The angular errors do not differ by a large amount with varying moving distances 
+							<ce:italic>d</ce:italic>. The results of 
+							<ce:italic>d</ce:italic>
+							<ce:hsp sp="0.25"/>=
+							<ce:hsp sp="0.25"/>50 and 
+							<ce:italic>d</ce:italic>
+							<ce:hsp sp="0.25"/>=
+							<ce:hsp sp="0.25"/>100 shown in 
+							<ce:cross-ref refid="f0045">Fig. 9</ce:cross-ref> are not significantly different. This shows that the moving distance rarely affects the performance of the method. Through several tests in various environments, 
+							<ce:italic>d</ce:italic>
+							<ce:hsp sp="0.25"/>=
+							<ce:hsp sp="0.25"/>50 is chosen for good performance in the environment for a robot size about 15
+							<ce:hsp sp="0.25"/>cm in diameter. The vector map results in 
+							<ce:cross-ref refid="f0040">Fig. 8</ce:cross-ref> with respect to the moving distance show very similar patterns in terms of the homing performance. Varying moving distances 
+							<ce:italic>d</ce:italic>’s would not be a critical factor in our experiments. Small 
+							<ce:italic>d</ce:italic>’s might have a slight improvement in the variance of the error or the angular error itself, but the overall performance in the homing direction has similar patterns. However, if a very large moving distance is applied, then the landmark features will be severely distorted and the distance estimation cannot be accurate.
+						</ce:para>
+						<ce:para id="p0175" view="all">We then compare our method with the predictive image-matching method. 
+							<ce:cross-ref refid="f0050">Fig. 10</ce:cross-ref>
+							<ce:float-anchor refid="f0050"/>(a) shows the angular errors for both methods. The landmark arrangement-matching method suggested in this paper provides significantly smaller angular errors than do the other image-matching methods. This result indicates that the suggested method has a higher probability of resulting in a successful return home. In fact, the approach rarely fails in homing and shows a perfect success rate for almost every case, irrespective of the distance from the release point to the nest (see 
+							<ce:cross-ref refid="f0050">Fig. 10</ce:cross-ref>(b)). Thus, the landmark-arrangement method is more suitable for homing navigation than is the displacement navigation method. 
+							<ce:cross-ref refid="f0055">Fig. 11</ce:cross-ref>
+							<ce:float-anchor refid="f0055"/> shows the trajectories of robot navigation for our approach and other image-matching methods when the mobile robot is released at an arbitrary location with a random heading direction. From the same release points, the robot shows different performances based on the homing method used. The predictive image-matching approach often has difficulty in locating the nest when the robot is in the outer landmark zone; the image-warping method with a gradient of the image space shows success and failure even when the robot is surrounded by landmarks, and the type of error is different from that of the predictive image-matching method. The main reason for failure in agent movement with the predictive image-matching method is convergence to a landmark. This is due to the process in which the agent tries to maximize the matching score between images, which could be obtained by increasing the size of the landmark in view to as large as possible by moving toward it. On the other hand, the failures in 
+							<ce:cross-ref refid="f0055">Fig. 11</ce:cross-ref>(b) are caused by errors in gradient information of the image space. As mentioned in the previous section, the gradient of the image space illustrates the overall flow to the target location; however, it does not always provide accurate information. Due to errors in the gradient information, a ‘trap point’ may be generated, which prevents the agent from navigating in the appropriate direction to return home.
+						</ce:para>
+						<ce:para id="p0180" view="all">Our suggested method determines the goal point with a success rate greater than 90% or so (see 
+							<ce:cross-ref refid="f0050">Fig. 10</ce:cross-ref>(b)). For the suggested landmark-matching method, the worsening performance at a far distance from the nest is related to the occlusion of landmarks. If the agent is surrounded by landmarks, it can easily localize itself in the environment using the landmark arrangement. When the agent leaves the landmark-surrounded area, however, a landmark may be occluded behind another landmark close to the agent or more than one landmark can be overlapped in the view, both of which can influence the landmark arrangement-matching process.
+						</ce:para>
+						<ce:para id="p0185" view="all">
+							<ce:cross-ref refid="f0060">Fig. 12</ce:cross-ref>
+							<ce:float-anchor refid="f0060"/> displays the vector maps of environments with various landmark configurations according to the suggested method. As the simulation results show, the method can operate effectively in the environments with asymmetric and unbalanced distribution of landmarks. The number of landmarks varies from 3 to 5, and they are arbitrarily positioned. 
+							<ce:cross-ref refid="f0060">Fig. 12</ce:cross-ref>(f) shows the angular error graphs of three examples shown in 
+							<ce:cross-ref refid="f0060">Fig. 12</ce:cross-ref>(b), (c) and (e). At a distance far from the nest, the angular errors are large but still smaller than 90°. We predict that the agent will be able to return home in this situation.
+						</ce:para>
+					</ce:section>
+					<ce:section id="s0040" view="all">
+						<ce:label>3.2</ce:label>
+						<ce:section-title>Robot experiments</ce:section-title>
+						<ce:para id="p0190" view="all">In the previous section, we showed simulation experiments and the performance evaluation of our tested approach in real robotic experiments. 
+							<ce:cross-refs refid="f0065 f0070">Figs. 13 and 14</ce:cross-refs>
+							<ce:float-anchor refid="f0065"/>
+							<ce:float-anchor refid="f0070"/> show the real robot and an environment with four landmark objects, respectively. An omnidirectional camera is mounted onto the Roomba robot, and a laptop computer processes the captured images to determine the moving direction. The four landmarks are red-colored
+							<ce:footnote id="fn1">
+								<ce:label>1</ce:label>
+								<ce:note-para>For interpretation of color in Figs. 13 and 14, the reader is referred to the web version of this article.</ce:note-para>
+							</ce:footnote>
+							<ce:cross-ref refid="fn1">
+								<ce:sup loc="post">1</ce:sup>
+							</ce:cross-ref> cylindrical objects, and the experimental environment has a total area of 1.8
+							<ce:hsp sp="0.25"/>m by 1.8
+							<ce:hsp sp="0.25"/>m. The diameter of the mobile robot is 32
+							<ce:hsp sp="0.25"/>cm, and the omnidirectional camera is placed 25
+							<ce:hsp sp="0.25"/>cm above the floor.
+						</ce:para>
+						<ce:para id="p0195" view="all">Initially, we simulated the experiment in the robotic environment which the mobile robot explores. We compared our landmark arrangement-matching method with the predictive image-matching method. The vector map results are shown in 
+							<ce:cross-ref refid="f0075">Fig. 15</ce:cross-ref>
+							<ce:float-anchor refid="f0075"/>, and our approach showed better success in terms of returning to the target location. The angular error performances for both methods are shown in 
+							<ce:cross-ref refid="f0080">Fig. 16</ce:cross-ref>
+							<ce:float-anchor refid="f0080"/>(a). Our approach showed much smaller angular deviations from the direct route, irrespective of whether the agent was close to or far from the nest. With regard to success rate, the suggested approach had a significantly better performance, as shown in 
+							<ce:cross-ref refid="f0080">Fig. 16</ce:cross-ref>(b). The suggested approach might have large angular errors in some situations as observed in the middle of the right-lower quadrant in 
+							<ce:cross-ref refid="f0075">Fig. 15</ce:cross-ref>(b). The denominator in Eq. 
+							<ce:cross-ref refid="e0010">(2)</ce:cross-ref>, sin
+							<ce:hsp sp="0.12"/>(
+							<ce:italic>δ</ce:italic>
+							<ce:hsp sp="0.25"/>+
+							<ce:hsp sp="0.25"/>
+							<ce:italic>ψ</ce:italic>) might have a value close to zero. Then the distance estimation experiences large deviation, which influences the homing direction.
+						</ce:para>
+						<ce:para id="p0200" view="all">We tested the homing navigation of a mobile robot in a real environment in which red-colored objects were discriminated from the background image and marked as landmarks in the omnidirectional ring. The robot moved one 20-cm step forward for ego-motion. The image shifts resulting from the ego-motion determined the landmark distances, and then landmark arrangements at the current location were projected onto the reference map. The vector map and the angular error results of the robotic experiment are shown in 
+							<ce:cross-ref refid="f0085">Fig. 17</ce:cross-ref>
+							<ce:float-anchor refid="f0085"/>(a) and (b). The angular errors in the real environment were greater than those in the simulation environments, most likely due to noise in the environment. However, the method still showed good performance in terms of returning to the target location because the angular errors were relatively small to allow for navigation to the nest.
+						</ce:para>
+					</ce:section>
+				</ce:section>
+				<ce:section id="s0045" view="all">
+					<ce:label>4</ce:label>
+					<ce:section-title>Discussion</ce:section-title>
+					<ce:para id="p0205" view="all">Our approach encodes landmark vectors using distance information for a given environmental situation, instead of saving the whole set of snapshot images. This method requires the construction of only a reference map at the nest and another landmark map at the current position. During the foraging activity, no additional computational processes or image memorization is required. Localization of the robot with our suggested method can be achieved in a small amount of memory storage and the computing is time efficient. However, several factors may influence the performance, and some errors in distance estimation are unavoidable based on the image shifts in the omnidirectional view.</ce:para>
+					<ce:para id="p0210" view="all">One possible factor that influences performance is the odometry error. The distance estimation method computes 
+						<ce:italic>R</ce:italic> based on the image shift of landmarks due to forward motion. Using the motor encoder signal, the mobile robot can move forward a given distance 
+						<ce:italic>d</ce:italic> or rotate itself by angle 
+						<ce:italic>ψ</ce:italic>. However, the distance and the head orientation angle of the real robot may not follow the theoretical track due to the odometry error produced when the motor commands are issued. This error can thus influence the estimation of the landmark distances. Errors in the estimated distances can influence the inference of the robot’s current location and thus the homing vector.
+					</ce:para>
+					<ce:para id="p0215" view="all">Davison 
+						<ce:cross-ref refid="b0040">[8]</ce:cross-ref> presented a real-time covariance Kalman filter-based approach to sequential images for localization. The SLAM (Simultaneous Localization and Mapping) approach assumes relatively slow camera motions with small accelerations to handle the uncertainty in the system. The method with a sequence of image frames can obtain accurate information about given features, using a probablity model, but it takes relatively much computing time. We can use this method for agent localization and then determine the homing direction. However, Davison’s work assumes smooth camera motions with a series of image frames to reduce depth uncertainty. Instead, our approach uses a pair of image frames to determine the distance information of landmarks. It is a very simplified version of localization. Also the suggested approach has no assumption about a small camera movement or Gaussian model about the feature movement. Instead the movement information is encoded with odometry and the relative distances of landmarks are estimated with the ego-motion information. Interestingly, varying ego-motions or traveling distances 
+						<ce:italic>d</ce:italic> does not greatly influence the overall performance see 
+						<ce:cross-refs refid="f0040 f0045">Figs. 8 and 9</ce:cross-refs>. Especially homing performance is not greatly affected by the individual distance error, but by the sum of the landmark vector as in Eq. 
+						<ce:cross-ref refid="e0050">(10)</ce:cross-ref>.
+					</ce:para>
+					<ce:para id="p0220" view="all">The landmark vector only encodes the angular direction and distance of a given landmark and does not consider the sizes of landmarks. The size variation of landmarks as a function of ego-motion can also provide distance information. If we combine this information with the image shifts, a more accurate estimation of landmark distances can be derived or better matching algorithms can be designed. The image-matching navigation methods usually improve the performance when a reference compass is available 
+						<ce:cross-ref refid="b0105">[21]</ce:cross-ref>. Our landmark-matching algorithm, however, needs no reference compass. Snapshot images and simple odometry information are sufficient for homing behaviors. This is a significant advantage for robotic navigation. Many indoor environments show several errors in the reference compass direction due to the electromagnetic field. However, the visual information about the environment is more reliable than is any other sensory information. We also tested both the suggested method and the predictive image-matching method when a reference compass was included. Even though the performance of the predictive image-matching method is better than that without the compass, our method still showed a much smaller angular error (see 
+						<ce:cross-ref refid="f0090">Fig. 18</ce:cross-ref>
+						<ce:float-anchor refid="f0090"/>).
+					</ce:para>
+					<ce:para id="p0225" view="all">In the landmark arrangement-matching method, a significant problem may arise when one of the landmarks is misidentified or occluded behind another landmark. This issue is related to the correspondence problem between the reference map and the other environmental map. If many landmarks are available in the environment, projecting landmark vectors to the reference map will identify the most probable position of the agent with minimum variance criterion – see 
+						<ce:cross-ref refid="f0030">Fig. 6</ce:cross-ref> and Eq. 
+						<ce:cross-ref refid="e0045">(9)</ce:cross-ref>. Our suggested method operates successfully in the local zone close to the nest, since the correspondence problem will rarely occur. An alternative approach is to store a series of reference maps created during exploration and to later compare the current environmental map with the set of reference maps in a topological frame to guide the agent to the nest.
+					</ce:para>
+					<ce:para id="p0230" view="all">In addition, we used cylindrical objects as landmarks to minimize the appearance problem. Differences in landmark appearance with respect to the orientation could affect the distance estimation process. However, the method already deals with the inaccurate landmark distance problem resulting from odometry error. This implies that the method can manage distance inaccuracies to some degree. In future work, we plan to conduct robotic experiments in unstructured environments to demonstrate the generality of the method.</ce:para>
+				</ce:section>
+				<ce:section id="s0050" view="all">
+					<ce:label>5</ce:label>
+					<ce:section-title>Conclusion</ce:section-title>
+					<ce:para id="p0235" view="all">In this paper, we developed a new image-based navigation method using landmark arrangement matching. This method computes the distance to each landmark using ego-motion to observe the angular shift of the landmarks in the image view and then estimates the agent’s position in the environmental map. We compared this method with other conventional image-matching methods. The image-matching approach uses a single snapshot image and compares the images at the nest with the predicted or warped image at a given position. In our approach, the landmark vectors at the nest, including distance information, are encoded as a reference map, and then another set of landmark vectors at an arbitrary position are projected onto the reference map to localize the agent in the environment. The agent simply determines the homing direction based on this projection. Our approach involves estimation of the landmark vectors; however, landmark arrangement matching is an efficient algorithm for localization. Our method shows a significantly better performance with respect to the choice of proper direction and a higher success rate for returning home than do the conventional image-matching methods. Even without a reference compass, the suggested method can successfully guide the robot to the nest, and it provides very efficient homing navigation. Also, it shows good homing performance in a real robotic environment.</ce:para>
+					<ce:para id="p0240" view="all">It is well-known that many insects and animals create landmark images for navigation 
+						<ce:cross-refs refid="b0015 b0035">[3,7]</ce:cross-refs>; similarly we used snapshot images to recognize landmarks and to determine the moving direction, instead of producing a topological map of the environment. The landmark arrangement method uses snapshots taken at home and at the current location to determine the homing direction. This is a simple, low-cost method that demonstrates effective homing navigation. For future work, we need to solve the occlusion problem in more realistic environments and extract the landmark features from general snapshot images when the landmark characteristics are not given.
+					</ce:para>
+				</ce:section>
+			</ce:sections>
+			<ce:acknowledgment xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>Acknowledgments</ce:section-title>
+				<ce:para id="p0245" view="all">This work was supported by the Mid-career Researcher Program through an NRF grant funded by the 
+					<ce:grant-sponsor id="GS1" xlink:type="simple" xlink:role="http://www.elsevier.com/xml/linking-roles/grant-sponsor" xmlns:xlink="http://www.w3.org/1999/xlink">MEST</ce:grant-sponsor> (No. 
+					<ce:grant-number refid="GS1">2010-0000460</ce:grant-number>).
+				</ce:para>
+			</ce:acknowledgment>
+		</ja:body>
+		<ja:tail view="all">
+			<ce:bibliography id="bi005" view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec id="bs005">
+					<ce:bib-reference id="b0005">
+						<ce:label>[1]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Akesson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Wehner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Visual navigation in desert ants Cataglyphis fortis: are snapshots coupled to a celestial system of reference?</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Experimental Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>205</sb:volume-nr>
+									</sb:series>
+									<sb:date>2002</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1971</sb:first-page>
+									<sb:last-page>1978</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0010">
+						<ce:label>[2]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Cartwright</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Landmark learning in bees</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Comparative Physiology A: Neuroethology, Sensory, Neural, and Behavioral Physiology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>151</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>1983</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>521</sb:first-page>
+									<sb:last-page>543</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0015">
+						<ce:label>[3]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Cartwright</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Landmark maps for honeybees</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Biological Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>57</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1987</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>85</sb:first-page>
+									<sb:last-page>93</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0020">
+						<ce:label>[4]</ce:label>
+						<ce:other-ref>
+							<ce:textref>D. Churchill, A. Vardy, Homing in scale space, in: IEEE/RSJ International Conference on Intelligent Robots and Systems, 2008. IROS 2008, 2008, pp. 1307–1312.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0025">
+						<ce:label>[5]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collet</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Land</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Visual spatial memory in a hoverfly</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Computational Physiology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>100</sb:volume-nr>
+									</sb:series>
+									<sb:date>1975</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>59</sb:first-page>
+									<sb:last-page>84</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0030">
+						<ce:label>[6]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>How do insects use path integration for their navigation?</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Biological Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>83</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>2000</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>245</sb:first-page>
+									<sb:last-page>259</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0035">
+						<ce:label>[7]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Insect navigation en route to the goal: multiple strategies for the use of landmarks</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Experimental Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>199</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>227</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0040">
+						<ce:label>[8]</ce:label>
+						<ce:other-ref>
+							<ce:textref>A. Davison, Real-time simultaneous localisation and mapping with a single camera, in: Ninth IEEE International Conference on Computer Vision, 2003. Proceedings, 2003, pp. 1403–1410.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0045">
+						<ce:label>[9]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Davison</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>I.</ce:given-name>
+										<ce:surname>Reid</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Molton</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>O.</ce:given-name>
+										<ce:surname>Stasse</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>MonoSLAM: real-time single camera SLAM</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Transactions on Pattern Analysis and Machine Intelligence</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1052</sb:first-page>
+									<sb:last-page>1067</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0050">
+						<ce:label>[10]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Esch</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Burns</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Honeybees use optic flow to measure the distance of a food source</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Naturwissenschaften</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>82</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1995</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>38</sb:first-page>
+									<sb:last-page>40</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0055">
+						<ce:label>[11]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Etienne</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>K.</ce:given-name>
+										<ce:surname>Jeffery</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Path integration in mammals</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Hippocampus</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>14</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>2004</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>180</sb:first-page>
+									<sb:last-page>192</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0060">
+						<ce:label>[12]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Etienne</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Maurer</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>V.</ce:given-name>
+										<ce:surname>Sëguinot</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Path integration in mammals and its interaction with visual landmarks</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Experimental Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>199</sb:volume-nr>
+									</sb:series>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>201</sb:first-page>
+									<sb:last-page>209</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0065">
+						<ce:label>[13]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Franz</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Schölkopf</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Mallot</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Bülthoff</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Where did I take that snapshot? Scene-based homing by image matching</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Biological Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>79</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>1998</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>191</sb:first-page>
+									<sb:last-page>202</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0070">
+						<ce:label>[14]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Gaspar</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Winters</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Santos-Victor</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Vision-based navigation and environmental representations with an omnidirectional camera</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Transactions on Robotics and Automation</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>2002</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>890</sb:first-page>
+									<sb:last-page>898</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0075">
+						<ce:label>[15]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Goedemé</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Nuttin</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Tuytelaars</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>L.</ce:given-name>
+										<ce:surname>van Gool</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Switzerland</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Vision based intelligent wheel chair control: the role of vision and inertial sensing in topological navigation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Robotic Systems</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>21</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>2004</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>85</sb:first-page>
+									<sb:last-page>94</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0080">
+						<ce:label>[16]</ce:label>
+						<ce:other-ref>
+							<ce:textref>T. Goedemé, T. Tuytelaars, L. van Gool, G. Vanacker, M. Nuttin, Feature based omnidirectional sparse visual path following, in: 2005 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2005 (IROS 2005), 2005, pp. 1806–1811.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0085">
+						<ce:label>[17]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Gould</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Landmark learning by honeybees</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Animal Behavior</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>35</sb:volume-nr>
+									</sb:series>
+									<sb:date>1987</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>26</sb:first-page>
+									<sb:last-page>34</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0090">
+						<ce:label>[18]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Graham</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Philippides</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Baddeley</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Animal cognition: multi-modal interactions in ant learning</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Current Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>20</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>15</sb:issue-nr>
+									<sb:date>2010</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>R639</sb:first-page>
+									<sb:last-page>R640</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0095">
+						<ce:label>[19]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Harris</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Hempel de Ibarra</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Graham</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Ant navigation: priming of visual route memories</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Nature</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>438</sb:volume-nr>
+									</sb:series>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>302</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0100">
+						<ce:label>[20]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>F.</ce:given-name>
+										<ce:surname>Labrosse</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Short and long-range visual navigation using warped panoramic images</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Robotics and Autonomous Systems</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>55</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>9</sb:issue-nr>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>675</sb:first-page>
+									<sb:last-page>684</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0105">
+						<ce:label>[21]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.</ce:given-name>
+										<ce:surname>Lambrinos</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Moller</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Labhart</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Pfeifer</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Wehner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A mobile robot employing insect strategies for navigation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Robotics and Autonomous Systems</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>30</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1-2</sb:issue-nr>
+									<sb:date>2000</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>39</sb:first-page>
+									<sb:last-page>64</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0110">
+						<ce:label>[22]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Luschi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>F.</ce:given-name>
+										<ce:surname>Papi</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Liew</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Chan</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>F.</ce:given-name>
+										<ce:surname>Bonadonna</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Long-distance migration and homing after displacement in the green turtle (Chelonia mydas): a satellite tracking study</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Comparative Physiology A: Neuroethology, Sensory, Neural, and Behavioral Physiology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>178</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>447</sb:first-page>
+									<sb:last-page>452</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0115">
+						<ce:label>[23]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Mather</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Navigation by spatial memory and use of visual landmarks in octopuses</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Comparative Physiology A: Neuroethology, Sensory, Neural, and Behavioral Physiology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>168</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>1991</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>491</sb:first-page>
+									<sb:last-page>497</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0120">
+						<ce:label>[24]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Mittelstaedt</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Mittelstaedt</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Homing by path integration in a mammal</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Naturwissenschaften</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>67</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>11</sb:issue-nr>
+									<sb:date>1980</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>566</sb:first-page>
+									<sb:last-page>567</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0125">
+						<ce:label>[25]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Möller</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Vardy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Local visual homing by matched-filter descent in image distances</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Biological Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>95</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>2006</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>413</sb:first-page>
+									<sb:last-page>430</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0130">
+						<ce:label>[26]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.</ce:given-name>
+										<ce:surname>Nicholson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Judd</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Cartwright</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Collett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Learning walks and landmark guidance in wood ants (Formica Rufa)</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Experimental Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>202</sb:volume-nr>
+									</sb:series>
+									<sb:date>1999</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1831</sb:first-page>
+									<sb:last-page>1838</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0135">
+						<ce:label>[27]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>O’Keefe</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Burgess</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Geometric determinants of the place fields of hippocampal neurons</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Nature</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>381</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6581</sb:issue-nr>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>425</sb:first-page>
+									<sb:last-page>428</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0140">
+						<ce:label>[28]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Kim</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.-K.</ce:given-name>
+										<ce:surname>Park</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Vision-based global localization for mobile robots with hybrid maps of objects and spatial layouts</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Information Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>179</sb:volume-nr>
+									</sb:series>
+									<sb:date>2009</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>4174</sb:first-page>
+									<sb:last-page>4198</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0145">
+						<ce:label>[29]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Srinivasan</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Gregory</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>How bees exploit optic flow: behavioural experiments and neural models</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Philosophical Transactions: Biological Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>337</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1281</sb:issue-nr>
+									<sb:date>1992</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>253</sb:first-page>
+									<sb:last-page>259</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0150">
+						<ce:label>[30]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.</ce:given-name>
+										<ce:surname>Stürzl</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Zeil</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Depth, contrast and view-based homing in outdoor scenes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Biological Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>96</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>2007</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>519</sb:first-page>
+									<sb:last-page>531</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0155">
+						<ce:label>[31]</ce:label>
+						<ce:other-ref>
+							<ce:textref>Y. Sun, Q. Cao, W. Chen, 2004. An object tracking and global localization method using omnidirectional vision system, in Proceedings of the 5th World Congress on Intelligent Control and Automation, pp. 4730–4735.</ce:textref>
+						</ce:other-ref>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0160">
+						<ce:label>[32]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.</ce:given-name>
+										<ce:surname>Touretzky</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Redish</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Theory of rodent navigation based on interacting representations of space</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Hippocampus</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>6</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>247</sb:first-page>
+									<sb:last-page>270</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0165">
+						<ce:label>[33]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>O.</ce:given-name>
+										<ce:surname>Trullier</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Meyer</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Animat navigation using a cognitive graph</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Biological Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>83</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>2000</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>271</sb:first-page>
+									<sb:last-page>285</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0170">
+						<ce:label>[34]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Vardy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Möller</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Biologically plausible visual homing methods based on optical flow techniques</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Connection Science</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>17</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>2005</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>47</sb:first-page>
+									<sb:last-page>89</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0175">
+						<ce:label>[35]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Wehner</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Michel</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Antonsen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Visual navigation in insects: coupling of egocentric and geocentric information</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Experimental Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>199</sb:volume-nr>
+									</sb:series>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>129</sb:first-page>
+									<sb:last-page>140</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0180">
+						<ce:label>[36]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Wehner</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Michel</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Antonsen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Visual navigation in insects: coupling of egocentric and geocentric information</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Experimental Biology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>199</sb:volume-nr>
+									</sb:series>
+									<sb:date>1996</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>129</sb:first-page>
+									<sb:last-page>140</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0185">
+						<ce:label>[37]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.</ce:given-name>
+										<ce:surname>Wehner</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>F.</ce:given-name>
+										<ce:surname>Räber</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Visual spatial memory in desert ants, Cataglyphis bicolor (hymenoptera: Formicidae)</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Experientia</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>35</sb:volume-nr>
+									</sb:series>
+									<sb:date>1979</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1569</sb:first-page>
+									<sb:last-page>1571</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0190">
+						<ce:label>[38]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Zeil</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Hemmi</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The visual ecology of fiddler crabs</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of Comparative Physiology A: Neuroethology, Sensory, Neural, and Behavioral Physiology</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>192</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>2006</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1</sb:first-page>
+									<sb:last-page>25</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="b0195">
+						<ce:label>[39]</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Zeil</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Hofmann</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Chahl</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Catchment areas of panoramic snapshots in outdoor scenes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Journal of the Optical society of America A</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>20</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>2003</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>450</sb:first-page>
+									<sb:last-page>469</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</ja:tail>
+	</ja:article></doc:document>

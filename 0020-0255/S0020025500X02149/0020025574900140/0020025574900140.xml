@@ -1,0 +1,4731 @@
+<doc:document xmlns:doc="http://www.elsevier.com/xml/document/schema"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="http://dx.doi.org/10.1016/0020-0255(74)90014-0"><dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/xml</dc:format><dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Estimation: A brief survey</dc:title><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Seq><rdf:li>Demetrios G. Lainiotis</rdf:li></rdf:Seq></dc:creator><dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">Information Sciences 7 (1974) 191-202. doi:10.1016/0020-0255(74)90014-0</dc:description><prism:aggregationType xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">journal</prism:aggregationType><prism:publicationName xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Information Sciences</prism:publicationName><prism:copyright xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">Copyright © unknown. Published by Elsevier Inc.</prism:copyright><dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier Inc.</dc:publisher><prism:issn xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">0020-0255</prism:issn><prism:volume xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">7</prism:volume><prism:coverDisplayDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDisplayDate><prism:coverDate xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">1974</prism:coverDate><prism:pageRange xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">191-202</prism:pageRange><prism:startingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">191</prism:startingPage><prism:endingPage xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">202</prism:endingPage><prism:doi xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">10.1016/0020-0255(74)90014-0</prism:doi><prism:url xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">http://dx.doi.org/10.1016/0020-0255(74)90014-0</prism:url><dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">doi:10.1016/0020-0255(74)90014-0</dc:identifier></rdf:Description></rdf:RDF><dp:document-properties xmlns:dp="http://www.elsevier.com/xml/common/doc-properties/schema"><dp:raw-text>This special issue is dedicated to
+Professor Norbert Wiener
+
+whose work on estimation dominated the period 1945-1960
+and to
+Professor R. E. Kalman
+whose work has been predominate from 1960 to the present
+
+INFORMATION SCIENCES 7,191-202 (1974) 191
+
+Estimation: A Brief Survey
+
+DEMETR10S G. LAINIOTIS
+
+Department of Electrical Engineering, State University of New York at Buffalo, Buffalo,
+New York 14214
+
+Estimation is a discipline of great theoretical significance and elegance, as well
+as and, perhaps more importantly, it is an area of wide applicability to a variety
+of scientific and engineering problems. Indeed, the very origins of estimation are
+due to the work of Gauss [ 1 ] and Legendre [2], stimulated by astronomical
+studies. Since then, estimation has been applied successfully to numerous engi-
+neering problems [3], such as to aerospace problems, e.g. navigation, guidance,
+tracking and positioning [3-8], electric power systems [3,9-12], process con-
+trol [13-15], nuclear reactors [16-18], communications [19-22], econometrics
+[23-26], biomédical systems [27-29], meteorology [30-32], pattern recogni-
+tion [33-35], seismology [36-39], speech processing [40-41], statistical me-
+chanics [41a] and many others.
+
+Moreover, estimation not only provides useful solutions to practical engineer-
+ing problems but it also has intimate connections to a large number of other dis-
+ciplines, both statistical as well as deterministic [42]. The close connection be-
+tween estimation and communications in general has already been noted [19-
+22]. This interrelationship is especially strong in detection [22,43-44],
+Karhunen-Loeve expansion of random processes [45-46], and related matters
+[47]. There exists also a very strong connection between stochastic control and
+estimation [48-51] ; in fact, this is in the strong form of duality [52-53] which
+is both theoretically appealing as well as, and most importantly, practically use-
+ful from a realization or computational standpoint. There are numerous other
+disciplines closely related to estimation, ranging from information theory and
+coding to functional analysis [42]. Specifically, estimation impinges on infor-
+mation theory and coding, and vice-versa [54-57], e.g. the calculation of mutual
+information [55, 55 a], application of information-theoretic criteria to estima-
+tion [54-56], and decoding algorithms such as the Berlecamp-Massey algorithm
+for decoding BCH codes [57]. It also has close connections to the solution of
+integral equations [58-60], and to two-point boundary value problems, as well
+as to problems associated with state-variable realization of systems from impulse
+response or transfer-function data, and the inversion of multivariable linear sys-
+tems [61]. Applications have been found to problems of network theory and
+stability theory, such as polynomial factorization [62]. Estimation also has in-
+
+© American Eisevier Publishing Company, Inc., 1974
+
+192                                             DEMETRIOS G. LAINIOTIS
+
+tegral theoretical connections with Hubert-space theory, operator theory, and
+more generally with functional analysis [63-64].
+
+Since the work of Gauss [1] in 1795, estimation has attracted considerable
+attention by mathematicians, scientists and engineers, resulting in an enormous
+literature. This has been especially true in the last four decades. Past efforts
+were directed both to the derivation of theoretical results pertaining to the rele-
+vant probability densities (information representation part of the estimation
+problem) and to estimates (realization part of the problem), as well as, and most
+frequently, to the derivation of computationally efficient or even approximate,
+but realizable, estimators. Following Gauss' and Legendre's pioneering work,
+relatively little appeared until Fisher introduced his maximum likelihood ap-
+proach [65] in 1912, which has been thoroughly investigated, mainly by statis-
+ticians [66]. By the late 30's, the theory of probability and stochastic processes
+had, following Kolmogorov's work [67], matured to the point where estimation
+problems could be viewed and formulated from a new standpoint. Wold's Ph.D.
+thesis on discrete stationary processes [68] was the first to use this new view-
+point, introducing several significant new results, such as the decomposition of
+regular random processes. Kolmogorov's [69] definitive work on linear mean-
+square-error (mse) prediction of stationary, discrete random processes, followed
+Wold's fundamental decomposition approach. Independently of Kolmogorov
+and following a different approach, Wiener [69] considered and solved the
+problem of continuous, linear, mse-filtering and prediction of stationary random
+processes. Wiener's formulation utilized modeling of random processes in terms
+of correlation functions or spectral densities resulting in the necessity for solving
+Wiener-Hopf integral equations in order to realize the estimators. While
+Kolmogorov's approach was mainly mathematical, Wiener's was motivated by
+practical applications such as fire control, communications, weather forecasting,
+etc. Moreover, Wiener was interested not only in theoretical results but in their
+realization as well. As such, Wiener's work dominated the literature in the pe-
+riod 1940-1960.
+
+Wiener's fundamental work was extended and generalized in the late 40's and
+in the 50's. Both time and frequency domain techniques were used with the lat-
+ter being predominant. Special results and techniques were obtained to partially
+solve the finite observation interval problem and the estimation of nonstationary
+processes. Most noteworthy contributions are those ofZadeh and Ragazzini
+[70], Bode and Shannon [71], Shinbrot [72], Yaglom [73], and Helstrom [74].
+The results of Zadeh-Ragazzini [70] and Bode-Shannon [71] are particularly
+noteworthy because of the use of an innovations or "shaping filter" approach.
+Extensions to discrete-time problems were made by Franklin [75] and Lees
+[76]. As far as the nonstationary random process estimation problem using
+time-domain techniques is concerned, the following contributions are also note-
+worthy: Carlton and Follin [77], Pugachev [78], Swerling [4], Bucy [79], and
+
+ESTIMATION: A SURVEY                                            193
+
+Parzen [80-81]. Carlton and Follin's and Swerling's results are especially note-
+worthy for their pioneering of the sequential, unbiased estimation viewpoint and
+for their emphasis on computational efficiency.
+
+The concern for computational efficiency also dominated the work of a
+group of researchers, mainly from MIT, that followed a different approach from
+the above researchers, although they also worked in the time-domain. Most
+noteworthy of these are: Levinson [1-73], who obtained an efficient recursive
+implementation of the discrete Wiener filter, followed by Durbin [82], who in-
+dependently rediscovered Levinson's results, and Whittle [83] who extended
+them to multivariate time-series. Levinson's work has had its greatest impact to
+date in geophysics, his results having been extensively used and significantly ex-
+tended by several workers, such as Robinson, Treitel, and others [36-38]. The
+recursive algorithms they obtained are closely related to the theory of orthog-
+onal polynomials [42].
+
+Following Wiener's fundamental contributions which dominated the period
+1940-1960, Kalman's [II-l, 3]1 contributions are the most significant. Indeed,
+Kalman's work dominated the literature in the period 1960-1974, as well as con-
+tributed appreciably to the practical solution of engineering problems, especially
+in the aerospace field. Specifically, Kalman [II-l, 3] provided a sequential and
+computationally efficient solution of the discrete linear filtering and prediction
+problems, while Kalman and Bucy [11-2] similarly solved the continuous ones.
+Kalman and Bucy [II-l, 2, 3] utilized a state-space formulation of the problem
+to obtain their elegant, theoretically significant, computationally efficient, and
+useful algorithms, and also, and perhaps more importantly, to obtain the techni-
+cal conditions, namely, controllability and observability, for which the optimum
+filter is stable or robust.
+
+Following Kalman's and Kalman and Bucy's state-space pioneering work,
+there ensued an incredible volume of technical papers obtaining essentially the
+same algorithms, each using a different approach or considering different aspects
+of the problem. These are due to: Ho [11-5], using a stochastic approximation
+approach, Ho and Lee [11-6] using a Bayesian approach, Rauch et al. [11-7],
+using a max. likelihood approach, Athans and Tse [11-8] using the maximum
+principle, Kailath [11-10] using the innovations, and Meditch [II-l 1] utilizing
+projections. Most recently, Moifetal. [1-71], and Kailath [11-12] derived a
+computationally efficient algorithm for obtaining the Kalman filter gains for
+constant linear systems, using essentially the Abarzumian-Chandrasekhar [11-46]
+solution to the Riccati equation. This algorithm is related to the Levinson algo-
+rithm [1-73] for discrete processes.
+
+Similarly, the state-variable formulation of the linear smoothing problem has
+
+'See D. G. Lainiotis, "Partitioned Estimation Algorithms, 11: Linear Estimation," this
+issue, for these references.
+
+194                                          DEMETRIOS G. LAINIOTIS
+
+attracted an even greater attention. Specifically, it has been solved by Bryson
+and Frazier [11-13], Rauch [11-14], Lee [11-15], Cox [11-16], Mayne [11-17],
+Fraser [11-18], Meditch [II-19-21], Bryson and Henrikson [11-22], Baggeroer
+[11-24], Kailath and Frost [11-25], Kwakernaak [11-26], Zachrisson [11-27],
+Andersen et al. [11-30, 31], and others.
+
+In a radically different approach to the linear estimation problem, Lainiotis
+[11-36, 37], using the "Partition theorem," obtained fundamentally new linear
+filtering, prediction and smoothing algorithms for continuous and discrete data
+m terms of explicit, integral expressions of a "partitioned" nature given through
+decoupled forward filters. The "partitioned" algorithms are especially advanta-
+geous from an analysis as well as from a computational standpoint. Specifically,
+the "partitioned" algorithms yield further insight as well as several new results
+[81a, 81b] on: a) unbiased estimation; b) filter initialization procedures; c) re-
+processed smoothing [11-37] ; d) stochastic observability and controllability; e)
+the interconnection between stochastic observability, Fisher information matrix,
+and the Cramer-Rao bound; f) estimation error-bounds; and most importantly
+g) computationally effective "partitioned" solutions of time-varying matrix
+Riccati equations. The "partitioned" solutions serve as the basis of numerically
+superior computational algorithms for the solution of Riccati as well as of
+Fredholm integral equations [11-50]. It must be noted that all of the above re-
+sults were obtained [81b, 11-36, 37, 50, 53] for general, time-varying lumped lin-
+ear systems. Moreover, it has been shown that all previously established linear
+filtering and smoothing algorithms can be readily obtained from the "parti-
+tioned" algorithms. In fact, the "partitioned" filtering algorithms constitute
+generalizations to time-varying models of the so-called Chandrasekhar-
+Abarzumian linear estimation algorithms for constant models obtained by
+Kailath [I-70]2, Moïfetal. [1-71], and Sidhu and Kailath [1-72]. Moreover,
+ïAorfetal. [1-71], and Sidhu and Kailath [1-72] have obtained the
+Chandrasekhar-Abarzumian algorithms for constant, discrete and continuous
+models by using Lainiotis' "partitioning" approach [1-30,40,43, 46, 50, 56,83]
+which yields important shift-invariance properties for the time-invariant case.
+
+While the linear estimation problem continued to receive immense attention
+during the 50's and 60's, interest in nonlinear estimation kept rising, due to its
+theoretical importance and, most importantly, dictated by the need for more
+sophisticated estimation procedures with which to solve practical engineering
+problems. Specifically, the use of linear estimation procedures where the basic
+underlying physical models were nonlinear led to unsatisfactory results, such as
+divergence. Several attempts were made to alleviate divergence and related diffi-
+culties with some success, by Jazwinski [1-35], Sorenson [1-59], Fitzgerald
+
+See D. G. Lainiotis, "Partitioned Estimation Algorithms, I: Nonlinear Estimation,"
+this issue, for these references.
+
+ESTIMATION: A SURVEY                                           195
+
+[88], Athans [89] and many others. However, the basic need to consider opti-
+mal nonlinear estimation remained and the subject received and continues to re-
+ceive considerable attention.
+
+There exist two fundamental approaches to nonlinear estimation, in fact, to
+estimation in general [1-33], namely, the variational or least-squares approach
+(sometimes also called statistical) and the probabilistic or bayesian viewpoint.
+Research efforts are directed both to the derivation of exact results pertaining to
+the relevant a-posteriori probabilities and mean-square estimates [1-1-14, 17-19,
+24-26, 30-32, 38-43,46,49-50, 54-56, 58, 62] as well as, and most fre-
+quently, to the derivation of approximate but realizable nonlinear estimators
+[1-15, 16, 18-23, 27-30, 33, 35-38,40, 43-48, 50, 53-55, 59-61].
+
+Nonlinear filtering research in the 1950's was stimulated to a great extent by
+Wiener's work [69]. Wiener's results required for their implementation the so-
+called nonlinear Wiener Kernels whose determination and realization are very
+hard. Subsequently, following the bayesian approach and using a dynamical
+modeling of the pertinent continuous random processes, Stratonovich [1-1, 2],
+and Kushner [1-4, 5, 13, 16], obtained partial differential equations for the
+time-evolution of the a-posteriori probabilities and the mean-square estimates.
+Related contributions were also made later by Wonhan [1-7], and especially
+Fisher and Stear [1-17,36]. Mortensen [1-11,24] and Duncan [1-14] made
+contributions in the rigorous establishment of the above results and Ho and Lee
+[1-6,11-15] considered the discrete nonlinear estimation problem. Later, Frost
+and Kailath [1-19,42], using the innovations approach considered a larger class
+of problems and obtained integral representations of the exact nonlinear estima-
+tors as well as approximate realizations in terms of orthogonal series.
+
+The variational approach to the nonlinear estimation problem received also
+some attention, the most noteworthy contributions being those of Bryson and
+Frazier [II-13], Bellman, et al. [90], Detchmendy and Stridhar [1-12], and Cox
+[11-6], the latter considering the discrete case.
+
+In the 1960's, while most of the attention was focused on the general non-
+linear estimation problem, considerable attention was also paid to the adaptive
+estimation problem, namely, to the special class of nonlinear estimation prob-
+lems with linear models and time-invariant random parameters. This interest was
+spurred on by the desire to render the Kaiman filter applicable to a more general
+class of physical problems for which the models were not completely known
+a-priori. Of the early contributions most noteworthy are those of Rauch [91],
+Fralick [92], Magill [1-9], Lainiotis [1-22, 23, 30], and Lainiotis and Hilborn
+[1-18, 25, 31], all of whom dealt with the discrete case. The more difficult
+continuous case was completely solved by Lainiotis [1-30, 38,40,46, 50], who
+obtained exact integral expressions for the a-posteriori probabilities, the mean-
+square estimates, and the corresponding error-covariance matrix for filtering,
+prediction, and smoothing. The results given m the "partition theorem" were in
+
+196                                            DEMETRIOS G. LA1NIOTIS
+
+a form which is amenable both to interpretation as well as to effective approxi-
+mate realization. Lainiotis' results were subsequently applied to other special
+classes of nonlinear estimation problems, such as detection [1-38, 40, 46, 50],
+and estimation with nongaussian initial state but linear models [1-40, 43]. The
+results of the "partition theorem" are particularly noteworthy in several impor-
+tant respects: a) they give the nonlinear estimators in a "partitioned" form,
+namely, in terms of a set of decoupled linear Kalman filters, which is amenable
+to parallel processing realization. This is in marked contrast to previous realiza-
+tions of the nonlinear estimator in terms of a set of coupled partial differential
+equations, all of which contain the observations and whose implementation is not
+easily forthcoming or the effect of approximations easily assessed; and b) they
+provide error-covariance matrix expressions in an integral "partitioned" form
+which is both illuminating as well as readily realizable with a minimum of addi-
+tional computational effort. It must be noted that this exact error-covariance
+expression is the only one in nonlinear estimation to date.
+
+In the mid-sixties, a different formulation of the general nonlinear estimation
+problem was introduced by Bucy [1-8] that was based on function-space consid-
+erations. Specifically, Bucy, using the function-space approach obtained a gen-
+eralized Bayes' rule for the a-posteriori probability, namely the so-called Bucy
+"representation theorem." The most general form of this was subsequently
+given by Kallianpur and Striebel [1-39]. It must be noted, however, that in the
+form given, Bucy's representation theorem could not be evaluated or even
+readily used. Following his adaptive or "partitioning" approach to nonlinear es-
+timation problems, Lainiotis [1-43] obtained a "partitioned" representation
+(a-posteriori probability) which is an explicit Bayes rule amenable to interpreta-
+tion and ready use. This general "partition" theorem is the natural generaliza-
+tion of Lainiotis' "partition" theorem for adaptive estimation. Using the "parti-
+tion" theorem the nonlinear estimation problem is treated [II] from a global
+viewpoint that readily yields and unifies previously derived and seemingly un-
+related results, as well as yielding fundamentally new estimation algorithms, in
+terms of explicit, integral expressions in a "partitioned" or parallel realization
+form. Independently, Lo [1-49] and later Dunn and Rhodes [1-58] obtained
+similar representation theorems, for similar estimation problems.
+
+While the theoretical aspects of the nonlinear problem attracted considerable
+attention, even greater attention was paid to the realization aspects of the prob-
+lem [1-15,16,18-23,27-30,33,35-38,40,43-48,50,53-55,59-61,81]. In
+the approximate realization of nonlinear estimators two fundamentally distinct
+methods were taken, namely the "local" approach [1-59], as exemplified by the
+extended Kalman filter, and the "global" approach [1-59], as exemplified by the
+quantization approach of Fralick [92], Magill [1-9], Lainiotis [1-18, 22-23, 25,
+27, 30, 38, 40,46, 50, 51, 55], Bucy [1-29], and the gaussian sum approach of
+Aoki [1-15], Sorenson and Alspach [1-45, 53, 59, 61], Lainiotis [1-23, 41,43,
+
+ESTIMATION: A SURVEY                                           197
+
+50, 52, 55], and Lo [1-28, 49, 54]. Other "global" approximations are based
+on splines, e.g., Wahba and Kimeldorf [93], deFiguerido and Jan [1-47],
+Wienert and Kailath [94], Lainiotis and Deshpande [1-60], as well as on more
+general least-square approximations such as those proposed by Lainiotis [1-22,
+22], Frost [1-19], Center [144], Alengrin [95], Leondes, et al. [96], and oth-
+ers [97-98]. Some interest was also shown in establishing exact expressions or
+at least bounds for the evaluation of the performance of nonlinear estimators. In
+this regard, noteworthy are the contributions of Zakai and Ziv [99], Snyder and
+Rhodes [100], and especially Gilman and Rhodes [101-102], all of whom ob-
+tained estimation-error-bounds, as well as the exact, "partitioned," and integral
+error-covariance expressions of Lainiotis [1-40, 43, 46, 50].
+
+The field of estimation is a particularly rich and robust field that continues to
+attract the attention of scientists, mathematicians, and engineers in the 1970's.
+The current trends of the field consist of significant extensions in the generality
+and richness of the models considered, e.g., doubly stochastic models considered
+by Snyder [103-104], Frost [105], Segal [106], Bremand [107], and Van
+Schuppen [108], rotational process models recently pursued by Willsky and Lo
+[109-110], distributed process models considered by Balakrishnan and Lions
+[111], Tzafestas and Nightingale [112], Kushner [l 13], Meditch [l 14], Yu,
+Seinfeld and Ray [l 15], delay models investigated by Kwakernaak [116] and
+Koivo [117], and other models proposed by Parzen [118-119]. Other trends
+consist of broadening of the class of cost functionals used, e.g., information-
+theoretic cost functionals, etc., as considered by Wiedeman and Stear [120],
+Akaike [121], Kashyap [122], and Zaborzsky [123]. Also, the realization and
+performance evaluation aspects of Nonlinear estimation research will continue
+to receive considerable attention in the future, especially as they pertain to spe-
+cific scientific and engineering applications.
+
+REFERENCES
+
+1. C. F. Gauss, Theory of Motion of the Heavenly Bodies, New York: Dover, 1963.
+
+2. A. M. Legendre, "Methode de Moindres Quarres, Pour Trouver le Milieu le Plus Prob-
+able Entre les Résultats de Différentes Observations," Mem. Inst. France, pp. 149-154,
+1810.
+
+3. J.M. Mendel and D. L. Gieseking, "Bibliography on the Linear -Quadra tic-Gaussian
+Problem, "IEEE Trans. Auto. Control AC-16 (6), 847-869 (Dec. 1971).
+
+4. P. Swerling, "A Proposed Stagewise Differential Correction Procedure for Satellite
+Tracking and Prediction," The RAND Corp., Paper P-1292, Jan. 1958.
+
+5. R. A. Nash, J. F. Casper, B. S. Crawford, and S. A. Levine, "Application of Optimal
+Smoothing to the Testing and Evaluation of Inertial Navigation Systems and Compo-
+nents," IEEE Trans. Autom. Control, AC-16 (6), 806-816 (1971).
+
+6. R. M. Dressler and D. Tabak, "Satellite Tracking by Combined Estimation and Control
+Techniques," IEEE Trans. Autom. Control, AC-16 (6), 833-840 (Dec. 1971).
+
+198                                         DEMETRIOS G. LAINIOTIS
+
+7. R. S. Bucy and P. D. Joseph, Filtering for Stochastic Processes with Applications to
+Guidance, New York: Wiley, 1968.
+
+8. J. F. BeUantoni, "Unidentified Landmark Navigation," AIAA J. 5,1478 (1967).
+
+9. A. S. Debs and R. E. Larson, "A Dynamic Estimator for Tracking the State of a Power
+System," IEEE Trans. Power App. Syst., PAS-89,1670-1678 (Sept./Oct. 1970).
+
+10. J. Toyoda et al., "An Application of State-Estimation to Short-Term Load Forecast-
+ing,"/£££ Trans. Power App. Syst., PAS-89,1678 (1970).
+
+11. W. L. Miller and J. B. Lewis, "Dynamic State-estimation in Power Systems," IEEE
+Trans. Autom. Control AC-16 (6), 841-846 (Dec. 1971).
+
+12. E. Handschin (Ed.), Real-time Control o f Electric Power Systems, Eisevier, Amsterdam,
+1972.
+
+13. K. J. Aström, "Computer Control of a Paper MachineAn Application of Linear Sto-
+chastic Control Theory," IBM J. Res. Develop. 11, 389-405 (1967).
+
+14. L. A. Gould, Chemical Process Control, Addison-Wesley, Reading, Mass., 1967.
+
+15. I. Gustavsson, "Survey of Applications of Identification in Chemical and Physical Pro-
+cesses," Proc. 3rd IFAC Symp. -Identification and System Parameter Estimation,
+North-Holland, Amsterdam, 1973, pp. 67-86.
+
+16. A. P. Sage and G. W. Masters, "Identification and Modeling of States and Parameters of
+Nuclear Reactor Systems," IEEE Trans. Nucl. Sei. NS-14, 279-285 (Feb. 1967).
+
+17. W. S. Roman, C.'Hsu, and L. T. Habegger, "Parameter Identification in a Nonlinear
+Reactor System," IEEE Trans. Nucl. Sei. NS-18,426-429 (1971).
+
+18. J. C. Venerous and T. E. Bullock, "Estimation of the Dynamic Reactivity Using Digital
+Kalman Fütering, Nucl. Sei. Eng., 40,199-205 (1970).
+
+19. D. L. Snyder, The State- Variable Approach to Continuous Estimation with Applica-
+tions to Analog Communication, MIT Press, Cambridge, Mass., 1968.
+
+20. H. Van Trees, Detection, Estimation, and Modulation Theory, Wuey, New York, 1971.
+
+21. W. C. Lindsey, Synchronization Systems m Communication and Control, Prentice Hall,
+Englewood Cliffs, New Jersey, 1972.
+
+22. D. G. Lainiotis, "On a General Relationship Between Estimation, Detection, and Con-
+trol," £££ Trans. Inform. Theory, IT-15 (3) (July 1969).
+
+23. P. J. Dhrymes, Distributed Lags, Problems o f Estimation and Formulation, Holden-
+Day, Inc., 1971.
+
+24. A. Zellner, An Introduction to Bayesian Inference m Econometrics, Wiley, New York,
+1971.
+
+25. R. S. Pindyck and S. M. Roberts, Optimal Policies for Monetary Control, NBER Con-
+ference on Stochastic Control and Economics, University of Chicago, June 1973.
+
+26. T. N. Upadhyay and D. G. Lainiotis, "Adaptive Control of Linear Stochastic Systems,"
+Tech. Rept. No. 148, Electronics Research Center, Univ. of Texas, Austin, May 1973.
+
+27. L. Stark, Neurological Control Systems Studies m Bioengineering, New York, Plenum
+Press, 1968.
+
+28. D. L. Snyder, Estimation of Stochastic Intensity Functions o f Conditional Poisson
+
+Processes, Monograph no. 128, Biomédical Computer Lab., Washington Univ., St. Louis,
+Mo., April 1970.
+
+29. G. A. Bekey, "Parameter Estimation in Biological Systems: A Survey," Proc. 3rd IFAC
+Symp. -Identification and System Parameter Estimation, North-Holland, Amsterdam,
+1973,pp.1123-1130.
+
+30. T. P. McGarty, "The Estimation of the Constituent Densities of the Upper Atmosphere
+by Means of a Recursive Filtering Algorithm," IEEE Trans. Autom. Control AC-16 (6)
+(Dec. 1971).
+
+31. N. B. Penrose and D. G. Lainiotis, "Application of Adaptive Estimation to Temperature
+Forecasting," Tech. Rep. No. 140, Electronics Research Center, University of Texas,
+Austin, Dec. 1972.
+
+ESTIMATION: A SURVEY                                          199
+
+32. A. Desalu, "Dynamic Air Quality Estimation in a Stochastic Dispersive Atmosphere,"
+Rept. ESL-R-542, Electronics Systems Lab., Mass. Institute of Technology, April 1974.
+
+33. Y. C. Ho and A. K. Agrawala, "On Pattern Classification Algorithms-Introduction and
+Survey," IEEE Trans. Autom. Control. AC-13, 676-690 (1968).
+
+34. D. G. Lainiotis, "Adaptive Pattern Recognition: A State-Variable Approach," 'm Fron-
+tiers of Pattern Recognition, S. Watanabe (Ed.), Academic Press, New York, 1972.
+
+35. H. C. Andrews, Introduction to Mathematical Techniques in Pattern Recognition, Wiley,
+New York, 1972.
+
+36. E. A. Robinson, "Mathematical Development of Discrete Filters for Detection of Nu-
+clear Explosions," J. Geophys. Res. 68, 5559-5567 (1963).
+
+37. E. A. Robinson, Multichannel Time-Series Analysis with Digital Computer Programs,
+Holden-Day, San Francisco, 1967.
+
+38. E. A. Flinn, E. A. Robinson, and S. Treitel, "Special Issue on the MIT Geophysical
+Analysis Group Reports," Geophysics 32 (3) (June 1967).
+
+39. J. W. Bayless and E. O. Brigham, "Application of the Kalman Filter," Geophysics 35
+(l), 2-23 (Feb. 1970).
+
+40. F. Itakura, "Extraction of Feature Parameters of Speech by Statistical Methods," Proc.
+8th Symp. Speech Information Processing, Feb. 1972.
+
+41. H. Wakita, "Estimation of the Vocal Tract Shape by Optimal Inverse Filtering," IEEE
+
+Trans. Audio Electro-acoustics AU-21 417-427 (Oct. 1973).
+
+41a. J. M. Richardson, "The implicit conditioning method in statistical mechanics," Inform.
+Sei.. 7 (3/4), 237-252 (1974), this issue.
+
+42. T. Kailath, "A View of Three Decades of Linear Filtering Theory," IEEE Trans. Inform.
+Theory IT-20 (2), 146-181, (March 1974).
+
+43. F. C. Schweppe, "Evaluation of Likelihood Functions for Gaussian Signals," IEEE
+Trans. Inform. Theory IT-11, 61-70 (1965).
+
+44. T. Duncan, "Evaluation of Likelihood Functions," Inform. Control, 13, 62-74 (July
+1968).
+
+45. C. W. Helstrom, Statistical Theory of Signal Detection, Pergamon Press, London, 1968.
+
+46. E. Parzen, Time-Series Analysis Papers, Holden-Day, San Francisco, 1967.
+
+47. H. Akaike, "Markovian Representation of Stochastic Processes by Canonical Variables,"
+SIAMJ. Control, (1974), to be published.
+
+48. P. D. Joseph and J. Tou, "On Linear Control Theory," Trans. AIEE, Part II, 193-196
+(1961).
+
+49. A. Feldbaum, "Dual Control Theory -I," Automation and Remote Control, 21, 1240-
+1249 (1960).
+
+50. W. M. Wonham, "Random Differential Equations in Control Theory," in A. T.
+
+Bharucha-Reid (Ed.), Probabilistic Methods m Applied Mathematics, Academic Press,
+New York, 1970.
+
+51. D. G. Lainiotis et al., "Optimal Adaptive Control: A Nonlinear Separation Theorem,"
+Int. J. of Control 15 (5), 787 (May 1972).
+
+52. R. E. Kalman, "A New Approach to Linear Filtering and Prediction Problems," J. Basic
+Eng. 82, 34-45 (March I960).
+
+53. M. Z. Dajani and G. Campion, "Closed Loop Control Design for Nonlinear, Nonqua-
+dratic Systems," Proc. of 1973 IEEE Conference on Decision and Control, Dec. 1973,
+pp.82-87.
+
+54. H. L. Wiedemann and E. B. Stear, "Entropy and Analysis of Estimating Systems," IEEE
+Trans. Inform. Theory, IT-16, 264-270, 1970.
+
+55. T. T. Kadota, M. Zakai, and J. Ziv, "Mutual Information of the White Gaussian Channel
+
+With and Without Feedback," IEEE Trans. Inform. Theory IT-17, 368-371 (July 1971).
+55a. N. K. Loh, "On the Evaluation of Conditional Entropy," Proc. of the UMR-M. J. Kelly
+Conference, Rolla, Missouri, pp. 7-6-1 to 7-6-6, Oct. 5-7, 1970.
+
+200                                          DEMETRIOS G. LAINIOTIS
+
+56. H. Akaike, "Information Theory and an Extension of the Maximum Likelihood Princi-
+ple," Proc. 2nd Intern. Symposium on Inform. Theory, Hungarian Academy of
+Sciences, Budapest, Hungary, 1972.
+
+57. E. R. Berlecamp./lfeeftroic Coding Theory, McGraw-Hill, New York, 1969.
+
+58. A. Schumitzky, "On the Equivalence Between Matrix Riccati Equations and Fredholm
+Resolvents," J. Comput. Syst. Sei. l, 76-87 (June 1968).
+
+59. T. L. Henderson and D. G. Lainiotis, "Application of State-Variable Techniques to
+Optimal Feature Extraction: Multichannel Analog Data," IEEE Trans. Inform. Theory
+IT-16 (4) (July 1970).
+
+60. B. D. 0. Andersen and T. Kailath, "Some Integral Equations With Nonsymmetric Sepa-
+rable Kernels," SIAMJ. Appl. Math. 20 (4), 659-669 (June 1971).
+
+61. L. Silverman, "Inversion of Multivariable Linear Systems," IEEE Trans. Autom. Con-
+trol AC-14, 270-276 (June 1969).
+
+62. R. W. Brockett, Finite-Dimensional Linear Systems, Wiley, New York, 1970.
+
+63. P. Masani, "Shift-Invariant Spaces and Prediction Theory," Acta. Math. 107, 275-290
+(1962).
+
+64. B. Nagy and C. Foias, Harmonic Analysis ofOperators on Hubert Space, Academic
+Press, New York, 1970.
+
+65. R. A. Fisher, "On an Absolute Criterion for Fitting Frequency Curves," Messenger of
+Mart. 41, 155 (1912).
+
+66. M. G. Kendall and A. Stuart, The Advanced Theory of Statistics, Griffin, London, 1961.
+
+67. A. N. Kolmogorov, Foundations of the Theory of Probability, Springer, New York,
+1933.
+
+68. H. Wold, A Study m the Analysis of Stationary Time Series, Almquist and Wiksell,
+Uppsala, Sweden, 1938.
+
+69. N. Wiener, Extrapolation, Interpolation, and Smoothing of Stationary Time-Series,
+Wiley, New York, 1949.
+
+70. L. A. Zadeh and J. R. Ragazzini, "An Extension of Wiener's Theory of Prediction," J.
+Appl. Phys. 21 645-655 (1950).
+
+71. H. W. Bode and C. E. Shannon, "A simplified Derivation of Linear Least-Squares
+Smoothing and Prediction," Proc. IRE 48, 417-425 (1950).
+
+72. M. Shinbrot, "Optimization of Time-Varying Linear Systems with Non-Stationary In-
+puts," Trans. ASME 80, 457-462 (1958).
+
+73. A. M. Yaglom, Theory of Stationary Rondom Functions, Prentice-Hall, Englewood
+Cliffs, New Jersey, 1962.
+
+74. C. W. Helstrom, "Solution of the Detection Integral Equation for Stationary Filtered
+White Noise," IEEE Trans. Inform. Theory IT-11, 335-339 (July 1965).
+
+75. G. F. Franklin, "The Optimum Synthesis of Sampled-Data Systems," Sc.D. Dissertation,
+Department of Electrical Engineering, Columbia University, New York, New York,
+1955.
+
+76. A. B. Lees, "Interpolation and Extrapolation of Sampled Data," IRE Trans. Inform,
+Theory IT-2, 173-175 (1956).
+
+77. A. G. Carlton and J. W. Follin, "Recent Developments in Fixed and Adaptive Filter-
+ing," Proc. 2nd NATO AGARD Guided Missiles Seminar, AGARDograph No. 21, 1956.
+
+78. V. S. Pugachev, "General Condition for the Minimum Mean-Square Error in a Dynamic
+System," Automation Telemech. 17, 307-314 (1956).
+
+79. R. S. Bucy, "Optimum Finite-Time Filters for a Special Nonstationary Class of Inputs,"
+Johns Hopkins Univ., Applied Physics Lab., Internal Memo no. BBD-600, Silver
+Springs, Md., 1959.
+
+80. E. Parzen, "Statistical Inference on Time-Series by Hilbert-space Methods," Tech. Rept.
+No. 23, Applied Math. and Statistics Lab, Stanford Univ., Stanford, Calif., 1959.
+
+ESTIMATION: A SURVEY                                          201
+
+81. E. Parzen, "A New Approach to The Synthesis of Optimal Smoothing and Prediction
+Systems," Tech. Rept. No. 34, Applied Math. and Statistics Lab, Stanford Univ., Stan-
+ford, California, 1959.
+Sla. D. G. Lainiotis, "Partitioned Estimation Algorithms, I: Nonlinear Estimation,"
+
+Inform. Sei. 7 (3/4), 203-235 (1974), this issue.
+
+81b. D. G. Lainiotis, "Partitioned Estimation Algorithms, II: Linear Estimation," Inform.
+Sei. 1 (3/4), 317-340 (1974), this issue.
+
+82. J. Durbin, "The Fitting of Time-Series Models," Rev. Intern. Statist. Inst. 28, 233-244
+(1960).
+
+83. P. Whittle, Prediction and Regulation, Van Nostrand, New York, 1963.
+
+84. P. G. Kaminski, and A. E. Bryson, "Discrete Square-Root Smoothing," Proceedings of
+the 1972 AIAA Guidance and Control Conference AIAA Paper No. 72-877,1972.
+
+85. G. J. Bierman, "Fixed Interval Smoothing with Discrete Measurements," Int. J. Con-
+trol, 18, 65-73 (1973).
+
+86. , "Sequential Square-Root Filtering and Smoothing of Discrete Linear Systems,"
+Automatica 10, 147-158 (1974).
+
+87. J. S. Meditch, "A Survey of Data Smoothing for Linear and Nonlinear Dynamic Sys-
+tems," Automatica 9,151-162 (1973).
+
+88. R. J. Fitzgerald, "Divergence of the Kalman Filter," IEEE Trans. Auto. Control, AC-
+16, 736-747 (1971).
+
+89. M. Athans, "The Compensated Kalman Filter," Proc. Second Symposium on Non-
+linear Estimation Theory and its Applications, Western Periodicals Company, North
+Hollywood, Calif. (1971).
+
+90. R. E. Bellman, et al., "Invariant Imbedding and Nonlinear Filtering Theory," J. of
+Astro. Sciences 13, 3, 110-115, May-June, 1966.
+
+91. H. E. Rauch, "Linear Estimation of Sampled Stochastic Processes with Random Pa-
+rameters," Rept. SEL-62-058, Stanford Electronics Labs, Stanford University, Stanford,
+California, April 1962.
+
+92. S. Fralick, "Learning to Recognize Patterns Without a Teacher," Rept. SEL-65-011,
+Stanford Electronics Labs, Stanford University, Stanford, California, March 1965.
+
+93. G. Wahba, and G. Kimeidorf, "A Correspondence Between Bayesian Estimation on
+Stochastic Processes and Smoothing by Splines," Annals of Math. Stat. 41,495-502
+(1970).
+
+94. H. Weinert and T. Kailath, "Stochastic Interpretations and Recursive Algorithms for
+Spline Functions," Annals of Math. Statistics 1974 (to appear).
+
+95. G. Alengrin, Thesis Docteur d'Etat, University of Toulouse, Toulouse, France, 1973.
+
+96. C. T. Leondes, J. B. Peller, and E. B. Stear, "Nonlinear Smoothing Theory," IEEE
+Trans, on System Science and Cybernetics, SSC-6 (1), 63-71 (Jan. 1970).
+
+97. W. Kizner, "Optimal Estimation Based on Orthogonal Expansions," Tech. Rept. 32-
+1366, Jet Propulsion Lab., Pasadena, California, April 1969.
+
+98. C. Hecht, "Synthesis and Realization of Nonlinear Filters," Ph.D. Dissertation, Uni-
+versity of South. California, Los Angeles, 1971.
+
+99. M. Zakai, and J. Ziu, "Lower and Upper Bounds on the Optimal Filtering of Certain
+Diffusion Processes," IEEE Trans, on Information Theory, IT-18, 3, 325-331 (1972).
+
+100. D. L. Snyder, and I. B. Rhodes, "Filtering and Control Performance Bounds with Im-
+plications on Asymptotic Separation," A u tomatica, 8, 6, 747-753 (1972).
+
+101. A. S. Gilman, and I. B. Rhodes, "Cone-bounded Nonlinearities and Mean-Square
+Bounds-Estimation Upper Bounds," IEEE Trans, on Auto. Control AC-18, 3, 260-
+265 (1973).
+
+102. I. B. Rhodes, and A. S. Gilman, "Cone-bounded Nonlinearities and Mean-Square
+
+202                                          DEMETRIOS G. LAINIOTIS
+
+Bounds-Estimation Lower Bound," Submitted for publication to IEEE Trans, on
+Automatic Control, 1974.
+
+103. D. L. Snyder, "Filtering and Detection for Doubly Stochastic Poisson Processes,"
+IEEE Trans, on Inform. Theory IT-18,1 (1972).
+
+104. D. L. Snyder, "Smoothing for Doubly Stochastic Poisson Processes," IEEE Trans, on
+Inform. Theory IT-18 5, 558-562 (1972).
+
+105. P. A. Frost, "Estimation and Detection for a Simple Class of Conditionally Indepen-
+dent Increment Processes," Proc. IEEE Decision and Control Conference, Miami,
+Florida (1971).
+
+106. A. Segal, "A Martingale Approach to Modeling, Estimation, and Detection of Jump
+Processes," Rept. SEL-73-042, Stanford Electronics Labs, Stanford Univ., Stanford,
+California, 1973.
+
+107. P. Bremand, "A Martingale Approach to Point Processes," Ph.D. Dissertation, Dept. of
+Electrical Engineering and Computer Sciences, University of California, Berkeley,
+1972.
+
+108. J. H. Van Schuppen, "Estimation Theory for Continuous Time Processes, A
+
+Martingale Approach," Memo no. ERL-M405, Electronics Research Lab., University
+of California, Berkeley, California, 1973.
+
+109. J. T. Lo, and A. S. Willsky, "Estimation for Rotational Processes with One Degree
+
+of Freedom, I: Introduction and Continuous Time Processes," IEEE Trans, on
+
+Automatic Control, 1974 (to appear).
+-110. A. S. Willsky, and J. T. Lo, "Estimation for Rotational Processes with One Degree
+
+of Freedom, II: Discrete-Time Processes," IEEE Trans, on Automatic Control,
+
+1974 (to appear).
+
+111. A. V. Balakrishnan, and J. L. Lions, "State Estimation for Infinité Dimensional
+Systems,"^ Comput. Syst. Sei. 1,391-403 (1967).
+
+112. S. G. Tzafestas, and J. M. Nightingale, "Optimal Filtering, Smoothing, and
+
+Prediction in Linear Distributed Systems," Proc. Inst. Elec. Eng. 115, 1207-1212
+(1968).
+
+113. H. J. Kushner, "Filtering for Linear Distributed Parameter Systems," SIAMJ.
+Contr., Vol. 8, 346-359 (1970).
+
+114. J. S. Meditch, "Least-Square Filtering and Smoothing for Linear Distributed-
+Parameter Systems," Automatica 7, 315-322 (1971).
+
+115. T. K. Yu, J. H. Seinfeld, and W. H. Ray, "Filtering in Nonlinear Time Delay
+Systems," IEEE Trans, on Automatic Control AC-19,4 (1974).
+
+116. H. Kwakernaak, "Optimal Filtering in Linear Systems with Time Delays,"
+IEEE Trans, on Automatic Control Vol. AC-12,2, 169-173 (1967).
+
+117. A. J. Koivo, "Optimal Estimation for Linear Stochastic Systems Described by
+Functional Differential Equations," Inform, and Control 19, 237-245 (1971).
+
+118. E. Parzen, "Some Solutions to the Time-Series Modelling and Prediction
+
+Problem," Technical Report No. 5, Statistical Science Division, State University
+of New York at Buffalo, February 1974.
+
+119. E. Parzen, "Some Recent Advances in Time-Series Modelling," Technical Report
+No. 10, Statistical Science Division, State University of New York at Buffalo,
+May 1974.
+
+120. H. Akaike, "Information Theory and an Extension of the Maximum Likelihood
+Principle," Proc. 2nd Intern. Symp. on Inform. Theory, pp. 267-281, Publishing
+House of the Hungarian Academy of Sciences, Budapest, Hungary, 1973.
+
+121. R. L. Kashyap, "Minimax Estimation with Divergence Loss Function," Inform.
+Sciences 7, (3/4), 341-346 (1974), this issue.
+
+122. J. Zaborsky, "An Information Theory Viewpoint for the General Identification
+Problem," IEEE Trans. onAutom. Control AC-11, 130-131 (1966).
+
+Received July, 1974</dp:raw-text><dp:aggregation-type>Journals</dp:aggregation-type><dp:version-number>S350.1</dp:version-number></dp:document-properties><cja:converted-article version="4.5.2" docsubtype="ssu" xml:lang="en" xmlns:cja="http://www.elsevier.com/xml/cja/schema">
+		<cja:item-info>
+			<cja:jid>INS</cja:jid>
+			<cja:aid>74900140</cja:aid>
+			<ce:pii xmlns:ce="http://www.elsevier.com/xml/common/schema">0020-0255(74)90014-0</ce:pii>
+			<ce:doi xmlns:ce="http://www.elsevier.com/xml/common/schema">10.1016/0020-0255(74)90014-0</ce:doi>
+			<ce:copyright type="unknown" year="1974" xmlns:ce="http://www.elsevier.com/xml/common/schema"/>
+		</cja:item-info>
+		<cja:head>
+			<ce:title xmlns:ce="http://www.elsevier.com/xml/common/schema">Estimation: A brief survey</ce:title>
+			<ce:author-group xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:author>
+					<ce:given-name>Demetrios G.</ce:given-name>
+					<ce:surname>Lainiotis</ce:surname>
+				</ce:author>
+				<ce:affiliation>
+					<ce:textfn>Department of Electrical Engineering, State University of New York at Buffalo, Buffalo, New York 14214, USA</ce:textfn>
+				</ce:affiliation>
+			</ce:author-group>
+		</cja:head>
+		<cja:tail>
+			<ce:bibliography view="all" xmlns:ce="http://www.elsevier.com/xml/common/schema">
+				<ce:section-title>References</ce:section-title>
+				<ce:bibliography-sec>
+					<ce:bib-reference id="BIB1">
+						<ce:label>1.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.F.</ce:given-name>
+										<ce:surname>Gauss</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Theory of Motion of the Heavenly Bodies</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1963</sb:date>
+									<sb:publisher>
+										<sb:name>Dover</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB2">
+						<ce:label>2.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.M.</ce:given-name>
+										<ce:surname>Legendre</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Methode de Moindres Quarres, Pour Trouver le Milieu le Plus Probable Entre les Resultats de Differentes Observations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Mem. Inst. France</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1810</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>149</sb:first-page>
+									<sb:last-page>154</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB3">
+						<ce:label>3.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.M.</ce:given-name>
+										<ce:surname>Mendel</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Gieseking</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Bibliography on the Linear-Quadratic-Gaussian Problem</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1810</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>847</sb:first-page>
+									<sb:last-page>869</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB4">
+						<ce:label>4.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Swerling</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Proposed Stagewise Differential Correction Procedure for Satellite Tracking and Prediction</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>The RAND Corp., Paper P-1292</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>Jan. 1958 1958</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB5">
+						<ce:label>5.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.A.</ce:given-name>
+										<ce:surname>Nash</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.F.</ce:given-name>
+										<ce:surname>Casper</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>B.S.</ce:given-name>
+										<ce:surname>Crawford</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.A.</ce:given-name>
+										<ce:surname>Levine</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Application of Optimal Smoothing to the Testing and Evaluation of Inertial Navigation Systems and Components</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Autom. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>806</sb:first-page>
+									<sb:last-page>816</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB6">
+						<ce:label>6.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.M.</ce:given-name>
+										<ce:surname>Dressler</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.</ce:given-name>
+										<ce:surname>Tabak</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Satellite Tracking by Combined Estimation and Control Techniques</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Autom. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>833</sb:first-page>
+									<sb:last-page>840</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB7">
+						<ce:label>7.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>P.D.</ce:given-name>
+										<ce:surname>Joseph</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Filtering for Stochastic Processes with Applications to Guidance</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB8">
+						<ce:label>8.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.F.</ce:given-name>
+										<ce:surname>Bellantoni</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Unidentified Landmark Navigation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>AIAA J.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>5</sb:volume-nr>
+									</sb:series>
+									<sb:date>1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1478</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB9">
+						<ce:label>9.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.S.</ce:given-name>
+										<ce:surname>Debs</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Larson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Dynamic Estimator for Tracking the State of a Power System</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Power App. Syst.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>PAS-89</sb:volume-nr>
+									</sb:series>
+									<sb:date>Se/t./Oct.</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1670</sb:first-page>
+									<sb:last-page>1678</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB10">
+						<ce:label>10.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Toyoda</ce:surname>
+									</sb:author>
+									<sb:et-al/>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An Application of State-Estimation to Short-Term Load Forecasting</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Power App. Syst.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>PAS-89</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1678</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB11">
+						<ce:label>11.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.L.</ce:given-name>
+										<ce:surname>Miller</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.B.</ce:given-name>
+										<ce:surname>Lewis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Dynamic State-estimation in Power Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Autom. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>841</sb:first-page>
+									<sb:last-page>846</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB12">
+						<ce:label>12.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>E.</ce:given-name>
+											<ce:surname>Handschin</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Real-time Control of Electric Power Systems</sb:maintitle>
+									</sb:title>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Elsevier</sb:name>
+										<sb:location>Amsterdam</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB13">
+						<ce:label>13.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>K.J.</ce:given-name>
+										<ce:surname>Aström</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Computer Control of a Paper Machine-An Application of Linear Stochastic Control Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IBM J. Res. Develop.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>11</sb:volume-nr>
+									</sb:series>
+									<sb:date>1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>389</sb:first-page>
+									<sb:last-page>405</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB14">
+						<ce:label>14.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.A.</ce:given-name>
+										<ce:surname>Gould</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Chemical Process Control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1967</sb:date>
+									<sb:publisher>
+										<sb:name>Addison-Wesley</sb:name>
+										<sb:location>Reading, Mass</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB15">
+						<ce:label>15.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>I.</ce:given-name>
+										<ce:surname>Gustavsson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Survey of Applications of Identification in Chemical and Physical Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>
+											<ce:italic>Proc. 3rd IFAC Symp.-Identification and System Parameter Estimation</ce:italic>, North-Holland
+										</sb:maintitle>
+									</sb:title>
+									<sb:conference>Amsterdam</sb:conference>
+									<sb:date>1973</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>67</sb:first-page>
+									<sb:last-page>86</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB16">
+						<ce:label>16.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.P.</ce:given-name>
+										<ce:surname>Sage</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>G.W.</ce:given-name>
+										<ce:surname>Masters</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Identification and Modeling of States and Parameters of Nuclear Reactor Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Nucl. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>NS-14</sb:volume-nr>
+									</sb:series>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>279</sb:first-page>
+									<sb:last-page>285</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB17">
+						<ce:label>17.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.S.</ce:given-name>
+										<ce:surname>Roman</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Hsu</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>L.T.</ce:given-name>
+										<ce:surname>Habegger</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Parameter Identification in a Nonlinear Reactor System</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Nucl. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>NS-18</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>426</sb:first-page>
+									<sb:last-page>429</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB18">
+						<ce:label>18.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.C.</ce:given-name>
+										<ce:surname>Venerous</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.E.</ce:given-name>
+										<ce:surname>Bullock</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation of the Dynamic Reactivity Using Digital Kalman Filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Nucl. Sci. Eng.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>40</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>199</sb:first-page>
+									<sb:last-page>205</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB19">
+						<ce:label>19.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Snyder</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The State- Variable Approach to Continuous Estimation with Applications to Analog Communication</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>MIT Press</sb:name>
+										<sb:location>Cambridge, Mass</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB20">
+						<ce:label>20.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Van Trees</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Detection, Estimation, and Modulation Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1971</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB21">
+						<ce:label>21.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.C.</ce:given-name>
+										<ce:surname>Lindsey</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Synchronization Systems in Communication and Control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Prentice Hall</sb:name>
+										<sb:location>Englewood Cliffs, New Jersey</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB22">
+						<ce:label>22.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On a General Relationship Between Estimation, Detection, and Control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-15</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>July 1969</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB23">
+						<ce:label>23.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.J.</ce:given-name>
+										<ce:surname>Dhrymes</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Distributed Lags, Problems of Estimation and Formulation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1971</sb:date>
+									<sb:publisher>
+										<sb:name>Holden-Day, Inc</sb:name>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB24">
+						<ce:label>24.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Zellner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An Introduction to Bayesian Inference in Econometrics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1971</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB25">
+						<ce:label>25.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Pindyck</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.M.</ce:given-name>
+										<ce:surname>Roberts</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal Policies for Monetary Control</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>NBER Conference on Stochastic Control and Economics University of Chicago</sb:maintitle>
+									</sb:title>
+									<sb:date>June 1973</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB26">
+						<ce:label>26.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.N.</ce:given-name>
+										<ce:surname>Upadhyay</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Adaptive Control of Linear Stochastic Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Kept. No. 148</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>May 1973</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Center, Univ. of Texas</sb:name>
+										<sb:location>Austin</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB27">
+						<ce:label>27.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.</ce:given-name>
+										<ce:surname>Stark</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Neurological Control Systems Studies in Bioengineering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>Plenum Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB28">
+						<ce:label>28.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Snyder</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation of Stochastic Intensity Functions of Conditional Poisson Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Monograph no. 128</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>April 1970</sb:date>
+									<sb:publisher>
+										<sb:name>Biomedical Computer Lab., Washington Univ</sb:name>
+										<sb:location>St. Louis, Mo</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB29">
+						<ce:label>29.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.A.</ce:given-name>
+										<ce:surname>Bekey</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Parameter Estimation in Biological Systems: A Survey</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>
+											<ce:italic>Proc. 3rd IFAC Symp.-Identification and System Parameter Estimation</ce:italic> North-Holland
+										</sb:maintitle>
+									</sb:title>
+									<sb:conference>Amsterdam</sb:conference>
+									<sb:date>1973</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>1123</sb:first-page>
+									<sb:last-page>1130</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB30">
+						<ce:label>30.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.P.</ce:given-name>
+										<ce:surname>McGarty</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Estimation of the Constituent Densities of the Upper Atmosphere by Means of a Recursive Filtering Algorithm</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Autom. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>6</sb:issue-nr>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB31">
+						<ce:label>31.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>N.B.</ce:given-name>
+										<ce:surname>Penrose</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Application of Adaptive Estimation to Temperature Forecasting</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rep. No. 140</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>Dec. 1972 1972</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Center, University of Texas</sb:name>
+										<sb:location>Austin</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB32">
+						<ce:label>32.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Desalu</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Dynamic Air Quality Estimation in a Stochastic Dispersive Atmosphere</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Rept. ESL-R-542</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>April 1974</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Systems Lab., Mass. Institute of Technology</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB33">
+						<ce:label>33.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>Y.C.</ce:given-name>
+										<ce:surname>Ho</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.K.</ce:given-name>
+										<ce:surname>Agrawala</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On Pattern Classification Algorithms-Introduction and Survey</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Autom. Control.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-13</sb:volume-nr>
+									</sb:series>
+									<sb:date>1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>676</sb:first-page>
+									<sb:last-page>690</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB34">
+						<ce:label>34.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Adaptive Pattern Recognition: A State-Variable Approach</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>S.</ce:given-name>
+											<ce:surname>Watanabe</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Frontiers of Pattern Recognition</sb:maintitle>
+									</sb:title>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB35">
+						<ce:label>35.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.C.</ce:given-name>
+										<ce:surname>Andrews</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Introduction to Mathematical Techniques in Pattern Recognition</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB36">
+						<ce:label>36.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.A.</ce:given-name>
+										<ce:surname>Robinson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Mathematical Development of Discrete Filters for Detection of Nuclear Explosions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Geophys. Res.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>68</sb:volume-nr>
+									</sb:series>
+									<sb:date>1963</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>5559</sb:first-page>
+									<sb:last-page>5567</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB37">
+						<ce:label>37.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.A.</ce:given-name>
+										<ce:surname>Robinson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Multichannel Time-Series Analysis with Digital Computer Programs</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1967</sb:date>
+									<sb:publisher>
+										<sb:name>Holden-Day</sb:name>
+										<sb:location>San Francisco</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB38">
+						<ce:label>38.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.A.</ce:given-name>
+										<ce:surname>Flinn</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.A.</ce:given-name>
+										<ce:surname>Robinson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Treitel</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Special Issue on the MIT Geophysical Analysis Group Reports</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Geophysics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>32</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>June 1967</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB39">
+						<ce:label>39.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.W.</ce:given-name>
+										<ce:surname>Bayless</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.O.</ce:given-name>
+										<ce:surname>Brigham</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Application of the Kalman Filter</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Geophysics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>35</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>June 1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>2</sb:first-page>
+									<sb:last-page>23</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB40">
+						<ce:label>40.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>F.</ce:given-name>
+										<ce:surname>Itakura</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Extraction of Feature Parameters of Speech by Statistical Methods</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 8th Symp. Speech Information Processing</sb:maintitle>
+									</sb:title>
+									<sb:date>Feb. 1972 1972</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB41">
+						<ce:label>41.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Wakita</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation of the Vocal Tract Shape by Optimal Inverse Filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Audio Electro-acoustics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AU-21</sb:volume-nr>
+									</sb:series>
+									<sb:date>Oct. 1973 1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>417</sb:first-page>
+									<sb:last-page>427</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB42">
+						<ce:label>41a.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.M.</ce:given-name>
+										<ce:surname>Richardson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The implicit conditioning method in statistical mechanics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>237</sb:first-page>
+									<sb:last-page>252</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB43">
+						<ce:label>42.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A View of Three Decades of Linear Filtering Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-20</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>2</sb:issue-nr>
+									<sb:date>March 1974</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>146</sb:first-page>
+									<sb:last-page>181</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB44">
+						<ce:label>43.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>F.C.</ce:given-name>
+										<ce:surname>Schweppe</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Evaluation of Likelihood Functions for Gaussian Signals</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-11</sb:volume-nr>
+									</sb:series>
+									<sb:date>1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>61</sb:first-page>
+									<sb:last-page>70</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB45">
+						<ce:label>44.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Duncan</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Evaluation of Likelihood Functions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>13</sb:volume-nr>
+									</sb:series>
+									<sb:date>July 1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>62</sb:first-page>
+									<sb:last-page>74</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB46">
+						<ce:label>45.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.W.</ce:given-name>
+										<ce:surname>Helstrom</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Statistical Theory of Signal Detection</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1968</sb:date>
+									<sb:publisher>
+										<sb:name>Pergamon Press</sb:name>
+										<sb:location>London</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB47">
+						<ce:label>46.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Parzen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Time-Series Analysis Papers</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1967</sb:date>
+									<sb:publisher>
+										<sb:name>Holden-Day</sb:name>
+										<sb:location>San Francisco</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB48">
+						<ce:label>47.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Akaike</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Markovian Representation of Stochastic Processes by Canonical Variables</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>SIAM J. Control</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>to be published.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB49">
+						<ce:label>48.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.D.</ce:given-name>
+										<ce:surname>Joseph</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Tou</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On Linear Control Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Trans. AIEE</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1961</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>193</sb:first-page>
+									<sb:last-page>196</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:comment>Part II</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB50">
+						<ce:label>49.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Feldbaum</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Dual Control Theory—I</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automation and Remote Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>21</sb:volume-nr>
+									</sb:series>
+									<sb:date>1960</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1240</sb:first-page>
+									<sb:last-page>1249</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB51">
+						<ce:label>50.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.M.</ce:given-name>
+										<ce:surname>Wonham</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Random Differential Equations in Control Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:editors>
+										<sb:editor>
+											<ce:given-name>A.T.</ce:given-name>
+											<ce:surname>Bharucha-Reid</ce:surname>
+										</sb:editor>
+									</sb:editors>
+									<sb:title>
+										<sb:maintitle>Probabilistic Methods in Applied Mathematics</sb:maintitle>
+									</sb:title>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB52">
+						<ce:label>51.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+									<sb:et-al/>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal Adaptive Control: A Nonlinear Separation Theorem</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. of Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>15</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>May 1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>787</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB53">
+						<ce:label>52.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Kalman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A New Approach to Linear Filtering and Prediction Problems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Basic Eng.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>82</sb:volume-nr>
+									</sb:series>
+									<sb:date>March 1960</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>34</sb:first-page>
+									<sb:last-page>45</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB54">
+						<ce:label>53.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.Z.</ce:given-name>
+										<ce:surname>Dajani</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>G.</ce:given-name>
+										<ce:surname>Campion</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Closed Loop Control Design for Nonlinear, Nonquadratic Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. of 1973 IEEE Conference on Decision and Control</sb:maintitle>
+									</sb:title>
+									<sb:date>March 1960</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>82</sb:first-page>
+									<sb:last-page>87</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB55">
+						<ce:label>54.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.L.</ce:given-name>
+										<ce:surname>Wiedemann</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Entropy and Analysis of Estimating Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-16</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>264</sb:first-page>
+									<sb:last-page>270</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB56">
+						<ce:label>55.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.T.</ce:given-name>
+										<ce:surname>Kadota</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Zakai</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Ziv</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Mutual Information of the White Gaussian Channel With and Without Feedback</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-17</sb:volume-nr>
+									</sb:series>
+									<sb:date>July 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>368</sb:first-page>
+									<sb:last-page>371</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB57">
+						<ce:label>55a.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>N.K.</ce:given-name>
+										<ce:surname>Loh</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On the Evaluation of Conditional Entropy</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. of the UMR-M. J. Kelly Conference</sb:maintitle>
+									</sb:title>
+									<sb:conference>Rolla, Missouri</sb:conference>
+									<sb:date>Oct. 5–7, 1970</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>7dash6dash1 to 7dash6dash6</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB58">
+						<ce:label>56.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Akaike</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Information Theory and an Extension of the Maximum Likelihood Principle</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>
+											<ce:italic>Proc. 2nd Intern. Symposium on Inform. Theory</ce:italic>, Hungarian Academy of Sciences
+										</sb:maintitle>
+									</sb:title>
+									<sb:conference>Budapest, Hungary</sb:conference>
+									<sb:date>1972</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB59">
+						<ce:label>57.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.R.</ce:given-name>
+										<ce:surname>Berlecamp</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Algebraic Coding Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1969</sb:date>
+									<sb:publisher>
+										<sb:name>McGraw-Hill</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB60">
+						<ce:label>58.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Schumitzky</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On the Equivalence Between Matrix Riccati Equations and Fredholm Resolvents</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Comput. Syst. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>2</sb:volume-nr>
+									</sb:series>
+									<sb:date>June 1968</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>76</sb:first-page>
+									<sb:last-page>87</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB61">
+						<ce:label>59.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.L.</ce:given-name>
+										<ce:surname>Henderson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Application of State-Variable Techniques to Optimal Feature Extraction: Multichannel Analog Data</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-16</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>July 1970</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB62">
+						<ce:label>60.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>B.D.O.</ce:given-name>
+										<ce:surname>Anderson</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Some Integral Equations With Nonsymmetric Separable Kernels</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>SIAM J. Appl. Math.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>20</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>4</sb:issue-nr>
+									<sb:date>June 1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>659</sb:first-page>
+									<sb:last-page>669</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB63">
+						<ce:label>61.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.</ce:given-name>
+										<ce:surname>Silverman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Inversion of Multivariable Linear Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Autom. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-14</sb:volume-nr>
+									</sb:series>
+									<sb:date>June 1969</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>270</sb:first-page>
+									<sb:last-page>276</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB64">
+						<ce:label>62.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.W.</ce:given-name>
+										<ce:surname>Brockett</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Finite-Dimensional Linear Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB65">
+						<ce:label>63.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Masani</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Shift-Invariant Spaces and Prediction Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Acta. Math.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>107</sb:volume-nr>
+									</sb:series>
+									<sb:date>1962</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>275</sb:first-page>
+									<sb:last-page>290</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB66">
+						<ce:label>64.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>B.</ce:given-name>
+										<ce:surname>Nagy</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Foias</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Harmonic Analysis of Operators on Hilbert Space</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1970</sb:date>
+									<sb:publisher>
+										<sb:name>Academic Press</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB67">
+						<ce:label>65.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.A.</ce:given-name>
+										<ce:surname>Fisher</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>On an Absolute Criterion for Fitting Frequency Curves</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Messenger of Math.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>41</sb:volume-nr>
+									</sb:series>
+									<sb:date>1912</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>155</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB68">
+						<ce:label>66.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.G.</ce:given-name>
+										<ce:surname>Kendall</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Stuart</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Advanced Theory of Statistics</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1961</sb:date>
+									<sb:publisher>
+										<sb:name>Griffin</sb:name>
+										<sb:location>London</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB69">
+						<ce:label>67.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.N.</ce:given-name>
+										<ce:surname>Kolmogorov</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Foundations of the Theory of Probability</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1933</sb:date>
+									<sb:publisher>
+										<sb:name>Springer</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB70">
+						<ce:label>68.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Wold</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Study in the Analysis of Stationary Time Series</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1938</sb:date>
+									<sb:publisher>
+										<sb:name>Almquist and Wiksell</sb:name>
+										<sb:location>Uppsala, Sweden</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB71">
+						<ce:label>69.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>N.</ce:given-name>
+										<ce:surname>Wiener</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Extrapolation, Interpolation, and Smoothing of Stationary Time-Series</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1949</sb:date>
+									<sb:publisher>
+										<sb:name>Wiley</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB72">
+						<ce:label>70.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>L.A.</ce:given-name>
+										<ce:surname>Zadeh</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.R.</ce:given-name>
+										<ce:surname>Ragazzini</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An Extension of Wiener's Theory of Prediction</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Appl. Phys.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>21</sb:volume-nr>
+									</sb:series>
+									<sb:date>1950</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>645</sb:first-page>
+									<sb:last-page>655</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB73">
+						<ce:label>71.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.W.</ce:given-name>
+										<ce:surname>Bode</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>C.E.</ce:given-name>
+										<ce:surname>Shannon</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A simplified Derivation of Linear Least-Squares Smoothing and Prediction</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Proc. IRE</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>48</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1950</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>417</sb:first-page>
+									<sb:last-page>425</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB74">
+						<ce:label>72.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Shinbrot</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimization of Time-Varying Linear Systems with Non-Stationary Inputs</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Trans. ASME</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>80</sb:volume-nr>
+									</sb:series>
+									<sb:date>1958</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>457</sb:first-page>
+									<sb:last-page>462</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB75">
+						<ce:label>73.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.M.</ce:given-name>
+										<ce:surname>Yaglom</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Theory of Stationary Random Functions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1962</sb:date>
+									<sb:publisher>
+										<sb:name>Prentice-Hall</sb:name>
+										<sb:location>Englewood Cliffs, New Jersey</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB76">
+						<ce:label>74</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.W.</ce:given-name>
+										<ce:surname>Helstrom</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Solution of the Detection Integral Equation for Stationary Filtered White Noise</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-11</sb:volume-nr>
+									</sb:series>
+									<sb:date>July 1965</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>335</sb:first-page>
+									<sb:last-page>339</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB77">
+						<ce:label>75.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.F.</ce:given-name>
+										<ce:surname>Franklin</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Optimum Synthesis of Sampled-Data Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Sc.D. Dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1955</sb:date>
+									<sb:publisher>
+										<sb:name>Department of Electrical Engineering, Columbia University</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+							<sb:comment>New York</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB78">
+						<ce:label>76.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.B.</ce:given-name>
+										<ce:surname>Lees</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Interpolation and Extrapolation of Sampled Data</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IRE Trans. Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-2</sb:volume-nr>
+									</sb:series>
+									<sb:date>1956</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>173</sb:first-page>
+									<sb:last-page>175</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB79">
+						<ce:label>77.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.G.</ce:given-name>
+										<ce:surname>Carlton</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.W.</ce:given-name>
+										<ce:surname>Follin</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Recent Developments in Fixed and Adaptive Filtering</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 2nd NATO AGARD Guided Missiles Seminar</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>AGARDograph No. 21</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1956</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB80">
+						<ce:label>78.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>V.S.</ce:given-name>
+										<ce:surname>Pugachev</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>General Condition for the Minimum Mean-Square Error in a Dynamic System</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automation Telemech.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>17</sb:volume-nr>
+									</sb:series>
+									<sb:date>1956</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>307</sb:first-page>
+									<sb:last-page>314</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB81">
+						<ce:label>79.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.S.</ce:given-name>
+										<ce:surname>Bucy</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimum Finite-Time Filters for a Special Nonstationary Class of Inputs</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Johns Hopkins Univ., Applied Physics Lab., Internal Memo no. BBD-600</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1959</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>Silver Springs, Md.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB82">
+						<ce:label>80.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Parzen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Statistical Inference on Time-Series by Hilbert-space Methods</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rept. No. 23</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1959</sb:date>
+									<sb:publisher>
+										<sb:name>Applied Math and Statistics Lab, Stanford Univ</sb:name>
+										<sb:location>Stanford, Calif</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB83">
+						<ce:label>81.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Parzen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A New Approach to The Synthesis of Optimal Smoothing and Prediction Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rept. No. 34</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1959</sb:date>
+									<sb:publisher>
+										<sb:name>Applied Math. and Statistics Lab, Stanford Univ</sb:name>
+										<sb:location>Stanford, California</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB84">
+						<ce:label>81a.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Partitioned Estimation Algorithms, I: Nonlinear Estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>203</sb:first-page>
+									<sb:last-page>235</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB85">
+						<ce:label>81b.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.G.</ce:given-name>
+										<ce:surname>Lainiotis</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Partitioned Estimation Algorithms, II: Linear Estimation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>317</sb:first-page>
+									<sb:last-page>340</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB86">
+						<ce:label>82.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Durbin</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Fitting of Time-Series Models</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Rev. Intern. Statist. Inst.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>28</sb:volume-nr>
+									</sb:series>
+									<sb:date>1960</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>233</sb:first-page>
+									<sb:last-page>244</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB87">
+						<ce:label>83.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Whittle</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Prediction and Regulation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:book>
+									<sb:date>1963</sb:date>
+									<sb:publisher>
+										<sb:name>Van Nostrand</sb:name>
+										<sb:location>New York</sb:location>
+									</sb:publisher>
+								</sb:book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB88">
+						<ce:label>84.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.G.</ce:given-name>
+										<ce:surname>Kaminski</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.E.</ce:given-name>
+										<ce:surname>Bryson</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Discrete Square-Root Smoothing</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proceedings of the 1972 AIAA Guidance and Control Conference AIAA</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Paper No. 72-877</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1972</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB89">
+						<ce:label>85.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.J.</ce:given-name>
+										<ce:surname>Bierman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Fixed Interval Smoothing with Discrete Measurements</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Int. J. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>18</sb:volume-nr>
+									</sb:series>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>65</sb:first-page>
+									<sb:last-page>73</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB90">
+						<ce:label>86.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Sequential Square-Root Filtering and Smoothing of Discrete Linear Systems</sb:maintitle>
+									</sb:title>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Automatica</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>10</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1974</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>147</sb:first-page>
+									<sb:last-page>158</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB91">
+						<ce:label>87.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.S.</ce:given-name>
+										<ce:surname>Meditch</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Survey of Data Smoothing for Linear and Nonlinear Dynamic Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>9</sb:volume-nr>
+									</sb:series>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>151</sb:first-page>
+									<sb:last-page>162</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB92">
+						<ce:label>88.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.J.</ce:given-name>
+										<ce:surname>Fitzgerald</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Divergence of the Kalman Filter</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-16</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>736</sb:first-page>
+									<sb:last-page>747</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB93">
+						<ce:label>89.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Athans</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>The Compensated Kalman Filter</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>
+											<ce:italic>Proc. Second Symposium on Nonlinear Estimation Theory and its Applications</ce:italic>, Western Periodicals Company
+										</sb:maintitle>
+									</sb:title>
+									<sb:conference>North Hollywood, Calif.</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB94">
+						<ce:label>90.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.E.</ce:given-name>
+										<ce:surname>Bellman</ce:surname>
+									</sb:author>
+									<sb:et-al/>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Invariant Imbedding and Nonlinear Filtering Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. of Astro. Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>13</sb:volume-nr>
+									</sb:series>
+									<sb:date>May–June, 1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>110</sb:first-page>
+									<sb:last-page>115</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. of Astro. Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>3</sb:volume-nr>
+									</sb:series>
+									<sb:date>May–June, 1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>110</sb:first-page>
+									<sb:last-page>115</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB95">
+						<ce:label>91.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.E.</ce:given-name>
+										<ce:surname>Rauch</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Linear Estimation of Sampled Stochastic Processes with Random Parameters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Rept. SEL-62-058</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>April 1962</sb:date>
+									<sb:publisher>
+										<sb:name>Stanford Electronics Labs, Stanford University</sb:name>
+										<sb:location>Stanford, California</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB96">
+						<ce:label>92.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.</ce:given-name>
+										<ce:surname>Fralick</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Learning to Recognize Patterns Without a Teacher</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Rept. SEL-65-011</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>March 1965</sb:date>
+									<sb:publisher>
+										<sb:name>Stanford Electronics Labs, Stanford University</sb:name>
+										<sb:location>Stanford, California</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB97">
+						<ce:label>93.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.</ce:given-name>
+										<ce:surname>Wahba</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>G.</ce:given-name>
+										<ce:surname>Kimeldorf</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Correspondence Between Bayesian Estimation on Stochastic Processes and Smoothing by Splines</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Annals of Math. Stat.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>41</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>495</sb:first-page>
+									<sb:last-page>502</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB98">
+						<ce:label>94.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Weinert</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>T.</ce:given-name>
+										<ce:surname>Kailath</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Stochastic Interpretations and Recursive Algorithms for Spline Functions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Annals of Math. Statistics</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>(to appear).</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB99">
+						<ce:label>95.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>G.</ce:given-name>
+										<ce:surname>Alengrin</ce:surname>
+									</sb:author>
+								</sb:authors>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Thesis Docteur d'Etat</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1973</sb:date>
+									<sb:publisher>
+										<sb:name>University of Toulouse</sb:name>
+										<sb:location>Toulouse, France</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB100">
+						<ce:label>96.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.T.</ce:given-name>
+										<ce:surname>Leondes</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.B.</ce:given-name>
+										<ce:surname>Peller</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>E.B.</ce:given-name>
+										<ce:surname>Stear</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Nonlinear Smoothing Theory</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on System Science and Cybernetics</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>SSC-6</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>1</sb:issue-nr>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>63</sb:first-page>
+									<sb:last-page>71</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB101">
+						<ce:label>97.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>W.</ce:given-name>
+										<ce:surname>Kizner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal Estimation Based on Orthogonal Expansions</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Tech. Rept. 32-1366</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>April 1969</sb:date>
+									<sb:publisher>
+										<sb:name>Jet Propulsion Lab</sb:name>
+										<sb:location>Pasadena, California</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB102">
+						<ce:label>98.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>C.</ce:given-name>
+										<ce:surname>Hecht</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Synthesis and Realization of Nonlinear Filters</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Ph.D. Dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1971</sb:date>
+									<sb:publisher>
+										<sb:name>University of South. California</sb:name>
+										<sb:location>Los Angeles</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB103">
+						<ce:label>99.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>M.</ce:given-name>
+										<ce:surname>Zakai</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Ziu</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Lower and Upper Bounds on the Optimal Filtering of Certain Diffusion Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Information Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-18</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>325</sb:first-page>
+									<sb:last-page>331</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB104">
+						<ce:label>100.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Snyder</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>I.B.</ce:given-name>
+										<ce:surname>Rhodes</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Filtering and Control Performance Bounds with Implications on Asymptotic Separation</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>8</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>747</sb:first-page>
+									<sb:last-page>753</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>6</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>747</sb:first-page>
+									<sb:last-page>753</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB105">
+						<ce:label>101.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.S.</ce:given-name>
+										<ce:surname>Gilman</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>I.B.</ce:given-name>
+										<ce:surname>Rhodes</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Cone-bounded Nonlinearities and Mean-Square Bounds-Estimation Upper Bounds</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Auto. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-18</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3</sb:issue-nr>
+									<sb:date>1973</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>260</sb:first-page>
+									<sb:last-page>265</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB106">
+						<ce:label>102.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>I.B.</ce:given-name>
+										<ce:surname>Rhodes</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.S.</ce:given-name>
+										<ce:surname>Gilman</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Cone-bounded Nonlinearities and Mean-Square Bounds-Estimation Lower Bound</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:comment>Submitted for publication to</sb:comment>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB107">
+						<ce:label>103.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Snyder</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Filtering and Detection for Doubly Stochastic Poisson Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-18</sb:volume-nr>
+									</sb:series>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>1</sb:first-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB108">
+						<ce:label>104.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>D.L.</ce:given-name>
+										<ce:surname>Snyder</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Smoothing for Doubly Stochastic Poisson Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Inform. Theory</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>IT-18</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>5</sb:issue-nr>
+									<sb:date>1972</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>558</sb:first-page>
+									<sb:last-page>562</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB109">
+						<ce:label>105.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.A.</ce:given-name>
+										<ce:surname>Frost</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation and Detection for a Simple Class of Conditionally Independent Increment Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. IEEE Decision and Control Conference</sb:maintitle>
+									</sb:title>
+									<sb:conference>Miami, Florida</sb:conference>
+									<sb:date>1971</sb:date>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB110">
+						<ce:label>106.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.</ce:given-name>
+										<ce:surname>Segal</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Martingale Approach to Modeling, Estimation and Detection of Jump Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Rept. SEL-73-042</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1973</sb:date>
+									<sb:publisher>
+										<sb:name>Stanford Electronics Labs, Stanford Univ</sb:name>
+										<sb:location>Stanford, California</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB111">
+						<ce:label>107.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>P.</ce:given-name>
+										<ce:surname>Bremand</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>A Martingale Approach to Point Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Ph.D. Dissertation</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1972</sb:date>
+									<sb:publisher>
+										<sb:name>Dept. of Electrical Engineering and Computer Sciences, University of California</sb:name>
+										<sb:location>Berkeley</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB112">
+						<ce:label>108.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.H.</ce:given-name>
+										<ce:surname>Van Schuppen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation Theory for Continuous Time Processes, A Martingale Approach</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Memo no. ERL-M405</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1973</sb:date>
+									<sb:publisher>
+										<sb:name>Electronics Research Lab., University of California</sb:name>
+										<sb:location>Berkeley, California</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB113">
+						<ce:label>109.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>A.S.</ce:given-name>
+										<ce:surname>Willsky</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation for Rotational Processes with One Degree of Freedom, I: Introduction and Continuous Time Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>(to appear).</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB114">
+						<ce:label>110.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.S.</ce:given-name>
+										<ce:surname>Willsky</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.T.</ce:given-name>
+										<ce:surname>Lo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Estimation for Rotational Processes with One Degree of Freedom, II: Discrete-Time Processes</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:comment>(to appear).</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB115">
+						<ce:label>111.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.V.</ce:given-name>
+										<ce:surname>Balakrishnan</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.L.</ce:given-name>
+										<ce:surname>Lions</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>State Estimation for Infinite Dimensional Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>J. Comput. Syst. Sci.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>1</sb:volume-nr>
+									</sb:series>
+									<sb:date>1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>391</sb:first-page>
+									<sb:last-page>403</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB116">
+						<ce:label>112.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>S.G.</ce:given-name>
+										<ce:surname>Tzafestas</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.M.</ce:given-name>
+										<ce:surname>Nightingale</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal Filtering, Smoothing and Prediction in Linear Distributed Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Proc. Inst. Elec. Eng.</sb:maintitle>
+											</sb:title>
+											<sb:volume-nr>115</sb:volume-nr>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>1968</sb:date>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>1207</sb:first-page>
+									<sb:last-page>1212</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB117">
+						<ce:label>113.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.J.</ce:given-name>
+										<ce:surname>Kushner</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Filtering for Linear Distributed Parameter Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>SIAM J. Contr.</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>Vol. 8</sb:volume-nr>
+									</sb:series>
+									<sb:date>1970</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>346</sb:first-page>
+									<sb:last-page>359</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB118">
+						<ce:label>114.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.S.</ce:given-name>
+										<ce:surname>Meditch</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Least-Square Filtering and Smoothing for Linear Distributed-Parameter Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Automatica</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>315</sb:first-page>
+									<sb:last-page>322</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB119">
+						<ce:label>115.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>T.K.</ce:given-name>
+										<ce:surname>Yu</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>J.H.</ce:given-name>
+										<ce:surname>Seinfeld</ce:surname>
+									</sb:author>
+									<sb:author>
+										<ce:given-name>W.H.</ce:given-name>
+										<ce:surname>Ray</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Filtering in Nonlinear Time Delay Systems</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-19</sb:volume-nr>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>4</sb:volume-nr>
+									</sb:series>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB120">
+						<ce:label>116.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Kwakernaak</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal Filtering in Linear Systems with Time Delays</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>Vol. AC-12</sb:volume-nr>
+									</sb:series>
+									<sb:date>1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>169</sb:first-page>
+									<sb:last-page>173</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Automatic Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>Vol. 2</sb:volume-nr>
+									</sb:series>
+									<sb:date>1967</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>169</sb:first-page>
+									<sb:last-page>173</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB121">
+						<ce:label>117.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>A.J.</ce:given-name>
+										<ce:surname>Koivo</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Optimal Estimation for Linear Stochastic Systems Described by Functional Differential Equations</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform and Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>19</sb:volume-nr>
+									</sb:series>
+									<sb:date>1971</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>237</sb:first-page>
+									<sb:last-page>245</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB122">
+						<ce:label>118.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Parzen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Some Solutions to the Time-Series Modelling and Prediction Problem</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. 5</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>February 1974</sb:date>
+									<sb:publisher>
+										<sb:name>Statistical Science Division, State University of New York at Buffalo</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB123">
+						<ce:label>119.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>E.</ce:given-name>
+										<ce:surname>Parzen</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Some Recent Advances in Time-Series Modelling</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:book-series>
+										<sb:series>
+											<sb:title>
+												<sb:maintitle>Technical Report No. 10</sb:maintitle>
+											</sb:title>
+										</sb:series>
+									</sb:book-series>
+									<sb:date>May 1974</sb:date>
+									<sb:publisher>
+										<sb:name>Statistical Science Division, State University of New York at Buffalo</sb:name>
+									</sb:publisher>
+								</sb:edited-book>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB124">
+						<ce:label>120.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>H.</ce:given-name>
+										<ce:surname>Akaike</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Information Theory and an Extension of the Maximum Likelihood Principle</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:edited-book>
+									<sb:title>
+										<sb:maintitle>Proc. 2nd Intern. Symp. on Inform. Theory</sb:maintitle>
+									</sb:title>
+									<sb:date>1973</sb:date>
+									<sb:publisher>
+										<sb:name>Publishing House of the Hungarian Academy of Sciences</sb:name>
+										<sb:location>Budapest, Hungary</sb:location>
+									</sb:publisher>
+								</sb:edited-book>
+								<sb:pages>
+									<sb:first-page>267</sb:first-page>
+									<sb:last-page>281</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB125">
+						<ce:label>121.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>R.L.</ce:given-name>
+										<ce:surname>Kashyap</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>Minimax Estimation 
+										<ce:italic>with</ce:italic> Divergence Loss Function
+									</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Inform. Sciences</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>7</sb:volume-nr>
+									</sb:series>
+									<sb:issue-nr>3/4</sb:issue-nr>
+									<sb:date>1974</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>341</sb:first-page>
+									<sb:last-page>346</sb:last-page>
+								</sb:pages>
+							</sb:host>
+							<sb:comment>this issue.</sb:comment>
+						</sb:reference>
+					</ce:bib-reference>
+					<ce:bib-reference id="BIB126">
+						<ce:label>122.</ce:label>
+						<sb:reference xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/schema">
+							<sb:contribution langtype="en">
+								<sb:authors>
+									<sb:author>
+										<ce:given-name>J.</ce:given-name>
+										<ce:surname>Zaborsky</ce:surname>
+									</sb:author>
+								</sb:authors>
+								<sb:title>
+									<sb:maintitle>An Information Theory Viewpoint for the General Identification Problem</sb:maintitle>
+								</sb:title>
+							</sb:contribution>
+							<sb:host>
+								<sb:issue>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>IEEE Trans. on Autom. Control</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>AC-11</sb:volume-nr>
+									</sb:series>
+									<sb:date>1966</sb:date>
+								</sb:issue>
+								<sb:pages>
+									<sb:first-page>130</sb:first-page>
+									<sb:last-page>131</sb:last-page>
+								</sb:pages>
+							</sb:host>
+						</sb:reference>
+					</ce:bib-reference>
+				</ce:bibliography-sec>
+			</ce:bibliography>
+		</cja:tail>
+	</cja:converted-article></doc:document>
