@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
     <ModulePrefs
-            title="Keyphrase"
-            author_email="knmnyn@your.domain">
+            title="Keyphrase by WING.NUS"
+            author_email="kanmy@comp.nus.edu.sg">
         <Require feature="sciverse" />
         <Require feature="dynamic-height" />
     </ModulePrefs>
@@ -19,7 +19,7 @@
 
  function contextInfoCallback(response) {
    // get DOI from context   
-   document.getElementById("contextInfo").innerHTML = "DOI: " + response["doi"];
+   document.getElementById("contextInfo").innerHTML = "Retrieving text of article with DOI: " + response["doi"] + ". Please wait...";
 
    var requestHeaders = {};
    requestHeaders['X-ELS-APIKey'] = "2cb7e21fa1564348861fff2db68f1da8";
@@ -28,43 +28,32 @@
 
    var contentSearchUrl = "http://api.elsevier.com/content/article/DOI:" + response["doi"] + "?view=FULL";
    gadgets.sciverse.makeContentApiRequest(contentSearchUrl, articleCallback, requestHeaders);
-
-   gadgets.window.adjustHeight();
  }
 
  function articleCallback(response) {
-   var rs = JSON.stringify(response);
+   document.getElementById("articleHTML").innerHTML = "Got article text, forwarding to service, please wait...";
 
-   //Format the string for display.
-   rs = rs.replace(/\",/g,"\",<br>");
+   var params = {};
+   var postdata = {query: response["text"]};
+   params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+   params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(postdata);
 
-
-   document.getElementById("articleHTML").innerHTML = postwith('http://wing.comp.nus.edu.sg/elsevier-kp/echo.cgi',response["text"]);
-
-   // document.getElementById("articleHTML").innerHTML = response["text"];
-
+   var keyphraseUrl = "http://wing.comp.nus.edu.sg/elsevier-kp/keyphrase.cgi";
+   gadgets.io.makeRequest(keyphraseUrl, keyphraseCallback, params);
  }
- 
- function postwith (to,payload) {
-   var myForm = document.createElement("form");
-   myForm.method = "post";
-   myForm.action = to;
-   var myInput = document.createElement("input");
-   myInput.setAttribute("name", "query");
-   myInput.setAttribute("value", payload);
-   myForm.appendChild(myInput);
-   document.body.appendChild(myForm);
-   myForm.submit();
-   document.body.removeChild(myForm);
+
+ function keyphraseCallback(response) {
+   document.getElementById("articleHTML").innerHTML = response.text;
+   contextInfo = document.getElementById("contextInfo").style.visibility='hidden';
  }
+
    </script>
 
-   <p><a href="javascript:void(0);" onclick="getContextInfo();">Run Keyphrase</a></p>
+   <p><a id="keyphraseAction" href="javascript:void(0);" onclick="getContextInfo();">Run Keyphrase</a></p>
 
    <div id="contextInfo" style="display:block"></div>
 
    <div id="articleHTML" style="display:block"></div>
-
-   <P>End</P>
    ]]></Content>
 </Module>
