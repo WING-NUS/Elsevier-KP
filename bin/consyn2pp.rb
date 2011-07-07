@@ -43,12 +43,14 @@ end
 
 # set up options
 quiet = false
+train = false
 OptionParser.new do |opts|
   opts.banner = "usage: #{@@PROG_NAME} [options] file_name"
 
   opts.separator ""
   opts.on_tail("-h", "--help", "Show this message") do puts opts; exit end
-  opts.on_tail("-q", "--quiet", "Quiet Mode") do |v| quiet = true; end
+  opts.on_tail("-t", "--train", "Train mode") do |t| train = true; end
+  opts.on_tail("-q", "--quiet", "Quiet Mode") do |q| quiet = true; end
   opts.on_tail("-v", "--version", "Show version") do puts "#{@@PROG_NAME} " + @@VERSION.join('.'); exit end
 end.parse!
 
@@ -76,19 +78,25 @@ ifs.each do
   |fn|
   f = (fn == STDIN or fn == "-") ? STDIN : File.open(fn)
 
+  seen_title = false
   para_counter = section_counter = 0
   doc = REXML::Document.new(f)
   REXML::XPath.each(doc, "//*") { |elt| 
     case elt.name
     when "title"
-      puts "TITLE", ConSyn2Pp.zap_xml(elt)
+      if (!seen_title) 
+      	seen_title = true
+        puts "TITLE", ConSyn2Pp.zap_xml(elt)
+      end
     when "keyword"
-      puts "KEYWORD", ConSyn2Pp.zap_xml(elt)
+      if (train) then puts "KEYWORD", ConSyn2Pp.zap_xml(elt) end
     when "para"
-      puts "PARA #{para_counter}", ConSyn2Pp.zap_xml(elt)
+      if false then puts "PARA #{para_counter}\n" end
+      puts ConSyn2Pp.zap_xml(elt), "\n"
       para_counter += 1
     when "section-title"
-      puts "SECTION-TITLE #{section_counter}", ConSyn2Pp.zap_xml(elt)
+      if false then puts "SECTION-TITLE #{section_counter}" end
+      puts ConSyn2Pp.zap_xml(elt), "\n"
       section_counter += 1
     end
   }

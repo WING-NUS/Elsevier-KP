@@ -25,7 +25,7 @@ opts = OptionParser.new do |opts|
 end
 opts.parse!(ARGV)
 
-# puts "#{options.hostname} #{options.port} #{options.action} #{options.service_id}"
+puts "#{options.hostname} #{options.port} #{options.action} #{options.service_id}"
 
 s = SOAP::RPC::Driver.new("http://#{options.hostname}:#{options.port}/", options.service_id)
 case options.action 

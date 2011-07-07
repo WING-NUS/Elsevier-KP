@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs
+            title="Keyphrase"
+            author_email="knmnyn@your.domain">
+        <Require feature="sciverse" />
+        <Require feature="dynamic-height" />
+    </ModulePrefs>
+    <Content type="html" view="canvas,profile"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
+  <script type="text/javascript">
+
+ /*
+  * This function calls the container to get the current article content.
+  */
+ function getContextInfo()
+ {
+   gadgets.sciverse.getContextInfo(contextInfoCallback);
+ }
+
+ function contextInfoCallback(response) {
+   // get DOI from context   
+   document.getElementById("contextInfo").innerHTML = "DOI: " + response["doi"];
+
+   var requestHeaders = {};
+   requestHeaders['X-ELS-APIKey'] = "2cb7e21fa1564348861fff2db68f1da8";
+   requestHeaders['X-ELS-Authtoken'] = response["secureAuthToken"];
+   requestHeaders['Accept'] = "text/xml";
+
+   var contentSearchUrl = "http://api.elsevier.com/content/article/DOI:" + response["doi"] + "?view=FULL";
+   gadgets.sciverse.makeContentApiRequest(contentSearchUrl, articleCallback, requestHeaders);
+
+   gadgets.window.adjustHeight();
+ }
+
+ function articleCallback(response) {
+   var rs = JSON.stringify(response);
+
+   //Format the string for display.
+   rs = rs.replace(/\",/g,"\",<br>");
+
+
+   document.getElementById("articleHTML").innerHTML = postwith('http://wing.comp.nus.edu.sg/elsevier-kp/echo.cgi',response["text"]);
+
+   // document.getElementById("articleHTML").innerHTML = response["text"];
+
+ }
+ 
+ function postwith (to,payload) {
+   var myForm = document.createElement("form");
+   myForm.method = "post";
+   myForm.action = to;
+   var myInput = document.createElement("input");
+   myInput.setAttribute("name", "query");
+   myInput.setAttribute("value", payload);
+   myForm.appendChild(myInput);
+   document.body.appendChild(myForm);
+   myForm.submit();
+   document.body.removeChild(myForm);
+ }
+   </script>
+
+   <p><a href="javascript:void(0);" onclick="getContextInfo();">Run Keyphrase</a></p>
+
+   <div id="contextInfo" style="display:block"></div>
+
+   <div id="articleHTML" style="display:block"></div>
+
+   <P>End</P>
+   ]]></Content>
+</Module>
