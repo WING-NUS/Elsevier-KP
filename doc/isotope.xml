@@ -4,6 +4,7 @@
             title="Keyphrase by WING.NUS"
             author_email="kanmy@comp.nus.edu.sg">
         <Require feature="sciverse" />
+        <Require feature="ScienceDirect" />
         <Require feature="dynamic-height" />
     </ModulePrefs>
     <Content type="html" view="canvas,profile"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
@@ -51,10 +52,13 @@
  }
 
  function keyphraseCallback(response) {
-   document.getElementById("contextInfo").innerHTML = response.text +  "<br/><span class=\"ex1\"><a id=\"keyphraseAction\" href=\"javascript:void(0);\" onclick=\"getContextInfo();\">Re-run Keyphrase again</a></span>" 
+
  }
    </script>
-   <div id="contextInfo" style="display:block"></div>
+   <div id="contextInfo" style="display:block">
+   <a href="javascript:void(0);" onclick="gadgets.ScienceDirect.executeSearch('heart');">heart</a>
+
+   </div>
    </body>
    ]]></Content>
 </Module>

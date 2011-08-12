@@ -4,6 +4,7 @@
             title="Keyphrase by WING.NUS"
             author_email="kanmy@comp.nus.edu.sg">
         <Require feature="sciverse" />
+        <Require feature="ScienceDirect" />
         <Require feature="dynamic-height" />
     </ModulePrefs>
     <Content type="html" view="canvas,profile"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">  
@@ -14,6 +15,8 @@
   }
   </style>
   <script type="text/javascript">
+
+ var articleDOI;
 
  /*
   * This function calls the container to get the current article content.
@@ -27,6 +30,7 @@
    // get DOI from context   
    document.getElementById("contextInfo").style.visibility='visible';
    document.getElementById("contextInfo").innerHTML = "<span class=\"ex1\">Retrieving text of article with DOI: " + response["doi"] + ". Please wait...</span>";
+   articleDOI = response["doi"];
 
    var requestHeaders = {};
    requestHeaders['X-ELS-APIKey'] = "2cb7e21fa1564348861fff2db68f1da8";
@@ -41,7 +45,7 @@
    document.getElementById("contextInfo").innerHTML = "<span class=\"ex1\">Got article text, forwarding to service, please wait...</span>";
 
    var params = {};
-   var postdata = {query: response["text"]};
+   var postdata = {query: response["text"], doi: articleDOI};
    params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
    params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
    params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(postdata);
