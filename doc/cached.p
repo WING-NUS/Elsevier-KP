@@ -36,8302 +36,8487 @@ aS'30 days after'
 p19
 aS'anti HBs antibody'
 p20
-asS'd'
-(lp21
-S'nasal vaccine candidate'
-p22
-aS'nasal vaccine'
+asS'10.1016/j.jada.2006.08.007'
+p21
+(lp22
+S'gestational weight gain'
 p23
-aS'healthy adults'
+aS'excessive gestational weight'
 p24
-aS'adverse events were'
+aS'prenatal nutrition interventions'
 p25
-aS'7 15 30'
+aS'inadequate and excessive'
 p26
-aS'30 and 60'
+aS'Social Cognitive Theory'
 p27
-aS'0 7 15'
+aS'excessive gestational'
 p28
-aS'Adverse events were'
+aS'education and counseling'
 p29
-aS'nasal'
+aS'appropriate gestational weight'
 p30
-aS'trial'
+aS'Institute of Medicine'
 p31
-aS'HBsAg and HBcAg'
+aS'both inadequate'
 p32
-aS'hepatitis B virus'
+aS'among pregnant adolescents'
 p33
-aS'data collection sheets'
+aS'nutrition education'
 p34
-aS'placebo group'
+aS'uoi B758G 4M9NHJD'
 p35
-aS'anti HBc antibodies'
+aS'prenatal nutrition'
 p36
-aS'30 days after'
+aS'among pregnant teens'
 p37
-aS'anti HBs antibody'
+aS'effect on birth'
 p38
-aS'50 g HBcAg'
+aS'highest risk'
 p39
-aS'50 g HBsAg'
+asS'10.1016/j.clinthera.2006.05.008'
 p40
-aS'Source data collection'
-p41
-aS'healthy'
+(lp41
+S'6 month'
 p42
-aS'day 30'
+aS'blind placebo controlled'
 p43
-aS'trial in healthy'
+aS'randomized double blind'
 p44
-aS'core antigens'
+aS'month randomized double'
 p45
-aS'seroconversion in 100'
+aS'double blind placebo'
 p46
-aS'proportion of subjects'
+aS'6 month randomized'
 p47
-aS'vaccine'
+aS'sibutramine in obese'
 p48
-aS'HBsAg HBcAg vaccine'
+aS'sibutramine'
 p49
-aS'HBcAg vaccine candidate'
+aS'sibutramine group'
 p50
-aS'60 days'
+aS'group at end'
 p51
-aS'day 90 75'
+aS'placebo group'
 p52
-aS'HBs and anti'
+aS'obese Mexican adolescents'
 p53
-aS'9 8 palate'
-p54
-aS'9 8 headache'
-p55
-aS'34 1 rhinorrhea'
-p56
-aS'included sneezing 34'
-p57
-aS'8 palate itching'
-p58
-aS'2 nasal stuffiness'
-p59
-aS'12 2 nasal'
-p60
-aS'1 rhinorrhea 12'
-p61
-aS'mild in intensity'
-p62
-aS'events were recorded'
-p63
-aS'were recorded during'
-p64
-aS'anti HBc'
-p65
-aS'study'
-p66
-aS'anti HBc seroconversion'
-p67
-aS'well tolerated'
-p68
-aS'nasal route'
-p69
-aS'12h 24h 48h'
-p70
-aS'24h 48h 72h'
-p71
-aS'6h 12h 24h'
-p72
-aS'events were actively'
-p73
-aS'were actively recorded'
-p74
-aS'via nasal spray'
-p75
-aS'hepatitis B vaccine'
-p76
-aS'19 healthy male'
-p77
-aS'were randomly allocated'
-p78
-aS'systemic adverse events'
-p79
-aS'healthy male adults'
-p80
-aS'physiologic saline solution'
-p81
-aS'day 90'
-p82
-aS'CIGB Havana Cuba'
-p83
-aS'nasal co administration'
-p84
-aS'immunization schedule'
-p85
 aS'placebo'
+p54
+aS'diet and exercise'
+p55
+aS'05 for all'
+p56
+aS'sibutramine group changed'
+p57
+aS'2 95 CI'
+p58
+asS'10.1037/0003-066X.33.9.821'
+p59
+(lp60
+S'psychotherapy research'
+p61
+aS'psychotherapy'
+p62
+aS'need to control'
+p63
+aS'authors suggest'
+p64
+aS'placebo'
+p65
+aS'inert procedure without'
+p66
+aS'control for such'
+p67
+aS'ref PsycINFO Database'
+p68
+aS'available therapies component'
+p69
+aS'placebo effect rubric'
+p70
+aS'condition being treated'
+p71
+aS'without specific activity'
+p72
+aS'contact and therapist'
+p73
+aS'term placebo group'
+p74
+aS'controls in psychotherapy'
+p75
+aS'discussed 26 ref'
+p76
+aS'psychotherapy placebo group'
+p77
+asS'10.1016/S0002-8223(95)00279-0'
+p78
+(lp79
+S'receiving nutrition advice'
+p80
+aS'prenatal care'
+p81
+aS'mothers reported receiving'
+p82
+aS'Live Birth File'
+p83
+aS'advice by maternal'
+p84
+aS'Infant Death File'
+p85
+aS'breast feeding'
 p86
-aS'HBs antibody levels'
+aS'prenatal'
 p87
-aS'Source data'
+aS'mothers receiving'
 p88
-aS'first'
+aS'among live births'
 p89
-aS'B virus HBV'
+aS'maternal characteristics among'
 p90
-aS'safety and immunogenicity'
+aS'Table 1 Percent'
 p91
-aS'events were defined'
+aS'n 9 639'
 p92
-aS'local adverse events'
+aS'mothers receiving nutrition'
 p93
-aS'events were reported'
+aS'characteristics among live'
 p94
-aS'clinical trial'
+aS'weighted of mothers'
 p95
-aS'50'
+aS'1 Percent weighted'
 p96
-aS'responders anti HBs'
+asS'10.1016/S0188-4409(03)00069-9'
 p97
-aS'total'
-p98
-aS'day'
+(lp98
+S'body fat pattern'
 p99
-aS'HBsAg HBcAg'
+aS'low income'
 p100
-aS'hepatitis B vaccines'
+aS'incidence and progression'
 p101
-aS'Center for Genetic'
+aS'body fat'
 p102
-aS'Genetic Engineering Biotechnology'
+aS'grade 1 obesity'
 p103
-aS'strong immunogenicity'
+aS'overweight and obesity'
 p104
-aS'clinical'
+aS'body mass index'
 p105
-aS'HBcAg and HBsAg'
+aS'progression of obesity'
 p106
-aS'45 years'
+aS'Mexico'
 p107
-aS'immunogenicity of HBcAg'
+aS'first follow up'
 p108
-aS'HBcAg'
+aS'obesity'
 p109
-aS'route with 50'
+aS'mean waist circumference'
 p110
-aS'g HBsAg following'
+aS'follow up phases'
 p111
-aS'linked to 50'
+aS'Mexico City'
 p112
-aS'HBcAg HBsAg vaccine'
+aS'fat pattern distribution'
 p113
-aS'response to HBcAg'
+aS'Mexican population'
 p114
-aS'HBsAg vaccine candidate'
+aS'99 70 44'
 p115
-aS'HBcAg non covalently'
-p116
-aS'candidate in healthy'
+asS'd'
+(lp116
+S'nasal vaccine candidate'
 p117
-aS'healthy volunteers immunized'
+aS'nasal vaccine'
 p118
-aS'phase'
+aS'healthy adults'
 p119
-aS'Center for Toxicology'
+aS'adverse events were'
 p120
-aS'J Finlay Hospital'
+aS'7 15 30'
 p121
-aS'Carlos J Finlay'
+aS'30 and 60'
 p122
-aS'doses per study'
+aS'0 7 15'
 p123
-aS'Frequency of each'
+aS'Adverse events were'
 p124
-aS'number of applied'
+aS'nasal'
 p125
-aS'applied doses per'
+aS'trial'
 p126
-aS'per study group'
+aS'HBsAg and HBcAg'
 p127
-aS'event with respect'
+aS'hepatitis B virus'
 p128
-aS'type of adverse'
+aS'data collection sheets'
 p129
-aS'well'
+aS'placebo group'
 p130
-aS'60'
+aS'anti HBc antibodies'
 p131
-aS'severe'
+aS'30 days after'
 p132
-aS'vaccine candidate'
+aS'anti HBs antibody'
 p133
-aS'hepatitis'
+aS'50 g HBcAg'
 p134
-aS'vaccine recipients'
+aS'50 g HBsAg'
 p135
-aS'chronic'
+aS'Source data collection'
 p136
-aS'nasal wash'
+aS'healthy'
 p137
-aS'0 5ml'
+aS'day 30'
 p138
-aS'chronic HBV infected'
+aS'trial in healthy'
 p139
-aS'19 healthy'
+aS'core antigens'
 p140
-aS'any'
+aS'seroconversion in 100'
 p141
-aS'World Health Organization'
+aS'proportion of subjects'
 p142
-aS'results'
+aS'vaccine'
 p143
-aS'nasal co'
+aS'HBsAg HBcAg vaccine'
 p144
-aS'HBsAg'
+aS'HBcAg vaccine candidate'
 p145
-aS'subjects'
+aS'60 days'
 p146
-aS'systemic adverse'
+aS'day 90 75'
 p147
-aS'any other'
+aS'HBs and anti'
 p148
-aS'written informed consent'
+aS'9 8 palate'
 p149
-aS'immunization'
+aS'9 8 headache'
 p150
-aS'mice'
+aS'34 1 rhinorrhea'
 p151
-aS'chronic infection'
+aS'included sneezing 34'
 p152
-aS'adverse event'
+aS'8 palate itching'
 p153
-aS'other'
+aS'2 nasal stuffiness'
 p154
-aS'two'
+aS'12 2 nasal'
 p155
-aS'vaccine group'
+aS'1 rhinorrhea 12'
 p156
-aS'anti HBs'
+aS'mild in intensity'
 p157
-aS'Genetic Engineering'
+aS'events were recorded'
 p158
-aS'chronic HBV'
+aS'were recorded during'
 p159
-aS'volunteers'
+aS'anti HBc'
 p160
-aS'immunogenic'
+aS'study'
 p161
-aS'mixture of 50'
+aS'anti HBc seroconversion'
 p162
-aS'axillary temperature'
+aS'well tolerated'
 p163
-aS'core'
+aS'nasal route'
 p164
-aS'immunity'
+aS'12h 24h 48h'
 p165
-aS'more than'
+aS'24h 48h 72h'
 p166
-aS'general malaise'
+aS'6h 12h 24h'
 p167
-aS'30 days'
+aS'events were actively'
 p168
-aS'systemic'
+aS'were actively recorded'
 p169
-aS'100'
+aS'via nasal spray'
 p170
-aS'systemic immunity'
+aS'hepatitis B vaccine'
 p171
-aS'anti'
+aS'19 healthy male'
 p172
-aS'each'
+aS'were randomly allocated'
 p173
-aS'local adverse'
+aS'systemic adverse events'
 p174
-aS'animal'
+aS'healthy male adults'
 p175
-aS'full length'
+aS'physiologic saline solution'
 p176
-aS'knowledge'
+aS'day 90'
 p177
-aS'anti HBs titers'
+aS'CIGB Havana Cuba'
 p178
-aS'events were mild'
+aS'nasal co administration'
 p179
-aS'safe'
+aS'immunization schedule'
 p180
-aS'applied doses'
+aS'placebo'
 p181
-aS'placebo group withdrew'
+aS'HBs antibody levels'
 p182
-aS'study group'
+aS'Source data'
 p183
-aS'virus'
+aS'first'
 p184
-aS'patients with chronic'
+aS'B virus HBV'
 p185
-aS'intensity'
+aS'safety and immunogenicity'
 p186
-aS'candidate comprising HBV'
+aS'events were defined'
 p187
-aS'study in healthy'
+aS'local adverse events'
 p188
-aS'demonstration of safety'
+aS'events were reported'
 p189
-aS'safe well tolerated'
+aS'clinical trial'
 p190
-aS'comprising HBV antigens'
+aS'50'
 p191
-aS'tolerated and immunogenic'
+aS'responders anti HBs'
 p192
-aS'vaccine candidate comprising'
+aS'total'
 p193
-aS'unexpected events were'
+aS'day'
 p194
-aS'using corresponding ELISA'
+aS'HBsAg HBcAg'
 p195
-aS'vaccine elicited anti'
+aS'hepatitis B vaccines'
 p196
-aS'tolerated Adverse reactions'
+aS'Center for Genetic'
 p197
-aS'seroprotective anti HBs'
+aS'Genetic Engineering Biotechnology'
 p198
-aS'well tolerated Adverse'
+aS'strong immunogenicity'
 p199
-aS'dose Anti HBs'
+aS'clinical'
 p200
-aS'elicited anti HBc'
+aS'HBcAg and HBsAg'
 p201
-aS'each dose Anti'
+aS'45 years'
 p202
-aS'after each dose'
+aS'immunogenicity of HBcAg'
 p203
-aS'titers were evaluated'
+aS'HBcAg'
 p204
-aS'severe or unexpected'
+aS'route with 50'
 p205
-aS'reactions included sneezing'
+aS'g HBsAg following'
 p206
-aS'per nostril Adverse'
+aS'linked to 50'
 p207
-aS'early as day'
+aS'HBcAg HBsAg vaccine'
 p208
-aS'kits at days'
+aS'response to HBcAg'
 p209
-aS'1h 6h 12h'
+aS'HBsAg vaccine candidate'
 p210
-aS'anti HBc titers'
+aS'HBcAg non covalently'
 p211
-aS'recorded 1h 6h'
+aS'candidate in healthy'
 p212
-aS'immunization schedule while'
+aS'healthy volunteers immunized'
 p213
-aS'100 of subjects'
+aS'phase'
 p214
-aS'were evaluated using'
+aS'Center for Toxicology'
 p215
-aS'nostril Adverse events'
+aS'J Finlay Hospital'
 p216
-aS'actively recorded 1h'
+aS'Carlos J Finlay'
 p217
-aS'evaluated using corresponding'
+aS'doses per study'
 p218
-aS'intensity No severe'
+aS'Frequency of each'
 p219
-aS'corresponding ELISA kits'
+aS'number of applied'
 p220
-aS'HBs titer 10IU'
+aS'applied doses per'
 p221
-aS'days and 30'
+aS'per study group'
 p222
-aS'days after each'
+aS'event with respect'
 p223
-aS'HBc titers were'
+aS'type of adverse'
 p224
-aS'safe and well'
+aS'well'
 p225
-aS'75 All subjects'
+aS'60'
 p226
-aS'subjects as early'
+aS'severe'
 p227
-aS'placebo group remained'
+aS'vaccine candidate'
 p228
-aS'30 and 90'
+aS'hepatitis'
 p229
-aS'72h 7 days'
+aS'vaccine recipients'
 p230
-aS'90 75 All'
+aS'chronic'
 p231
-aS'8 and general'
+aS'nasal wash'
 p232
-aS'group remained seronegative'
+aS'0 5ml'
 p233
-aS'remained seronegative during'
+aS'chronic HBV infected'
 p234
-aS'maximum at day'
+aS'19 healthy'
 p235
-aS'anti HBs titer'
+aS'any'
 p236
-aS'limiting and mild'
+aS'World Health Organization'
 p237
-aS'reactions were all'
+aS'results'
 p238
-aS'were all self'
+aS'nasal co'
 p239
-aS'all self limiting'
+aS'HBsAg'
 p240
-aS'Adverse reactions included'
+aS'subjects'
 p241
-aS'placebo via nasal'
+aS'systemic adverse'
 p242
-aS'five dose schedule'
+aS'any other'
 p243
-aS'administered in two'
+aS'written informed consent'
 p244
-aS'0 9 physiologic'
+aS'immunization'
 p245
-aS'9 physiologic saline'
+aS'mice'
 p246
-aS'NASVAC comprising hepatitis'
+aS'chronic infection'
 p247
-aS'vaccine candidate NASVAC'
+aS'adverse event'
 p248
-aS'HBV surface HBsAg'
+aS'other'
 p249
-aS'double blinded placebo'
+aS'two'
 p250
-aS'profile of nasal'
+aS'vaccine group'
 p251
-aS'safety and immunogenic'
+aS'anti HBs'
 p252
-aS'candidate NASVAC comprising'
+aS'Genetic Engineering'
 p253
-aS'core antigens HBcAg'
+aS'chronic HBV'
 p254
-aS'HBV recombinant antigens'
+aS'volunteers'
 p255
-aS'administration of both'
+aS'immunogenic'
 p256
-aS'randomized clinical trial'
+aS'mixture of 50'
 p257
-aS'markers of immunity'
+aS'axillary temperature'
 p258
-aS'both HBV recombinant'
+aS'core'
 p259
-aS'according to Good'
+aS'immunity'
 p260
-aS'guidelines Participants ranged'
+aS'more than'
 p261
-aS'immunogenic in animal'
+aS'general malaise'
 p262
-aS'HBsAg and core'
+aS'30 days'
 p263
-aS'18 to 45'
+aS'systemic'
 p264
-aS'infection to HBV'
+aS'100'
 p265
-aS'aimed at exploring'
+aS'systemic immunity'
 p266
-aS'years and were'
+aS'anti'
 p267
-aS'allocated to receive'
+aS'each'
 p268
-aS'Practice guidelines Participants'
+aS'local adverse'
 p269
-aS'Good Clinical Practice'
+aS'animal'
 p270
-aS'placebo controlled randomized'
+aS'full length'
 p271
-aS'ranged in age'
+aS'knowledge'
 p272
-aS'Clinical Practice guidelines'
+aS'anti HBs titers'
 p273
-aS'blinded placebo controlled'
+aS'events were mild'
 p274
-aS'age from 18'
+aS'safe'
 p275
-aS'controlled randomized clinical'
+aS'applied doses'
 p276
-aS'virus HBV surface'
+aS'placebo group withdrew'
 p277
-aS'Source'
+aS'study group'
 p278
-aS'pre and post'
+aS'virus'
 p279
-aS'saliva and nasal'
+aS'patients with chronic'
 p280
-aS'nasal wash samples'
+aS'intensity'
 p281
-aS'anterior and posterior'
+aS'candidate comprising HBV'
 p282
-aS'covalently linked'
+aS'study in healthy'
 p283
-aS'HBcAg HBsAg'
+aS'demonstration of safety'
 p284
-aS'Antibody response'
+aS'safe well tolerated'
 p285
-aS'healthy volunteers'
+aS'comprising HBV antigens'
 p286
-aS'National Center'
+aS'tolerated and immunogenic'
 p287
-aS'Accuspray Becton Dickinson'
+aS'vaccine candidate comprising'
 p288
-aS'five'
+aS'unexpected events were'
 p289
-aS'full length HBcAg'
+aS'using corresponding ELISA'
 p290
-aS'19'
+aS'vaccine elicited anti'
 p291
-aS'each type'
+aS'tolerated Adverse reactions'
 p292
-aS'total number'
+aS'seroprotective anti HBs'
 p293
-aS'concentration of anti'
+aS'well tolerated Adverse'
 p294
-aS'reactions were'
+aS'dose Anti HBs'
 p295
-aS'more than 10IU'
+aS'elicited anti HBc'
 p296
-aS's exact test'
+aS'each dose Anti'
 p297
-aS'Fisher s exact'
+aS'after each dose'
 p298
-aS'also'
+aS'titers were evaluated'
 p299
-aS'both'
+aS'severe or unexpected'
 p300
-aS'early'
+aS'reactions included sneezing'
 p301
-aS'mean anti HBs'
+aS'per nostril Adverse'
 p302
-aS'confidence intervals were'
+aS'early as day'
 p303
-aS'95 confidence intervals'
+aS'kits at days'
 p304
-aS'adverse events included'
+aS'1h 6h 12h'
 p305
-aS'linked immunosorbent assay'
+aS'anti HBc titers'
 p306
-aS'enzyme linked immunosorbent'
+aS'recorded 1h 6h'
 p307
-aS'C and any'
+aS'immunization schedule while'
 p308
-aS'require medical attention'
+aS'100 of subjects'
 p309
-aS'may require medical'
+aS'were evaluated using'
 p310
-aS'combined to give'
+aS'nostril Adverse events'
 p311
-aS'age'
+aS'actively recorded 1h'
 p312
-aS'recombinant'
+aS'evaluated using corresponding'
 p313
-aS'strong'
+aS'intensity No severe'
 p314
-aS'adverse events'
+aS'corresponding ELISA kits'
 p315
-aS'administered'
+aS'HBs titer 10IU'
 p316
-aS'performed'
+aS'days and 30'
 p317
-aS'seroprotective'
+aS'days after each'
 p318
-aS'respect'
+aS'HBc titers were'
 p319
-aS'administration'
+aS'safe and well'
 p320
-aS'studied'
+aS'75 All subjects'
 p321
-aS'mucosal'
+aS'subjects as early'
 p322
-aS'unexpected'
+aS'placebo group remained'
 p323
-aS'patients'
+aS'30 and 90'
 p324
-aS'saliva'
+aS'72h 7 days'
 p325
-aS'double blinded'
+aS'90 75 All'
 p326
-aS'approximately'
+aS'8 and general'
 p327
-aS'were randomly'
+aS'group remained seronegative'
 p328
-aS'adverse'
+aS'remained seronegative during'
 p329
-aS'dose schedule'
+aS'maximum at day'
 p330
-aS'World Health'
+aS'anti HBs titer'
 p331
-aS'used'
+aS'limiting and mild'
 p332
-aS'time'
+aS'reactions were all'
 p333
-aS'related'
+aS'were all self'
 p334
-aS'HBV'
+aS'all self limiting'
 p335
-aS'participants'
+aS'Adverse reactions included'
 p336
-aS'safety'
+aS'placebo via nasal'
 p337
-aS'had'
+aS'five dose schedule'
 p338
-aS'45'
+aS'administered in two'
 p339
-aS'90'
+aS'0 9 physiologic'
 p340
-aS'local'
+aS'9 physiologic saline'
 p341
-aS'HBV antigens'
+aS'NASVAC comprising hepatitis'
 p342
-aS'Phase'
+aS'vaccine candidate NASVAC'
 p343
-aS'most'
+aS'HBV surface HBsAg'
 p344
-aS'first inoculation'
+aS'double blinded placebo'
 p345
-aS'nasal spray'
+aS'profile of nasal'
 p346
-aS'mixture'
+aS'safety and immunogenic'
 p347
-aS'more'
+aS'candidate NASVAC comprising'
 p348
-aS'infected patients'
+aS'core antigens HBcAg'
 p349
-aS'co'
+aS'HBV recombinant antigens'
 p350
-aS'immunogenicity'
+aS'administration of both'
 p351
-aS'populations'
+aS'randomized clinical trial'
 p352
-aS'control'
+aS'markers of immunity'
 p353
-aS'Genetic'
+aS'both HBV recombinant'
 p354
-aS'antiviral'
+aS'according to Good'
 p355
-aS'schedule'
+aS'guidelines Participants ranged'
 p356
-aS'addition'
+aS'immunogenic in animal'
 p357
-aS'nasal mucosa'
+aS'HBsAg and core'
 p358
-aS'carried'
+aS'18 to 45'
 p359
-aS'adults'
+aS'infection to HBV'
 p360
-aS'dose'
+aS'aimed at exploring'
 p361
-aS'second'
+aS'years and were'
 p362
-aS'immune'
+aS'allocated to receive'
 p363
-aS'post immunization'
+aS'Practice guidelines Participants'
 p364
-aS'access'
+aS'Good Clinical Practice'
 p365
-aS'immune system'
+aS'placebo controlled randomized'
 p366
-aS'second dose'
+aS'ranged in age'
 p367
-aS'Center'
+aS'Clinical Practice guidelines'
 p368
-aS'geometric mean'
+aS'blinded placebo controlled'
 p369
-aS'further'
+aS'age from 18'
 p370
-aS'antigens'
+aS'controlled randomized clinical'
 p371
-aS'Preclinical'
+aS'virus HBV surface'
 p372
-aS'antibody responses'
+aS'Source'
 p373
-aS'relevant'
+aS'pre and post'
 p374
-aS'recorded during'
+aS'saliva and nasal'
 p375
-aS'demonstrated'
+aS'nasal wash samples'
 p376
-aS'vaccine formulation'
+aS'anterior and posterior'
 p377
-aS'devices'
+aS'covalently linked'
 p378
-aS'self'
+aS'HBcAg HBsAg'
 p379
-aS'general'
+aS'Antibody response'
 p380
-aS'proportion'
+aS'healthy volunteers'
 p381
-aS'serum'
+aS'National Center'
 p382
-aS'T cell'
+aS'Accuspray Becton Dickinson'
 p383
-aS'study prior'
+aS'five'
 p384
-aS'all'
+aS'full length HBcAg'
 p385
-aS'Figure'
+aS'19'
 p386
-aS'antigen'
+aS'each type'
 p387
-aS'days'
+aS'total number'
 p388
-aS'full'
+aS'concentration of anti'
 p389
-aS'detection'
+aS'reactions were'
 p390
-aS'high'
+aS'more than 10IU'
 p391
-aS'subjects reporting'
+aS's exact test'
 p392
-aS'18'
+aS'Fisher s exact'
 p393
-aS'mild'
+aS'also'
 p394
-aS'safe well'
+aS'both'
 p395
-aS'first demonstration'
+aS'early'
 p396
-aS'vaccine elicited'
+aS'mean anti HBs'
 p397
-aS'seroprotective anti'
+aS'confidence intervals were'
 p398
-aS'unexpected events'
+aS'95 confidence intervals'
 p399
-aS'days 30'
+aS'adverse events included'
 p400
-aS'placebo via'
+aS'linked immunosorbent assay'
 p401
-aS'five dose'
+aS'enzyme linked immunosorbent'
 p402
-aS'two dosages'
+aS'C and any'
 p403
-aS'total volume'
+aS'require medical attention'
 p404
-aS'highly immunogenic'
+aS'may require medical'
 p405
-aS'serologic markers'
+aS'combined to give'
 p406
-aS'immunity infection'
+aS'age'
 p407
-aS'animal models'
+aS'recombinant'
 p408
-aS'performed according'
+aS'strong'
 p409
-aS'immunogenic profile'
+aS'adverse events'
 p410
-aS'both HBV'
+aS'administered'
 p411
-aS'Good Clinical'
+aS'performed'
 p412
-aS'applied'
+aS'seroprotective'
 p413
-aS'covalently'
+aS'respect'
 p414
-aS'Antibody'
+aS'administration'
 p415
-aS'National'
+aS'studied'
 p416
-aS'Toxicology'
+aS'mucosal'
 p417
-aS'Carlos'
+aS'unexpected'
 p418
-aS'Anti HBc'
+aS'patients'
 p419
-aS'experiments'
+aS'saliva'
 p420
-aS'immunity against'
+aS'double blinded'
 p421
-aS'95'
+aS'approximately'
 p422
-aS'Frequency'
+aS'were randomly'
 p423
-aS'participants inoculated'
+aS'adverse'
 p424
-aS'purified'
+aS'dose schedule'
 p425
-aS'were'
+aS'World Health'
 p426
-aS'data collection'
+aS'used'
 p427
-aS'other nasal'
+aS'time'
 p428
-aS'study nurse'
+aS'related'
 p429
-aS'order'
+aS'HBV'
 p430
-aS'vaccine were'
+aS'participants'
 p431
-aS'shown'
+aS'safety'
 p432
-aS'95 confidence'
+aS'had'
 p433
-aS'EM analysis'
+aS'45'
 p434
-aS'development'
+aS'90'
 p435
-aS'sensitivity'
+aS'local'
 p436
-aS'carriers'
+aS'HBV antigens'
 p437
-aS'single'
+aS'Phase'
 p438
-aS'responders'
+aS'most'
 p439
-aS'infected'
+aS'first inoculation'
 p440
-aS'commercial'
+aS'nasal spray'
 p441
-aS'30'
+aS'mixture'
 p442
-aS'formulation'
+aS'more'
 p443
-aS'75'
+aS'infected patients'
 p444
-aS'Anti'
+aS'co'
 p445
-aS'each dose'
+aS'immunogenicity'
 p446
-aS'protein'
+aS'populations'
 p447
-aS'screening'
+aS'control'
 p448
-aS'reactions'
+aS'Genetic'
 p449
-aS'combined'
+aS'antiviral'
 p450
-aS'Havana'
+aS'schedule'
 p451
-aS'15'
+aS'addition'
 p452
-aS'fourth'
+aS'nasal mucosa'
 p453
-aS'Th1'
+aS'carried'
 p454
-aS'same'
+aS'adults'
 p455
-aS'7 days'
+aS'dose'
 p456
-aS'6h 12h'
+aS'second'
 p457
-aS'undertaken'
+aS'immune'
 p458
-aS'axillary'
+aS'post immunization'
 p459
-aS'events'
+aS'access'
 p460
-aS'third'
+aS'immune system'
 p461
-aS'group'
+aS'second dose'
 p462
-aS'antibody'
+aS'Center'
 p463
-aS'required'
+aS'geometric mean'
 p464
-aS'negative'
+aS'further'
 p465
-aS'6h'
+aS'antigens'
 p466
-aS'need'
+aS'Preclinical'
 p467
-aS'increase'
+aS'antibody responses'
 p468
-aS'World'
+aS'relevant'
 p469
-aS'infection'
+aS'recorded during'
 p470
-aS'licensed hepatitis'
+aS'demonstrated'
 p471
-aS'double'
+aS'vaccine formulation'
 p472
-aS'frequency'
+aS'devices'
 p473
-aS'72h'
+aS'self'
 p474
-aS'headache'
+aS'general'
 p475
-aS'recombinant HBcAg'
+aS'proportion'
 p476
-aS'All'
+aS'serum'
 p477
-aS'sneezing'
+aS'T cell'
 p478
-aS'achieved'
+aS'study prior'
 p479
-aS'very'
+aS'all'
 p480
-aS'all participants'
+aS'Figure'
 p481
-aS'candidate'
+aS'antigen'
 p482
-aS'one'
+aS'days'
 p483
-aS'induced'
+aS'full'
 p484
-aS'Cuba'
+aS'detection'
 p485
-aS'participants were'
+aS'high'
 p486
-aS'reported'
+aS'subjects reporting'
 p487
-aS'spray'
+aS'18'
 p488
-aS'evaluated'
+aS'mild'
 p489
-aS'hematology'
+aS'safe well'
 p490
-aS'primary'
+aS'first demonstration'
 p491
-aS'recorded'
+aS'vaccine elicited'
 p492
-aS'potential'
+aS'seroprotective anti'
 p493
-aS'positive'
+aS'unexpected events'
 p494
-aS'elicited'
+aS'days 30'
 p495
-aS'events were'
+aS'placebo via'
 p496
-aS'tolerated'
+aS'five dose'
 p497
-aS'revealed'
+aS'two dosages'
 p498
-aS'samples'
+aS'total volume'
 p499
-aS'licensed'
+aS'highly immunogenic'
 p500
-aS'staff'
+aS'serologic markers'
 p501
-aS'device'
+aS'immunity infection'
 p502
-aS'data'
+aS'animal models'
 p503
-aS'collection'
+aS'performed according'
 p504
-aS'written informed'
+aS'immunogenic profile'
 p505
-aS'recording'
+aS'both HBV'
 p506
-aS'use'
+aS'Good Clinical'
 p507
-aS'125'
+aS'applied'
 p508
-aS'EM'
+aS'covalently'
 p509
-aS'analysis'
+aS'Antibody'
 p510
-aS'sera'
+aS'National'
 p511
-aS'10IU'
+aS'Toxicology'
 p512
-aS'baseline'
+aS'Carlos'
 p513
-aS'successive'
+aS'Anti HBc'
 p514
-aS'route'
+aS'experiments'
 p515
-aS'HBc'
+aS'immunity against'
 p516
-aS'HBs'
+aS'95'
 p517
-aS'titers'
+aS'Frequency'
 p518
-aS'developed'
+aS'participants inoculated'
 p519
-aS'blinded'
+aS'purified'
 p520
-aS'blood'
+aS'were'
 p521
-aS'seroprotection'
+aS'data collection'
 p522
-aS'after'
+aS'other nasal'
 p523
-aS'profile'
+aS'study nurse'
 p524
-aS'days after'
+aS'order'
 p525
-aS'15 30'
+aS'vaccine were'
 p526
-aS'7 15'
+aS'shown'
 p527
-aS'seroconversion'
+aS'95 confidence'
 p528
-aS'vaccines'
+aS'EM analysis'
 p529
-aS'B vaccines'
+aS'development'
 p530
-aS'according'
+aS'sensitivity'
 p531
-aS'using'
+aS'carriers'
 p532
-aS'against'
+aS'single'
 p533
-aS'against HBV'
+aS'responders'
 p534
-aS'HBV infection'
+aS'infected'
 p535
-aS'hypo'
+aS'commercial'
 p536
-aS'Engineering'
+aS'30'
 p537
-aS'Engineering Biotechnology'
+aS'formulation'
 p538
-aS'Biotechnology'
+aS'75'
 p539
-aS'volunteer'
+aS'Anti'
 p540
-aS'nasal adverse'
+aS'each dose'
 p541
-aS'than'
+aS'protein'
 p542
-aS'type'
+aS'screening'
 p543
-aS'HBcAg vaccine'
+aS'reactions'
 p544
-aS'response'
+aS'combined'
 p545
-aS'commercial anti'
+aS'Havana'
 p546
-aS'subjects were'
+aS'15'
 p547
-aS'10'
+aS'fourth'
 p548
-aS'Adverse'
+aS'Th1'
 p549
-aS'Adverse events'
+aS'same'
 p550
-aS'rhinorrhea'
+aS'7 days'
 p551
-aS'stuffiness'
+aS'6h 12h'
 p552
-aS'nasal stuffiness'
+aS'undertaken'
 p553
-aS'itching'
+aS'axillary'
 p554
-aS'palate itching'
+aS'events'
 p555
-aS'palate'
+aS'third'
 p556
-aS'considered'
+aS'group'
 p557
-aS'studies'
+aS'antibody'
 p558
-aS'abnormalities'
+aS'required'
 p559
-aS'responses against'
+aS'negative'
 p560
-aS'responses'
+aS'6h'
 p561
-aS'clinically'
+aS'need'
 p562
-aS'self limiting'
+aS'increase'
 p563
-aS'limiting'
+aS'World'
 p564
-aS'obtained'
+aS'infection'
 p565
-aS'without'
+aS'licensed hepatitis'
 p566
-aS'treatment'
+aS'double'
 p567
-aS'planned'
+aS'frequency'
 p568
-aS'observation period'
+aS'72h'
 p569
-aS'doses'
+aS'headache'
 p570
-aS'titer'
+aS'recombinant HBcAg'
 p571
-aS'remained'
+aS'All'
 p572
-aS'group remained'
+aS'sneezing'
 p573
-aS'surface'
+aS'achieved'
 p574
-aS'system'
+aS'very'
 p575
-aS'present'
+aS'all participants'
 p576
-aS'geometric'
+aS'candidate'
 p577
-aS'90 75'
+aS'one'
 p578
-aS'inoculation'
+aS'induced'
 p579
-aS'specific'
+aS'Cuba'
 p580
-aS'were mild'
+aS'participants were'
 p581
-aS'per'
+aS'reported'
 p582
-aS'Havana Cuba'
+aS'spray'
 p583
-aS'post'
+aS'evaluated'
 p584
-aS'hyper responder'
+aS'hematology'
 p585
-aS'basic'
+aS'primary'
 p586
-aS'g HBcAg'
+aS'recorded'
 p587
-aS'g HBsAg'
+aS'potential'
 p588
-aS'12h'
+aS'positive'
 p589
-aS'Participants'
+aS'elicited'
 p590
-aS'corresponding'
+aS'events were'
 p591
-aS'resulted'
+aS'tolerated'
 p592
-aS'event'
+aS'revealed'
 p593
-aS'during'
+aS'samples'
 p594
-aS'seronegative'
+aS'licensed'
 p595
-aS'standard'
+aS'staff'
 p596
-aS'enough'
+aS'device'
 p597
-aS'included sneezing'
+aS'data'
 p598
-aS'2 nasal'
+aS'collection'
 p599
-aS'sneezing 34'
+aS'written informed'
 p600
-aS'12'
+aS'recording'
 p601
-aS'8 palate'
+aS'use'
 p602
-aS'8 headache'
+aS'125'
 p603
-aS'34'
+aS'EM'
 p604
-aS'1 rhinorrhea'
+aS'analysis'
 p605
-aS'rhinorrhea 12'
+aS'sera'
 p606
-aS'included'
+aS'10IU'
 p607
-aS'malaise'
+aS'baseline'
 p608
-aS'remaining'
+aS'successive'
 p609
-aS'any local'
+aS'route'
 p610
-aS'rates'
+aS'HBc'
 p611
-aS'24h'
+aS'HBs'
 p612
-aS'sample'
+aS'titers'
 p613
-aS'administered HBsAg'
+aS'developed'
 p614
-aS'activity'
+aS'blinded'
 p615
-aS'human'
+aS'blood'
 p616
-aS'epistaxis'
+aS'seroprotection'
 p617
-aS'were more'
+aS'after'
 p618
-aS'HBV vaccine'
+aS'profile'
 p619
-aS'following'
+aS'days after'
 p620
-aS'sterile'
+aS'15 30'
 p621
-aS'B virus'
+aS'7 15'
 p622
-aS'randomized'
+aS'seroconversion'
 p623
-aS'sera were'
+aS'vaccines'
 p624
-aS'recipients'
+aS'B vaccines'
 p625
-aS'solution'
+aS'according'
 p626
-aS'years'
+aS'using'
 p627
-aS'were recorded'
+aS'against'
 p628
-aS'maximum'
+aS'against HBV'
 p629
-aS'highly'
+aS'HBV infection'
 p630
-aS'exploring'
+aS'hypo'
 p631
-aS'Good'
+aS'Engineering'
 p632
-aS'aimed'
+aS'Engineering Biotechnology'
 p633
-aS'serologic'
+aS'Biotechnology'
 p634
-aS'receive'
+aS'volunteer'
 p635
-aS'collection sheets'
+aS'nasal adverse'
 p636
-aS'sheets'
+aS'than'
 p637
-aS'between'
+aS'type'
 p638
-aS'posterior'
+aS'HBcAg vaccine'
 p639
-aS'cytotoxic'
+aS'response'
 p640
-aS'fifth'
+aS'commercial anti'
 p641
-aS'HBsAg following'
+aS'subjects were'
 p642
-aS'linked'
+aS'10'
 p643
-aS'immunized'
+aS'Adverse'
 p644
-aS'HBsAg vaccine'
+aS'Adverse events'
 p645
-aS'volunteers immunized'
+aS'rhinorrhea'
 p646
-aS'Drug'
+aS'stuffiness'
 p647
-aS'length'
+aS'nasal stuffiness'
 p648
-aS'size'
+aS'itching'
 p649
-aS'otorhinolaryngologist'
+aS'palate itching'
 p650
-aS'Finlay'
+aS'palate'
 p651
-aS'Finlay Hospital'
+aS'considered'
 p652
-aS'J Finlay'
+aS'studies'
 p653
-aS'Hospital'
+aS'abnormalities'
 p654
-aS'confirmed'
+aS'responses against'
 p655
-aS'adjuvant'
+aS'responses'
 p656
-aS'improved'
+aS'clinically'
 p657
-aS'value'
+aS'self limiting'
 p658
-aS'novel'
+aS'limiting'
 p659
-aS'drug'
+aS'obtained'
 p660
-aS'responders anti'
+aS'without'
 p661
-aS'per study'
+aS'treatment'
 p662
-aS'number'
+aS'planned'
 p663
-aS'doses per'
+aS'observation period'
 p664
-aS'concentration'
+aS'doses'
 p665
-aS'treatment group'
+aS'titer'
 p666
-aS'Fisher'
+aS'remained'
 p667
-aS'enhancement'
+aS'group remained'
 p668
-aS'written'
+aS'surface'
 p669
-aS'based'
+aS'system'
 p670
-aS'severity'
+aS'present'
 p671
-aS'elicit'
+aS'geometric'
 p672
-aS'work'
+aS'90 75'
 p673
-aS'history'
+aS'inoculation'
 p674
-aS'potent'
+aS'specific'
 p675
-aS'showed'
+aS'were mild'
 p676
-aS'Nasal administration'
+aS'per'
 p677
-aS'chronic carriers'
+aS'Havana Cuba'
 p678
-aS'HBc seroconversion'
+aS'post'
 p679
-aS'intranasal'
+aS'hyper responder'
 p680
-aS'address'
+aS'basic'
 p681
-aS'77'
+aS'g HBcAg'
 p682
-aS'Th cell'
+aS'g HBsAg'
 p683
-aS'nucleic acids'
+aS'12h'
 p684
-aS'previously'
+aS'Participants'
 p685
-aS'enzyme linked'
+aS'corresponding'
 p686
-aS'expressed'
+aS'resulted'
 p687
-aS'up'
+aS'event'
 p688
-aS'CIGB'
+aS'during'
 p689
-aS'study staff'
+aS'seronegative'
 p690
-aS'licensed nasal'
+aS'standard'
 p691
-aS'give'
+aS'enough'
 p692
-aS'formal'
+aS'included sneezing'
 p693
-aS'fluorescent'
+aS'2 nasal'
 p694
-aS'50g'
+aS'sneezing 34'
 p695
-aS'M cells'
+aS'12'
 p696
-aS'against HBsAg'
+aS'8 palate'
 p697
-aS'fever'
+aS'8 headache'
 p698
-aS'under'
+aS'34'
 p699
-aS'inflammatory'
+aS'1 rhinorrhea'
 p700
-aS'significant'
+aS'rhinorrhea 12'
 p701
-aS'resolving'
+aS'included'
 p702
-aS'effects'
+aS'malaise'
 p703
-aS'moderate'
+aS'remaining'
 p704
-aS'received'
+aS'any local'
 p705
-aS'there'
+aS'rates'
 p706
-aS'over'
+aS'24h'
 p707
-aS'differences'
+aS'sample'
 p708
-aS'only'
+aS'administered HBsAg'
 p709
-aS'were evaluated'
+aS'activity'
 p710
-aS'antibodies'
+aS'human'
 p711
-aS'mucosa'
+aS'epistaxis'
 p712
-aS'reporting'
+aS'were more'
 p713
-aS'significantly'
+aS'HBV vaccine'
 p714
-aS'Anti HBs'
+aS'following'
 p715
-aS'made'
+aS'sterile'
 p716
-aS'damage'
+aS'B virus'
 p717
-aS'ELISA'
+aS'randomized'
 p718
-aS'ELISA kits'
+aS'sera were'
 p719
-aS'kits'
+aS'recipients'
 p720
-aS'observation'
+aS'solution'
 p721
-aS'assigned'
+aS'years'
 p722
-aS'Furthermore'
+aS'were recorded'
 p723
-aS'HBV infected'
+aS'maximum'
 p724
-aS'mean'
+aS'highly'
 p725
-aS'assessed'
+aS'exploring'
 p726
-aS'within'
+aS'Good'
 p727
-aS'l per'
+aS'aimed'
 p728
-aS'hyper'
+aS'serologic'
 p729
-aS'higher'
+aS'receive'
 p730
-aS'serum antibody'
+aS'collection sheets'
 p731
-aS'vaccine doses'
+aS'sheets'
 p732
-aS'71'
+aS'between'
 p733
-aS'mixed'
+aS'posterior'
 p734
-aS'testing'
+aS'cytotoxic'
 p735
-aS'Nasal'
+aS'fifth'
 p736
-aS'Health'
+aS'HBsAg following'
 p737
-aS'Organization'
+aS'linked'
 p738
-aS'Health Organization'
+aS'immunized'
 p739
-aS'prior'
+aS'HBsAg vaccine'
 p740
-aS'25'
+aS'volunteers immunized'
 p741
-aS'12h 24h'
+aS'Drug'
 p742
-aS'24h 48h'
+aS'length'
 p743
-aS'48h 72h'
+aS'size'
 p744
-aS'48h'
+aS'otorhinolaryngologist'
 p745
-aS'actively'
+aS'Finlay'
 p746
-aS'were actively'
+aS'Finlay Hospital'
 p747
-aS'actively recorded'
+aS'J Finlay'
 p748
-aS'via nasal'
+aS'Hospital'
 p749
-aS'via'
+aS'confirmed'
 p750
-aS'after each'
+aS'adjuvant'
 p751
-aS'vaccine dose'
+aS'improved'
 p752
-aS'wash'
+aS'value'
 p753
-aS'pre'
+aS'novel'
 p754
-aS'defined'
+aS'drug'
 p755
-aS'conditions'
+aS'responders anti'
 p756
-aS'level'
+aS'per study'
 p757
-aS'NASVAC'
+aS'number'
 p758
-aS'allocated'
+aS'doses per'
 p759
-aS'saline solution'
+aS'concentration'
 p760
-aS'saline'
+aS'treatment group'
 p761
-aS'volume'
+aS'Fisher'
 p762
-aS'5ml'
+aS'enhancement'
 p763
-aS'B vaccine'
+aS'written'
 p764
-aS'per nostril'
+aS'based'
 p765
-aS'nostril'
+aS'severity'
 p766
-aS'available'
+aS'elicit'
 p767
-aS'showing'
+aS'work'
 p768
-aS'controlled'
+aS'history'
 p769
-aS'placebo controlled'
+aS'potent'
 p770
-aS'male'
+aS'showed'
 p771
-aS'healthy male'
+aS'Nasal administration'
 p772
-aS'methods'
+aS'chronic carriers'
 p773
-aS'randomly allocated'
+aS'HBc seroconversion'
 p774
-aS'randomly'
+aS'intranasal'
 p775
-aS'were also'
+aS'address'
 p776
-aS'similar'
+aS'77'
 p777
-aS'induction'
+aS'Th cell'
 p778
-aS'All subjects'
+aS'nucleic acids'
 p779
-aS'such'
+aS'previously'
 p780
-aS'provided'
+aS'enzyme linked'
 p781
-aS'component'
+aS'expressed'
 p782
-aS'frequent'
+aS'up'
 p783
-aS'cases'
+aS'CIGB'
 p784
-aS'measured'
+aS'study staff'
 p785
-aS'medical'
+aS'licensed nasal'
 p786
-aS'than 10IU'
+aS'give'
 p787
-aS'DC'
+aS'formal'
 p788
-aS'male adults'
+aS'fluorescent'
 p789
-aS'test'
+aS'50g'
 p790
-aS'Individuals'
+aS'M cells'
 p791
-aS'clearly'
+aS'against HBsAg'
 p792
-aS'containing'
+aS'fever'
 p793
-aS'Briefly'
+aS'under'
 p794
-aS'thank'
+aS'inflammatory'
 p795
-aS'seroprotected'
+aS'significant'
 p796
-aS'incubated'
+aS'resolving'
 p797
-aS'physiologic'
+aS'effects'
 p798
-aS'physiologic saline'
+aS'moderate'
 p799
-aS'comparison'
+aS'received'
 p800
-aS'consent'
+aS'there'
 p801
-aS'informed consent'
+aS'over'
 p802
-aS'informed'
+aS'differences'
 p803
-aS'particle'
+aS'only'
 p804
-aS'Recent'
+aS'were evaluated'
 p805
-aS'tests'
+aS'antibodies'
 p806
-aS'proportional'
+aS'mucosa'
 p807
-aS'conjugate'
+aS'reporting'
 p808
-aS'HBc antibodies'
+aS'significantly'
 p809
-aS'purity'
+aS'Anti HBs'
 p810
-aS'estimated'
+aS'made'
 p811
-aS'Similarly'
+aS'damage'
 p812
-aS'cells'
+aS'ELISA'
 p813
-aS'rats'
+aS'ELISA kits'
 p814
-aS'Th'
+aS'kits'
 p815
-aS'interaction'
+aS'observation'
 p816
-aS'nucleic'
+aS'assigned'
 p817
-aS'neither'
+aS'Furthermore'
 p818
-aS'enzyme'
+aS'HBV infected'
 p819
-aS'Blood'
+aS'mean'
 p820
-aS'CIGB Havana'
+aS'assessed'
 p821
-aS'particulate'
+aS'within'
 p822
-aS'permanent'
+aS'l per'
 p823
-aS'bothersome'
+aS'hyper'
 p824
-aS'subject'
+aS'higher'
 p825
-aS'Recombinant'
+aS'serum antibody'
 p826
-aS'levels'
+aS'vaccine doses'
 p827
-aS'HB'
+aS'71'
 p828
-aS'Heberbiovac HB'
+aS'mixed'
 p829
-aS'Heberbiovac'
+aS'testing'
 p830
-aS'co administration'
+aS'Nasal'
 p831
-aS'hour'
+aS'Health'
 p832
-aS'hour after'
+aS'Organization'
 p833
-aS'between vaccine'
+aS'Health Organization'
 p834
-aS'period'
+aS'prior'
 p835
-aS'rate'
+aS'25'
 p836
-aS'HBs antibody'
+aS'12h 24h'
 p837
-aS'antibody levels'
+aS'24h 48h'
 p838
-aS'subtype'
+aS'48h 72h'
 p839
-aS'HBsAg subtype'
+aS'48h'
 p840
-aS'comprising'
+aS'actively'
 p841
-aS'Local'
+aS'were actively'
 p842
-aS'against HBcAg'
+aS'actively recorded'
 p843
-aS'Local site'
+aS'via nasal'
 p844
-aS'site'
+aS'via'
 p845
-aS'through'
+aS'after each'
 p846
-aS'100IU'
+aS'vaccine dose'
 p847
-aS'acute'
+aS'wash'
 p848
-aS'Only'
+aS'pre'
 p849
-aS'intervals'
+aS'defined'
 p850
-aS'There'
+aS'conditions'
 p851
-aS'There were'
+aS'level'
 p852
-aS'virus HBV'
+aS'NASVAC'
 p853
-aS'individuals'
+aS'allocated'
 p854
-aS'withdrew'
+aS'saline solution'
 p855
-aS'nor'
+aS'saline'
 p856
-aS'responder'
+aS'volume'
 p857
-aS'adverse reactions'
+aS'5ml'
 p858
-aS'symptom'
+aS'B vaccine'
 p859
-aS'were defined'
+aS'per nostril'
 p860
-aS'nasal flu'
+aS'nostril'
 p861
-aS'flu'
+aS'available'
 p862
-aS'HBs titers'
+aS'showing'
 p863
-aS'were reported'
+aS'controlled'
 p864
-aS'gene'
+aS'placebo controlled'
 p865
-aS'temperature'
+aS'male'
 p866
-aS'cell'
+aS'healthy male'
 p867
-aS'following inoculation'
+aS'methods'
 p868
-aS'derived'
+aS'randomly allocated'
 p869
-aS'group withdrew'
+aS'randomly'
 p870
-aS'inoculated'
+aS'were also'
 p871
-aS'needed'
+aS'similar'
 p872
-aS'reaction'
+aS'induction'
 p873
-aS'comprising HBV'
+aS'All subjects'
 p874
-aS'candidate comprising'
+aS'such'
 p875
-aS'demonstration'
+aS'provided'
 p876
-aS'nostril Adverse'
+aS'component'
 p877
-aS'75 All'
+aS'frequent'
 p878
-aS'Adverse reactions'
+aS'cases'
 p879
-aS'titer 10IU'
+aS'measured'
 p880
-aS'titers were'
+aS'medical'
 p881
-aS'dose Anti'
+aS'than 10IU'
 p882
-aS'recorded 1h'
+aS'DC'
 p883
-aS'seronegative during'
+aS'male adults'
 p884
-aS'were all'
+aS'test'
 p885
-aS'remained seronegative'
+aS'Individuals'
 p886
-aS'1h 6h'
+aS'clearly'
 p887
-aS'evaluated using'
+aS'containing'
 p888
-aS'1h'
+aS'Briefly'
 p889
-aS'using corresponding'
+aS'thank'
 p890
-aS'HBc titers'
+aS'seroprotected'
 p891
-aS'corresponding ELISA'
+aS'incubated'
 p892
-aS'schedule while'
+aS'physiologic'
 p893
-aS'while'
+aS'physiologic saline'
 p894
-aS'elicited anti'
+aS'comparison'
 p895
-aS'tolerated Adverse'
+aS'consent'
 p896
-aS'all self'
+aS'informed consent'
 p897
-aS'HBs titer'
+aS'informed'
 p898
-aS'reactions included'
+aS'particle'
 p899
-aS'dosages'
+aS'Recent'
 p900
-aS'9 physiologic'
+aS'tests'
 p901
-aS'surface HBsAg'
+aS'proportional'
 p902
-aS'guidelines'
+aS'conjugate'
 p903
-aS'comprising hepatitis'
+aS'HBc antibodies'
 p904
-aS'blinded placebo'
+aS'purity'
 p905
-aS'recombinant antigens'
+aS'estimated'
 p906
-aS'Practice guidelines'
+aS'Similarly'
 p907
-aS'antigens HBcAg'
+aS'cells'
 p908
-aS'controlled randomized'
+aS'rats'
 p909
-aS'randomized clinical'
+aS'Th'
 p910
-aS'models'
+aS'interaction'
 p911
-aS'Participants ranged'
+aS'nucleic'
 p912
-aS'Clinical'
+aS'neither'
 p913
-aS'candidate NASVAC'
+aS'enzyme'
 p914
-aS'ranged'
+aS'Blood'
 p915
-aS'Practice'
+aS'CIGB Havana'
 p916
-aS'Clinical Practice'
+aS'particulate'
 p917
-aS'guidelines Participants'
+aS'permanent'
 p918
-aS'markers'
+aS'bothersome'
 p919
-aS'HBV recombinant'
+aS'subject'
 p920
-aS'HBV surface'
+aS'Recombinant'
 p921
-aS'NASVAC comprising'
+aS'levels'
 p922
-aS'nature'
+aS'HB'
 p923
-aS'II'
+aS'Heberbiovac HB'
 p924
-aS'protective'
+aS'Heberbiovac'
 p925
-aS'wash samples'
+aS'co administration'
 p926
-aS'protective levels'
+aS'hour'
 p927
-aS'dripping'
+aS'hour after'
 p928
-aS'anterior'
+aS'between vaccine'
 p929
-aS'samples were'
+aS'period'
 p930
-aS'adjuvants'
+aS'rate'
 p931
-aS'Becton'
+aS'HBs antibody'
 p932
-aS'Accuspray Becton'
+aS'antibody levels'
 p933
-aS'Dickinson'
+aS'subtype'
 p934
-aS'Accuspray'
+aS'HBsAg subtype'
 p935
-aS'Becton Dickinson'
+aS'comprising'
 p936
-aS'predominated'
+aS'Local'
 p937
-aS'conducted'
+aS'against HBcAg'
 p938
-aS'effect'
+aS'Local site'
 p939
-aS'length HBcAg'
+aS'site'
 p940
-aS'parenteral'
+aS'through'
 p941
-aS'APCs'
+aS'100IU'
 p942
-aS'collected'
+aS'acute'
 p943
-aS'UMELISA'
+aS'Only'
 p944
-aS'reported during'
+aS'intervals'
 p945
-aS'assay'
+aS'There'
 p946
-aS'nasally'
+aS'There were'
 p947
-aS'were given'
+aS'virus HBV'
 p948
-aS'given'
+aS'individuals'
 p949
-aS'HBc UMELISA'
+aS'withdrew'
 p950
-aS'products'
+aS'nor'
 p951
-aS's exact'
+aS'responder'
 p952
-aS'exact'
+aS'adverse reactions'
 p953
-aS'exact test'
+aS'symptom'
 p954
-aS'immune response'
+aS'were defined'
 p955
-aS'determinants'
+aS'nasal flu'
 p956
-aS'nurse'
+aS'flu'
 p957
-aS'substrate'
+aS'HBs titers'
 p958
-aS'phosphatase'
+aS'were reported'
 p959
-aS'alkaline'
+aS'gene'
 p960
-aS'alkaline phosphatase'
+aS'temperature'
 p961
-aS'symptoms'
+aS'cell'
 p962
-aS'doses were'
+aS'following inoculation'
 p963
-aS'mean anti'
+aS'derived'
 p964
-aS'irritating'
+aS'group withdrew'
 p965
-aS'known'
+aS'inoculated'
 p966
-aS'confidence'
+aS'needed'
 p967
-aS'confidence intervals'
+aS'reaction'
 p968
-aS'intervals were'
+aS'comprising HBV'
 p969
-aS'Individuals were'
+aS'candidate comprising'
 p970
-aS'acids'
+aS'demonstration'
 p971
-aS'events included'
+aS'nostril Adverse'
 p972
-aS'Solicited'
+aS'75 All'
 p973
-aS'immunosorbent'
+aS'Adverse reactions'
 p974
-aS'linked immunosorbent'
+aS'titer 10IU'
 p975
-aS'immunosorbent assay'
+aS'titers were'
 p976
-aS'symptom graded'
+aS'dose Anti'
 p977
-aS'graded'
+aS'recorded 1h'
 p978
-aS'interference'
+aS'seronegative during'
 p979
-aS'frequently'
+aS'were all'
 p980
-aS'more frequently'
+aS'remained seronegative'
 p981
-aS'medical attention'
+aS'1h 6h'
 p982
-aS'require medical'
+aS'evaluated using'
 p983
-aS'may'
+aS'1h'
 p984
-aS'require'
+aS'using corresponding'
 p985
-aS'attention'
+aS'HBc titers'
 p986
-aS'may require'
+aS'corresponding ELISA'
 p987
-aS'reaction category'
+aS'schedule while'
 p988
-aS'category'
+aS'while'
 p989
-aS'state'
+aS'elicited anti'
 p990
-aS'sample size'
+aS'tolerated Adverse'
 p991
-aS'dosages of 125l'
+aS'all self'
 p992
-aS'Th1 response vital'
+aS'HBs titer'
 p993
-aS'cost'
+aS'reactions included'
 p994
-aS'vital'
+aS'dosages'
 p995
-aS'protein in suppressing'
+aS'9 physiologic'
 p996
-aS'125l per'
+aS'surface HBsAg'
 p997
-aS'response vital'
+aS'guidelines'
 p998
-aS'suppressing'
+aS'comprising hepatitis'
 p999
-aS'125l'
+aS'blinded placebo'
 p1000
-aS'development of more'
+aS'recombinant antigens'
 p1001
-aS'limited'
+aS'Practice guidelines'
 p1002
-aS'candidate for nasal'
+aS'antigens HBcAg'
 p1003
-aS'Solicited systemic adverse'
+aS'controlled randomized'
 p1004
-aS'HBcAg over nasally'
+aS'randomized clinical'
 p1005
-aS'seroprotection rate'
+aS'models'
 p1006
-aS'facilities'
+aS'Participants ranged'
 p1007
-aS'randomized placebo'
+aS'Clinical'
 p1008
-aS'hematology tests'
+aS'candidate NASVAC'
 p1009
-aS'annoying may require'
+aS'ranged'
 p1010
-aS'appetite'
+aS'Practice'
 p1011
-aS'appetite nausea vomiting'
+aS'Clinical Practice'
 p1012
-aS'years There'
+aS'guidelines Participants'
 p1013
-aS'five vaccine'
+aS'markers'
 p1014
-aS'group Sneezing'
+aS'HBV recombinant'
 p1015
-aS'spray calcitonin'
+aS'HBV surface'
 p1016
-aS'disability'
+aS'NASVAC comprising'
 p1017
-aS'height between'
+aS'nature'
 p1018
-aS'two participants'
+aS'II'
 p1019
-aS'usual activity'
+aS'protective'
 p1020
-aS'Additionally'
+aS'wash samples'
 p1021
-aS'recording of local'
+aS'protective levels'
 p1022
-aS'within 72hours'
+aS'dripping'
 p1023
-aS'collected at baseline'
+aS'anterior'
 p1024
-aS'risk'
+aS'samples were'
 p1025
-aS'physician'
+aS'adjuvants'
 p1026
-aS'terminal'
+aS'Becton'
 p1027
-aS'dripping nasal stuffiness'
+aS'Accuspray Becton'
 p1028
-aS'induce strong HBV'
+aS'Dickinson'
 p1029
-aS'measured in saliva'
+aS'Accuspray'
 p1030
-aS'ulceration and nasal'
+aS'Becton Dickinson'
 p1031
-aS'viral'
+aS'predominated'
 p1032
-aS'immunization interval'
+aS'conducted'
 p1033
-aS'antibody titer'
+aS'effect'
 p1034
-aS'frequent adverse'
+aS'length HBcAg'
 p1035
-aS'spray at days'
+aS'parenteral'
 p1036
-aS'high mucosal'
+aS'APCs'
 p1037
-aS'observations at 6h'
+aS'collected'
 p1038
-aS'trial corresponding'
+aS'UMELISA'
 p1039
-aS'estimates'
+aS'reported during'
 p1040
-aS'children became'
+aS'assay'
 p1041
-aS'Quality Control CECMED'
+aS'nasally'
 p1042
-aS'subjects having'
+aS'were given'
 p1043
-aS'study indicate'
+aS'given'
 p1044
-aS'even'
+aS'HBc UMELISA'
 p1045
-aS'post inoculation'
+aS'products'
 p1046
-aS'More than 97'
+aS's exact'
 p1047
-aS'HBcAg to act'
+aS'exact'
 p1048
-aS'abnormal baseline biochemistry'
+aS'exact test'
 p1049
-aS'two moderate adverse'
+aS'immune response'
 p1050
-aS'study screening'
+aS'determinants'
 p1051
-aS'18 45 years'
+aS'nurse'
 p1052
-aS'healthy young adults'
+aS'substrate'
 p1053
-aS'chemical and basic'
+aS'phosphatase'
 p1054
-aS'IgA'
+aS'alkaline'
 p1055
-aS'included fever'
+aS'alkaline phosphatase'
 p1056
-aS'center randomized'
+aS'symptoms'
 p1057
-aS'antibodies were'
+aS'doses were'
 p1058
-aS'behavioural changes'
+aS'mean anti'
 p1059
-aS'use Nasal'
+aS'irritating'
 p1060
-aS'frequency of sneezing'
+aS'known'
 p1061
-aS'more immunogenic'
+aS'confidence'
 p1062
-aS'approximately 5 10'
+aS'confidence intervals'
 p1063
-aS'analysis Further'
+aS'intervals were'
 p1064
-aS'cutaneous rash Information'
+aS'Individuals were'
 p1065
-aS'protection'
+aS'acids'
 p1066
-aS'enough to elicit'
+aS'events included'
 p1067
-aS'active'
+aS'Solicited'
 p1068
-aS'human sera Briefly'
+aS'immunosorbent'
 p1069
-aS'behavioral risk'
+aS'linked immunosorbent'
 p1070
-aS'formulation consisting'
+aS'immunosorbent assay'
 p1071
-aS'irritating potential acute'
+aS'symptom graded'
 p1072
-aS'reports'
+aS'graded'
 p1073
-aS'Hospital Havana Cuba'
+aS'interference'
 p1074
-aS'taking into consideration'
+aS'frequently'
 p1075
-aS'were kept under'
+aS'more frequently'
 p1076
-aS'Sera with undetectable'
+aS'medical attention'
 p1077
-aS'Recombinant HBsAg reacts'
+aS'require medical'
 p1078
-aS'changes'
+aS'may'
 p1079
-aS'antibody levels were'
+aS'require'
 p1080
-aS'antibody were'
+aS'attention'
 p1081
-aS'explained'
+aS'may require'
 p1082
-aS'recipients at day'
+aS'reaction category'
 p1083
-aS'levels and 95'
+aS'category'
 p1084
-aS'significantly higher'
+aS'state'
 p1085
-aS'study vaccines'
+aS'sample size'
 p1086
-aS'CTL'
+aS'dosages of 125l'
 p1087
-aS'Individuals were excluded'
+aS'Th1 response vital'
 p1088
-aS'moderate or severe'
+aS'cost'
 p1089
-aS'other nasal vaccines'
+aS'vital'
 p1090
-aS'specific helper'
+aS'protein in suppressing'
 p1091
-aS'nasal itching palate'
+aS'125l per'
 p1092
-aS'hospital'
+aS'response vital'
 p1093
-aS'used in specific'
+aS'suppressing'
 p1094
-aS'sampling including antigen'
+aS'125l'
 p1095
-aS'tabulated'
+aS'development of more'
 p1096
-aS'formulation Sterile physiologic'
+aS'limited'
 p1097
-aS'nasally administered drugs'
+aS'candidate for nasal'
 p1098
-aS'125 l per'
+aS'Solicited systemic adverse'
 p1099
-aS'therefore'
+aS'HBcAg over nasally'
 p1100
-aS'Preclinical studies'
+aS'seroprotection rate'
 p1101
-aS'against HBV nucleocapsid'
+aS'facilities'
 p1102
-aS'aware'
+aS'randomized placebo'
 p1103
-aS'98'
+aS'hematology tests'
 p1104
-aS'muscle aches decreased'
+aS'annoying may require'
 p1105
-aS'populations DC'
+aS'appetite'
 p1106
-aS'Blood saliva'
+aS'appetite nausea vomiting'
 p1107
-aS'most commonly reported'
+aS'years There'
 p1108
-aS'administration also allows'
+aS'five vaccine'
 p1109
-aS'97'
+aS'group Sneezing'
 p1110
-aS'All sera'
+aS'spray calcitonin'
 p1111
-aS'HBeAg'
+aS'disability'
 p1112
-aS'race predominated'
+aS'height between'
 p1113
-aS'adverse event profile'
+aS'two participants'
 p1114
-aS'anti HBV vaccine'
+aS'usual activity'
 p1115
-aS'mm'
+aS'Additionally'
 p1116
-aS'corresponding to headache'
+aS'recording of local'
 p1117
-aS'phase monoclonal'
+aS'within 72hours'
 p1118
-aS'levels were expressed'
+aS'collected at baseline'
 p1119
-aS'seroconversion against HBcAg'
+aS'risk'
 p1120
-aS'6h and 12h'
+aS'physician'
 p1121
-aS'All aspects'
+aS'terminal'
 p1122
-aS'9 Only'
+aS'dripping nasal stuffiness'
 p1123
-aS'HBs titers around'
+aS'induce strong HBV'
 p1124
-aS'indicated'
+aS'measured in saliva'
 p1125
-aS'HBc specific Th'
+aS'ulceration and nasal'
 p1126
-aS'were assigned'
+aS'viral'
 p1127
-aS'period following'
+aS'immunization interval'
 p1128
-aS'persistently abnormal'
+aS'antibody titer'
 p1129
-aS'commercial ultramicroanalytic'
+aS'frequent adverse'
 p1130
-aS'blood mononuclear cells'
+aS'spray at days'
 p1131
-aS'were classified'
+aS'high mucosal'
 p1132
-aS'diseases immunosuppressive disorders'
+aS'observations at 6h'
 p1133
-aS'immunization Solicited'
+aS'trial corresponding'
 p1134
-aS'subtype CIGB Havana'
+aS'estimates'
 p1135
-aS'competitive sequential immunoenzymatic'
+aS'children became'
 p1136
-aS'vital for viral'
+aS'Quality Control CECMED'
 p1137
-aS'HBs anti HBc'
+aS'subjects having'
 p1138
-aS'acemannan'
+aS'study indicate'
 p1139
-aS'severe adverse'
+aS'even'
 p1140
-aS'wash samples All'
+aS'post inoculation'
 p1141
-aS'HBs antibody level'
+aS'More than 97'
 p1142
-aS'were monitored'
+aS'HBcAg to act'
 p1143
-aS'block antigenic'
+aS'abnormal baseline biochemistry'
 p1144
-aS'high responders'
+aS'two moderate adverse'
 p1145
-aS'22nm particle'
+aS'study screening'
 p1146
-aS'dose of 50'
+aS'18 45 years'
 p1147
-aS'polymerase'
+aS'healthy young adults'
 p1148
-aS'43 subjects signed'
+aS'chemical and basic'
 p1149
-aS'events were monitored'
+aS'IgA'
 p1150
-aS'multiple comparisons Geometric'
+aS'included fever'
 p1151
-aS'only 30 days'
+aS'center randomized'
 p1152
-aS'methods Concurrent comparison'
+aS'antibodies were'
 p1153
-aS'Genbank accession number'
+aS'behavioural changes'
 p1154
-aS'device Accuspray'
+aS'use Nasal'
 p1155
-aS'percentage anti'
+aS'frequency of sneezing'
 p1156
-aS'group with approximately'
+aS'more immunogenic'
 p1157
-aS'found in participants'
+aS'approximately 5 10'
 p1158
-aS'were seronegative'
+aS'analysis Further'
 p1159
-aS'usual activity frequent'
+aS'cutaneous rash Information'
 p1160
-aS'seroconversion for anti'
+aS'protection'
 p1161
-aS'UMELISA Immunoassay'
+aS'enough to elicit'
 p1162
-aS'vaccine doses were'
+aS'active'
 p1163
-aS'both antigens Rates'
+aS'human sera Briefly'
 p1164
-aS'vaccines currently licensed'
+aS'behavioral risk'
 p1165
-aS'chronically'
+aS'formulation consisting'
 p1166
-aS'before'
+aS'irritating potential acute'
 p1167
-aS'use Nasal spray'
+aS'reports'
 p1168
-aS'sequential'
+aS'Hospital Havana Cuba'
 p1169
-aS'T lymphocytes CTL'
+aS'taking into consideration'
 p1170
-aS'randomized placebo controlled'
+aS'were kept under'
 p1171
-aS'production'
+aS'Sera with undetectable'
 p1172
-aS'nasal mucosa septum'
+aS'Recombinant HBsAg reacts'
 p1173
-aS'Health Organization standard'
+aS'changes'
 p1174
-aS'400'
+aS'antibody levels were'
 p1175
-aS'methodologies for mucosal'
+aS'antibody were'
 p1176
-aS'contained 0 6ml'
+aS'explained'
 p1177
-aS'overcome'
+aS'recipients at day'
 p1178
-aS'lymphocytes CTL level'
+aS'levels and 95'
 p1179
-aS'antigenic determinants'
+aS'significantly higher'
 p1180
-aS'other symptom'
+aS'study vaccines'
 p1181
-aS'diseases'
+aS'CTL'
 p1182
-aS'minimum ensured'
+aS'Individuals were excluded'
 p1183
-aS'immunoenzymatic'
+aS'moderate or severe'
 p1184
-aS'sequential immunoenzymatic assay'
+aS'other nasal vaccines'
 p1185
-aS'break'
+aS'specific helper'
 p1186
-aS'inoculation under'
+aS'nasal itching palate'
 p1187
-aS'first hour'
+aS'hospital'
 p1188
-aS'plates'
+aS'used in specific'
 p1189
-aS'immunogen'
+aS'sampling including antigen'
 p1190
-aS'commercial anti HBV'
+aS'tabulated'
 p1191
-aS'Control'
+aS'formulation Sterile physiologic'
 p1192
-aS'achieve protective'
+aS'nasally administered drugs'
 p1193
-aS'entire core'
+aS'125 l per'
 p1194
-aS'reasonably'
+aS'therefore'
 p1195
-aS'classified'
+aS'Preclinical studies'
 p1196
-aS'77 recorded adverse'
+aS'against HBV nucleocapsid'
 p1197
-aS'existing antibody against'
+aS'aware'
 p1198
-aS'conjugate anti HBs'
+aS'98'
 p1199
-aS'under routine use'
+aS'muscle aches decreased'
 p1200
-aS'thin cytoplasm'
+aS'populations DC'
 p1201
-aS'nasal adverse reactions'
+aS'Blood saliva'
 p1202
-aS'commercial anti HBs'
+aS'most commonly reported'
 p1203
-aS'per well coated'
+aS'administration also allows'
 p1204
-aS'side'
+aS'97'
 p1205
-aS'clinically apparent'
+aS'All sera'
 p1206
-aS'periodical examinations'
+aS'HBeAg'
 p1207
-aS'vaccine group reported'
+aS'race predominated'
 p1208
-aS'surface M cell'
+aS'adverse event profile'
 p1209
-aS'toxicology or otorhinolaryngology'
+aS'anti HBV vaccine'
 p1210
-aS'nostril were given'
+aS'mm'
 p1211
-aS'very distressing interference'
+aS'corresponding to headache'
 p1212
-aS'glycosylated'
+aS'phase monoclonal'
 p1213
-aS'bleeding Solicited'
+aS'levels were expressed'
 p1214
-aS'device Accuspray Becton'
+aS'seroconversion against HBcAg'
 p1215
-aS'seroprotective response'
+aS'6h and 12h'
 p1216
-aS'substantially'
+aS'All aspects'
 p1217
-aS'preliminary'
+aS'9 Only'
 p1218
-aS'higher than 10IU'
+aS'HBs titers around'
 p1219
-aS'network'
+aS'indicated'
 p1220
-aS'prophylactic vaccines'
+aS'HBc specific Th'
 p1221
-aS'characteristic'
+aS'were assigned'
 p1222
-aS'reported more'
+aS'period following'
 p1223
-aS'high responders anti'
+aS'persistently abnormal'
 p1224
-aS'medicine'
+aS'commercial ultramicroanalytic'
 p1225
-aS'Toxicology CENATOX'
+aS'blood mononuclear cells'
 p1226
-aS'vaccine antigens'
+aS'were classified'
 p1227
-aS'screening at day'
+aS'diseases immunosuppressive disorders'
 p1228
-aS'route showing'
+aS'immunization Solicited'
 p1229
-aS'anti HBs anti'
+aS'subtype CIGB Havana'
 p1230
-aS'Conversely patients resolving'
+aS'competitive sequential immunoenzymatic'
 p1231
-aS'site adverse'
+aS'vital for viral'
 p1232
-aS'monoclonal antibodies'
+aS'HBs anti HBc'
 p1233
-aS'day period following'
+aS'acemannan'
 p1234
-aS'B infection'
+aS'severe adverse'
 p1235
-aS'cirrhosis'
+aS'wash samples All'
 p1236
-aS'Concurrent comparison'
+aS'HBs antibody level'
 p1237
-aS'participants prior'
+aS'were monitored'
 p1238
-aS'toxicity and local'
+aS'block antigenic'
 p1239
-aS'HBc seroconversion after'
+aS'high responders'
 p1240
-aS'detecting'
+aS'22nm particle'
 p1241
-aS'were made'
+aS'dose of 50'
 p1242
-aS'Sneezing palate itching'
+aS'polymerase'
 p1243
-aS'chronic diseases immunosuppressive'
+aS'43 subjects signed'
 p1244
-aS'showed seroconversion'
+aS'events were monitored'
 p1245
-aS'study after obtaining'
+aS'multiple comparisons Geometric'
 p1246
-aS'had clinically'
+aS'only 30 days'
 p1247
-aS'hematological parameters'
+aS'methods Concurrent comparison'
 p1248
-aS'inoculation Adverse'
+aS'Genbank accession number'
 p1249
-aS'long term consequences'
+aS'device Accuspray'
 p1250
-aS'CENATOX and Carlos'
+aS'percentage anti'
 p1251
-aS'doses were needed'
+aS'group with approximately'
 p1252
-aS'mucosa septum'
+aS'found in participants'
 p1253
-aS'were combined'
+aS'were seronegative'
 p1254
-aS'persistently abnormal baseline'
+aS'usual activity frequent'
 p1255
-aS'sensitivity Similarly further'
+aS'seroconversion for anti'
 p1256
-aS'resolving spontaneously'
+aS'UMELISA Immunoassay'
 p1257
-aS'signs nor behavioural'
+aS'vaccine doses were'
 p1258
-aS'computer generated list'
+aS'both antigens Rates'
 p1259
-aS'HBc antibody'
+aS'vaccines currently licensed'
 p1260
-aS'observations'
+aS'chronically'
 p1261
-aS'addition to self'
+aS'before'
 p1262
-aS'HBsAgHBcAg'
+aS'use Nasal spray'
 p1263
-aS'percentage'
+aS'sequential'
 p1264
-aS'recent'
+aS'T lymphocytes CTL'
 p1265
-aS'Anti HBc antibody'
+aS'randomized placebo controlled'
 p1266
-aS'percentages were compared'
+aS'production'
 p1267
-aS'72h following'
+aS'nasal mucosa septum'
 p1268
-aS'potential acute toxicity'
+aS'Health Organization standard'
 p1269
-aS'HBsAg and 50g'
+aS'400'
 p1270
-aS'there were more'
+aS'methodologies for mucosal'
 p1271
-aS'other investigators'
+aS'contained 0 6ml'
 p1272
-aS'abnormalities in blood'
+aS'overcome'
 p1273
-aS'HBs 10'
+aS'lymphocytes CTL level'
 p1274
-aS'vaccine using'
+aS'antigenic determinants'
 p1275
-aS'likely'
+aS'other symptom'
 p1276
-aS'incubated with natural'
+aS'diseases'
 p1277
-aS'sampling including'
+aS'minimum ensured'
 p1278
-aS'were mostly reported'
+aS'immunoenzymatic'
 p1279
-aS'plasmid'
+aS'sequential immunoenzymatic assay'
 p1280
-aS'antigen presenting cells'
+aS'break'
 p1281
-aS'intervals were estimated'
+aS'inoculation under'
 p1282
-aS'enables'
+aS'first hour'
 p1283
-aS'inoculation of any'
+aS'plates'
 p1284
-aS'modulatory'
+aS'immunogen'
 p1285
-aS'clinical situation'
+aS'commercial anti HBV'
 p1286
-aS'fashion'
+aS'Control'
 p1287
-aS'group Individuals'
+aS'achieve protective'
 p1288
-aS'levels against HBsAg'
+aS'entire core'
 p1289
-aS'renal dialysis patients'
+aS'reasonably'
 p1290
-aS'clinical chemistries'
+aS'classified'
 p1291
-aS'adverse events reported'
+aS'77 recorded adverse'
 p1292
-aS'collected and categorized'
+aS'existing antibody against'
 p1293
-aS'populations DC Additionally'
+aS'conjugate anti HBs'
 p1294
-aS'time intervals'
+aS'under routine use'
 p1295
-aS'same time'
+aS'thin cytoplasm'
 p1296
-aS'72h after inoculation'
+aS'nasal adverse reactions'
 p1297
-aS'Center Havana'
+aS'commercial anti HBs'
 p1298
-aS'Briefly UMELISA plates'
+aS'per well coated'
 p1299
-aS'infection Conversely patients'
+aS'side'
 p1300
-aS'Conversely patients'
+aS'clinically apparent'
 p1301
-aS'nasal formulation'
+aS'periodical examinations'
 p1302
-aS'access Furthermore'
+aS'vaccine group reported'
 p1303
-aS'month after'
+aS'surface M cell'
 p1304
-aS'consequences of chronic'
+aS'toxicology or otorhinolaryngology'
 p1305
-aS'subtype obtained'
+aS'nostril were given'
 p1306
-aS'Nasal spray devices'
+aS'very distressing interference'
 p1307
-aS'continuous'
+aS'glycosylated'
 p1308
-aS'estimate each rate'
+aS'bleeding Solicited'
 p1309
-aS'immunization schedule Following'
+aS'device Accuspray Becton'
 p1310
-aS'any other symptom'
+aS'seroprotective response'
 p1311
-aS'well known nasally'
+aS'substantially'
 p1312
-aS'mouth'
+aS'preliminary'
 p1313
-aS'Two applications per'
+aS'higher than 10IU'
 p1314
-aS'Nine participants'
+aS'network'
 p1315
-aS'immunogenicity profile Recent'
+aS'prophylactic vaccines'
 p1316
-aS'remaining determinants'
+aS'characteristic'
 p1317
-aS'experiments in mice'
+aS'reported more'
 p1318
-aS'young adults'
+aS'high responders anti'
 p1319
-aS'nucleocapsid'
+aS'medicine'
 p1320
-aS'age weight'
+aS'Toxicology CENATOX'
 p1321
-aS'potential therapeutic'
+aS'vaccine antigens'
 p1322
-aS'principle'
+aS'screening at day'
 p1323
-aS'75 seroprotection'
+aS'route showing'
 p1324
-aS'72hours following inoculation'
+aS'anti HBs anti'
 p1325
-aS'order to optimize'
+aS'Conversely patients resolving'
 p1326
-aS'came'
+aS'site adverse'
 p1327
-aS'per well'
+aS'monoclonal antibodies'
 p1328
-aS'Nasal administration also'
+aS'day period following'
 p1329
-aS'value 0 05'
+aS'B infection'
 p1330
-aS'chills headache'
+aS'cirrhosis'
 p1331
-aS'studies in mice'
+aS'Concurrent comparison'
 p1332
-aS'activity frequent'
+aS'participants prior'
 p1333
-aS'measurement of serum'
+aS'toxicity and local'
 p1334
-aS'events between'
+aS'HBc seroconversion after'
 p1335
-aS'effects underlines'
+aS'detecting'
 p1336
-aS'existing antibody'
+aS'were made'
 p1337
-aS'intranasal vaccine'
+aS'Sneezing palate itching'
 p1338
-aS'devices Accuspray'
+aS'chronic diseases immunosuppressive'
 p1339
-aS'5ml Participants'
+aS'showed seroconversion'
 p1340
-aS'90 days'
+aS'study after obtaining'
 p1341
-aS'range 18 45'
+aS'had clinically'
 p1342
-aS'placebo study'
+aS'hematological parameters'
 p1343
-aS'combined prophylactic vaccines'
+aS'inoculation Adverse'
 p1344
-aS'aches decreased'
+aS'long term consequences'
 p1345
-aS'Volunteers were'
+aS'CENATOX and Carlos'
 p1346
-aS'Preclinical mouse studies'
+aS'doses were needed'
 p1347
-aS'natural HBsAg'
+aS'mucosa septum'
 p1348
-aS'immune compromised hosts'
+aS'were combined'
 p1349
-aS'rabbit anti HBc'
+aS'persistently abnormal baseline'
 p1350
-aS'nasal adverse events'
+aS'sensitivity Similarly further'
 p1351
-aS'three doses were'
+aS'resolving spontaneously'
 p1352
-aS'15 minutes apart'
+aS'signs nor behavioural'
 p1353
-aS'pocket'
+aS'computer generated list'
 p1354
-aS'severity mild moderate'
+aS'HBc antibody'
 p1355
-aS'polymerase and envelope'
+aS'observations'
 p1356
-aS'antibodies were measured'
+aS'addition to self'
 p1357
-aS'report'
+aS'HBsAgHBcAg'
 p1358
-aS'50g HBcAg'
+aS'percentage'
 p1359
-aS'devices still need'
+aS'recent'
 p1360
-aS'infrequent'
+aS'Anti HBc antibody'
 p1361
-aS'were instructed'
+aS'percentages were compared'
 p1362
-aS'microscopy'
+aS'72h following'
 p1363
-aS'consisting'
+aS'potential acute toxicity'
 p1364
-aS'through novel'
+aS'HBsAg and 50g'
 p1365
-aS'mouth Two'
+aS'there were more'
 p1366
-aS'local damage'
+aS'other investigators'
 p1367
-aS'adverse events predominated'
+aS'abnormalities in blood'
 p1368
-aS'study products were'
+aS'HBs 10'
 p1369
-aS'Nine participants received'
+aS'vaccine using'
 p1370
-aS'100 showed seroconversion'
+aS'likely'
 p1371
-aS'experiments conducted'
+aS'incubated with natural'
 p1372
-aS'treatment display'
+aS'sampling including'
 p1373
-aS'peripheral'
+aS'were mostly reported'
 p1374
-aS'core antigen'
+aS'plasmid'
 p1375
-aS'alterations'
+aS'antigen presenting cells'
 p1376
-aS'dendritic cell'
+aS'intervals were estimated'
 p1377
-aS'patients with self'
+aS'enables'
 p1378
-aS'result'
+aS'inoculation of any'
 p1379
-aS'access very specialized'
+aS'modulatory'
 p1380
-aS'total of two'
+aS'clinical situation'
 p1381
-aS'virus HBV worldwide'
+aS'fashion'
 p1382
-aS'blood samples were'
+aS'group Individuals'
 p1383
-aS'other particulate'
+aS'levels against HBsAg'
 p1384
-aS'immunization interval protocol'
+aS'renal dialysis patients'
 p1385
-aS'500DC'
+aS'clinical chemistries'
 p1386
-aS'frequent and annoying'
+aS'adverse events reported'
 p1387
-aS'applications per nostril'
+aS'collected and categorized'
 p1388
-aS'weak HBV'
+aS'populations DC Additionally'
 p1389
-aS'05'
+aS'time intervals'
 p1390
-aS'IU l according'
+aS'same time'
 p1391
-aS'also likely'
+aS'72h after inoculation'
 p1392
-aS'core antigen gene'
+aS'Center Havana'
 p1393
-aS'completion'
+aS'Briefly UMELISA plates'
 p1394
-aS'protected'
+aS'infection Conversely patients'
 p1395
-aS'older individuals'
+aS'Conversely patients'
 p1396
-aS'tolerance'
+aS'nasal formulation'
 p1397
-aS'Clinically significant events'
+aS'access Furthermore'
 p1398
-aS'HBcAg molecule'
+aS'month after'
 p1399
-aS'were closely'
+aS'consequences of chronic'
 p1400
-aS'glycosylated form'
+aS'subtype obtained'
 p1401
-aS'terms'
+aS'Nasal spray devices'
 p1402
-aS'g derived'
+aS'continuous'
 p1403
-aS'visualization'
+aS'estimate each rate'
 p1404
-aS'weak'
+aS'immunization schedule Following'
 p1405
-aS'patients resolving acute'
+aS'any other symptom'
 p1406
-aS'combined prophylactic'
+aS'well known nasally'
 p1407
-aS'per nostril were'
+aS'mouth'
 p1408
-aS'combined HBsAg'
+aS'Two applications per'
 p1409
-aS'local and systemic'
+aS'Nine participants'
 p1410
-aS'sterile conditions'
+aS'immunogenicity profile Recent'
 p1411
-aS'cells PBMCs'
+aS'remaining determinants'
 p1412
-aS'medication prior inoculation'
+aS'experiments in mice'
 p1413
-aS'decreased appetite'
+aS'young adults'
 p1414
-aS'adults Local'
+aS'nucleocapsid'
 p1415
-aS'tests against'
+aS'age weight'
 p1416
-aS'commercial recombinant'
+aS'potential therapeutic'
 p1417
-aS'up to 71'
+aS'principle'
 p1418
-aS'were not involved'
+aS'75 seroprotection'
 p1419
-aS'nasal dripping nasal'
+aS'72hours following inoculation'
 p1420
-aS'basis but adverse'
+aS'order to optimize'
 p1421
-aS'made for multiple'
+aS'came'
 p1422
-aS'any symptom graded'
+aS'per well'
 p1423
-aS'activity on co'
+aS'Nasal administration also'
 p1424
-aS'reach 75 seroprotection'
+aS'value 0 05'
 p1425
-aS'reagents 10'
+aS'chills headache'
 p1426
-aS'flu or other'
+aS'studies in mice'
 p1427
-aS'revealed by EM'
+aS'activity frequent'
 p1428
-aS'well tolerated safe'
+aS'measurement of serum'
 p1429
-aS'virus after treatment'
+aS'events between'
 p1430
-aS'10IU l seroprotection'
+aS'effects underlines'
 p1431
-aS'height'
+aS'existing antibody'
 p1432
-aS'frequently reported among'
+aS'intranasal vaccine'
 p1433
-aS'Board'
+aS'devices Accuspray'
 p1434
-aS'Samples'
+aS'5ml Participants'
 p1435
-aS'international units per'
+aS'90 days'
 p1436
-aS'inflammatory analgesics'
+aS'range 18 45'
 p1437
-aS'specific post'
+aS'placebo study'
 p1438
-aS'vessel status after'
+aS'combined prophylactic vaccines'
 p1439
-aS'fluorigenic'
+aS'aches decreased'
 p1440
-aS'vaccine formulation Sterile'
+aS'Volunteers were'
 p1441
-aS'basis'
+aS'Preclinical mouse studies'
 p1442
-aS'three'
+aS'natural HBsAg'
 p1443
-aS'5 10'
+aS'immune compromised hosts'
 p1444
-aS'severe adverse event'
+aS'rabbit anti HBc'
 p1445
-aS'acids bound'
+aS'nasal adverse events'
 p1446
-aS'formulation and devices'
+aS'three doses were'
 p1447
-aS'same typical'
+aS'15 minutes apart'
 p1448
-aS'type of cytokine'
+aS'pocket'
 p1449
-aS'life'
+aS'severity mild moderate'
 p1450
-aS'hospitalization'
+aS'polymerase and envelope'
 p1451
-aS'efficacy'
+aS'antibodies were measured'
 p1452
-aS'drugs'
+aS'report'
 p1453
-aS'participants were seronegative'
+aS'50g HBcAg'
 p1454
-aS'adverse effects'
+aS'devices still need'
 p1455
-aS'nasal drug'
+aS'infrequent'
 p1456
-aS'hepatitis B infection'
+aS'were instructed'
 p1457
-aS'exception'
+aS'microscopy'
 p1458
-aS'acceptable local adverse'
+aS'consisting'
 p1459
-aS'Recombinant HBsAg'
+aS'through novel'
 p1460
-aS'seroprotection with respect'
+aS'mouth Two'
 p1461
-aS'events predominated over'
+aS'local damage'
 p1462
-aS'titers against'
+aS'adverse events predominated'
 p1463
-aS'spontaneously'
+aS'study products were'
 p1464
-aS'cause interference'
+aS'Nine participants received'
 p1465
-aS'other reactions'
+aS'100 showed seroconversion'
 p1466
-aS'years of age'
+aS'experiments conducted'
 p1467
-aS'procedure'
+aS'treatment display'
 p1468
-aS'life threatening'
+aS'peripheral'
 p1469
-aS'HBcAg as vaccine'
+aS'core antigen'
 p1470
-aS'Sterile physiologic'
+aS'alterations'
 p1471
-aS'e g acemannan'
+aS'dendritic cell'
 p1472
-aS'Among'
+aS'patients with self'
 p1473
-aS'subjects were classified'
+aS'result'
 p1474
-aS'impact of HBcAg'
+aS'access very specialized'
 p1475
-aS'characterize'
+aS'total of two'
 p1476
-aS'category and all'
+aS'virus HBV worldwide'
 p1477
-aS'kind of vaccine'
+aS'blood samples were'
 p1478
-aS'vaccine candidate were'
+aS'other particulate'
 p1479
-aS'Nasal spray'
+aS'immunization interval protocol'
 p1480
-aS'mouse'
+aS'500DC'
 p1481
-aS'l low responders'
+aS'frequent and annoying'
 p1482
-aS'immunogenicity studies'
+aS'applications per nostril'
 p1483
-aS'reported more frequently'
+aS'weak HBV'
 p1484
-aS'resolving acute hepatitis'
+aS'05'
 p1485
-aS'cellular responses'
+aS'IU l according'
 p1486
-aS'reports came'
+aS'also likely'
 p1487
-aS'HBs alkaline'
+aS'core antigen gene'
 p1488
-aS'also no clinically'
+aS'completion'
 p1489
-aS'adults between'
+aS'protected'
 p1490
-aS'response in mice'
+aS'older individuals'
 p1491
-aS'serum clinical chemistry'
+aS'tolerance'
 p1492
-aS'vaccine candidate showed'
+aS'Clinically significant events'
 p1493
-aS'day 30 one'
+aS'HBcAg molecule'
 p1494
-aS'independent'
+aS'were closely'
 p1495
-aS'Genbank accession'
+aS'glycosylated form'
 p1496
-aS'double blinded study'
+aS'terms'
 p1497
-aS'formal hypothesis'
+aS'g derived'
 p1498
-aS'possible'
+aS'visualization'
 p1499
-aS'60 days All'
+aS'weak'
 p1500
-aS'nucleocapsid polymerase'
+aS'patients resolving acute'
 p1501
-aS'co administered'
+aS'combined prophylactic'
 p1502
-aS'All study products'
+aS'per nostril were'
 p1503
-aS'antibodies in human'
+aS'combined HBsAg'
 p1504
-aS'Solicited adverse'
+aS'local and systemic'
 p1505
-aS'compared'
+aS'sterile conditions'
 p1506
-aS'adults between 18'
+aS'cells PBMCs'
 p1507
-aS'kept'
+aS'medication prior inoculation'
 p1508
-aS'scenario'
+aS'decreased appetite'
 p1509
-aS'l All'
+aS'adults Local'
 p1510
-aS'HBV worldwide'
+aS'tests against'
 p1511
-aS'aqueous and transparent'
+aS'commercial recombinant'
 p1512
-aS'contact'
+aS'up to 71'
 p1513
-aS'otorhinolaryngologist examination'
+aS'were not involved'
 p1514
-aS'were more than'
+aS'nasal dripping nasal'
 p1515
-aS'phase monoclonal antibodies'
+aS'basis but adverse'
 p1516
-aS'efficacy of antiviral'
+aS'made for multiple'
 p1517
-aS'diarrhea'
+aS'any symptom graded'
 p1518
-aS'days and 90'
+aS'activity on co'
 p1519
-aS'biochemistry or hematology'
+aS'reach 75 seroprotection'
 p1520
-aS'inversely'
+aS'reagents 10'
 p1521
-aS'0 73'
+aS'flu or other'
 p1522
-aS'protocol'
+aS'revealed by EM'
 p1523
-aS'active immunotherapy'
+aS'well tolerated safe'
 p1524
-aS'third vaccine'
+aS'virus after treatment'
 p1525
-aS'Serious'
+aS'10IU l seroprotection'
 p1526
-aS'l according'
+aS'height'
 p1527
-aS'same time intervals'
+aS'frequently reported among'
 p1528
-aS'l Although anti'
+aS'Board'
 p1529
-aS'HBs antibodies were'
+aS'Samples'
 p1530
-aS'cell populations'
+aS'international units per'
 p1531
-aS'Genbank'
+aS'inflammatory analgesics'
 p1532
-aS'ability of HBcAg'
+aS'specific post'
 p1533
-aS'10 l based'
+aS'vessel status after'
 p1534
-aS'2 6 13'
+aS'fluorigenic'
 p1535
-aS'previous'
+aS'vaccine formulation Sterile'
 p1536
-aS'professional antigen presenting'
+aS'basis'
 p1537
-aS'HBs 100IU'
+aS'three'
 p1538
-aS'antigens NASVAC'
+aS'5 10'
 p1539
-aS'impaired T cell'
+aS'severe adverse event'
 p1540
-aS'devices still'
+aS'acids bound'
 p1541
-aS'0 9 sterile'
+aS'formulation and devices'
 p1542
-aS'other licensed'
+aS'same typical'
 p1543
-aS'transformed'
+aS'type of cytokine'
 p1544
-aS'access very'
+aS'life'
 p1545
-aS'evidenced'
+aS'hospitalization'
 p1546
-aS'any general'
+aS'efficacy'
 p1547
-aS'drug behavioral'
+aS'drugs'
 p1548
-aS'8 general malaise'
+aS'participants were seronegative'
 p1549
-aS'advances'
+aS'adverse effects'
 p1550
-aS'Clinically significant'
+aS'nasal drug'
 p1551
-aS'weight and height'
+aS'hepatitis B infection'
 p1552
-aS'neither clinical adverse'
+aS'exception'
 p1553
-aS'screening reasons'
+aS'acceptable local adverse'
 p1554
-aS'Induction of immunity'
+aS'Recombinant HBsAg'
 p1555
-aS'expiration through'
+aS'seroprotection with respect'
 p1556
-aS'C terminal'
+aS'events predominated over'
 p1557
-aS'considered hyper responders'
+aS'titers against'
 p1558
-aS'All study'
+aS'spontaneously'
 p1559
-aS'borosilicate 2R'
+aS'cause interference'
 p1560
-aS'apart'
+aS'other reactions'
 p1561
-aS'volunteers were'
+aS'years of age'
 p1562
-aS'59'
+aS'procedure'
 p1563
-aS'dosages of 125'
+aS'life threatening'
 p1564
-aS'Also'
+aS'HBcAg as vaccine'
 p1565
-aS'were registered'
+aS'Sterile physiologic'
 p1566
-aS'comparability'
+aS'e g acemannan'
 p1567
-aS'informative'
+aS'Among'
 p1568
-aS'immunosuppressive'
+aS'subjects were classified'
 p1569
-aS'rats revealed'
+aS'impact of HBcAg'
 p1570
-aS'measured by commercial'
+aS'characterize'
 p1571
-aS'titers against HBsAg'
+aS'category and all'
 p1572
-aS'improved in terms'
+aS'kind of vaccine'
 p1573
-aS'nasal administration'
+aS'vaccine candidate were'
 p1574
-aS'buffer without any'
+aS'Nasal spray'
 p1575
-aS'million carriers'
+aS'mouse'
 p1576
-aS'responses in mice'
+aS'l low responders'
 p1577
-aS'had abnormalities'
+aS'immunogenicity studies'
 p1578
-aS'blood vessel status'
+aS'reported more frequently'
 p1579
-aS'antibodies No volunteers'
+aS'resolving acute hepatitis'
 p1580
-aS'fifth vaccine'
+aS'cellular responses'
 p1581
-aS'single otorhinolaryngologist'
+aS'reports came'
 p1582
-aS'HBsAg subtype obtained'
+aS'HBs alkaline'
 p1583
-aS'were excluded'
+aS'also no clinically'
 p1584
-aS'received either'
+aS'adults between'
 p1585
-aS'2 whereas systemic'
+aS'response in mice'
 p1586
-aS'antigen gene under'
+aS'serum clinical chemistry'
 p1587
-aS'Solicited systemic'
+aS'vaccine candidate showed'
 p1588
-aS'HBsAg and antibody'
+aS'day 30 one'
 p1589
-aS'comments'
+aS'independent'
 p1590
-aS'seroprotection percentage'
+aS'Genbank accession'
 p1591
-aS'acknowledge Enrique Iglesias'
+aS'double blinded study'
 p1592
-aS'participants were randomized'
+aS'formal hypothesis'
 p1593
-aS'reasons for screen'
+aS'possible'
 p1594
-aS'nasal vaccines'
+aS'60 days All'
 p1595
-aS'HBV nucleocapsid'
+aS'nucleocapsid polymerase'
 p1596
-aS'recorded by study'
+aS'co administered'
 p1597
-aS'race predominated during'
+aS'All study products'
 p1598
-aS'responders to licensed'
+aS'antibodies in human'
 p1599
-aS'vaccines plant'
+aS'Solicited adverse'
 p1600
-aS'seroprotection over'
+aS'compared'
 p1601
-aS'Further'
+aS'adults between 18'
 p1602
-aS'highest frequency'
+aS'kept'
 p1603
-aS'healthy male adult'
+aS'scenario'
 p1604
-aS's visits'
+aS'l All'
 p1605
-aS'study were similar'
+aS'HBV worldwide'
 p1606
-aS'presence of nucleic'
+aS'aqueous and transparent'
 p1607
-aS'activator enabling'
+aS'contact'
 p1608
-aS'need for development'
+aS'otorhinolaryngologist examination'
 p1609
-aS'months'
+aS'were more than'
 p1610
-aS'nasal dripping'
+aS'phase monoclonal antibodies'
 p1611
-aS'system Adverse events'
+aS'efficacy of antiviral'
 p1612
-aS'staff or volunteers'
+aS'diarrhea'
 p1613
-aS'reported by other'
+aS'days and 90'
 p1614
-aS'anti HBs antibodies'
+aS'biochemistry or hematology'
 p1615
-aS'common scenario'
+aS'inversely'
 p1616
-aS'nine participants'
+aS'0 73'
 p1617
-aS'All anti'
+aS'protocol'
 p1618
-aS'administration comprising HBsAg'
+aS'active immunotherapy'
 p1619
-aS'under sterile conditions'
+aS'third vaccine'
 p1620
-aS'nor induced local'
+aS'Serious'
 p1621
-aS'blood samples'
+aS'l according'
 p1622
-aS'dialysis patients'
+aS'same time intervals'
 p1623
-aS'placebo study staff'
+aS'l Although anti'
 p1624
-aS'received study drug'
+aS'HBs antibodies were'
 p1625
-aS'P rez'
+aS'cell populations'
 p1626
-aS'nasal HBsAg HBcAg'
+aS'Genbank'
 p1627
-aS'internal medicine'
+aS'ability of HBcAg'
 p1628
-aS'following administration'
+aS'10 l based'
 p1629
-aS'also allows'
+aS'2 6 13'
 p1630
-aS'seroconversion against'
+aS'previous'
 p1631
-aS'drug behavioral risk'
+aS'professional antigen presenting'
 p1632
-aS'support'
+aS'HBs 100IU'
 p1633
-aS'W3110'
+aS'antigens NASVAC'
 p1634
-aS'HBc specific'
+aS'impaired T cell'
 p1635
-aS'vaccines administered through'
+aS'devices still'
 p1636
-aS'predominated during'
+aS'0 9 sterile'
 p1637
-aS'subjects received'
+aS'other licensed'
 p1638
-aS'posterior nasal'
+aS'transformed'
 p1639
-aS'ultramicroanalytic enzyme'
+aS'access very'
 p1640
-aS'HBsAg and 50'
+aS'evidenced'
 p1641
-aS'head'
+aS'any general'
 p1642
-aS'antibody levels against'
+aS'drug behavioral'
 p1643
-aS'form'
+aS'8 general malaise'
 p1644
-aS'particulate nature'
+aS'advances'
 p1645
-aS'developed NASVAC'
+aS'Clinically significant'
 p1646
-aS'failure'
+aS'weight and height'
 p1647
-aS'0038 All reactions'
+aS'neither clinical adverse'
 p1648
-aS'trained physician specializing'
+aS'screening reasons'
 p1649
-aS'recorded adverse'
+aS'Induction of immunity'
 p1650
-aS'true'
+aS'expiration through'
 p1651
-aS'intervals were used'
+aS'C terminal'
 p1652
-aS'absent'
+aS'considered hyper responders'
 p1653
-aS'formal sample size'
+aS'All study'
 p1654
-aS'axillary temperature 38'
+aS'borosilicate 2R'
 p1655
-aS'antigen presenting'
+aS'apart'
 p1656
-aS'sterile saline'
+aS'volunteers were'
 p1657
-aS'group reported'
+aS'59'
 p1658
-aS'until'
+aS'dosages of 125'
 p1659
-aS'phosphate'
+aS'Also'
 p1660
-aS'required intervention'
+aS'were registered'
 p1661
-aS'Serious adverse events'
+aS'comparability'
 p1662
-aS'between vaccine formulation'
+aS'informative'
 p1663
-aS'medication'
+aS'immunosuppressive'
 p1664
-aS'Depending'
+aS'rats revealed'
 p1665
-aS'presenting cells'
+aS'measured by commercial'
 p1666
-aS'within 72h after'
+aS'titers against HBsAg'
 p1667
-aS'substantially different than'
+aS'improved in terms'
 p1668
-aS'Organization there were'
+aS'nasal administration'
 p1669
-aS'principle of neutralization'
+aS'buffer without any'
 p1670
-aS'vaccine candidate containing'
+aS'million carriers'
 p1671
-aS'total anti'
+aS'responses in mice'
 p1672
-aS'limiting resolving'
+aS'had abnormalities'
 p1673
-aS'HBV vaccine such'
+aS'blood vessel status'
 p1674
-aS'dual behavior'
+aS'antibodies No volunteers'
 p1675
-aS'single center'
+aS'fifth vaccine'
 p1676
-aS'cirrhosis liver failure'
+aS'single otorhinolaryngologist'
 p1677
-aS'Only two'
+aS'HBsAg subtype obtained'
 p1678
-aS'any clinical data'
+aS'were excluded'
 p1679
-aS'comparisons Geometric mean'
+aS'received either'
 p1680
-aS'HBc antibodies 17'
+aS'2 whereas systemic'
 p1681
-aS'septum and mucosal'
+aS'antigen gene under'
 p1682
-aS'multiple comparisons'
+aS'Solicited systemic'
 p1683
-aS'adverse signs nor'
+aS'HBsAg and antibody'
 p1684
-aS'immunogenic hepatitis'
+aS'comments'
 p1685
-aS'HBs alkaline phosphatase'
+aS'seroprotection percentage'
 p1686
-aS'medication prior'
+aS'acknowledge Enrique Iglesias'
 p1687
-aS'profile Recent'
+aS'participants were randomized'
 p1688
-aS'system Adverse'
+aS'reasons for screen'
 p1689
-aS'Similarly further'
+aS'nasal vaccines'
 p1690
-aS'10IU l low'
+aS'HBV nucleocapsid'
 p1691
-aS'effect of systemic'
+aS'recorded by study'
 p1692
-aS'disappeared within'
+aS'race predominated during'
 p1693
-aS'events were more'
+aS'responders to licensed'
 p1694
-aS'vaccines administered'
+aS'vaccines plant'
 p1695
-aS'Health Organization there'
+aS'seroprotection over'
 p1696
-aS'toxicological'
+aS'Further'
 p1697
-aS'period following administration'
+aS'highest frequency'
 p1698
-aS'inability to contact'
+aS'healthy male adult'
 p1699
-aS'self reporting'
+aS's visits'
 p1700
-aS'damage In addition'
+aS'study were similar'
 p1701
-aS'administration of HBV'
+aS'presence of nucleic'
 p1702
-aS'fact'
+aS'activator enabling'
 p1703
-aS'single nasal vaccine'
+aS'need for development'
 p1704
-aS'basic hematology'
+aS'months'
 p1705
-aS'patients include'
+aS'nasal dripping'
 p1706
-aS'adult'
+aS'system Adverse events'
 p1707
-aS'recombinant HBcAg Biokit'
+aS'staff or volunteers'
 p1708
-aS'Anti HBc UMELISA'
+aS'reported by other'
 p1709
-aS'detecting at least'
+aS'anti HBs antibodies'
 p1710
-aS'activated'
+aS'common scenario'
 p1711
-aS'volunteer received'
+aS'nine participants'
 p1712
-aS'after each immunization'
+aS'All anti'
 p1713
-aS'cirrhosis liver'
+aS'administration comprising HBsAg'
 p1714
-aS'Information on any'
+aS'under sterile conditions'
 p1715
-aS'HBV chronically infected'
+aS'nor induced local'
 p1716
-aS'ELISA adapted'
+aS'blood samples'
 p1717
-aS'disorders'
+aS'dialysis patients'
 p1718
-aS'mechanisms for antigen'
+aS'placebo study staff'
 p1719
-aS'institution Five'
+aS'received study drug'
 p1720
-aS'seroprotection rate increased'
+aS'P rez'
 p1721
-aS'spray calcitonin salmon'
+aS'nasal HBsAg HBcAg'
 p1722
-aS'defined as axillary'
+aS'internal medicine'
 p1723
-aS'adjuvants gene'
+aS'following administration'
 p1724
-aS'Two applications'
+aS'also allows'
 p1725
-aS'functioning may require'
+aS'seroconversion against'
 p1726
-aS'response to HBsAg'
+aS'drug behavioral risk'
 p1727
-aS'solution Although there'
+aS'support'
 p1728
-aS'small volumes'
+aS'W3110'
 p1729
-aS'similar surveillance'
+aS'HBc specific'
 p1730
-aS'virus treatment'
+aS'vaccines administered through'
 p1731
-aS'NASVAC or placebo'
+aS'predominated during'
 p1732
-aS'event rate exceeded'
+aS'subjects received'
 p1733
-aS'doses 85'
+aS'posterior nasal'
 p1734
-aS'units per'
+aS'ultramicroanalytic enzyme'
 p1735
-aS'used Genbank'
+aS'HBsAg and 50'
 p1736
-aS'mean antibody titer'
+aS'head'
 p1737
-aS'well documented state'
+aS'antibody levels against'
 p1738
-aS'Volunteers'
+aS'form'
 p1739
-aS'anti HBc UMELISA'
+aS'particulate nature'
 p1740
-aS'chronic infection Conversely'
+aS'developed NASVAC'
 p1741
-aS'prophylactic'
+aS'failure'
 p1742
-aS'antibody against hepatitis'
+aS'0038 All reactions'
 p1743
-aS'cell activator enabling'
+aS'trained physician specializing'
 p1744
-aS'applications per'
+aS'recorded adverse'
 p1745
-aS'received study'
+aS'true'
 p1746
-aS'derived recombinant'
+aS'intervals were used'
 p1747
-aS'reported previously'
+aS'absent'
 p1748
-aS'antibodies from serum'
+aS'formal sample size'
 p1749
-aS'single center randomized'
+aS'axillary temperature 38'
 p1750
-aS'0 No abnormalities'
+aS'antigen presenting'
 p1751
-aS'absent mild'
+aS'sterile saline'
 p1752
-aS'luminal surface through'
+aS'group reported'
 p1753
-aS'prevent'
+aS'until'
 p1754
-aS'bleeding Solicited systemic'
+aS'phosphate'
 p1755
-aS'48hours'
+aS'required intervention'
 p1756
-aS'intranasal vaccine candidate'
+aS'Serious adverse events'
 p1757
-aS'T cell responses'
+aS'between vaccine formulation'
 p1758
-aS'undertaken to determine'
+aS'medication'
 p1759
-aS'tests against HBsAg'
+aS'Depending'
 p1760
-aS'demonstrated seroconversion'
+aS'presenting cells'
 p1761
-aS'qualitative detection'
+aS'within 72h after'
 p1762
-aS'solution All'
+aS'substantially different than'
 p1763
-aS'rash Information'
+aS'Organization there were'
 p1764
-aS'seroprotected subjects'
+aS'principle of neutralization'
 p1765
-aS'phosphate buffer'
+aS'vaccine candidate containing'
 p1766
-aS'blood products'
+aS'total anti'
 p1767
-aS'nasal administration comprising'
+aS'limiting resolving'
 p1768
-aS'adult volunteers Written'
+aS'HBV vaccine such'
 p1769
-aS'assistance'
+aS'dual behavior'
 p1770
-aS'under sterile'
+aS'single center'
 p1771
-aS'HBc quantification'
+aS'cirrhosis liver failure'
 p1772
-aS'variables Adverse events'
+aS'Only two'
 p1773
-aS'very specialized'
+aS'any clinical data'
 p1774
-aS'acute toxicity'
+aS'comparisons Geometric mean'
 p1775
-aS'vaccine Furthermore'
+aS'HBc antibodies 17'
 p1776
-aS'boost'
+aS'septum and mucosal'
 p1777
-aS'than 400 million'
+aS'multiple comparisons'
 p1778
-aS'filled'
+aS'adverse signs nor'
 p1779
-aS'liter IU'
+aS'immunogenic hepatitis'
 p1780
-aS'were administered'
+aS'HBs alkaline phosphatase'
 p1781
-aS'statistically'
+aS'medication prior'
 p1782
-aS'any adverse'
+aS'profile Recent'
 p1783
-aS'HBcAg combined'
+aS'system Adverse'
 p1784
-aS'ulceration'
+aS'Similarly further'
 p1785
-aS'vaccine candidate developed'
+aS'10IU l low'
 p1786
-aS'Havana Cuba All'
+aS'effect of systemic'
 p1787
-aS'mononuclear cells'
+aS'disappeared within'
 p1788
-aS'Each vial'
+aS'events were more'
 p1789
-aS'groups'
+aS'vaccines administered'
 p1790
-aS'HBs UMELISA'
+aS'Health Organization there'
 p1791
-aS'along'
+aS'toxicological'
 p1792
-aS'disappeared'
+aS'period following administration'
 p1793
-aS'HBsAg Recombinant HBsAg'
+aS'inability to contact'
 p1794
-aS'immunization further benefit'
+aS'self reporting'
 p1795
-aS'informed consent Individuals'
+aS'damage In addition'
 p1796
-aS'Research Ethics Board'
+aS'administration of HBV'
 p1797
-aS'novel adjuvants'
+aS'fact'
 p1798
-aS'significant events'
+aS'single nasal vaccine'
 p1799
-aS'development of mucosal'
+aS'basic hematology'
 p1800
-aS'events included fever'
+aS'patients include'
 p1801
-aS'reagents'
+aS'adult'
 p1802
-aS'differences between'
+aS'recombinant HBcAg Biokit'
 p1803
-aS'recipients 0 0038'
+aS'Anti HBc UMELISA'
 p1804
-aS'administered drugs'
+aS'detecting at least'
 p1805
-aS'permanent impairment'
+aS'activated'
 p1806
-aS'B virus anti'
+aS'volunteer received'
 p1807
-aS'sneezing nasal'
+aS'after each immunization'
 p1808
-aS'were found'
+aS'cirrhosis liver'
 p1809
-aS'nor behavioural'
+aS'Information on any'
 p1810
-aS'bulbs'
+aS'HBV chronically infected'
 p1811
-aS'vaccine using similar'
+aS'ELISA adapted'
 p1812
-aS'remaining determinants After'
+aS'disorders'
 p1813
-aS'sterile phosphate'
+aS'mechanisms for antigen'
 p1814
-aS'vaccines vaccines'
+aS'institution Five'
 p1815
-aS'lymphocytes CTL'
+aS'seroprotection rate increased'
 p1816
-aS'visit'
+aS'spray calcitonin salmon'
 p1817
-aS'optimize'
+aS'defined as axillary'
 p1818
-aS'mucosal nasal'
+aS'adjuvants gene'
 p1819
-aS'least one'
+aS'Two applications'
 p1820
-aS'scenario in patients'
+aS'functioning may require'
 p1821
-aS'HBV core'
+aS'response to HBsAg'
 p1822
-aS'hospital for 48hours'
+aS'solution Although there'
 p1823
-aS'response in up'
+aS'small volumes'
 p1824
-aS'normal functioning'
+aS'similar surveillance'
 p1825
-aS'purified from strain'
+aS'virus treatment'
 p1826
-aS'organized'
+aS'NASVAC or placebo'
 p1827
-aS'acceptable'
+aS'event rate exceeded'
 p1828
-aS'apparent'
+aS'doses 85'
 p1829
-aS'envelope'
+aS'units per'
 p1830
-aS'were undertaken'
+aS'used Genbank'
 p1831
-aS'Recent developments'
+aS'mean antibody titer'
 p1832
-aS'Subjects were healthy'
+aS'well documented state'
 p1833
-aS'participants as minimum'
+aS'Volunteers'
 p1834
-aS'400 million'
+aS'anti HBc UMELISA'
 p1835
-aS'Binomial distribution point'
+aS'chronic infection Conversely'
 p1836
-aS'recombinant Heberbiovac'
+aS'prophylactic'
 p1837
-aS'list of random'
+aS'antibody against hepatitis'
 p1838
-aS'hospitalizations were'
+aS'cell activator enabling'
 p1839
-aS'borosilicate'
+aS'applications per'
 p1840
-aS'were negative'
+aS'received study'
 p1841
-aS'polyclonal and multi'
+aS'derived recombinant'
 p1842
-aS'28nm as characterized'
+aS'reported previously'
 p1843
-aS'actively and always'
+aS'antibodies from serum'
 p1844
-aS'cell pockets'
+aS'single center randomized'
 p1845
-aS'labeled'
+aS'0 No abnormalities'
 p1846
-aS'obtained from serum'
+aS'absent mild'
 p1847
-aS'assay anti HBs'
+aS'luminal surface through'
 p1848
-aS'contact after'
+aS'prevent'
 p1849
-aS'all other'
+aS'bleeding Solicited systemic'
 p1850
-aS'septum'
+aS'48hours'
 p1851
-aS'Each vial contained'
+aS'intranasal vaccine candidate'
 p1852
-aS'g acemannan'
+aS'T cell responses'
 p1853
-aS'were assigned arbitrarily'
+aS'undertaken to determine'
 p1854
-aS'18 and 45'
+aS'tests against HBsAg'
 p1855
-aS'sera Briefly'
+aS'demonstrated seroconversion'
 p1856
-aS'T cell immunity'
+aS'qualitative detection'
 p1857
-aS'tilted backwards'
+aS'solution All'
 p1858
-aS'detect differences'
+aS'rash Information'
 p1859
-aS'group withdrew voluntarily'
+aS'seroprotected subjects'
 p1860
-aS'allowed'
+aS'phosphate buffer'
 p1861
-aS'72h after'
+aS'blood products'
 p1862
-aS'Induction'
+aS'nasal administration comprising'
 p1863
-aS'containing recombinant'
+aS'adult volunteers Written'
 p1864
-aS'cells M cells'
+aS'assistance'
 p1865
-aS'CECMED in Cuba'
+aS'under sterile'
 p1866
-aS'dialysis'
+aS'HBc quantification'
 p1867
-aS'remaining 19 participants'
+aS'variables Adverse events'
 p1868
-aS'immunity Nasal administration'
+aS'very specialized'
 p1869
-aS'chemical'
+aS'acute toxicity'
 p1870
-aS'level in patients'
+aS'vaccine Furthermore'
 p1871
-aS'criterion'
+aS'boost'
 p1872
-aS'stored in borosilicate'
+aS'than 400 million'
 p1873
-aS'terms of sensitivity'
+aS'filled'
 p1874
-aS'further benefit'
+aS'liter IU'
 p1875
-aS'contribute'
+aS'were administered'
 p1876
-aS'immunomodulation on HBsAg'
+aS'statistically'
 p1877
-aS'spray device'
+aS'any adverse'
 p1878
-aS'strong mucosal'
+aS'HBcAg combined'
 p1879
-aS'500DC mm'
+aS'ulceration'
 p1880
-aS'applications'
+aS'vaccine candidate developed'
 p1881
-aS'graded as moderate'
+aS'Havana Cuba All'
 p1882
-aS'work efficiently'
+aS'mononuclear cells'
 p1883
-aS'performed periodical'
+aS'Each vial'
 p1884
-aS'designed'
+aS'groups'
 p1885
-aS'reactions were self'
+aS'HBs UMELISA'
 p1886
-aS'placebo delivered'
+aS'along'
 p1887
-aS'vaccine Heberbiovac HB'
+aS'disappeared'
 p1888
-aS'natural'
+aS'HBsAg Recombinant HBsAg'
 p1889
-aS'liquid'
+aS'immunization further benefit'
 p1890
-aS'persistent or permanent'
+aS'informed consent Individuals'
 p1891
-aS'tryptophan promoter'
+aS'Research Ethics Board'
 p1892
-aS'vaccine candidate tested'
+aS'novel adjuvants'
 p1893
-aS'second vaccine doses'
+aS'significant events'
 p1894
-aS'standard parenteral HBV'
+aS'development of mucosal'
 p1895
-aS'form HBcAg'
+aS'events included fever'
 p1896
-aS'were healthy male'
+aS'reagents'
 p1897
-aS'immunogen even without'
+aS'differences between'
 p1898
-aS'ultramicroanalytic'
+aS'recipients 0 0038'
 p1899
-aS'HBs equal'
+aS'administered drugs'
 p1900
-aS'typical'
+aS'permanent impairment'
 p1901
-aS'site adverse events'
+aS'B virus anti'
 p1902
-aS'72h following inoculation'
+aS'sneezing nasal'
 p1903
-aS'expressed and purified'
+aS'were found'
 p1904
-aS'number X02763'
+aS'nor behavioural'
 p1905
-aS'appetite nausea'
+aS'bulbs'
 p1906
-aS'products were'
+aS'vaccine using similar'
 p1907
-aS'400 million carriers'
+aS'remaining determinants After'
 p1908
-aS'statistical'
+aS'sterile phosphate'
 p1909
-aS'one adverse'
+aS'vaccines vaccines'
 p1910
-aS'still'
+aS'lymphocytes CTL'
 p1911
-aS'microscopy EM'
+aS'visit'
 p1912
-aS'monitor'
+aS'optimize'
 p1913
-aS'local tolerance All'
+aS'mucosal nasal'
 p1914
-aS'proportion hypo'
+aS'least one'
 p1915
-aS'adverse event rate'
+aS'scenario in patients'
 p1916
-aS'B virus treatment'
+aS'HBV core'
 p1917
-aS'useful to overcome'
+aS'hospital for 48hours'
 p1918
-aS'HBV chronic infection'
+aS'response in up'
 p1919
-aS'included persistently'
+aS'normal functioning'
 p1920
-aS'nasal vaccine Furthermore'
+aS'purified from strain'
 p1921
-aS'nose or digestive'
+aS'organized'
 p1922
-aS'uptake'
+aS'acceptable'
 p1923
-aS'serum antibody response'
+aS'apparent'
 p1924
-aS'than 400'
+aS'envelope'
 p1925
-aS'resulted in recent'
+aS'were undertaken'
 p1926
-aS'phase antigen'
+aS'Recent developments'
 p1927
-aS'protein expressed'
+aS'Subjects were healthy'
 p1928
-aS'titers around'
+aS'participants as minimum'
 p1929
-aS'obtaining'
+aS'400 million'
 p1930
-aS'bound'
+aS'Binomial distribution point'
 p1931
-aS'congestion sneezing'
+aS'recombinant Heberbiovac'
 p1932
-aS'were eligible'
+aS'list of random'
 p1933
-aS'limited HBV'
+aS'hospitalizations were'
 p1934
-aS'acknowledge Enrique'
+aS'borosilicate'
 p1935
-aS'HBcAg particles'
+aS'were negative'
 p1936
-aS'Dawley rats'
+aS'polyclonal and multi'
 p1937
-aS'HBcAg Biokit Barcelona'
+aS'28nm as characterized'
 p1938
-aS'conjugate anti'
+aS'actively and always'
 p1939
-aS'term'
+aS'cell pockets'
 p1940
-aS'UMELISA Immunoassay Center'
+aS'labeled'
 p1941
-aS'immunoglobulin within'
+aS'obtained from serum'
 p1942
-aS'proteins'
+aS'assay anti HBs'
 p1943
-aS'total of 43'
+aS'contact after'
 p1944
-aS'vaccine only'
+aS'all other'
 p1945
-aS'85'
+aS'septum'
 p1946
-aS'control group'
+aS'Each vial contained'
 p1947
-aS'study screening reasons'
+aS'g acemannan'
 p1948
-aS'following inoculation Adverse'
+aS'were assigned arbitrarily'
 p1949
-aS'abnormal'
+aS'18 and 45'
 p1950
-aS'achieve protective anti'
+aS'sera Briefly'
 p1951
-aS'balanced'
+aS'T cell immunity'
 p1952
-aS'sponsor'
+aS'tilted backwards'
 p1953
-aS'year'
+aS'detect differences'
 p1954
-aS'recombinant HBsAg'
+aS'group withdrew voluntarily'
 p1955
-aS'anti HBc quantification'
+aS'allowed'
 p1956
-aS'induced local'
+aS'72h after'
 p1957
-aS'Solid phase'
+aS'Induction'
 p1958
-aS'limited HBV infection'
+aS'containing recombinant'
 p1959
-aS'borosilicate 2R bulbs'
+aS'cells M cells'
 p1960
-aS'continuous variables'
+aS'CECMED in Cuba'
 p1961
-aS'doses were administered'
+aS'dialysis'
 p1962
-aS'sneezing nasal itching'
+aS'remaining 19 participants'
 p1963
-aS'responses against HBV'
+aS'immunity Nasal administration'
 p1964
-aS'contained'
+aS'chemical'
 p1965
-aS'according to otorhinolaryngologist'
+aS'level in patients'
 p1966
-aS'8IU'
+aS'criterion'
 p1967
-aS'vaccine candidate administered'
+aS'stored in borosilicate'
 p1968
-aS'helpful comments'
+aS'terms of sensitivity'
 p1969
-aS'virus anti'
+aS'further benefit'
 p1970
-aS'format using'
+aS'contribute'
 p1971
-aS'sense although three'
+aS'immunomodulation on HBsAg'
 p1972
-aS'excluded from enrollment'
+aS'spray device'
 p1973
-aS'million'
+aS'strong mucosal'
 p1974
-aS'year 2000 Among'
+aS'500DC mm'
 p1975
-aS'possibility'
+aS'applications'
 p1976
-aS'block antigenic determinants'
+aS'graded as moderate'
 p1977
-aS'secreted'
+aS'work efficiently'
 p1978
-aS'first vaccine'
+aS'performed periodical'
 p1979
-aS'reacting with remaining'
+aS'designed'
 p1980
-aS'generating more than'
+aS'reactions were self'
 p1981
-aS'Enrique Iglesias'
+aS'placebo delivered'
 p1982
-aS'against both'
+aS'vaccine Heberbiovac HB'
 p1983
-aS'virus control'
+aS'natural'
 p1984
-aS'allowed expiration through'
+aS'liquid'
 p1985
-aS'Participants allocated'
+aS'persistent or permanent'
 p1986
-aS'still need'
+aS'tryptophan promoter'
 p1987
-aS'also thank'
+aS'vaccine candidate tested'
 p1988
-aS'routes'
+aS'second vaccine doses'
 p1989
-aS'therapeutic use'
+aS'standard parenteral HBV'
 p1990
-aS'itching palate itching'
+aS'form HBcAg'
 p1991
-aS'event in both'
+aS'were healthy male'
 p1992
-aS'B cells'
+aS'immunogen even without'
 p1993
-aS'Sprague'
+aS'ultramicroanalytic'
 p1994
-aS'symptoms very'
+aS'HBs equal'
 p1995
-aS'variables'
+aS'typical'
 p1996
-aS'antibody were assigned'
+aS'site adverse events'
 p1997
-aS'subjects showing'
+aS'72h following inoculation'
 p1998
-aS'HBc alkaline phosphatase'
+aS'expressed and purified'
 p1999
-aS'defined as events'
+aS'number X02763'
 p2000
-aS'trial phase'
+aS'appetite nausea'
 p2001
-aS'Rates'
+aS'products were'
 p2002
-aS'periodical'
+aS'400 million carriers'
 p2003
-aS'comprises'
+aS'statistical'
 p2004
-aS'100 showed'
+aS'one adverse'
 p2005
-aS'5 More than'
+aS'still'
 p2006
-aS'one adverse event'
+aS'microscopy EM'
 p2007
-aS'transient nasal conditions'
+aS'monitor'
 p2008
-aS'group included'
+aS'local tolerance All'
 p2009
-aS'vaccine or placebo'
+aS'proportion hypo'
 p2010
-aS'nasal itching'
+aS'adverse event rate'
 p2011
-aS'nasal spray calcitonin'
+aS'B virus treatment'
 p2012
-aS'impairment or damage'
+aS'useful to overcome'
 p2013
-aS'indicate'
+aS'HBV chronic infection'
 p2014
-aS'candidate containing recombinant'
+aS'included persistently'
 p2015
-aS'recognize any'
+aS'nasal vaccine Furthermore'
 p2016
-aS'white'
+aS'nose or digestive'
 p2017
-aS'cell populations DC'
+aS'uptake'
 p2018
-aS'systemic immunity Nasal'
+aS'serum antibody response'
 p2019
-aS'Sneezing'
+aS'than 400'
 p2020
-aS'mostly'
+aS'resulted in recent'
 p2021
-aS'II clinical studies'
+aS'phase antigen'
 p2022
-aS'either NASVAC'
+aS'protein expressed'
 p2023
-aS'immunomodulation'
+aS'titers around'
 p2024
-aS'even without'
+aS'obtaining'
 p2025
-aS'study personnel before'
+aS'bound'
 p2026
-aS'alone or mixed'
+aS'congestion sneezing'
 p2027
-aS'HBcAg CIGB'
+aS'were eligible'
 p2028
-aS'control Recombinant'
+aS'limited HBV'
 p2029
-aS'clinical adverse signs'
+aS'acknowledge Enrique'
 p2030
-aS'9 8 general'
+aS'HBcAg particles'
 p2031
-aS'control Recombinant HBcAg'
+aS'Dawley rats'
 p2032
-aS'seroconversion after immunization'
+aS'HBcAg Biokit Barcelona'
 p2033
-aS'any study'
+aS'conjugate anti'
 p2034
-aS'13'
+aS'term'
 p2035
-aS'effective'
+aS'UMELISA Immunoassay Center'
 p2036
-aS'17'
+aS'immunoglobulin within'
 p2037
-aS'expressed as international'
+aS'proteins'
 p2038
-aS'Five doses'
+aS'total of 43'
 p2039
-aS'institution Five doses'
+aS'vaccine only'
 p2040
-aS'medical consultations'
+aS'85'
 p2041
-aS'typical sandwich'
+aS'control group'
 p2042
-aS'within 72h'
+aS'study screening reasons'
 p2043
-aS'outcome'
+aS'following inoculation Adverse'
 p2044
-aS'other symptom graded'
+aS'abnormal'
 p2045
-aS'addition of HBcAg'
+aS'achieve protective anti'
 p2046
-aS'under observation'
+aS'balanced'
 p2047
-aS'HBs or anti'
+aS'sponsor'
 p2048
-aS'other mucosal adjuvant'
+aS'year'
 p2049
-aS'pre existing antibody'
+aS'recombinant HBsAg'
 p2050
-aS'HBsAg reacts'
+aS'anti HBc quantification'
 p2051
-aS'rate percentages were'
+aS'induced local'
 p2052
-aS'peptide vaccine'
+aS'Solid phase'
 p2053
-aS'underlines'
+aS'limited HBV infection'
 p2054
-aS'90 of children'
+aS'borosilicate 2R bulbs'
 p2055
-aS'up to 20'
+aS'continuous variables'
 p2056
-aS'sensitivity Similarly'
+aS'doses were administered'
 p2057
-aS'immunogen even'
+aS'sneezing nasal itching'
 p2058
-aS'30 to get'
+aS'responses against HBV'
 p2059
-aS'instructed'
+aS'contained'
 p2060
-aS'19 participants'
+aS'according to otorhinolaryngologist'
 p2061
-aS'performance'
+aS'8IU'
 p2062
-aS'impairment'
+aS'vaccine candidate administered'
 p2063
-aS'l low'
+aS'helpful comments'
 p2064
-aS'analysis Further antigenicity'
+aS'virus anti'
 p2065
-aS'HBV infected patients'
+aS'format using'
 p2066
-aS'multiple'
+aS'sense although three'
 p2067
-aS'trace'
+aS'excluded from enrollment'
 p2068
-aS'specific Th'
+aS'million'
 p2069
-aS'Biotechnology in Havana'
+aS'year 2000 Among'
 p2070
-aS'50g HBsAg'
+aS'possibility'
 p2071
-aS'gene under'
+aS'block antigenic determinants'
 p2072
-aS'molecule'
+aS'secreted'
 p2073
-aS'0 5ml Participants'
+aS'first vaccine'
 p2074
-aS'study 100'
+aS'reacting with remaining'
 p2075
-aS'positive or negative'
+aS'generating more than'
 p2076
-aS'detect'
+aS'Enrique Iglesias'
 p2077
-aS'significantly increases'
+aS'against both'
 p2078
-aS'previous findings'
+aS'virus control'
 p2079
-aS'Th1 type'
+aS'allowed expiration through'
 p2080
-aS'characteristic of HBV'
+aS'Participants allocated'
 p2081
-aS'cellular responses against'
+aS'still need'
 p2082
-aS'adverse signs'
+aS'also thank'
 p2083
-aS'participant s head'
+aS'routes'
 p2084
-aS'Becton Dickinson Depending'
+aS'therapeutic use'
 p2085
-aS'determinants After'
+aS'itching palate itching'
 p2086
-aS'renal'
+aS'event in both'
 p2087
-aS'without any adjuvant'
+aS'B cells'
 p2088
-aS'majority of infected'
+aS'Sprague'
 p2089
-aS'professional'
+aS'symptoms very'
 p2090
-aS'were expressed'
+aS'variables'
 p2091
-aS'estimated by treatment'
+aS'antibody were assigned'
 p2092
-aS'rate percentages'
+aS'subjects showing'
 p2093
-aS'substantially different'
+aS'HBc alkaline phosphatase'
 p2094
-aS'virus as well'
+aS'defined as events'
 p2095
-aS'severity Binomial distribution'
+aS'trial phase'
 p2096
-aS'accession'
+aS'Rates'
 p2097
-aS'parenteral administered HBsAg'
+aS'periodical'
 p2098
-aS'tryptophan'
+aS'comprises'
 p2099
-aS'HBsAg titer'
+aS'100 showed'
 p2100
-aS'events 58'
+aS'5 More than'
 p2101
-aS'ratio'
+aS'one adverse event'
 p2102
-aS'All blood'
+aS'transient nasal conditions'
 p2103
-aS'male adult volunteers'
+aS'group included'
 p2104
-aS'study group included'
+aS'vaccine or placebo'
 p2105
-aS'potential acute'
+aS'nasal itching'
 p2106
-aS'otorhinolaryngology'
+aS'nasal spray calcitonin'
 p2107
-aS'Concurrent'
+aS'impairment or damage'
 p2108
-aS'Binomial'
+aS'indicate'
 p2109
-aS'Severe reactions were'
+aS'candidate containing recombinant'
 p2110
-aS'HBs protective levels'
+aS'recognize any'
 p2111
-aS'previously for other'
+aS'white'
 p2112
-aS'showed protective levels'
+aS'cell populations DC'
 p2113
-aS'More than'
+aS'systemic immunity Nasal'
 p2114
-aS'get'
+aS'Sneezing'
 p2115
-aS'history of hepatitis'
+aS'mostly'
 p2116
-aS'reported among'
+aS'II clinical studies'
 p2117
-aS'mixed with other'
+aS'either NASVAC'
 p2118
-aS'candidate demonstrated'
+aS'immunomodulation'
 p2119
-aS'ultramicroanalytic enzyme linked'
+aS'even without'
 p2120
-aS'S protein expressed'
+aS'study personnel before'
 p2121
-aS'13 excess'
+aS'alone or mixed'
 p2122
-aS'secondary'
+aS'HBcAg CIGB'
 p2123
-aS'same typical sandwich'
+aS'control Recombinant'
 p2124
-aS'regarding'
+aS'clinical adverse signs'
 p2125
-aS'vaccine Furthermore participants'
+aS'9 8 general'
 p2126
-aS'age of participants'
+aS'control Recombinant HBcAg'
 p2127
-aS'axillary temperature 39'
+aS'seroconversion after immunization'
 p2128
-aS'symptom bothersome'
+aS'any study'
 p2129
-aS'physicians or volunteers'
+aS'13'
 p2130
-aS'infection resolving'
+aS'effective'
 p2131
-aS'M cells transport'
+aS'17'
 p2132
-aS'were used'
+aS'expressed as international'
 p2133
-aS'true adverse event'
+aS'Five doses'
 p2134
-aS'audited'
+aS'institution Five doses'
 p2135
-aS'frequency of local'
+aS'medical consultations'
 p2136
-aS'HBV core HBc'
+aS'typical sandwich'
 p2137
-aS'HBV nucleocapsid polymerase'
+aS'within 72h'
 p2138
-aS'adapted to small'
+aS'outcome'
 p2139
-aS'sterile aqueous'
+aS'other symptom graded'
 p2140
-aS'cell immune response'
+aS'addition of HBcAg'
 p2141
-aS'per liter IU'
+aS'under observation'
 p2142
-aS'2IU'
+aS'HBs or anti'
 p2143
-aS'licensed HBV'
+aS'other mucosal adjuvant'
 p2144
-aS'Hospital Havana'
+aS'pre existing antibody'
 p2145
-aS'Organization standard'
+aS'HBsAg reacts'
 p2146
-aS'itching rhinorrhea nasal'
+aS'rate percentages were'
 p2147
-aS'investigators with licensed'
+aS'peptide vaccine'
 p2148
-aS'study one subject'
+aS'underlines'
 p2149
-aS'one month'
+aS'90 of children'
 p2150
-aS'blood screening regarding'
+aS'up to 20'
 p2151
-aS'candidate were'
+aS'sensitivity Similarly'
 p2152
-aS'seronegative for anti'
+aS'immunogen even'
 p2153
-aS'diarrhea and cutaneous'
+aS'30 to get'
 p2154
-aS'total of 77'
+aS'instructed'
 p2155
-aS'mostly reported'
+aS'19 participants'
 p2156
-aS'1 hour'
+aS'performance'
 p2157
-aS'subjects were considered'
+aS'impairment'
 p2158
-aS'similar surveillance methods'
+aS'l low'
 p2159
-aS'therapies'
+aS'analysis Further antigenicity'
 p2160
-aS'schedule Following administration'
+aS'HBV infected patients'
 p2161
-aS'moderate adverse events'
+aS'multiple'
 p2162
-aS'healthy adults Local'
+aS'trace'
 p2163
-aS'fluorescent signal'
+aS'specific Th'
 p2164
-aS'B vaccine candidate'
+aS'Biotechnology in Havana'
 p2165
-aS'personnel before'
+aS'50g HBsAg'
 p2166
-aS'screen'
+aS'gene under'
 p2167
-aS'g acemannan Whether'
+aS'molecule'
 p2168
-aS'induced serum antibody'
+aS'0 5ml Participants'
 p2169
-aS'gratefully'
+aS'study 100'
 p2170
-aS'chemistries and hematology'
+aS'positive or negative'
 p2171
-aS'steroid'
+aS'detect'
 p2172
-aS'Each'
+aS'significantly increases'
 p2173
-aS'also contribute'
+aS'previous findings'
 p2174
-aS'both reports came'
+aS'Th1 type'
 p2175
-aS'HBsAg Recombinant'
+aS'characteristic of HBV'
 p2176
-aS'vaccine and one'
+aS'cellular responses against'
 p2177
-aS'purified recombinant'
+aS'adverse signs'
 p2178
-aS'very specialized mechanisms'
+aS'participant s head'
 p2179
-aS'Sterile'
+aS'Becton Dickinson Depending'
 p2180
-aS'vaccine were given'
+aS'determinants After'
 p2181
-aS'analgesics'
+aS'renal'
 p2182
-aS'residence'
+aS'without any adjuvant'
 p2183
-aS'events did'
+aS'majority of infected'
 p2184
-aS'more frequently reported'
+aS'professional'
 p2185
-aS'enabling'
+aS'were expressed'
 p2186
-aS'Chronic'
+aS'estimated by treatment'
 p2187
-aS'participants were instructed'
+aS'rate percentages'
 p2188
-aS'predominated over'
+aS'substantially different'
 p2189
-aS'induce strong'
+aS'virus as well'
 p2190
-aS'nor behavioural changes'
+aS'severity Binomial distribution'
 p2191
-aS'vaccine recipients achieved'
+aS'accession'
 p2192
-aS'further studies'
+aS'parenteral administered HBsAg'
 p2193
-aS'preclinical studies'
+aS'tryptophan'
 p2194
-aS'Iglesias'
+aS'HBsAg titer'
 p2195
-aS'immunity in chronic'
+aS'events 58'
 p2196
-aS'were compared'
+aS'ratio'
 p2197
-aS'77 adverse'
+aS'All blood'
 p2198
-aS'studies were conducted'
+aS'male adult volunteers'
 p2199
-aS'stored'
+aS'study group included'
 p2200
-aS'them were'
+aS'potential acute'
 p2201
-aS'Recent advances'
+aS'otorhinolaryngology'
 p2202
-aS'sampling'
+aS'Concurrent'
 p2203
-aS'itching rhinorrhea'
+aS'Binomial'
 p2204
-aS'undetectable anti'
+aS'Severe reactions were'
 p2205
-aS'most frequent adverse'
+aS'HBs protective levels'
 p2206
-aS'considering'
+aS'previously for other'
 p2207
-aS'anosmia'
+aS'showed protective levels'
 p2208
-aS'achieved by nasal'
+aS'More than'
 p2209
-aS'Research'
+aS'get'
 p2210
-aS'purified with recombinant'
+aS'history of hepatitis'
 p2211
-aS'tonsils'
+aS'reported among'
 p2212
-aS'registered Only'
+aS'mixed with other'
 p2213
-aS'HBsAg and 100'
+aS'candidate demonstrated'
 p2214
-aS'antiviral immunogenicity'
+aS'ultramicroanalytic enzyme linked'
 p2215
-aS'stuffiness and epistaxis'
+aS'S protein expressed'
 p2216
-aS'Clinically'
+aS'13 excess'
 p2217
-aS'immunopotentiating activity'
+aS'secondary'
 p2218
-aS'sponsor institution'
+aS'same typical sandwich'
 p2219
-aS'Subjects were'
+aS'regarding'
 p2220
-aS'over systemic reactions'
+aS'vaccine Furthermore participants'
 p2221
-aS'anti HBs 10'
+aS'age of participants'
 p2222
-aS'parenteral HBV'
+aS'axillary temperature 39'
 p2223
-aS'careful'
+aS'symptom bothersome'
 p2224
-aS'73 provided'
+aS'physicians or volunteers'
 p2225
-aS'apparent abnormalities visualized'
+aS'infection resolving'
 p2226
-aS'Biokit Barcelona Spain'
+aS'M cells transport'
 p2227
-aS'plant derived vaccines'
+aS'were used'
 p2228
-aS'nasal flu vaccine'
+aS'true adverse event'
 p2229
-aS'distressing'
+aS'audited'
 p2230
-aS'efficiently'
+aS'frequency of local'
 p2231
-aS'T lymphocytes'
+aS'HBV core HBc'
 p2232
-aS'buffer without'
+aS'HBV nucleocapsid polymerase'
 p2233
-aS'Spain'
+aS'adapted to small'
 p2234
-aS'regarding chemical'
+aS'sterile aqueous'
 p2235
-aS'vaccine doses Local'
+aS'cell immune response'
 p2236
-aS'frequently in participants'
+aS'per liter IU'
 p2237
-aS'region'
+aS'2IU'
 p2238
-aS'clinically apparent abnormalities'
+aS'licensed HBV'
 p2239
-aS'used to estimate'
+aS'Hospital Havana'
 p2240
-aS'HBc alkaline'
+aS'Organization standard'
 p2241
-aS'within 72hours following'
+aS'itching rhinorrhea nasal'
 p2242
-aS'Iglesias P rez'
+aS'investigators with licensed'
 p2243
-aS'compared by Fisher'
+aS'study one subject'
 p2244
-aS'them'
+aS'one month'
 p2245
-aS'equal'
+aS'blood screening regarding'
 p2246
-aS'strain'
+aS'candidate were'
 p2247
-aS'good'
+aS'seronegative for anti'
 p2248
-aS'inversely proportional'
+aS'diarrhea and cutaneous'
 p2249
-aS'patients and carriers'
+aS'total of 77'
 p2250
-aS'were stored'
+aS'mostly reported'
 p2251
-aS'long term'
+aS'1 hour'
 p2252
-aS'alterations or transient'
+aS'subjects were considered'
 p2253
-aS'diluted in sterile'
+aS'similar surveillance methods'
 p2254
-aS'helpful comments Finally'
+aS'therapies'
 p2255
-aS'congestion sneezing nasal'
+aS'schedule Following administration'
 p2256
-aS'encouraging taking'
+aS'moderate adverse events'
 p2257
-aS'different'
+aS'healthy adults Local'
 p2258
-aS'participant'
+aS'fluorescent signal'
 p2259
-aS'through novel routes'
+aS'B vaccine candidate'
 p2260
-aS'spray device Accuspray'
+aS'personnel before'
 p2261
-aS'doctor'
+aS'screen'
 p2262
-aS'formulations'
+aS'g acemannan Whether'
 p2263
-aS'All but two'
+aS'induced serum antibody'
 p2264
-aS'electron microscopy EM'
+aS'gratefully'
 p2265
-aS'surveillance'
+aS'chemistries and hematology'
 p2266
-aS'induction of immunity'
+aS'steroid'
 p2267
-aS'further immunogenicity studies'
+aS'Each'
 p2268
-aS'full length recombinant'
+aS'also contribute'
 p2269
-aS'status'
+aS'both reports came'
 p2270
-aS'internal medicine toxicology'
+aS'HBsAg Recombinant'
 p2271
-aS'commonly reported'
+aS'vaccine and one'
 p2272
-aS'levels were'
+aS'purified recombinant'
 p2273
-aS'particulate antigens'
+aS'very specialized mechanisms'
 p2274
-aS'0 0038 All'
+aS'Sterile'
 p2275
-aS'IU'
+aS'vaccine were given'
 p2276
-aS'formulation Phase II'
+aS'analgesics'
 p2277
-aS'Barcelona'
+aS'residence'
 p2278
-aS'route showing induction'
+aS'events did'
 p2279
-aS'sample size nine'
+aS'more frequently reported'
 p2280
-aS'l in order'
+aS'enabling'
 p2281
-aS'seroprotected subjects were'
+aS'Chronic'
 p2282
-aS'total serum antibody'
+aS'participants were instructed'
 p2283
-aS'self limiting resolving'
+aS'predominated over'
 p2284
-aS'evaluated in duplicate'
+aS'induce strong'
 p2285
-aS'very encouraging'
+aS'nor behavioural changes'
 p2286
-aS'eligible'
+aS'vaccine recipients achieved'
 p2287
-aS'defined as absent'
+aS'further studies'
 p2288
-aS'chronic patients include'
+aS'preclinical studies'
 p2289
-aS'became chronic carriers'
+aS'Iglesias'
 p2290
-aS'steroid anti inflammatory'
+aS'immunity in chronic'
 p2291
-aS'baseline 30'
+aS'were compared'
 p2292
-aS'studies with HBsAg'
+aS'77 adverse'
 p2293
-aS'other commercial'
+aS'studies were conducted'
 p2294
-aS'were more frequently'
+aS'stored'
 p2295
-aS'findings in experiments'
+aS'them were'
 p2296
-aS'cell immunity'
+aS'Recent advances'
 p2297
-aS'inability'
+aS'sampling'
 p2298
-aS'placebo group 59'
+aS'itching rhinorrhea'
 p2299
-aS'g nasal flu'
+aS'undetectable anti'
 p2300
-aS'persistently'
+aS'most frequent adverse'
 p2301
-aS'reporting adverse events'
+aS'considering'
 p2302
-aS'sprayed'
+aS'anosmia'
 p2303
-aS'Only anti HBs'
+aS'achieved by nasal'
 p2304
-aS'levels against'
+aS'Research'
 p2305
-aS'among'
+aS'purified with recombinant'
 p2306
-aS'adjustments'
+aS'tonsils'
 p2307
-aS'local or systemic'
+aS'registered Only'
 p2308
-aS'cytotoxic T cell'
+aS'HBsAg and 100'
 p2309
-aS'showed protective'
+aS'antiviral immunogenicity'
 p2310
-aS'Solicited adverse events'
+aS'stuffiness and epistaxis'
 p2311
-aS'all participants were'
+aS'Clinically'
 p2312
-aS'behavioural'
+aS'immunopotentiating activity'
 p2313
-aS'72hours following'
+aS'sponsor institution'
 p2314
-aS'comparisons Geometric'
+aS'Subjects were'
 p2315
-aS'infrequent Adverse events'
+aS'over systemic reactions'
 p2316
-aS'rats revealed neither'
+aS'anti HBs 10'
 p2317
-aS'strong mucosal immunogenicity'
+aS'parenteral HBV'
 p2318
-aS'patients include combined'
+aS'careful'
 p2319
-aS'placebo All study'
+aS'73 provided'
 p2320
-aS'immunogenicity of nasal'
+aS'apparent abnormalities visualized'
 p2321
-aS'such samples'
+aS'Biokit Barcelona Spain'
 p2322
-aS'90 day period'
+aS'plant derived vaccines'
 p2323
-aS'Ethics'
+aS'nasal flu vaccine'
 p2324
-aS'antigenicity studies'
+aS'distressing'
 p2325
-aS'aspects'
+aS'efficiently'
 p2326
-aS'around'
+aS'T lymphocytes'
 p2327
-aS'blinded fashion'
+aS'buffer without'
 p2328
-aS'mucosal alterations'
+aS'Spain'
 p2329
-aS'were monitored over'
+aS'regarding chemical'
 p2330
-aS'recipient'
+aS'vaccine doses Local'
 p2331
-aS'90 applied doses'
+aS'frequently in participants'
 p2332
-aS'infected patient'
+aS'region'
 p2333
-aS'were estimated pre'
+aS'clinically apparent abnormalities'
 p2334
-aS'aqueous'
+aS'used to estimate'
 p2335
-aS'irritating nor induced'
+aS'HBc alkaline'
 p2336
-aS'corroborates previous'
+aS'within 72hours following'
 p2337
-aS'failures included'
+aS'Iglesias P rez'
 p2338
-aS'45 years There'
+aS'compared by Fisher'
 p2339
-aS'envelope proteins'
+aS'them'
 p2340
-aS'benefit'
+aS'equal'
 p2341
-aS'Subjects'
+aS'strain'
 p2342
-aS'either'
+aS'good'
 p2343
-aS'hematology values'
+aS'inversely proportional'
 p2344
-aS'side effects'
+aS'patients and carriers'
 p2345
-aS'reported by 15'
+aS'were stored'
 p2346
-aS'64'
+aS'long term'
 p2347
-aS'voluntarily'
+aS'alterations or transient'
 p2348
-aS'partial efficacy'
+aS'diluted in sterile'
 p2349
-aS'recognize'
+aS'helpful comments Finally'
 p2350
-aS'candidate whereas systemic'
+aS'congestion sneezing nasal'
 p2351
-aS'50 g derived'
+aS'encouraging taking'
 p2352
-aS'than 97'
+aS'different'
 p2353
-aS'than 95'
+aS'participant'
 p2354
-aS'influenza nasal flu'
+aS'through novel routes'
 p2355
-aS'assay ELISA adapted'
+aS'spray device Accuspray'
 p2356
-aS'immunization with HBsAg'
+aS'doctor'
 p2357
-aS'ability'
+aS'formulations'
 p2358
-aS'HBcAg considering'
+aS'All but two'
 p2359
-aS'HBsAg alone'
+aS'electron microscopy EM'
 p2360
-aS'doses Local'
+aS'surveillance'
 p2361
-aS'response to major'
+aS'induction of immunity'
 p2362
-aS'dependent and independent'
+aS'further immunogenicity studies'
 p2363
-aS'specializing'
+aS'full length recombinant'
 p2364
-aS'allocation All'
+aS'status'
 p2365
-aS'palate itching anosmia'
+aS'internal medicine toxicology'
 p2366
-aS'cytotoxic T lymphocytes'
+aS'commonly reported'
 p2367
-aS'chronic HBV infection'
+aS'levels were'
 p2368
-aS'visits'
+aS'particulate antigens'
 p2369
-aS'7 years range'
+aS'0 0038 All'
 p2370
-aS'solid phase monoclonal'
+aS'IU'
 p2371
-aS'50 g purified'
+aS'formulation Phase II'
 p2372
-aS'PBMCs from patients'
+aS'Barcelona'
 p2373
-aS'nasal vaccine formulation'
+aS'route showing induction'
 p2374
-aS'fifth dose'
+aS'sample size nine'
 p2375
-aS'25 showed'
+aS'l in order'
 p2376
-aS'categorized by body'
+aS'seroprotected subjects were'
 p2377
-aS'cost and side'
+aS'total serum antibody'
 p2378
-aS'post immunization sera'
+aS'self limiting resolving'
 p2379
-aS'apart All subjects'
+aS'evaluated in duplicate'
 p2380
-aS'mice reconstituted'
+aS'very encouraging'
 p2381
-aS'pockets'
+aS'eligible'
 p2382
-aS'act'
+aS'defined as absent'
 p2383
-aS'local tolerance'
+aS'chronic patients include'
 p2384
-aS'code labeled'
+aS'became chronic carriers'
 p2385
-aS'Information'
+aS'steroid anti inflammatory'
 p2386
-aS'other mucosal'
+aS'baseline 30'
 p2387
-aS'prolonged hospitalization'
+aS'studies with HBsAg'
 p2388
-aS'study and control'
+aS'other commercial'
 p2389
-aS'without any'
+aS'were more frequently'
 p2390
-aS'major HBV'
+aS'findings in experiments'
 p2391
-aS'terminal region'
+aS'cell immunity'
 p2392
-aS'trial were'
+aS'inability'
 p2393
-aS'HBsAg 10IU'
+aS'placebo group 59'
 p2394
-aS'immunogenicity Preclinical'
+aS'g nasal flu'
 p2395
-aS'determine'
+aS'persistently'
 p2396
-aS'immunization further'
+aS'reporting adverse events'
 p2397
-aS'intervention'
+aS'sprayed'
 p2398
-aS'proportion hypo responders'
+aS'Only anti HBs'
 p2399
-aS'conflict of interest'
+aS'levels against'
 p2400
-aS'g derived recombinant'
+aS'among'
 p2401
-aS'g influenza nasal'
+aS'adjustments'
 p2402
-aS'than 95 purity'
+aS'local or systemic'
 p2403
-aS'underwent pre study'
+aS'cytotoxic T cell'
 p2404
-aS'enhancement observed'
+aS'showed protective'
 p2405
-aS'low'
+aS'Solicited adverse events'
 p2406
-aS'days All sera'
+aS'all participants were'
 p2407
-aS'secretion'
+aS'behavioural'
 p2408
-aS'needed to reach'
+aS'72hours following'
 p2409
-aS'30 Thirty'
+aS'comparisons Geometric'
 p2410
-aS'were self limiting'
+aS'infrequent Adverse events'
 p2411
-aS'also allows interaction'
+aS'rats revealed neither'
 p2412
-aS'professional antigen'
+aS'strong mucosal immunogenicity'
 p2413
-aS'Individuals were eligible'
+aS'patients include combined'
 p2414
-aS'hyper responders'
+aS'placebo All study'
 p2415
-aS'l One recipient'
+aS'immunogenicity of nasal'
 p2416
-aS'HBs anti'
+aS'such samples'
 p2417
-aS'human clinical'
+aS'90 day period'
 p2418
-aS'physician specializing'
+aS'Ethics'
 p2419
-aS'antigenicity studies were'
+aS'antigenicity studies'
 p2420
-aS'first report'
+aS'aspects'
 p2421
-aS'combined formulations'
+aS'around'
 p2422
-aS'Sprague Dawley'
+aS'blinded fashion'
 p2423
-aS'antigen gene'
+aS'mucosal alterations'
 p2424
-aS'temperature 38'
+aS'were monitored over'
 p2425
-aS'labeled matched pre'
+aS'recipient'
 p2426
-aS'surface and core'
+aS'90 applied doses'
 p2427
-aS'side effects underlines'
+aS'infected patient'
 p2428
-aS'were conducted'
+aS'were estimated pre'
 p2429
-aS'dose however five'
+aS'aqueous'
 p2430
-aS'dose schedule formulation'
+aS'irritating nor induced'
 p2431
-aS'inoculation Blood'
+aS'corroborates previous'
 p2432
-aS'wash samples were'
+aS'failures included'
 p2433
-aS'interval'
+aS'45 years There'
 p2434
-aS'USA'
+aS'envelope proteins'
 p2435
-aS'l Sera'
+aS'benefit'
 p2436
-aS'measurement'
+aS'Subjects'
 p2437
-aS'reporting adverse'
+aS'either'
 p2438
-aS'blood mononuclear'
+aS'hematology values'
 p2439
-aS'enable'
+aS'side effects'
 p2440
-aS'Th1 response'
+aS'reported by 15'
 p2441
-aS'point estimates'
+aS'64'
 p2442
-aS'size of 28nm'
+aS'voluntarily'
 p2443
-aS'nasally administered'
+aS'partial efficacy'
 p2444
-aS'recombinant full'
+aS'recognize'
 p2445
-aS'biochemistry'
+aS'candidate whereas systemic'
 p2446
-aS'2000'
+aS'50 g derived'
 p2447
-aS'underwent pre'
+aS'than 97'
 p2448
-aS'efficiently as primary'
+aS'than 95'
 p2449
-aS'comments Finally'
+aS'influenza nasal flu'
 p2450
-aS'pre incubated'
+aS'assay ELISA adapted'
 p2451
-aS'More'
+aS'immunization with HBsAg'
 p2452
-aS'presenting'
+aS'ability'
 p2453
-aS'requested'
+aS'HBcAg considering'
 p2454
-aS'antibody titers'
+aS'HBsAg alone'
 p2455
-aS'Preclinical toxicological studies'
+aS'doses Local'
 p2456
-aS'otorhinolaryngology Neither'
+aS'response to major'
 p2457
-aS'more than 95'
+aS'dependent and independent'
 p2458
-aS'potent immunogen'
+aS'specializing'
 p2459
-aS'post inoculation adverse'
+aS'allocation All'
 p2460
-aS'specializing in internal'
+aS'palate itching anosmia'
 p2461
-aS'each nostril'
+aS'cytotoxic T lymphocytes'
 p2462
-aS'vaccine candidate demonstrated'
+aS'chronic HBV infection'
 p2463
-aS'irritating nor'
+aS'visits'
 p2464
-aS'any general reaction'
+aS'7 years range'
 p2465
-aS'documented state'
+aS'solid phase monoclonal'
 p2466
-aS'liquid Each'
+aS'50 g purified'
 p2467
-aS'event profile under'
+aS'PBMCs from patients'
 p2468
-aS'Briefly UMELISA'
+aS'nasal vaccine formulation'
 p2469
-aS'mixed with 50'
+aS'fifth dose'
 p2470
-aS'were recruited'
+aS'25 showed'
 p2471
-aS'immunoglobulin'
+aS'categorized by body'
 p2472
-aS'placebo All'
+aS'cost and side'
 p2473
-aS'behavioral'
+aS'post immunization sera'
 p2474
-aS'other developed'
+aS'apart All subjects'
 p2475
-aS'per liter'
+aS'mice reconstituted'
 p2476
-aS'influenza'
+aS'pockets'
 p2477
-aS'estimated pre'
+aS'act'
 p2478
-aS'consider'
+aS'local tolerance'
 p2479
-aS'more immunogenic hepatitis'
+aS'code labeled'
 p2480
-aS'caused'
+aS'Information'
 p2481
-aS'withdrew voluntarily'
+aS'other mucosal'
 p2482
-aS'month'
+aS'prolonged hospitalization'
 p2483
-aS'vaccines currently'
+aS'study and control'
 p2484
-aS'25 showed protective'
+aS'without any'
 p2485
-aS'first and second'
+aS'major HBV'
 p2486
-aS'basic hematological'
+aS'terminal region'
 p2487
-aS'HBsAgHBcAg vaccine'
+aS'trial were'
 p2488
-aS'tabulated by time'
+aS'HBsAg 10IU'
 p2489
-aS'related to any'
+aS'immunogenicity Preclinical'
 p2490
-aS'children'
+aS'determine'
 p2491
-aS'2R bulbs'
+aS'immunization further'
 p2492
-aS'monitored over'
+aS'intervention'
 p2493
-aS'two seroprotected'
+aS'proportion hypo responders'
 p2494
-aS'frequent adverse events'
+aS'conflict of interest'
 p2495
-aS'entire core antigen'
+aS'g derived recombinant'
 p2496
-aS'events predominated'
+aS'g influenza nasal'
 p2497
-aS'novel adjuvants gene'
+aS'than 95 purity'
 p2498
-aS'cells APCs'
+aS'underwent pre study'
 p2499
-aS'HBcAg had'
+aS'enhancement observed'
 p2500
-aS'risk factors'
+aS'low'
 p2501
-aS'M cell'
+aS'days All sera'
 p2502
-aS'liter'
+aS'secretion'
 p2503
-aS'geometric mean anti'
+aS'needed to reach'
 p2504
-aS'1 to vaccine'
+aS'30 Thirty'
 p2505
-aS'induce'
+aS'were self limiting'
 p2506
-aS'All reactions'
+aS'also allows interaction'
 p2507
-aS'get 25'
+aS'professional antigen'
 p2508
-aS'device Also'
+aS'Individuals were eligible'
 p2509
-aS'HBcAg nasal'
+aS'hyper responders'
 p2510
-aS'viral clearance'
+aS'l One recipient'
 p2511
-aS'difference'
+aS'HBs anti'
 p2512
-aS'similar proportion'
+aS'human clinical'
 p2513
-aS'head tilted'
+aS'physician specializing'
 p2514
-aS'any adverse event'
+aS'antigenicity studies were'
 p2515
-aS'children became chronic'
+aS'first report'
 p2516
-aS'90 days following'
+aS'combined formulations'
 p2517
-aS'list'
+aS'Sprague Dawley'
 p2518
-aS'prolonged'
+aS'antigen gene'
 p2519
-aS'recipients one month'
+aS'temperature 38'
 p2520
-aS'were registered Only'
+aS'labeled matched pre'
 p2521
-aS'HBsAg used'
+aS'surface and core'
 p2522
-aS'small'
+aS'side effects underlines'
 p2523
-aS'infection resolving spontaneously'
+aS'were conducted'
 p2524
-aS'vaccines vaccines administered'
+aS'dose however five'
 p2525
-aS'surveillance methods Concurrent'
+aS'dose schedule formulation'
 p2526
-aS'revealed neither'
+aS'inoculation Blood'
 p2527
-aS'antibodies and 25'
+aS'wash samples were'
 p2528
-aS'seroprotective antibody titers'
+aS'interval'
 p2529
-aS'medical monitor'
+aS'USA'
 p2530
-aS'Similarly further assays'
+aS'l Sera'
 p2531
-aS'within 6 months'
+aS'measurement'
 p2532
-aS'parenteral administered'
+aS'reporting adverse'
 p2533
-aS'Havana Cuba licensed'
+aS'blood mononuclear'
 p2534
-aS'good safety'
+aS'enable'
 p2535
-aS'functioning'
+aS'Th1 response'
 p2536
-aS'very distressing'
+aS'point estimates'
 p2537
-aS'enough to cause'
+aS'size of 28nm'
 p2538
-aS'immunization sera Only'
+aS'nasally administered'
 p2539
-aS'10 l per'
+aS'recombinant full'
 p2540
-aS'hour after each'
+aS'biochemistry'
 p2541
-aS'reconstituted with peripheral'
+aS'2000'
 p2542
-aS'Engineering Biotechnology Havana'
+aS'underwent pre'
 p2543
-aS'presence'
+aS'efficiently as primary'
 p2544
-aS'samples All'
+aS'comments Finally'
 p2545
-aS'behavioral risk factors'
+aS'pre incubated'
 p2546
-aS'vomiting'
+aS'More'
 p2547
-aS'events reported'
+aS'presenting'
 p2548
-aS'animals under'
+aS'requested'
 p2549
-aS'HB CIGB'
+aS'antibody titers'
 p2550
-aS'excess'
+aS'Preclinical toxicological studies'
 p2551
-aS'planned medical consultations'
+aS'otorhinolaryngology Neither'
 p2552
-aS'nasal drug behavioral'
+aS'more than 95'
 p2553
-aS'significant acute'
+aS'potent immunogen'
 p2554
-aS'rate exceeded 15'
+aS'post inoculation adverse'
 p2555
-aS'immunity against HBV'
+aS'specializing in internal'
 p2556
-aS'Phase II'
+aS'each nostril'
 p2557
-aS'concluded at day'
+aS'vaccine candidate demonstrated'
 p2558
-aS'allows'
+aS'irritating nor'
 p2559
-aS'after treatment'
+aS'any general reaction'
 p2560
-aS'levels of anti'
+aS'documented state'
 p2561
-aS'vaccine studies'
+aS'liquid Each'
 p2562
-aS'novel routes'
+aS'event profile under'
 p2563
-aS'period and severity'
+aS'Briefly UMELISA'
 p2564
-aS'antibody responses against'
+aS'mixed with 50'
 p2565
-aS'0 6ml'
+aS'were recruited'
 p2566
-aS'g Miacalcin nasal'
+aS'immunoglobulin'
 p2567
-aS'dose injection'
+aS'placebo All'
 p2568
-aS'chronically infected'
+aS'behavioral'
 p2569
-aS'involved in collection'
+aS'other developed'
 p2570
-aS'toxicity'
+aS'per liter'
 p2571
-aS'All subjects received'
+aS'influenza'
 p2572
-aS'patients resolving'
+aS'estimated pre'
 p2573
-aS'more than 400'
+aS'consider'
 p2574
-aS'were also collected'
+aS'more immunogenic hepatitis'
 p2575
-aS'volunteers Written informed'
+aS'caused'
 p2576
-aS'placebo group Individuals'
+aS'withdrew voluntarily'
 p2577
-aS'pockets enable'
+aS'month'
 p2578
-aS'anosmia nasal'
+aS'vaccines currently'
 p2579
-aS'immunoenhancing'
+aS'25 showed protective'
 p2580
-aS'surveillance methods'
+aS'first and second'
 p2581
-aS'events within'
+aS'basic hematological'
 p2582
-aS'commercial recombinant HBcAg'
+aS'HBsAgHBcAg vaccine'
 p2583
-aS'immunosuppressive disorders'
+aS'tabulated by time'
 p2584
-aS'trained'
+aS'related to any'
 p2585
-aS'calcitonin salmon Novartis'
+aS'children'
 p2586
-aS'mononuclear'
+aS'2R bulbs'
 p2587
-aS'containing recombinant hepatitis'
+aS'monitored over'
 p2588
-aS'alkaline phosphatase conjugate'
+aS'two seroprotected'
 p2589
-aS'B cell activator'
+aS'frequent adverse events'
 p2590
-aS'clearly demonstrates'
+aS'entire core antigen'
 p2591
-aS'l for analysis'
+aS'events predominated'
 p2592
-aS'interval protocol'
+aS'novel adjuvants gene'
 p2593
-aS'CTL level'
+aS'cells APCs'
 p2594
-aS'intervention to prevent'
+aS'HBcAg had'
 p2595
-aS'received either NASVAC'
+aS'risk factors'
 p2596
-aS'geometric mean antibody'
+aS'M cell'
 p2597
-aS'available for testing'
+aS'liter'
 p2598
-aS'were requested'
+aS'geometric mean anti'
 p2599
-aS'outpatient'
+aS'1 to vaccine'
 p2600
-aS'Drug Quality Control'
+aS'induce'
 p2601
-aS'tested'
+aS'All reactions'
 p2602
-aS'anti HBs ELISA'
+aS'get 25'
 p2603
-aS'were mild self'
+aS'device Also'
 p2604
-aS'cell dependent'
+aS'HBcAg nasal'
 p2605
-aS'Cuba licensed hepatitis'
+aS'viral clearance'
 p2606
-aS'drug over'
+aS'difference'
 p2607
-aS'administration of successive'
+aS'similar proportion'
 p2608
-aS'avoid anterior'
+aS'head tilted'
 p2609
-aS'strong HBV core'
+aS'any adverse event'
 p2610
-aS'mean antibody'
+aS'children became chronic'
 p2611
-aS'placebo controlled double'
+aS'90 days following'
 p2612
-aS'support further phase'
+aS'list'
 p2613
-aS'l and high'
+aS'prolonged'
 p2614
-aS'nine'
+aS'recipients one month'
 p2615
-aS'mostly reported during'
+aS'were registered Only'
 p2616
-aS'any symptom'
+aS'HBsAg used'
 p2617
-aS'well coated'
+aS'small'
 p2618
-aS'fever chills headache'
+aS'infection resolving spontaneously'
 p2619
-aS'volunteer received either'
+aS'vaccines vaccines administered'
 p2620
-aS'include combined'
+aS'surveillance methods Concurrent'
 p2621
-aS'antigens Rates'
+aS'revealed neither'
 p2622
-aS'group sample size'
+aS'antibodies and 25'
 p2623
-aS'observation period concluded'
+aS'seroprotective antibody titers'
 p2624
-aS'All blood samples'
+aS'medical monitor'
 p2625
-aS'potential therapeutic use'
+aS'Similarly further assays'
 p2626
-aS'minimum'
+aS'within 6 months'
 p2627
-aS'higher than'
+aS'parenteral administered'
 p2628
-aS'numbers'
+aS'Havana Cuba licensed'
 p2629
-aS'tract'
+aS'good safety'
 p2630
-aS'sense'
+aS'functioning'
 p2631
-aS'HBsAg immunogenicity'
+aS'very distressing'
 p2632
-aS'activated B cells'
+aS'enough to cause'
 p2633
-aS'developed antibodies'
+aS'immunization sera Only'
 p2634
-aS'inoculation under sterile'
+aS'10 l per'
 p2635
-aS'against both antigens'
+aS'hour after each'
 p2636
-aS'baseline all participants'
+aS'reconstituted with peripheral'
 p2637
-aS'antibodies against HBsAg'
+aS'Engineering Biotechnology Havana'
 p2638
-aS'fluorigenic substrate'
+aS'presence'
 p2639
-aS'defined as concentration'
+aS'samples All'
 p2640
-aS'multi specific'
+aS'behavioral risk factors'
 p2641
-aS'hypo responders'
+aS'vomiting'
 p2642
-aS'titer Anti'
+aS'events reported'
 p2643
-aS'cases of fever'
+aS'animals under'
 p2644
-aS'l in such'
+aS'HB CIGB'
 p2645
-aS'activator'
+aS'excess'
 p2646
-aS'routine use'
+aS'planned medical consultations'
 p2647
-aS'plant'
+aS'nasal drug behavioral'
 p2648
-aS'sandwich'
+aS'significant acute'
 p2649
-aS'percentages were'
+aS'rate exceeded 15'
 p2650
-aS'mild No development'
+aS'immunity against HBV'
 p2651
-aS's head tilted'
+aS'Phase II'
 p2652
-aS'known nasally administered'
+aS'concluded at day'
 p2653
-aS'true adverse'
+aS'allows'
 p2654
-aS'otorhinolaryngologist performed periodical'
+aS'after treatment'
 p2655
-aS'two seroprotected vaccine'
+aS'levels of anti'
 p2656
-aS'buffer'
+aS'vaccine studies'
 p2657
-aS'enables antigens'
+aS'novel routes'
 p2658
-aS'Withdrawal'
+aS'period and severity'
 p2659
-aS'There were also'
+aS'antibody responses against'
 p2660
-aS'l based'
+aS'0 6ml'
 p2661
-aS'results indicated'
+aS'g Miacalcin nasal'
 p2662
-aS'recombinant full length'
+aS'dose injection'
 p2663
-aS'ELISA kits Samples'
+aS'chronically infected'
 p2664
-aS'rhinorrhea nasal stuffiness'
+aS'involved in collection'
 p2665
-aS'superior to 95'
+aS'toxicity'
 p2666
-aS'chemistries'
+aS'All subjects received'
 p2667
-aS'chronically infected patients'
+aS'patients resolving'
 p2668
-aS'transient nasal'
+aS'more than 400'
 p2669
-aS'failures included persistently'
+aS'were also collected'
 p2670
-aS'safety and preliminary'
+aS'volunteers Written informed'
 p2671
-aS'T cell dependent'
+aS'placebo group Individuals'
 p2672
-aS'signs nor'
+aS'pockets enable'
 p2673
-aS'enabling activated'
+aS'anosmia nasal'
 p2674
-aS'specific post inoculation'
+aS'immunoenhancing'
 p2675
-aS'group included sneezing'
+aS'surveillance methods'
 p2676
-aS'cell activator'
+aS'events within'
 p2677
-aS'between 18'
+aS'commercial recombinant HBcAg'
 p2678
-aS'made actively'
+aS'immunosuppressive disorders'
 p2679
-aS'signs'
+aS'trained'
 p2680
-aS'HBsAgHBcAg vaccine candidate'
+aS'calcitonin salmon Novartis'
 p2681
-aS'gratefully acknowledge Enrique'
+aS'mononuclear'
 p2682
-aS'20'
+aS'containing recombinant hepatitis'
 p2683
-aS'5ml Participants allocated'
+aS'alkaline phosphatase conjugate'
 p2684
-aS'luminal surface'
+aS'B cell activator'
 p2685
-aS'UMELISA plates 10'
+aS'clearly demonstrates'
 p2686
-aS'nasal immunization'
+aS'l for analysis'
 p2687
-aS'moderate adverse'
+aS'interval protocol'
 p2688
-aS'detected'
+aS'CTL level'
 p2689
-aS'were available'
+aS'intervention to prevent'
 p2690
-aS'Local site adverse'
+aS'received either NASVAC'
 p2691
-aS'volunteer generating more'
+aS'geometric mean antibody'
 p2692
-aS'placebo developed'
+aS'available for testing'
 p2693
-aS'antibody response'
+aS'were requested'
 p2694
-aS'HBsAg mixed'
+aS'outpatient'
 p2695
-aS'drugs of protein'
+aS'Drug Quality Control'
 p2696
-aS'2R'
+aS'tested'
 p2697
-aS'effective approach'
+aS'anti HBs ELISA'
 p2698
-aS'baseline 30 days'
+aS'were mild self'
 p2699
-aS'encouraging'
+aS'cell dependent'
 p2700
-aS'medicine toxicology'
+aS'Cuba licensed hepatitis'
 p2701
-aS'unexpected or severe'
+aS'drug over'
 p2702
-aS'Immunoassay Center'
+aS'administration of successive'
 p2703
-aS'cell pockets enable'
+aS'avoid anterior'
 p2704
-aS'generating more'
+aS'strong HBV core'
 p2705
-aS'natural HBsAg subtype'
+aS'mean antibody'
 p2706
-aS'g influenza'
+aS'placebo controlled double'
 p2707
-aS'HBcAg Biokit'
+aS'support further phase'
 p2708
-aS'seroprotected vaccine recipients'
+aS'l and high'
 p2709
-aS'became chronic'
+aS'nine'
 p2710
-aS'palate itching rhinorrhea'
+aS'mostly reported during'
 p2711
-aS'determine mucosal'
+aS'any symptom'
 p2712
-aS'antibodies 17'
+aS'well coated'
 p2713
-aS'always'
+aS'fever chills headache'
 p2714
-aS'assistance and helpful'
+aS'volunteer received either'
 p2715
-aS'Further antigenicity studies'
+aS'include combined'
 p2716
-aS'Only anti'
+aS'antigens Rates'
 p2717
-aS'did'
+aS'group sample size'
 p2718
-aS'collection of any'
+aS'observation period concluded'
 p2719
-aS'obtaining written informed'
+aS'All blood samples'
 p2720
-aS'found'
+aS'potential therapeutic use'
 p2721
-aS'difficult'
+aS'minimum'
 p2722
-aS'were collected'
+aS'higher than'
 p2723
-aS'characterized'
+aS'numbers'
 p2724
-aS'defects'
+aS'tract'
 p2725
-aS'excess over'
+aS'sense'
 p2726
-aS'Following administration'
+aS'HBsAg immunogenicity'
 p2727
-aS'tilted'
+aS'activated B cells'
 p2728
-aS'weight'
+aS'developed antibodies'
 p2729
-aS'undetectable'
+aS'inoculation under sterile'
 p2730
-aS'HBsAg antigen'
+aS'against both antigens'
 p2731
-aS'considered statistically significant'
+aS'baseline all participants'
 p2732
-aS'present formulation Phase'
+aS'antibodies against HBsAg'
 p2733
-aS'temperature 39'
+aS'fluorigenic substrate'
 p2734
-aS'antibodies Thus most'
+aS'defined as concentration'
 p2735
-aS'moderate and severe'
+aS'multi specific'
 p2736
-aS'licensed nasal vaccine'
+aS'hypo responders'
 p2737
-aS'moderate symptom bothersome'
+aS'titer Anti'
 p2738
-aS'20 of healthy'
+aS'cases of fever'
 p2739
-aS'volunteers Written'
+aS'l in such'
 p2740
-aS'Drug Administration'
+aS'activator'
 p2741
-aS'permanent disability'
+aS'routine use'
 p2742
-aS'low responders anti'
+aS'plant'
 p2743
-aS'toxicological studies'
+aS'sandwich'
 p2744
-aS'vomiting diarrhea'
+aS'percentages were'
 p2745
-aS'29'
+aS'mild No development'
 p2746
-aS'frequently reported'
+aS's head tilted'
 p2747
-aS'months of study'
+aS'known nasally administered'
 p2748
-aS'Geometric mean anti'
+aS'true adverse'
 p2749
-aS'study one'
+aS'otorhinolaryngologist performed periodical'
 p2750
-aS'mucosal irritating potential'
+aS'two seroprotected vaccine'
 p2751
-aS'severe Local site'
+aS'buffer'
 p2752
-aS'age Volunteers were'
+aS'enables antigens'
 p2753
-aS'issue'
+aS'Withdrawal'
 p2754
-aS'transport antigens'
+aS'There were also'
 p2755
-aS'renal dialysis'
+aS'l based'
 p2756
-aS'each treatment'
+aS'results indicated'
 p2757
-aS'patients or chronic'
+aS'recombinant full length'
 p2758
-aS'According'
+aS'ELISA kits Samples'
 p2759
-aS'mild symptom present'
+aS'rhinorrhea nasal stuffiness'
 p2760
-aS'specialized mechanisms'
+aS'superior to 95'
 p2761
-aS'Phase II clinical'
+aS'chemistries'
 p2762
-aS'Nine'
+aS'chronically infected patients'
 p2763
-aS'19 included'
+aS'transient nasal'
 p2764
-aS'immunity against HBcAg'
+aS'failures included persistently'
 p2765
-aS'mucosal blood vessel'
+aS'safety and preliminary'
 p2766
-aS'registered Only two'
+aS'T cell dependent'
 p2767
-aS'phosphate buffer without'
+aS'signs nor'
 p2768
-aS'allocation'
+aS'enabling activated'
 p2769
-aS'antigenic'
+aS'specific post inoculation'
 p2770
-aS'single otorhinolaryngologist performed'
+aS'group included sneezing'
 p2771
-aS'fever were registered'
+aS'cell activator'
 p2772
-aS'studies HBcAg'
+aS'between 18'
 p2773
-aS'age Volunteers'
+aS'made actively'
 p2774
-aS'seroprotective antibody'
+aS'signs'
 p2775
-aS'currently licensed'
+aS'HBsAgHBcAg vaccine candidate'
 p2776
-aS'g purified'
+aS'gratefully acknowledge Enrique'
 p2777
-aS'accession number X02763'
+aS'20'
 p2778
-aS'Recombinant HBcAg'
+aS'5ml Participants allocated'
 p2779
-aS'Severe reactions'
+aS'luminal surface'
 p2780
-aS'major'
+aS'UMELISA plates 10'
 p2781
-aS'consultations'
+aS'nasal immunization'
 p2782
-aS'probability'
+aS'moderate adverse'
 p2783
-aS'resulting HBcAg'
+aS'detected'
 p2784
-aS'0 73 provided'
+aS'were available'
 p2785
-aS'reacts with solid'
+aS'Local site adverse'
 p2786
-aS'Quality Control'
+aS'volunteer generating more'
 p2787
-aS'any clinical'
+aS'placebo developed'
 p2788
-aS'detection of total'
+aS'antibody response'
 p2789
-aS'two participants completed'
+aS'HBsAg mixed'
 p2790
-aS'eight recipients'
+aS'drugs of protein'
 p2791
-aS'mouth Two applications'
+aS'2R'
 p2792
-aS'including antigen'
+aS'effective approach'
 p2793
-aS'trial no formal'
+aS'baseline 30 days'
 p2794
-aS'mixture of 50g'
+aS'encouraging'
 p2795
-aS'HBsAg significantly'
+aS'medicine toxicology'
 p2796
-aS'cell and antibody'
+aS'unexpected or severe'
 p2797
-aS'threatening'
+aS'Immunoassay Center'
 p2798
-aS'least'
+aS'cell pockets enable'
 p2799
-aS'changes in animals'
+aS'generating more'
 p2800
-aS'Dickinson were filled'
+aS'natural HBsAg subtype'
 p2801
-aS'well documented'
+aS'g influenza'
 p2802
-aS'majority'
+aS'HBcAg Biokit'
 p2803
-aS'compartment'
+aS'seroprotected vaccine recipients'
 p2804
-aS'9 sterile'
+aS'became chronic'
 p2805
-aS'chills headache muscle'
+aS'palate itching rhinorrhea'
 p2806
-aS'participants needed'
+aS'determine mucosal'
 p2807
-aS'dose and between'
+aS'antibodies 17'
 p2808
-aS'general reaction'
+aS'always'
 p2809
-aS'react with antibodies'
+aS'assistance and helpful'
 p2810
-aS'approximately 500DC'
+aS'Further antigenicity studies'
 p2811
-aS'immunogenicity profile'
+aS'Only anti'
 p2812
-aS'undetectable anti HBs'
+aS'did'
 p2813
-aS'immediate'
+aS'collection of any'
 p2814
-aS'basal'
+aS'obtaining written informed'
 p2815
-aS'neutralization'
+aS'found'
 p2816
-aS'strong HBV'
+aS'difficult'
 p2817
-aS'study support further'
+aS'were collected'
 p2818
-aS'Food and Drug'
+aS'characterized'
 p2819
-aS'defects in dendritic'
+aS'defects'
 p2820
-aS'Biokit'
+aS'excess over'
 p2821
-aS'were mostly'
+aS'Following administration'
 p2822
-aS'against hepatitis'
+aS'tilted'
 p2823
-aS'kind'
+aS'weight'
 p2824
-aS'75 By comparison'
+aS'undetectable'
 p2825
-aS'vial'
+aS'HBsAg antigen'
 p2826
-aS'30 Thirty days'
+aS'considered statistically significant'
 p2827
-aS'characterized by electron'
+aS'present formulation Phase'
 p2828
-aS'profile under'
+aS'temperature 39'
 p2829
-aS'administered by day'
+aS'antibodies Thus most'
 p2830
-aS'vaccine and peptide'
+aS'moderate and severe'
 p2831
-aS'declare'
+aS'licensed nasal vaccine'
 p2832
-aS'antigen sampling including'
+aS'moderate symptom bothersome'
 p2833
-aS'Cuba All'
+aS'20 of healthy'
 p2834
-aS'CENATOX'
+aS'volunteers Written'
 p2835
-aS'HBeAg in saliva'
+aS'Drug Administration'
 p2836
-aS'immunogenicity Preclinical mouse'
+aS'permanent disability'
 p2837
-aS'72hours'
+aS'low responders anti'
 p2838
-aS'fixed volume'
+aS'toxicological studies'
 p2839
-aS'Dawley rats revealed'
+aS'vomiting diarrhea'
 p2840
-aS'fever were'
+aS'29'
 p2841
-aS'period concluded'
+aS'frequently reported'
 p2842
-aS'showing antibody levels'
+aS'months of study'
 p2843
-aS'glycosylated form HBcAg'
+aS'Geometric mean anti'
 p2844
-aS'dendritic'
+aS'study one'
 p2845
-aS'categorized'
+aS'mucosal irritating potential'
 p2846
-aS'0038 All'
+aS'severe Local site'
 p2847
-aS'assay anti'
+aS'age Volunteers were'
 p2848
-aS'antibodies against'
+aS'issue'
 p2849
-aS'C until'
+aS'transport antigens'
 p2850
-aS'virus control Recombinant'
+aS'renal dialysis'
 p2851
-aS'using similar surveillance'
+aS'each treatment'
 p2852
-aS'immunodominant antigen'
+aS'patients or chronic'
 p2853
-aS'internal'
+aS'According'
 p2854
-aS'Baseline comparability'
+aS'mild symptom present'
 p2855
-aS'achieved anti HBs'
+aS'specialized mechanisms'
 p2856
-aS'after treatment display'
+aS'Phase II clinical'
 p2857
-aS'specific Th cell'
+aS'Nine'
 p2858
-aS'Written informed consent'
+aS'19 included'
 p2859
-aS'added'
+aS'immunity against HBcAg'
 p2860
-aS'severity mild'
+aS'mucosal blood vessel'
 p2861
-aS'flu vaccine'
+aS'registered Only two'
 p2862
-aS'intensity and 98'
+aS'phosphate buffer without'
 p2863
-aS'reach'
+aS'allocation'
 p2864
-aS'developed antibodies against'
+aS'antigenic'
 p2865
-aS'react'
+aS'single otorhinolaryngologist performed'
 p2866
-aS'commercial ultramicroanalytic enzyme'
+aS'fever were registered'
 p2867
-aS'73'
+aS'studies HBcAg'
 p2868
-aS'moderate symptom'
+aS'age Volunteers'
 p2869
-aS'approved'
+aS'seroprotective antibody'
 p2870
-aS'recombinant HBcAg particles'
+aS'currently licensed'
 p2871
-aS'given 15 minutes'
+aS'g purified'
 p2872
-aS'trial Nine participants'
+aS'accession number X02763'
 p2873
-aS'immunomodulatory effect'
+aS'Recombinant HBcAg'
 p2874
-aS'were healthy'
+aS'Severe reactions'
 p2875
-aS'reported nasal'
+aS'major'
 p2876
-aS'get 25 seroprotection'
+aS'consultations'
 p2877
-aS'vaccine Heberbiovac'
+aS'probability'
 p2878
-aS'Local adverse'
+aS'resulting HBcAg'
 p2879
-aS'graded as severe'
+aS'0 73 provided'
 p2880
-aS'formulation Sterile'
+aS'reacts with solid'
 p2881
-aS'recipients one'
+aS'Quality Control'
 p2882
-aS'emitted fluorescence'
+aS'any clinical'
 p2883
-aS'authors'
+aS'detection of total'
 p2884
-aS'basal surface'
+aS'two participants completed'
 p2885
-aS'aches decreased appetite'
+aS'eight recipients'
 p2886
-aS'All sera were'
+aS'mouth Two applications'
 p2887
-aS'attention Serious'
+aS'including antigen'
 p2888
-aS'samples were evaluated'
+aS'trial no formal'
 p2889
-aS'candidate administered'
+aS'mixture of 50g'
 p2890
-aS'balanced format'
+aS'HBsAg significantly'
 p2891
-aS'other commercial anti'
+aS'cell and antibody'
 p2892
-aS'impact'
+aS'threatening'
 p2893
-aS'purity superior'
+aS'least'
 p2894
-aS'parameters'
+aS'changes in animals'
 p2895
-aS'64 8IU'
+aS'Dickinson were filled'
 p2896
-aS'severe symptoms'
+aS'well documented'
 p2897
-aS'until use'
+aS'majority'
 p2898
-aS'any other nasal'
+aS'compartment'
 p2899
-aS'basic hematological parameters'
+aS'9 sterile'
 p2900
-aS'minutes apart All'
+aS'chills headache muscle'
 p2901
-aS'HBs 10IU'
+aS'participants needed'
 p2902
-aS'prior inoculation'
+aS'dose and between'
 p2903
-aS'surface through'
+aS'general reaction'
 p2904
-aS'Thirty'
+aS'react with antibodies'
 p2905
-aS'immunogenicity of full'
+aS'approximately 500DC'
 p2906
-aS'antigens by nasal'
+aS'immunogenicity profile'
 p2907
-aS'Geometric mean'
+aS'undetectable anti HBs'
 p2908
-aS'event profile'
+aS'immediate'
 p2909
-aS'assigned arbitrarily'
+aS'basal'
 p2910
-aS'instructed to measure'
+aS'neutralization'
 p2911
-aS'human sera'
+aS'strong HBV'
 p2912
-aS'closely'
+aS'study support further'
 p2913
-aS'male adults between'
+aS'Food and Drug'
 p2914
-aS'were considered hyper'
+aS'defects in dendritic'
 p2915
-aS'anti HBs protective'
+aS'Biokit'
 p2916
-aS'candidate containing'
+aS'were mostly'
 p2917
-aS'evaluated during'
+aS'against hepatitis'
 p2918
-aS'State Center'
+aS'kind'
 p2919
-aS'HBsAg titer Anti'
+aS'75 By comparison'
 p2920
-aS'only 30'
+aS'vial'
 p2921
-aS'HBs ELISA'
+aS'30 Thirty days'
 p2922
-aS'common'
+aS'characterized by electron'
 p2923
-aS'rhinorrhea nasal'
+aS'profile under'
 p2924
-aS'administration also'
+aS'administered by day'
 p2925
-aS'subjects reporting adverse'
+aS'vaccine and peptide'
 p2926
-aS'residence time'
+aS'declare'
 p2927
-aS'both cases'
+aS'antigen sampling including'
 p2928
-aS'vaccines plant derived'
+aS'Cuba All'
 p2929
-aS'plasmid containing'
+aS'CENATOX'
 p2930
-aS'Enrique'
+aS'HBeAg in saliva'
 p2931
-aS'very encouraging taking'
+aS'immunogenicity Preclinical mouse'
 p2932
-aS'severe Clinically significant'
+aS'72hours'
 p2933
-aS'nasal bleeding Solicited'
+aS'fixed volume'
 p2934
-aS'Neither'
+aS'Dawley rats revealed'
 p2935
-aS'trial Nine'
+aS'fever were'
 p2936
-aS'allowed expiration'
+aS'period concluded'
 p2937
-aS'nasal ulceration'
+aS'showing antibody levels'
 p2938
-aS'97 of adverse'
+aS'glycosylated form HBcAg'
 p2939
-aS'kits Samples'
+aS'dendritic'
 p2940
-aS'immunization sera'
+aS'categorized'
 p2941
-aS'77 recorded'
+aS'0038 All'
 p2942
-aS'currently'
+aS'assay anti'
 p2943
-aS'diluted'
+aS'antibodies against'
 p2944
-aS'event There'
+aS'C until'
 p2945
-aS'immediate adverse'
+aS'virus control Recombinant'
 p2946
-aS'g Miacalcin'
+aS'using similar surveillance'
 p2947
-aS'tolerated safe'
+aS'immunodominant antigen'
 p2948
-aS'DC Additionally'
+aS'internal'
 p2949
-aS'neither clinical'
+aS'Baseline comparability'
 p2950
-aS'outcomes were'
+aS'achieved anti HBs'
 p2951
-aS'corroborates previous findings'
+aS'after treatment display'
 p2952
-aS'obtaining written'
+aS'specific Th cell'
 p2953
-aS'products or immunoglobulin'
+aS'Written informed consent'
 p2954
-aS'other well'
+aS'added'
 p2955
-aS'study entry'
+aS'severity mild'
 p2956
-aS'8IU l All'
+aS'flu vaccine'
 p2957
-aS'after vaccine administration'
+aS'intensity and 98'
 p2958
-aS'nostril were'
+aS'reach'
 p2959
-aS'sera Only'
+aS'developed antibodies against'
 p2960
-aS'itching anosmia'
+aS'react'
 p2961
-aS'2000 Among'
+aS'commercial ultramicroanalytic enzyme'
 p2962
-aS'peripheral blood'
+aS'73'
 p2963
-aS'were kept'
+aS'moderate symptom'
 p2964
-aS'HBV specific immune'
+aS'approved'
 p2965
-aS'nucleoprotein in trace'
+aS'recombinant HBcAg particles'
 p2966
-aS'headache muscle'
+aS'given 15 minutes'
 p2967
-aS'antibody levels 100IU'
+aS'trial Nine participants'
 p2968
-aS'HBs in sera'
+aS'immunomodulatory effect'
 p2969
-aS'novel hepatitis'
+aS'were healthy'
 p2970
-aS'immunotherapy'
+aS'reported nasal'
 p2971
-aS'became'
+aS'get 25 seroprotection'
 p2972
-aS'severity Binomial'
+aS'vaccine Heberbiovac'
 p2973
-aS'80 90'
+aS'Local adverse'
 p2974
-aS'toxicology'
+aS'graded as severe'
 p2975
-aS'event rate'
+aS'formulation Sterile'
 p2976
-aS'study products'
+aS'recipients one'
 p2977
-aS'arbitrarily'
+aS'emitted fluorescence'
 p2978
-aS'point'
+aS'authors'
 p2979
-aS'order to increase'
+aS'basal surface'
 p2980
-aS'protective anti'
+aS'aches decreased appetite'
 p2981
-aS'congestion'
+aS'All sera were'
 p2982
-aS'recorded during 90'
+aS'attention Serious'
 p2983
-aS'patient with high'
+aS'samples were evaluated'
 p2984
-aS'were reported during'
+aS'candidate administered'
 p2985
-aS'populations known'
+aS'balanced format'
 p2986
-aS'high mucosal nasal'
+aS'other commercial anti'
 p2987
-aS'antibody against'
+aS'impact'
 p2988
-aS'multi specific helper'
+aS'purity superior'
 p2989
-aS'vessel'
+aS'parameters'
 p2990
-aS'candidate formulated'
+aS'64 8IU'
 p2991
-aS'rabbits with induction'
+aS'severe symptoms'
 p2992
-aS'6 months'
+aS'until use'
 p2993
-aS'participants received'
+aS'any other nasal'
 p2994
-aS'between 24h'
+aS'basic hematological parameters'
 p2995
-aS'venipuncture for measurement'
+aS'minutes apart All'
 p2996
-aS'doctor s visits'
+aS'HBs 10IU'
 p2997
-aS'height between vaccine'
+aS'prior inoculation'
 p2998
-aS'strategy'
+aS'surface through'
 p2999
-aS'reduction'
+aS'Thirty'
 p3000
-aS'ensured'
+aS'immunogenicity of full'
 p3001
-aS'All anti HBs'
+aS'antigens by nasal'
 p3002
-aS'vaccine recipients according'
+aS'Geometric mean'
 p3003
-aS'detection of cellular'
+aS'event profile'
 p3004
-aS'allows interaction'
+aS'assigned arbitrarily'
 p3005
-aS'annoying'
+aS'instructed to measure'
 p3006
-aS'abnormalities in clinical'
+aS'human sera'
 p3007
-aS'one hyper responder'
+aS'closely'
 p3008
-aS'trained physician'
+aS'male adults between'
 p3009
-aS'both antigens'
+aS'were considered hyper'
 p3010
-aS'study in 19'
+aS'anti HBs protective'
 p3011
-aS'Sterile physiologic saline'
+aS'candidate containing'
 p3012
-aS'occurred during'
+aS'evaluated during'
 p3013
-aS'acemannan Whether'
+aS'State Center'
 p3014
-aS'liver'
+aS'HBsAg titer Anti'
 p3015
-aS'titers of more'
+aS'only 30'
 p3016
-aS'Preclinical toxicological'
+aS'HBs ELISA'
 p3017
-aS'developments'
+aS'common'
 p3018
-aS'screening visit'
+aS'rhinorrhea nasal'
 p3019
-aS'highest'
+aS'administration also'
 p3020
-aS'cause'
+aS'subjects reporting adverse'
 p3021
-aS'resulting'
+aS'residence time'
 p3022
-aS'solid'
+aS'both cases'
 p3023
-aS'safe and immunogenic'
+aS'vaccines plant derived'
 p3024
-aS'enrollment'
+aS'plasmid containing'
 p3025
-aS'coated with commercial'
+aS'Enrique'
 p3026
-aS'well known'
+aS'very encouraging taking'
 p3027
-aS'vaccine allocation'
+aS'severe Clinically significant'
 p3028
-aS'antibody tests against'
+aS'nasal bleeding Solicited'
 p3029
-aS'behavior'
+aS'Neither'
 p3030
-aS'Exposure'
+aS'trial Nine'
 p3031
-aS'resolving within 72h'
+aS'allowed expiration'
 p3032
-aS'Becton Dickinson were'
+aS'nasal ulceration'
 p3033
-aS'Furthermore local'
+aS'97 of adverse'
 p3034
-aS'nurse sprayed'
+aS'kits Samples'
 p3035
-aS'37'
+aS'immunization sera'
 p3036
-aS'subjects signed'
+aS'77 recorded'
 p3037
-aS'volunteers were aware'
+aS'currently'
 p3038
-aS'binding'
+aS'diluted'
 p3039
-aS'study after'
+aS'event There'
 p3040
-aS'production facilities'
+aS'immediate adverse'
 p3041
-aS'display strong'
+aS'g Miacalcin'
 p3042
-aS'immunomodulatory'
+aS'tolerated safe'
 p3043
-aS'during 90'
+aS'DC Additionally'
 p3044
-aS'commonly'
+aS'neither clinical'
 p3045
-aS'recipients achieved anti'
+aS'outcomes were'
 p3046
-aS'seroprotected vaccine'
+aS'corroborates previous findings'
 p3047
-aS'reach 75'
+aS'obtaining written'
 p3048
-aS'alone'
+aS'products or immunoglobulin'
 p3049
-aS'aches'
+aS'other well'
 p3050
-aS'rate increased'
+aS'study entry'
 p3051
-aS'estimate'
+aS'8IU l All'
 p3052
-aS'reporting of adverse'
+aS'after vaccine administration'
 p3053
-aS'fashion on code'
+aS'nostril were'
 p3054
-aS'studies were'
+aS'sera Only'
 p3055
-aS'authors thank'
+aS'itching anosmia'
 p3056
-aS'nausea vomiting diarrhea'
+aS'2000 Among'
 p3057
-aS'weak HBV specific'
+aS'peripheral blood'
 p3058
-aS'negative result'
+aS'were kept'
 p3059
-aS'conflict'
+aS'HBV specific immune'
 p3060
-aS'influenza nasal'
+aS'nucleoprotein in trace'
 p3061
-aS'g HBsAg mixed'
+aS'headache muscle'
 p3062
-aS'7 of them'
+aS'antibody levels 100IU'
 p3063
-aS'performed periodical examinations'
+aS'HBs in sera'
 p3064
-aS'Miacalcin'
+aS'novel hepatitis'
 p3065
-aS'nasally parenteral administered'
+aS'immunotherapy'
 p3066
-aS'48hours on administration'
+aS'became'
 p3067
-aS'conducted in Sprague'
+aS'severity Binomial'
 p3068
-aS'antibody titers against'
+aS'80 90'
 p3069
-aS'mild self limiting'
+aS'toxicology'
 p3070
-aS'severe Severe reactions'
+aS'event rate'
 p3071
-aS'systemic reactions 71'
+aS'study products'
 p3072
-aS'HBcAg Individuals were'
+aS'arbitrarily'
 p3073
-aS'did not increase'
+aS'point'
 p3074
-aS'older'
+aS'order to increase'
 p3075
-aS'percentages'
+aS'protective anti'
 p3076
-aS'negative for HBsAg'
+aS'congestion'
 p3077
-aS'responder volunteer'
+aS'recorded during 90'
 p3078
-aS'sera Briefly UMELISA'
+aS'patient with high'
 p3079
-aS'clinically significant'
+aS'were reported during'
 p3080
-aS'achieved antibody'
+aS'populations known'
 p3081
-aS'polyclonal'
+aS'high mucosal nasal'
 p3082
-aS'anti HBs 100IU'
+aS'antibody against'
 p3083
-aS'negative immunomodulatory'
+aS'multi specific helper'
 p3084
-aS'entry'
+aS'vessel'
 p3085
-aS'clearance'
+aS'candidate formulated'
 p3086
-aS'Quality'
+aS'rabbits with induction'
 p3087
-aS'adverse events 58'
+aS'6 months'
 p3088
-aS'carrier state'
+aS'participants received'
 p3089
-aS'nucleoprotein'
+aS'between 24h'
 p3090
-aS'test for proportions'
+aS'venipuncture for measurement'
 p3091
-aS'CECMED'
+aS'doctor s visits'
 p3092
-aS'administered using'
+aS'height between vaccine'
 p3093
-aS'given 15'
+aS'strategy'
 p3094
-aS'sera were available'
+aS'reduction'
 p3095
-aS'devices and methodologies'
+aS'ensured'
 p3096
-aS'competitive'
+aS'All anti HBs'
 p3097
-aS'cells transport antigens'
+aS'vaccine recipients according'
 p3098
-aS'administration enables antigens'
+aS'detection of cellular'
 p3099
-aS'against HBsAg 10IU'
+aS'allows interaction'
 p3100
-aS'rate exceeded'
+aS'annoying'
 p3101
-aS'useful'
+aS'abnormalities in clinical'
 p3102
-aS'recombinant HBsAg subtype'
+aS'one hyper responder'
 p3103
-aS'Written informed'
+aS'trained physician'
 p3104
-aS'immunoenzymatic assay'
+aS'both antigens'
 p3105
-aS'HBs ELISA kits'
+aS'study in 19'
 p3106
-aS'nasal route showing'
+aS'Sterile physiologic saline'
 p3107
-aS'schedule Following'
+aS'occurred during'
 p3108
-aS'corroborates'
+aS'acemannan Whether'
 p3109
-aS'added reacting'
+aS'liver'
 p3110
-aS'specific immune response'
+aS'titers of more'
 p3111
-aS'g of HBcAg'
+aS'Preclinical toxicological'
 p3112
-aS'12h post immunization'
+aS'developments'
 p3113
-aS'estimate each'
+aS'screening visit'
 p3114
-aS'same volume'
+aS'highest'
 p3115
-aS'immediate adverse events'
+aS'cause'
 p3116
-aS'increase in frequency'
+aS'resulting'
 p3117
-aS'transparent liquid'
+aS'solid'
 p3118
-aS'doses Local adverse'
+aS'safe and immunogenic'
 p3119
-aS'liver failure'
+aS'enrollment'
 p3120
-aS'format'
+aS'coated with commercial'
 p3121
-aS'situation'
+aS'well known'
 p3122
-aS'included fever chills'
+aS'vaccine allocation'
 p3123
-aS'HBcAg nucleic acids'
+aS'antibody tests against'
 p3124
-aS'support further'
+aS'behavior'
 p3125
-aS'Finlay Hospital Havana'
+aS'Exposure'
 p3126
-aS'showing antibody'
+aS'resolving within 72h'
 p3127
-aS'purified recombinant full'
+aS'Becton Dickinson were'
 p3128
-aS'0 05'
+aS'Furthermore local'
 p3129
-aS'allocated to placebo'
+aS'nurse sprayed'
 p3130
-aS'13 excess over'
+aS'37'
 p3131
-aS'diseases immunosuppressive'
+aS'subjects signed'
 p3132
-aS'reacting'
+aS'volunteers were aware'
 p3133
-aS'adjustments were made'
+aS'binding'
 p3134
-aS'respect to anti'
+aS'study after'
 p3135
-aS'signal'
+aS'production facilities'
 p3136
-aS'hospitalizations were also'
+aS'display strong'
 p3137
-aS'only comprises'
+aS'immunomodulatory'
 p3138
-aS'reported in recipients'
+aS'during 90'
 p3139
-aS'developed anti'
+aS'commonly'
 p3140
-aS'over nasally parenteral'
+aS'recipients achieved anti'
 p3141
-aS'primary APCs'
+aS'seroprotected vaccine'
 p3142
-aS'allocation All aspects'
+aS'reach 75'
 p3143
-aS'conducted to characterize'
+aS'alone'
 p3144
-aS'Serious adverse'
+aS'aches'
 p3145
-aS'low responders'
+aS'rate increased'
 p3146
-aS'nausea vomiting'
+aS'estimate'
 p3147
-aS'Dawley'
+aS'reporting of adverse'
 p3148
-aS'steroid anti'
+aS'fashion on code'
 p3149
-aS'controlled double blinded'
+aS'studies were'
 p3150
-aS'normal functioning may'
+aS'authors thank'
 p3151
-aS'neutralization using'
+aS'nausea vomiting diarrhea'
 p3152
-aS'delivered'
+aS'weak HBV specific'
 p3153
-aS'reconstituted'
+aS'negative result'
 p3154
-aS'rates of seroprotection'
+aS'conflict'
 p3155
-aS'incubated with samples'
+aS'influenza nasal'
 p3156
-aS'interest to declare'
+aS'g HBsAg mixed'
 p3157
-aS'fatal or life'
+aS'7 of them'
 p3158
-aS'nasal bleeding'
+aS'performed periodical examinations'
 p3159
-aS'particle to more'
+aS'Miacalcin'
 p3160
-aS'derived vaccines'
+aS'nasally parenteral administered'
 p3161
-aS'immunization Withdrawal'
+aS'48hours on administration'
 p3162
-aS'any immediate'
+aS'conducted in Sprague'
 p3163
-aS'nose'
+aS'antibody titers against'
 p3164
-aS'hyper responder volunteer'
+aS'mild self limiting'
 p3165
-aS'patient'
+aS'severe Severe reactions'
 p3166
-aS'fifth vaccine dose'
+aS'systemic reactions 71'
 p3167
-aS'dose at time'
+aS'HBcAg Individuals were'
 p3168
-aS'matched pre'
+aS'did not increase'
 p3169
-aS'treatment display strong'
+aS'older'
 p3170
-aS'vaccine and placebo'
+aS'percentages'
 p3171
-aS'Dickinson Depending'
+aS'negative for HBsAg'
 p3172
-aS'helper and cytotoxic'
+aS'responder volunteer'
 p3173
-aS'reasonably immunogenic'
+aS'sera Briefly UMELISA'
 p3174
-aS'Chronic HBV'
+aS'clinically significant'
 p3175
-aS'hepatitis B surface'
+aS'achieved antibody'
 p3176
-aS'saliva from one'
+aS'polyclonal'
 p3177
-aS'body system Adverse'
+aS'anti HBs 100IU'
 p3178
-aS'after inoculation'
+aS'negative immunomodulatory'
 p3179
-aS'apparent abnormalities'
+aS'entry'
 p3180
-aS'range'
+aS'clearance'
 p3181
-aS'male adult'
+aS'Quality'
 p3182
-aS'4 C until'
+aS'adverse events 58'
 p3183
-aS'remaining 19'
+aS'carrier state'
 p3184
-aS'successive vaccine'
+aS'nucleoprotein'
 p3185
-aS'immunization for any'
+aS'test for proportions'
 p3186
-aS'comparison licensed HBV'
+aS'CECMED'
 p3187
-aS'annoying may'
+aS'administered using'
 p3188
-aS'anti HBs 10IU'
+aS'given 15'
 p3189
-aS'assay for qualitative'
+aS'sera were available'
 p3190
-aS'candidate developed'
+aS'devices and methodologies'
 p3191
-aS'formal sample'
+aS'competitive'
 p3192
-aS'antigen uptake'
+aS'cells transport antigens'
 p3193
-aS'Only two moderate'
+aS'administration enables antigens'
 p3194
-aS'recent exposure'
+aS'against HBsAg 10IU'
 p3195
-aS'all participants prior'
+aS'rate exceeded'
 p3196
-aS'reactions 71'
+aS'useful'
 p3197
-aS'enhancement of antiviral'
+aS'recombinant HBsAg subtype'
 p3198
-aS'computer'
+aS'Written informed'
 p3199
-aS'luminal'
+aS'immunoenzymatic assay'
 p3200
-aS'long'
+aS'HBs ELISA kits'
 p3201
-aS'after obtaining'
+aS'nasal route showing'
 p3202
-aS'hepatocellular carcinoma'
+aS'schedule Following'
 p3203
-aS'there were'
+aS'corroborates'
 p3204
-aS'time 37'
+aS'added reacting'
 p3205
-aS'result On completion'
+aS'specific immune response'
 p3206
-aS'general reaction category'
+aS'g of HBcAg'
 p3207
-aS'self limited'
+aS'12h post immunization'
 p3208
-aS'two moderate'
+aS'estimate each'
 p3209
-aS'nor induced'
+aS'same volume'
 p3210
-aS'virus after'
+aS'immediate adverse events'
 p3211
-aS'registered'
+aS'increase in frequency'
 p3212
-aS'19 participants were'
+aS'transparent liquid'
 p3213
-aS'X02763 HBsAg'
+aS'doses Local adverse'
 p3214
-aS'Severe'
+aS'liver failure'
 p3215
-aS'calcitonin salmon'
+aS'format'
 p3216
-aS'injection'
+aS'situation'
 p3217
-aS'HBs only'
+aS'included fever chills'
 p3218
-aS'further immunogenicity'
+aS'HBcAg nucleic acids'
 p3219
-aS'group Sneezing palate'
+aS'support further'
 p3220
-aS'such as older'
+aS'Finlay Hospital Havana'
 p3221
-aS'commonly reported nasal'
+aS'showing antibody'
 p3222
-aS'Heberbiovac HB CIGB'
+aS'purified recombinant full'
 p3223
-aS'seroconversion after'
+aS'0 05'
 p3224
-aS'given via'
+aS'allocated to placebo'
 p3225
-aS'co administered HBsAg'
+aS'13 excess over'
 p3226
-aS'criterion for protection'
+aS'diseases immunosuppressive'
 p3227
-aS'increased to 75'
+aS'reacting'
 p3228
-aS'associated'
+aS'adjustments were made'
 p3229
-aS'Local site reactions'
+aS'respect to anti'
 p3230
-aS'minutes'
+aS'signal'
 p3231
-aS'administration of each'
+aS'hospitalizations were also'
 p3232
-aS'participants were randomly'
+aS'only comprises'
 p3233
-aS'4 pre existing'
+aS'reported in recipients'
 p3234
-aS'continuous variables Adverse'
+aS'developed anti'
 p3235
-aS'quantification'
+aS'over nasally parenteral'
 p3236
-aS'generated list'
+aS'primary APCs'
 p3237
-aS'second vaccine'
+aS'allocation All aspects'
 p3238
-aS'immunosorbent assay ELISA'
+aS'conducted to characterize'
 p3239
-aS'microscopy EM analysis'
+aS'Serious adverse'
 p3240
-aS'mouse studies'
+aS'low responders'
 p3241
-aS'carcinoma'
+aS'nausea vomiting'
 p3242
-aS'e g Miacalcin'
+aS'Dawley'
 p3243
-aS'amounts'
+aS'steroid anti'
 p3244
-aS'screen failures'
+aS'controlled double blinded'
 p3245
-aS'studied dose'
+aS'normal functioning may'
 p3246
-aS'over systemic'
+aS'neutralization using'
 p3247
-aS'transport'
+aS'delivered'
 p3248
-aS'visits and hospitalizations'
+aS'reconstituted'
 p3249
-aS'gratefully acknowledge'
+aS'rates of seroprotection'
 p3250
-aS'HBcAg Individuals'
+aS'incubated with samples'
 p3251
-aS'fourth immunization Withdrawal'
+aS'interest to declare'
 p3252
-aS'positive response'
+aS'fatal or life'
 p3253
-aS'most commonly'
+aS'nasal bleeding'
 p3254
-aS'15 participants'
+aS'particle to more'
 p3255
-aS'activity of HBcAg'
+aS'derived vaccines'
 p3256
-aS'tests 4 pre'
+aS'immunization Withdrawal'
 p3257
-aS'generated'
+aS'any immediate'
 p3258
-aS'secondary outcomes'
+aS'nose'
 p3259
-aS'resulting HBcAg had'
+aS'hyper responder volunteer'
 p3260
-aS'further assays'
+aS'patient'
 p3261
-aS'nucleic acids bound'
+aS'fifth vaccine dose'
 p3262
-aS'Participants were'
+aS'dose at time'
 p3263
-aS'immunogenic in healthy'
+aS'matched pre'
 p3264
-aS'samples All anti'
+aS'treatment display strong'
 p3265
-aS'mucosal immune system'
+aS'vaccine and placebo'
 p3266
-aS'methodologies'
+aS'Dickinson Depending'
 p3267
-aS'fluorescence'
+aS'helper and cytotoxic'
 p3268
-aS'volumes of samples'
+aS'reasonably immunogenic'
 p3269
-aS'placebo solution All'
+aS'Chronic HBV'
 p3270
-aS'network of approximately'
+aS'hepatitis B surface'
 p3271
-aS'high HBsAg titer'
+aS'saliva from one'
 p3272
-aS'recorded adverse events'
+aS'body system Adverse'
 p3273
-aS'group No unexpected'
+aS'after inoculation'
 p3274
-aS'HBs only 30'
+aS'apparent abnormalities'
 p3275
-aS'study personnel'
+aS'range'
 p3276
-aS'international'
+aS'male adult'
 p3277
-aS'developed seroprotective'
+aS'4 C until'
 p3278
-aS'having'
+aS'remaining 19'
 p3279
-aS'time of immunization'
+aS'successive vaccine'
 p3280
-aS'code'
+aS'immunization for any'
 p3281
-aS'partial'
+aS'comparison licensed HBV'
 p3282
-aS'resolving acute'
+aS'annoying may'
 p3283
-aS'group remained positive'
+aS'anti HBs 10IU'
 p3284
-aS's head'
+aS'assay for qualitative'
 p3285
-aS'existing'
+aS'candidate developed'
 p3286
-aS'fourth dose'
+aS'formal sample'
 p3287
-aS'Immunoassay'
+aS'antigen uptake'
 p3288
-aS'Biotechnology Havana'
+aS'Only two moderate'
 p3289
-aS'were not substantially'
+aS'recent exposure'
 p3290
-aS'third dose'
+aS'all participants prior'
 p3291
-aS'mild symptom'
+aS'reactions 71'
 p3292
-aS'consultations or doctor'
+aS'enhancement of antiviral'
 p3293
-aS'mild moderate'
+aS'computer'
 p3294
-aS'l per nostril'
+aS'luminal'
 p3295
-aS'resolving within'
+aS'long'
 p3296
-aS'young'
+aS'after obtaining'
 p3297
-aS'between study'
+aS'hepatocellular carcinoma'
 p3298
-aS'chronic infection resolving'
+aS'there were'
 p3299
-aS'excluded'
+aS'time 37'
 p3300
-aS'fatal'
+aS'result On completion'
 p3301
-aS'One recipient'
+aS'general reaction category'
 p3302
-aS'remained positive'
+aS'self limited'
 p3303
-aS'adjuvants gene vaccine'
+aS'two moderate'
 p3304
-aS'HBV vaccine Heberbiovac'
+aS'nor induced'
 p3305
-aS'random'
+aS'virus after'
 p3306
-aS'most frequent'
+aS'registered'
 p3307
-aS'group 59'
+aS'19 participants were'
 p3308
-aS'vaccine allocation All'
+aS'X02763 HBsAg'
 p3309
-aS'25 seroprotection'
+aS'Severe'
 p3310
-aS'venipuncture'
+aS'calcitonin salmon'
 p3311
-aS'HBs 10 100IU'
+aS'injection'
 p3312
-aS'state of unresponsiveness'
+aS'HBs only'
 p3313
-aS'vaccine and were'
+aS'further immunogenicity'
 p3314
-aS'mucosal immunization further'
+aS'group Sneezing palate'
 p3315
-aS'electron'
+aS'such as older'
 p3316
-aS'cellular'
+aS'commonly reported nasal'
 p3317
-aS'functional defects'
+aS'Heberbiovac HB CIGB'
 p3318
-aS'young adults 30'
+aS'seroconversion after'
 p3319
-aS'cell and cytotoxic'
+aS'given via'
 p3320
-aS'100IU l Sera'
+aS'co administered HBsAg'
 p3321
-aS'nausea'
+aS'criterion for protection'
 p3322
-aS'recombinant Heberbiovac HB'
+aS'increased to 75'
 p3323
-aS'entire'
+aS'associated'
 p3324
-aS'core HBc specific'
+aS'Local site reactions'
 p3325
-aS'dose of HBsAg'
+aS'minutes'
 p3326
-aS'induced local damage'
+aS'administration of each'
 p3327
-aS'peripheral blood mononuclear'
+aS'participants were randomly'
 p3328
-aS'HBsAg subtype CIGB'
+aS'4 pre existing'
 p3329
-aS'race'
+aS'continuous variables Adverse'
 p3330
-aS'7 years'
+aS'quantification'
 p3331
-aS'Adverse events did'
+aS'generated list'
 p3332
-aS'levels 100IU'
+aS'second vaccine'
 p3333
-aS'concluded'
+aS'immunosorbent assay ELISA'
 p3334
-aS'CIGB production facilities'
+aS'microscopy EM analysis'
 p3335
-aS'number X02763 HBsAg'
+aS'mouse studies'
 p3336
-aS'events as well'
+aS'carcinoma'
 p3337
-aS'length recombinant'
+aS'e g Miacalcin'
 p3338
-aS'bleeding'
+aS'amounts'
 p3339
-aS'distressing interference'
+aS'screen failures'
 p3340
-aS'kept under observation'
+aS'studied dose'
 p3341
-aS'responder volunteer generating'
+aS'over systemic'
 p3342
-aS'State'
+aS'transport'
 p3343
-aS'included persistently abnormal'
+aS'visits and hospitalizations'
 p3344
-aS'study No cases'
+aS'gratefully acknowledge'
 p3345
-aS'surface network'
+aS'HBcAg Individuals'
 p3346
-aS'transformed previously'
+aS'fourth immunization Withdrawal'
 p3347
-aS'group sample'
+aS'positive response'
 p3348
-aS'limiting resolving within'
+aS'most commonly'
 p3349
-aS'anti HBV'
+aS'15 participants'
 p3350
-aS'cutaneous'
+aS'activity of HBcAg'
 p3351
-aS'clinical data'
+aS'tests 4 pre'
 p3352
-aS'post immunization Solicited'
+aS'generated'
 p3353
-aS'were similar'
+aS'secondary outcomes'
 p3354
-aS'HBV specific'
+aS'resulting HBcAg had'
 p3355
-aS'consistently'
+aS'further assays'
 p3356
-aS'code labeled matched'
+aS'nucleic acids bound'
 p3357
-aS'white race'
+aS'Participants were'
 p3358
-aS'values'
+aS'immunogenic in healthy'
 p3359
-aS'hematology values were'
+aS'samples All anti'
 p3360
-aS'stuffiness or congestion'
+aS'mucosal immune system'
 p3361
-aS'thin'
+aS'methodologies'
 p3362
-aS'body'
+aS'fluorescence'
 p3363
-aS'developed seroprotective antibody'
+aS'volumes of samples'
 p3364
-aS'doses Adverse'
+aS'placebo solution All'
 p3365
-aS'status after'
+aS'network of approximately'
 p3366
-aS'years range 18'
+aS'high HBsAg titer'
 p3367
-aS'other particulate antigens'
+aS'recorded adverse events'
 p3368
-aS'volunteers inoculated'
+aS'group No unexpected'
 p3369
-aS'strain W3110'
+aS'HBs only 30'
 p3370
-aS'other symptoms'
+aS'study personnel'
 p3371
-aS'different than'
+aS'international'
 p3372
-aS'functioning may'
+aS'developed seroprotective'
 p3373
-aS'size nine participants'
+aS'having'
 p3374
-aS'vaccine administration'
+aS'time of immunization'
 p3375
-aS'consideration'
+aS'code'
 p3376
-aS'any study procedure'
+aS'partial'
 p3377
-aS'Participants were kept'
+aS'resolving acute'
 p3378
-aS'compromised'
+aS'group remained positive'
 p3379
-aS'39'
+aS's head'
 p3380
-aS'38'
+aS'existing'
 p3381
-aS'PBMCs'
+aS'fourth dose'
 p3382
-aS'involved'
+aS'Immunoassay'
 p3383
-aS'distribution point'
+aS'Biotechnology Havana'
 p3384
-aS'fully demonstrated'
+aS'were not substantially'
 p3385
-aS'total serum'
+aS'third dose'
 p3386
-aS'volume of 125'
+aS'mild symptom'
 p3387
-aS'vaccines or had'
+aS'consultations or doctor'
 p3388
-aS'vial contained'
+aS'mild moderate'
 p3389
-aS'healthy young'
+aS'l per nostril'
 p3390
-aS'anti HBs equal'
+aS'resolving within'
 p3391
-aS'examinations'
+aS'young'
 p3392
-aS'formulated'
+aS'between study'
 p3393
-aS'all other reactions'
+aS'chronic infection resolving'
 p3394
-aS'fluorescent substrate'
+aS'excluded'
 p3395
-aS'molecule as revealed'
+aS'fatal'
 p3396
-aS'titer Anti HBs'
+aS'One recipient'
 p3397
-aS'outcomes'
+aS'remained positive'
 p3398
-aS'HBsAg immunogenicity Preclinical'
+aS'adjuvants gene vaccine'
 p3399
-aS'comparison with other'
+aS'HBV vaccine Heberbiovac'
 p3400
-aS'unresponsiveness'
+aS'random'
 p3401
-aS'sensitivity to any'
+aS'most frequent'
 p3402
-aS'4 pre'
+aS'group 59'
 p3403
-aS'plant derived'
+aS'vaccine allocation All'
 p3404
-aS'each treatment group'
+aS'25 seroprotection'
 p3405
-aS'acute or chronic'
+aS'venipuncture'
 p3406
-aS'neither irritating'
+aS'HBs 10 100IU'
 p3407
-aS'results of preclinical'
+aS'state of unresponsiveness'
 p3408
-aS'inoculation adverse reactions'
+aS'vaccine and were'
 p3409
-aS'severe Severe'
+aS'mucosal immunization further'
 p3410
-aS'anti inflammatory'
+aS'electron'
 p3411
-aS'chemistry and basic'
+aS'cellular'
 p3412
-aS'duplicate'
+aS'functional defects'
 p3413
-aS'examination'
+aS'young adults 30'
 p3414
-aS'days post immunization'
+aS'cell and cytotoxic'
 p3415
-aS'secondary outcomes were'
+aS'100IU l Sera'
 p3416
-aS'HBcAg CIGB Havana'
+aS'nausea'
 p3417
-aS'anti inflammatory analgesics'
+aS'recombinant Heberbiovac HB'
 p3418
-aS'first inoculation using'
+aS'entire'
 p3419
-aS'10 100IU'
+aS'core HBc specific'
 p3420
-aS'computer generated'
+aS'dose of HBsAg'
 p3421
-aS'Miacalcin nasal'
+aS'induced local damage'
 p3422
-aS'occurred'
+aS'peripheral blood mononuclear'
 p3423
-aS'transient'
+aS'HBsAg subtype CIGB'
 p3424
-aS'history of sensitivity'
+aS'race'
 p3425
-aS'rabbit'
+aS'7 years'
 p3426
-aS'vaccine candidate formulated'
+aS'Adverse events did'
 p3427
-aS'local reaction'
+aS'levels 100IU'
 p3428
-aS'nasal conditions'
+aS'concluded'
 p3429
-aS'randomized and received'
+aS'CIGB production facilities'
 p3430
-aS'evident and corroborates'
+aS'number X02763 HBsAg'
 p3431
-aS'animals'
+aS'events as well'
 p3432
-aS'known nasally'
+aS'length recombinant'
 p3433
-aS'immunodominant'
+aS'bleeding'
 p3434
-aS'until use Nasal'
+aS'distressing interference'
 p3435
-aS'subtype CIGB'
+aS'kept under observation'
 p3436
-aS'Solid phase antigen'
+aS'responder volunteer generating'
 p3437
-aS'were closely assessed'
+aS'State'
 p3438
-aS'mucosal blood'
+aS'included persistently abnormal'
 p3439
-aS'field'
+aS'study No cases'
 p3440
-aS'positive for anti'
+aS'surface network'
 p3441
-aS'profile Recent advances'
+aS'transformed previously'
 p3442
-aS'Miacalcin nasal spray'
+aS'group sample'
 p3443
-aS'pre study'
+aS'limiting resolving within'
 p3444
-aS'study drug'
+aS'anti HBV'
 p3445
-aS'administered through novel'
+aS'cutaneous'
 p3446
-aS'calculation'
+aS'clinical data'
 p3447
-aS'adults and 80'
+aS'post immunization Solicited'
 p3448
-aS'proportions'
+aS'were similar'
 p3449
-aS'symptom present'
+aS'HBV specific'
 p3450
-aS'Written'
+aS'consistently'
 p3451
-aS'anosmia nasal ulceration'
+aS'code labeled matched'
 p3452
-aS'mononuclear cells PBMCs'
+aS'white race'
 p3453
-aS'samples Solid phase'
+aS'values'
 p3454
-aS'particles'
+aS'hematology values were'
 p3455
-aS'similar proportion hypo'
+aS'stuffiness or congestion'
 p3456
-aS'0 2IU'
+aS'thin'
 p3457
-aS'doses Adverse events'
+aS'body'
 p3458
-aS'irritating potential'
+aS'developed seroprotective antibody'
 p3459
-aS'during 90 applied'
+aS'doses Adverse'
 p3460
-aS'vessel status'
+aS'status after'
 p3461
-aS'dependent'
+aS'years range 18'
 p3462
-aS'90 day'
+aS'other particulate antigens'
 p3463
-aS'adapted'
+aS'volunteers inoculated'
 p3464
-aS'candidate showed'
+aS'strain W3110'
 p3465
-aS'using similar'
+aS'other symptoms'
 p3466
-aS'hypothesis testing'
+aS'different than'
 p3467
-aS'also collected'
+aS'functioning may'
 p3468
-aS'developed anti HBs'
+aS'size nine participants'
 p3469
-aS'6ml'
+aS'vaccine administration'
 p3470
-aS'any local reaction'
+aS'consideration'
 p3471
-aS'43 subjects'
+aS'any study procedure'
 p3472
-aS'discomfort'
+aS'Participants were kept'
 p3473
-aS'limiting and disappeared'
+aS'compromised'
 p3474
-aS'without adjuvants'
+aS'39'
 p3475
-aS'any immediate adverse'
+aS'38'
 p3476
-aS'Furthermore participants were'
+aS'PBMCs'
 p3477
-aS'recipients as early'
+aS'involved'
 p3478
-aS'vaccine doses Adverse'
+aS'distribution point'
 p3479
-aS'binding of HBsAg'
+aS'fully demonstrated'
 p3480
-aS'mice and rabbits'
+aS'total serum'
 p3481
-aS'study were'
+aS'volume of 125'
 p3482
-aS'even without adjuvants'
+aS'vaccines or had'
 p3483
-aS'One'
+aS'vial contained'
 p3484
-aS'Furthermore participants'
+aS'healthy young'
 p3485
-aS'Nasal administration enables'
+aS'anti HBs equal'
 p3486
-aS'study clearly demonstrates'
+aS'examinations'
 p3487
-aS'adjustments were'
+aS'formulated'
 p3488
-aS'competitive sequential'
+aS'all other reactions'
 p3489
-aS'Local adverse events'
+aS'fluorescent substrate'
 p3490
-aS'abnormalities visualized'
+aS'molecule as revealed'
 p3491
-aS'significant events were'
+aS'titer Anti HBs'
 p3492
-aS'preclinical'
+aS'outcomes'
 p3493
-aS'produced'
+aS'HBsAg immunogenicity Preclinical'
 p3494
-aS'including'
+aS'comparison with other'
 p3495
-aS'units per liter'
+aS'unresponsiveness'
 p3496
-aS'All reactions were'
+aS'sensitivity to any'
 p3497
-aS'administered by intranasal'
+aS'4 pre'
 p3498
-aS'chemistry'
+aS'plant derived'
 p3499
-aS'white race predominated'
+aS'each treatment group'
 p3500
-aS'superior'
+aS'acute or chronic'
 p3501
-aS'mice with full'
+aS'neither irritating'
 p3502
-aS'absent mild symptom'
+aS'results of preclinical'
 p3503
-aS'consent Individuals'
+aS'inoculation adverse reactions'
 p3504
-aS'reactions combined'
+aS'severe Severe'
 p3505
-aS'each rate'
+aS'anti inflammatory'
 p3506
-aS'were self'
+aS'chemistry and basic'
 p3507
-aS'70IU'
+aS'duplicate'
 p3508
-aS'antigen sampling'
+aS'examination'
 p3509
-aS'specific active'
+aS'days post immunization'
 p3510
-aS'g purified recombinant'
+aS'secondary outcomes were'
 p3511
-aS'accession number'
+aS'HBcAg CIGB Havana'
 p3512
-aS'physicians'
+aS'anti inflammatory analgesics'
 p3513
-aS'study nurse sprayed'
+aS'first inoculation using'
 p3514
-aS'mechanisms'
+aS'10 100IU'
 p3515
-aS'assessed by Fisher'
+aS'computer generated'
 p3516
-aS'prophylactic vaccines plant'
+aS'Miacalcin nasal'
 p3517
-aS'Binomial distribution'
+aS'occurred'
 p3518
-aS'Solid'
+aS'transient'
 p3519
-aS'years range'
+aS'history of sensitivity'
 p3520
-aS'consent and underwent'
+aS'rabbit'
 p3521
-aS'symptom bothersome discomfort'
+aS'vaccine candidate formulated'
 p3522
-aS'functional'
+aS'local reaction'
 p3523
-aS'licensed nasal flu'
+aS'nasal conditions'
 p3524
-aS'interference with usual'
+aS'randomized and received'
 p3525
-aS'two 25'
+aS'evident and corroborates'
 p3526
-aS'study group remained'
+aS'animals'
 p3527
-aS'documented'
+aS'known nasally'
 p3528
-aS'high HBsAg'
+aS'immunodominant'
 p3529
-aS'predominated over systemic'
+aS'until use Nasal'
 p3530
-aS'specific active immunotherapy'
+aS'subtype CIGB'
 p3531
-aS'vaccine antigens NASVAC'
+aS'Solid phase antigen'
 p3532
-aS'adverse event There'
+aS'were closely assessed'
 p3533
-aS'route of immunization'
+aS'mucosal blood'
 p3534
-aS'participants during'
+aS'field'
 p3535
-aS'epistaxis were'
+aS'positive for anti'
 p3536
-aS'Biokit Barcelona'
+aS'profile Recent advances'
 p3537
-aS'systemic adverse effects'
+aS'Miacalcin nasal spray'
 p3538
-aS'induced serum'
+aS'pre study'
 p3539
-aS'after immunization'
+aS'study drug'
 p3540
-aS'determine mucosal irritating'
+aS'administered through novel'
 p3541
-aS'blood vessel'
+aS'calculation'
 p3542
-aS'any adjuvant'
+aS'adults and 80'
 p3543
-aS'estimates and 95'
+aS'proportions'
 p3544
-aS'clinically significant acute'
+aS'symptom present'
 p3545
-aS'core HBc'
+aS'Written'
 p3546
-aS'Thirty days'
+aS'anosmia nasal ulceration'
 p3547
-aS'cell responses'
+aS'mononuclear cells PBMCs'
 p3548
-aS'profile under routine'
+aS'samples Solid phase'
 p3549
-aS'Cuba licensed'
+aS'particles'
 p3550
-aS'inoculation adverse'
+aS'similar proportion hypo'
 p3551
-aS'exceeded'
+aS'0 2IU'
 p3552
-aS'80'
+aS'doses Adverse events'
 p3553
-aS'first dose'
+aS'irritating potential'
 p3554
-aS'access Furthermore local'
+aS'during 90 applied'
 p3555
-aS'were given via'
+aS'vessel status'
 p3556
-aS'self limited HBV'
+aS'dependent'
 p3557
-aS'rez'
+aS'90 day'
 p3558
-aS'older individuals renal'
+aS'adapted'
 p3559
-aS'clinical chemistry'
+aS'candidate showed'
 p3560
-aS'other well known'
+aS'using similar'
 p3561
-aS'l seroprotection percentage'
+aS'hypothesis testing'
 p3562
-aS'controlled double'
+aS'also collected'
 p3563
-aS'include'
+aS'developed anti HBs'
 p3564
-aS'third vaccine dose'
+aS'6ml'
 p3565
-aS'confirmed in further'
+aS'any local reaction'
 p3566
-aS'medical attention Serious'
+aS'43 subjects'
 p3567
-aS'formulation and placebo'
+aS'discomfort'
 p3568
-aS'first inoculation Blood'
+aS'limiting and disappeared'
 p3569
-aS'solid phase'
+aS'without adjuvants'
 p3570
-aS'reacts'
+aS'any immediate adverse'
 p3571
-aS'HBV chronically'
+aS'Furthermore participants were'
 p3572
-aS'nasal spray device'
+aS'recipients as early'
 p3573
-aS'intranasal route'
+aS'vaccine doses Adverse'
 p3574
-aS'serum antibody responses'
+aS'binding of HBsAg'
 p3575
-aS'group observation'
+aS'mice and rabbits'
 p3576
-aS'performed however each'
+aS'study were'
 p3577
-aS'study procedure'
+aS'even without adjuvants'
 p3578
-aS'70IU l One'
+aS'One'
 p3579
-aS'mean age'
+aS'Furthermore participants'
 p3580
-aS'candidate tested'
+aS'Nasal administration enables'
 p3581
-aS'backwards'
+aS'study clearly demonstrates'
 p3582
-aS'mucosal immune'
+aS'adjustments were'
 p3583
-aS'Sprague Dawley rats'
+aS'competitive sequential'
 p3584
-aS'after obtaining written'
+aS'Local adverse events'
 p3585
-aS'against HBV infection'
+aS'abnormalities visualized'
 p3586
-aS'HBs antibodies'
+aS'significant events were'
 p3587
-aS'e g influenza'
+aS'preclinical'
 p3588
-aS'event There were'
+aS'produced'
 p3589
-aS'chills'
+aS'including'
 p3590
-aS'total anti HBc'
+aS'units per liter'
 p3591
-aS'were needed'
+aS'All reactions were'
 p3592
-aS'plates 10'
+aS'administered by intranasal'
 p3593
-aS'length HBcAg CIGB'
+aS'chemistry'
 p3594
-aS'sera block antigenic'
+aS'white race predominated'
 p3595
-aS'rabbit anti'
+aS'superior'
 p3596
-aS'Administration'
+aS'mice with full'
 p3597
-aS'showed seroconversion against'
+aS'absent mild symptom'
 p3598
-aS'spray devices Accuspray'
+aS'consent Individuals'
 p3599
-aS'58'
+aS'reactions combined'
 p3600
-aS'planned medical'
+aS'each rate'
 p3601
-aS'C terminal region'
+aS'were self'
 p3602
-aS'vaccine only comprises'
+aS'70IU'
 p3603
-aS'mucosal nasal immunogenicity'
+aS'antigen sampling'
 p3604
-aS'reporting specific'
+aS'specific active'
 p3605
-aS'promoter'
+aS'g purified recombinant'
 p3606
-aS'antigenicity'
+aS'accession number'
 p3607
-aS'reactions were defined'
+aS'physicians'
 p3608
-aS'immunization Solicited adverse'
+aS'study nurse sprayed'
 p3609
-aS'systemic immunity elicited'
+aS'mechanisms'
 p3610
-aS'discomfort enough'
+aS'assessed by Fisher'
 p3611
-aS'adult volunteers'
+aS'prophylactic vaccines plant'
 p3612
-aS'antigens to access'
+aS'Binomial distribution'
 p3613
-aS'analgesics non planned'
+aS'Solid'
 p3614
-aS'0 0038'
+aS'years range'
 p3615
-aS'after vaccine'
+aS'consent and underwent'
 p3616
-aS'report in humans'
+aS'symptom bothersome discomfort'
 p3617
-aS'pre existing'
+aS'functional'
 p3618
-aS'HBcAg to HBsAg'
+aS'licensed nasal flu'
 p3619
-aS'Volunteers were recruited'
+aS'interference with usual'
 p3620
-aS'day period'
+aS'two 25'
 p3621
-aS'1 hour after'
+aS'study group remained'
 p3622
-aS'limitations explained'
+aS'documented'
 p3623
-aS'inoculation Adverse events'
+aS'high HBsAg'
 p3624
-aS'flu vaccine using'
+aS'predominated over systemic'
 p3625
-aS'Novartis'
+aS'specific active immunotherapy'
 p3626
-aS'placebo developed antibodies'
+aS'vaccine antigens NASVAC'
 p3627
-aS'obtained by venipuncture'
+aS'adverse event There'
 p3628
-aS'screening regarding'
+aS'route of immunization'
 p3629
-aS'institution'
+aS'participants during'
 p3630
-aS'independent antigen'
+aS'epistaxis were'
 p3631
-aS'blinded study'
+aS'Biokit Barcelona'
 p3632
-aS'observed'
+aS'systemic adverse effects'
 p3633
-aS'vaccine studies HBcAg'
+aS'induced serum'
 p3634
-aS'nasal HBsAg'
+aS'after immunization'
 p3635
-aS'HBcAg nasal vaccine'
+aS'determine mucosal irritating'
 p3636
-aS'size nine'
+aS'blood vessel'
 p3637
-aS'obtained from all'
+aS'any adjuvant'
 p3638
-aS'any component'
+aS'estimates and 95'
 p3639
-aS'assays'
+aS'clinically significant acute'
 p3640
-aS'consent Individuals were'
+aS'core HBc'
 p3641
-aS'each subject'
+aS'Thirty days'
 p3642
-aS'calcitonin'
+aS'cell responses'
 p3643
-aS'salmon Novartis'
+aS'profile under routine'
 p3644
-aS'elicit seroconversion'
+aS'Cuba licensed'
 p3645
-aS'sera Only anti'
+aS'inoculation adverse'
 p3646
-aS'distribution point estimates'
+aS'exceeded'
 p3647
-aS'cells transport'
+aS'80'
 p3648
-aS'phase II'
+aS'first dose'
 p3649
-aS'clinical studies'
+aS'access Furthermore local'
 p3650
-aS'cytoplasm'
+aS'were given via'
 p3651
-aS'them were requested'
+aS'self limited HBV'
 p3652
-aS'apart All'
+aS'rez'
 p3653
-aS'5 More'
+aS'older individuals renal'
 p3654
-aS'protective anti HBs'
+aS'clinical chemistry'
 p3655
-aS'prevent permanent'
+aS'other well known'
 p3656
-aS'derived vaccines vaccines'
+aS'l seroprotection percentage'
 p3657
-aS'events included anterior'
+aS'controlled double'
 p3658
-aS'22nm'
+aS'include'
 p3659
-aS'standard parenteral'
+aS'third vaccine dose'
 p3660
-aS'first in human'
+aS'confirmed in further'
 p3661
-aS'headache both'
+aS'medical attention Serious'
 p3662
-aS'HBcAg nucleic'
+aS'formulation and placebo'
 p3663
-aS'HBcAg combined formulations'
+aS'first inoculation Blood'
 p3664
-aS'After'
+aS'solid phase'
 p3665
-aS'titers around 70IU'
+aS'reacts'
 p3666
-aS'Center Havana Cuba'
+aS'HBV chronically'
 p3667
-aS'M cell pockets'
+aS'nasal spray device'
 p3668
-aS'well as hypo'
+aS'intranasal route'
 p3669
-aS'chronic diseases'
+aS'serum antibody responses'
 p3670
-aS'candidate were undertaken'
+aS'group observation'
 p3671
-aS'unresponsiveness characteristic'
+aS'performed however each'
 p3672
-aS'were not available'
+aS'study procedure'
 p3673
-aS'worldwide'
+aS'70IU l One'
 p3674
-aS'II clinical'
+aS'mean age'
 p3675
-aS'injection and up'
+aS'candidate tested'
 p3676
-aS'provided to participants'
+aS'backwards'
 p3677
-aS'II studies'
+aS'mucosal immune'
 p3678
-aS'dose to achieve'
+aS'Sprague Dawley rats'
 p3679
-aS'inflammatory Th1 response'
+aS'after obtaining written'
 p3680
-aS'conditions occurred'
+aS'against HBV infection'
 p3681
-aS'antigens with DC'
+aS'HBs antibodies'
 p3682
-aS'digestive'
+aS'e g influenza'
 p3683
-aS'eight'
+aS'event There were'
 p3684
-aS'posterior nasal dripping'
+aS'chills'
 p3685
-aS'nuisance'
+aS'total anti HBc'
 p3686
-aS'total dose'
+aS'were needed'
 p3687
-aS'treatment group observation'
+aS'plates 10'
 p3688
-aS'HBsAg exploiting'
+aS'length HBcAg CIGB'
 p3689
-aS'events were tabulated'
+aS'sera block antigenic'
 p3690
-aS'100 of vaccine'
+aS'rabbit anti'
 p3691
-aS'chronic patients'
+aS'Administration'
 p3692
-aS'consequences'
+aS'showed seroconversion against'
 p3693
-aS'95 purity'
+aS'spray devices Accuspray'
 p3694
-aS'further phase'
+aS'58'
 p3695
-aS'schedule formulation'
+aS'planned medical'
 p3696
-aS'modulatory effect'
+aS'C terminal region'
 p3697
-aS'headache both reports'
+aS'vaccine only comprises'
 p3698
-aS'hour after vaccine'
+aS'mucosal nasal immunogenicity'
 p3699
-aS'immunotherapy in HBV'
+aS'reporting specific'
 p3700
-aS'available for screening'
+aS'promoter'
 p3701
-aS'125l per nostril'
+aS'antigenicity'
 p3702
-aS'findings'
+aS'reactions were defined'
 p3703
-aS'comparison licensed'
+aS'immunization Solicited adverse'
 p3704
-aS'0038'
+aS'systemic immunity elicited'
 p3705
-aS'developments to boost'
+aS'discomfort enough'
 p3706
-aS'local adverse event'
+aS'adult volunteers'
 p3707
-aS'negative immunomodulatory effect'
+aS'antigens to access'
 p3708
-aS'immunopotentiating'
+aS'analgesics non planned'
 p3709
-aS'participants completed'
+aS'0 0038'
 p3710
-aS'visualized'
+aS'after vaccine'
 p3711
-aS'examinations with visualization'
+aS'report in humans'
 p3712
-aS'considered hyper'
+aS'pre existing'
 p3713
-aS'year 2000'
+aS'HBcAg to HBsAg'
 p3714
-aS'Briefly anti'
+aS'Volunteers were recruited'
 p3715
-aS'fourth immunization'
+aS'day period'
 p3716
-aS'placebo group Sneezing'
+aS'1 hour after'
 p3717
-aS'Organization there'
+aS'limitations explained'
 p3718
-aS'pre study screening'
+aS'inoculation Adverse events'
 p3719
-aS'events between study'
+aS'flu vaccine using'
 p3720
-aS'tolerance All'
+aS'Novartis'
 p3721
-aS'reporting of nasal'
+aS'placebo developed antibodies'
 p3722
-aS'rash'
+aS'obtained by venipuncture'
 p3723
-aS'including antigen uptake'
+aS'screening regarding'
 p3724
-aS'under routine'
+aS'institution'
 p3725
-aS'most moderate symptom'
+aS'independent antigen'
 p3726
-aS'vaccine such'
+aS'blinded study'
 p3727
-aS'achieve'
+aS'observed'
 p3728
-aS'approximately 500DC mm'
+aS'vaccine studies HBcAg'
 p3729
-aS'C until use'
+aS'nasal HBsAg'
 p3730
-aS'center randomized placebo'
+aS'HBcAg nasal vaccine'
 p3731
-aS'peptide'
+aS'size nine'
 p3732
-aS'28nm'
+aS'obtained from all'
 p3733
-aS'g nasal'
+aS'any component'
 p3734
-aS'Whether'
+aS'assays'
 p3735
-aS'adults in order'
+aS'consent Individuals were'
 p3736
-aS'disappeared within 72hours'
+aS'each subject'
 p3737
-aS'severe symptoms very'
+aS'calcitonin'
 p3738
-aS'were reported more'
+aS'salmon Novartis'
 p3739
-aS'sterile phosphate buffer'
+aS'elicit seroconversion'
 p3740
-aS'had clinically significant'
+aS'sera Only anti'
 p3741
-aS'patients and immune'
+aS'distribution point estimates'
 p3742
-aS'samples Solid'
+aS'cells transport'
 p3743
-aS'vaccine formulation consisting'
+aS'phase II'
 p3744
-aS'antibody tests'
+aS'clinical studies'
 p3745
-aS'given via nasal'
+aS'cytoplasm'
 p3746
-aS'anti HBc alkaline'
+aS'them were requested'
 p3747
-aS'baseline all'
+aS'apart All'
 p3748
-aS'strong polyclonal'
+aS'5 More'
 p3749
-aS'approach'
+aS'protective anti HBs'
 p3750
-aS'assay ELISA'
+aS'prevent permanent'
 p3751
-aS'exceeded 15'
+aS'derived vaccines vaccines'
 p3752
-aS'samples were collected'
+aS'events included anterior'
 p3753
-aS'hyper responder 100IU'
+aS'22nm'
 p3754
-aS'phosphatase conjugate'
+aS'standard parenteral'
 p3755
-aS'potent immunogen even'
+aS'first in human'
 p3756
-aS'fixed'
+aS'headache both'
 p3757
-aS'site reactions were'
+aS'HBcAg nucleic'
 p3758
-aS'e g nasal'
+aS'HBcAg combined formulations'
 p3759
-aS'derived recombinant HBsAg'
+aS'After'
 p3760
-aS'study support'
+aS'titers around 70IU'
 p3761
-aS'screening regarding chemical'
+aS'Center Havana Cuba'
 p3762
-aS'acceptable local'
+aS'M cell pockets'
 p3763
-aS'humans'
+aS'well as hypo'
 p3764
-aS'trace amounts'
+aS'chronic diseases'
 p3765
-aS'other reactions combined'
+aS'candidate were undertaken'
 p3766
-aS'HBsAg in mice'
+aS'unresponsiveness characteristic'
 p3767
-aS'clinical adverse'
+aS'were not available'
 p3768
-aS'display strong polyclonal'
+aS'worldwide'
 p3769
-aS'carriers of hepatitis'
+aS'II clinical'
 p3770
-aS'HBsAg significantly increases'
+aS'injection and up'
 p3771
-aS'sample size calculation'
+aS'provided to participants'
 p3772
-aS'B cell'
+aS'II studies'
 p3773
-aS'days All'
+aS'dose to achieve'
 p3774
-aS'digestive tract'
+aS'inflammatory Th1 response'
 p3775
-aS'HBV chronic'
+aS'conditions occurred'
 p3776
-aS'included anterior'
+aS'antigens with DC'
 p3777
-aS'cytokine response'
+aS'digestive'
 p3778
-aS'HBs protective'
+aS'eight'
 p3779
-aS'investigators'
+aS'posterior nasal dripping'
 p3780
-aS'any other symptoms'
+aS'nuisance'
 p3781
-aS'routine'
+aS'total dose'
 p3782
-aS'were measured'
+aS'treatment group observation'
 p3783
-aS'cells to work'
+aS'HBsAg exploiting'
 p3784
-aS'bothersome discomfort enough'
+aS'events were tabulated'
 p3785
-aS'recombinant hepatitis'
+aS'100 of vaccine'
 p3786
-aS'dendritic cell populations'
+aS'chronic patients'
 p3787
-aS'electron microscopy'
+aS'consequences'
 p3788
-aS'size calculation'
+aS'95 purity'
 p3789
-aS'local reaction category'
+aS'further phase'
 p3790
-aS'emitted'
+aS'schedule formulation'
 p3791
-aS'disorders or medication'
+aS'modulatory effect'
 p3792
-aS'immunization nor'
+aS'headache both reports'
 p3793
-aS'single nasal'
+aS'hour after vaccine'
 p3794
-aS'anti HBs alkaline'
+aS'immunotherapy in HBV'
 p3795
-aS'hypothesis'
+aS'available for screening'
 p3796
-aS'failure and hepatocellular'
+aS'125l per nostril'
 p3797
-aS'successive vaccine doses'
+aS'findings'
 p3798
-aS'responses against both'
+aS'comparison licensed'
 p3799
-aS'had no history'
+aS'0038'
 p3800
-aS'Also chronic HBV'
+aS'developments to boost'
 p3801
-aS'phase II studies'
+aS'local adverse event'
 p3802
-aS'nuisance at most'
+aS'negative immunomodulatory effect'
 p3803
-aS'Individuals of white'
+aS'immunopotentiating'
 p3804
-aS'parenteral HBV vaccine'
+aS'participants completed'
 p3805
-aS'taking'
+aS'visualized'
 p3806
-aS'acknowledge'
+aS'examinations with visualization'
 p3807
-aS'both reports'
+aS'considered hyper'
 p3808
-aS'EM analysis Further'
+aS'year 2000'
 p3809
-aS'responder 100IU'
+aS'Briefly anti'
 p3810
-aS'anti HBs UMELISA'
+aS'fourth immunization'
 p3811
-aS'itching anosmia nasal'
+aS'placebo group Sneezing'
 p3812
-aS'HBsAg or HBcAg'
+aS'Organization there'
 p3813
-aS'otorhinolaryngologist performed'
+aS'pre study screening'
 p3814
-aS'site reactions'
+aS'events between study'
 p3815
-aS'5 of seroprotected'
+aS'tolerance All'
 p3816
-aS'Toxicology and Carlos'
+aS'reporting of nasal'
 p3817
-aS'were estimated'
+aS'rash'
 p3818
-aS'animal studies'
+aS'including antigen uptake'
 p3819
-aS'17 and inability'
+aS'under routine'
 p3820
-aS'candidate demonstrated seroconversion'
+aS'most moderate symptom'
 p3821
-aS'adverse events within'
+aS'vaccine such'
 p3822
-aS'include combined prophylactic'
+aS'achieve'
 p3823
-aS'posterior dripping'
+aS'approximately 500DC mm'
 p3824
-aS'fact along'
+aS'C until use'
 p3825
-aS'study clearly'
+aS'center randomized placebo'
 p3826
-aS'Finally'
+aS'peptide'
 p3827
-aS'administration enables'
+aS'28nm'
 p3828
-aS'adults Local site'
+aS'g nasal'
 p3829
-aS'seroprotection percentage anti'
+aS'Whether'
 p3830
-aS'immunity Nasal'
+aS'adults in order'
 p3831
-aS'human clinical trial'
+aS'disappeared within 72hours'
 p3832
-aS'rates of local'
+aS'severe symptoms very'
 p3833
-aS'methods Concurrent'
+aS'were reported more'
 p3834
-aS'trial were closely'
+aS'sterile phosphate buffer'
 p3835
-aS'one hyper'
+aS'had clinically significant'
 p3836
-aS'mucosal irritating'
+aS'patients and immune'
 p3837
-aS'sequential immunoenzymatic'
+aS'samples Solid'
 p3838
-aS'statistical analysis There'
+aS'vaccine formulation consisting'
 p3839
-aS'activator enabling activated'
+aS'antibody tests'
 p3840
-aS'years There were'
+aS'given via nasal'
 p3841
-aS'kept under'
+aS'anti HBc alkaline'
 p3842
-aS'3 and epistaxis'
+aS'baseline all'
 p3843
-aS'days following'
+aS'strong polyclonal'
 p3844
-aS'Research Ethics'
+aS'approach'
 p3845
-aS'monoclonal'
+aS'assay ELISA'
 p3846
-aS'muscle aches'
+aS'exceeded 15'
 p3847
-aS'dripping nasal'
+aS'samples were collected'
 p3848
-aS'Drug Quality'
+aS'hyper responder 100IU'
 p3849
-aS'detection of IgA'
+aS'phosphatase conjugate'
 p3850
-aS'comprising HBsAg'
+aS'potent immunogen even'
 p3851
-aS'successive reaction'
+aS'fixed'
 p3852
-aS'sponsor institution Five'
+aS'site reactions were'
 p3853
-aS'headache muscle aches'
+aS'e g nasal'
 p3854
-aS'decreased'
+aS'derived recombinant HBsAg'
 p3855
-aS'labeled matched'
+aS'study support'
 p3856
-aS'one month after'
+aS'screening regarding chemical'
 p3857
-aS'acute hepatitis'
+aS'acceptable local'
 p3858
-aS'virus anti HBs'
+aS'humans'
 p3859
-aS'adverse events between'
+aS'trace amounts'
 p3860
-aS'secretion of HBeAg'
+aS'other reactions combined'
 p3861
-aS'multi'
+aS'HBsAg in mice'
 p3862
-aS'hepatocellular'
+aS'clinical adverse'
 p3863
-aS'8 of vaccine'
+aS'display strong polyclonal'
 p3864
-aS'reported among individuals'
+aS'carriers of hepatitis'
 p3865
-aS'statistical analysis'
+aS'HBsAg significantly increases'
 p3866
-aS'spray devices'
+aS'sample size calculation'
 p3867
-aS'other nasal drug'
+aS'B cell'
 p3868
-aS'expiration'
+aS'days All'
 p3869
-aS'attention or severe'
+aS'digestive tract'
 p3870
-aS'preliminary immunogenicity'
+aS'HBV chronic'
 p3871
-aS'systemic reactions'
+aS'included anterior'
 p3872
-aS'five vaccine doses'
+aS'cytokine response'
 p3873
-aS'helper'
+aS'HBs protective'
 p3874
-aS'Cuba and 50'
+aS'investigators'
 p3875
-aS'inoculation using'
+aS'any other symptoms'
 p3876
-aS'cutaneous rash'
+aS'routine'
 p3877
-aS'completed'
+aS'were measured'
 p3878
-aS'90 applied'
+aS'cells to work'
 p3879
-aS'mucosal adjuvant'
+aS'bothersome discomfort enough'
 p3880
-aS'specific immune'
+aS'recombinant hepatitis'
 p3881
-aS'interference with normal'
+aS'dendritic cell populations'
 p3882
-aS'visualized in vaccine'
+aS'electron microscopy'
 p3883
-aS'symptoms very distressing'
+aS'size calculation'
 p3884
-aS'dual'
+aS'local reaction category'
 p3885
-aS'random numbers'
+aS'emitted'
 p3886
-aS'Rates of adverse'
+aS'disorders or medication'
 p3887
-aS'day 30 Thirty'
+aS'immunization nor'
 p3888
-aS'Geometric'
+aS'single nasal'
 p3889
-aS'compartment protected'
+aS'anti HBs alkaline'
 p3890
-aS'prior to any'
+aS'hypothesis'
 p3891
-aS'blood screening'
+aS'failure and hepatocellular'
 p3892
-aS'recording of adverse'
+aS'successive vaccine doses'
 p3893
-aS'supported'
+aS'responses against both'
 p3894
-aS'severe Local'
+aS'had no history'
 p3895
-aS'infrequent Adverse'
+aS'Also chronic HBV'
 p3896
-aS'were given 15'
+aS'phase II studies'
 p3897
-aS'abnormal baseline'
+aS'nuisance at most'
 p3898
-aS'units'
+aS'Individuals of white'
 p3899
-aS'formulations in healthy'
+aS'parenteral HBV vaccine'
 p3900
-aS'further phase II'
+aS'taking'
 p3901
-aS'group No subjects'
+aS'acknowledge'
 p3902
-aS'adults 30 days'
+aS'both reports'
 p3903
-aS'antibody level'
+aS'EM analysis Further'
 p3904
-aS'around 70IU'
+aS'responder 100IU'
 p3905
-aS'85 5 More'
+aS'anti HBs UMELISA'
 p3906
-aS'S protein'
+aS'itching anosmia nasal'
 p3907
-aS'tolerated and reasonably'
+aS'HBsAg or HBcAg'
 p3908
-aS'29 7 years'
+aS'otorhinolaryngologist performed'
 p3909
-aS'revealed neither clinical'
+aS'site reactions'
 p3910
-aS'placebo solution'
+aS'5 of seroprotected'
 p3911
-aS'administration of HBcAg'
+aS'Toxicology and Carlos'
 p3912
-aS'sera block'
+aS'were estimated'
 p3913
-aS'reactions were combined'
+aS'animal studies'
 p3914
-aS'international units'
+aS'17 and inability'
 p3915
-aS'formulation in each'
+aS'candidate demonstrated seroconversion'
 p3916
-aS'administration comprising'
+aS'adverse events within'
 p3917
-aS'center'
+aS'include combined prophylactic'
 p3918
-aS'difficult to access'
+aS'posterior dripping'
 p3919
-aS'fully'
+aS'fact along'
 p3920
-aS'Conversely'
+aS'study clearly'
 p3921
-aS'were tabulated'
+aS'Finally'
 p3922
-aS'24h and 72h'
+aS'administration enables'
 p3923
-aS'failures'
+aS'adults Local site'
 p3924
-aS'Chronic HBV infection'
+aS'seroprotection percentage anti'
 p3925
-aS'personnel'
+aS'immunity Nasal'
 p3926
-aS'comparisons'
+aS'human clinical trial'
 p3927
-aS'muscle'
+aS'rates of local'
 p3928
-aS'applied doses 85'
+aS'methods Concurrent'
 p3929
-aS'usual'
+aS'trial were closely'
 p3930
-aS'subjects reporting specific'
+aS'one hyper'
 p3931
-aS'Baseline'
+aS'mucosal irritating'
 p3932
-aS'77 adverse events'
+aS'sequential immunoenzymatic'
 p3933
-aS'HBsAg HBcAg combined'
+aS'statistical analysis There'
 p3934
-aS'Immunoassay Center Havana'
+aS'activator enabling activated'
 p3935
-aS'recipients of other'
+aS'years There were'
 p3936
-aS'subjects withdrew'
+aS'kept under'
 p3937
-aS'salmon'
+aS'3 and epistaxis'
 p3938
-aS'HBcAg at day'
+aS'days following'
 p3939
-aS'were no differences'
+aS'Research Ethics'
 p3940
-aS'secreted protein'
+aS'monoclonal'
 p3941
-aS'impaired'
+aS'muscle aches'
 p3942
-aS'Barcelona Spain'
+aS'dripping nasal'
 p3943
-aS'inoculations'
+aS'Drug Quality'
 p3944
-aS'group observation period'
+aS'detection of IgA'
 p3945
-aS'variables Adverse'
+aS'comprising HBsAg'
 p3946
-aS'other licensed nasal'
+aS'successive reaction'
 p3947
-aS'devices Accuspray Becton'
+aS'sponsor institution Five'
 p3948
-aS'achieved anti'
+aS'headache muscle aches'
 p3949
-aS'10 of adults'
+aS'decreased'
 p3950
-aS'immunoenhancing activity'
+aS'labeled matched'
 p3951
-aS'were considered'
+aS'one month after'
 p3952
-aS'values were found'
+aS'acute hepatitis'
 p3953
-aS'transparent'
+aS'virus anti HBs'
 p3954
-aS'antiviral therapies'
+aS'adverse events between'
 p3955
-aS'reasons'
+aS'secretion of HBeAg'
 p3956
-aS'potent B cell'
+aS'multi'
 p3957
-aS'l One'
+aS'hepatocellular'
 p3958
-aS'Despite'
+aS'8 of vaccine'
 p3959
-aS'lymphocytes'
+aS'reported among individuals'
 p3960
-aS'severe Clinically'
+aS'statistical analysis'
 p3961
-aS'matched'
+aS'spray devices'
 p3962
-aS'decreased appetite nausea'
+aS'other nasal drug'
 p3963
-aS'inoculation and were'
+aS'expiration'
 p3964
-aS'closely assessed'
+aS'attention or severe'
 p3965
-aS'increased'
+aS'preliminary immunogenicity'
 p3966
-aS'tolerated and induced'
+aS'systemic reactions'
 p3967
-aS'immunization with hepatitis'
+aS'five vaccine doses'
 p3968
-aS'mild self'
+aS'helper'
 p3969
-aS'were aware'
+aS'Cuba and 50'
 p3970
-aS'9 sterile saline'
+aS'inoculation using'
 p3971
-aS'increases'
+aS'cutaneous rash'
 p3972
-aS'Food'
+aS'completed'
 p3973
-aS'recipients achieved'
+aS'90 applied'
 p3974
-aS'UMELISA plates'
+aS'mucosal adjuvant'
 p3975
-aS'values were'
+aS'specific immune'
 p3976
-aS'each immunization'
+aS'interference with normal'
 p3977
-aS'Further antigenicity'
+aS'visualized in vaccine'
 p3978
-aS'three doses'
+aS'symptoms very distressing'
 p3979
-aS'significant no adjustments'
+aS'dual'
 p3980
-aS'Sneezing palate'
+aS'random numbers'
 p3981
-aS'most moderate'
+aS'Rates of adverse'
 p3982
-aS'mucosal immunogenicity'
+aS'day 30 Thirty'
 p3983
-aS'HB CIGB Havana'
+aS'Geometric'
 p3984
-aS'exploiting'
+aS'compartment protected'
 p3985
-aS'qualitative'
+aS'prior to any'
 p3986
-aS'considered statistically'
+aS'blood screening'
 p3987
-aS'differences between vaccine'
+aS'recording of adverse'
 p3988
-aS'hosts'
+aS'supported'
 p3989
-aS'l per well'
+aS'severe Local'
 p3990
-aS'days post'
+aS'infrequent Adverse'
 p3991
-aS'infection In vaccine'
+aS'were given 15'
 p3992
-aS'Preclinical mouse'
+aS'abnormal baseline'
 p3993
-aS'clearly evident'
+aS'units'
 p3994
-aS'therapeutic'
+aS'formulations in healthy'
 p3995
-aS'products were stored'
+aS'further phase II'
 p3996
-aS'significant persistent'
+aS'group No subjects'
 p3997
-aS'hospitalizations'
+aS'adults 30 days'
 p3998
-aS'placebo received'
+aS'antibody level'
 p3999
-aS'underwent'
+aS'around 70IU'
 p4000
-aS'schedule In two'
+aS'85 5 More'
 p4001
-aS'balanced format using'
+aS'S protein'
 p4002
-aS'baseline biochemistry'
+aS'tolerated and reasonably'
 p4003
-aS'events were mostly'
+aS'29 7 years'
 p4004
-aS'Dickinson were'
+aS'revealed neither clinical'
 p4005
-aS'effects predominated'
+aS'placebo solution'
 p4006
-aS'relevant for virus'
+aS'administration of HBcAg'
 p4007
-aS'least one adverse'
+aS'sera block'
 p4008
-aS'present formulation'
+aS'reactions were combined'
 p4009
-aS'cell responses against'
+aS'international units'
 p4010
-aS'reported nasal adverse'
+aS'formulation in each'
 p4011
-aS'chronic carriage'
+aS'administration comprising'
 p4012
-aS'monitored'
+aS'center'
 p4013
-aS'consistently demonstrated'
+aS'difficult to access'
 p4014
-aS'demonstrates'
+aS'fully'
 p4015
-aS'avoid'
+aS'Conversely'
 p4016
-aS'serum clinical'
+aS'were tabulated'
 p4017
-aS'presenting cells APCs'
+aS'24h and 72h'
 p4018
-aS'were filled'
+aS'failures'
 p4019
-aS'candidate developed seroprotective'
+aS'Chronic HBV infection'
 p4020
-aS'18 45'
+aS'personnel'
 p4021
-aS'HBcAg immunomodulation'
+aS'comparisons'
 p4022
-aS'formulation and device'
+aS'muscle'
 p4023
-aS'itching palate'
+aS'applied doses 85'
 p4024
-aS'head tilted backwards'
+aS'usual'
 p4025
-aS'bothersome discomfort'
+aS'subjects reporting specific'
 p4026
-aS'percentage anti HBc'
+aS'Baseline'
 p4027
-aS'limitations'
+aS'77 adverse events'
 p4028
-aS'probability of detecting'
+aS'HBsAg HBcAg combined'
 p4029
-aS'coated'
+aS'Immunoassay Center Havana'
 p4030
-aS'used Genbank accession'
+aS'recipients of other'
 p4031
-aS'length recombinant HBcAg'
+aS'subjects withdrew'
 p4032
-aS'Center for Drug'
+aS'salmon'
 p4033
-aS'outpatient basis'
+aS'HBcAg at day'
 p4034
-aS'samples and reagents'
+aS'were no differences'
 p4035
-aS'6 13'
+aS'secreted protein'
 p4036
-aS'adverse reaction'
+aS'impaired'
 p4037
-aS'mucosal immunization'
+aS'Barcelona Spain'
 p4038
-aS'other developed anti'
+aS'inoculations'
 p4039
-aS'HBc UMELISA Immunoassay'
+aS'group observation period'
 p4040
-aS'stage'
+aS'variables Adverse'
 p4041
-aS'adults 30'
+aS'other licensed nasal'
 p4042
-aS'fever chills'
+aS'devices Accuspray Becton'
 p4043
-aS'co purified'
+aS'achieved anti'
 p4044
-aS'8 general'
+aS'10 of adults'
 p4045
-aS'statistically significant'
+aS'immunoenhancing activity'
 p4046
-aS'gene vaccine'
+aS'were considered'
 p4047
-aS'carrier'
+aS'values were found'
 p4048
-aS'candidate and 10'
+aS'transparent'
 p4049
-aS'cytokine'
+aS'antiviral therapies'
 p4050
-aS'time day'
+aS'reasons'
 p4051
-aS'term consequences'
+aS'potent B cell'
 p4052
-aS'Also chronic'
+aS'l One'
 p4053
-aS'neither irritating nor'
+aS'Despite'
 p4054
-aS'HBcAg over'
+aS'lymphocytes'
 p4055
-aS'compromised hosts'
+aS'severe Clinically'
 p4056
-aS'Sera'
+aS'matched'
 p4057
-aS'Two'
+aS'decreased appetite nausea'
 p4058
-aS'12h post'
+aS'inoculation and were'
 p4059
-aS'spontaneously and patients'
+aS'closely assessed'
 p4060
-aS'nasal conditions occurred'
+aS'increased'
 p4061
-aS'device Also chronic'
+aS'tolerated and induced'
 p4062
-aS'test for continuous'
+aS'immunization with hepatitis'
 p4063
-aS'specialized'
+aS'mild self'
 p4064
-aS'liquid Each vial'
+aS'were aware'
 p4065
-aS'Control CECMED'
+aS'9 sterile saline'
 p4066
-aS'immunosorbent assay anti'
+aS'increases'
 p4067
-aS'exposure to hepatitis'
+aS'Food'
 p4068
-aS'X02763'
+aS'recipients achieved'
 p4069
-aS'nasally parenteral'
+aS'UMELISA plates'
 p4070
-aS'individuals renal'
+aS'values were'
 p4071
-aS'group and one'
+aS'each immunization'
 p4072
-aS'careful performance'
+aS'Further antigenicity'
 p4073
-aS'first vaccine dose'
+aS'three doses'
 p4074
-aS'Biotechnology Havana Cuba'
+aS'significant no adjustments'
 p4075
-aS'inflammatory Th1'
+aS'Sneezing palate'
 p4076
-aS'exposure'
+aS'most moderate'
 p4077
-aS'recruited'
+aS'mucosal immunogenicity'
 p4078
-aS'71 in recipients'
+aS'HB CIGB Havana'
 p4079
-aS'transparent liquid Each'
+aS'exploiting'
 p4080
-aS'first hour after'
+aS'qualitative'
 p4081
-aS'range 18'
+aS'considered statistically'
 p4082
-aS'interest'
+aS'differences between vaccine'
 p4083
-aS'first dose injection'
+aS'hosts'
 p4084
-aS'immunogenicity in populations'
+aS'l per well'
 p4085
-aS'volunteer generating'
+aS'days post'
 p4086
-aS'attributed'
+aS'infection In vaccine'
 p4087
-aS'formal hypothesis testing'
+aS'Preclinical mouse'
 p4088
-aS'HBV infected patient'
+aS'clearly evident'
 p4089
-aS'immunity elicited'
+aS'therapeutic'
 p4090
-aS'over nasally'
+aS'products were stored'
 p4091
-aS'Following'
+aS'significant persistent'
 p4092
-aS'prevent permanent impairment'
+aS'hospitalizations'
 p4093
-aS'responses against HBsAg'
+aS'placebo received'
 p4094
-aS'conditions occurred during'
+aS'underwent'
 p4095
-aS'were fatal'
+aS'schedule In two'
 p4096
-aS'administered through'
+aS'balanced format using'
 p4097
-aS'recipients according'
+aS'baseline biochemistry'
 p4098
-aS'evident'
+aS'events were mostly'
 p4099
-aS'immune compromised'
+aS'Dickinson were'
 p4100
-aS'Ethics Board'
+aS'effects predominated'
 p4101
-aS'among individuals'
+aS'relevant for virus'
 p4102
-aS'signed'
+aS'least one adverse'
 p4103
-aS'protein nature'
+aS'present formulation'
 p4104
-aS'wash and saliva'
+aS'cell responses against'
 p4105
-aS'carriage'
+aS'reported nasal adverse'
 p4106
-aS'sterile saline solution'
+aS'chronic carriage'
 p4107
-aS'reporting specific post'
+aS'monitored'
 p4108
-aS'treatment with blood'
+aS'consistently demonstrated'
 p4109
-aS'distribution'
+aS'demonstrates'
 p4110
-aS'associated with functional'
+aS'avoid'
 p4111
-aS'formulated with 50'
+aS'serum clinical'
 p4112
-aS'display'
+aS'presenting cells APCs'
 p4113
-aS'4 9 Only'
+aS'were filled'
 p4114
-aS'block'
+aS'candidate developed seroprotective'
 p4115
-aS'reported to elicit'
+aS'18 45'
 p4116
-aS'rabbits'
+aS'HBcAg immunomodulation'
 p4117
-aS'showing induction'
+aS'formulation and device'
 p4118
-aS'measure'
+aS'itching palate'
 p4119
-aS'generating'
+aS'head tilted backwards'
 p4120
-aS'Thirty days after'
+aS'bothersome discomfort'
 p4121
-aS'dose and sera'
+aS'percentage anti HBc'
 p4122
-aS'treatment group sample'
+aS'limitations'
 p4123
-aS'were randomized'
+aS'probability of detecting'
 p4124
-aS'used as placebo'
+aS'coated'
 p4125
-aS'hematological'
+aS'used Genbank accession'
 p4126
-aS'nasal vaccines currently'
+aS'length recombinant HBcAg'
 p4127
-aS'achieved antibody levels'
+aS'Center for Drug'
 p4128
-aS'CIGB production'
+aS'outpatient basis'
 p4129
-aS'attention Serious adverse'
+aS'samples and reagents'
 p4130
-aS'Briefly anti HBs'
+aS'6 13'
 p4131
-aS'detect differences between'
+aS'adverse reaction'
 p4132
-aS'l seroprotection'
+aS'mucosal immunization'
 p4133
-aS'43'
+aS'other developed anti'
 p4134
-aS'volunteers without'
+aS'HBc UMELISA Immunoassay'
 p4135
-aS'anti HBs only'
+aS'stage'
 p4136
-aS'subjects showing antibody'
+aS'adults 30'
 p4137
-aS'Five'
+aS'fever chills'
 p4138
-aS'helpful'
+aS'co purified'
 p4139
-aS'normal'
+aS'8 general'
 p4140
-aS'individuals renal dialysis'
+aS'statistically significant'
 p4141
-aS'30 one'
+aS'gene vaccine'
 p4142
-aS'6 13 excess'
+aS'carrier'
 p4143
-aS'formulation Phase'
+aS'candidate and 10'
 p4144
-aS'15 minutes'
+aS'cytokine'
 p4145
-aS'body system'
+aS'time day'
 p4146
-aS'field of devices'
+aS'term consequences'
 p4147
-aS'had not achieved'
+aS'Also chronic'
 p4148
-aS'infection Conversely'
+aS'neither irritating nor'
 p4149
-aS'7 days post'
+aS'HBcAg over'
 p4150
-aS'primary outcome'
+aS'compromised hosts'
 p4151
-aS'screen failures included'
+aS'Sera'
 p4152
-aS'recognize any local'
+aS'Two'
 p4153
-aS'adverse effects predominated'
+aS'12h post'
 p4154
-aS'factors'
+aS'spontaneously and patients'
 p4155
-aS'persistent'
+aS'nasal conditions occurred'
 p4156
-aS'minutes apart'
+aS'device Also chronic'
 p4157
-aS'B surface'
+aS'test for continuous'
 p4158
-aS'HBs antibody were'
+aS'specialized'
 p4159
-aS'analysis There'
+aS'liquid Each vial'
 p4160
-aS'volumes'
+aS'Control CECMED'
 p4161
-aS'one subject'
+aS'immunosorbent assay anti'
 p4162
-aS'nasal immunogenicity'
+aS'exposure to hepatitis'
 p4163
-aS'each rate percentages'
+aS'X02763'
 p4164
-aS'infection or immunization'
+aS'nasally parenteral'
 p4165
-aS'T cell immune'
+aS'individuals renal'
 p4166
-aS'cell immune'
+aS'group and one'
 p4167
-aS'responsiveness'
+aS'careful performance'
 p4168
-aS'major HBV antigens'
+aS'first vaccine dose'
 p4169
+aS'Biotechnology Havana Cuba'
+p4170
+aS'inflammatory Th1'
+p4171
+aS'exposure'
+p4172
+aS'recruited'
+p4173
+aS'71 in recipients'
+p4174
+aS'transparent liquid Each'
+p4175
+aS'first hour after'
+p4176
+aS'range 18'
+p4177
+aS'interest'
+p4178
+aS'first dose injection'
+p4179
+aS'immunogenicity in populations'
+p4180
+aS'volunteer generating'
+p4181
+aS'attributed'
+p4182
+aS'formal hypothesis testing'
+p4183
+aS'HBV infected patient'
+p4184
+aS'immunity elicited'
+p4185
+aS'over nasally'
+p4186
+aS'Following'
+p4187
+aS'prevent permanent impairment'
+p4188
+aS'responses against HBsAg'
+p4189
+aS'conditions occurred during'
+p4190
+aS'were fatal'
+p4191
+aS'administered through'
+p4192
+aS'recipients according'
+p4193
+aS'evident'
+p4194
+aS'immune compromised'
+p4195
+aS'Ethics Board'
+p4196
+aS'among individuals'
+p4197
+aS'signed'
+p4198
+aS'protein nature'
+p4199
+aS'wash and saliva'
+p4200
+aS'carriage'
+p4201
+aS'sterile saline solution'
+p4202
+aS'reporting specific post'
+p4203
+aS'treatment with blood'
+p4204
+aS'distribution'
+p4205
+aS'associated with functional'
+p4206
+aS'formulated with 50'
+p4207
+aS'display'
+p4208
+aS'4 9 Only'
+p4209
+aS'block'
+p4210
+aS'reported to elicit'
+p4211
+aS'rabbits'
+p4212
+aS'showing induction'
+p4213
+aS'measure'
+p4214
+aS'generating'
+p4215
+aS'Thirty days after'
+p4216
+aS'dose and sera'
+p4217
+aS'treatment group sample'
+p4218
+aS'were randomized'
+p4219
+aS'used as placebo'
+p4220
+aS'hematological'
+p4221
+aS'nasal vaccines currently'
+p4222
+aS'achieved antibody levels'
+p4223
+aS'CIGB production'
+p4224
+aS'attention Serious adverse'
+p4225
+aS'Briefly anti HBs'
+p4226
+aS'detect differences between'
+p4227
+aS'l seroprotection'
+p4228
+aS'43'
+p4229
+aS'volunteers without'
+p4230
+aS'anti HBs only'
+p4231
+aS'subjects showing antibody'
+p4232
+aS'Five'
+p4233
+aS'helpful'
+p4234
+aS'normal'
+p4235
+aS'individuals renal dialysis'
+p4236
+aS'30 one'
+p4237
+aS'6 13 excess'
+p4238
+aS'formulation Phase'
+p4239
+aS'15 minutes'
+p4240
+aS'body system'
+p4241
+aS'field of devices'
+p4242
+aS'had not achieved'
+p4243
+aS'infection Conversely'
+p4244
+aS'7 days post'
+p4245
+aS'primary outcome'
+p4246
+aS'screen failures included'
+p4247
+aS'recognize any local'
+p4248
+aS'adverse effects predominated'
+p4249
+aS'factors'
+p4250
+aS'persistent'
+p4251
+aS'minutes apart'
+p4252
+aS'B surface'
+p4253
+aS'HBs antibody were'
+p4254
+aS'analysis There'
+p4255
+aS'volumes'
+p4256
+aS'one subject'
+p4257
+aS'nasal immunogenicity'
+p4258
+aS'each rate percentages'
+p4259
+aS'infection or immunization'
+p4260
+aS'T cell immune'
+p4261
+aS'cell immune'
+p4262
+aS'responsiveness'
+p4263
+aS'major HBV antigens'
+p4264
 as.
