@@ -27,6 +27,10 @@ ngramStops = ["the","a","an",
               "who","whom","where","when","why","how","which","what",
               ]
 
+# globals
+## configurables
+numKeywords = 15
+
 idfDict = {}                   # inverse document frequency dictionary
 
 freq = {}                               # freq in the document
@@ -37,6 +41,7 @@ inTitle = {}
 subsumed = {}                           
 subsumedRatio = {}
 score = {}
+# end globals
 
 def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
 
@@ -112,15 +117,15 @@ def compileNgrams(s,offset,flags):
     return offset + len(words)
     
 def output(mode):
-    global freq, firstPos, nthPos, ngLength, inTitle, score, subsumed, subsumedRatio
+    global freq, firstPos, nthPos, ngLength, inTitle, score, subsumed, subsumedRatio, numKeywords
     oCounter = 0;
     for k,v in sorted(score.items(), key=lambda x : x[1], reverse=True):
         if mode == "cgi":
-            print "<b>", k, "</b>",
+            print "<span class=\"ex1\">", k, "</span>",
 #            print ":", v, " ", freq.get(k,0), " ", firstPos.get(k,0), " ", nthPos.get(k,0), " ", \
 #                  ngLength.get(k,0), " ", inTitle.get(k,0),
             print "<br/>"
-            if oCounter > 10:
+            if oCounter > numKeywords:
                 return
         else:
             print k, v, freq.get(k,0), firstPos.get(k,0), nthPos.get(k,0), \

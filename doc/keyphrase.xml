@@ -25,7 +25,7 @@
 
    var requestHeaders = {};
    requestHeaders['X-ELS-APIKey'] = "2cb7e21fa1564348861fff2db68f1da8";
-   requestHeaders['X-ELS-Authtoken'] = response["secureAuthToken"];
+   requestHeaders['X-ELS-Authtoken'] = response["secureAuthtoken"];
    requestHeaders['Accept'] = "text/xml";
 
    var contentSearchUrl = "http://api.elsevier.com/content/article/DOI:" + response["doi"] + "?view=FULL";
