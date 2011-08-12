@@ -35,7 +35,6 @@ nthPos = {}                             # last position
 ngLength = {}
 inTitle = {}
 subsumed = {}                           
-subsumedRatio = {}
 score = {}
 
 def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
@@ -92,15 +91,11 @@ def compileNgrams(s,offset,flags):
                 if ((not re.compile("^\s*$").match(lWord)) and 
                     (not lWord.lower() in stop)):
                     insertNgram(lWord.strip() + " " + w.strip(), offset + wCounter,2,inTitle)
-#                    print ws + ": " + lWord.strip() + " " + w.strip(),
-                    subsumed[ws] = subsumed.get(ws,0) + 1 # calculate subsumption
-#                    print subsumed[ws]
                 if ((not re.compile("^\s*$").match(llWord)) and 
                     (not re.compile("^\s*$").match(lWord)) and
                     (not llWord.lower() in stop)):
                     insertNgram(llWord.strip() + " " + lWord.strip() + " " + w.strip(),
                                 offset + wCounter,3,inTitle)
-                    subsumed[lWord.strip() + " " + ws] = subsumed.get(lWord.strip() + " " + ws,0) + 1
         if not (w.lower() in ngramStops or
                 re.compile("^\s*$").match(w)):
             llWord = lWord
@@ -112,7 +107,7 @@ def compileNgrams(s,offset,flags):
     return offset + len(words)
     
 def output(mode):
-    global freq, firstPos, nthPos, ngLength, inTitle, score, subsumed, subsumedRatio
+    global freq, firstPos, nthPos, ngLength, inTitle, score, subsumed_1, subsumed_2
     oCounter = 0;
     for k,v in sorted(score.items(), key=lambda x : x[1], reverse=True):
         if mode == "cgi":
@@ -124,16 +119,15 @@ def output(mode):
                 return
         else:
             print k, v, freq.get(k,0), firstPos.get(k,0), nthPos.get(k,0), \
-                  ngLength.get(k,0), inTitle.get(k,0), subsumed.get(k,0), subsumedRatio.get(k,0)
+                  ngLength.get(k,0), inTitle.get(k,0), subsumed.get(k,0)
         oCounter = oCounter + 1
     
 def scoreNgrams(offset):
-    global freq, firstPos, nthPos, ngLength, inTitle, idfDict, score, subsumed, subsumedRatio
+    global freq, firstPos, nthPos, ngLength, inTitle, idfDict, score
     for w in freq:
         if not (w in idfDict):          # assign default
             idfDict[w] = 8
-        subsumedRatio[w] = 1.0 * subsumed.get(w,0) / freq[w]
-        score[w] = math.log(freq[w]) * idfDict[w] * ngLength[w] * (1 - subsumedRatio[w])
+        score[w] = math.log(freq[w]) * idfDict[w] * ngLength[w]
         if w in inTitle and inTitle[w] == True:
             score[w] = score[w] * 2
         first = float(firstPos[w]) / offset
