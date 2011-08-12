@@ -17,6 +17,7 @@
   <script type="text/javascript">
 
  var articleDOI;
+ var secureAuthToken;
 
  /*
   * This function calls the container to get the current article content.
@@ -27,18 +28,34 @@
  }
 
  function contextInfoCallback(response) {
-   // get DOI from context   
-   document.getElementById("contextInfo").style.visibility='visible';
-   document.getElementById("contextInfo").innerHTML = "<span class=\"ex1\">Retrieving text of article with DOI: " + response["doi"] + ". Please wait...</span>";
    articleDOI = response["doi"];
+   secureAuthtoken = response["secureAuthtoken"];
+   var params = {};
+   var postdata = {doi: articleDOI};
+   params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+   params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(postdata);
+   document.getElementById("contextInfo").innerHTML = "<span class=\"ex1\">Checking cache for DOI: " + articleDOI + ". Please wait...</span>";
 
-   var requestHeaders = {};
-   requestHeaders['X-ELS-APIKey'] = "2cb7e21fa1564348861fff2db68f1da8";
-   requestHeaders['X-ELS-Authtoken'] = response["secureAuthtoken"];
-   requestHeaders['Accept'] = "text/xml";
+   var cacheUrl = "http://wing.comp.nus.edu.sg/elsevier-kp/cache.cgi";
+   gadgets.io.makeRequest(cacheUrl, cacheCallback, params);
+ }
 
-   var contentSearchUrl = "http://api.elsevier.com/content/article/DOI:" + response["doi"] + "?view=FULL";
-   gadgets.sciverse.makeContentApiRequest(contentSearchUrl, articleCallback, requestHeaders);
+ function cacheCallback(response) {
+   if (response.text != "0\n") {
+     document.getElementById("contextInfo").innerHTML = response.text
+   } else {
+     // get DOI from context   
+     document.getElementById("contextInfo").innerHTML = "<span class=\"ex1\">Retrieving text of article with DOI: " + articleDOI + ". Please wait...</span>";
+
+     var requestHeaders = {};
+     requestHeaders['X-ELS-APIKey'] = "2cb7e21fa1564348861fff2db68f1da8";
+     requestHeaders['X-ELS-Authtoken'] = secureAuthtoken; // fetch authtoken from context call
+     requestHeaders['Accept'] = "text/xml";
+
+     var contentSearchUrl = "http://api.elsevier.com/content/article/DOI:" + articleDOI + "?view=FULL";
+     gadgets.sciverse.makeContentApiRequest(contentSearchUrl, articleCallback, requestHeaders);
+   }
  }
 
  function articleCallback(response) {
