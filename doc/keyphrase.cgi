@@ -3,7 +3,10 @@
 import cgi
 import cgitb
 import xml.dom.minidom
+import cPickle as pickle
+import os
 import re
+import sys
 import math
 # import svm
 from porter import *
@@ -30,6 +33,8 @@ ngramStops = ["the","a","an",
 # globals
 ## configurables
 numKeywords = 15
+idfDictionaryName = "dict.idf.tsv"
+cpickledCacheName = "cached.p"
 
 idfDict = {}                   # inverse document frequency dictionary
 
@@ -116,21 +121,51 @@ def compileNgrams(s,offset,flags):
         wCounter = wCounter + 1
     return offset + len(words)
     
-def output(mode):
+def output(mode,doi):
     global freq, firstPos, nthPos, ngLength, inTitle, score, subsumed, subsumedRatio, numKeywords
+    cache = {}
+    try: 
+        cacheFH = open(cpickledCacheName)
+        cache = pickle.load(cacheFH)
+        cacheFH.close()
+    except IOError:
+        pass                            # no-op
     oCounter = 0;
+    keywordList = []
     for k,v in sorted(score.items(), key=lambda x : x[1], reverse=True):
+        keywordList.append(k)
         if mode == "cgi":
-            print "<span class=\"ex1\">", k, "</span>",
+            # BUG: probably should check for other
+            # things aside from just spaces
+            escapedQueryTerms = k.replace(" ","+")
+            print "<span class=\"ex1\">",
+            print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
+            print escapedQueryTerms,
+            print "');\">",
+            print k,
+            print "</a>",
+            print "</span>",
 #            print ":", v, " ", freq.get(k,0), " ", firstPos.get(k,0), " ", nthPos.get(k,0), " ", \
 #                  ngLength.get(k,0), " ", inTitle.get(k,0),
             print "<br/>"
             if oCounter > numKeywords:
-                return
+                break
         else:
             print k, v, freq.get(k,0), firstPos.get(k,0), nthPos.get(k,0), \
                   ngLength.get(k,0), inTitle.get(k,0), subsumed.get(k,0), subsumedRatio.get(k,0)
         oCounter = oCounter + 1
+        cache[doi] = keywordList
+    # try to pickle the data
+    try: 
+        cacheFH2 = open(cpickledCacheName,'wb')
+        pickle.dump(cache,cacheFH2)
+        cacheFH2.close()
+        try:
+            os.chmod(cpickledCacheName,0777)
+        except:
+            pass                        # may have permission problems
+    except:
+        print "Unexpected error:", sys.exc_info()[0]
     
 def scoreNgrams(offset):
     global freq, firstPos, nthPos, ngLength, inTitle, idfDict, score, subsumed, subsumedRatio
@@ -153,10 +188,12 @@ def printHeader():
 # ---- MAIN ----
 form = cgi.FieldStorage()
 mode = ""
+doi = ""
 if not "query" in form:                 # invoked on command line
     mode = "cmdline"
-    if len(sys.argv) != 2:
-        buf = "# " + sys.argv[0] + " FATAL:\tUsage error\t" + sys.argv[0] + " <xml_filename>\n"
+#    mode = "cgi"
+    if len(sys.argv) != 3:
+        buf = "# " + sys.argv[0] + " FATAL:\tUsage error\t" + sys.argv[0] + " <xml_filename> <doi>\n"
         sys.stderr.write(buf)
         sys.exit()
     try:
@@ -166,15 +203,17 @@ if not "query" in form:                 # invoked on command line
         sys.stderr.write(buf)
         sys.exit()
     xmlData = f.read()
+    doi = sys.argv[2]
     f.close()
 else:                                   # invoked as CGI with query param passed
     mode = "cgi"
     xmlData = form["query"].value
+    doi = form["doi"].value
     f = open('query','w')
     f.write(xmlData)
     f.close()
     printHeader()
-
+    
 xmlData = removeNonAscii(xmlData);
 doc = xml.dom.minidom.parseString(xmlData)
 
@@ -202,6 +241,6 @@ for n in nodes:
 #        print buf
         offset = compileNgrams(buf,offset,flags)
         pCounter = pCounter+1
-loadDict("dict.idf.tsv")
+loadDict(idfDictionaryName)
 scoreNgrams(offset)
-output(mode)
+output(mode,doi)
