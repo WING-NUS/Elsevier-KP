@@ -140,7 +140,9 @@ def output(mode,doi):
             escapedQueryTerms = k.replace(" ","+")
             print "<span class=\"ex1\">",
             print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
+            print "\"",
             print escapedQueryTerms,
+            print "\"",
             print "');\">",
             print k,
             print "</a>",
