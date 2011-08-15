@@ -31,7 +31,7 @@ def output(mode,doi):
             print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
             print escapedQueryTerms,
             print "');\">",
-            print k,
+            print k, ",",
             print "</a>",
             print "</span>",
 #            print ":", v, " ", freq.get(k,0), " ", firstPos.get(k,0), " ", nthPos.get(k,0), " ", \

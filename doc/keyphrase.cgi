@@ -144,7 +144,7 @@ def output(mode,doi):
             print escapedQueryTerms,
             print "\"",
             print "');\">",
-            print k,
+            print k, ",",
             print "</a>",
             print "</span>",
 #            print ":", v, " ", freq.get(k,0), " ", firstPos.get(k,0), " ", nthPos.get(k,0), " ", \
