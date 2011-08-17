@@ -18,6 +18,7 @@
 
  var articleDOI;
  var secureAuthToken;
+ var searchTerms;
 
  /*
   * This function calls the container to get the current article content.
@@ -30,6 +31,8 @@
  function contextInfoCallback(response) {
    articleDOI = response["doi"];
    secureAuthtoken = response["secureAuthtoken"];
+   searchTerms = response["searchTerms"];
+   
    var params = {};
    var postdata = {doi: articleDOI};
    params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
@@ -43,7 +46,7 @@
 
  function cacheCallback(response) {
    if (response.text != "0\n") {
-     document.getElementById("contextInfo").innerHTML = response.text
+     keyphraseCallback(response);
    } else {
      // get DOI from context   
      document.getElementById("contextInfo").innerHTML = "<span class=\"ex1\">Retrieving text of article with DOI: " + articleDOI + ". Please wait...</span>";
@@ -71,11 +74,58 @@
    gadgets.io.makeRequest(keyphraseUrl, keyphraseCallback, params);
  }
 
+var myText = "";
+
  function keyphraseCallback(response) {
-   document.getElementById("contextInfo").innerHTML = response.text +  "<br/><span class=\"ex1\"><a id=\"keyphraseAction\" href=\"javascript:void(0);\" onclick=\"getContextInfo();\">Re-run Keyphrase again</a></span>" 
+  
+     if (searchTerms==""){
+	myText = "Add the following terms and click limit search:<br><br>";
+ 	} else {
+	myText = "Add the following terms to your search for <b>" + searchTerms + ":</b><br><br>";
+	}
+    
+	var lines = response.text.split(",");
+	
+	//take out spaces too...or get min to do it.
+
+	
+	for (var i = 0; i < lines.length && i < 5; i++) {
+			myText = myText + "<input type='checkbox' name='term' value='" + lines[i] + "'>" + lines[i] + "<br>";
+		} 
+ myText= myText + "<input type='button' name='limit' value='limit search' onclick='getCheckboxValues()'>";
+ document.getElementById("contextInfo").innerHTML = myText; 
+ gadgets.window.adjustHeight();   
  }
+ 
+function getCheckboxValues()
+{
+
+var keyPhraseTerms = "";
+
+if (searchTerms != "") {
+keyPhraseTerms = searchTerms;
+}
+
+for (var i=0; i < document.keyPhrases.term.length; i++)
+   {
+   if (document.keyPhrases.term[i].checked)
+      {
+	  	if (keyPhraseTerms == "") {
+      	keyPhraseTerms = "\"" + document.keyPhrases.term[i].value + "\""; }
+		else {
+		keyPhraseTerms = keyPhraseTerms + " AND \"" + document.keyPhrases.term[i].value +"\""; }
+      }
+   }
+   
+   gadgets.ScienceDirect.executeSearch(keyPhraseTerms); 
+   gadgets.window.adjustHeight();   
+ 
+}
+
    </script>
+   <form name="keyPhrases">
    <div id="contextInfo" style="display:block"></div>
+   </form>
    </body>
    ]]></Content>
 </Module>
