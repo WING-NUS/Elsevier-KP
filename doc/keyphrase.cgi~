@@ -135,12 +135,35 @@ def output(mode,doi):
     for k,v in sorted(score.items(), key=lambda x : x[1], reverse=True):
         keywordList.append(k)
         if mode == "cgi":
-            escapedQueryTerms = k.replace("'","\\'")
-            escapedQueryTerms = k.replace("\"","\\\"")
             # BUG: probably should check for other
-            # things aside from just quotations
+            # things aside from just spaces
+<<<<<<< HEAD
+#            escapedQueryTerms = k.replace(" ","+")
+#            print "<span class=\"ex1\">",
+#            print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
+#            print "\"",
+#            print escapedQueryTerms,
+#            print "\"",
+#            print "');\">",
             sys.stdout.write(k)
             sys.stdout.write(",")
+#            print "</a>",
+#            print "</span>",
+=======
+            escapedQueryTerms = k.replace(" ","+")
+            print "<span class=\"ex1\">",
+            print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
+            print "\"",
+            print escapedQueryTerms,
+            print "\"",
+            print "');\">",
+            print k, ",",
+            print "</a>",
+            print "</span>",
+>>>>>>> 06a7be305233fa7f1b3b67ed6c42ab4bbec67365
+#            print ":", v, " ", freq.get(k,0), " ", firstPos.get(k,0), " ", nthPos.get(k,0), " ", \
+#                  ngLength.get(k,0), " ", inTitle.get(k,0),
+#            print "<br/>"
             if oCounter > numKeywords:
                 break
         else:
