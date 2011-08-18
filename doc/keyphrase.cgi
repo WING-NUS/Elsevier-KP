@@ -137,19 +137,20 @@ def output(mode,doi):
         if mode == "cgi":
             # BUG: probably should check for other
             # things aside from just spaces
-            escapedQueryTerms = k.replace(" ","+")
-            print "<span class=\"ex1\">",
-            print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
-            print "\"",
-            print escapedQueryTerms,
-            print "\"",
-            print "');\">",
-            print k,
-            print "</a>",
-            print "</span>",
+#            escapedQueryTerms = k.replace(" ","+")
+#            print "<span class=\"ex1\">",
+#            print "<a href=\"javascript:void(0);\" onclick=\"gadgets.ScienceDirect.executeSearch('",
+#            print "\"",
+#            print escapedQueryTerms,
+#            print "\"",
+#            print "');\">",
+            sys.stdout.write(k)
+            sys.stdout.write(",")
+#            print "</a>",
+#            print "</span>",
 #            print ":", v, " ", freq.get(k,0), " ", firstPos.get(k,0), " ", nthPos.get(k,0), " ", \
 #                  ngLength.get(k,0), " ", inTitle.get(k,0),
-            print "<br/>"
+#            print "<br/>"
             if oCounter > numKeywords:
                 break
         else:
@@ -192,8 +193,8 @@ form = cgi.FieldStorage()
 mode = ""
 doi = ""
 if not "query" in form:                 # invoked on command line
-    mode = "cmdline"
-#    mode = "cgi"
+#    mode = "cmdline"
+    mode = "cgi"
     if len(sys.argv) != 3:
         buf = "# " + sys.argv[0] + " FATAL:\tUsage error\t" + sys.argv[0] + " <xml_filename> <doi>\n"
         sys.stderr.write(buf)
